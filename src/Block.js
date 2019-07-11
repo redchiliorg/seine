@@ -6,20 +6,17 @@ import type { BlockType, Data } from './types';
 import Grid from './Grid';
 import Draft from './Draft';
 
-export default function Block(
-  props: Data & {
-    breakpointId?: string,
-    breakpoints?: string[],
-    children?: React.ChildrenArray<React.Node>,
-    type: BlockType,
-  }
-) {
-  const { breakpoints, breakpointId, children, type, ...data } = props;
+export default function Block(props: {
+  children?: React.ChildrenArray<React.Node>,
+  data: Data,
+  type: BlockType,
+}) {
+  const { children, data, type, ...config } = props;
 
   return type === blockTypes.DRAFT ? (
-    <Draft>{data}</Draft>
+    <Draft {...config}>{data}</Draft>
   ) : type === blockTypes.GRID ? (
-    <Grid {...data} breakpoints={breakpoints} breakpointId={breakpointId}>
+    <Grid {...config} {...data}>
       {children}
     </Grid>
   ) : type === blockTypes.TEXT ? (

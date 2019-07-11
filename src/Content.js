@@ -19,20 +19,20 @@ Content.defaultProps = {
 };
 
 export default function Content(props: Props) {
-  const { breakpoints, breakpointId } = props;
+  const { breakpoints, breakpointId, children } = props;
   const childProps = { breakpoints, breakpointId };
   return (
     <props.component>
-      {props.children.map(
+      {children.map(
         ({ id, data, parent_id, type }) =>
           !parent_id && (
-            <Block {...data} {...childProps} key={id} type={type}>
-              {props.children.map(
+            <Block {...childProps} data={data} key={id} type={type}>
+              {children.map(
                 ({ id: childId, data, parent_id, type }) =>
                   parent_id === id && (
                     <Block
-                      {...data}
                       {...childProps}
+                      data={data}
                       key={childId}
                       type={type}
                     />
