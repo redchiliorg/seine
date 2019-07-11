@@ -23,6 +23,7 @@ export default function Grid(props: Props) {
     props.breakpoints ? props.breakpoints.indexOf(props.breakpointId) : -1,
     0
   );
+
   return (
     <div
       style={{

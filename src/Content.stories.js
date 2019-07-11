@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { blockTypes } from './types';
 import Content from './Content';
 
-const grid = {
+const gridBlock = {
   id: '1',
   parent_id: null,
   type: blockTypes.GRID,
@@ -15,35 +15,69 @@ const grid = {
   },
 };
 const blocks = [
-  grid,
+  {
+    id: 'grid-title',
+    parent_id: null,
+    type: blockTypes.TEXT,
+    data: (
+      <>
+        <h1>Grid block</h1>
+        <br />
+      </>
+    ),
+  },
+  gridBlock,
   {
     id: 'a',
-    parent_id: grid.id,
+    parent_id: gridBlock.id,
     type: blockTypes.TEXT,
-    data: { text: 'Block A is a text' },
+    data: 'Block A is a text',
   },
   {
     id: 'b',
-    parent_id: grid.id,
+    parent_id: gridBlock.id,
     type: blockTypes.TEXT,
-    data: { text: 'Block B is a text' },
+    data: 'Block B is a text',
   },
   {
     id: 'c',
-    parent_id: grid.id,
+    parent_id: gridBlock.id,
     type: blockTypes.TEXT,
-    data: { text: 'Block C is a text' },
+    data: 'Block C is a text',
   },
   {
     id: 'd',
-    parent_id: grid.id,
+    parent_id: gridBlock.id,
     type: blockTypes.TEXT,
-    data: { text: 'Block D is a text' },
+    data: 'Block D is a text',
+  },
+  {
+    id: 'draft-title',
+    parent_id: null,
+    type: blockTypes.TEXT,
+    data: (
+      <>
+        <h1>
+          <br />
+          Draft.js block
+        </h1>
+        <br />
+      </>
+    ),
+  },
+  {
+    id: 'draft',
+    parent_id: null,
+    type: blockTypes.DRAFT,
+    data: {
+      entityMap: {},
+      contentBlocks: [],
+    },
   },
 ];
-const width = '50%';
 const breakpoints = ['lg', 'md', 'sm'];
 const container = 'main';
+const width = '50%';
 
 storiesOf('Content', module)
   .add('lg', () => (

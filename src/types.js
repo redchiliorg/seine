@@ -14,9 +14,7 @@ export type GridData = {
   rows: Array<string | number>[],
 };
 
-export type TextData = {
-  text: string,
-};
+export type TextData = string;
 
 export type DraftData = {
   entityMap: { [string]: mixed },
