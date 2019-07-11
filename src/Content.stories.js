@@ -100,39 +100,32 @@ const blocks = [
 ];
 const breakpoints = ['lg', 'md', 'sm'];
 const container = 'main';
-const width = '50%';
 
 storiesOf('Content', module)
   .add('lg', () => (
-    <div style={{ width }}>
-      <Content
-        breakpoints={breakpoints}
-        breakpointId={'lg'}
-        component={container}
-      >
-        {blocks}
-      </Content>
-    </div>
+    <Content
+      breakpoints={breakpoints}
+      breakpointId={'lg'}
+      component={container}
+    >
+      {blocks}
+    </Content>
   ))
   .add('md', () => (
-    <div style={{ width }}>
-      <Content
-        breakpoints={breakpoints}
-        breakpointId={'md'}
-        component={container}
-      >
-        {blocks}
-      </Content>
-    </div>
+    <Content
+      breakpoints={breakpoints}
+      breakpointId={'md'}
+      component={container}
+    >
+      {blocks}
+    </Content>
   ))
   .add('sm', () => (
-    <div style={{ width }}>
-      <Content
-        breakpoints={breakpoints}
-        breakpointId={'sm'}
-        component={container}
-      >
-        {blocks}
-      </Content>
-    </div>
+    <Content
+      breakpoints={breakpoints}
+      breakpointId={'sm'}
+      component={container}
+    >
+      {blocks}
+    </Content>
   ));
