@@ -11,7 +11,7 @@ const gridBlock = {
   data: {
     areas: [['a b b', 'c c d'], ['a b', 'c d'], ['a', 'b', 'c', 'd']],
     columns: [['60px', '1fr', '60px'], ['0.75fr', '0.25fr'], ['1fr']],
-    rows: [['100px', '1fr']],
+    rows: [['auto', '1fr']],
   },
 };
 const blocks = [
@@ -36,20 +36,43 @@ const blocks = [
   {
     id: 'b',
     parent_id: gridBlock.id,
-    type: blockTypes.TEXT,
-    data: 'Block B is a text',
+    type: blockTypes.DRAFT,
+    data: {
+      entityMap: {},
+      contentBlocks: ['Block C is draft.js block'],
+    },
   },
   {
     id: 'c',
     parent_id: gridBlock.id,
     type: blockTypes.TEXT,
-    data: 'Block C is a text',
+    data: 'Block B is a text',
   },
   {
     id: 'd',
     parent_id: gridBlock.id,
     type: blockTypes.TEXT,
     data: 'Block D is a text',
+  },
+  {
+    id: 'text-title',
+    parent_id: null,
+    type: blockTypes.TEXT,
+    data: (
+      <>
+        <h1>
+          <br />
+          Text block
+        </h1>
+        <br />
+      </>
+    ),
+  },
+  {
+    id: 'text',
+    parent_id: null,
+    type: blockTypes.TEXT,
+    data: 'Text block data is a text',
   },
   {
     id: 'draft-title',
