@@ -84,7 +84,6 @@ const blocks = [
 ];
 const container = 'main';
 
-storiesOf('Content', module)
-  .add('lg', () => <Content component={container}>{blocks}</Content>)
-  .add('md', () => <Content component={container}>{blocks}</Content>)
-  .add('sm', () => <Content component={container}>{blocks}</Content>);
+storiesOf('Content', module).add('default', () => (
+  <Content component={container}>{blocks}</Content>
+));
