@@ -6,30 +6,36 @@ import type { ContentBlock } from './types';
 
 type Config = {
   component: string | React.ElementType,
-  style: CSSStyleDeclaration,
 };
 
 type Props = Config & {
+  breakpointId: string,
+  breakpoints: string[],
   children: ContentBlock[],
 };
 
 Content.defaultProps = {
-  component: 'div',
-  style: {},
+  component: React.Fragment,
 };
 
 export default function Content(props: Props) {
-  const { children: blocks, style } = props;
+  const { breakpoints, breakpointId } = props;
+  const childProps = { breakpoints, breakpointId };
   return (
-    <props.component style={style}>
-      {blocks.map(
+    <props.component>
+      {props.children.map(
         ({ id, data, parent_id, type }) =>
           !parent_id && (
-            <Block {...data} key={id} type={type}>
-              {blocks.map(
+            <Block {...data} {...childProps} key={id} type={type}>
+              {props.children.map(
                 ({ id: childId, data, parent_id, type }) =>
                   parent_id === id && (
-                    <Block {...data} key={childId} type={type} />
+                    <Block
+                      {...data}
+                      {...childProps}
+                      key={childId}
+                      type={type}
+                    />
                   )
               )}
             </Block>

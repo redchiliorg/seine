@@ -29,17 +29,19 @@ export default function Grid(props: Props) {
         display: 'grid',
 
         gridTemplateAreas: props.areas[
-          props.areas.length > breakpoint ? breakpoint : breakpoint - 1
+          props.areas.length > breakpoint ? breakpoint : props.areas.length - 1
         ]
           .map((row) => `"${row}"`)
           .join(' '),
 
         gridTemplateColumns: props.columns[
-          props.columns.length > breakpoint ? breakpoint : breakpoint - 1
+          props.columns.length > breakpoint
+            ? breakpoint
+            : props.columns.length - 1
         ].join(' '),
 
         gridTemplateRows: props.rows[
-          props.rows.length > breakpoint ? breakpoint : breakpoint - 1
+          props.rows.length > breakpoint ? breakpoint : props.rows.length - 1
         ].join(' '),
       }}
     >
