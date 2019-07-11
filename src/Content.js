@@ -9,8 +9,6 @@ type Config = {
 };
 
 type Props = Config & {
-  breakpointId: string,
-  breakpoints: string[],
   children: ContentBlock[],
 };
 
@@ -19,23 +17,17 @@ Content.defaultProps = {
 };
 
 export default function Content(props: Props) {
-  const { breakpoints, breakpointId, children } = props;
-  const childProps = { breakpoints, breakpointId };
+  const { children } = props;
   return (
     <props.component>
       {children.map(
         ({ id, data, parent_id, type }) =>
           !parent_id && (
-            <Block {...childProps} data={data} key={id} type={type}>
+            <Block data={data} key={id} type={type}>
               {children.map(
                 ({ id: childId, data, parent_id, type }) =>
                   parent_id === id && (
-                    <Block
-                      {...childProps}
-                      data={data}
-                      key={childId}
-                      type={type}
-                    />
+                    <Block data={data} key={childId} type={type} />
                   )
               )}
             </Block>

@@ -9,9 +9,9 @@ export const blockTypes = {
 export type BlockType = $Values<typeof blockTypes>;
 
 export type GridData = {
-  areas: Array<string | number>[],
-  columns: Array<string | number>[],
-  rows: Array<string | number>[],
+  areas: (string | number)[] | 'none',
+  columns: (string | number)[],
+  rows: (string | number)[],
 };
 
 export type TextData = string;

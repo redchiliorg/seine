@@ -8,11 +8,7 @@ const gridBlock = {
   id: '1',
   parent_id: null,
   type: blockTypes.GRID,
-  data: {
-    areas: [['a b b', 'c c d'], ['a b', 'c d'], ['a', 'b', 'c', 'd']],
-    columns: [['60px', '1fr', '60px'], ['0.75fr', '0.25fr'], ['1fr']],
-    rows: [['auto', '1fr']],
-  },
+  data: {},
 };
 const blocks = [
   {
@@ -41,18 +37,6 @@ const blocks = [
       entityMap: {},
       contentBlocks: ['Block C is draft.js block'],
     },
-  },
-  {
-    id: 'c',
-    parent_id: gridBlock.id,
-    type: blockTypes.TEXT,
-    data: 'Block B is a text',
-  },
-  {
-    id: 'd',
-    parent_id: gridBlock.id,
-    type: blockTypes.TEXT,
-    data: 'Block D is a text',
   },
   {
     id: 'text-title',
@@ -98,34 +82,9 @@ const blocks = [
     },
   },
 ];
-const breakpoints = ['lg', 'md', 'sm'];
 const container = 'main';
 
 storiesOf('Content', module)
-  .add('lg', () => (
-    <Content
-      breakpoints={breakpoints}
-      breakpointId={'lg'}
-      component={container}
-    >
-      {blocks}
-    </Content>
-  ))
-  .add('md', () => (
-    <Content
-      breakpoints={breakpoints}
-      breakpointId={'md'}
-      component={container}
-    >
-      {blocks}
-    </Content>
-  ))
-  .add('sm', () => (
-    <Content
-      breakpoints={breakpoints}
-      breakpointId={'sm'}
-      component={container}
-    >
-      {blocks}
-    </Content>
-  ));
+  .add('lg', () => <Content component={container}>{blocks}</Content>)
+  .add('md', () => <Content component={container}>{blocks}</Content>)
+  .add('sm', () => <Content component={container}>{blocks}</Content>);
