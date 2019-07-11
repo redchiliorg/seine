@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/order": ["error", { "newlines-between": "always" }],
+    "no-console": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
+  }
+}
