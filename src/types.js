@@ -1,27 +1,30 @@
 // @flow
 export const blockTypes = {
-  GRID: 'grid',
   DRAFT: 'draft',
+  GRID: 'grid',
   PIE: 'pie',
-  TEXT: 'text',
 };
 
 export type BlockType = $Values<typeof blockTypes>;
 
-export type GridData = {
-  areas: (string | number)[] | 'none',
-  columns: (string | number)[],
-  rows: (string | number)[],
-};
-
-export type TextData = string;
-
 export type DraftData = {
-  entityMap: { [string]: mixed },
-  contentBlocks: { [string]: mixed }[],
+  body: {
+    entityMap: { [string]: mixed },
+    contentBlocks: { [string]: mixed }[],
+  },
+  textAlignment: 'left' | 'center' | 'right',
 };
 
-export type Data = GridData | TextData | DraftData;
+export type GridData = {
+  areas?: string,
+  columns?: string,
+  columnGap?: string,
+  justifyContent?: string,
+  rows?: string,
+  rowGap?: string,
+};
+
+export type Data = GridData | DraftData;
 
 export type ContentBlock = {
   data: Data,

@@ -16,10 +16,13 @@ type Props = Config &
 Grid.defaultProps = ({
   areas: 'none',
   columns: 'repeat(auto-fit, minmax(300px, 1fr))',
-  rows: 'auto',
+  rows: '',
+  columnGap: 20,
+  rowGap: 20,
 }: Config);
 
 export default function Grid(props: Props) {
+  const { areas, columns, rows, ...style } = props;
   return (
     <div
       style={{
@@ -27,6 +30,7 @@ export default function Grid(props: Props) {
         gridTemplateAreas: props.areas,
         gridTemplateColumns: props.columns,
         gridTemplateRows: props.rows,
+        ...style,
       }}
     >
       {props.children}
