@@ -1,89 +1,109 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 import { blockTypes } from './types';
 import Content from './Content';
+import { toRawContent } from './Draft.helpers';
+import { defaultPieData } from './Pie.stories';
 
-const gridBlock = {
-  id: '1',
-  parent_id: null,
-  type: blockTypes.GRID,
-  data: {},
-};
-const blocks = [
+const titleBlocks = [
   {
-    id: 'grid-title',
+    id: '0',
     parent_id: null,
-    type: blockTypes.TEXT,
-    data: (
-      <>
-        <h1>Grid block</h1>
-        <br />
-      </>
-    ),
-  },
-  gridBlock,
-  {
-    id: 'a',
-    parent_id: gridBlock.id,
-    type: blockTypes.TEXT,
-    data: 'Block A is a text',
-  },
-  {
-    id: 'b',
-    parent_id: gridBlock.id,
-    type: blockTypes.DRAFT,
+    type: blockTypes.GRID,
     data: {
-      entityMap: {},
-      contentBlocks: ['Block C is draft.js block'],
+      columns: 'repeat(2, minmax(320px, 0.5fr))',
+      justifyContent: 'center',
     },
   },
   {
-    id: 'text-title',
-    parent_id: null,
-    type: blockTypes.TEXT,
-    data: (
-      <>
-        <h1>
-          <br />
-          Text block
-        </h1>
-        <br />
-      </>
-    ),
-  },
-  {
-    id: 'text',
-    parent_id: null,
-    type: blockTypes.TEXT,
-    data: 'Text block data is a text',
-  },
-  {
-    id: 'draft-title',
-    parent_id: null,
-    type: blockTypes.TEXT,
-    data: (
-      <>
-        <h1>
-          <br />
-          Draft.js block
-        </h1>
-        <br />
-      </>
-    ),
-  },
-  {
-    id: 'draft',
-    parent_id: null,
+    id: 'title',
+    parent_id: '0',
     type: blockTypes.DRAFT,
     data: {
-      entityMap: {},
-      contentBlocks: [],
+      textAlignment: 'center',
+      body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
     },
   },
 ];
-const container = 'main';
 
-storiesOf('Content', module).add('default', () => (
-  <Content component={container}>{blocks}</Content>
-));
+const grid = {
+  id: '1',
+  parent_id: null,
+  type: blockTypes.GRID,
+  data: {
+    alignItems: 'center',
+  },
+};
+
+const pie = {
+  id: 'pie',
+  type: blockTypes.PIE,
+  data: { ...defaultPieData, padding: 60, fontSize: 14 },
+};
+
+const draft = {
+  id: 'draft',
+  type: blockTypes.DRAFT,
+  data: {
+    body: toRawContent(
+      'This block is draft.js content. Click here to edit the text.' +
+        '\n\n' +
+        'We are planning to add text formatting toolbar soon.' +
+        '\n\n' +
+        'Draft.js is a framework for building rich text editors in React,\n' +
+        'powered by an immutable model and abstracting over cross-browser ' +
+        'differences.'
+    ),
+  },
+};
+
+const component = 'main';
+
+const knobPie = (pie) => ({
+  ...pie,
+  data: {
+    ...pie.data,
+    elements: pie.data.elements.map(
+      ({ title, percent, color, ...data }, index) => ({
+        ...data,
+        title: text(`title #${index + 1}`, title),
+        color: text(`color #${index + 1}`, color),
+        percent: number(`percent #${index + 1}`, percent, {
+          min: 0,
+          max: 100,
+        }),
+      })
+    ),
+  },
+});
+
+storiesOf('Content', module)
+  .addDecorator(withKnobs)
+  .add('2-col grid: pie | draft', () => (
+    <Content component={component}>
+      {[
+        ...titleBlocks,
+        grid,
+        {
+          ...knobPie(pie),
+          parent_id: grid.id,
+        },
+        { ...draft, parent_id: grid.id },
+      ]}
+    </Content>
+  ))
+  .add('2-col grid: draft | pie', () => (
+    <Content component={component}>
+      {[
+        grid,
+        { ...draft, parent_id: grid.id },
+        {
+          ...knobPie(pie),
+          parent_id: grid.id,
+        },
+      ]}
+    </Content>
+  ))
+  .add('draft block', () => <Content component={component}>{[draft]}</Content>);
