@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/draft-js/dist/Draft.css" />
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/immutable@3/dist/immutable.js"></script>
+    <script src="https://unpkg.com/draft-js/dist/Draft.js"></script>
+    <script src="/Seine.umd.js"></script>
+  </head>
+<body>
+<script>
+'use strict';
+(function() {
+  var element = React.createElement(
+    Seine.Content,
+    {component: 'main'},
+    [
+      {
+        id: '0',
+        parent_id: null,
+        type: 'grid',
+        data: {
+          columns: 'repeat(2, minmax(320px, 0.5fr))',
+          justifyContent: 'center',
+        },
+      },
+      {
+        id: 'pie',
+        parent_id: '0',
+        type: 'pie',
+        data: {
+          elements: [
+            { title: 'repairs', percent: 12, color: '#653867' },
+            { title: 'consulting', percent: 10, color: '#e5002d' },
+            { title: 'training', percent: 8, color: '#f80048' },
+            { title: 'product sales', percent: 64, color: '#ff3d69' },
+            { title: 'others', percent: 6, color: '#ff6d8c' },
+          ],
+          padding: 60,
+          fontSize: 14
+        },
+      },
+      {
+        id: 'draft',
+        parent_id: '0',
+        type: 'draft',
+        data: {
+          body:
+            'This block is draft.js content. Click here to edit the text.' +
+            '\n\n' +
+            'We are planning to add text formatting toolbar soon.' +
+            '\n\n' +
+            'Draft.js is a framework for building rich text editors in React,\n' +
+            'powered by an immutable model and abstracting over cross-browser ' +
+            'differences.'
+        }
+      }
+    ]
+  );
+  var container = document.createElement('div');
+  document.currentScript.replaceWith(container);
+  ReactDOM.render(element, container);
+})();
+</script>
+
+</body>
+</html>
