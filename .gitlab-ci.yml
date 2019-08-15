@@ -7,7 +7,7 @@ test:
   except:
     - tags
   stage: test
-  image: node:8-alpine
+  image: node:10-alpine
   before_script:
     - yarn install
   script:
@@ -39,6 +39,6 @@ publish:
   before_script:
     - yarn install
   script:
-    - yarn config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-    - yarn publish --new-version $CI_COMMIT_TAG
+    - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+    - npm publish --verbose
 
