@@ -12,6 +12,9 @@ RUN yarn build
 # Clean packages cache dirs
 RUN rm -rf /app/.yarn
 
+# Expose public port which is 5000 by default in zeit/serve
+EXPOSE 5000
+
 # Pass all commands through yarn
 ENTRYPOINT ["yarn"]
 
