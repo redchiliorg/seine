@@ -1,0 +1,8 @@
+dist/
+public/
+src/
+Dockerfile
+rollup.config.js
+serve.json
+.*
+

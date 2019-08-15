@@ -1,22 +1,27 @@
 {
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
-  "version": "0.1.0",
+  "version": "0.1.5",
+  "keywords": [
+    "react",
+    "richtext"
+  ],
   "main": "lib/Seine.cjs.js",
   "module": "lib/Seine.esm.js",
   "repository": "redchiliorg/seine",
   "license": "MIT",
   "scripts": {
     "start": "serve",
-    "build": "run-s build:*",
+    "dev": "run-s dev:*",
+    "test": "run-s test:*",
+    "build": "run-s build:storybook build:demos",
+    "prepublish": "run-p build:cjs build:esm build:umd",
     "build:cjs": "rollup --environment NODE_ENV:production,FORMAT:cjs,DIR:lib -c",
     "build:esm": "rollup --environment NODE_ENV:production,FORMAT:esm,DIR:lib -c",
     "build:umd": "rollup --environment NODE_ENV:production,FORMAT:umd,DIR:lib -c",
     "build:storybook": "build-storybook -s public -o dist",
     "build:demos": "rollup --environment NODE_ENV:production,FORMAT:umd,DIR:dist -c",
-    "dev": "run-s dev:*",
     "dev:start": "start-storybook -p 9009 -s public",
-    "test": "run-s test:*",
     "test:eslint": "eslint --format unix ./src"
   },
   "dependencies": {
