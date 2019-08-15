@@ -7,26 +7,15 @@ import Content from './Content';
 import { toRawContent } from './Draft.helpers';
 import { defaultPieData } from './Pie.stories';
 
-const titleBlocks = [
-  {
-    id: '0',
-    parent_id: null,
-    type: blockTypes.GRID,
-    data: {
-      columns: 'repeat(2, minmax(320px, 0.5fr))',
-      justifyContent: 'center',
-    },
+const title = {
+  id: 'title',
+  parent_id: null,
+  type: blockTypes.DRAFT,
+  data: {
+    textAlignment: 'center',
+    body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
   },
-  {
-    id: 'title',
-    parent_id: '0',
-    type: blockTypes.DRAFT,
-    data: {
-      textAlignment: 'center',
-      body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
-    },
-  },
-];
+};
 
 const grid = {
   id: '1',
@@ -84,7 +73,7 @@ storiesOf('Content', module)
   .add('2-col grid: pie | draft', () => (
     <Content component={component}>
       {[
-        ...titleBlocks,
+        title,
         grid,
         {
           ...knobPie(pie),
