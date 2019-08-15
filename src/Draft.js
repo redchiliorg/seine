@@ -8,7 +8,6 @@ import withPropsOnChange from 'recompose/withPropsOnChange';
 import withStateHandlers from 'recompose/withStateHandlers';
 import { Editor, EditorState, CompositeDecorator } from 'draft-js';
 
-import 'draft-js/dist/Draft.css';
 import { toRawContent, toDraftEditor } from './Draft.helpers';
 import { imageDecorator } from './Draft.decorators';
 
@@ -39,7 +38,7 @@ const enhance = compose(
 /**
  * Компонент для рендеринга контента на основе RawDraftContentState.
  */
-function Draft(props: *) {
+function DraftEditor(props: *) {
   const { provider: Provider, ...editor } = props;
   if (Provider) {
     return (
@@ -51,4 +50,4 @@ function Draft(props: *) {
   return <Editor {...editor} />;
 }
 
-export default enhance(Draft);
+export default enhance(DraftEditor);

@@ -1,29 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Seine
+=====
 
-### Установка:
-1. Node.js
+Seine is a Javascript library of React components and utilities
+to view and edit structured content.
+
+Installation
+------------
+
 ```bash
-apt-get install nodejs
+npm install --save-dev redchiliorg/seine
 ```
-1. Менеждер пакетов
+or
 ```bash
-npm i -g yarn
-```
-1. Зависимости
-```bash
-yarn install
+yarn add --dev redchiliorg/seine
 ```
 
-### Команды:
-1. Запуск storybooks на localhost:9090
+Serve Storybook
+---------------
+To build and start static server at port 5000 run
+
 ```bash
-yarn start
+npm build
+npm start -l 5000
 ```
-1. Запуск тестов
-```bash
-yarn test
+or
 ```
-1. Сборка статики в `./storybook-static/`
-```bash
 yarn build
+yarn start -l 5000
 ```
+
+For other options see `yarn start --help` command output.
