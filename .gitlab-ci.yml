@@ -4,6 +4,8 @@ stages:
   - build-stable
 
 test:
+  except:
+    - tags
   stage: test
   image: node:8-alpine
   before_script:
@@ -33,7 +35,7 @@ publish:
   only:
     - tags
   stage: build
-  image: node:8-alpine
+  image: node:10-alpine
   before_script:
     - yarn install
   script:
