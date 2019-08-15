@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import PieItem from './PieItem';
+import PieSlice from './PieSlice';
 
 Pie.defaultProps = {
   fontSize: 18,
@@ -18,7 +18,7 @@ export default function Pie(props) {
   return (
     <svg viewBox={`0 0 ${size} ${size}`}>
       {children.map((item, index) => (
-        <PieItem
+        <PieSlice
           {...item}
           cx={size / 2}
           cy={size / 2}

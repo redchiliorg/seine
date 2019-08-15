@@ -5,7 +5,7 @@ import { polarToCartesian, describeArc } from './Pie.helpers';
 /**
  * Компонент элемента источник значения для pie-диаграмы
  **/
-export default function PieItem(props) {
+export default function PieSlice(props) {
   const { color, fontSize, percent, title, cx, cy, r, start, end } = props;
   const [textX, textY] = polarToCartesian(
     cx,
