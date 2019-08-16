@@ -1,17 +1,18 @@
 // @flow
 import { compose } from 'recompose';
 import {
-  EditorState,
   ContentState,
   convertFromHTML,
   convertFromRaw,
   convertToRaw,
+  EditorState,
 } from 'draft-js';
-
-export type RawContent = $Call<typeof convertToRaw, ContentState>;
+import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 
 /**
- * Преобразует значение в EditorState draft-js
+ * @description Transform a value to editor state of draft-js.
+ * @param {any} value
+ * @returns {EditorState}
  */
 export function toDraftEditor(value: any) {
   if (value && value instanceof EditorState) {
@@ -19,8 +20,11 @@ export function toDraftEditor(value: any) {
   }
   return EditorState.createWithContent(toDraftContent(value));
 }
+
 /**
- * Преобразует значение в ContentState draft-js
+ * @description Transform a value to content state of draft-js.
+ * @param {any} value
+ * @returns {ContentState}
  */
 export function toDraftContent(value: any) {
   value = value || '';
@@ -48,9 +52,11 @@ export function toDraftContent(value: any) {
 }
 
 /**
- *  Преобразует значение в js-примитив (объект rawContent)
+ *  @description Transform a value to serializable content state of draft-js.
+ *  @param {any} value
+ *  @returns {RawDraftContentState}
  */
-export const toRawContent: (any) => RawContent = compose(
+export const toRawContent: (value: any) => RawDraftContentState = compose(
   convertToRaw,
   toDraftContent
 );

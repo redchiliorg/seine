@@ -3,6 +3,7 @@ public/
 src/
 Dockerfile
 rollup.config.js
+jest.config.js
 serve.json
 .*
 

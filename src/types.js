@@ -1,4 +1,6 @@
 // @flow
+import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
+
 export const blockTypes = {
   DRAFT: 'draft',
   GRID: 'grid',
@@ -8,10 +10,7 @@ export const blockTypes = {
 export type BlockType = $Values<typeof blockTypes>;
 
 export type DraftData = {
-  body: {
-    entityMap: { [string]: mixed },
-    contentBlocks: { [string]: mixed }[],
-  },
+  children: RawDraftContentState,
   textAlignment: 'left' | 'center' | 'right',
 };
 
@@ -24,11 +23,21 @@ export type GridData = {
   rowGap?: string,
 };
 
-export type Data = GridData | DraftData;
+export type PieElement = {
+  title: string,
+  percent: number,
+  color: string,
+};
+
+export type PieData = {
+  children: PieElement[],
+};
+
+export type BlockData = GridData | DraftData | PieData;
 
 export type ContentBlock = {
-  data: Data,
   id: string,
-  parent_id: string,
+  data: BlockData,
+  parent_id: string | null,
   type: BlockType,
 };

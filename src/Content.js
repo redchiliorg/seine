@@ -1,38 +1,50 @@
 // @flow
 import * as React from 'react';
 
-import Block from './Block';
 import type { ContentBlock } from './types';
+import { blockTypes } from './types';
+import Grid from './Grid';
+import Draft from './Draft';
+import Pie from './Pie';
 
-type Config = {
-  component: string | React.ElementType,
-};
-
-type Props = Config & {
+type Props = ContentBlock & {
   children: ContentBlock[],
 };
 
-Content.defaultProps = {
-  component: React.Fragment,
-};
-
-export default function Content(props: Props) {
-  const { children } = props;
-  return (
-    <props.component>
-      {children.map(
-        ({ id, data, parent_id, type }) =>
-          !parent_id && (
-            <Block data={data} key={id} type={type}>
-              {children.map(
-                ({ id: childId, data, parent_id, type }) =>
-                  parent_id === id && (
-                    <Block data={data} key={childId} type={type} />
-                  )
-              )}
-            </Block>
-          )
-      )}
-    </props.component>
-  );
+/**
+ * @description Structured content of children.
+ * @param {Props} props
+ * @returns {React.Node}
+ */
+function Content({
+  id = null,
+  type = null,
+  parent_id = null,
+  children = [],
+  data = {},
+}: $Shape<Props>) {
+  children =
+    type === blockTypes.DRAFT ? (
+      <Draft {...data} readOnly>
+        {data.children}
+      </Draft>
+    ) : type === blockTypes.PIE ? (
+      <Pie {...data}>{data.children}</Pie>
+    ) : (
+      children
+        .filter((child) => child['parent_id'] === id)
+        .map((child) => (
+          <Content key={child.id} {...child}>
+            {children.filter(
+              (child) => child.id !== id && child.id !== parent_id
+            )}
+          </Content>
+        ))
+    );
+  if (type === blockTypes.GRID) {
+    return <Grid {...data}>{children}</Grid>;
+  }
+  return children;
 }
+
+export default Content;

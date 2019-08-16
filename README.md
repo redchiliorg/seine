@@ -8,11 +8,11 @@ Installation
 ------------
 
 ```bash
-npm install --save-dev redchiliorg/seine
+npm install react react-dom draft-js seine
 ```
 or
 ```bash
-yarn add --dev redchiliorg/seine
+yarn add react react-dom draft-js seine
 ```
 
 Serve Storybook

@@ -1,0 +1,714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Content 1. Draft 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+    }
+  }
+>
+  <div
+    className="DraftEditor-root"
+  >
+    <div
+      className="DraftEditor-editorContainer"
+    >
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete={null}
+        aria-controls={null}
+        aria-describedby="placeholder-1"
+        aria-expanded={null}
+        aria-owns={null}
+        className="public-DraftEditor-content"
+        contentEditable={false}
+        onBeforeInput={[Function]}
+        onBlur={[Function]}
+        onCompositionEnd={[Function]}
+        onCompositionStart={[Function]}
+        onCopy={[Function]}
+        onCut={[Function]}
+        onDragEnd={[Function]}
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        onKeyDown={[Function]}
+        onKeyPress={[Function]}
+        onKeyUp={[Function]}
+        onMouseUp={[Function]}
+        onPaste={[Function]}
+        onSelect={[Function]}
+        role={null}
+        spellCheck={false}
+        style={
+          Object {
+            "WebkitUserSelect": "text",
+            "outline": "none",
+            "userSelect": "text",
+            "whiteSpace": "pre-wrap",
+            "wordWrap": "break-word",
+          }
+        }
+        suppressContentEditableWarning={true}
+      >
+        <div
+          data-contents="true"
+        >
+          <div
+            className=""
+            data-block={true}
+            data-editor="1"
+            data-offset-key="1-0-0"
+          >
+            <div
+              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+              data-offset-key="1-0-0"
+            >
+              <span
+                data-offset-key="1-0-0"
+                style={Object {}}
+              >
+                <span
+                  data-text="true"
+                >
+                  powered by an immutable model and abstracting over cross-browser differences.
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content 2. Pie 1`] = `
+<svg
+  viewBox="0 0 360 360"
+>
+  <g>
+    <path
+      d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+      fill="#653867"
+    />
+    <text
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={202.08747316108068}
+      y={124.2134108467049}
+    >
+      <tspan>
+        12
+        %
+      </tspan>
+    </text>
+  </g>
+  <g>
+    <path
+      d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+      fill="#e5002d"
+    />
+    <text
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={232.57840080263182}
+      y={151.0947795538971}
+    >
+      <tspan>
+        10
+        %
+      </tspan>
+    </text>
+  </g>
+  <g>
+    <path
+      d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+      fill="#f80048"
+    />
+    <text
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={239.8816037056963}
+      y={183.7674311717588}
+    >
+      <tspan>
+        8
+        %
+      </tspan>
+    </text>
+  </g>
+  <g>
+    <path
+      d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+      fill="#ff3d69"
+    />
+    <text
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={138.9271736442787}
+      y={223.73811764528472}
+    >
+      <tspan>
+        64
+        %
+      </tspan>
+    </text>
+    <text
+      dy={14}
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={138.9271736442787}
+      y={223.73811764528472}
+    >
+      <tspan>
+        product sales
+      </tspan>
+    </text>
+  </g>
+  <g>
+    <path
+      d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+      fill="#ff6d8c"
+    />
+    <text
+      fill="white"
+      fontSize={14}
+      textAnchor="middle"
+      x={168.75712112485647}
+      y={121.0627649562787}
+    >
+      <tspan>
+        6
+        %
+      </tspan>
+    </text>
+  </g>
+</svg>
+`;
+
+exports[`Storyshots Content 3. Pie and draft 1`] = `
+<div
+  style={
+    Object {
+      "columnGap": 20,
+      "display": "grid",
+      "gridTemplateAreas": "none",
+      "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+      "gridTemplateRows": "",
+      "rowGap": 20,
+    }
+  }
+>
+  <svg
+    viewBox="0 0 360 360"
+  >
+    <g>
+      <path
+        d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+        fill="#653867"
+      />
+      <text
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={202.08747316108068}
+        y={124.2134108467049}
+      >
+        <tspan>
+          12
+          %
+        </tspan>
+      </text>
+    </g>
+    <g>
+      <path
+        d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+        fill="#e5002d"
+      />
+      <text
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={232.57840080263182}
+        y={151.0947795538971}
+      >
+        <tspan>
+          10
+          %
+        </tspan>
+      </text>
+    </g>
+    <g>
+      <path
+        d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+        fill="#f80048"
+      />
+      <text
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={239.8816037056963}
+        y={183.7674311717588}
+      >
+        <tspan>
+          8
+          %
+        </tspan>
+      </text>
+    </g>
+    <g>
+      <path
+        d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+        fill="#ff3d69"
+      />
+      <text
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={138.9271736442787}
+        y={223.73811764528472}
+      >
+        <tspan>
+          64
+          %
+        </tspan>
+      </text>
+      <text
+        dy={14}
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={138.9271736442787}
+        y={223.73811764528472}
+      >
+        <tspan>
+          product sales
+        </tspan>
+      </text>
+    </g>
+    <g>
+      <path
+        d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+        fill="#ff6d8c"
+      />
+      <text
+        fill="white"
+        fontSize={14}
+        textAnchor="middle"
+        x={168.75712112485647}
+        y={121.0627649562787}
+      >
+        <tspan>
+          6
+          %
+        </tspan>
+      </text>
+    </g>
+  </svg>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="DraftEditor-root"
+    >
+      <div
+        className="DraftEditor-editorContainer"
+      >
+        <div
+          aria-activedescendant={null}
+          aria-autocomplete={null}
+          aria-controls={null}
+          aria-describedby="placeholder-1"
+          aria-expanded={null}
+          aria-owns={null}
+          className="public-DraftEditor-content"
+          contentEditable={false}
+          onBeforeInput={[Function]}
+          onBlur={[Function]}
+          onCompositionEnd={[Function]}
+          onCompositionStart={[Function]}
+          onCopy={[Function]}
+          onCut={[Function]}
+          onDragEnd={[Function]}
+          onDragEnter={[Function]}
+          onDragLeave={[Function]}
+          onDragOver={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyDown={[Function]}
+          onKeyPress={[Function]}
+          onKeyUp={[Function]}
+          onMouseUp={[Function]}
+          onPaste={[Function]}
+          onSelect={[Function]}
+          role={null}
+          spellCheck={false}
+          style={
+            Object {
+              "WebkitUserSelect": "text",
+              "outline": "none",
+              "userSelect": "text",
+              "whiteSpace": "pre-wrap",
+              "wordWrap": "break-word",
+            }
+          }
+          suppressContentEditableWarning={true}
+        >
+          <div
+            data-contents="true"
+          >
+            <div
+              className=""
+              data-block={true}
+              data-editor="1"
+              data-offset-key="1-0-0"
+            >
+              <div
+                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                data-offset-key="1-0-0"
+              >
+                <span
+                  data-offset-key="1-0-0"
+                  style={Object {}}
+                >
+                  <span
+                    data-text="true"
+                  >
+                    powered by an immutable model and abstracting over cross-browser differences.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content 4. Draft and titled pie 1`] = `
+<div
+  style={
+    Object {
+      "columnGap": 20,
+      "display": "grid",
+      "gridTemplateAreas": "none",
+      "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+      "gridTemplateRows": "",
+      "rowGap": 20,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="DraftEditor-root"
+    >
+      <div
+        className="DraftEditor-editorContainer"
+      >
+        <div
+          aria-activedescendant={null}
+          aria-autocomplete={null}
+          aria-controls={null}
+          aria-describedby="placeholder-1"
+          aria-expanded={null}
+          aria-owns={null}
+          className="public-DraftEditor-content"
+          contentEditable={false}
+          onBeforeInput={[Function]}
+          onBlur={[Function]}
+          onCompositionEnd={[Function]}
+          onCompositionStart={[Function]}
+          onCopy={[Function]}
+          onCut={[Function]}
+          onDragEnd={[Function]}
+          onDragEnter={[Function]}
+          onDragLeave={[Function]}
+          onDragOver={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          onInput={[Function]}
+          onKeyDown={[Function]}
+          onKeyPress={[Function]}
+          onKeyUp={[Function]}
+          onMouseUp={[Function]}
+          onPaste={[Function]}
+          onSelect={[Function]}
+          role={null}
+          spellCheck={false}
+          style={
+            Object {
+              "WebkitUserSelect": "text",
+              "outline": "none",
+              "userSelect": "text",
+              "whiteSpace": "pre-wrap",
+              "wordWrap": "break-word",
+            }
+          }
+          suppressContentEditableWarning={true}
+        >
+          <div
+            data-contents="true"
+          >
+            <div
+              className=""
+              data-block={true}
+              data-editor="1"
+              data-offset-key="1-0-0"
+            >
+              <div
+                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                data-offset-key="1-0-0"
+              >
+                <span
+                  data-offset-key="1-0-0"
+                  style={Object {}}
+                >
+                  <span
+                    data-text="true"
+                  >
+                    powered by an immutable model and abstracting over cross-browser differences.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "columnGap": 20,
+        "display": "grid",
+        "gridTemplateAreas": "none",
+        "gridTemplateColumns": "",
+        "gridTemplateRows": "",
+        "rowGap": 20,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "start",
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        className="DraftEditor-root DraftEditor-alignCenter"
+      >
+        <div
+          className="DraftEditor-editorContainer"
+        >
+          <div
+            aria-activedescendant={null}
+            aria-autocomplete={null}
+            aria-controls={null}
+            aria-describedby="placeholder-1"
+            aria-expanded={null}
+            aria-owns={null}
+            className="public-DraftEditor-content"
+            contentEditable={false}
+            onBeforeInput={[Function]}
+            onBlur={[Function]}
+            onCompositionEnd={[Function]}
+            onCompositionStart={[Function]}
+            onCopy={[Function]}
+            onCut={[Function]}
+            onDragEnd={[Function]}
+            onDragEnter={[Function]}
+            onDragLeave={[Function]}
+            onDragOver={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            onMouseUp={[Function]}
+            onPaste={[Function]}
+            onSelect={[Function]}
+            role={null}
+            spellCheck={false}
+            style={
+              Object {
+                "WebkitUserSelect": "text",
+                "outline": "none",
+                "userSelect": "text",
+                "whiteSpace": "pre-wrap",
+                "wordWrap": "break-word",
+              }
+            }
+            suppressContentEditableWarning={true}
+          >
+            <div
+              data-contents="true"
+            >
+              <h2
+                className=""
+                data-block={true}
+                data-editor="1"
+                data-offset-key="1-0-0"
+              >
+                <div
+                  className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                  data-offset-key="1-0-0"
+                >
+                  <span
+                    data-offset-key="1-0-0"
+                    style={Object {}}
+                  >
+                    <span
+                      data-text="true"
+                    >
+                      V2. London income - Year 8 - 3,400,000
+                    </span>
+                  </span>
+                </div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      viewBox="0 0 360 360"
+    >
+      <g>
+        <path
+          d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+          fill="#653867"
+        />
+        <text
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={202.08747316108068}
+          y={124.2134108467049}
+        >
+          <tspan>
+            12
+            %
+          </tspan>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+          fill="#e5002d"
+        />
+        <text
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={232.57840080263182}
+          y={151.0947795538971}
+        >
+          <tspan>
+            10
+            %
+          </tspan>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+          fill="#f80048"
+        />
+        <text
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={239.8816037056963}
+          y={183.7674311717588}
+        >
+          <tspan>
+            8
+            %
+          </tspan>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+          fill="#ff3d69"
+        />
+        <text
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={138.9271736442787}
+          y={223.73811764528472}
+        >
+          <tspan>
+            64
+            %
+          </tspan>
+        </text>
+        <text
+          dy={14}
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={138.9271736442787}
+          y={223.73811764528472}
+        >
+          <tspan>
+            product sales
+          </tspan>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+          fill="#ff6d8c"
+        />
+        <text
+          fill="white"
+          fontSize={14}
+          textAnchor="middle"
+          x={168.75712112485647}
+          y={121.0627649562787}
+        >
+          <tspan>
+            6
+            %
+          </tspan>
+        </text>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
