@@ -1,1 +1,4 @@
-{ "presets": ["react-app"] }
+{
+  "presets": ["react-app"],
+  "plugins": ["macros"]
+}

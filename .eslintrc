@@ -2,12 +2,16 @@
   "extends": [
     "react-app",
     "plugin:import/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jsdoc/recommended"
   ],
   "rules": {
     "import/order": ["error", { "newlines-between": "always" }],
     "no-console": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react-hooks/rules-of-hooks": "error"
+    "react-hooks/rules-of-hooks": "error",
+    "jsdoc/require-returns-description": false,
+    "jsdoc/require-param-description": false,
+    "jsdoc/require-description": ["warn", { "descriptionStyle": "tag" }]
   }
 }

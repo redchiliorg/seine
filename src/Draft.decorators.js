@@ -1,8 +1,19 @@
+// @flow
 import * as React from 'react';
+import typeof { ContentBlock, ContentState } from 'draft-js';
 
 export const imageDecorator = {
-  /** Декорировать все блоки типа IMAGE. */
-  strategy(contentBlock: *, callback: *, contentState: *) {
+  /**
+   * @description Decorate all IMAGE blocks.
+   * @param {ContentBlock} contentBlock
+   * @param {Function} callback
+   * @param {ContentState} contentState
+   **/
+  strategy(
+    contentBlock: ContentBlock,
+    callback: *,
+    contentState: ContentState
+  ) {
     contentBlock.findEntityRanges((meta) => {
       const entityKey = meta.getEntity();
       return (
@@ -12,8 +23,12 @@ export const imageDecorator = {
     }, callback);
   },
 
-  /** Отображать их как img во флексбоксе. */
-  component({ contentState, entityKey }) {
+  /**
+   * @description Component for IMAGE blocks.
+   * @param {{contentState: ContentState, entityKey: string}} props
+   * @returns {React.Node}
+   **/
+  component({ contentState, entityKey }: *) {
     const { src } = contentState.getEntity(entityKey).getData();
     return (
       <div style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>

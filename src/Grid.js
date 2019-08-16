@@ -3,37 +3,35 @@ import * as React from 'react';
 
 import type { GridData } from './types';
 
-type Config = {
-  breakpointId?: string,
-  breakpoints?: string[],
+type Props = GridData & {
+  children: React.ChildrenArray<React.Node>,
 };
 
-type Props = Config &
-  (GridData & {
-    children: React.ChildrenArray<React.Node>,
-  });
-
-Grid.defaultProps = ({
-  areas: 'none',
-  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
-  rows: '',
-  columnGap: 20,
-  rowGap: 20,
-}: Config);
-
-export default function Grid(props: Props) {
-  const { areas, columns, rows, ...style } = props;
+/**
+ * @description Grid container content component.
+ * @param {Props} props
+ * @returns {React.Node}
+ */
+export default function Grid({
+  children,
+  rows = '',
+  columns = '',
+  areas = 'none',
+  columnGap = 20,
+  rowGap = 20,
+}: Props) {
   return (
     <div
       style={{
         display: 'grid',
-        gridTemplateAreas: props.areas,
-        gridTemplateColumns: props.columns,
-        gridTemplateRows: props.rows,
-        ...style,
+        gridTemplateAreas: areas,
+        gridTemplateColumns: columns,
+        gridTemplateRows: rows,
+        columnGap,
+        rowGap,
       }}
     >
-      {props.children}
+      {children}
     </div>
   );
 }

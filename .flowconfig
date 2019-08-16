@@ -7,6 +7,5 @@
 [lints]
 
 [options]
-module.file_ext=.js
 
 [strict]

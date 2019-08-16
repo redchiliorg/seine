@@ -1,53 +1,52 @@
 // @flow
 import * as React from 'react';
-import compose from 'recompose/compose';
-import mapProps from 'recompose/mapProps';
-import defaultProps from 'recompose/defaultProps';
-import setDisplayName from 'recompose/setDisplayName';
-import withPropsOnChange from 'recompose/withPropsOnChange';
-import withStateHandlers from 'recompose/withStateHandlers';
-import { Editor, EditorState, CompositeDecorator } from 'draft-js';
+import { CompositeDecorator, Editor, EditorState } from 'draft-js';
+import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
+import type { DraftDecorator } from 'draft-js/lib/DraftDecorator';
 
-import { toRawContent, toDraftEditor } from './Draft.helpers';
+import { toDraftEditor, toRawContent } from './Draft.helpers';
 import { imageDecorator } from './Draft.decorators';
 
-const enhance = compose(
-  defaultProps({
-    children: '',
-    decorators: [imageDecorator],
-    editable: false,
-  }),
-  withPropsOnChange(['children'], ({ children, decorators }) => ({
-    editorState: EditorState.set(toDraftEditor(children), {
-      decorator: new CompositeDecorator(decorators),
-    }),
-  })),
-  withStateHandlers(({ editorState }) => ({ editorState }), {
-    onChange: ({ onChange }) => (editorState) => {
-      onChange && onChange(toRawContent(editorState));
-      return { editorState };
-    },
-  }),
-  mapProps(({ children, decorators, editable, ...props }) => ({
-    ...props,
-    readOnly: !editable,
-  })),
-  setDisplayName('Draft')
-);
+type Props = $Shape<$Rest<DraftEditorProps, {| editorState: * |}>> & {
+  children: mixed,
+  decorators?: $ReadOnlyArray<DraftDecorator>,
+  verticalAlignment: 'start' | 'center' | 'end',
+};
 
 /**
- * Компонент для рендеринга контента на основе RawDraftContentState.
+ * @description Draft block component.
+ * @param {Props} props
+ * @returns {React.Node}
  */
-function DraftEditor(props: *) {
-  const { provider: Provider, ...editor } = props;
-  if (Provider) {
-    return (
-      <Provider value={{ editorState: editor.editorState }}>
-        <Editor {...editor} />
-      </Provider>
-    );
-  }
-  return <Editor {...editor} />;
-}
+export default function Draft({
+  children,
+  onChange,
+  decorators = [imageDecorator],
+  verticalAlignment = 'start',
+  ...editorProps
+}: Props) {
+  const [editorState, setEditorState] = React.useState(
+    React.useMemo(
+      () =>
+        EditorState.set(toDraftEditor(children), {
+          decorator: new CompositeDecorator(decorators),
+        }),
+      [children, decorators]
+    )
+  );
 
-export default enhance(DraftEditor);
+  React.useEffect(() => onChange && onChange(toRawContent(editorState)), [
+    editorState,
+    onChange,
+  ]);
+
+  return (
+    <div style={{ display: 'flex', alignItems: verticalAlignment }}>
+      <Editor
+        {...editorProps}
+        editorState={editorState}
+        onChange={setEditorState}
+      />
+    </div>
+  );
+}
