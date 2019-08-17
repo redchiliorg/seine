@@ -7,44 +7,40 @@ import Grid from './Grid';
 import Draft from './Draft';
 import Pie from './Pie';
 
-type Props = ContentBlock & {
+export type Props = {
+  blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
+  parent?: string,
   children: ContentBlock[],
 };
 
+export const defaultBlockRenderMap = {
+  [blockTypes.DRAFT]: Draft,
+  [blockTypes.GRID]: Grid,
+  [blockTypes.PIE]: Pie,
+};
+
 /**
- * @description Structured content of children.
+ * @description Structured content.
  * @param {Props} props
  * @returns {React.Node}
  */
 function Content({
-  id = null,
-  type = null,
-  parent_id = null,
-  children = [],
-  data = {},
-}: $Shape<Props>) {
-  children =
-    type === blockTypes.DRAFT ? (
-      <Draft {...data} readOnly>
-        {data.children}
-      </Draft>
-    ) : type === blockTypes.PIE ? (
-      <Pie {...data}>{data.children}</Pie>
-    ) : (
-      children
-        .filter((child) => child['parent_id'] === id)
-        .map((child) => (
-          <Content key={child.id} {...child}>
-            {children.filter(
-              (child) => child.id !== id && child.id !== parent_id
-            )}
+  blockRenderMap = defaultBlockRenderMap,
+  parent = null,
+  children,
+}: Props) {
+  return children
+    .filter((block) => block['parent_id'] === parent)
+    .map((block) => {
+      const Block = blockRenderMap[block.type];
+      return (
+        <Block key={block.id} {...block.data}>
+          <Content parent={block.id} blockRenderMap={blockRenderMap}>
+            {children.filter((content) => content.id !== block.id)}
           </Content>
-        ))
-    );
-  if (type === blockTypes.GRID) {
-    return <Grid {...data}>{children}</Grid>;
-  }
-  return children;
+        </Block>
+      );
+    });
 }
 
 export default Content;

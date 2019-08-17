@@ -10,7 +10,7 @@ export const blockTypes = {
 export type BlockType = $Values<typeof blockTypes>;
 
 export type DraftData = {
-  children: RawDraftContentState,
+  body: RawDraftContentState,
   textAlignment: 'left' | 'center' | 'right',
 };
 
@@ -30,7 +30,7 @@ export type PieElement = {
 };
 
 export type PieData = {
-  children: PieElement[],
+  elements: PieElement[],
 };
 
 export type BlockData = GridData | DraftData | PieData;

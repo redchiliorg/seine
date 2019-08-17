@@ -7,7 +7,7 @@ export const title = {
   type: blockTypes.DRAFT,
   data: {
     textAlignment: 'center',
-    children: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
+    body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
   },
 };
 
@@ -15,7 +15,7 @@ export const grid = {
   id: 'grid',
   parent_id: null,
   type: blockTypes.GRID,
-  data: {},
+  data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' },
 };
 
 export const pie = {
@@ -23,7 +23,7 @@ export const pie = {
   parent_id: null,
   type: blockTypes.PIE,
   data: {
-    children: [
+    elements: [
       { title: 'repairs', percent: 12, color: '#653867' },
       { title: 'consulting', percent: 10, color: '#e5002d' },
       { title: 'training', percent: 8, color: '#f80048' },
@@ -41,7 +41,7 @@ export const draft = {
   type: blockTypes.DRAFT,
   data: {
     verticalAlignment: 'center',
-    children: toRawContent(
+    body: toRawContent(
       'This block is draft.js content. Click here to edit the text.' +
         '\n\n' +
         'We are planning to add text formatting toolbar soon.' +

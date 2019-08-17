@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import type { GridData } from './types';
 
-type Props = GridData & {
+export type Props = GridData & {
   children: React.ChildrenArray<React.Node>,
 };
 
