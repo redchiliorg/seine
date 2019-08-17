@@ -1,13 +1,13 @@
 {
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "keywords": [
     "react",
     "richtext"
   ],
-  "main": "lib/Seine.cjs.js",
-  "module": "lib/Seine.esm.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
   "repository": "redchiliorg/seine",
   "license": "MIT",
   "scripts": {
@@ -27,10 +27,12 @@
   },
   "dependencies": {
     "recompose": "^0.30.0",
-    "serve": "^11.1.0"
+    "serve": "^11.1.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
+    "@storybook/addon-actions": "^5.1.11",
     "@storybook/addon-storyshots": "^5.1.11",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
@@ -67,11 +69,13 @@
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.0.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "draft-js": "^0.11.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
   }
 }

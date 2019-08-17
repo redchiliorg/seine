@@ -7,10 +7,13 @@ import type { DraftDecorator } from 'draft-js/lib/DraftDecorator';
 import { toDraftEditor, toRawContent } from './Draft.helpers';
 import { imageDecorator } from './Draft.decorators';
 
-type Props = $Shape<$Rest<DraftEditorProps, {| editorState: * |}>> & {
-  children: mixed,
-  decorators?: $ReadOnlyArray<DraftDecorator>,
-  verticalAlignment: 'start' | 'center' | 'end',
+type Config = $Rest<DraftEditorProps, {| editorState: EditorState |}> & {
+  decorators?: DraftDecorator[],
+  verticalAlignment?: 'start' | 'center' | 'end',
+};
+
+export type Props = $Shape<Config> & {
+  body: any,
 };
 
 /**
@@ -19,19 +22,21 @@ type Props = $Shape<$Rest<DraftEditorProps, {| editorState: * |}>> & {
  * @returns {React.Node}
  */
 export default function Draft({
+  body,
   children,
   onChange,
   decorators = [imageDecorator],
   verticalAlignment = 'start',
+  readOnly = true,
   ...editorProps
 }: Props) {
   const [editorState, setEditorState] = React.useState(
     React.useMemo(
       () =>
-        EditorState.set(toDraftEditor(children), {
+        EditorState.set(toDraftEditor(body), {
           decorator: new CompositeDecorator(decorators),
         }),
-      [children, decorators]
+      [body, decorators]
     )
   );
 
@@ -41,12 +46,11 @@ export default function Draft({
   ]);
 
   return (
-    <div style={{ display: 'flex', alignItems: verticalAlignment }}>
-      <Editor
-        {...editorProps}
-        editorState={editorState}
-        onChange={setEditorState}
-      />
-    </div>
+    <Editor
+      {...editorProps}
+      readOnly={readOnly}
+      editorState={editorState}
+      onChange={setEditorState}
+    />
   );
 }

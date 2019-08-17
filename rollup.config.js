@@ -6,7 +6,7 @@ import { peerDependencies } from './package.json';
 
 const format = process.env.FORMAT;
 const dir = process.env.DIR;
-const name = 'Seine';
+const name = 'index';
 
 export default {
   input: `src/${name}.js`,
@@ -19,6 +19,7 @@ export default {
         react: 'React',
         'react-dom': 'ReactDOM',
         'draft-js': 'Draft',
+        'styled-components': 'styled',
       },
       name,
     }),

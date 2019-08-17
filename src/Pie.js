@@ -3,8 +3,8 @@ import * as React from 'react';
 import { polarToCartesian, describeArc } from './Pie.helpers';
 import type { PieElement } from './types';
 
-type Props = {
-  children: PieElement[],
+export type Props = {
+  elements: PieElement[],
   fontSize?: number,
   padding?: number,
 };
@@ -14,7 +14,7 @@ type Props = {
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function Pie({ children, fontSize = 18, padding = 20 }: Props) {
+export default function Pie({ elements, fontSize = 18, padding = 20 }: Props) {
   const size = 360;
   const cx = size / 2;
   const cy = size / 2;
@@ -23,7 +23,7 @@ export default function Pie({ children, fontSize = 18, padding = 20 }: Props) {
 
   return (
     <svg viewBox={`0 0 ${size} ${size}`}>
-      {children.map(({ title, percent, color }: PieElement, index) => {
+      {elements.map(({ title, percent, color }: PieElement, index) => {
         const start = end;
         end += (percent * size) / 100;
         const [textX, textY] = polarToCartesian(
