@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import type { Props } from './Content';
+import type { Props as ContentProps } from './Content';
 import Content, { defaultBlockRenderMap } from './Content';
 import { blockTypes } from './types';
 import DraftEditor from './DraftEditor';
@@ -14,7 +14,11 @@ import PieEditor from './PieEditor';
 import PieActions from './PieActions';
 import ContentActions from './ContentActions';
 
-const Container = styled.div`
+type Props = ContentProps & {
+  as?: React.ComponentType,
+};
+
+const DefaultContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -58,6 +62,7 @@ export default function ContentEditor({
     [blockTypes.DRAFT]: DraftEditor,
     [blockTypes.GRID]: GridEditor,
   },
+  as: Container = DefaultContainer,
   ...contentProps
 }: Props) {
   const [blocks, dispatch] = React.useReducer(reduce, children);

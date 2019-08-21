@@ -1,4 +1,3 @@
-import Content from './Content';
-import ContentEditor from './ContentEditor';
-
-export { Content, ContentEditor };
+export * from './types';
+export { default as Content } from './Content';
+export { default as ContentEditor } from './ContentEditor';
