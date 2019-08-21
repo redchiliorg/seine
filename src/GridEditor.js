@@ -6,7 +6,7 @@ import Grid from './Grid';
 
 type Props = GridProps & {
   id: string,
-  onChange: Function,
+  dispatch: Function,
   selected: boolean,
 };
 
@@ -17,7 +17,7 @@ type Props = GridProps & {
  */
 export default function GridEditor({
   id,
-  onChange,
+  dispatch,
   selected,
   children,
   ...gridProps

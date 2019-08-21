@@ -2,19 +2,33 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import type { Props as PeiProps } from './Pie';
-import { useBlockSelection } from './helpers';
+import type { Props as PieProps } from './Pie';
 import Pie from './Pie';
+import { useBlockSelection } from './helpers';
+import reduce from './reducers/pie';
+import type { PieElement } from './types';
+import PieSliceEditor from './PieSliceEditor';
+import { UPDATE_BLOCK_DATA } from './reducers/content';
+import type { Action } from './reducers/pie';
 
-type Props = PeiProps & {
+type Props = {
   id: string,
-  onChange: Function,
+  dispatch: Function,
   selected: boolean,
-};
+  edit: boolean,
+} & PieProps;
 
 const Container = styled.div`
+  position: relative;
   border: ${({ selected }) =>
     selected ? '1px dashed blue' : '1px solid transparent'};
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
 `;
 
 /**
@@ -22,16 +36,66 @@ const Container = styled.div`
  * @param {Props} props
  * @returns {React.Node}
  */
-export function PieEditor({
+export default function PieEditor({
   id,
-  onChange,
+  dispatch,
   selected,
-  children,
-  ...pieProps
+  elements,
+  fontColor = 'white',
+  fontSize = 18,
+  padding = 20,
+  size = 360,
+  edit = false,
 }: Props) {
+  const overlay = React.useRef<HTMLDivElement>(null);
+  const dispatchPie = React.useCallback(
+    (action: Action) => {
+      dispatch({
+        type: UPDATE_BLOCK_DATA,
+        id,
+        data: { elements: reduce(elements, action) },
+      });
+    },
+    [dispatch, elements, id]
+  );
+
+  let angle = 0;
   return (
-    <Container {...useBlockSelection(selected, onChange, id)}>
-      <Pie {...pieProps}>{children}</Pie>
+    <Container {...useBlockSelection(id, dispatch, selected)}>
+      <Overlay ref={overlay} />
+      {edit ? (
+        <svg viewBox={`0 0 ${size} ${size}`}>
+          {elements.map(({ title, percent, color }: PieElement, index) => {
+            const step = (percent * size) / 100;
+            angle += step;
+            return (
+              <PieSliceEditor
+                key={index}
+                title={title}
+                color={color}
+                index={index}
+                fontSize={fontSize}
+                fontColor={fontColor}
+                padding={padding}
+                percent={percent}
+                size={size}
+                angle={angle - step}
+                step={step}
+                dispatch={dispatchPie}
+                overlay={overlay.current}
+              />
+            );
+          })}
+        </svg>
+      ) : (
+        <Pie
+          elements={elements}
+          fontSize={fontSize}
+          fontColor={fontColor}
+          padding={padding}
+          size={size}
+        />
+      )}
     </Container>
   );
 }

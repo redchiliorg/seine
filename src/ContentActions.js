@@ -1,57 +1,15 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
 
 import { blockTypes } from './types';
-import ActionButton from './ActionButton';
-import Paper from './Paper';
 import { toDraftContent } from './Draft.helpers';
-import type { Action } from './reducers/editor';
-import {
-  CREATE_BLOCK,
-  CREATE_BLOCKS_TREE,
-  DELETE_SELECTED,
-} from './reducers/editor';
+import type { Action } from './reducers/content';
+import { CREATE_BLOCK, CREATE_BLOCKS_TREE } from './reducers/content';
+import Toolbar from './ui/Toolbar';
 
 type Props = {
-  onChange: (Action) => any,
+  dispatch: (Action) => any,
 };
-
-const Toolbar = styled(Paper)`
-  border-radius: 2px;
-  display: flex;
-  background-color: darkgray;
-  transition: opacity 0.15s;
-  padding: 1rem 1rem calc(1rem + 5px);
-`;
-
-const ToolbarGroup = styled.div`
-  padding: 0.25rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ToolbarLabel = styled.label`
-  font-weight: 600;
-  margin-right: 0.5rem;
-  align-self: center;
-`;
-
-const ToolbarActionButton = styled(ActionButton)`
-  color: rgb(255, 255, 255, 0.75);
-  background-color: ${({ color }: { color?: 'danger' }) =>
-    color === 'danger' ? 'rgb(128, 0, 0, 0.75)' : 'rgb(0, 0, 0, 0.75)'};
-  border-radius: 4px;
-  flex-grow: 0.25;
-  padding: 0.07rem 0.5rem;
-  margin: 0.25rem 0;
-  :not(:last-child) {
-    margin-right: 0.5rem;
-  }
-  :hover {
-    opacity: 0.75;
-  }
-`;
 
 const pie = {
   type: blockTypes.GRID,
@@ -83,29 +41,28 @@ const pie = {
           },
         ],
         fontSize: 14,
+        padding: 60,
       },
+      selected: true,
     },
   ],
 };
 
 /**
- * @description Toolbar of predefined content templates.
+ * @description Default toolbar with predefined content block layouts.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentEditorToolbar({
-  onChange,
-  hasSelected = false,
-}: Props) {
+export default function ContentActions({ dispatch }: Props) {
   return (
-    <Toolbar>
-      <ToolbarGroup>
-        <ToolbarLabel>Rich text ↓</ToolbarLabel>
+    <>
+      <Toolbar.Group>
+        <Toolbar.Label>Rich text ↓</Toolbar.Label>
 
-        <ToolbarActionButton
+        <Toolbar.ActionButton
           title={'Add text block'}
-          onChange={onChange}
-          value={{
+          dispatch={dispatch}
+          action={{
             type: CREATE_BLOCK,
             block: {
               type: blockTypes.DRAFT,
@@ -113,16 +70,17 @@ export default function ContentEditorToolbar({
                 body: 'Rich text',
                 verticalAlignment: 'center',
               },
+              selected: true,
             },
           }}
         >
           txt
-        </ToolbarActionButton>
+        </Toolbar.ActionButton>
 
-        <ToolbarActionButton
+        <Toolbar.ActionButton
           title={'Add sibling text blocks'}
-          onChange={onChange}
-          value={{
+          dispatch={dispatch}
+          action={{
             type: CREATE_BLOCKS_TREE,
             children: [
               {
@@ -135,6 +93,7 @@ export default function ContentEditorToolbar({
                       body: 'First column text content',
                       verticalAlignment: 'center',
                     },
+                    selected: true,
                   },
                   {
                     type: blockTypes.DRAFT,
@@ -142,6 +101,7 @@ export default function ContentEditorToolbar({
                       body: 'Second column text content',
                       verticalAlignment: 'center',
                     },
+                    selected: true,
                   },
                 ],
               },
@@ -149,27 +109,27 @@ export default function ContentEditorToolbar({
           }}
         >
           txt | txt
-        </ToolbarActionButton>
-      </ToolbarGroup>
+        </Toolbar.ActionButton>
+      </Toolbar.Group>
 
-      <ToolbarGroup>
-        <ToolbarLabel>Charts ↓</ToolbarLabel>
+      <Toolbar.Group>
+        <Toolbar.Label>Charts ↓</Toolbar.Label>
 
-        <ToolbarActionButton
+        <Toolbar.ActionButton
           title={'Titled pie'}
-          onChange={onChange}
-          value={{
+          dispatch={dispatch}
+          action={{
             type: CREATE_BLOCKS_TREE,
             children: [pie],
           }}
         >
           pie
-        </ToolbarActionButton>
+        </Toolbar.ActionButton>
 
-        <ToolbarActionButton
+        <Toolbar.ActionButton
           title={'Add titled pie with description'}
-          onChange={onChange}
-          value={{
+          dispatch={dispatch}
+          action={{
             type: CREATE_BLOCKS_TREE,
             children: [
               {
@@ -187,12 +147,12 @@ export default function ContentEditorToolbar({
           }}
         >
           pie | txt
-        </ToolbarActionButton>
+        </Toolbar.ActionButton>
 
-        <ToolbarActionButton
+        <Toolbar.ActionButton
           title={'Add description with titled pie'}
-          onChange={onChange}
-          value={{
+          dispatch={dispatch}
+          action={{
             type: CREATE_BLOCKS_TREE,
             children: [
               {
@@ -210,25 +170,8 @@ export default function ContentEditorToolbar({
           }}
         >
           txt | pie
-        </ToolbarActionButton>
-      </ToolbarGroup>
-
-      {hasSelected && (
-        <ToolbarGroup>
-          <ToolbarLabel>Selected block</ToolbarLabel>
-
-          <ToolbarActionButton
-            color={'danger'}
-            title={'Delete current selection'}
-            onChange={onChange}
-            value={{
-              type: DELETE_SELECTED,
-            }}
-          >
-            Delete
-          </ToolbarActionButton>
-        </ToolbarGroup>
-      )}
-    </Toolbar>
+        </Toolbar.ActionButton>
+      </Toolbar.Group>
+    </>
   );
 }

@@ -8,11 +8,11 @@ Installation
 ------------
 
 ```bash
-npm install react react-dom draft-js seine
+npm install react react-dom draft-js styled-components seine
 ```
 or
 ```bash
-yarn add react react-dom draft-js seine
+yarn add react react-dom draft-js styled-components seine
 ```
 
 Serve Storybook
