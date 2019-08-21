@@ -2,28 +2,28 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-gzVnrw kplApE"
+  className="sc-iwsKbI HHFSv"
 >
   <div
-    className="sc-bwzfXH sc-htpNat iNJKUF"
+    className="sc-htpNat sc-bxivhb jPtSLP"
   >
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Rich text ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add text block"
       >
         txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add sibling text blocks"
       >
@@ -31,29 +31,29 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Charts ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Titled pie"
       >
         pie
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add titled pie with description"
       >
         pie | txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add description with titled pie"
       >
@@ -62,7 +62,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH sc-htoDjs eTuJcl"
+    className="sc-htpNat sc-gZMcBi dhHVRr"
   >
     <div
       style={
@@ -82,28 +82,28 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-gzVnrw kplApE"
+  className="sc-iwsKbI HHFSv"
 >
   <div
-    className="sc-bwzfXH sc-htpNat iNJKUF"
+    className="sc-htpNat sc-bxivhb jPtSLP"
   >
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Rich text ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add text block"
       >
         txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add sibling text blocks"
       >
@@ -111,29 +111,29 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Charts ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Titled pie"
       >
         pie
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add titled pie with description"
       >
         pie | txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add description with titled pie"
       >
@@ -142,12 +142,12 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH sc-htoDjs eTuJcl"
+    className="sc-htpNat sc-gZMcBi dhHVRr"
   >
     <div
       className="sc-bdVaJa iZcSbx"
       id="draft"
-      onClick={[Function]}
+      selected={false}
     >
       <div
         className="DraftEditor-root"
@@ -229,28 +229,28 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-gzVnrw kplApE"
+  className="sc-iwsKbI HHFSv"
 >
   <div
-    className="sc-bwzfXH sc-htpNat iNJKUF"
+    className="sc-htpNat sc-bxivhb jPtSLP"
   >
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Rich text ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add text block"
       >
         txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add sibling text blocks"
       >
@@ -258,29 +258,29 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Charts ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Titled pie"
       >
         pie
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add titled pie with description"
       >
         pie | txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add description with titled pie"
       >
@@ -289,13 +289,16 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH sc-htoDjs eTuJcl"
+    className="sc-htpNat sc-gZMcBi dhHVRr"
   >
     <div
-      className="sc-bZQynM djDLqY"
+      className="sc-htoDjs ixDWlM"
       id="pie"
-      onClick={[Function]}
+      selected={false}
     >
+      <div
+        className="sc-dnqmqq kyLrty"
+      />
       <svg
         viewBox="0 0 360 360"
       >
@@ -305,16 +308,24 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="#653867"
           />
           <text
-            fill="white"
+            fill="black"
             fontSize={14}
             textAnchor="middle"
-            x={202.08747316108068}
-            y={124.2134108467049}
+            x={238.89992842954845}
+            y={31.23576225787977}
           >
-            <tspan>
-              12
-              %
-            </tspan>
+            12
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={238.89992842954845}
+            y={31.23576225787977}
+          >
+            repairs
           </text>
         </g>
         <g>
@@ -323,16 +334,24 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="#e5002d"
           />
           <text
-            fill="white"
+            fill="black"
             fontSize={14}
             textAnchor="middle"
-            x={232.57840080263182}
-            y={151.0947795538971}
+            x={320.2090688070182}
+            y={102.91941214372557}
           >
-            <tspan>
-              10
-              %
-            </tspan>
+            10
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={320.2090688070182}
+            y={102.91941214372557}
+          >
+            consulting
           </text>
         </g>
         <g>
@@ -341,21 +360,29 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="#f80048"
           />
           <text
-            fill="white"
+            fill="black"
             fontSize={14}
             textAnchor="middle"
-            x={239.8816037056963}
-            y={183.7674311717588}
+            x={339.6842765485235}
+            y={190.04648312469016}
           >
-            <tspan>
-              8
-              %
-            </tspan>
+            8
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={339.6842765485235}
+            y={190.04648312469016}
+          >
+            training
           </text>
         </g>
         <g>
           <path
-            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
             fill="#ff3d69"
           />
           <text
@@ -365,22 +392,18 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             x={138.9271736442787}
             y={223.73811764528472}
           >
-            <tspan>
-              64
-              %
-            </tspan>
+            64
+            %
           </text>
           <text
             dy={14}
             fill="white"
-            fontSize={14}
+            fontSize={10.5}
             textAnchor="middle"
             x={138.9271736442787}
             y={223.73811764528472}
           >
-            <tspan>
-              product sales
-            </tspan>
+            product sales
           </text>
         </g>
         <g>
@@ -389,16 +412,24 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="#ff6d8c"
           />
           <text
-            fill="white"
+            fill="black"
             fontSize={14}
             textAnchor="middle"
-            x={168.75712112485647}
-            y={121.0627649562787}
+            x={150.01898966628391}
+            y={22.834039883409844}
           >
-            <tspan>
-              6
-              %
-            </tspan>
+            6
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={150.01898966628391}
+            y={22.834039883409844}
+          >
+            others
           </text>
         </g>
       </svg>
@@ -409,28 +440,28 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-gzVnrw kplApE"
+  className="sc-iwsKbI HHFSv"
 >
   <div
-    className="sc-bwzfXH sc-htpNat iNJKUF"
+    className="sc-htpNat sc-bxivhb jPtSLP"
   >
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Rich text ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add text block"
       >
         txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add sibling text blocks"
       >
@@ -438,29 +469,29 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Charts ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Titled pie"
       >
         pie
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add titled pie with description"
       >
         pie | txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add description with titled pie"
       >
@@ -469,7 +500,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH sc-htoDjs eTuJcl"
+    className="sc-htpNat sc-gZMcBi dhHVRr"
   >
     <div
       style={
@@ -484,10 +515,13 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-bZQynM djDLqY"
+        className="sc-htoDjs ixDWlM"
         id="pie"
-        onClick={[Function]}
+        selected={false}
       >
+        <div
+          className="sc-dnqmqq kyLrty"
+        />
         <svg
           viewBox="0 0 360 360"
         >
@@ -497,16 +531,24 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="#653867"
             />
             <text
-              fill="white"
+              fill="black"
               fontSize={14}
               textAnchor="middle"
-              x={202.08747316108068}
-              y={124.2134108467049}
+              x={238.89992842954845}
+              y={31.23576225787977}
             >
-              <tspan>
-                12
-                %
-              </tspan>
+              12
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={238.89992842954845}
+              y={31.23576225787977}
+            >
+              repairs
             </text>
           </g>
           <g>
@@ -515,16 +557,24 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="#e5002d"
             />
             <text
-              fill="white"
+              fill="black"
               fontSize={14}
               textAnchor="middle"
-              x={232.57840080263182}
-              y={151.0947795538971}
+              x={320.2090688070182}
+              y={102.91941214372557}
             >
-              <tspan>
-                10
-                %
-              </tspan>
+              10
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={320.2090688070182}
+              y={102.91941214372557}
+            >
+              consulting
             </text>
           </g>
           <g>
@@ -533,21 +583,29 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="#f80048"
             />
             <text
-              fill="white"
+              fill="black"
               fontSize={14}
               textAnchor="middle"
-              x={239.8816037056963}
-              y={183.7674311717588}
+              x={339.6842765485235}
+              y={190.04648312469016}
             >
-              <tspan>
-                8
-                %
-              </tspan>
+              8
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={339.6842765485235}
+              y={190.04648312469016}
+            >
+              training
             </text>
           </g>
           <g>
             <path
-              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
               fill="#ff3d69"
             />
             <text
@@ -557,22 +615,18 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               x={138.9271736442787}
               y={223.73811764528472}
             >
-              <tspan>
-                64
-                %
-              </tspan>
+              64
+              %
             </text>
             <text
               dy={14}
               fill="white"
-              fontSize={14}
+              fontSize={10.5}
               textAnchor="middle"
               x={138.9271736442787}
               y={223.73811764528472}
             >
-              <tspan>
-                product sales
-              </tspan>
+              product sales
             </text>
           </g>
           <g>
@@ -581,16 +635,24 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="#ff6d8c"
             />
             <text
-              fill="white"
+              fill="black"
               fontSize={14}
               textAnchor="middle"
-              x={168.75712112485647}
-              y={121.0627649562787}
+              x={150.01898966628391}
+              y={22.834039883409844}
             >
-              <tspan>
-                6
-                %
-              </tspan>
+              6
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={150.01898966628391}
+              y={22.834039883409844}
+            >
+              others
             </text>
           </g>
         </svg>
@@ -598,7 +660,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       <div
         className="sc-bdVaJa iZcSbx"
         id="draft"
-        onClick={[Function]}
+        selected={false}
       >
         <div
           className="DraftEditor-root"
@@ -681,28 +743,28 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-gzVnrw kplApE"
+  className="sc-iwsKbI HHFSv"
 >
   <div
-    className="sc-bwzfXH sc-htpNat iNJKUF"
+    className="sc-htpNat sc-bxivhb jPtSLP"
   >
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Rich text ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add text block"
       >
         txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add sibling text blocks"
       >
@@ -710,29 +772,29 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb bEMOBc"
+      className="sc-ifAKCX jnKNWa"
     >
       <label
-        className="sc-ifAKCX bgcYIt"
+        className="sc-EHOje cHKBal"
       >
         Charts ↓
       </label>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Titled pie"
       >
         pie
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add titled pie with description"
       >
         pie | txt
       </button>
       <button
-        className="sc-EHOje fiCSeW"
+        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
         onClick={[Function]}
         title="Add description with titled pie"
       >
@@ -741,7 +803,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH sc-htoDjs eTuJcl"
+    className="sc-htpNat sc-gZMcBi dhHVRr"
   >
     <div
       style={
@@ -758,7 +820,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       <div
         className="sc-bdVaJa iZcSbx"
         id="draft"
-        onClick={[Function]}
+        selected={false}
       >
         <div
           className="DraftEditor-root"
@@ -849,7 +911,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         <div
           className="sc-bdVaJa iZcSbx"
           id="title"
-          onClick={[Function]}
+          selected={false}
         >
           <div
             className="DraftEditor-root DraftEditor-alignCenter"
@@ -926,10 +988,13 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
           </div>
         </div>
         <div
-          className="sc-bZQynM djDLqY"
+          className="sc-htoDjs ixDWlM"
           id="pie"
-          onClick={[Function]}
+          selected={false}
         >
+          <div
+            className="sc-dnqmqq kyLrty"
+          />
           <svg
             viewBox="0 0 360 360"
           >
@@ -939,16 +1004,24 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="#653867"
               />
               <text
-                fill="white"
+                fill="black"
                 fontSize={14}
                 textAnchor="middle"
-                x={202.08747316108068}
-                y={124.2134108467049}
+                x={238.89992842954845}
+                y={31.23576225787977}
               >
-                <tspan>
-                  12
-                  %
-                </tspan>
+                12
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={238.89992842954845}
+                y={31.23576225787977}
+              >
+                repairs
               </text>
             </g>
             <g>
@@ -957,16 +1030,24 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="#e5002d"
               />
               <text
-                fill="white"
+                fill="black"
                 fontSize={14}
                 textAnchor="middle"
-                x={232.57840080263182}
-                y={151.0947795538971}
+                x={320.2090688070182}
+                y={102.91941214372557}
               >
-                <tspan>
-                  10
-                  %
-                </tspan>
+                10
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={320.2090688070182}
+                y={102.91941214372557}
+              >
+                consulting
               </text>
             </g>
             <g>
@@ -975,21 +1056,29 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="#f80048"
               />
               <text
-                fill="white"
+                fill="black"
                 fontSize={14}
                 textAnchor="middle"
-                x={239.8816037056963}
-                y={183.7674311717588}
+                x={339.6842765485235}
+                y={190.04648312469016}
               >
-                <tspan>
-                  8
-                  %
-                </tspan>
+                8
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={339.6842765485235}
+                y={190.04648312469016}
+              >
+                training
               </text>
             </g>
             <g>
               <path
-                d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+                d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
                 fill="#ff3d69"
               />
               <text
@@ -999,22 +1088,18 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 x={138.9271736442787}
                 y={223.73811764528472}
               >
-                <tspan>
-                  64
-                  %
-                </tspan>
+                64
+                %
               </text>
               <text
                 dy={14}
                 fill="white"
-                fontSize={14}
+                fontSize={10.5}
                 textAnchor="middle"
                 x={138.9271736442787}
                 y={223.73811764528472}
               >
-                <tspan>
-                  product sales
-                </tspan>
+                product sales
               </text>
             </g>
             <g>
@@ -1023,16 +1108,24 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="#ff6d8c"
               />
               <text
-                fill="white"
+                fill="black"
                 fontSize={14}
                 textAnchor="middle"
-                x={168.75712112485647}
-                y={121.0627649562787}
+                x={150.01898966628391}
+                y={22.834039883409844}
               >
-                <tspan>
-                  6
-                  %
-                </tspan>
+                6
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={150.01898966628391}
+                y={22.834039883409844}
+              >
+                others
               </text>
             </g>
           </svg>

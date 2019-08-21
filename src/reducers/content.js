@@ -8,6 +8,7 @@ export const CREATE_BLOCKS_TREE = 'seine/editor/createBlocksTree';
 export const DELETE_SELECTED = 'seine/editor/deleteSelected';
 export const SELECT_BLOCK = 'seine/editor/selectBlock';
 export const DESELECT_BLOCK = 'seine/editor/deselectBlock';
+export const UPDATE_BLOCK_DATA = 'seine/editor/updateBlockData';
 
 export const initialState = [];
 
@@ -31,15 +32,22 @@ type SelectBlockAction = {
   id: string,
 };
 type DeselectBlockAction = {
-  type: typeof SELECT_BLOCK,
+  type: typeof DESELECT_BLOCK,
   id: string,
 };
+type UpdateBlockDataAction = {
+  type: typeof UPDATE_BLOCK_DATA,
+  id: string,
+  data: BlockData,
+};
+export type State = $ReadOnlyArray<ContentBlock>;
 export type Action =
   | CreateBlockAction
   | CreateBlocksTreeAction
   | DeleteSelectedBlockAction
   | SelectBlockAction
-  | DeselectBlockAction;
+  | DeselectBlockAction
+  | UpdateBlockDataAction;
 
 /**
  * @description Create a block of the parent.
@@ -55,7 +63,7 @@ function createBlock(block, parent_id = null) {
  * @description Create blocks from tree.
  * @param {BlocksTree[]} children
  * @param {string} parent_id
- * @returns {BlockData[]}
+ * @returns {ContentBlock[]}
  */
 function createBlocksTree(children: BlocksTree[], parent_id = null) {
   return children.reduce((acc, { children, ...block }) => {
@@ -69,34 +77,58 @@ function createBlocksTree(children: BlocksTree[], parent_id = null) {
 }
 
 /**
- * @description Reduce Content editor actions
- * @param {BlockData[]} state
- * @param {Action} action
- * @returns {BlockData[]}
+ * @description Set `selected` of a block found by `id` in `state`.
+ * @param {number} id
+ * @param {boolean} selected
+ * @param {State} state
+ * @returns {State}
  */
-export default function reduce(
-  state: BlockData[] = initialState,
-  action: Action
-) {
+function setBlockSelected(id, selected, state) {
+  const index = state.findIndex(
+    (block) => block.id === id && block.selected !== selected
+  );
+  if (index === -1) {
+    return state;
+  }
+  return [
+    ...state.slice(0, index),
+    { ...state[index], selected },
+    ...state.slice(index + 1),
+  ];
+}
+
+/**
+ * @description Reduce Content editor actions
+ * @param {State} state
+ * @param {Action} action
+ * @returns {State}
+ */
+export default function reduce(state: State = initialState, action: Action) {
   switch (action.type) {
+    case SELECT_BLOCK:
+      return setBlockSelected(action.id, true, state);
+    case DESELECT_BLOCK:
+      return setBlockSelected(action.id, false, state);
     case CREATE_BLOCK:
       return [...state, createBlock(action.block)];
+    case CREATE_BLOCKS_TREE: {
+      const blocks = createBlocksTree(action.children);
+      if (blocks.length) {
+        return [...state, ...blocks];
+      }
+      return state;
+    }
     case DELETE_SELECTED:
-      return state.filter((block) => !block.selected);
-    case SELECT_BLOCK:
+      if (state.some(({ selected }) => selected)) {
+        return state.filter(({ selected }) => !selected);
+      }
+      return state;
+    case UPDATE_BLOCK_DATA:
       return state.map((block) =>
-        block.id === action.id && !block.selected
-          ? { ...block, selected: true }
+        block.id === action.id
+          ? { ...block, data: { ...block.data, ...action.data } }
           : block
       );
-    case DESELECT_BLOCK:
-      return state.map((block) =>
-        block.id === action.id && block.selected
-          ? { ...block, selected: false }
-          : block
-      );
-    case CREATE_BLOCKS_TREE:
-      return [...state, ...createBlocksTree(action.children)];
     default:
       return state;
   }

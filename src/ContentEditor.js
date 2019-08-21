@@ -7,10 +7,12 @@ import Content, { defaultBlockRenderMap } from './Content';
 import { blockTypes } from './types';
 import DraftEditor from './DraftEditor';
 import GridEditor from './GridEditor';
-import ContentEditorToolbar from './ContentEditorToolbar';
-import Paper from './Paper';
-import reduce from './reducers/editor';
-import { PieEditor } from './PieEditor';
+import Toolbar from './ui/Toolbar';
+import Paper from './ui/Paper';
+import reduce, { DELETE_SELECTED } from './reducers/content';
+import PieEditor from './PieEditor';
+import PieActions from './PieActions';
+import ContentActions from './ContentActions';
 
 const Container = styled.div`
   display: flex;
@@ -23,6 +25,8 @@ const Container = styled.div`
 const ContentPaper = styled(Paper)`
   width: 100%;
   flex-grow: 1;
+  max-height: 40rem;
+  overflow: hidden auto;
   :before {
     content: '';
     background-color: white;
@@ -32,6 +36,12 @@ const ContentPaper = styled(Paper)`
     position: relative;
     margin-top: -25px;
     margin-left: -20px;
+  }
+  :after {
+    content: '';
+    display: block;
+    width: calc(100% + 40px);
+    height: 20px;
   }
 `;
 
@@ -50,19 +60,37 @@ export default function ContentEditor({
   },
   ...contentProps
 }: Props) {
-  const [blocks, onChange] = React.useReducer(reduce, children);
+  const [blocks, dispatch] = React.useReducer(reduce, children);
+  const selectedBlock = blocks.find(({ selected }) => selected);
+
   return (
     <Container>
-      <ContentEditorToolbar
-        onChange={onChange}
-        hasSelected={blocks.some(({ selected }) => selected)}
-      />
+      <Toolbar>
+        <ContentActions dispatch={dispatch} />
+        {!!selectedBlock && (
+          <Toolbar.Group>
+            <Toolbar.Label>Selected block</Toolbar.Label>
+            {selectedBlock.type === blockTypes.PIE && (
+              <PieActions {...selectedBlock} dispatch={dispatch} />
+            )}
+            <Toolbar.ActionButton
+              color={'danger'}
+              title={'Delete current selection'}
+              dispatch={dispatch}
+              action={{ type: DELETE_SELECTED }}
+            >
+              Delete
+            </Toolbar.ActionButton>
+          </Toolbar.Group>
+        )}
+      </Toolbar>
+
       <ContentPaper>
         <Content {...contentProps} blockRenderMap={blockRenderMap}>
           {blocks.map(({ id, data, selected, ...block }) => ({
             ...block,
             id,
-            data: { ...data, id, selected, onChange },
+            data: { ...data, id, selected, dispatch },
           }))}
         </Content>
       </ContentPaper>

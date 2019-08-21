@@ -1,75 +1,46 @@
 // @flow
 import { useCallback, useRef, useEffect } from 'react';
 
-import { DESELECT_BLOCK, SELECT_BLOCK } from './reducers/editor';
+import { DESELECT_BLOCK, SELECT_BLOCK } from './reducers/content';
 
 /**
  * @description Use block selection target props
- *
- * @param {boolean} selected
- * @param {Function} onChange
  * @param {string} id
+ * @param {boolean} selected
+ * @param {Function} dispatch
  * @returns {{onClick: *, id: *, selected: *}}
  */
 export function useBlockSelection(
-  selected: boolean,
-  onChange: Function,
-  id: string
+  id: string,
+  dispatch: Function,
+  selected: boolean = false
 ) {
-  const ref = useRef();
-  const onClick = useCallback(
-    () => !selected && onChange({ type: SELECT_BLOCK, id }),
-    [selected, onChange, id]
-  );
-  useEventListener('click', (event: SyntheticMouseEvent) => {
-    if (
-      selected &&
-      (!ref.current ||
-        (event.target !== ref.current && !ref.current.contains(event.target)))
-    ) {
-      event.preventDefault();
-      onChange({ type: DESELECT_BLOCK, id });
-    }
-  });
-  return { id, onClick, selected, ref };
-}
+  const target = useRef();
 
-/**
- * @description Use event listener callback (https://usehooks.com/)
- *
- * @param {string} eventName
- * @param {Function} handler
- * @param {Element} element
- */
-export function useEventListener(eventName, handler, element = global) {
-  // Create a ref that stores handler
-  const savedHandler = useRef();
-
-  // Update ref.current value if handler changes.
-  // This allows our effect below to always get latest handler ...
-  // ... without us needing to pass it in effect deps array ...
-  // ... and potentially cause effect to re-run every render.
-  useEffect(() => {
-    savedHandler.current = handler;
-  }, [handler]);
-
-  useEffect(
-    () => {
-      // Make sure element supports addEventListener
-      const isSupported = element && element.addEventListener;
-      if (!isSupported) return;
-
-      // Create event listener that calls handler function stored in ref
-      const eventListener = (event) => savedHandler.current(event);
-
-      // Add event listener
-      element.addEventListener(eventName, eventListener);
-
-      // Remove event listener on cleanup
-      return () => {
-        element.removeEventListener(eventName, eventListener);
-      };
+  const globalClickListener = useCallback(
+    (event: SyntheticMouseEvent) => {
+      if (dispatch) {
+        if (
+          target.current &&
+          (event.target === target.current ||
+            target.current.contains(event.target))
+        ) {
+          dispatch({ type: SELECT_BLOCK, id });
+        } else {
+          dispatch({ type: DESELECT_BLOCK, id });
+        }
+      }
     },
-    [eventName, element] // Re-run if eventName or element changes
+    [dispatch, id]
   );
+
+  useEffect(() => {
+    const listener = globalClickListener;
+    global.addEventListener('click', listener);
+    return () => {
+      global.removeEventListener('click', listener);
+    };
+  }, [globalClickListener]);
+
+  return { id, selected, ref: target };
 }
