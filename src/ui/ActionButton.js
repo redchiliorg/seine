@@ -18,11 +18,13 @@ type Props = {
 export default function ActionButton({
   action,
   dispatch,
+  type = 'button',
   ...buttonProps
 }: Props) {
   return (
     <Button
       {...buttonProps}
+      type={type}
       onClick={React.useCallback(
         (event) => {
           event.stopPropagation();
