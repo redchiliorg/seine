@@ -1,51 +1,32 @@
 // @flow
+import 'muicss/dist/css/mui.css';
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
-import type { Props as ContentProps } from './Content';
+import type { Props } from './Content';
 import Content, { defaultBlockRenderMap } from './Content';
 import { blockTypes } from './types';
 import DraftEditor from './DraftEditor';
 import GridEditor from './GridEditor';
-import Toolbar from './ui/Toolbar';
 import Paper from './ui/Paper';
-import reduce, { DELETE_SELECTED } from './reducers/content';
+import reduce from './reducers/content';
 import PieEditor from './PieEditor';
-import PieActions from './PieActions';
-import ContentActions from './ContentActions';
+import PieToolbar from './PieToolbar';
+import ContentToolbar from './ContentToolbar';
+import DraftToolbar from './DraftToolbar';
+import DraftEditorContext, { useDraftEditorState } from './DraftEditorContext';
 
-type Props = ContentProps & {
-  as?: React.ComponentType,
-};
-
-const DefaultContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+const Container = styled.div`
   width: 75%;
-  min-height: 25rem;
-  position: relative;
 `;
 
 const ContentPaper = styled(Paper)`
-  width: 100%;
-  flex-grow: 1;
   max-height: 40rem;
   overflow: hidden auto;
-  :before {
-    content: '';
-    background-color: white;
-    display: block;
-    width: calc(100% + 40px);
-    height: 25px;
-    position: relative;
-    margin-top: -25px;
-    margin-left: -20px;
-  }
   :after {
     content: '';
-    display: block;
-    width: calc(100% + 40px);
-    height: 20px;
+    display: inline-block;
+    height: 1.5em;
   }
 `;
 
@@ -62,43 +43,46 @@ export default function ContentEditor({
     [blockTypes.DRAFT]: DraftEditor,
     [blockTypes.GRID]: GridEditor,
   },
-  as: Container = DefaultContainer,
+  theme = {
+    palette: {
+      text: '#C8C8C8',
+    },
+  },
+  onChange,
   ...contentProps
 }: Props) {
   const [blocks, dispatch] = React.useReducer(reduce, children);
+
+  React.useEffect(() => {
+    onChange && onChange(blocks);
+  }, [blocks, onChange]);
+
   const selectedBlock = blocks.find(({ selected }) => selected);
 
   return (
-    <Container>
-      <Toolbar>
-        <ContentActions dispatch={dispatch} />
-        {!!selectedBlock && (
-          <Toolbar.Group>
-            <Toolbar.Label>Selected block</Toolbar.Label>
-            {selectedBlock.type === blockTypes.PIE && (
-              <PieActions {...selectedBlock} dispatch={dispatch} />
-            )}
-            <Toolbar.ActionButton
-              color={'danger'}
-              title={'Delete current selection'}
-              dispatch={dispatch}
-              action={{ type: DELETE_SELECTED }}
-            >
-              Delete
-            </Toolbar.ActionButton>
-          </Toolbar.Group>
-        )}
-      </Toolbar>
-
-      <ContentPaper>
-        <Content {...contentProps} blockRenderMap={blockRenderMap}>
-          {blocks.map(({ id, data, selected, ...block }) => ({
-            ...block,
-            id,
-            data: { ...data, id, selected, dispatch },
-          }))}
-        </Content>
-      </ContentPaper>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <DraftEditorContext.Provider
+        value={useDraftEditorState(selectedBlock, dispatch)}
+      >
+        <Container>
+          {selectedBlock && selectedBlock.type === blockTypes.PIE ? (
+            <PieToolbar {...selectedBlock} dispatch={dispatch} />
+          ) : selectedBlock && selectedBlock.type === blockTypes.DRAFT ? (
+            <DraftToolbar {...selectedBlock} dispatch={dispatch} />
+          ) : (
+            <ContentToolbar dispatch={dispatch} />
+          )}
+          <ContentPaper>
+            <Content {...contentProps} blockRenderMap={blockRenderMap}>
+              {blocks.map(({ id, data, selected, ...block }) => ({
+                ...block,
+                id,
+                data: { ...data, id, selected, dispatch },
+              }))}
+            </Content>
+          </ContentPaper>
+        </Container>
+      </DraftEditorContext.Provider>
+    </ThemeProvider>
   );
 }

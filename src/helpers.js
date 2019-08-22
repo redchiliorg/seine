@@ -6,15 +6,10 @@ import { DESELECT_BLOCK, SELECT_BLOCK } from './reducers/content';
 /**
  * @description Use block selection target props
  * @param {string} id
- * @param {boolean} selected
  * @param {Function} dispatch
  * @returns {{onClick: *, id: *, selected: *}}
  */
-export function useBlockSelection(
-  id: string,
-  dispatch: Function,
-  selected: boolean = false
-) {
+export function useBlockSelection(id: string, dispatch: Function) {
   const target = useRef();
 
   const globalClickListener = useCallback(
@@ -42,5 +37,5 @@ export function useBlockSelection(
     };
   }, [globalClickListener]);
 
-  return { id, selected, ref: target };
+  return { id, ref: target };
 }

@@ -20,8 +20,8 @@ type Props = {
 
 const Container = styled.div`
   position: relative;
-  border: ${({ selected }) =>
-    selected ? '1px dashed blue' : '1px solid transparent'};
+  border: ${({ isSelected }) =>
+    isSelected ? '1px dashed blue' : '1px solid transparent'};
 `;
 
 const Overlay = styled.div`
@@ -61,7 +61,7 @@ export default function PieEditor({
 
   let angle = 0;
   return (
-    <Container {...useBlockSelection(id, dispatch, selected)}>
+    <Container {...useBlockSelection(id, dispatch)} isSelected={selected}>
       <Overlay ref={overlay} />
       {edit ? (
         <svg viewBox={`0 0 ${size} ${size}`}>

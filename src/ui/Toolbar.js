@@ -1,35 +1,53 @@
 // @flow
+import * as React from 'react';
 import styled from 'styled-components';
 
 import ActionButton from './ActionButton';
+import Button from './Button';
 import Paper from './Paper';
 
-const Toolbar = styled(Paper)`
-  border-radius: 2px;
+const Container = styled(Paper)`
+  && {
+    background-color: ${({ theme }) => theme.palette.text};
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   display: flex;
-  background-color: darkgray;
-  transition: opacity 0.15s;
-  padding: 1em 1em calc(1em + 5px);
+  padding-left: 1em;
+  padding-right: 1em;
 `;
 
 Toolbar.Group = styled.div`
-  padding: 0.25em 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
-Toolbar.Label = styled.label`
-  font-weight: 600;
-  margin-right: 0.5em;
-  align-self: center;
+Toolbar.Separator = styled.div`
+  border-right: 1px solid white;
+  border-left: 1px solid gray;
+  width: 2px;
+  margin: 0.5em;
+  opacity: ${({ transparent = false }) => (transparent ? 0 : 1.0)};
 `;
 
-Toolbar.ActionButton = styled(ActionButton)`
-  margin: 0.25em 0;
-  flex-grow: 0.25;
-  :not(:last-child) {
-    margin-right: 0.5em;
-  }
-`;
+const ToolbarButton = (Toolbar.Button = styled(Button)``);
 
-export default Toolbar;
+Toolbar.ActionButton = (props) => (
+  <ToolbarButton as={ActionButton} {...props} size={'small'} />
+);
+
+/**
+ * @description Toolbar
+ * @param {any} props
+ * @returns {React.Node}
+ */
+export default function Toolbar(props: any) {
+  return (
+    <Container
+      onClick={React.useCallback((event) => event.stopPropagation(), [])}
+      {...props}
+    />
+  );
+}

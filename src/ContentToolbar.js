@@ -53,12 +53,10 @@ const pie = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentActions({ dispatch }: Props) {
+export default function ContentToolbar({ dispatch }: Props) {
   return (
-    <>
+    <Toolbar>
       <Toolbar.Group>
-        <Toolbar.Label>Rich text ↓</Toolbar.Label>
-
         <Toolbar.ActionButton
           title={'Add text block'}
           dispatch={dispatch}
@@ -74,7 +72,7 @@ export default function ContentActions({ dispatch }: Props) {
             },
           }}
         >
-          txt
+          + text
         </Toolbar.ActionButton>
 
         <Toolbar.ActionButton
@@ -108,13 +106,13 @@ export default function ContentActions({ dispatch }: Props) {
             ],
           }}
         >
-          txt | txt
+          + 2 text columns
         </Toolbar.ActionButton>
       </Toolbar.Group>
 
-      <Toolbar.Group>
-        <Toolbar.Label>Charts ↓</Toolbar.Label>
+      <Toolbar.Separator />
 
+      <Toolbar.Group>
         <Toolbar.ActionButton
           title={'Titled pie'}
           dispatch={dispatch}
@@ -123,7 +121,7 @@ export default function ContentActions({ dispatch }: Props) {
             children: [pie],
           }}
         >
-          pie
+          + pie chart
         </Toolbar.ActionButton>
 
         <Toolbar.ActionButton
@@ -146,7 +144,7 @@ export default function ContentActions({ dispatch }: Props) {
             ],
           }}
         >
-          pie | txt
+          + pie chart & text
         </Toolbar.ActionButton>
 
         <Toolbar.ActionButton
@@ -169,9 +167,9 @@ export default function ContentActions({ dispatch }: Props) {
             ],
           }}
         >
-          txt | pie
+          + text & pie chart
         </Toolbar.ActionButton>
       </Toolbar.Group>
-    </>
+    </Toolbar>
   );
 }

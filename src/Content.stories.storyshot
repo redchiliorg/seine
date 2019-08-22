@@ -2,78 +2,28 @@
 
 exports[`Storyshots Content 1. Draft 1`] = `
 <div
-  className="DraftEditor-root"
+  className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
 >
   <div
-    className="DraftEditor-editorContainer"
+    data-contents="true"
   >
     <div
-      aria-activedescendant={null}
-      aria-autocomplete={null}
-      aria-controls={null}
-      aria-describedby="placeholder-1"
-      aria-expanded={null}
-      aria-owns={null}
-      className="public-DraftEditor-content"
-      contentEditable={false}
-      onBeforeInput={[Function]}
-      onBlur={[Function]}
-      onCompositionEnd={[Function]}
-      onCompositionStart={[Function]}
-      onCopy={[Function]}
-      onCut={[Function]}
-      onDragEnd={[Function]}
-      onDragEnter={[Function]}
-      onDragLeave={[Function]}
-      onDragOver={[Function]}
-      onDragStart={[Function]}
-      onDrop={[Function]}
-      onFocus={[Function]}
-      onInput={[Function]}
-      onKeyDown={[Function]}
-      onKeyPress={[Function]}
-      onKeyUp={[Function]}
-      onMouseUp={[Function]}
-      onPaste={[Function]}
-      onSelect={[Function]}
-      role={null}
-      spellCheck={false}
-      style={
-        Object {
-          "WebkitUserSelect": "text",
-          "outline": "none",
-          "userSelect": "text",
-          "whiteSpace": "pre-wrap",
-          "wordWrap": "break-word",
-        }
-      }
-      suppressContentEditableWarning={true}
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="1-0-0"
     >
       <div
-        data-contents="true"
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="1-0-0"
       >
-        <div
-          className=""
-          data-block={true}
-          data-editor="1"
+        <span
           data-offset-key="1-0-0"
+          style={Object {}}
         >
-          <div
-            className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-            data-offset-key="1-0-0"
-          >
-            <span
-              data-offset-key="1-0-0"
-              style={Object {}}
-            >
-              <span
-                data-text="true"
-              >
-                powered by an immutable model and abstracting over cross-browser differences.
-              </span>
-            </span>
-          </div>
-        </div>
+          <br
+            data-text="true"
+          />
+        </span>
       </div>
     </div>
   </div>
@@ -365,78 +315,28 @@ exports[`Storyshots Content 3. Pie and draft 1`] = `
     </g>
   </svg>
   <div
-    className="DraftEditor-root"
+    className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
   >
     <div
-      className="DraftEditor-editorContainer"
+      data-contents="true"
     >
       <div
-        aria-activedescendant={null}
-        aria-autocomplete={null}
-        aria-controls={null}
-        aria-describedby="placeholder-1"
-        aria-expanded={null}
-        aria-owns={null}
-        className="public-DraftEditor-content"
-        contentEditable={false}
-        onBeforeInput={[Function]}
-        onBlur={[Function]}
-        onCompositionEnd={[Function]}
-        onCompositionStart={[Function]}
-        onCopy={[Function]}
-        onCut={[Function]}
-        onDragEnd={[Function]}
-        onDragEnter={[Function]}
-        onDragLeave={[Function]}
-        onDragOver={[Function]}
-        onDragStart={[Function]}
-        onDrop={[Function]}
-        onFocus={[Function]}
-        onInput={[Function]}
-        onKeyDown={[Function]}
-        onKeyPress={[Function]}
-        onKeyUp={[Function]}
-        onMouseUp={[Function]}
-        onPaste={[Function]}
-        onSelect={[Function]}
-        role={null}
-        spellCheck={false}
-        style={
-          Object {
-            "WebkitUserSelect": "text",
-            "outline": "none",
-            "userSelect": "text",
-            "whiteSpace": "pre-wrap",
-            "wordWrap": "break-word",
-          }
-        }
-        suppressContentEditableWarning={true}
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="1-0-0"
       >
         <div
-          data-contents="true"
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="1-0-0"
         >
-          <div
-            className=""
-            data-block={true}
-            data-editor="1"
+          <span
             data-offset-key="1-0-0"
+            style={Object {}}
           >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="1-0-0"
-            >
-              <span
-                data-offset-key="1-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  powered by an immutable model and abstracting over cross-browser differences.
-                </span>
-              </span>
-            </div>
-          </div>
+            <br
+              data-text="true"
+            />
+          </span>
         </div>
       </div>
     </div>
@@ -458,78 +358,28 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
   }
 >
   <div
-    className="DraftEditor-root"
+    className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
   >
     <div
-      className="DraftEditor-editorContainer"
+      data-contents="true"
     >
       <div
-        aria-activedescendant={null}
-        aria-autocomplete={null}
-        aria-controls={null}
-        aria-describedby="placeholder-1"
-        aria-expanded={null}
-        aria-owns={null}
-        className="public-DraftEditor-content"
-        contentEditable={false}
-        onBeforeInput={[Function]}
-        onBlur={[Function]}
-        onCompositionEnd={[Function]}
-        onCompositionStart={[Function]}
-        onCopy={[Function]}
-        onCut={[Function]}
-        onDragEnd={[Function]}
-        onDragEnter={[Function]}
-        onDragLeave={[Function]}
-        onDragOver={[Function]}
-        onDragStart={[Function]}
-        onDrop={[Function]}
-        onFocus={[Function]}
-        onInput={[Function]}
-        onKeyDown={[Function]}
-        onKeyPress={[Function]}
-        onKeyUp={[Function]}
-        onMouseUp={[Function]}
-        onPaste={[Function]}
-        onSelect={[Function]}
-        role={null}
-        spellCheck={false}
-        style={
-          Object {
-            "WebkitUserSelect": "text",
-            "outline": "none",
-            "userSelect": "text",
-            "whiteSpace": "pre-wrap",
-            "wordWrap": "break-word",
-          }
-        }
-        suppressContentEditableWarning={true}
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="1-0-0"
       >
         <div
-          data-contents="true"
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="1-0-0"
         >
-          <div
-            className=""
-            data-block={true}
-            data-editor="1"
+          <span
             data-offset-key="1-0-0"
+            style={Object {}}
           >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="1-0-0"
-            >
-              <span
-                data-offset-key="1-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  powered by an immutable model and abstracting over cross-browser differences.
-                </span>
-              </span>
-            </div>
-          </div>
+            <br
+              data-text="true"
+            />
+          </span>
         </div>
       </div>
     </div>
@@ -547,78 +397,28 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
     }
   >
     <div
-      className="DraftEditor-root DraftEditor-alignCenter"
+      className="sc-bdVaJa jyeAKq DraftEditor/root DraftEditor/alignCenter"
     >
       <div
-        className="DraftEditor-editorContainer"
+        data-contents="true"
       >
         <div
-          aria-activedescendant={null}
-          aria-autocomplete={null}
-          aria-controls={null}
-          aria-describedby="placeholder-1"
-          aria-expanded={null}
-          aria-owns={null}
-          className="public-DraftEditor-content"
-          contentEditable={false}
-          onBeforeInput={[Function]}
-          onBlur={[Function]}
-          onCompositionEnd={[Function]}
-          onCompositionStart={[Function]}
-          onCopy={[Function]}
-          onCut={[Function]}
-          onDragEnd={[Function]}
-          onDragEnter={[Function]}
-          onDragLeave={[Function]}
-          onDragOver={[Function]}
-          onDragStart={[Function]}
-          onDrop={[Function]}
-          onFocus={[Function]}
-          onInput={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseUp={[Function]}
-          onPaste={[Function]}
-          onSelect={[Function]}
-          role={null}
-          spellCheck={false}
-          style={
-            Object {
-              "WebkitUserSelect": "text",
-              "outline": "none",
-              "userSelect": "text",
-              "whiteSpace": "pre-wrap",
-              "wordWrap": "break-word",
-            }
-          }
-          suppressContentEditableWarning={true}
+          className="sc-bdVaJa jyeAKq"
+          data-block={true}
+          data-offset-key="1-0-0"
         >
           <div
-            data-contents="true"
+            className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+            data-offset-key="1-0-0"
           >
-            <h2
-              className=""
-              data-block={true}
-              data-editor="1"
+            <span
               data-offset-key="1-0-0"
+              style={Object {}}
             >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="1-0-0"
-              >
-                <span
-                  data-offset-key="1-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    V2. London income - Year 8 - 3,400,000
-                  </span>
-                </span>
-              </div>
-            </h2>
+              <br
+                data-text="true"
+              />
+            </span>
           </div>
         </div>
       </div>
