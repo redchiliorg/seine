@@ -1,21 +1,40 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { Editor } from 'draft-js';
 
-import type { Props as DraftProps } from './Draft';
-import Draft from './Draft';
 import { useBlockSelection } from './helpers';
-import { UPDATE_BLOCK_DATA } from './reducers/content';
+import type { DraftData } from './types';
+import DraftEditorContext from './DraftEditorContext';
+import Draft from './Draft';
 
-type Props = $Rest<DraftProps, {| readOnly: boolean, onChange: * |}> & {
+type Props = DraftData & {
   id: string,
   dispatch: Function,
-  selected: boolean,
 };
 
 const Container = styled.div`
-  border: ${({ selected }) =>
-    selected ? '1px dashed blue' : '1px solid transparent'};
+  .DraftEditor-root {
+    height: 100%;
+  }
+  .public-DraftEditor-content {
+    display: grid;
+    align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
+  }
+  ${({ isSelected }) =>
+    isSelected
+      ? css`
+          border: 1px dashed blue;
+        `
+      : css`
+          border: 1px solid transparent;
+        `}
+  ${({ isSelected, hasSelected }) =>
+    !isSelected &&
+    hasSelected &&
+    css`
+      pointer-events: none;
+    `}
 `;
 
 /**
@@ -26,24 +45,32 @@ const Container = styled.div`
 export default function DraftEditor({
   id,
   dispatch,
-  selected,
   children,
+  body,
   ...draftProps
 }: Props) {
+  const { editorState, setEditorState, ...selectedBlock } = React.useContext(
+    DraftEditorContext
+  );
+  const isSelected = selectedBlock.id === id;
+
   return (
-    <Container {...useBlockSelection(id, dispatch, selected)}>
-      <Draft
-        {...draftProps}
-        onChange={React.useCallback(
-          (body) => {
-            dispatch({ type: UPDATE_BLOCK_DATA, data: { body } });
-          },
-          [dispatch]
-        )}
-        readOnly={false}
-      >
-        {children}
-      </Draft>
+    <Container
+      {...useBlockSelection(id, dispatch)}
+      isSelected={isSelected}
+      hasSelected={!!selectedBlock.id}
+      verticalAlignment={draftProps.verticalAlignment}
+    >
+      {isSelected && !!editorState ? (
+        <Editor
+          {...draftProps}
+          ref={(editor) => editor && editor.focus()}
+          editorState={editorState}
+          onChange={setEditorState}
+        />
+      ) : (
+        <Draft {...draftProps}>{body}</Draft>
+      )}
     </Container>
   );
 }

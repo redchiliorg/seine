@@ -1,56 +1,80 @@
 // @flow
 import * as React from 'react';
-import { CompositeDecorator, Editor, EditorState } from 'draft-js';
-import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
+import styled from 'styled-components';
+import { CompositeDecorator, EditorState } from 'draft-js';
 import type { DraftDecorator } from 'draft-js/lib/DraftDecorator';
+import DraftEditorContents from 'draft-js/lib/DraftEditorContents.react';
+import defaultBlockRenderMap from 'draft-js/lib/DefaultDraftBlockRenderMap';
+import defaultDraftInlineStyle from 'draft-js/lib/DefaultDraftInlineStyle';
+import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
+import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
+import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
+import clsx from 'clsx';
 
-import { toDraftEditor, toRawContent } from './Draft.helpers';
+import { toDraftEditor } from './Draft.helpers';
 import { imageDecorator } from './Draft.decorators';
 
-type Config = $Rest<DraftEditorProps, {| editorState: EditorState |}> & {
+export type Props = DraftEditorProps & {
   decorators?: DraftDecorator[],
   verticalAlignment?: 'start' | 'center' | 'end',
+  children: string | RawDraftContentState,
 };
 
-export type Props = $Shape<Config> & {
-  body: any,
-};
+export default styled(Draft)`
+  display: flex;
+  height: 100%;
+  align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
+  justify-content: ${({ textAlignment = 'left' }: Props) => textAlignment};
+`;
 
 /**
  * @description Draft block component.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function Draft({
-  body,
+function Draft({
   children,
-  onChange,
   decorators = [imageDecorator],
-  verticalAlignment = 'start',
-  readOnly = true,
+  blockRenderMap = defaultBlockRenderMap,
+  blockRendererFn = () => null,
+  blockStyleFn = () => '',
+  keyBindingFn = getDefaultKeyBinding,
+  readOnly = false,
+  spellCheck = false,
+  stripPastedStyles = false,
+  customStyleMap = defaultDraftInlineStyle,
+  className = '',
+  textAlignment = 'left',
   ...editorProps
 }: Props) {
-  const [editorState, setEditorState] = React.useState(
-    React.useMemo(
-      () =>
-        EditorState.set(toDraftEditor(body), {
-          decorator: new CompositeDecorator(decorators),
-        }),
-      [body, decorators]
-    )
-  );
-
-  React.useEffect(() => onChange && onChange(toRawContent(editorState)), [
-    editorState,
-    onChange,
-  ]);
-
   return (
-    <Editor
-      {...editorProps}
-      readOnly={readOnly}
-      editorState={editorState}
-      onChange={setEditorState}
-    />
+    <div
+      className={clsx({
+        [className]: true,
+        'DraftEditor/root': true,
+        'DraftEditor/alignLeft': textAlignment === 'left',
+        'DraftEditor/alignRight': textAlignment === 'right',
+        'DraftEditor/alignCenter': textAlignment === 'center',
+      })}
+    >
+      <DraftEditorContents
+        {...editorProps}
+        blockRenderMap={blockRenderMap}
+        blockRendererFn={blockRendererFn}
+        blockStyleFn={(block) => clsx(blockStyleFn(block), className)}
+        keyBindingFn={keyBindingFn}
+        readOnly={readOnly}
+        spellChek={spellCheck}
+        stripPastedStyles={stripPastedStyles}
+        customStyleMap={customStyleMap}
+        editorState={React.useMemo(
+          () =>
+            EditorState.set(toDraftEditor(children), {
+              decorator: new CompositeDecorator(decorators),
+            }),
+          [children, decorators]
+        )}
+      />
+    </div>
   );
 }

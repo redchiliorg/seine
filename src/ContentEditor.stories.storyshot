@@ -2,72 +2,71 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-iwsKbI HHFSv"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-htpNat sc-bxivhb jPtSLP"
+    className="sc-htpNat sc-gzVnrw mui-panel ceAMvs"
+    onClick={[Function]}
   >
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Rich text ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
-        txt
+        + text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add sibling text blocks"
         type="button"
       >
-        txt | txt
+        + 2 text columns
       </button>
     </div>
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-dnqmqq jwQKaa"
+    />
+    <div
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Charts ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Titled pie"
         type="button"
       >
-        pie
+        + pie chart
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add titled pie with description"
         type="button"
       >
-        pie | txt
+        + pie chart & text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add description with titled pie"
         type="button"
       >
-        txt | pie
+        + text & pie chart
       </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gZMcBi dhHVRr"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -87,147 +86,101 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-iwsKbI HHFSv"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-htpNat sc-bxivhb jPtSLP"
+    className="sc-htpNat sc-gzVnrw mui-panel ceAMvs"
+    onClick={[Function]}
   >
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Rich text ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
-        txt
+        + text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add sibling text blocks"
         type="button"
       >
-        txt | txt
+        + 2 text columns
       </button>
     </div>
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-dnqmqq jwQKaa"
+    />
+    <div
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Charts ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Titled pie"
         type="button"
       >
-        pie
+        + pie chart
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add titled pie with description"
         type="button"
       >
-        pie | txt
+        + pie chart & text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add description with titled pie"
         type="button"
       >
-        txt | pie
+        + text & pie chart
       </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gZMcBi dhHVRr"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-bdVaJa iZcSbx"
+      className="sc-bwzfXH cHoKkL"
       id="draft"
-      selected={false}
     >
       <div
-        className="DraftEditor-root"
+        className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
       >
         <div
-          className="DraftEditor-editorContainer"
+          data-contents="true"
         >
           <div
-            aria-describedby="placeholder-1"
-            aria-expanded={null}
-            className="notranslate public-DraftEditor-content"
-            contentEditable={true}
-            onBeforeInput={[Function]}
-            onBlur={[Function]}
-            onCompositionEnd={[Function]}
-            onCompositionStart={[Function]}
-            onCopy={[Function]}
-            onCut={[Function]}
-            onDragEnd={[Function]}
-            onDragEnter={[Function]}
-            onDragLeave={[Function]}
-            onDragOver={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
-            onInput={[Function]}
-            onKeyDown={[Function]}
-            onKeyPress={[Function]}
-            onKeyUp={[Function]}
-            onMouseUp={[Function]}
-            onPaste={[Function]}
-            onSelect={[Function]}
-            role="textbox"
-            spellCheck={false}
-            style={
-              Object {
-                "WebkitUserSelect": "text",
-                "outline": "none",
-                "userSelect": "text",
-                "whiteSpace": "pre-wrap",
-                "wordWrap": "break-word",
-              }
-            }
-            suppressContentEditableWarning={true}
+            className="sc-bdVaJa fciEdn"
+            data-block={true}
+            data-offset-key="1-0-0"
           >
             <div
-              data-contents="true"
+              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+              data-offset-key="1-0-0"
             >
-              <div
-                className=""
-                data-block={true}
-                data-editor="1"
+              <span
                 data-offset-key="1-0-0"
+                style={Object {}}
               >
-                <div
-                  className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                  data-offset-key="1-0-0"
+                <span
+                  data-text="true"
                 >
-                  <span
-                    data-offset-key="1-0-0"
-                    style={Object {}}
-                  >
-                    <span
-                      data-text="true"
-                    >
-                      powered by an immutable model and abstracting over cross-browser differences.
-                    </span>
-                  </span>
-                </div>
-              </div>
+                  powered by an immutable model and abstracting over cross-browser differences.
+                </span>
+              </span>
             </div>
           </div>
         </div>
@@ -239,80 +192,78 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-iwsKbI HHFSv"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-htpNat sc-bxivhb jPtSLP"
+    className="sc-htpNat sc-gzVnrw mui-panel ceAMvs"
+    onClick={[Function]}
   >
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Rich text ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
-        txt
+        + text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add sibling text blocks"
         type="button"
       >
-        txt | txt
+        + 2 text columns
       </button>
     </div>
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-dnqmqq jwQKaa"
+    />
+    <div
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Charts ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Titled pie"
         type="button"
       >
-        pie
+        + pie chart
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add titled pie with description"
         type="button"
       >
-        pie | txt
+        + pie chart & text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add description with titled pie"
         type="button"
       >
-        txt | pie
+        + text & pie chart
       </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gZMcBi dhHVRr"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-htoDjs ixDWlM"
+      className="sc-ifAKCX dNspsQ"
       id="pie"
-      selected={false}
     >
       <div
-        className="sc-dnqmqq kyLrty"
+        className="sc-EHOje cWdxOH"
       />
       <svg
         viewBox="0 0 360 360"
@@ -455,72 +406,71 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-iwsKbI HHFSv"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-htpNat sc-bxivhb jPtSLP"
+    className="sc-htpNat sc-gzVnrw mui-panel ceAMvs"
+    onClick={[Function]}
   >
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Rich text ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
-        txt
+        + text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add sibling text blocks"
         type="button"
       >
-        txt | txt
+        + 2 text columns
       </button>
     </div>
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-dnqmqq jwQKaa"
+    />
+    <div
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Charts ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Titled pie"
         type="button"
       >
-        pie
+        + pie chart
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add titled pie with description"
         type="button"
       >
-        pie | txt
+        + pie chart & text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add description with titled pie"
         type="button"
       >
-        txt | pie
+        + text & pie chart
       </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gZMcBi dhHVRr"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -535,12 +485,11 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-htoDjs ixDWlM"
+        className="sc-ifAKCX dNspsQ"
         id="pie"
-        selected={false}
       >
         <div
-          className="sc-dnqmqq kyLrty"
+          className="sc-EHOje cWdxOH"
         />
         <svg
           viewBox="0 0 360 360"
@@ -678,79 +627,34 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         </svg>
       </div>
       <div
-        className="sc-bdVaJa iZcSbx"
+        className="sc-bwzfXH cHoKkL"
         id="draft"
-        selected={false}
       >
         <div
-          className="DraftEditor-root"
+          className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
         >
           <div
-            className="DraftEditor-editorContainer"
+            data-contents="true"
           >
             <div
-              aria-describedby="placeholder-1"
-              aria-expanded={null}
-              className="notranslate public-DraftEditor-content"
-              contentEditable={true}
-              onBeforeInput={[Function]}
-              onBlur={[Function]}
-              onCompositionEnd={[Function]}
-              onCompositionStart={[Function]}
-              onCopy={[Function]}
-              onCut={[Function]}
-              onDragEnd={[Function]}
-              onDragEnter={[Function]}
-              onDragLeave={[Function]}
-              onDragOver={[Function]}
-              onDragStart={[Function]}
-              onDrop={[Function]}
-              onFocus={[Function]}
-              onInput={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
-              onKeyUp={[Function]}
-              onMouseUp={[Function]}
-              onPaste={[Function]}
-              onSelect={[Function]}
-              role="textbox"
-              spellCheck={false}
-              style={
-                Object {
-                  "WebkitUserSelect": "text",
-                  "outline": "none",
-                  "userSelect": "text",
-                  "whiteSpace": "pre-wrap",
-                  "wordWrap": "break-word",
-                }
-              }
-              suppressContentEditableWarning={true}
+              className="sc-bdVaJa fciEdn"
+              data-block={true}
+              data-offset-key="1-0-0"
             >
               <div
-                data-contents="true"
+                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                data-offset-key="1-0-0"
               >
-                <div
-                  className=""
-                  data-block={true}
-                  data-editor="1"
+                <span
                   data-offset-key="1-0-0"
+                  style={Object {}}
                 >
-                  <div
-                    className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                    data-offset-key="1-0-0"
+                  <span
+                    data-text="true"
                   >
-                    <span
-                      data-offset-key="1-0-0"
-                      style={Object {}}
-                    >
-                      <span
-                        data-text="true"
-                      >
-                        powered by an immutable model and abstracting over cross-browser differences.
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                    powered by an immutable model and abstracting over cross-browser differences.
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -763,72 +667,71 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-iwsKbI HHFSv"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-htpNat sc-bxivhb jPtSLP"
+    className="sc-htpNat sc-gzVnrw mui-panel ceAMvs"
+    onClick={[Function]}
   >
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Rich text ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
-        txt
+        + text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add sibling text blocks"
         type="button"
       >
-        txt | txt
+        + 2 text columns
       </button>
     </div>
     <div
-      className="sc-ifAKCX jnKNWa"
+      className="sc-dnqmqq jwQKaa"
+    />
+    <div
+      className="sc-htoDjs flHrTt"
     >
-      <label
-        className="sc-EHOje cHKBal"
-      >
-        Charts ↓
-      </label>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Titled pie"
         type="button"
       >
-        pie
+        + pie chart
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add titled pie with description"
         type="button"
       >
-        pie | txt
+        + pie chart & text
       </button>
       <button
-        className="sc-bZQynM jKPTxe sc-bwzfXH eBdbwy"
+        className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
+        size="small"
         title="Add description with titled pie"
         type="button"
       >
-        txt | pie
+        + text & pie chart
       </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gZMcBi dhHVRr"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -843,79 +746,34 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       }
     >
       <div
-        className="sc-bdVaJa iZcSbx"
+        className="sc-bwzfXH cHoKkL"
         id="draft"
-        selected={false}
       >
         <div
-          className="DraftEditor-root"
+          className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
         >
           <div
-            className="DraftEditor-editorContainer"
+            data-contents="true"
           >
             <div
-              aria-describedby="placeholder-1"
-              aria-expanded={null}
-              className="notranslate public-DraftEditor-content"
-              contentEditable={true}
-              onBeforeInput={[Function]}
-              onBlur={[Function]}
-              onCompositionEnd={[Function]}
-              onCompositionStart={[Function]}
-              onCopy={[Function]}
-              onCut={[Function]}
-              onDragEnd={[Function]}
-              onDragEnter={[Function]}
-              onDragLeave={[Function]}
-              onDragOver={[Function]}
-              onDragStart={[Function]}
-              onDrop={[Function]}
-              onFocus={[Function]}
-              onInput={[Function]}
-              onKeyDown={[Function]}
-              onKeyPress={[Function]}
-              onKeyUp={[Function]}
-              onMouseUp={[Function]}
-              onPaste={[Function]}
-              onSelect={[Function]}
-              role="textbox"
-              spellCheck={false}
-              style={
-                Object {
-                  "WebkitUserSelect": "text",
-                  "outline": "none",
-                  "userSelect": "text",
-                  "whiteSpace": "pre-wrap",
-                  "wordWrap": "break-word",
-                }
-              }
-              suppressContentEditableWarning={true}
+              className="sc-bdVaJa fciEdn"
+              data-block={true}
+              data-offset-key="1-0-0"
             >
               <div
-                data-contents="true"
+                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                data-offset-key="1-0-0"
               >
-                <div
-                  className=""
-                  data-block={true}
-                  data-editor="1"
+                <span
                   data-offset-key="1-0-0"
+                  style={Object {}}
                 >
-                  <div
-                    className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                    data-offset-key="1-0-0"
+                  <span
+                    data-text="true"
                   >
-                    <span
-                      data-offset-key="1-0-0"
-                      style={Object {}}
-                    >
-                      <span
-                        data-text="true"
-                      >
-                        powered by an immutable model and abstracting over cross-browser differences.
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                    powered by an immutable model and abstracting over cross-browser differences.
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -934,91 +792,45 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         }
       >
         <div
-          className="sc-bdVaJa iZcSbx"
+          className="sc-bwzfXH bYddnM"
           id="title"
-          selected={false}
         >
           <div
-            className="DraftEditor-root DraftEditor-alignCenter"
+            className="sc-bdVaJa jyeAKq DraftEditor/root DraftEditor/alignCenter"
           >
             <div
-              className="DraftEditor-editorContainer"
+              data-contents="true"
             >
-              <div
-                aria-describedby="placeholder-1"
-                aria-expanded={null}
-                className="notranslate public-DraftEditor-content"
-                contentEditable={true}
-                onBeforeInput={[Function]}
-                onBlur={[Function]}
-                onCompositionEnd={[Function]}
-                onCompositionStart={[Function]}
-                onCopy={[Function]}
-                onCut={[Function]}
-                onDragEnd={[Function]}
-                onDragEnter={[Function]}
-                onDragLeave={[Function]}
-                onDragOver={[Function]}
-                onDragStart={[Function]}
-                onDrop={[Function]}
-                onFocus={[Function]}
-                onInput={[Function]}
-                onKeyDown={[Function]}
-                onKeyPress={[Function]}
-                onKeyUp={[Function]}
-                onMouseUp={[Function]}
-                onPaste={[Function]}
-                onSelect={[Function]}
-                role="textbox"
-                spellCheck={false}
-                style={
-                  Object {
-                    "WebkitUserSelect": "text",
-                    "outline": "none",
-                    "userSelect": "text",
-                    "whiteSpace": "pre-wrap",
-                    "wordWrap": "break-word",
-                  }
-                }
-                suppressContentEditableWarning={true}
+              <h2
+                className="sc-bdVaJa jyeAKq"
+                data-block={true}
+                data-offset-key="1-0-0"
               >
                 <div
-                  data-contents="true"
+                  className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                  data-offset-key="1-0-0"
                 >
-                  <h2
-                    className=""
-                    data-block={true}
-                    data-editor="1"
+                  <span
                     data-offset-key="1-0-0"
+                    style={Object {}}
                   >
-                    <div
-                      className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                      data-offset-key="1-0-0"
+                    <span
+                      data-text="true"
                     >
-                      <span
-                        data-offset-key="1-0-0"
-                        style={Object {}}
-                      >
-                        <span
-                          data-text="true"
-                        >
-                          V2. London income - Year 8 - 3,400,000
-                        </span>
-                      </span>
-                    </div>
-                  </h2>
+                      V2. London income - Year 8 - 3,400,000
+                    </span>
+                  </span>
                 </div>
-              </div>
+              </h2>
             </div>
           </div>
         </div>
         <div
-          className="sc-htoDjs ixDWlM"
+          className="sc-ifAKCX dNspsQ"
           id="pie"
-          selected={false}
         >
           <div
-            className="sc-dnqmqq kyLrty"
+            className="sc-EHOje cWdxOH"
           />
           <svg
             viewBox="0 0 360 360"
