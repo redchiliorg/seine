@@ -16,7 +16,7 @@ import ContentToolbar from './ContentToolbar';
 import DraftToolbar from './DraftToolbar';
 import DraftEditorContext, { useDraftEditorState } from './DraftEditorContext';
 
-const Container = styled.div`
+const DefaultContainer = styled.div`
   width: 75%;
 `;
 
@@ -49,6 +49,7 @@ export default function ContentEditor({
     },
   },
   onChange,
+  as: Container = DefaultContainer,
   ...contentProps
 }: Props) {
   const [blocks, dispatch] = React.useReducer(reduce, children);
