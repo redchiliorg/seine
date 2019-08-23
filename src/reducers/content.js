@@ -1,18 +1,18 @@
 // @flow
 import uuid from 'uuid/v1';
 
-import type { ContentBlock, BlockData } from '../types';
+import type { ContentBlock, BlockBody } from '../types';
 
 export const CREATE_BLOCK = 'seine/editor/createBlock';
 export const CREATE_BLOCKS_TREE = 'seine/editor/createBlocksTree';
 export const DELETE_SELECTED = 'seine/editor/deleteSelected';
 export const SELECT_BLOCK = 'seine/editor/selectBlock';
 export const DESELECT_BLOCK = 'seine/editor/deselectBlock';
-export const UPDATE_BLOCK_DATA = 'seine/editor/updateBlockData';
+export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
 
 export const initialState = [];
 
-export type BlocksTree = BlockData & {
+export type BlocksTree = BlockBody & {
   children: BlocksTree[],
 };
 type CreateBlockAction = {
@@ -36,9 +36,9 @@ type DeselectBlockAction = {
   id: string,
 };
 type UpdateBlockDataAction = {
-  type: typeof UPDATE_BLOCK_DATA,
+  type: typeof UPDATE_BLOCK_BODY,
   id: string,
-  data: BlockData,
+  body: BlockBody,
 };
 export type State = $ReadOnlyArray<ContentBlock>;
 export type Action =
@@ -51,7 +51,7 @@ export type Action =
 
 /**
  * @description Create a block of the parent.
- * @param {BlockData} block
+ * @param {BlockBody} block
  * @param {string} parent_id
  * @returns {ContentBlock}
  */
@@ -123,10 +123,10 @@ export default function reduce(state: State = initialState, action: Action) {
         return state.filter(({ selected }) => !selected);
       }
       return state;
-    case UPDATE_BLOCK_DATA:
+    case UPDATE_BLOCK_BODY:
       return state.map((block) =>
         block.id === action.id
-          ? { ...block, data: { ...block.data, ...action.data } }
+          ? { ...block, body: { ...block.body, ...action.body } }
           : block
       );
     default:

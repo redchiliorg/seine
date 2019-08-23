@@ -30,11 +30,11 @@ function Content({
   children,
 }: Props) {
   return children
-    .filter((block) => block['parent_id'] === parent)
-    .map((block) => {
+    .filter((block: ContentBlock) => block['parent_id'] === parent)
+    .map((block: ContentBlock) => {
       const Block = blockRenderMap[block.type];
       return (
-        <Block key={block.id} {...block.data}>
+        <Block key={block.id} {...block.body} {...block.format}>
           <Content parent={block.id} blockRenderMap={blockRenderMap}>
             {children.filter((content) => content.id !== block.id)}
           </Content>

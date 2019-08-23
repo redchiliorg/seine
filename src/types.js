@@ -9,35 +9,49 @@ export const blockTypes = {
 
 export type BlockType = $Values<typeof blockTypes>;
 
-export type DraftData = {
-  body: RawDraftContentState,
-  textAlignment: 'left' | 'center' | 'right',
-};
-
-export type GridData = {
-  areas?: string,
+// region Grid
+export type GridBody = {};
+export type GridFormat = {
   columns?: string,
   columnGap?: string,
-  justifyContent?: string,
   rows?: string,
   rowGap?: string,
 };
+// endregion
 
+// region Pie
 export type PieElement = {
   title: string,
   percent: number,
   color: string,
 };
-
-export type PieData = {
+export type PieBody = {
   elements: PieElement[],
 };
+export type PieFormat = {
+  fontSize: number,
+  innerFontColor: string,
+  outerFontColor: string,
+  padding: number,
+  size: number,
+};
+// endregion
 
-export type BlockData = GridData | DraftData | PieData;
+// region Draft
+export type DraftBody = RawDraftContentState;
+export type DraftFormat = {
+  textAlignment: 'left' | 'center' | 'right',
+  verticalAlignment: 'start' | 'center' | 'end',
+};
+// endregion
+
+export type BlockBody = GridBody | PieBody | DraftBody;
+export type BlockFormat = GridFormat | PieFormat | DraftFormat;
 
 export type ContentBlock = {
   id: string,
-  data: BlockData,
+  body: BlockBody,
+  format: BlockFormat,
   parent_id: string | null,
   type: BlockType,
 };

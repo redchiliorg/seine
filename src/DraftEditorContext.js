@@ -4,7 +4,7 @@ import { ContentState, EditorState } from 'draft-js';
 
 import { toDraftContent, toDraftEditor, toRawContent } from './Draft.helpers';
 import type { ContentBlock } from './types';
-import { UPDATE_BLOCK_DATA } from './reducers/content';
+import { UPDATE_BLOCK_BODY } from './reducers/content';
 import type { Action } from './reducers/content';
 
 export type DraftEditorState = {|
@@ -19,7 +19,7 @@ export default createContext<DraftEditorState>({
   setEditorState: () => {},
 });
 
-const defaultBlock = { id: null, data: { body: null } };
+const defaultBlock = { id: null, body: null };
 
 /**
  * @description Use draft editor state of a block with dispatch for its updates.
@@ -28,7 +28,7 @@ const defaultBlock = { id: null, data: { body: null } };
  * @returns {DraftEditorState}
  */
 export function useDraftEditorState(
-  { id, data: { body: rawContent } }: ContentBlock = defaultBlock,
+  { id, body: rawContent }: ContentBlock = defaultBlock,
   dispatch: (Action) => any
 ) {
   // inner state initialization
@@ -55,8 +55,8 @@ export function useDraftEditorState(
     if (id && contentState) {
       dispatch({
         id: id,
-        type: UPDATE_BLOCK_DATA,
-        data: { body: toRawContent(contentState) },
+        type: UPDATE_BLOCK_BODY,
+        body: toRawContent(contentState),
       });
     }
   }, [contentState, dispatch, id]);

@@ -16,16 +16,16 @@ import {
 import clsx from 'clsx';
 
 import type { Action } from './reducers/content';
-import type { ContentBlock, DraftData } from './types';
+import type { ContentBlock, DraftBody } from './types';
 import Toolbar from './ui/Toolbar';
 import theme from './DraftToolbar.module.css';
 import DraftEditorContext from './DraftEditorContext';
 import ContentBlockToolbarGroup from './ContentBlockToolbarGroup';
-import { UPDATE_BLOCK_DATA } from './reducers/content';
+import { UPDATE_BLOCK_BODY } from './reducers/content';
 
 type Props = ContentBlock & {
   dispatch: (Action) => any,
-  data: DraftData,
+  body: DraftBody,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -43,7 +43,7 @@ const DraftButton = ({ as: Button, className, ...props }) => (
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function DraftToolbar({ id, data, dispatch }: Props) {
+export default function DraftToolbar({ id, body, dispatch }: Props) {
   const { editorState, setEditorState } = React.useContext(DraftEditorContext);
   const asProps = {
     as: DraftButton,
@@ -52,13 +52,13 @@ export default function DraftToolbar({ id, data, dispatch }: Props) {
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
     setEditorState,
-    alignment: data.textAlignment,
+    alignment: body.textAlignment,
     setAlignment: React.useCallback(
       ({ alignment: textAlignment }) =>
         dispatch({
           id,
-          type: UPDATE_BLOCK_DATA,
-          data: { textAlignment },
+          type: UPDATE_BLOCK_BODY,
+          body: { textAlignment },
         }),
       [dispatch, id]
     ),

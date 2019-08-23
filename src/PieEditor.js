@@ -8,7 +8,7 @@ import { useBlockSelection } from './helpers';
 import reduce from './reducers/pie';
 import type { PieElement } from './types';
 import PieSliceEditor from './PieSliceEditor';
-import { UPDATE_BLOCK_DATA } from './reducers/content';
+import { UPDATE_BLOCK_BODY } from './reducers/content';
 import type { Action } from './reducers/pie';
 
 type Props = {
@@ -51,9 +51,9 @@ export default function PieEditor({
   const dispatchPie = React.useCallback(
     (action: Action) => {
       dispatch({
-        type: UPDATE_BLOCK_DATA,
+        type: UPDATE_BLOCK_BODY,
         id,
-        data: { elements: reduce(elements, action) },
+        body: { elements: reduce(elements, action) },
       });
     },
     [dispatch, elements, id]

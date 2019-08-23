@@ -25,7 +25,7 @@ export default function ActionInput({
         (event: SyntheticInputEvent) =>
           dispatch({
             ...action,
-            data: { [inputProps.name]: event.currentTarget.value },
+            body: { [inputProps.name]: event.currentTarget.value },
           }),
         [action, dispatch, inputProps.name]
       )}

@@ -1,16 +1,9 @@
 import * as React from 'react';
 
-import type { PieData, PieElement } from './types';
+import type { PieBody, PieElement, PieFormat } from './types';
 import PieSlice from './PieSlice';
 
-type Config = {
-  fontColor: string,
-  fontSize: number,
-  padding: number,
-  size: number,
-};
-
-export type Props = $Shape<Config> & PieData;
+export type Props = $Shape<PieFormat> & PieBody;
 
 /**
  * @description Pie chart content component.
