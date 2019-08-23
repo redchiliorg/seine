@@ -18,7 +18,7 @@ storiesOf('ContentEditor', module)
       {[
         grid,
         { ...draft, parent_id: grid.id },
-        { ...grid, id: 'sub-grid', parent_id: grid.id, data: {} },
+        { ...grid, id: 'sub-grid', parent_id: grid.id, body: {} },
         { ...title, parent_id: 'sub-grid' },
         { ...pie, parent_id: 'sub-grid' },
       ]}

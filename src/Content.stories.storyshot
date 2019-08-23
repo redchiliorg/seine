@@ -20,9 +20,11 @@ exports[`Storyshots Content 1. Draft 1`] = `
           data-offset-key="1-0-0"
           style={Object {}}
         >
-          <br
+          <span
             data-text="true"
-          />
+          >
+            powered by an immutable model and abstracting over cross-browser differences.
+          </span>
         </span>
       </div>
     </div>
@@ -173,7 +175,6 @@ exports[`Storyshots Content 3. Pie and draft 1`] = `
     Object {
       "columnGap": 20,
       "display": "grid",
-      "gridTemplateAreas": "none",
       "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
       "gridTemplateRows": "",
       "rowGap": 20,
@@ -333,9 +334,11 @@ exports[`Storyshots Content 3. Pie and draft 1`] = `
             data-offset-key="1-0-0"
             style={Object {}}
           >
-            <br
+            <span
               data-text="true"
-            />
+            >
+              powered by an immutable model and abstracting over cross-browser differences.
+            </span>
           </span>
         </div>
       </div>
@@ -350,7 +353,6 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
     Object {
       "columnGap": 20,
       "display": "grid",
-      "gridTemplateAreas": "none",
       "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
       "gridTemplateRows": "",
       "rowGap": 20,
@@ -376,9 +378,11 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
             data-offset-key="1-0-0"
             style={Object {}}
           >
-            <br
+            <span
               data-text="true"
-            />
+            >
+              powered by an immutable model and abstracting over cross-browser differences.
+            </span>
           </span>
         </div>
       </div>
@@ -389,7 +393,6 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
       Object {
         "columnGap": 20,
         "display": "grid",
-        "gridTemplateAreas": "none",
         "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
         "gridTemplateRows": "",
         "rowGap": 20,
@@ -402,7 +405,7 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
       <div
         data-contents="true"
       >
-        <div
+        <h2
           className="sc-bdVaJa jyeAKq"
           data-block={true}
           data-offset-key="1-0-0"
@@ -415,12 +418,14 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
               data-offset-key="1-0-0"
               style={Object {}}
             >
-              <br
+              <span
                 data-text="true"
-              />
+              >
+                V2. London income - Year 8 - 3,400,000
+              </span>
             </span>
           </div>
-        </div>
+        </h2>
       </div>
     </div>
     <svg

@@ -73,7 +73,6 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         Object {
           "columnGap": 20,
           "display": "grid",
-          "gridTemplateAreas": "none",
           "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
           "gridTemplateRows": "",
           "rowGap": 20,
@@ -477,7 +476,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         Object {
           "columnGap": 20,
           "display": "grid",
-          "gridTemplateAreas": "none",
           "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
           "gridTemplateRows": "",
           "rowGap": 20,
@@ -738,7 +736,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         Object {
           "columnGap": 20,
           "display": "grid",
-          "gridTemplateAreas": "none",
           "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
           "gridTemplateRows": "",
           "rowGap": 20,
@@ -784,8 +781,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
           Object {
             "columnGap": 20,
             "display": "grid",
-            "gridTemplateAreas": "none",
-            "gridTemplateColumns": "",
+            "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
             "gridTemplateRows": "",
             "rowGap": 20,
           }

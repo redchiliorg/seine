@@ -4,11 +4,11 @@ import styled, { css } from 'styled-components';
 import { Editor } from 'draft-js';
 
 import { useBlockSelection } from './helpers';
-import type { DraftData } from './types';
+import type { DraftBody, DraftFormat } from './types';
 import DraftEditorContext from './DraftEditorContext';
 import Draft from './Draft';
 
-type Props = DraftData & {
+type Props = (DraftBody & DraftFormat) & {
   id: string,
   dispatch: Function,
 };
@@ -46,7 +46,8 @@ export default function DraftEditor({
   id,
   dispatch,
   children,
-  body,
+  entityMap,
+  blocks,
   ...draftProps
 }: Props) {
   const { editorState, setEditorState, ...selectedBlock } = React.useContext(
@@ -69,7 +70,7 @@ export default function DraftEditor({
           onChange={setEditorState}
         />
       ) : (
-        <Draft {...draftProps}>{body}</Draft>
+        <Draft {...draftProps} entityMap={entityMap} blocks={blocks} />
       )}
     </Container>
   );

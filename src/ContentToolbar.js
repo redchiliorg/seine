@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import { blockTypes } from './types';
-import { toDraftContent } from './Draft.helpers';
+import { toRawContent } from './Draft.helpers';
 import type { Action } from './reducers/content';
 import { CREATE_BLOCK, CREATE_BLOCKS_TREE } from './reducers/content';
 import Toolbar from './ui/Toolbar';
@@ -13,21 +13,22 @@ type Props = {
 
 const pie = {
   type: blockTypes.GRID,
-  data: {
+  body: {},
+  format: {
     columns: '600px',
     rows: '0.025fr 0.975fr',
   },
   children: [
     {
       type: blockTypes.DRAFT,
-      data: {
-        body: toDraftContent('<h2>Pie title</h2>'),
+      body: toRawContent('<h2>Pie title</h2>'),
+      format: {
         textAlignment: 'center',
       },
     },
     {
       type: blockTypes.PIE,
-      data: {
+      body: {
         elements: [
           {
             title: 'First half',
@@ -64,8 +65,8 @@ export default function ContentToolbar({ dispatch }: Props) {
             type: CREATE_BLOCK,
             block: {
               type: blockTypes.DRAFT,
-              data: {
-                body: 'Rich text',
+              body: toRawContent('Rich text'),
+              format: {
                 verticalAlignment: 'center',
               },
               selected: true,
@@ -83,20 +84,23 @@ export default function ContentToolbar({ dispatch }: Props) {
             children: [
               {
                 type: blockTypes.GRID,
-                data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' },
+                body: {},
+                format: {
+                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                },
                 children: [
                   {
                     type: blockTypes.DRAFT,
-                    data: {
-                      body: 'First column text content',
+                    body: toRawContent('First column text content'),
+                    format: {
                       verticalAlignment: 'center',
                     },
                     selected: true,
                   },
                   {
                     type: blockTypes.DRAFT,
-                    data: {
-                      body: 'Second column text content',
+                    body: toRawContent('Second column text content'),
+                    format: {
                       verticalAlignment: 'center',
                     },
                     selected: true,
@@ -132,12 +136,15 @@ export default function ContentToolbar({ dispatch }: Props) {
             children: [
               {
                 type: blockTypes.GRID,
-                data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' },
+                format: {
+                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                },
                 children: [
                   pie,
                   {
                     type: blockTypes.DRAFT,
-                    data: { body: 'Text content' },
+                    body: toRawContent('Text content'),
+                    format: {},
                   },
                 ],
               },
@@ -155,11 +162,14 @@ export default function ContentToolbar({ dispatch }: Props) {
             children: [
               {
                 type: blockTypes.GRID,
-                data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' },
+                format: {
+                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                },
                 children: [
                   {
                     type: blockTypes.DRAFT,
-                    data: { body: 'Text content' },
+                    body: {},
+                    format: toRawContent('Text content'),
                   },
                   pie,
                 ],

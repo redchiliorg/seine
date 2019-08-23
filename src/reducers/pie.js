@@ -9,12 +9,12 @@ export const initialState = [];
 
 type PushPieElementAction = {
   type: typeof PUSH_PIE_ELEMENT,
-  data: PieElement,
+  body: PieElement,
 };
 type UpdatePieElementAction = {
   type: typeof UPDATE_PIE_ELEMENT,
   index: number,
-  data: PieElement,
+  body: PieElement,
 };
 type RemovePieElementAction = {
   type: typeof REMOVE_PIE_ELEMENT,
@@ -35,11 +35,11 @@ export type Action =
 export default function reduce(state: State = initialState, action: Action) {
   switch (action.type) {
     case PUSH_PIE_ELEMENT:
-      return [...state, action.data];
+      return [...state, action.body];
     case UPDATE_PIE_ELEMENT:
       return [
         ...state.slice(0, action.index),
-        { ...state[action.index], ...action.data },
+        { ...state[action.index], ...action.body },
         ...state.slice(action.index + 1),
       ];
     case REMOVE_PIE_ELEMENT:

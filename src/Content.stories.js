@@ -10,7 +10,7 @@ storiesOf('Content', module)
   .add('3. Pie and draft', () => (
     <Content>
       {[
-        { ...grid, data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' } },
+        { ...grid, body: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' } },
         { ...pie, parent_id: grid.id },
         { ...draft, parent_id: grid.id },
       ]}
@@ -19,7 +19,7 @@ storiesOf('Content', module)
   .add('4. Draft and titled pie', () => (
     <Content>
       {[
-        { ...grid, data: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' } },
+        { ...grid, body: { columns: 'repeat(auto-fit, minmax(300px, 1fr))' } },
         { ...draft, parent_id: grid.id },
         { ...grid, id: 'sub-grid', parent_id: grid.id },
         { ...title, parent_id: 'sub-grid' },

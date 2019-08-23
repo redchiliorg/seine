@@ -2,15 +2,11 @@
 import * as React from 'react';
 
 import { describeArc, polarToCartesian } from './Pie.helpers';
+import type { PieFormat } from './types';
 
 export type SVGTextElement = Element & { getBBox: () => DOMRect };
 
-type Config = {
-  size: number,
-  padding: number,
-  fontSize: number,
-  innerFontColor: string,
-  outerFontColor: string,
+type Config = PieFormat & {
   titleTextRef: React.ElementRef<SVGTextElement>,
   percentTextRef: React.ElementRef<SVGTextElement>,
 };

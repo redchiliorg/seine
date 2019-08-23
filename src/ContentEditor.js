@@ -75,10 +75,10 @@ export default function ContentEditor({
           )}
           <ContentPaper>
             <Content {...contentProps} blockRenderMap={blockRenderMap}>
-              {blocks.map(({ id, data, selected, ...block }) => ({
+              {blocks.map(({ id, body, selected, ...block }) => ({
                 ...block,
                 id,
-                data: { ...data, id, selected, dispatch },
+                body: { ...body, id, selected, dispatch },
               }))}
             </Content>
           </ContentPaper>

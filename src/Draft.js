@@ -7,18 +7,18 @@ import DraftEditorContents from 'draft-js/lib/DraftEditorContents.react';
 import defaultBlockRenderMap from 'draft-js/lib/DefaultDraftBlockRenderMap';
 import defaultDraftInlineStyle from 'draft-js/lib/DefaultDraftInlineStyle';
 import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
-import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
 import clsx from 'clsx';
 
-import { toDraftEditor } from './Draft.helpers';
 import { imageDecorator } from './Draft.decorators';
+import type { DraftBody, DraftFormat } from './types';
+import { toDraftEditor } from './Draft.helpers';
 
-export type Props = DraftEditorProps & {
-  decorators?: DraftDecorator[],
-  verticalAlignment?: 'start' | 'center' | 'end',
-  children: string | RawDraftContentState,
-};
+export type Props = DraftEditorProps &
+  DraftBody &
+  DraftFormat & {
+    decorators?: DraftDecorator[],
+  };
 
 export default styled(Draft)`
   display: flex;
@@ -45,6 +45,8 @@ function Draft({
   customStyleMap = defaultDraftInlineStyle,
   className = '',
   textAlignment = 'left',
+  blocks = [],
+  entityMap = {},
   ...editorProps
 }: Props) {
   return (
@@ -69,10 +71,10 @@ function Draft({
         customStyleMap={customStyleMap}
         editorState={React.useMemo(
           () =>
-            EditorState.set(toDraftEditor(children), {
+            EditorState.set(toDraftEditor({ blocks, entityMap }), {
               decorator: new CompositeDecorator(decorators),
             }),
-          [children, decorators]
+          [blocks, decorators, entityMap]
         )}
       />
     </div>

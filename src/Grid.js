@@ -1,9 +1,9 @@
 // @flow
 import * as React from 'react';
 
-import type { GridData } from './types';
+import type { GridBody, GridFormat } from './types';
 
-export type Props = GridData & {
+export type Props = (GridBody & GridFormat) & {
   children: React.ChildrenArray<React.Node>,
 };
 
@@ -14,17 +14,15 @@ export type Props = GridData & {
  */
 export default function Grid({
   children,
-  rows = '',
   columns = '',
-  areas = 'none',
   columnGap = 20,
+  rows = '',
   rowGap = 20,
 }: Props) {
   return (
     <div
       style={{
         display: 'grid',
-        gridTemplateAreas: areas,
         gridTemplateColumns: columns,
         gridTemplateRows: rows,
         columnGap,
