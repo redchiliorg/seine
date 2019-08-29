@@ -78,7 +78,7 @@ export default function ContentEditor({
               {blocks.map(({ id, body, selected, ...block }) => ({
                 ...block,
                 id,
-                body: { ...body, id, selected, dispatch },
+                body: { ...(body || {}), id, selected, dispatch },
               }))}
             </Content>
           </ContentPaper>

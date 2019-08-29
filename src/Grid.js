@@ -14,7 +14,7 @@ export type Props = (GridBody & GridFormat) & {
  */
 export default function Grid({
   children,
-  columns = '',
+  columns = 'repeat(auto-fit, minmax(300px, 1fr))',
   columnGap = 20,
   rows = '',
   rowGap = 20,

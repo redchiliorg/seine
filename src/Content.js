@@ -6,6 +6,7 @@ import { blockTypes } from './types';
 import Grid from './Grid';
 import Draft from './Draft';
 import Pie from './Pie';
+import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
@@ -14,6 +15,7 @@ export type Props = {
 };
 
 export const defaultBlockRenderMap = {
+  [blockTypes.PAGE]: Page,
   [blockTypes.DRAFT]: Draft,
   [blockTypes.GRID]: Grid,
   [blockTypes.PIE]: Pie,
@@ -33,8 +35,10 @@ function Content({
     .filter((block: ContentBlock) => block['parent_id'] === parent)
     .map((block: ContentBlock) => {
       const Block = blockRenderMap[block.type];
+      const body = block.body || {};
+      const format = block.format || {};
       return (
-        <Block key={block.id} {...block.body} {...block.format}>
+        <Block key={block.id} {...body} {...format}>
           <Content parent={block.id} blockRenderMap={blockRenderMap}>
             {children.filter((content) => content.id !== block.id)}
           </Content>

@@ -1,9 +1,15 @@
 import { blockTypes } from './types';
 import { toRawContent } from './Draft.helpers';
 
+export const page = {
+  id: 'root',
+  parent_id: null,
+  type: blockTypes.PAGE,
+};
+
 export const title = {
   id: 'title',
-  parent_id: null,
+  parent_id: page.id,
   type: blockTypes.DRAFT,
   body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
   format: {
