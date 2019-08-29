@@ -1,5 +1,5 @@
 // @flow
-import 'muicss/dist/css/mui.css';
+import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
