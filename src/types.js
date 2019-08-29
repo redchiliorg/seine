@@ -2,6 +2,7 @@
 import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 
 export const blockTypes = {
+  PAGE: 'page',
   DRAFT: 'draft',
   GRID: 'grid',
   PIE: 'pie',
@@ -45,8 +46,8 @@ export type DraftFormat = {
 };
 // endregion
 
-export type BlockBody = GridBody | PieBody | DraftBody;
-export type BlockFormat = GridFormat | PieFormat | DraftFormat;
+export type BlockBody = null | GridBody | PieBody | DraftBody;
+export type BlockFormat = null | GridFormat | PieFormat | DraftFormat;
 
 export type ContentBlock = {
   id: string,
