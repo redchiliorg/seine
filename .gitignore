@@ -9,8 +9,8 @@
 /coverage
 
 # production
-/dist
-/lib
+dist/
+lib/
 
 # idea
 .idea

@@ -1,0 +1,20 @@
+{
+  "name": "@seine/content",
+  "version": "1.0.0",
+  "description": "Seine structured content renderer.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "repository": "redchiliorg/seine",
+  "author": "Mikhail Boyarov",
+  "license": "MIT",
+  "dependencies": {
+    "@seine/core": "1.0.0",
+    "@seine/draft": "1.0.0",
+    "@seine/pie": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {}
+}

@@ -1,11 +1,12 @@
 {
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
-  "version": "0.2.10",
+  "version": "0.0.0",
   "keywords": [
     "react",
     "richtext"
   ],
+  "private": true,
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "repository": "redchiliorg/seine",
@@ -15,10 +16,8 @@
     "dev": "run-s dev:*",
     "test": "run-s test:*",
     "build": "run-s build:storybook build:demos",
-    "prepare": "run-p build:cjs build:esm build:umd",
-    "build:cjs": "rollup --environment NODE_ENV:production,FORMAT:cjs,DIR:lib -c",
-    "build:esm": "rollup --environment NODE_ENV:production,FORMAT:esm,DIR:lib -c",
-    "build:umd": "rollup --environment NODE_ENV:production,FORMAT:umd,DIR:lib -c",
+    "prepare": "run-p build",
+    "build:lib": "rollup --environment NODE_ENV:production -c",
     "build:storybook": "build-storybook -s public -o dist",
     "build:demos": "rollup --environment NODE_ENV:production,FORMAT:umd,DIR:dist -c",
     "dev:start": "start-storybook -p 9009 -s public",
@@ -26,10 +25,7 @@
     "test:jest": "jest"
   },
   "dependencies": {
-    "draft-js-buttons": "^2.0.2",
-    "recompose": "^0.30.0",
-    "serve": "^11.1.0",
-    "uuid": "^3.3.2"
+    "serve": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
@@ -45,8 +41,6 @@
     "babel-plugin-macros": "^2.6.1",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
-    "clsx": "^1.0.4",
-    "draft-js": "^0.11.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react-app": "^4.0.1",
@@ -78,10 +72,7 @@
     "rollup-plugin-postcss": "^2.0.3",
     "styled-components": "^4.3.2"
   },
-  "peerDependencies": {
-    "draft-js": "^0.11.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }

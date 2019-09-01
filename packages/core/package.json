@@ -1,0 +1,20 @@
+{
+  "name": "@seine/core",
+  "version": "1.0.0",
+  "description": "Seine core utils and types.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "repository": "redchiliorg/seine",
+  "author": "Mikhail Boyarov",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "build": "rollup --environment NODE_ENV:production -c"
+  },
+  "devDependencies": {}
+}
