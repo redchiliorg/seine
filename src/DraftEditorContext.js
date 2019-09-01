@@ -1,11 +1,13 @@
 // @flow
-import { useEffect, useMemo, useState, createContext } from 'react';
+import { createContext, useEffect, useMemo, useState } from 'react';
 import { ContentState, EditorState } from 'draft-js';
 
 import { toDraftContent, toDraftEditor, toRawContent } from './Draft.helpers';
-import type { ContentBlock } from './types';
-import { UPDATE_BLOCK_BODY } from './reducers/content';
+import type { Block } from './types';
 import type { Action } from './reducers/content';
+import { UPDATE_BLOCK_BODY } from './reducers/content';
+import { defaultDraftBody } from './Draft';
+import { blockTypes } from './types';
 
 export type DraftEditorState = {|
   id: string | null,
@@ -15,26 +17,24 @@ export type DraftEditorState = {|
 
 export default createContext<DraftEditorState>({
   id: null,
-  editorState: null,
+  editorState: EditorState.createEmpty(),
   setEditorState: () => {},
 });
 
-const defaultBlock = { id: null, body: null };
-
 /**
  * @description Use draft editor state of a block with dispatch for its updates.
- * @param {ContentBlock} block
+ * @param {Block} block
  * @param {Function} dispatch
  * @returns {DraftEditorState}
  */
 export function useDraftEditorState(
-  { id, body: rawContent }: ContentBlock = defaultBlock,
+  { id = null, body = defaultDraftBody, type }: Block = {},
   dispatch: (Action) => any
 ) {
   // inner state initialization
   const initialContentState = useMemo<ContentState | null>(
-    () => rawContent && toDraftContent(rawContent),
-    [rawContent]
+    () => (type === blockTypes.DRAFT ? toDraftContent(body) : null),
+    [body, type]
   );
   const initialEditorState = useMemo<EditorState | null>(
     () => initialContentState && toDraftEditor(initialContentState),

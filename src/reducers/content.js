@@ -1,69 +1,188 @@
 // @flow
-import uuid from 'uuid/v1';
+import uuid from 'uuid/v4';
 
-import type { ContentBlock, BlockBody } from '../types';
+import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 
 export const CREATE_BLOCK = 'seine/editor/createBlock';
 export const CREATE_BLOCKS_TREE = 'seine/editor/createBlocksTree';
-export const DELETE_SELECTED = 'seine/editor/deleteSelected';
+export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteSelectedBlocks';
 export const SELECT_BLOCK = 'seine/editor/selectBlock';
-export const DESELECT_BLOCK = 'seine/editor/deselectBlock';
 export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
+export const UPDATE_BLOCK_FORMAT = 'seine/editor/updateBlockFormat';
 
-export const initialState = [];
-
+export const initialState = {
+  selection: [],
+  blocks: [],
+};
+type Blocks = $ReadOnlyArray<Block>;
 export type BlocksTree = BlockBody & {
   children: BlocksTree[],
 };
 type CreateBlockAction = {
   type: typeof CREATE_BLOCK,
-  block: ContentBlock,
+  block: Block,
 };
 type CreateBlocksTreeAction = {
   type: typeof CREATE_BLOCKS_TREE,
   children: BlocksTree,
 };
-type DeleteSelectedBlockAction = {
-  type: typeof DELETE_SELECTED,
-  id: string,
+type DeleteSelectedBlocksAction = {
+  type: typeof DELETE_SELECTED_BLOCKS,
 };
 type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
-  id: string,
-};
-type DeselectBlockAction = {
-  type: typeof DESELECT_BLOCK,
-  id: string,
+  id: BlockId,
+  modifier?: 'add' | 'sub',
 };
 type UpdateBlockDataAction = {
   type: typeof UPDATE_BLOCK_BODY,
-  id: string,
   body: BlockBody,
 };
-export type State = $ReadOnlyArray<ContentBlock>;
+type UpdateBlockFormatAction = {
+  type: typeof UPDATE_BLOCK_FORMAT,
+  format: BlockFormat,
+};
+export type State = {
+  selection: $ReadOnlyArray<BlockId>,
+  blocks: Blocks,
+};
 export type Action =
   | CreateBlockAction
   | CreateBlocksTreeAction
-  | DeleteSelectedBlockAction
+  | DeleteSelectedBlocksAction
   | SelectBlockAction
-  | DeselectBlockAction
-  | UpdateBlockDataAction;
+  | UpdateBlockDataAction
+  | UpdateBlockFormatAction;
+
+/**
+ * @description Reduce Content editor actions
+ * @param {State} state
+ * @param {Action} action
+ * @returns {State}
+ */
+export default function reduce(
+  state: State = initialState,
+  action: Action
+): State {
+  switch (action.type) {
+    case SELECT_BLOCK: {
+      const index = state.selection.indexOf(action.id);
+
+      switch (action.modifier) {
+        case 'add': {
+          if (index !== -1) {
+            return state;
+          }
+          return {
+            ...state,
+            selection: [...state.selection, action.id],
+          };
+        }
+
+        case 'sub':
+          if (index === -1) {
+            return state;
+          }
+          return {
+            ...state,
+            selection: [
+              ...state.selection.slice(0, index),
+              ...state.selection.slice(index + 1),
+            ],
+          };
+
+        default:
+          return { ...state, selection: [action.id] };
+      }
+    }
+
+    case CREATE_BLOCK:
+      return {
+        ...state,
+        blocks: [...state.blocks, createBlock(action.block)],
+      };
+
+    case CREATE_BLOCKS_TREE:
+      return {
+        ...state,
+        blocks: [...state.blocks, ...createBlocksTree(action.children)],
+      };
+
+    case DELETE_SELECTED_BLOCKS:
+      if (state.selection.length === 0) {
+        return state;
+      }
+      return {
+        ...state,
+        selection: [],
+        blocks: state.blocks.filter(({ id }) => !state.selection.includes(id)),
+      };
+
+    case UPDATE_BLOCK_BODY:
+    case UPDATE_BLOCK_FORMAT: {
+      const index = state.blocks.findIndex(({ id }) =>
+        state.selection.includes(id)
+      );
+
+      if (index === -1) {
+        return {
+          ...state,
+          error: 'Selection is empty or invalid.',
+        };
+      }
+
+      if (state.selection.length > 1) {
+        return {
+          ...state,
+          error: 'There is more than one block in selection.',
+        };
+      }
+
+      const block = state.blocks[index];
+      return {
+        ...state,
+        blocks: [
+          ...state.blocks.slice(0, index),
+          {
+            ...block,
+            ...(action.type === UPDATE_BLOCK_BODY
+              ? { body: { ...block.body, ...action.body } }
+              : { format: { ...block.format, ...action.format } }),
+          },
+          ...state.blocks.slice(index + 1),
+        ],
+      };
+    }
+
+    default:
+      return state;
+  }
+}
 
 /**
  * @description Create a block of the parent.
- * @param {BlockBody} block
+ * @param {Block} data
  * @param {string} parent_id
- * @returns {ContentBlock}
+ * @returns {Block}
  */
-function createBlock(block, parent_id = null) {
-  return { ...block, id: uuid(), parent_id };
+function createBlock(
+  { id, body, format, ...block }: Block,
+  parent_id = null
+): Block {
+  return {
+    id: id || uuid(),
+    parent_id,
+    ...(body !== null && { body }),
+    ...(format !== null && { format }),
+    ...block,
+  };
 }
 
 /**
  * @description Create blocks from tree.
  * @param {BlocksTree[]} children
  * @param {string} parent_id
- * @returns {ContentBlock[]}
+ * @returns {Block[]}
  */
 function createBlocksTree(children: BlocksTree[], parent_id = null) {
   return children.reduce((acc, { children, ...block }) => {
@@ -74,62 +193,4 @@ function createBlocksTree(children: BlocksTree[], parent_id = null) {
       ...(children ? createBlocksTree(children, block.id) : []),
     ];
   }, []);
-}
-
-/**
- * @description Set `selected` of a block found by `id` in `state`.
- * @param {number} id
- * @param {boolean} selected
- * @param {State} state
- * @returns {State}
- */
-function setBlockSelected(id, selected, state) {
-  const index = state.findIndex(
-    (block) => block.id === id && block.selected !== selected
-  );
-  if (index === -1) {
-    return state;
-  }
-  return [
-    ...state.slice(0, index),
-    { ...state[index], selected },
-    ...state.slice(index + 1),
-  ];
-}
-
-/**
- * @description Reduce Content editor actions
- * @param {State} state
- * @param {Action} action
- * @returns {State}
- */
-export default function reduce(state: State = initialState, action: Action) {
-  switch (action.type) {
-    case SELECT_BLOCK:
-      return setBlockSelected(action.id, true, state);
-    case DESELECT_BLOCK:
-      return setBlockSelected(action.id, false, state);
-    case CREATE_BLOCK:
-      return [...state, createBlock(action.block)];
-    case CREATE_BLOCKS_TREE: {
-      const blocks = createBlocksTree(action.children);
-      if (blocks.length) {
-        return [...state, ...blocks];
-      }
-      return state;
-    }
-    case DELETE_SELECTED:
-      if (state.some(({ selected }) => selected)) {
-        return state.filter(({ selected }) => !selected);
-      }
-      return state;
-    case UPDATE_BLOCK_BODY:
-      return state.map((block) =>
-        block.id === action.id
-          ? { ...block, body: { ...block.body, ...action.body } }
-          : block
-      );
-    default:
-      return state;
-  }
 }

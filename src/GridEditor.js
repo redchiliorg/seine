@@ -18,7 +18,7 @@ type Props = GridProps & {
 export default function GridEditor({
   id,
   dispatch,
-  selected,
+  selection,
   children,
   ...gridProps
 }: Props) {

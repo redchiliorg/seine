@@ -16,18 +16,24 @@ type Props = {
 export default function ActionInput({
   action,
   dispatch,
+  name,
+  type = 'text',
   ...inputProps
 }: Props) {
   return (
     <input
       {...inputProps}
+      name={name}
+      type={type}
       onChange={React.useCallback(
-        (event: SyntheticInputEvent) =>
+        ({ currentTarget: { value } }: SyntheticInputEvent) =>
           dispatch({
             ...action,
-            body: { [inputProps.name]: event.currentTarget.value },
+            body: {
+              [name]: type === 'number' ? +value : value,
+            },
           }),
-        [action, dispatch, inputProps.name]
+        [action, dispatch, name, type]
       )}
     />
   );

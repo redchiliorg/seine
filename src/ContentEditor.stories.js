@@ -5,7 +5,7 @@ import { draft, grid, pie, title } from './Content.mocks';
 import ContentEditor from './ContentEditor';
 
 storiesOf('ContentEditor', module)
-  .add('1. Empty', () => <ContentEditor>{[grid]}</ContentEditor>)
+  .add('1. Empty', () => <ContentEditor>{[]}</ContentEditor>)
   .add('2. Draft', () => <ContentEditor>{[draft]}</ContentEditor>)
   .add('3. Pie', () => <ContentEditor>{[pie]}</ContentEditor>)
   .add('4. Pie and draft', () => (

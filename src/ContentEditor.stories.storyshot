@@ -40,7 +40,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
         size="small"
-        title="Titled pie"
+        title="Add titled pie"
         type="button"
       >
         + pie chart
@@ -67,19 +67,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
   </div>
   <div
     className="sc-htpNat sc-VigVT mui-panel dmHvgR"
-  >
-    <div
-      style={
-        Object {
-          "columnGap": 20,
-          "display": "grid",
-          "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
-          "gridTemplateRows": "",
-          "rowGap": 20,
-        }
-      }
-    />
-  </div>
+  />
 </div>
 `;
 
@@ -123,7 +111,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
         size="small"
-        title="Titled pie"
+        title="Add titled pie"
         type="button"
       >
         + pie chart
@@ -152,8 +140,10 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
     className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-bwzfXH cHoKkL"
+      className="sc-bwzfXH IQwOT"
       id="draft"
+      onClick={[Function]}
+      type="draft"
     >
       <div
         className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
@@ -229,7 +219,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
         size="small"
-        title="Titled pie"
+        title="Add titled pie"
         type="button"
       >
         + pie chart
@@ -260,6 +250,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
     <div
       className="sc-ifAKCX dNspsQ"
       id="pie"
+      onClick={[Function]}
+      type="pie"
     >
       <div
         className="sc-EHOje cWdxOH"
@@ -443,7 +435,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
         size="small"
-        title="Titled pie"
+        title="Add titled pie"
         type="button"
       >
         + pie chart
@@ -485,6 +477,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       <div
         className="sc-ifAKCX dNspsQ"
         id="pie"
+        onClick={[Function]}
+        type="pie"
       >
         <div
           className="sc-EHOje cWdxOH"
@@ -625,8 +619,10 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         </svg>
       </div>
       <div
-        className="sc-bwzfXH cHoKkL"
+        className="sc-bwzfXH IQwOT"
         id="draft"
+        onClick={[Function]}
+        type="draft"
       >
         <div
           className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
@@ -703,7 +699,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         className="sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--default sc-bZQynM sc-iwsKbI mui-btn mui-btn--default mui-btn--small jQhHGA--small bOrPFB"
         onClick={[Function]}
         size="small"
-        title="Titled pie"
+        title="Add titled pie"
         type="button"
       >
         + pie chart
@@ -743,8 +739,10 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       }
     >
       <div
-        className="sc-bwzfXH cHoKkL"
+        className="sc-bwzfXH IQwOT"
         id="draft"
+        onClick={[Function]}
+        type="draft"
       >
         <div
           className="sc-bdVaJa fciEdn DraftEditor/root DraftEditor/alignLeft"
@@ -788,8 +786,10 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         }
       >
         <div
-          className="sc-bwzfXH bYddnM"
+          className="sc-bwzfXH IQwOT"
           id="title"
+          onClick={[Function]}
+          type="draft"
         >
           <div
             className="sc-bdVaJa jyeAKq DraftEditor/root DraftEditor/alignCenter"
@@ -824,6 +824,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         <div
           className="sc-ifAKCX dNspsQ"
           id="pie"
+          onClick={[Function]}
+          type="pie"
         >
           <div
             className="sc-EHOje cWdxOH"

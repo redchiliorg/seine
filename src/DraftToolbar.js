@@ -1,31 +1,33 @@
 // @flow
 import * as React from 'react';
 import {
-  BoldButton,
-  ItalicButton,
-  UnderlineButton,
-  UnorderedListButton,
-  OrderedListButton,
-  HeadlineOneButton,
-  HeadlineThreeButton,
-  HeadlineTwoButton,
   AlignBlockCenterButton,
   AlignBlockLeftButton,
   AlignBlockRightButton,
+  BoldButton,
+  HeadlineOneButton,
+  HeadlineThreeButton,
+  HeadlineTwoButton,
+  ItalicButton,
+  OrderedListButton,
+  UnderlineButton,
+  UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
 
-import type { Action } from './reducers/content';
-import type { ContentBlock, DraftBody } from './types';
 import Toolbar from './ui/Toolbar';
+import type { Action } from './reducers/content';
+import { UPDATE_BLOCK_FORMAT } from './reducers/content';
+import type { Block, DraftBody, DraftFormat } from './types';
+import ContentBlockToolbarGroup from './ContentBlockToolbarGroup';
 import theme from './DraftToolbar.module.css';
 import DraftEditorContext from './DraftEditorContext';
-import ContentBlockToolbarGroup from './ContentBlockToolbarGroup';
-import { UPDATE_BLOCK_BODY } from './reducers/content';
+import { defaultDraftFormat } from './Draft';
 
-type Props = ContentBlock & {
+type Props = Block & {
   dispatch: (Action) => any,
   body: DraftBody,
+  format: DraftFormat,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -43,7 +45,10 @@ const DraftButton = ({ as: Button, className, ...props }) => (
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function DraftToolbar({ id, body, dispatch }: Props) {
+export default function DraftToolbar({
+  format = defaultDraftFormat,
+  dispatch,
+}: Props) {
   const { editorState, setEditorState } = React.useContext(DraftEditorContext);
   const asProps = {
     as: DraftButton,
@@ -52,15 +57,14 @@ export default function DraftToolbar({ id, body, dispatch }: Props) {
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
     setEditorState,
-    alignment: body.textAlignment,
+    alignment: format.textAlignment,
     setAlignment: React.useCallback(
       ({ alignment: textAlignment }) =>
         dispatch({
-          id,
-          type: UPDATE_BLOCK_BODY,
-          body: { textAlignment },
+          type: UPDATE_BLOCK_FORMAT,
+          format: { textAlignment },
         }),
-      [dispatch, id]
+      [dispatch]
     ),
   };
 
