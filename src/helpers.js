@@ -1,41 +1,82 @@
 // @flow
-import { useCallback, useRef, useEffect } from 'react';
+import { useCallback, useEffect, useMemo, useReducer, useRef } from 'react';
 
-import { DESELECT_BLOCK, SELECT_BLOCK } from './reducers/content';
+import { SELECT_BLOCK } from './reducers/content';
+import type { BlockId } from './types';
+
+const defaultDevToolsConfig = {};
 
 /**
- * @description Use block selection target props
- * @param {string} id
- * @param {Function} dispatch
- * @returns {{onClick: *, id: *, selected: *}}
+ * @description Use extended reducer to dispatch changes through redux-devtools.
+ * @param {Function} reduce
+ * @param {object} initialArg
+ * @param {Function} init
+ * @param {object} devToolsConfig
+ * @returns {[object, Function]}
  */
-export function useBlockSelection(id: string, dispatch: Function) {
-  const target = useRef();
+export function useReducerEx<State, Action>(
+  reduce: (State, Action) => State,
+  initialArg: State,
+  init: (...any) => State,
+  devToolsConfig = defaultDevToolsConfig
+) {
+  // reference to last dispatched action
+  const actionRef = useRef<Action>(null);
 
-  const globalClickListener = useCallback(
-    (event: SyntheticMouseEvent) => {
-      if (dispatch) {
-        if (
-          target.current &&
-          (event.target === target.current ||
-            target.current.contains(event.target))
-        ) {
-          dispatch({ type: SELECT_BLOCK, id });
-        } else {
-          dispatch({ type: DESELECT_BLOCK, id });
-        }
-      }
-    },
-    [dispatch, id]
+  const [state, dispatch] = useReducer<State, Action>(reduce, initialArg, init);
+
+  const { current: action } = actionRef;
+  const devTools = useMemo(
+    () =>
+      process.env.NODE_ENV === 'development' &&
+      window['__REDUX_DEVTOOLS_EXTENSION__'] &&
+      window['__REDUX_DEVTOOLS_EXTENSION__'].connect(devToolsConfig),
+    [devToolsConfig]
   );
 
   useEffect(() => {
-    const listener = globalClickListener;
-    global.addEventListener('click', listener);
-    return () => {
-      global.removeEventListener('click', listener);
-    };
-  }, [globalClickListener]);
+    if (devTools) {
+      if (action === null) {
+        devTools.init(state);
+      } else {
+        devTools.send(action, state);
+      }
+    }
+  }, [action, devTools, state]);
 
-  return { id, ref: target };
+  return [
+    state,
+    useCallback((action) => {
+      actionRef.current = action;
+      dispatch(action);
+    }, []),
+  ];
+}
+
+/**
+ *
+ * @description Use props of a selectable block container.
+ * @param {{id: BlockId, selection: BlockId[]}} blocks
+ * @param {Function} dispatch
+ * @returns {{onClick: Function, id: BlockId, selection: BlockId[]}}
+ */
+export function useSelectableBlockContainerProps(
+  { id, selection }: { id: BlockId, selection: BlockId[] },
+  dispatch
+) {
+  return {
+    id,
+    selection,
+    onClick: useCallback(
+      (event: SyntheticMouseEvent) => {
+        event.stopPropagation();
+        dispatch({
+          type: SELECT_BLOCK,
+          id,
+          ...(event.shiftKey && { modifier: 'add' }),
+        });
+      },
+      [dispatch, id]
+    ),
+  };
 }

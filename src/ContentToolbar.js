@@ -1,52 +1,19 @@
 // @flow
 import * as React from 'react';
 
-import { blockTypes } from './types';
-import { toRawContent } from './Draft.helpers';
 import type { Action } from './reducers/content';
-import { CREATE_BLOCK, CREATE_BLOCKS_TREE } from './reducers/content';
 import Toolbar from './ui/Toolbar';
+import {
+  ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION,
+  ADD_SIBLING_TEXT_BLOCKS_ACTION,
+  ADD_TEXT_BLOCK_ACTION,
+  ADD_TITLED_PIE_ACTION,
+  ADD_TITLED_PIE_WITH_DESCRIPTION_ACTION,
+} from './ContentToolbar.constants';
+import ContentBlockToolbarGroup from './ContentBlockToolbarGroup';
 
 type Props = {
   dispatch: (Action) => any,
-};
-
-const pie = {
-  type: blockTypes.GRID,
-  body: {},
-  format: {
-    columns: '600px',
-    rows: '0.025fr 0.975fr',
-  },
-  children: [
-    {
-      type: blockTypes.DRAFT,
-      body: toRawContent('<h2>Pie title</h2>'),
-      format: {
-        textAlignment: 'center',
-      },
-    },
-    {
-      type: blockTypes.PIE,
-      body: {
-        elements: [
-          {
-            title: 'First half',
-            percent: 50,
-            color: '#653867',
-          },
-          {
-            title: 'Second half',
-            percent: 50,
-            color: '#e5002d',
-          },
-        ],
-        fontSize: 14,
-        padding: 60,
-      },
-      selected: true,
-    },
-  ],
 };
 
 /**
@@ -54,24 +21,14 @@ const pie = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentToolbar({ dispatch }: Props) {
+export default function ContentToolbar({ dispatch, selection }: Props) {
   return (
     <Toolbar>
       <Toolbar.Group>
         <Toolbar.ActionButton
           title={'Add text block'}
           dispatch={dispatch}
-          action={{
-            type: CREATE_BLOCK,
-            block: {
-              type: blockTypes.DRAFT,
-              body: toRawContent('Rich text'),
-              format: {
-                verticalAlignment: 'center',
-              },
-              selected: true,
-            },
-          }}
+          action={ADD_TEXT_BLOCK_ACTION}
         >
           + text
         </Toolbar.ActionButton>
@@ -79,36 +36,7 @@ export default function ContentToolbar({ dispatch }: Props) {
         <Toolbar.ActionButton
           title={'Add sibling text blocks'}
           dispatch={dispatch}
-          action={{
-            type: CREATE_BLOCKS_TREE,
-            children: [
-              {
-                type: blockTypes.GRID,
-                body: {},
-                format: {
-                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                },
-                children: [
-                  {
-                    type: blockTypes.DRAFT,
-                    body: toRawContent('First column text content'),
-                    format: {
-                      verticalAlignment: 'center',
-                    },
-                    selected: true,
-                  },
-                  {
-                    type: blockTypes.DRAFT,
-                    body: toRawContent('Second column text content'),
-                    format: {
-                      verticalAlignment: 'center',
-                    },
-                    selected: true,
-                  },
-                ],
-              },
-            ],
-          }}
+          action={ADD_SIBLING_TEXT_BLOCKS_ACTION}
         >
           + 2 text columns
         </Toolbar.ActionButton>
@@ -118,12 +46,9 @@ export default function ContentToolbar({ dispatch }: Props) {
 
       <Toolbar.Group>
         <Toolbar.ActionButton
-          title={'Titled pie'}
+          title={'Add titled pie'}
           dispatch={dispatch}
-          action={{
-            type: CREATE_BLOCKS_TREE,
-            children: [pie],
-          }}
+          action={ADD_TITLED_PIE_ACTION}
         >
           + pie chart
         </Toolbar.ActionButton>
@@ -131,25 +56,7 @@ export default function ContentToolbar({ dispatch }: Props) {
         <Toolbar.ActionButton
           title={'Add titled pie with description'}
           dispatch={dispatch}
-          action={{
-            type: CREATE_BLOCKS_TREE,
-            children: [
-              {
-                type: blockTypes.GRID,
-                format: {
-                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                },
-                children: [
-                  pie,
-                  {
-                    type: blockTypes.DRAFT,
-                    body: toRawContent('Text content'),
-                    format: {},
-                  },
-                ],
-              },
-            ],
-          }}
+          action={ADD_TITLED_PIE_WITH_DESCRIPTION_ACTION}
         >
           + pie chart & text
         </Toolbar.ActionButton>
@@ -157,29 +64,12 @@ export default function ContentToolbar({ dispatch }: Props) {
         <Toolbar.ActionButton
           title={'Add description with titled pie'}
           dispatch={dispatch}
-          action={{
-            type: CREATE_BLOCKS_TREE,
-            children: [
-              {
-                type: blockTypes.GRID,
-                format: {
-                  columns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                },
-                children: [
-                  {
-                    type: blockTypes.DRAFT,
-                    body: {},
-                    format: toRawContent('Text content'),
-                  },
-                  pie,
-                ],
-              },
-            ],
-          }}
+          action={ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION}
         >
           + text & pie chart
         </Toolbar.ActionButton>
       </Toolbar.Group>
+      {selection.length > 0 && <ContentBlockToolbarGroup dispatch={dispatch} />}
     </Toolbar>
   );
 }

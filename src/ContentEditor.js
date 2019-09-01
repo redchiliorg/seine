@@ -9,12 +9,14 @@ import { blockTypes } from './types';
 import DraftEditor from './DraftEditor';
 import GridEditor from './GridEditor';
 import Paper from './ui/Paper';
-import reduce from './reducers/content';
+import type { Action, State } from './reducers/content';
+import reduce, { initialState } from './reducers/content';
 import PieEditor from './PieEditor';
 import PieToolbar from './PieToolbar';
 import ContentToolbar from './ContentToolbar';
 import DraftToolbar from './DraftToolbar';
 import DraftEditorContext, { useDraftEditorState } from './DraftEditorContext';
+import { useReducerEx } from './helpers';
 
 const DefaultContainer = styled.div`
   width: 75%;
@@ -52,13 +54,21 @@ export default function ContentEditor({
   as: Container = DefaultContainer,
   ...contentProps
 }: Props) {
-  const [blocks, dispatch] = React.useReducer(reduce, children);
+  const [{ blocks, selection }, dispatch] = useReducerEx<State, Action>(
+    reduce,
+    initialState,
+    React.useCallback(() => ({ ...initialState, blocks: children }), [children])
+  );
 
   React.useEffect(() => {
     onChange && onChange(blocks);
   }, [blocks, onChange]);
 
-  const selectedBlock = blocks.find(({ selected }) => selected);
+  const selectedBlock = React.useMemo(
+    () =>
+      selection.length === 1 && blocks.find(({ id }) => selection.includes(id)),
+    [blocks, selection]
+  );
 
   return (
     <ThemeProvider theme={theme}>
@@ -71,15 +81,11 @@ export default function ContentEditor({
           ) : selectedBlock && selectedBlock.type === blockTypes.DRAFT ? (
             <DraftToolbar {...selectedBlock} dispatch={dispatch} />
           ) : (
-            <ContentToolbar dispatch={dispatch} />
+            <ContentToolbar dispatch={dispatch} selection={selection} />
           )}
           <ContentPaper>
             <Content {...contentProps} blockRenderMap={blockRenderMap}>
-              {blocks.map(({ id, body, selected, ...block }) => ({
-                ...block,
-                id,
-                body: { ...(body || {}), id, selected, dispatch },
-              }))}
+              {blocks.map((block) => ({ ...block, selection, dispatch }))}
             </Content>
           </ContentPaper>
         </Container>

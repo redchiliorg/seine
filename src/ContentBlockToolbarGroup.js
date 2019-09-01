@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Toolbar from './ui/Toolbar';
 import type { Action } from './reducers/content';
-import { DELETE_SELECTED } from './reducers/content';
+import { DELETE_SELECTED_BLOCKS } from './reducers/content';
 
 type Props = {
   dispatch: (Action) => any,
@@ -26,7 +26,7 @@ export default function ContentBlockToolbarGroup({ dispatch }: Props) {
         color={'danger'}
         title={'Delete current selection'}
         dispatch={dispatch}
-        action={{ type: DELETE_SELECTED }}
+        action={{ type: DELETE_SELECTED_BLOCKS }}
       >
         Delete
       </Toolbar.ActionButton>

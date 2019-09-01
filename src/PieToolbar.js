@@ -4,10 +4,10 @@ import * as React from 'react';
 import type { Action } from './reducers/content';
 import Toolbar from './ui/Toolbar';
 import { UPDATE_BLOCK_BODY } from './reducers/content';
-import type { ContentBlock, PieBody } from './types';
+import type { Block, PieBody } from './types';
 import ContentBlockToolbarGroup from './ContentBlockToolbarGroup';
 
-type Props = ContentBlock & {
+type Props = Block & {
   dispatch: (Action) => any,
   body: PieBody & { edit?: boolean },
 };
@@ -23,33 +23,6 @@ export default function PieToolbar({ id, body, dispatch }: Props) {
   return (
     <Toolbar>
       <Toolbar.Group>
-        {body.edit ? (
-          <Toolbar.ActionButton
-            color={'primary'}
-            title={'Switch pie to view mode'}
-            dispatch={dispatch}
-            action={{
-              type: UPDATE_BLOCK_BODY,
-              id,
-              body: { edit: false },
-            }}
-          >
-            View pie
-          </Toolbar.ActionButton>
-        ) : (
-          <Toolbar.ActionButton
-            color={'primary'}
-            title={'Switch pie to edit mode'}
-            dispatch={dispatch}
-            action={{
-              type: UPDATE_BLOCK_BODY,
-              id,
-              body: { edit: true },
-            }}
-          >
-            Edit pie
-          </Toolbar.ActionButton>
-        )}
         <Toolbar.ActionButton
           title={'Add new slice'}
           dispatch={dispatch}

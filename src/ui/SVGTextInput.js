@@ -22,7 +22,7 @@ export default function SVGTextInput({
   as: Input,
   ...inputProps
 }: Props) {
-  const { x, y } = children.getBBox();
+  const { x, y, width: w, height: h } = children.getBBox();
   const { width, height } = overlay.getBoundingClientRect();
   return (
     <Input
@@ -31,8 +31,9 @@ export default function SVGTextInput({
         position: 'absolute',
         left: parseInt((x * width) / size),
         top: parseInt((y * height) / size),
+        width: parseInt((w * width) / size),
         color: children.getAttribute('fill'),
-        fontSize: (children.getAttribute('font-size') * width) / size,
+        fontSize: parseInt(h),
       }}
     />
   );
