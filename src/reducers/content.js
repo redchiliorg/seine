@@ -5,7 +5,7 @@ import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 
 export const CREATE_BLOCK = 'seine/editor/createBlock';
 export const CREATE_BLOCKS_TREE = 'seine/editor/createBlocksTree';
-export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteBlock';
+export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteSelectedBlocks';
 export const SELECT_BLOCK = 'seine/editor/selectBlock';
 export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
 export const UPDATE_BLOCK_FORMAT = 'seine/editor/updateBlockFormat';
