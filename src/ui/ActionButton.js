@@ -25,13 +25,7 @@ export default function ActionButton({
     <Button
       {...buttonProps}
       type={type}
-      onClick={React.useCallback(
-        (event) => {
-          event.stopPropagation();
-          dispatch(action);
-        },
-        [dispatch, action]
-      )}
+      onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
     />
   );
 }

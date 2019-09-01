@@ -3,12 +3,12 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Editor } from 'draft-js';
 
-import { useBlockSelection } from './helpers';
-import type { DraftBody, DraftFormat } from './types';
+import type { BlockEditor, DraftBody, DraftFormat } from './types';
 import DraftEditorContext from './DraftEditorContext';
 import Draft from './Draft';
+import { useSelectableBlockContainerProps } from './helpers';
 
-type Props = (DraftBody & DraftFormat) & {
+type Props = (DraftBody & DraftFormat & BlockEditor) & {
   id: string,
   dispatch: Function,
 };
@@ -21,20 +21,14 @@ const Container = styled.div`
     display: grid;
     align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
   }
-  ${({ isSelected }) =>
-    isSelected
+  ${({ id, selection }: Props) =>
+    selection.includes(id)
       ? css`
           border: 1px dashed blue;
         `
       : css`
           border: 1px solid transparent;
         `}
-  ${({ isSelected, hasSelected }) =>
-    !isSelected &&
-    hasSelected &&
-    css`
-      pointer-events: none;
-    `}
 `;
 
 /**
@@ -44,33 +38,35 @@ const Container = styled.div`
  */
 export default function DraftEditor({
   id,
+  selection,
   dispatch,
   children,
   entityMap,
   blocks,
-  ...draftProps
+  textAlignment,
+  verticalAlignment,
+  ...containerProps
 }: Props) {
-  const { editorState, setEditorState, ...selectedBlock } = React.useContext(
-    DraftEditorContext
-  );
-  const isSelected = selectedBlock.id === id;
+  const { editorState, setEditorState } = React.useContext(DraftEditorContext);
 
   return (
     <Container
-      {...useBlockSelection(id, dispatch)}
-      isSelected={isSelected}
-      hasSelected={!!selectedBlock.id}
-      verticalAlignment={draftProps.verticalAlignment}
+      {...useSelectableBlockContainerProps({ id, selection }, dispatch)}
+      {...containerProps}
     >
-      {isSelected && !!editorState ? (
+      {selection.length === 1 && selection[0] === id && editorState ? (
         <Editor
-          {...draftProps}
-          ref={(editor) => editor && editor.focus()}
+          textAlignment={textAlignment}
           editorState={editorState}
           onChange={setEditorState}
         />
       ) : (
-        <Draft {...draftProps} entityMap={entityMap} blocks={blocks} />
+        <Draft
+          textAlignment={textAlignment}
+          verticalAlignment={verticalAlignment}
+          entityMap={entityMap}
+          blocks={blocks}
+        />
       )}
     </Container>
   );

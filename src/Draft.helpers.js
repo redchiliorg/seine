@@ -2,23 +2,26 @@
 import { compose } from 'recompose';
 import {
   ContentState,
+  CompositeDecorator,
   convertFromHTML,
   convertFromRaw,
   convertToRaw,
   EditorState,
 } from 'draft-js';
 import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
+import type { DraftDecoratorType } from 'draft-js/lib/DraftDecoratorType';
 
 /**
  * @description Transform a value to editor state of draft-js.
  * @param {any} value
+ * @param {CompositeDecorator} decorator
  * @returns {EditorState}
  */
-export function toDraftEditor(value: any) {
+export function toDraftEditor(value: any, decorator?: DraftDecoratorType) {
   if (value && value instanceof EditorState) {
     return value;
   }
-  return EditorState.createWithContent(toDraftContent(value));
+  return EditorState.createWithContent(toDraftContent(value), decorator);
 }
 
 /**
@@ -35,6 +38,7 @@ export function toDraftContent(value: any) {
   } else if (
     typeof value === 'object' &&
     Array.isArray(value.blocks) &&
+    value.blocks.length &&
     typeof value.entityMap === 'object'
   ) {
     return convertFromRaw(value);

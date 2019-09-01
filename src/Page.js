@@ -1,7 +1,9 @@
 // @flow
 import * as React from 'react';
 
-export type Props = {
+import type { PageBody, PageFormat } from './types';
+
+export type Props = (PageBody & PageFormat) & {
   children: React.ChildrenArray<React.Node>,
 };
 

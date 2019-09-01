@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled from 'styled-components';
-import { CompositeDecorator, EditorState } from 'draft-js';
+import { CompositeDecorator } from 'draft-js';
 import type { DraftDecorator } from 'draft-js/lib/DraftDecorator';
 import DraftEditorContents from 'draft-js/lib/DraftEditorContents.react';
 import defaultBlockRenderMap from 'draft-js/lib/DefaultDraftBlockRenderMap';
@@ -10,22 +10,33 @@ import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
 import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
 import clsx from 'clsx';
 
-import { imageDecorator } from './Draft.decorators';
 import type { DraftBody, DraftFormat } from './types';
+import { imageDecorator } from './Draft.decorators';
 import { toDraftEditor } from './Draft.helpers';
 
-export type Props = DraftEditorProps &
-  DraftBody &
-  DraftFormat & {
-    decorators?: DraftDecorator[],
-  };
+export type Props = (DraftBody & DraftFormat) & {
+  decorators?: DraftDecorator[],
+};
 
 export default styled(Draft)`
   display: flex;
   height: 100%;
-  align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
-  justify-content: ${({ textAlignment = 'left' }: Props) => textAlignment};
+  align-items: ${({ verticalAlignment = 'start' }: DraftFormat) =>
+    verticalAlignment};
+  justify-content: ${({ textAlignment = 'left' }: DraftFormat) =>
+    textAlignment};
 `;
+
+export const defaultDraftBlocks = [];
+export const defaultDraftEntityMap = {};
+export const defaultDraftBody = {
+  blocks: defaultDraftBlocks,
+  entityMap: defaultDraftEntityMap,
+};
+export const defaultDraftFormat: DraftFormat = {
+  textAlignment: 'left',
+  verticalAlignment: 'top',
+};
 
 /**
  * @description Draft block component.
@@ -45,10 +56,10 @@ function Draft({
   customStyleMap = defaultDraftInlineStyle,
   className = '',
   textAlignment = 'left',
-  blocks = [],
-  entityMap = {},
+  blocks = defaultDraftBlocks,
+  entityMap = defaultDraftEntityMap,
   ...editorProps
-}: Props) {
+}: Props & DraftEditorProps) {
   return (
     <div
       className={clsx({
@@ -71,9 +82,10 @@ function Draft({
         customStyleMap={customStyleMap}
         editorState={React.useMemo(
           () =>
-            EditorState.set(toDraftEditor({ blocks, entityMap }), {
-              decorator: new CompositeDecorator(decorators),
-            }),
+            toDraftEditor(
+              { blocks, entityMap },
+              new CompositeDecorator(decorators)
+            ),
           [blocks, decorators, entityMap]
         )}
       />

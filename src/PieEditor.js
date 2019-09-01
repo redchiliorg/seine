@@ -4,24 +4,23 @@ import styled from 'styled-components';
 
 import type { Props as PieProps } from './Pie';
 import Pie from './Pie';
-import { useBlockSelection } from './helpers';
+import type { Action } from './reducers/pie';
 import reduce from './reducers/pie';
-import type { PieElement } from './types';
+import type { BlockEditor, PieElement } from './types';
 import PieSliceEditor from './PieSliceEditor';
 import { UPDATE_BLOCK_BODY } from './reducers/content';
-import type { Action } from './reducers/pie';
+import { useSelectableBlockContainerProps } from './helpers';
 
-type Props = {
+type Props = BlockEditor & {
   id: string,
   dispatch: Function,
-  selected: boolean,
   edit: boolean,
 } & PieProps;
 
 const Container = styled.div`
   position: relative;
-  border: ${({ isSelected }) =>
-    isSelected ? '1px dashed blue' : '1px solid transparent'};
+  border: ${({ id, selection }) =>
+    selection.includes(id) ? '1px dashed blue' : '1px solid transparent'};
 `;
 
 const Overlay = styled.div`
@@ -38,32 +37,33 @@ const Overlay = styled.div`
  */
 export default function PieEditor({
   id,
+  selection,
   dispatch,
-  selected,
   elements,
   fontColor = 'white',
   fontSize = 18,
   padding = 20,
   size = 360,
-  edit = false,
+  ...containerProps
 }: Props) {
   const overlay = React.useRef<HTMLDivElement>(null);
   const dispatchPie = React.useCallback(
-    (action: Action) => {
+    (action: Action) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
-        id,
         body: { elements: reduce(elements, action) },
-      });
-    },
-    [dispatch, elements, id]
+      }),
+    [dispatch, elements]
   );
 
   let angle = 0;
   return (
-    <Container {...useBlockSelection(id, dispatch)} isSelected={selected}>
+    <Container
+      {...useSelectableBlockContainerProps({ id, selection }, dispatch)}
+      {...containerProps}
+    >
       <Overlay ref={overlay} />
-      {edit ? (
+      {selection.length === 1 && selection[0] === id ? (
         <svg viewBox={`0 0 ${size} ${size}`}>
           {elements.map(({ title, percent, color }: PieElement, index) => {
             const step = (percent * size) / 100;

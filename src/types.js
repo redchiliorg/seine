@@ -10,6 +10,11 @@ export const blockTypes = {
 
 export type BlockType = $Values<typeof blockTypes>;
 
+// region Page
+export type PageBody = {};
+export type PageFormat = {};
+// endregion
+
 // region Grid
 export type GridBody = {};
 export type GridFormat = {
@@ -46,13 +51,24 @@ export type DraftFormat = {
 };
 // endregion
 
-export type BlockBody = null | GridBody | PieBody | DraftBody;
-export type BlockFormat = null | GridFormat | PieFormat | DraftFormat;
+export type BlockBody = null | PageBody | GridBody | PieBody | DraftBody;
+export type BlockFormat =
+  | null
+  | PageFormat
+  | GridFormat
+  | PieFormat
+  | DraftFormat;
 
-export type ContentBlock = {
-  id: string,
+export type BlockId = string | null;
+
+export type Block = {
+  id: BlockId,
   body: BlockBody,
   format: BlockFormat,
-  parent_id: string | null,
+  parent_id: BlockId,
   type: BlockType,
+};
+
+export type BlockEditor = {
+  selection: $ReadOnlyArray<BlockId>,
 };

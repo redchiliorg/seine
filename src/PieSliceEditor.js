@@ -26,6 +26,7 @@ const PieSliceActionInput = styled(ActionInput)`
  * @description Slice element editor of pie chart.
  * @param {Props} props
  * @returns {React.Node}
+ * todo ref to boundary box in PieSlice
  */
 export default function PieSliceEditor({
   index,
@@ -52,7 +53,7 @@ export default function PieSliceEditor({
       {overlay &&
         ReactDOM.createPortal(
           <>
-            {titleText && (
+            {titleText !== null && (
               <SVGTextInput
                 size={size}
                 overlay={overlay}
@@ -65,7 +66,7 @@ export default function PieSliceEditor({
                 {titleText}
               </SVGTextInput>
             )}
-            {percentText && (
+            {percentText !== null && (
               <SVGTextInput
                 size={size}
                 overlay={overlay}
