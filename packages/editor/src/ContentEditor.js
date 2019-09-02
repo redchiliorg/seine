@@ -2,7 +2,6 @@
 import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap } from '@seine/content';
 import {
@@ -11,18 +10,17 @@ import {
   editor as reduce,
   initialState,
 } from '@seine/core';
-import type { Block } from '@seine/core';
-import type { EditorAction, EditorState } from '@seine/core';
+import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
   DraftEditor,
   DraftToolbar,
   DraftEditorContext,
   useDraftEditorState,
 } from '@seine/draft-editor';
-import GridEditor from './GridEditor';
 import { Paper } from '@seine/ui';
 import { PieEditor, PieToolbar } from '@seine/pie-editor';
 
+import GridEditor from './GridEditor';
 import ContentToolbar from './ContentToolbar';
 
 const DefaultContainer = styled.div`
@@ -40,9 +38,9 @@ const ContentPaper = styled(Paper)`
 `;
 
 type Props = ContentProps & {
-  onChange: (Block[]) => any,
-  theme: { [string]: any },
-  as: React.ComponentType<*>,
+  onChange?: (Block[]) => any,
+  theme?: { [string]: any },
+  as?: React.ComponentType<*>,
 };
 
 /**

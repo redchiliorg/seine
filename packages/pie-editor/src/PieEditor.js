@@ -1,15 +1,13 @@
 // @flow
 import * as React from 'react';
 import styled from 'styled-components';
-
 import { Pie } from '@seine/pie';
 import type { BlockEditor, PieElement, PieProps } from '@seine/core';
-import { UPDATE_BLOCK_BODY } from '@seine/core';
+import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
 
 import type { Action } from './reducer';
 import reduce from './reducer';
 import PieSliceEditor from './PieSliceEditor';
-import { useSelectableBlockProps } from '@seine/core';
 
 type Props = BlockEditor & {
   id: string,

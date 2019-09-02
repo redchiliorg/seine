@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-
 import type { Action, Block, PieBody } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
 import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';

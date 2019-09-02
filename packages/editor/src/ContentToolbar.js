@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
-
 import type { Action } from '@seine/core';
 import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
+
 import {
   ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION,
   ADD_SIBLING_TEXT_BLOCKS_ACTION,

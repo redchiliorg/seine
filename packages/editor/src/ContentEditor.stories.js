@@ -2,6 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { draft, grid, pie, title } from '../../content/src/Content.mocks';
+
 import ContentEditor from './ContentEditor';
 
 storiesOf('ContentEditor', module)

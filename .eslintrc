@@ -10,8 +10,8 @@
     "no-console": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
-    "jsdoc/require-returns-description": false,
-    "jsdoc/require-param-description": false,
+    "jsdoc/require-returns-description": 0,
+    "jsdoc/require-param-description": 0,
     "jsdoc/require-description": ["warn", { "descriptionStyle": "tag" }]
   }
 }

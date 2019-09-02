@@ -15,7 +15,7 @@ import {
 } from 'draft-js-buttons';
 import clsx from 'clsx';
 import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
-import type { Action, Block, DraftBody, DraftFormat } from '@seine/core';
+import type { Action, Block, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
 

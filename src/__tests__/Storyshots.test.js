@@ -1,4 +1,3 @@
-import * as React from 'react';
 import initStoryshots, {
   multiSnapshotWithOptions,
   Stories2SnapsConverter,
