@@ -1,0 +1,832 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ContentEditor 1. Empty 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text blocks"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+    </div>
+    <div
+      className="sc-EHOje gFATzn"
+    />
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie with description"
+        type="button"
+      >
+        + pie chart & text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add description with titled pie"
+        type="button"
+      >
+        + text & pie chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  />
+</div>
+`;
+
+exports[`Storyshots ContentEditor 2. Draft 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text blocks"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+    </div>
+    <div
+      className="sc-EHOje gFATzn"
+    />
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie with description"
+        type="button"
+      >
+        + pie chart & text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add description with titled pie"
+        type="button"
+      >
+        + text & pie chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+  </div>
+</div>
+`;
+
+exports[`Storyshots ContentEditor 3. Pie 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text blocks"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+    </div>
+    <div
+      className="sc-EHOje gFATzn"
+    />
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie with description"
+        type="button"
+      >
+        + pie chart & text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add description with titled pie"
+        type="button"
+      >
+        + text & pie chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-iwsKbI hbcadH"
+      id="pie"
+      onClick={[Function]}
+      type="pie"
+    >
+      <div
+        className="sc-gZMcBi egFHNl"
+      />
+      <svg
+        viewBox="0 0 360 360"
+      >
+        <g>
+          <path
+            d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+            fill="#653867"
+          />
+          <text
+            fill="black"
+            fontSize={14}
+            textAnchor="middle"
+            x={238.89992842954845}
+            y={31.23576225787977}
+          >
+            12
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={238.89992842954845}
+            y={31.23576225787977}
+          >
+            repairs
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+            fill="#e5002d"
+          />
+          <text
+            fill="black"
+            fontSize={14}
+            textAnchor="middle"
+            x={320.2090688070182}
+            y={102.91941214372557}
+          >
+            10
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={320.2090688070182}
+            y={102.91941214372557}
+          >
+            consulting
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+            fill="#f80048"
+          />
+          <text
+            fill="black"
+            fontSize={14}
+            textAnchor="middle"
+            x={339.6842765485235}
+            y={190.04648312469016}
+          >
+            8
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={339.6842765485235}
+            y={190.04648312469016}
+          >
+            training
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
+            fill="#ff3d69"
+          />
+          <text
+            fill="white"
+            fontSize={14}
+            textAnchor="middle"
+            x={138.9271736442787}
+            y={223.73811764528472}
+          >
+            64
+            %
+          </text>
+          <text
+            dy={14}
+            fill="white"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={138.9271736442787}
+            y={223.73811764528472}
+          >
+            product sales
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+            fill="#ff6d8c"
+          />
+          <text
+            fill="black"
+            fontSize={14}
+            textAnchor="middle"
+            x={150.01898966628391}
+            y={22.834039883409844}
+          >
+            6
+            %
+          </text>
+          <text
+            dy={14}
+            fill="black"
+            fontSize={10.5}
+            textAnchor="middle"
+            x={150.01898966628391}
+            y={22.834039883409844}
+          >
+            others
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text blocks"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+    </div>
+    <div
+      className="sc-EHOje gFATzn"
+    />
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie with description"
+        type="button"
+      >
+        + pie chart & text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add description with titled pie"
+        type="button"
+      >
+        + text & pie chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      style={
+        Object {
+          "columnGap": 20,
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+          "gridTemplateRows": "",
+          "rowGap": 20,
+        }
+      }
+    >
+      <div
+        className="sc-iwsKbI hbcadH"
+        id="pie"
+        onClick={[Function]}
+        type="pie"
+      >
+        <div
+          className="sc-gZMcBi egFHNl"
+        />
+        <svg
+          viewBox="0 0 360 360"
+        >
+          <g>
+            <path
+              d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+              fill="#653867"
+            />
+            <text
+              fill="black"
+              fontSize={14}
+              textAnchor="middle"
+              x={238.89992842954845}
+              y={31.23576225787977}
+            >
+              12
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={238.89992842954845}
+              y={31.23576225787977}
+            >
+              repairs
+            </text>
+          </g>
+          <g>
+            <path
+              d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+              fill="#e5002d"
+            />
+            <text
+              fill="black"
+              fontSize={14}
+              textAnchor="middle"
+              x={320.2090688070182}
+              y={102.91941214372557}
+            >
+              10
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={320.2090688070182}
+              y={102.91941214372557}
+            >
+              consulting
+            </text>
+          </g>
+          <g>
+            <path
+              d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+              fill="#f80048"
+            />
+            <text
+              fill="black"
+              fontSize={14}
+              textAnchor="middle"
+              x={339.6842765485235}
+              y={190.04648312469016}
+            >
+              8
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={339.6842765485235}
+              y={190.04648312469016}
+            >
+              training
+            </text>
+          </g>
+          <g>
+            <path
+              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
+              fill="#ff3d69"
+            />
+            <text
+              fill="white"
+              fontSize={14}
+              textAnchor="middle"
+              x={138.9271736442787}
+              y={223.73811764528472}
+            >
+              64
+              %
+            </text>
+            <text
+              dy={14}
+              fill="white"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={138.9271736442787}
+              y={223.73811764528472}
+            >
+              product sales
+            </text>
+          </g>
+          <g>
+            <path
+              d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+              fill="#ff6d8c"
+            />
+            <text
+              fill="black"
+              fontSize={14}
+              textAnchor="middle"
+              x={150.01898966628391}
+              y={22.834039883409844}
+            >
+              6
+              %
+            </text>
+            <text
+              dy={14}
+              fill="black"
+              fontSize={10.5}
+              textAnchor="middle"
+              x={150.01898966628391}
+              y={22.834039883409844}
+            >
+              others
+            </text>
+          </g>
+        </svg>
+      </div>
+      {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text blocks"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+    </div>
+    <div
+      className="sc-EHOje gFATzn"
+    />
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add titled pie with description"
+        type="button"
+      >
+        + pie chart & text
+      </button>
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add description with titled pie"
+        type="button"
+      >
+        + text & pie chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      style={
+        Object {
+          "columnGap": 20,
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+          "gridTemplateRows": "",
+          "rowGap": 20,
+        }
+      }
+    >
+      {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+      <div
+        style={
+          Object {
+            "columnGap": 20,
+            "display": "grid",
+            "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+            "gridTemplateRows": "",
+            "rowGap": 20,
+          }
+        }
+      >
+        {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+        <div
+          className="sc-iwsKbI hbcadH"
+          id="pie"
+          onClick={[Function]}
+          type="pie"
+        >
+          <div
+            className="sc-gZMcBi egFHNl"
+          />
+          <svg
+            viewBox="0 0 360 360"
+          >
+            <g>
+              <path
+                d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+                fill="#653867"
+              />
+              <text
+                fill="black"
+                fontSize={14}
+                textAnchor="middle"
+                x={238.89992842954845}
+                y={31.23576225787977}
+              >
+                12
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={238.89992842954845}
+                y={31.23576225787977}
+              >
+                repairs
+              </text>
+            </g>
+            <g>
+              <path
+                d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+                fill="#e5002d"
+              />
+              <text
+                fill="black"
+                fontSize={14}
+                textAnchor="middle"
+                x={320.2090688070182}
+                y={102.91941214372557}
+              >
+                10
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={320.2090688070182}
+                y={102.91941214372557}
+              >
+                consulting
+              </text>
+            </g>
+            <g>
+              <path
+                d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+                fill="#f80048"
+              />
+              <text
+                fill="black"
+                fontSize={14}
+                textAnchor="middle"
+                x={339.6842765485235}
+                y={190.04648312469016}
+              >
+                8
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={339.6842765485235}
+                y={190.04648312469016}
+              >
+                training
+              </text>
+            </g>
+            <g>
+              <path
+                d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
+                fill="#ff3d69"
+              />
+              <text
+                fill="white"
+                fontSize={14}
+                textAnchor="middle"
+                x={138.9271736442787}
+                y={223.73811764528472}
+              >
+                64
+                %
+              </text>
+              <text
+                dy={14}
+                fill="white"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={138.9271736442787}
+                y={223.73811764528472}
+              >
+                product sales
+              </text>
+            </g>
+            <g>
+              <path
+                d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+                fill="#ff6d8c"
+              />
+              <text
+                fill="black"
+                fontSize={14}
+                textAnchor="middle"
+                x={150.01898966628391}
+                y={22.834039883409844}
+              >
+                6
+                %
+              </text>
+              <text
+                dy={14}
+                fill="black"
+                fontSize={10.5}
+                textAnchor="middle"
+                x={150.01898966628391}
+                y={22.834039883409844}
+              >
+                others
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
