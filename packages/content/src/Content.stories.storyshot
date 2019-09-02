@@ -10,14 +10,115 @@ exports[`Storyshots Content 1. Draft 1`] = `
     <div
       className="sc-bdVaJa fciEdn"
       data-block={true}
-      data-offset-key="1-0-0"
+      data-offset-key="jpt2-0-0"
     >
       <div
         className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-        data-offset-key="1-0-0"
+        data-offset-key="jpt2-0-0"
       >
         <span
-          data-offset-key="1-0-0"
+          data-offset-key="jpt2-0-0"
+          style={Object {}}
+        >
+          <span
+            data-text="true"
+          >
+            This block is draft.js content. Click here to edit the text.
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="2ao14-0-0"
+    >
+      <div
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="2ao14-0-0"
+      >
+        <span
+          data-offset-key="2ao14-0-0"
+          style={Object {}}
+        >
+          <br
+            data-text="true"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="6oqbd-0-0"
+    >
+      <div
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="6oqbd-0-0"
+      >
+        <span
+          data-offset-key="6oqbd-0-0"
+          style={Object {}}
+        >
+          <span
+            data-text="true"
+          >
+            We are planning to add text formatting toolbar soon.
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="1k69d-0-0"
+    >
+      <div
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="1k69d-0-0"
+      >
+        <span
+          data-offset-key="1k69d-0-0"
+          style={Object {}}
+        >
+          <br
+            data-text="true"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="e1khc-0-0"
+    >
+      <div
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="e1khc-0-0"
+      >
+        <span
+          data-offset-key="e1khc-0-0"
+          style={Object {}}
+        >
+          <span
+            data-text="true"
+          >
+            Draft.js is a framework for building rich text editors in React,
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fciEdn"
+      data-block={true}
+      data-offset-key="cfkg3-0-0"
+    >
+      <div
+        className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+        data-offset-key="cfkg3-0-0"
+      >
+        <span
+          data-offset-key="cfkg3-0-0"
           style={Object {}}
         >
           <span
@@ -324,14 +425,115 @@ exports[`Storyshots Content 3. Pie and draft 1`] = `
       <div
         className="sc-bdVaJa fciEdn"
         data-block={true}
-        data-offset-key="1-0-0"
+        data-offset-key="jpt2-0-0"
       >
         <div
           className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-          data-offset-key="1-0-0"
+          data-offset-key="jpt2-0-0"
         >
           <span
-            data-offset-key="1-0-0"
+            data-offset-key="jpt2-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              This block is draft.js content. Click here to edit the text.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="2ao14-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="2ao14-0-0"
+        >
+          <span
+            data-offset-key="2ao14-0-0"
+            style={Object {}}
+          >
+            <br
+              data-text="true"
+            />
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="6oqbd-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="6oqbd-0-0"
+        >
+          <span
+            data-offset-key="6oqbd-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              We are planning to add text formatting toolbar soon.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="1k69d-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="1k69d-0-0"
+        >
+          <span
+            data-offset-key="1k69d-0-0"
+            style={Object {}}
+          >
+            <br
+              data-text="true"
+            />
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="e1khc-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="e1khc-0-0"
+        >
+          <span
+            data-offset-key="e1khc-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              Draft.js is a framework for building rich text editors in React,
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="cfkg3-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="cfkg3-0-0"
+        >
+          <span
+            data-offset-key="cfkg3-0-0"
             style={Object {}}
           >
             <span
@@ -368,14 +570,115 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
       <div
         className="sc-bdVaJa fciEdn"
         data-block={true}
-        data-offset-key="1-0-0"
+        data-offset-key="jpt2-0-0"
       >
         <div
           className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-          data-offset-key="1-0-0"
+          data-offset-key="jpt2-0-0"
         >
           <span
-            data-offset-key="1-0-0"
+            data-offset-key="jpt2-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              This block is draft.js content. Click here to edit the text.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="2ao14-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="2ao14-0-0"
+        >
+          <span
+            data-offset-key="2ao14-0-0"
+            style={Object {}}
+          >
+            <br
+              data-text="true"
+            />
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="6oqbd-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="6oqbd-0-0"
+        >
+          <span
+            data-offset-key="6oqbd-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              We are planning to add text formatting toolbar soon.
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="1k69d-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="1k69d-0-0"
+        >
+          <span
+            data-offset-key="1k69d-0-0"
+            style={Object {}}
+          >
+            <br
+              data-text="true"
+            />
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="e1khc-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="e1khc-0-0"
+        >
+          <span
+            data-offset-key="e1khc-0-0"
+            style={Object {}}
+          >
+            <span
+              data-text="true"
+            >
+              Draft.js is a framework for building rich text editors in React,
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="sc-bdVaJa fciEdn"
+        data-block={true}
+        data-offset-key="cfkg3-0-0"
+      >
+        <div
+          className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+          data-offset-key="cfkg3-0-0"
+        >
+          <span
+            data-offset-key="cfkg3-0-0"
             style={Object {}}
           >
             <span
@@ -408,14 +711,14 @@ exports[`Storyshots Content 4. Draft and titled pie 1`] = `
         <h2
           className="sc-bdVaJa jyeAKq"
           data-block={true}
-          data-offset-key="1-0-0"
+          data-offset-key="loom-0-0"
         >
           <div
             className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-            data-offset-key="1-0-0"
+            data-offset-key="loom-0-0"
           >
             <span
-              data-offset-key="1-0-0"
+              data-offset-key="loom-0-0"
               style={Object {}}
             >
               <span
