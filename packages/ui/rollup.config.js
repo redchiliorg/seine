@@ -1,4 +1,4 @@
-import config from '../../config/rollup.config';
+import config from '../../rollup.config';
 
 export default config;
 

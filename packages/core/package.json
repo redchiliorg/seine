@@ -10,13 +10,7 @@
   "dependencies": {
     "uuid": "^3.3.2"
   },
-  "devDependencies": {
-    "rollup": "^1.19.4"
-  },
   "peerDependencies": {
     "react": "^16.8.6"
-  },
-  "scripts": {
-    "build": "rollup --environment NODE_ENV:production -f esm -c"
   }
 }

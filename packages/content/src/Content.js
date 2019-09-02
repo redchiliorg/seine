@@ -10,7 +10,7 @@ import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
-  parent: string | null,
+  parent?: string | null,
   children: $ReadOnlyArray<Block>,
 };
 

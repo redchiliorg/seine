@@ -16,6 +16,6 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "build": "rollup --environment NODE_ENV:production -f esm -c"
+    "build": "rollup --environment NODE_ENV:production"
   }
 }

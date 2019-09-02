@@ -2,9 +2,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import type { PieProps } from '@seine/pie';
-import Pie from '../../pie/src/Pie';
-import type { BlockEditor, PieElement } from '@seine/core';
+import { Pie } from '@seine/pie';
+import type { BlockEditor, PieElement, PieProps } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
 
 import type { Action } from './reducer';

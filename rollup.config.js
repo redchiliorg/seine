@@ -14,7 +14,7 @@ const { format = 'cjs', name = 'index', external = '' } = minimist(
     alias: commandAliases,
   }
 );
-const { peerDependencies = {} } = require('./package.json');
+const { dependencies = {}, peerDependencies = {} } = require('./package.json');
 
 export default {
   input: path.join('src', `${name}.js`),
@@ -38,6 +38,7 @@ export default {
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
+      babelrcRoots: ['.', './packages/*'],
     }),
     nodeResolve({
       preferBuiltins: true,
@@ -46,5 +47,9 @@ export default {
     commonjs(),
     postcss({ modules: true }),
   ],
-  external: [...Object.keys(peerDependencies), ...external.split(',')],
+  external: [
+    ...Object.keys(peerDependencies),
+    ...Object.keys(dependencies).filter((name) => name.startsWith('@seine/')),
+    ...(external ? external.split(',') : []),
+  ],
 };
