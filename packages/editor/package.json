@@ -1,0 +1,23 @@
+{
+  "name": "@seine/editor",
+  "version": "0.2.11",
+  "description": "Seine structured content renderer.",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "repository": "redchiliorg/seine",
+  "author": "Mikhail Boyarov",
+  "license": "MIT",
+  "dependencies": {
+    "@seine/core": "0.2.11",
+    "@seine/draft": "0.2.11",
+    "@seine/pie": "0.2.11",
+    "@seine/ui": "0.2.11",
+    "@seine/draft-editor": "0.2.11",
+    "@seine/pie-editor": "0.2.11"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  }
+}
