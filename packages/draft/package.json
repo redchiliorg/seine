@@ -1,13 +1,13 @@
 {
   "name": "@seine/draft",
-  "version": "0.2.11",
+  "version": "0.3.0",
   "description": "Seine structured content renderer.",
   "main": "lib/esm/index.js",
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "0.2.11",
+    "@seine/core": "0.3.0",
     "clsx": "^1.0.4",
     "recompose": "^0.30.0"
   },
