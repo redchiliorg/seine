@@ -5,6 +5,7 @@ import initStoryshots, {
 import * as draftModule from '@seine/draft';
 import * as draftEditorModule from '@seine/draft-editor';
 
+// eslint-disable-next-line import/namespace
 draftModule.Draft = draftEditorModule.DraftEditor = jest.fn(
   ({ blocks, entityMap }) =>
     JSON.stringify({
