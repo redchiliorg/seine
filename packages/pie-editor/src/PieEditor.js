@@ -2,15 +2,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import type { Props as PieProps } from '../../pie/src/Pie';
+import type { PieProps } from '@seine/pie';
 import Pie from '../../pie/src/Pie';
-import type { BlockEditor, PieElement } from '../../core/src/types';
-import { UPDATE_BLOCK_BODY } from '../../core/src/reducers/editor';
+import type { BlockEditor, PieElement } from '@seine/core';
+import { UPDATE_BLOCK_BODY } from '@seine/core';
 
 import type { Action } from './reducer';
 import reduce from './reducer';
 import PieSliceEditor from './PieSliceEditor';
-import { useSelectableBlockProps } from '../../core/src/hooks';
+import { useSelectableBlockProps } from '@seine/core';
 
 type Props = BlockEditor & {
   id: string,
@@ -47,7 +47,7 @@ export default function PieEditor({
   size = 360,
   ...containerProps
 }: Props) {
-  const overlay = React.useRef<HTMLDivElement>(null);
+  const overlay = React.useRef<HTMLDivElement | null>(null);
   const dispatchPie = React.useCallback(
     (action: Action) =>
       dispatch({

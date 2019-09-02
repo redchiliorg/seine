@@ -4,11 +4,15 @@ import type { PieFormat } from '@seine/core';
 
 import { describeArc, polarToCartesian } from './helpers';
 
-export type SVGTextElement = Element & { getBBox: () => DOMRect };
+export type SVGTextElement = React.ElementType<*> & {
+  getAttribute: (string) => string,
+  getBBox: () => DOMRect,
+};
 
 type Config = PieFormat & {
-  titleTextRef: React.ElementRef<SVGTextElement>,
-  percentTextRef: React.ElementRef<SVGTextElement>,
+  titleTextRef: React.ElementRef<SVGTextElement> | null,
+  percentTextRef: React.ElementRef<SVGTextElement> | null,
+  step: number,
 };
 
 export type Props = $Shape<Config> & {
@@ -29,8 +33,8 @@ export default function PieSlice({
   percent,
   step,
   title,
-  titleTextRef,
-  percentTextRef,
+  titleTextRef = null,
+  percentTextRef = null,
   padding = 20,
   size = 360,
   fontSize = 18,
@@ -67,7 +71,7 @@ export default function PieSlice({
         fill={isInnerText ? innerFontColor : outerFontColor}
         x={isInnerText ? innerTextX : outerTextX}
         y={isInnerText ? innerTextY : outerTextY}
-        {...(percentTextRef && { ref: percentTextRef, opacity: 0 })}
+        {...(percentTextRef ? { ref: percentTextRef, opacity: 0 } : {})}
       >
         {Math.round(percent)}%
       </text>
@@ -78,7 +82,7 @@ export default function PieSlice({
         fill={isInnerText ? innerFontColor : outerFontColor}
         x={isInnerText ? innerTextX : outerTextX}
         y={isInnerText ? innerTextY : outerTextY}
-        {...(titleTextRef && { ref: titleTextRef, opacity: 0 })}
+        {...(titleTextRef ? { ref: titleTextRef, opacity: 0 } : {})}
       >
         {title}
       </text>

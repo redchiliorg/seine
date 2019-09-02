@@ -23,9 +23,8 @@ import theme from './DraftToolbar.module.css';
 import DraftEditorContext from './DraftEditorContext';
 
 type Props = Block & {
-  dispatch: (Action) => any,
-  body: DraftBody,
   format: DraftFormat,
+  dispatch: (Action) => any,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -55,7 +54,8 @@ export default function DraftToolbar({
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
     setEditorState,
-    alignment: format.textAlignment,
+    alignment:
+      (format && format.textAlignment) || defaultDraftFormat.textAlignment,
     setAlignment: React.useCallback(
       ({ alignment: textAlignment }) =>
         dispatch({

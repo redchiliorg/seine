@@ -1,5 +1,5 @@
 {
-  "name": "@seine/draft-editor",
+  "name": "@seine/editor",
   "version": "1.0.0",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
@@ -10,12 +10,15 @@
   "dependencies": {
     "@seine/core": "1.0.0",
     "@seine/draft": "1.0.0",
+    "@seine/pie": "1.0.0",
     "@seine/ui": "1.0.0",
-    "draft-js-buttons": "^2.0.2"
+    "@seine/draft-editor": "1.0.0",
+    "@seine/pie-editor": "1.0.0"
   },
   "peerDependencies": {
     "draft-js": "^0.11.0",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }

@@ -16,6 +16,7 @@ import { toDraftEditor } from './helpers';
 
 export type Props = (DraftBody & DraftFormat) & {
   decorators?: DraftDecorator[],
+  className: string,
 };
 
 export default styled(Draft)`
@@ -35,7 +36,7 @@ export const defaultDraftBody = {
 };
 export const defaultDraftFormat: DraftFormat = {
   textAlignment: 'left',
-  verticalAlignment: 'top',
+  verticalAlignment: 'start',
 };
 
 /**
@@ -44,7 +45,7 @@ export const defaultDraftFormat: DraftFormat = {
  * @returns {React.Node}
  */
 function Draft({
-  children,
+  className = '',
   decorators = [imageDecorator],
   blockRenderMap = defaultBlockRenderMap,
   blockRendererFn = () => null,
@@ -54,7 +55,6 @@ function Draft({
   spellCheck = false,
   stripPastedStyles = false,
   customStyleMap = defaultDraftInlineStyle,
-  className = '',
   textAlignment = 'left',
   blocks = defaultDraftBlocks,
   entityMap = defaultDraftEntityMap,

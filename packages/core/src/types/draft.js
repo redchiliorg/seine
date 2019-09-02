@@ -1,5 +1,4 @@
 // @flow
-
 import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 
 export type DraftBody = RawDraftContentState;

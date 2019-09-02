@@ -18,11 +18,11 @@ const defaultDevToolsConfig = {};
 export function useReducerEx<S: State, A: Action>(
   reduce: (S, A) => S,
   initialArg: S,
-  init: (...any) => S,
-  devToolsConfig = defaultDevToolsConfig
+  init: (...any[]) => S,
+  devToolsConfig: { [string]: any } = defaultDevToolsConfig
 ) {
   // reference to last dispatched action
-  const actionRef = useRef<Action>(null);
+  const actionRef = useRef<Action | null>(null);
 
   const [state, dispatch] = useReducer<S, A>(reduce, initialArg, init);
 
@@ -47,7 +47,7 @@ export function useReducerEx<S: State, A: Action>(
 
   return [
     state,
-    useCallback((action) => {
+    useCallback((action: Action) => {
       actionRef.current = action;
       dispatch(action);
     }, []),
@@ -63,18 +63,18 @@ export function useReducerEx<S: State, A: Action>(
  */
 export function useSelectableBlockProps(
   { id, selection }: { id: BlockId, selection: BlockId[] },
-  dispatch
+  dispatch: (Action) => any
 ) {
   return {
     id,
     selection,
     onClick: useCallback(
-      (event: SyntheticMouseEvent) => {
+      (event: SyntheticMouseEvent<>) => {
         event.stopPropagation();
         dispatch({
           type: SELECT_BLOCK,
           id,
-          ...(event.shiftKey && { modifier: 'add' }),
+          ...(event.shiftKey ? { modifier: 'add' } : {}),
         });
       },
       [dispatch, id]

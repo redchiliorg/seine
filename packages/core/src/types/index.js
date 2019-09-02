@@ -8,6 +8,8 @@ import { PAGE } from './page';
 import { DRAFT } from './draft';
 import { PIE } from './pie';
 
+export type { PieElement } from './pie';
+
 export const blockTypes = { GRID, PAGE, DRAFT, PIE };
 
 export type BlockType = $Values<typeof blockTypes>;
@@ -32,7 +34,7 @@ export type Block = {
 };
 
 export type BlockEditor = {
-  selection: $ReadOnlyArray<BlockId>,
+  selection: BlockId[],
 };
 
 export type {

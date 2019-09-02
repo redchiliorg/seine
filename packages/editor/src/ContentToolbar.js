@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
 
-import type { Action } from '../../core/src/reducers/editor';
-import Toolbar from '../../ui/src/Toolbar';
+import type { Action } from '@seine/core';
+import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
 import {
   ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION,
   ADD_SIBLING_TEXT_BLOCKS_ACTION,
@@ -10,7 +10,6 @@ import {
   ADD_TITLED_PIE_ACTION,
   ADD_TITLED_PIE_WITH_DESCRIPTION_ACTION,
 } from './constants';
-import ContentBlockToolbarGroup from '../../ui/src/ContentBlockToolbarGroup';
 
 type Props = {
   dispatch: (Action) => any,

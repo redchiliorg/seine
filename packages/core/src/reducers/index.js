@@ -9,6 +9,7 @@ export {
   SELECT_BLOCK,
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_FORMAT,
+  initialState,
 } from './editor';
 
 export type EditorState = Editor.State;

@@ -1,15 +1,13 @@
 // @flow
 import * as React from 'react';
 
-import type { Action } from '../../core/src/reducers/editor';
-import Toolbar from '../../ui/src/Toolbar';
-import { UPDATE_BLOCK_BODY } from '../../core/src/reducers/editor';
-import type { Block, PieBody } from '../../core/src/types';
-import ContentBlockToolbarGroup from '../../ui/src/ContentBlockToolbarGroup';
+import type { Action, Block, PieBody } from '@seine/core';
+import { UPDATE_BLOCK_BODY } from '@seine/core';
+import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
-  body: PieBody & { edit?: boolean },
+  body: PieBody,
 };
 
 /**
@@ -20,6 +18,7 @@ type Props = Block & {
  * @returns {React.Node}
  */
 export default function PieToolbar({ id, body, dispatch }: Props) {
+  body = body || { elements: [] };
   return (
     <Toolbar>
       <Toolbar.Group>

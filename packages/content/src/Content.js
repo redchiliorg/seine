@@ -10,8 +10,8 @@ import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
-  parent?: string,
-  children: Block[],
+  parent: string | null,
+  children: $ReadOnlyArray<Block>,
 };
 
 export const defaultBlockRenderMap = {
@@ -30,7 +30,7 @@ function Content({
   blockRenderMap = defaultBlockRenderMap,
   parent = null,
   children,
-}: Props) {
+}: Props): React.Node {
   return children
     .filter((block: Block) => block['parent_id'] === parent)
     .map(({ body, format, ...block }: Block) => {
@@ -39,8 +39,8 @@ function Content({
         <ContentBlock
           key={block.id}
           {...block}
-          {...(!!format && format)}
-          {...(!!body && body)}
+          {...(format ? format : {})}
+          {...(body ? body : {})}
         >
           <Content parent={block.id} blockRenderMap={blockRenderMap}>
             {children.filter((content) => content.id !== block.id)}

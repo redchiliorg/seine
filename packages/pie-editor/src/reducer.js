@@ -1,5 +1,5 @@
 // @flow
-import type { PieElement } from '../../core/src/types';
+import type { PieElement } from '@seine/core';
 
 export const PUSH_PIE_ELEMENT = 'seine/pie/pushElement';
 export const UPDATE_PIE_ELEMENT = 'seine/pie/updateElement';

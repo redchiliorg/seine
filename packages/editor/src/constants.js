@@ -1,9 +1,5 @@
-import { blockTypes } from '../../core/src/types';
-import { toRawContent } from '../../draft/src/helpers';
-import {
-  CREATE_BLOCK,
-  CREATE_BLOCKS_TREE,
-} from '../../core/src/reducers/editor';
+import { blockTypes, CREATE_BLOCK, CREATE_BLOCKS_TREE } from '@seine/core';
+import { toRawContent } from '@seine/draft';
 
 export const TITLED_PIE = {
   type: blockTypes.GRID,

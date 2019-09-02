@@ -1,13 +1,13 @@
 // @flow
 import * as React from 'react';
 
-import type { SVGTextElement } from '../../pie/src/PieSlice';
+import type { SVGTextElement } from '@seine/pie';
 
 type Props = {
   children: SVGTextElement,
   size: number,
-  overlay: HTMLElement,
-  as: React.ComponentType,
+  overlay: HTMLElement | null,
+  as: React.ComponentType<any>,
 };
 
 /**
@@ -23,7 +23,9 @@ export default function SVGTextInput({
   ...inputProps
 }: Props) {
   const { x, y, width: w, height: h } = children.getBBox();
-  const { width, height } = overlay.getBoundingClientRect();
+  const { width = w, height = h } = overlay
+    ? overlay.getBoundingClientRect()
+    : {};
   return (
     <Input
       {...inputProps}

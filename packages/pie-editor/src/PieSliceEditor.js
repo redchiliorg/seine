@@ -3,15 +3,16 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-import PieSlice, { Props as PieSliceProps } from '../../pie/src/PieSlice';
-import ActionInput from '../../ui/src/ActionInput';
+import { PieSlice } from '@seine/pie';
+import type { PieSliceProps } from '@seine/pie';
+import { ActionInput } from '@seine/ui';
 import { UPDATE_PIE_ELEMENT } from './reducer';
 import SVGTextInput from './SVGTextInput';
 
 type Props = PieSliceProps & {
   index: number,
   dispatch: Function,
-  overlay: React.Node,
+  overlay: React.ComponentType<any> | null,
 };
 
 const PieSliceActionInput = styled(ActionInput)`
@@ -35,7 +36,9 @@ export default function PieSliceEditor({
   title,
   percent,
   size,
-  ...pieSliceProps
+  angle,
+  color,
+  step,
 }: Props) {
   const [titleText, setTitleText] = React.useState(null);
   const [percentText, setPercentText] = React.useState(null);
@@ -43,12 +46,14 @@ export default function PieSliceEditor({
   return (
     <>
       <PieSlice
+        angle={angle}
+        color={color}
         size={size}
         title={title}
         percent={percent}
+        step={step}
         titleTextRef={setTitleText}
         percentTextRef={setPercentText}
-        {...pieSliceProps}
       />
       {overlay &&
         ReactDOM.createPortal(

@@ -15,7 +15,7 @@ export const initialState = {
   blocks: [],
 };
 type Blocks = $ReadOnlyArray<Block>;
-export type BlocksTree = BlockBody & {
+export type BlocksTree = Block & {
   children: BlocksTree[],
 };
 type CreateBlockAction = {
@@ -24,7 +24,7 @@ type CreateBlockAction = {
 };
 type CreateBlocksTreeAction = {
   type: typeof CREATE_BLOCKS_TREE,
-  children: BlocksTree,
+  children: BlocksTree[],
 };
 type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
@@ -172,8 +172,8 @@ function createBlock(
   return {
     id: id || uuid(),
     parent_id,
-    ...(body !== null && { body }),
-    ...(format !== null && { format }),
+    ...(body ? { body } : {}),
+    ...(format ? { format } : {}),
     ...block,
   };
 }
@@ -185,8 +185,8 @@ function createBlock(
  * @returns {Block[]}
  */
 function createBlocksTree(children: BlocksTree[], parent_id = null) {
-  return children.reduce((acc, { children, ...block }) => {
-    block = createBlock(block, parent_id);
+  return children.reduce((acc, { children, ...data }) => {
+    const block = createBlock(data, parent_id);
     return [
       ...acc,
       block,

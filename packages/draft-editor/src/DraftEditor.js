@@ -40,7 +40,6 @@ export default function DraftEditor({
   id,
   selection,
   dispatch,
-  children,
   entityMap,
   blocks,
   textAlignment,

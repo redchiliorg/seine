@@ -3,25 +3,27 @@ import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
-import type { Props } from '../../content/src/Content';
-import Content, {
-  defaultBlockRenderMap,
-} from '../../content/src/Content';
-import { blockTypes } from '../../core/src/types';
-import DraftEditor from '../../draft-editor/src/DraftEditor';
-import GridEditor from './GridEditor';
-import Paper from '../../ui/src/Paper';
-import PieEditor from '../../pie-editor/src/PieEditor';
-import PieToolbar from '../../pie-editor/src/PieToolbar';
-import DraftToolbar from '../../draft-editor/src/DraftToolbar';
-import DraftEditorContext, {
+import type { ContentProps } from '@seine/content';
+import { Content, defaultBlockRenderMap } from '@seine/content';
+import {
+  blockTypes,
+  useReducerEx,
+  editor as reduce,
+  initialState,
+} from '@seine/core';
+import type { Block } from '@seine/core';
+import type { EditorAction, EditorState } from '@seine/core';
+import {
+  DraftEditor,
+  DraftToolbar,
+  DraftEditorContext,
   useDraftEditorState,
-} from '../../draft-editor/src/DraftEditorContext';
-import { useReducerEx } from '../../core/src/hooks';
+} from '@seine/draft-editor';
+import GridEditor from './GridEditor';
+import { Paper } from '@seine/ui';
+import { PieEditor, PieToolbar } from '@seine/pie-editor';
 
 import ContentToolbar from './ContentToolbar';
-import reduce, { initialState } from '../../core/src/reducers/editor';
-import type { Action, State } from '../../core/src/reducers/editor';
 
 const DefaultContainer = styled.div`
   width: 75%;
@@ -36,6 +38,12 @@ const ContentPaper = styled(Paper)`
     height: 1.5em;
   }
 `;
+
+type Props = ContentProps & {
+  onChange: (Block[]) => any,
+  theme: { [string]: any },
+  as: React.ComponentType<*>,
+};
 
 /**
  * @description Default content editor.
@@ -59,7 +67,10 @@ export default function ContentEditor({
   as: Container = DefaultContainer,
   ...contentProps
 }: Props) {
-  const [{ blocks, selection }, dispatch] = useReducerEx<State, Action>(
+  const [{ blocks, selection }, dispatch] = useReducerEx<
+    EditorState,
+    EditorAction
+  >(
     reduce,
     initialState,
     React.useCallback(() => ({ ...initialState, blocks: children }), [children])

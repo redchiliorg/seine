@@ -43,10 +43,12 @@ export function toDraftContent(value: any) {
   } else if (typeof value === 'string') {
     if (value.startsWith('<') && value.endsWith('>')) {
       const blocksFromHTML = convertFromHTML(value);
-      return ContentState.createFromBlockArray(
-        blocksFromHTML.contentBlocks,
-        blocksFromHTML.entityMap
-      );
+      if (blocksFromHTML && blocksFromHTML.contentBlocks) {
+        return ContentState.createFromBlockArray(
+          blocksFromHTML.contentBlocks,
+          blocksFromHTML.entityMap
+        );
+      }
     }
     return ContentState.createFromText(value);
   }

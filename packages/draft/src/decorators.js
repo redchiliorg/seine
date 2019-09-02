@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
-import typeof ContentState from 'draft-js/lib/ContentState';
-import typeof ContentBlock from 'draft-js/lib/ContentBlock';
+import type { ContentState, ContentBlock } from 'draft-js';
 
 export const imageDecorator = {
   /**
@@ -17,9 +16,8 @@ export const imageDecorator = {
   ) {
     contentBlock.findEntityRanges((meta) => {
       const entityKey = meta.getEntity();
-      return (
-        entityKey !== null &&
-        contentState.getEntity(entityKey).getType() === 'IMAGE'
+      return !!(
+        entityKey && contentState.getEntity(entityKey).getType() === 'IMAGE'
       );
     }, callback);
   },

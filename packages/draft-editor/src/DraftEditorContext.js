@@ -7,8 +7,8 @@ import {
   toRawContent,
   defaultDraftBody,
 } from '@seine/draft';
-import type { Action, Block, UPDATE_BLOCK_BODY } from '@seine/core';
-import { blockTypes } from '@seine/core';
+import type { Action, Block } from '@seine/core';
+import { blockTypes, UPDATE_BLOCK_BODY } from '@seine/core';
 
 export type DraftEditorState = {|
   id: string | null,
@@ -41,7 +41,7 @@ export function useDraftEditorState(
     () => initialContentState && toDraftEditor(initialContentState),
     [initialContentState]
   );
-  const [editorState, setEditorState] = useState(initialEditorState);
+  const [editorState, setEditorState] = useState<*>(initialEditorState);
 
   // empty inner editor state indicates it should be reset to initial
   useEffect(() => {
