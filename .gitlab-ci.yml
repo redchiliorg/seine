@@ -37,8 +37,11 @@ publish:
   stage: build
   image: node:10-alpine
   before_script:
+    - apk update
+    - apk upgrade
+    - apk add git
     - yarn install
   script:
-    - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+    - yarn config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
     - yarn workspaces run publish --access public --new-version ${CI_COMMIT_TAG}
 
