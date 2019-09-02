@@ -12,6 +12,7 @@ publish:
       - .yarn-cache/
   before_script:
     - yarn config set cache-folder .yarn-cache
+    - yarn
     - apk update
     - apk upgrade
     - apk add git
