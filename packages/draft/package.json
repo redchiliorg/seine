@@ -10,10 +10,10 @@
   "dependencies": {
     "@seine/core": "1.0.0",
     "clsx": "^1.0.4",
-    "draft-js": "^0.11.0",
     "recompose": "^0.30.0"
   },
   "peerDependencies": {
+    "draft-js": "^0.11.0",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   }

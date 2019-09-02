@@ -2,17 +2,17 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-kEYyzF hwwPXt"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-gqjmRU sc-VigVT mui-panel fLEGva"
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
     onClick={[Function]}
   >
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add text block"
@@ -21,7 +21,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add sibling text blocks"
@@ -31,13 +31,13 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
       </button>
     </div>
     <div
-      className="sc-fjdhpX hJsEHi"
+      className="sc-EHOje gFATzn"
     />
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie"
@@ -46,7 +46,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + pie chart
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie with description"
@@ -55,7 +55,7 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + pie chart & text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add description with titled pie"
@@ -66,24 +66,24 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU sc-kkGfuU mui-panel cgCNsm"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   />
 </div>
 `;
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-kEYyzF hwwPXt"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-gqjmRU sc-VigVT mui-panel fLEGva"
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
     onClick={[Function]}
   >
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add text block"
@@ -92,7 +92,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         + text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add sibling text blocks"
@@ -102,13 +102,13 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
       </button>
     </div>
     <div
-      className="sc-fjdhpX hJsEHi"
+      className="sc-EHOje gFATzn"
     />
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie"
@@ -117,7 +117,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         + pie chart
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie with description"
@@ -126,7 +126,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         + pie chart & text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add description with titled pie"
@@ -137,162 +137,26 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU sc-kkGfuU mui-panel cgCNsm"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
-    <div
-      className="sc-bxivhb jXlofM"
-      id="draft"
-      onClick={[Function]}
-      type="draft"
-    >
-      <div
-        className="sc-htpNat eLtgXi DraftEditor/root DraftEditor/alignLeft"
-      >
-        <div
-          data-contents="true"
-        >
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="jpt2-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="jpt2-0-0"
-            >
-              <span
-                data-offset-key="jpt2-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  This block is draft.js content. Click here to edit the text.
-                </span>
-              </span>
-            </div>
-          </div>
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="2ao14-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="2ao14-0-0"
-            >
-              <span
-                data-offset-key="2ao14-0-0"
-                style={Object {}}
-              >
-                <br
-                  data-text="true"
-                />
-              </span>
-            </div>
-          </div>
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="6oqbd-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="6oqbd-0-0"
-            >
-              <span
-                data-offset-key="6oqbd-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  We are planning to add text formatting toolbar soon.
-                </span>
-              </span>
-            </div>
-          </div>
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="1k69d-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="1k69d-0-0"
-            >
-              <span
-                data-offset-key="1k69d-0-0"
-                style={Object {}}
-              >
-                <br
-                  data-text="true"
-                />
-              </span>
-            </div>
-          </div>
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="e1khc-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="e1khc-0-0"
-            >
-              <span
-                data-offset-key="e1khc-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  Draft.js is a framework for building rich text editors in React,
-                </span>
-              </span>
-            </div>
-          </div>
-          <div
-            className="sc-htpNat eLtgXi"
-            data-block={true}
-            data-offset-key="cfkg3-0-0"
-          >
-            <div
-              className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-              data-offset-key="cfkg3-0-0"
-            >
-              <span
-                data-offset-key="cfkg3-0-0"
-                style={Object {}}
-              >
-                <span
-                  data-text="true"
-                >
-                  powered by an immutable model and abstracting over cross-browser differences.
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
 </div>
 `;
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-kEYyzF hwwPXt"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-gqjmRU sc-VigVT mui-panel fLEGva"
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
     onClick={[Function]}
   >
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add text block"
@@ -301,7 +165,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         + text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add sibling text blocks"
@@ -311,13 +175,13 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
       </button>
     </div>
     <div
-      className="sc-fjdhpX hJsEHi"
+      className="sc-EHOje gFATzn"
     />
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie"
@@ -326,7 +190,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         + pie chart
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie with description"
@@ -335,7 +199,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         + pie chart & text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add description with titled pie"
@@ -346,16 +210,16 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU sc-kkGfuU mui-panel cgCNsm"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-eNQAEJ fqHoyv"
+      className="sc-iwsKbI hbcadH"
       id="pie"
       onClick={[Function]}
       type="pie"
     >
       <div
-        className="sc-hMqMXs GGhYD"
+        className="sc-gZMcBi egFHNl"
       />
       <svg
         viewBox="0 0 360 360"
@@ -498,17 +362,17 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-kEYyzF hwwPXt"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-gqjmRU sc-VigVT mui-panel fLEGva"
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
     onClick={[Function]}
   >
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add text block"
@@ -517,7 +381,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         + text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add sibling text blocks"
@@ -527,13 +391,13 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       </button>
     </div>
     <div
-      className="sc-fjdhpX hJsEHi"
+      className="sc-EHOje gFATzn"
     />
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie"
@@ -542,7 +406,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         + pie chart
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie with description"
@@ -551,7 +415,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         + pie chart & text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add description with titled pie"
@@ -562,7 +426,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU sc-kkGfuU mui-panel cgCNsm"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -576,13 +440,13 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-eNQAEJ fqHoyv"
+        className="sc-iwsKbI hbcadH"
         id="pie"
         onClick={[Function]}
         type="pie"
       >
         <div
-          className="sc-hMqMXs GGhYD"
+          className="sc-gZMcBi egFHNl"
         />
         <svg
           viewBox="0 0 360 360"
@@ -719,143 +583,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           </g>
         </svg>
       </div>
-      <div
-        className="sc-bxivhb jXlofM"
-        id="draft"
-        onClick={[Function]}
-        type="draft"
-      >
-        <div
-          className="sc-htpNat eLtgXi DraftEditor/root DraftEditor/alignLeft"
-        >
-          <div
-            data-contents="true"
-          >
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="jpt2-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="jpt2-0-0"
-              >
-                <span
-                  data-offset-key="jpt2-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    This block is draft.js content. Click here to edit the text.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="2ao14-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="2ao14-0-0"
-              >
-                <span
-                  data-offset-key="2ao14-0-0"
-                  style={Object {}}
-                >
-                  <br
-                    data-text="true"
-                  />
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="6oqbd-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="6oqbd-0-0"
-              >
-                <span
-                  data-offset-key="6oqbd-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    We are planning to add text formatting toolbar soon.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="1k69d-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="1k69d-0-0"
-              >
-                <span
-                  data-offset-key="1k69d-0-0"
-                  style={Object {}}
-                >
-                  <br
-                    data-text="true"
-                  />
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="e1khc-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="e1khc-0-0"
-              >
-                <span
-                  data-offset-key="e1khc-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    Draft.js is a framework for building rich text editors in React,
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="cfkg3-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="cfkg3-0-0"
-              >
-                <span
-                  data-offset-key="cfkg3-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    powered by an immutable model and abstracting over cross-browser differences.
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
     </div>
   </div>
 </div>
@@ -863,17 +591,17 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-kEYyzF hwwPXt"
+  className="sc-gqjmRU iVAfed"
 >
   <div
-    className="sc-gqjmRU sc-VigVT mui-panel fLEGva"
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
     onClick={[Function]}
   >
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add text block"
@@ -882,7 +610,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         + text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add sibling text blocks"
@@ -892,13 +620,13 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       </button>
     </div>
     <div
-      className="sc-fjdhpX hJsEHi"
+      className="sc-EHOje gFATzn"
     />
     <div
-      className="sc-jTzLTM fQxkoZ"
+      className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie"
@@ -907,7 +635,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         + pie chart
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add titled pie with description"
@@ -916,7 +644,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         + pie chart & text
       </button>
       <button
-        className="sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--default sc-gZMcBi sc-jzJRlG mui-btn mui-btn--default mui-btn--small enxKql--small giNnHm"
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
         onClick={[Function]}
         size="small"
         title="Add description with titled pie"
@@ -927,7 +655,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU sc-kkGfuU mui-panel cgCNsm"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -940,143 +668,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         }
       }
     >
-      <div
-        className="sc-bxivhb jXlofM"
-        id="draft"
-        onClick={[Function]}
-        type="draft"
-      >
-        <div
-          className="sc-htpNat eLtgXi DraftEditor/root DraftEditor/alignLeft"
-        >
-          <div
-            data-contents="true"
-          >
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="jpt2-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="jpt2-0-0"
-              >
-                <span
-                  data-offset-key="jpt2-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    This block is draft.js content. Click here to edit the text.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="2ao14-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="2ao14-0-0"
-              >
-                <span
-                  data-offset-key="2ao14-0-0"
-                  style={Object {}}
-                >
-                  <br
-                    data-text="true"
-                  />
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="6oqbd-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="6oqbd-0-0"
-              >
-                <span
-                  data-offset-key="6oqbd-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    We are planning to add text formatting toolbar soon.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="1k69d-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="1k69d-0-0"
-              >
-                <span
-                  data-offset-key="1k69d-0-0"
-                  style={Object {}}
-                >
-                  <br
-                    data-text="true"
-                  />
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="e1khc-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="e1khc-0-0"
-              >
-                <span
-                  data-offset-key="e1khc-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    Draft.js is a framework for building rich text editors in React,
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div
-              className="sc-htpNat eLtgXi"
-              data-block={true}
-              data-offset-key="cfkg3-0-0"
-            >
-              <div
-                className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                data-offset-key="cfkg3-0-0"
-              >
-                <span
-                  data-offset-key="cfkg3-0-0"
-                  style={Object {}}
-                >
-                  <span
-                    data-text="true"
-                  >
-                    powered by an immutable model and abstracting over cross-browser differences.
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
       <div
         style={
           Object {
@@ -1088,50 +680,15 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
           }
         }
       >
+        {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-bxivhb jXlofM"
-          id="title"
-          onClick={[Function]}
-          type="draft"
-        >
-          <div
-            className="sc-htpNat fTFkwW DraftEditor/root DraftEditor/alignCenter"
-          >
-            <div
-              data-contents="true"
-            >
-              <h2
-                className="sc-htpNat fTFkwW"
-                data-block={true}
-                data-offset-key="loom-0-0"
-              >
-                <div
-                  className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                  data-offset-key="loom-0-0"
-                >
-                  <span
-                    data-offset-key="loom-0-0"
-                    style={Object {}}
-                  >
-                    <span
-                      data-text="true"
-                    >
-                      V2. London income - Year 8 - 3,400,000
-                    </span>
-                  </span>
-                </div>
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div
-          className="sc-eNQAEJ fqHoyv"
+          className="sc-iwsKbI hbcadH"
           id="pie"
           onClick={[Function]}
           type="pie"
         >
           <div
-            className="sc-hMqMXs GGhYD"
+            className="sc-gZMcBi egFHNl"
           />
           <svg
             viewBox="0 0 360 360"

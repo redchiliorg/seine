@@ -37,14 +37,12 @@ export default {
     flowEntry(),
     babel({
       exclude: 'node_modules/**',
-      runtimeHelpers: true,
-      babelrcRoots: ['.', './packages/*'],
-    }),
-    nodeResolve({
-      preferBuiltins: true,
-      dedupe: ['draft-js'],
+      runtimeHelpers: true
     }),
     commonjs(),
+    nodeResolve({
+      preferBuiltins: true,
+    }),
     postcss({ modules: true }),
   ],
   external: [

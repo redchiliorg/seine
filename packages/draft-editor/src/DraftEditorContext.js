@@ -1,6 +1,6 @@
 // @flow
 import { createContext, useEffect, useMemo, useState } from 'react';
-import { ContentState, EditorState } from 'draft-js';
+import { typeof ContentState, EditorState } from 'draft-js';
 import {
   toDraftContent,
   toDraftEditor,

@@ -1,4 +1,3 @@
 {
-  "extends": "../babel.config.js",
-  "plugins": ["macros"]
+  "extends": "../babel.config.js"
 }
