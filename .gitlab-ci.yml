@@ -2,7 +2,8 @@ stages:
   - publish
 
 publish:
-  only: [tags]
+  only: [master]
+
   stage: publish
   image: node:10-alpine
   cache:
