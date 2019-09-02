@@ -1,6 +1,6 @@
 {
   "name": "@seine/draft-editor",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Seine structured content renderer.",
   "main": "lib/esm/index.js",
   "repository": "redchiliorg/seine",
