@@ -5,10 +5,10 @@ stages:
 default:
   image: node:10-alpine
   cache:
-    key: ${CI_COMMIT_TAG}
+    key: "$CI_COMMIT_REF_SLUG"
     paths:
-      - /var/cache/apk
-      - .yarn-cache
+      - /var/cache/apk/
+      - .yarn-cache/
   before_script:
     - yarn config set cache-folder .yarn-cache
 
