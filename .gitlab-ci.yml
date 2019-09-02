@@ -9,24 +9,23 @@ default:
       - /var/cache/apk
       - .yarn-cache
   before_script:
-    - apk update
-    - apk upgrade
-    - apk add git
     - yarn config set cache-folder .yarn-cache
-  script: [yarn]
 
 test:
   stage: test
-  script: [yarn test]
   except: [tags]
+  script: [yarn test]
 
 publish:
   stage: publish
   only: [tags]
   before_script:
+    - apk update
+    - apk upgrade
+    - apk add git
+  script:
     - yarn login username=${NPM_USERNAME} email=${NPM_EMAIL}
     - yarn config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-  script:
     - yarn workspaces run publish --access public --new-version ${CI_COMMIT_TAG}
   after_script:
     - yarn config delete //registry.npmjs.org/:_authToken
