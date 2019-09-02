@@ -1,7 +1,8 @@
 stages:
   - publish
 
-default:
+publish:
+  only: [tags]
   stage: publish
   image: node:10-alpine
   cache:
@@ -11,10 +12,6 @@ default:
       - .yarn-cache/
   before_script:
     - yarn config set cache-folder .yarn-cache
-
-publish:
-  only: [tags]
-  before_script:
     - apk update
     - apk upgrade
     - apk add git
