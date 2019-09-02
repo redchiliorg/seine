@@ -1,7 +1,7 @@
 import path from 'path';
+
 import minimist from 'minimist';
 import { commandAliases } from 'rollup/dist/shared';
-
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
@@ -37,7 +37,7 @@ export default {
     flowEntry(),
     babel({
       exclude: 'node_modules/**',
-      runtimeHelpers: true
+      runtimeHelpers: true,
     }),
     commonjs(),
     nodeResolve({
