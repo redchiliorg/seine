@@ -3,8 +3,8 @@ stages:
   - publish
 
 default:
-  stage: ${CI_JOB_NAME}
   image: node:10-alpine
+  stage: ${CI_JOB_NAME}
   cache:
     paths:
       - /var/cache/apk
@@ -22,13 +22,13 @@ test:
   except: [tags]
 
 publish:
-  only: [tags]
   image: node:10-alpine
   before_script:
-    - yarn login ${NPM_LOGIN}
+    - yarn login username=${NPM_USERNAME} email=${NPM_EMAIL}
     - yarn config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
   script:
     - yarn workspaces run publish --access public --new-version ${CI_COMMIT_TAG}
+  only: [tags]
   after_script:
     - yarn config delete //registry.npmjs.org/:_authToken
     - yarn logout
