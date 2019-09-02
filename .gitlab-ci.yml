@@ -3,7 +3,6 @@ stages:
 
 publish:
   only: [master]
-
   stage: publish
   image: node:10-alpine
   cache:
@@ -17,6 +16,6 @@ publish:
     - apk update
     - apk upgrade
     - apk add git
-  script: [./scripts/yarn-login.sh]
+  script: [./scripts/publish.sh]
   after_script:
     - yarn logout
