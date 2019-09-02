@@ -10,12 +10,18 @@ publish:
     paths:
       - /var/cache/apk/
       - .yarn-cache/
+  artifacts:
+    name: "$CI_COMMIT_SHORT_SHA"
+    paths: [yarn-error.log]
   before_script:
-    - yarn config set cache-folder .yarn-cache
-    - yarn
     - apk update
     - apk upgrade
     - apk add git
-  script: [./scripts/publish.sh]
+    - yarn
+    - yarn config set cache-folder .yarn-cache
+    - npm set //registry.npmjs.org/:_authToken "$NPM_TOKEN"
+  script:
+    - yarn workspaces run publish --non-interactive --access public --patch --no-commit-hooks --no-git-tag-version
   after_script:
+    - npm config delete //registry.npmjs.org/:_authToken
     - yarn logout

@@ -1,15 +1,15 @@
 {
   "name": "@seine/pie-editor",
-  "version": "0.2.11",
+  "version": "0.3.0",
   "description": "Seine structured content renderer.",
   "main": "lib/esm/index.js",
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "0.2.11",
-    "@seine/pie": "0.2.11",
-    "@seine/ui": "0.2.11"
+    "@seine/core": "0.3.0",
+    "@seine/pie": "0.3.0",
+    "@seine/ui": "0.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6",
