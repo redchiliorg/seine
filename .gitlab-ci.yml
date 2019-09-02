@@ -25,9 +25,10 @@ publish:
   only: [tags]
   image: node:10-alpine
   before_script:
-    - yarn install
-  script:
-    - yarn config delete //registry.npmjs.org/:_authToken
-    - yarn workspaces run publish --access public --new-version ${CI_COMMIT_TAG}
+    - yarn login ${NPM_LOGIN}
     - yarn config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-
+  script:
+    - yarn workspaces run publish --access public --new-version ${CI_COMMIT_TAG}
+  after_script:
+    - yarn config delete //registry.npmjs.org/:_authToken
+    - yarn logout
