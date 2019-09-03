@@ -1,6 +1,6 @@
 {
   "name": "@seine/ui",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Seine structured content renderer.",
   "main": "lib/esm/index.js",
   "repository": "redchiliorg/seine",
