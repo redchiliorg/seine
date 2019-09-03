@@ -14,7 +14,6 @@
     "dev": "run-s dev:*",
     "test": "run-s test:*",
     "build": "run-s build:storybook",
-    "prepare": "run-s build:packages:*",
     "build:packages": "yarn workspaces run rollup --environment NODE_ENV:production -c",
     "build:storybook": "build-storybook -o dist",
     "dev:start": "start-storybook -p 9009 -s public",

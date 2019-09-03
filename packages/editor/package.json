@@ -1,6 +1,6 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -10,10 +10,10 @@
   "dependencies": {
     "@seine/core": "^0.3.0",
     "@seine/draft": "^0.3.0",
-    "@seine/pie": "^0.3.0",
-    "@seine/ui": "^0.3.0",
     "@seine/draft-editor": "^0.3.0",
-    "@seine/pie-editor": "^0.3.0"
+    "@seine/pie": "^0.3.0",
+    "@seine/pie-editor": "^0.3.0",
+    "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6",

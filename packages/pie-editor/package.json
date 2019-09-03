@@ -1,6 +1,6 @@
 {
   "name": "@seine/pie-editor",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Seine structured content renderer.",
   "main": "lib/esm/index.js",
   "repository": "redchiliorg/seine",
