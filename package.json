@@ -11,16 +11,16 @@
   "license": "MIT",
   "scripts": {
     "start": "serve",
-    "dev": "run-s dev:*",
+    "release": "run-s publish:*",
+    "release:publish": "node scripts/publish.js",
+    "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
+    "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
+    "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
-    "build": "run-s build:storybook",
-    "build:packages": "run-p build:packages:*",
-    "build:packages:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
-    "build:packages:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
-    "build:storybook": "build-storybook -o dist",
-    "dev:start": "start-storybook -p 9009 -s public",
     "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
-    "test:jest": "jest"
+    "test:jest": "jest",
+    "dev": "run-s dev:*",
+    "dev:start": "start-storybook -p 9009 -s public"
   },
   "dependencies": {
     "serve": "^11.1.0"
@@ -74,6 +74,13 @@
     "styled-components": "^4.3.2"
   },
   "workspaces": [
-    "packages/content"
+    "packages/core",
+    "packages/ui",
+    "packages/draft",
+    "packages/pie",
+    "packages/content",
+    "packages/draft-editor",
+    "packages/pie-editor",
+    "packages/editor"
   ]
 }

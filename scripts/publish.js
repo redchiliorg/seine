@@ -3,14 +3,6 @@ const path = require('path');
 const { spawn } = require('child_process');
 const { workspaces } = require('../package.json');
 
-const requiredArgs = ['--non-interactive'];
-const defaultArgs = [
-  '--access public',
-  '--patch',
-  '--no-commit-hooks',
-  '--no-git-tag-version',
-];
-
 if (require.main === module) {
   try {
     publish(workspaces);
@@ -21,19 +13,27 @@ if (require.main === module) {
 
 function publish(workspaces) {
   return workspaces.reduce(
-    (child, workspace) =>
-      child
-        ? child.once('exit', (code) =>
-            code ? process.exit(code) : publishWorkspace(workspace)
+    (state, workspace) => ({
+      workspace,
+      child: state
+        ? state.child.once('exit', (code) =>
+            code
+              ? console.warn(`${workspace} failed with code ${code}`)
+              : publishWorkspace(workspace)
           )
         : publishWorkspace(workspace),
+    }),
     null
   );
 }
 
-function publishWorkspace(workspace, args = defaultArgs) {
-  return spawn('yarn', ['publish', ...requiredArgs, ...args], {
-    cwd: path.resolve(workspace),
-    stdio: 'inherit',
-  });
+function publishWorkspace(workspace) {
+  return spawn(
+    'yarn',
+    ['publish', '--non-interactive', '--patch', '--access public'],
+    {
+      cwd: path.resolve(workspace),
+      stdio: 'inherit',
+    }
+  );
 }
