@@ -11,10 +11,10 @@
   "license": "MIT",
   "scripts": {
     "start": "serve",
-    "release": "run-s publish:*",
-    "release:publish": "node scripts/publish.js",
+    "release": "run-s release:*",
     "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
     "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
+    "release:publish": "node scripts/publish.js",
     "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
     "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
