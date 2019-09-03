@@ -1,11 +1,9 @@
 dist/
-public/
-src/
 jest/
+src/
+scripts/
 Dockerfile
-babel.config.js
-rollup.config.js
-jest.config.js
 serve.json
+*.config.js
 .*
 
