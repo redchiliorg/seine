@@ -14,14 +14,15 @@
     "dev": "run-s dev:*",
     "test": "run-s test:*",
     "build": "run-s build:storybook",
-    "build:packages": "yarn workspaces run rollup --environment NODE_ENV:production -c",
+    "build:packages": "run-p build:packages:*",
+    "build:packages:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
+    "build:packages:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
     "build:storybook": "build-storybook -o dist",
     "dev:start": "start-storybook -p 9009 -s public",
     "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
     "test:jest": "jest"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
     "serve": "^11.1.0"
   },
   "devDependencies": {

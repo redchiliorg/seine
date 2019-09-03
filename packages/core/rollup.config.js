@@ -11,7 +11,7 @@ import cleanup from 'rollup-plugin-cleanup';
 import visualize from 'rollup-plugin-visualizer';
 
 const { external, format, name } = minimist(process.argv.slice(2), {
-  commandAliases,
+  alias: commandAliases,
   default: {
     external: false,
     format: 'esm',
@@ -44,19 +44,15 @@ const config = {
     }),
   },
   plugins: [
-    ...(process.env.NODE_ENV === 'development'
-      ? [
-          {
-            name: 'debug',
-            buildStart() {
-              this.warn(`Building package ${packageName}@${packageVersion}`);
-            },
-          },
-          visualize({
-            template: process.env.VISUALIZER_TEMPLATE,
-          }),
-        ]
-      : []),
+    {
+      name: 'debug',
+      buildStart() {
+        this.warn(`Building package ${packageName}@${packageVersion}`);
+      },
+    },
+    visualize({
+      template: process.env.VISUALIZER_TEMPLATE,
+    }),
     flowEntry(),
     babel({
       exclude: 'node_modules/**',
