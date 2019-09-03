@@ -7,14 +7,18 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 import flowEntry from 'rollup-plugin-flow-entry';
+import { bold } from 'ansi-colors';
 
-const { format = 'cjs', name = 'index', external = '' } = minimist(
+const { format = 'esm', name = 'index', external = '' } = minimist(
   process.argv.slice(2),
   {
     alias: commandAliases,
   }
 );
-const { dependencies = {}, peerDependencies = {} } = require('./package.json');
+const packageJson = require(`${__dirname}/package.json`);
+
+// eslint-disable-next-line
+console.log(bold(`\nBuilding package ${packageJson.name}`));
 
 export default {
   input: path.join('src', `${name}.js`),
@@ -46,8 +50,10 @@ export default {
     postcss({ modules: true }),
   ],
   external: [
-    ...Object.keys(peerDependencies),
-    ...Object.keys(dependencies).filter((name) => name.startsWith('@seine/')),
+    ...Object.keys(packageJson.peerDependencies || {}),
+    ...Object.keys(packageJson.dependencies).filter((name) =>
+      name.startsWith('@seine/')
+    ),
     ...(external ? external.split(',') : []),
   ],
 };
