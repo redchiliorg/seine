@@ -1,5 +1,4 @@
-import { blockTypes } from '@seine/core';
-import { toRawContent } from '@seine/draft';
+import { blockTypes } from '../types';
 
 export const page = {
   id: 'root',
@@ -11,7 +10,7 @@ export const title = {
   id: 'title',
   parent_id: page.id,
   type: blockTypes.DRAFT,
-  body: toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
+  body: '<h2>V2. London income - Year 8 - 3,400,000</h2>',
   format: {
     textAlignment: 'center',
   },
@@ -50,15 +49,14 @@ export const draft = {
   id: 'draft',
   parent_id: null,
   type: blockTypes.DRAFT,
-  body: toRawContent(
+  body:
     'This block is draft.js content. Click here to edit the text.' +
-      '\n\n' +
-      'We are planning to add text formatting toolbar soon.' +
-      '\n\n' +
-      'Draft.js is a framework for building rich text editors in React,\n' +
-      'powered by an immutable model and abstracting over cross-browser ' +
-      'differences.'
-  ),
+    '\n\n' +
+    'We are planning to add text formatting toolbar soon.' +
+    '\n\n' +
+    'Draft.js is a framework for building rich text editors in React,\n' +
+    'powered by an immutable model and abstracting over cross-browser ' +
+    'differences.',
   format: {
     verticalAlignment: 'center',
   },

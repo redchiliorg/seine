@@ -1,9 +1,13 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-
-import { draft, grid, pie, title } from '../../content/src/Content.mocks';
+import { mocks } from '@seine/core';
+import { toRawContent } from '@seine/draft';
 
 import ContentEditor from './ContentEditor';
+
+const { grid, pie } = mocks;
+const draft = { ...mocks.draft, body: toRawContent(mocks.draft.body) };
+const title = { ...mocks.title, body: toRawContent(mocks.title.body) };
 
 storiesOf('ContentEditor', module)
   .add('1. Empty', () => <ContentEditor>{[]}</ContentEditor>)
