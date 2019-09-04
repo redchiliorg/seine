@@ -1,21 +1,16 @@
-module.exports = {
+module.exports = async ({ config, mode }) => ({
+  ...config,
   module: {
+    ...config.module,
     rules: [
-      {
-        test: /\.css$/,
-        exclude: /\.module\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: false,
-            },
-          },
-        ],
-      },
+      ...config.module.rules.map((rule) =>
+        rule.test && rule.test.test('.jsx')
+          ? {
+              test: /\.js$/,
+              ...rule,
+            }
+          : rule
+      ),
       {
         test: /\.module\.css$/,
         use: [
@@ -41,4 +36,4 @@ module.exports = {
       },
     ],
   },
-};
+});

@@ -1,8 +1,13 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+import { mocks } from '@seine/core';
+import { toRawContent } from '@seine/draft';
 
 import Content from './Content';
-import { draft, grid, pie, title, page } from './Content.mocks';
+
+const { grid, pie, page } = mocks;
+const draft = { ...mocks.draft, body: toRawContent(mocks.draft.body) };
+const title = { ...mocks.title, body: toRawContent(mocks.title.body) };
 
 storiesOf('Content', module)
   .add('1. Draft', () => <Content>{[draft]}</Content>)

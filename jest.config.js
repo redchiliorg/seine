@@ -3,8 +3,8 @@ module.exports = {
   resolver: require.resolve('jest-pnp-resolver'),
   setupFiles: ['react-app-polyfill/jsdom'],
   testMatch: [
-    '<rootDir>/.storybook/**/__tests__/**/*.{js,jsx,ts,tsx}',
-    '<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}',
+    '<rootDir>/packages/**/__tests__/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/packages/**/?(*.)(spec|test).{js,jsx,ts,tsx}',
   ],
   testEnvironment: 'jsdom',
   testURL: 'http://localhost',

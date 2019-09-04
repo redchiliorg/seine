@@ -2,7 +2,7 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-gqjmRU iVAfed"
+  className="sc-VigVT pbRoL"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -66,14 +66,14 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
   />
 </div>
 `;
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-gqjmRU iVAfed"
+  className="sc-VigVT pbRoL"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -137,7 +137,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
@@ -146,7 +146,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-gqjmRU iVAfed"
+  className="sc-VigVT pbRoL"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -210,16 +210,16 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
   >
     <div
-      className="sc-iwsKbI hbcadH"
+      className="sc-gZMcBi iErnZl"
       id="pie"
       onClick={[Function]}
       type="pie"
     >
       <div
-        className="sc-gZMcBi egFHNl"
+        className="sc-gqjmRU fXbUyS"
       />
       <svg
         viewBox="0 0 360 360"
@@ -362,7 +362,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-gqjmRU iVAfed"
+  className="sc-VigVT pbRoL"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -426,7 +426,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
   >
     <div
       style={
@@ -440,13 +440,13 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-iwsKbI hbcadH"
+        className="sc-gZMcBi iErnZl"
         id="pie"
         onClick={[Function]}
         type="pie"
       >
         <div
-          className="sc-gZMcBi egFHNl"
+          className="sc-gqjmRU fXbUyS"
         />
         <svg
           viewBox="0 0 360 360"
@@ -591,7 +591,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-gqjmRU iVAfed"
+  className="sc-VigVT pbRoL"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -655,7 +655,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
   >
     <div
       style={
@@ -682,13 +682,13 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-iwsKbI hbcadH"
+          className="sc-gZMcBi iErnZl"
           id="pie"
           onClick={[Function]}
           type="pie"
         >
           <div
-            className="sc-gZMcBi egFHNl"
+            className="sc-gqjmRU fXbUyS"
           />
           <svg
             viewBox="0 0 360 360"

@@ -37,6 +37,8 @@ const ContentPaper = styled(Paper)`
   }
 `;
 
+const defaultBlock = { readOnly: true };
+
 type Props = ContentProps & {
   onChange?: (Block[]) => any,
   theme?: { [string]: any },
@@ -87,7 +89,12 @@ export default function ContentEditor({
   return (
     <ThemeProvider theme={theme}>
       <DraftEditorContext.Provider
-        value={useDraftEditorState(selectedBlock, dispatch)}
+        value={useDraftEditorState(
+          selectedBlock
+            ? { ...selectedBlock, selection }
+            : { ...defaultBlock, selection },
+          dispatch
+        )}
       >
         <Container>
           {selectedBlock && selectedBlock.type === blockTypes.PIE ? (

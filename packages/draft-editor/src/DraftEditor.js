@@ -50,6 +50,7 @@ export default function DraftEditor({
 
   return (
     <Container
+      verticalAlignment={verticalAlignment}
       {...useSelectableBlockProps({ id, selection }, dispatch)}
       {...containerProps}
     >
