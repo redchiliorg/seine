@@ -12,6 +12,7 @@
   "scripts": {
     "start": "serve",
     "release": "run-s release:*",
+    "release:build": "run-p release:build:*",
     "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
     "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
     "release:publish": "node scripts/publish.js",
