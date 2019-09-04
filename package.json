@@ -11,18 +11,19 @@
   "license": "MIT",
   "scripts": {
     "start": "serve",
-    "dev": "run-s dev:*",
+    "release": "run-s release:*",
+    "release:build": "run-p release:build:*",
+    "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
+    "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
+    "release:publish": "node scripts/publish.js",
+    "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
-    "build": "run-s build:storybook",
-    "prepare": "run-s build:packages:*",
-    "build:packages:esm": "yarn workspaces run rollup --environment NODE_ENV:production -f esm -c",
-    "build:storybook": "build-storybook -o dist",
-    "dev:start": "start-storybook -p 9009 -s public",
-    "test:eslint": "eslint --format unix src/ packages/*/src",
-    "test:jest": "jest"
+    "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
+    "test:jest": "jest",
+    "dev": "run-s dev:*",
+    "dev:start": "start-storybook -p 9009 -s public"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
     "serve": "^11.1.0"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.5",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-macros": "^2.6.1",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.1",
@@ -53,6 +55,7 @@
     "jest": "^24.9.0",
     "jest-pnp-resolver": "^1.2.1",
     "jest-resolve": "^24.9.0",
+    "minimist": "^1.2.0",
     "muicss": "^0.9.43",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
@@ -63,13 +66,22 @@
     "require-context.macro": "^1.1.1",
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-flow-entry": "^0.3.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-visualizer": "^2.5.4",
     "styled-components": "^4.3.2"
   },
   "workspaces": [
-    "packages/*"
+    "packages/core",
+    "packages/ui",
+    "packages/draft",
+    "packages/pie",
+    "packages/content",
+    "packages/draft-editor",
+    "packages/pie-editor",
+    "packages/editor"
   ]
 }
