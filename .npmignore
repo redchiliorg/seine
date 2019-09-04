@@ -1,9 +1,0 @@
-dist/
-jest/
-src/
-scripts/
-Dockerfile
-serve.json
-*.config.js
-.*
-
