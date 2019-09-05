@@ -64,41 +64,40 @@ export default function PieSliceEditor({
         titleTextRef={setTitleText}
         percentTextRef={setPercentText}
       />
-      {overlay &&
-        ReactDOM.createPortal(
-          <>
-            {titleText !== null && (
-              <SVGTextInput
-                size={size}
-                overlay={overlay}
-                as={PieSliceActionInput}
-                name={'title'}
-                value={title}
-                dispatch={dispatch}
-                action={{ type: UPDATE_PIE_ELEMENT, index }}
-              >
-                {titleText}
-              </SVGTextInput>
-            )}
-            {percentText !== null && (
-              <SVGTextInput
-                size={size}
-                overlay={overlay}
-                as={PieSliceActionInput}
-                name={'percent'}
-                type={'number'}
-                minvalue={5}
-                maxvalue={100}
-                value={Math.max(1, Math.min(percent, 100))}
-                dispatch={dispatch}
-                action={{ type: UPDATE_PIE_ELEMENT, index }}
-              >
-                {percentText}
-              </SVGTextInput>
-            )}
-          </>,
-          overlay
-        )}
+      {ReactDOM.createPortal(
+        <>
+          {titleText !== null && (
+            <SVGTextInput
+              size={size}
+              overlay={overlay}
+              as={PieSliceActionInput}
+              name={'title'}
+              value={title}
+              dispatch={dispatch}
+              action={{ type: UPDATE_PIE_ELEMENT, index }}
+            >
+              {titleText}
+            </SVGTextInput>
+          )}
+          {percentText !== null && (
+            <SVGTextInput
+              size={size}
+              overlay={overlay}
+              as={PieSliceActionInput}
+              name={'percent'}
+              type={'number'}
+              minvalue={5}
+              maxvalue={100}
+              value={Math.max(1, Math.min(percent, 100))}
+              dispatch={dispatch}
+              action={{ type: UPDATE_PIE_ELEMENT, index }}
+            >
+              {percentText}
+            </SVGTextInput>
+          )}
+        </>,
+        overlay
+      )}
     </>
   );
 }

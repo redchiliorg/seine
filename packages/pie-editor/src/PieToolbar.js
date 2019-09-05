@@ -2,13 +2,15 @@
 import * as React from 'react';
 import type { Action, Block, PieBody, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
-import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';
+import { BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
   body: PieBody,
   selection: BlockId[],
 };
+
+const DefaultBody = { elements: [] };
 
 /**
  * Todo: move body.edit to editor specific property key of a block.
@@ -18,7 +20,7 @@ type Props = Block & {
  * @returns {React.Node}
  */
 export default function PieToolbar({ id, body, dispatch, selection }: Props) {
-  body = body || { elements: [] };
+  body = body || DefaultBody;
   return (
     <Toolbar>
       <Toolbar.Group>
@@ -43,7 +45,7 @@ export default function PieToolbar({ id, body, dispatch, selection }: Props) {
           Add slice
         </Toolbar.ActionButton>
       </Toolbar.Group>
-      <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
+      <BlockToolbarGroup dispatch={dispatch} selection={selection} />
     </Toolbar>
   );
 }

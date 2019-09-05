@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Action, BlockId } from '@seine/core';
-import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
+import { Toolbar, BlockToolbarGroup } from '@seine/ui';
 
 import {
   ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION,
@@ -69,7 +69,7 @@ export default function ContentToolbar({ dispatch, selection }: Props) {
           + text & pie chart
         </Toolbar.ActionButton>
       </Toolbar.Group>
-      <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
+      <BlockToolbarGroup dispatch={dispatch} selection={selection} />
     </Toolbar>
   );
 }

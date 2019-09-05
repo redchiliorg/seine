@@ -14,7 +14,7 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';
+import { BlockToolbarGroup, Toolbar } from '@seine/ui';
 import type { Action, Block, DraftFormat, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
@@ -123,7 +123,7 @@ export default function DraftToolbar({
           <Toolbar.Button {...asProps} forwardedAs={UnorderedListButton} />
           <Toolbar.Separator transparent />
         </Toolbar.Group>
-        <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
+        <BlockToolbarGroup dispatch={dispatch} selection={selection} />
       </Toolbar>
     )
   );

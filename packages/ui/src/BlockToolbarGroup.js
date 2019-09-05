@@ -24,10 +24,7 @@ const DELETE_SELECTED_SELECTION_ACTION = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentBlockToolbarGroup({
-  dispatch,
-  selection,
-}: Props) {
+export default function BlockToolbarGroup({ dispatch, selection }: Props) {
   return (
     selection.length > 0 && (
       <ToolbarGroup>
