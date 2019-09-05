@@ -1,6 +1,6 @@
 import { configure } from '@storybook/react';
 import requireContext from 'require-context.macro';
-import '@seine/core/src/index.css';
+import '../packages/core/src/index.css';
 
 const req = requireContext('../packages', true, /\.stories.js$/);
 
