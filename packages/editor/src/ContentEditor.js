@@ -37,8 +37,6 @@ const ContentPaper = styled(Paper)`
   }
 `;
 
-const defaultBlock = { readOnly: true };
-
 type Props = ContentProps & {
   onChange?: (Block[]) => any,
   theme?: { [string]: any },
@@ -80,29 +78,27 @@ export default function ContentEditor({
     onChange && onChange(blocks);
   }, [blocks, onChange]);
 
-  const selectedBlock = React.useMemo(
-    () =>
-      selection.length === 1 && blocks.find(({ id }) => selection.includes(id)),
-    [blocks, selection]
-  );
+  const toolbarProps = {
+    ...React.useMemo(
+      () =>
+        selection.length === 1 &&
+        blocks.find(({ id }) => selection.includes(id)),
+      [blocks, selection]
+    ),
+    dispatch,
+    selection,
+  };
 
   return (
     <ThemeProvider theme={theme}>
-      <DraftEditorContext.Provider
-        value={useDraftEditorState(
-          selectedBlock
-            ? { ...selectedBlock, selection }
-            : { ...defaultBlock, selection },
-          dispatch
-        )}
-      >
+      <DraftEditorContext.Provider value={useDraftEditorState(toolbarProps)}>
         <Container>
-          {selectedBlock && selectedBlock.type === blockTypes.PIE ? (
-            <PieToolbar {...selectedBlock} dispatch={dispatch} />
-          ) : selectedBlock && selectedBlock.type === blockTypes.DRAFT ? (
-            <DraftToolbar {...selectedBlock} dispatch={dispatch} />
+          {toolbarProps.type === blockTypes.PIE ? (
+            <PieToolbar {...toolbarProps} />
+          ) : toolbarProps.type === blockTypes.DRAFT ? (
+            <DraftToolbar {...toolbarProps} />
           ) : (
-            <ContentToolbar dispatch={dispatch} selection={selection} />
+            <ContentToolbar {...toolbarProps} />
           )}
           <ContentPaper>
             <Content {...contentProps} blockRenderMap={blockRenderMap}>

@@ -34,7 +34,7 @@ export default function SVGTextInput({
         top: parseInt((y * height) / size),
         width: parseInt((w * width) / size),
         color: children.getAttribute('fill'),
-        fontSize: parseInt(h),
+        fontSize: (children.getAttribute('font-size') * width) / size,
       }}
     />
   );

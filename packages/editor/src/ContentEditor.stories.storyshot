@@ -64,6 +64,20 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + text & pie chart
       </button>
     </div>
+    <div
+      className="sc-ifAKCX sc-gzVnrw hWkdrP"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
+        color="danger"
+        onClick={[Function]}
+        size="small"
+        title="Delete current selection"
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
   </div>
   <div
     className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
@@ -133,6 +147,20 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         type="button"
       >
         + text & pie chart
+      </button>
+    </div>
+    <div
+      className="sc-ifAKCX sc-gzVnrw hWkdrP"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
+        color="danger"
+        onClick={[Function]}
+        size="small"
+        title="Delete current selection"
+        type="button"
+      >
+        Delete
       </button>
     </div>
   </div>
@@ -206,6 +234,20 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         type="button"
       >
         + text & pie chart
+      </button>
+    </div>
+    <div
+      className="sc-ifAKCX sc-gzVnrw hWkdrP"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
+        color="danger"
+        onClick={[Function]}
+        size="small"
+        title="Delete current selection"
+        type="button"
+      >
+        Delete
       </button>
     </div>
   </div>
@@ -422,6 +464,20 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         type="button"
       >
         + text & pie chart
+      </button>
+    </div>
+    <div
+      className="sc-ifAKCX sc-gzVnrw hWkdrP"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
+        color="danger"
+        onClick={[Function]}
+        size="small"
+        title="Delete current selection"
+        type="button"
+      >
+        Delete
       </button>
     </div>
   </div>
@@ -651,6 +707,20 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         type="button"
       >
         + text & pie chart
+      </button>
+    </div>
+    <div
+      className="sc-ifAKCX sc-gzVnrw hWkdrP"
+    >
+      <button
+        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
+        color="danger"
+        onClick={[Function]}
+        size="small"
+        title="Delete current selection"
+        type="button"
+      >
+        Delete
       </button>
     </div>
   </div>

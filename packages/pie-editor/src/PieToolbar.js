@@ -1,12 +1,13 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, PieBody } from '@seine/core';
+import type { Action, Block, PieBody, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
 import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
   body: PieBody,
+  selection: BlockId[],
 };
 
 /**
@@ -16,7 +17,7 @@ type Props = Block & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieToolbar({ id, body, dispatch }: Props) {
+export default function PieToolbar({ id, body, dispatch, selection }: Props) {
   body = body || { elements: [] };
   return (
     <Toolbar>
@@ -42,7 +43,7 @@ export default function PieToolbar({ id, body, dispatch }: Props) {
           Add slice
         </Toolbar.ActionButton>
       </Toolbar.Group>
-      <ContentBlockToolbarGroup dispatch={dispatch} />
+      <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
     </Toolbar>
   );
 }

@@ -2,10 +2,10 @@
 import { createContext, useEffect, useMemo, useState } from 'react';
 import { typeof ContentState, EditorState } from 'draft-js';
 import {
+  defaultDraftBody,
   toDraftContent,
   toDraftEditor,
   toRawContent,
-  defaultDraftBody,
 } from '@seine/draft';
 import type { Action, Block } from '@seine/core';
 import { blockTypes, UPDATE_BLOCK_BODY } from '@seine/core';
@@ -22,16 +22,21 @@ export default createContext<DraftEditorState>({
   setEditorState: () => {},
 });
 
+type Props = Block & {
+  dispatch: (Action) => any,
+};
+
 /**
  * @description Use draft editor state of a block with dispatch for its updates.
- * @param {Block} block
- * @param {Function} dispatch
+ * @param {Props} props
  * @returns {DraftEditorState}
  */
-export function useDraftEditorState(
-  { id = null, body = defaultDraftBody, type }: Block = {},
-  dispatch: (Action) => any
-) {
+export function useDraftEditorState({
+  id = null,
+  body = defaultDraftBody,
+  type,
+  dispatch,
+}: Props) {
   // inner state initialization
   const initialContentState = useMemo<ContentState | null>(
     () => (type === blockTypes.DRAFT ? toDraftContent(body) : null),
