@@ -15,7 +15,7 @@ import {
 } from 'draft-js-buttons';
 import clsx from 'clsx';
 import { ContentBlockToolbarGroup, Toolbar } from '@seine/ui';
-import type { Action, Block, DraftFormat } from '@seine/core';
+import type { Action, Block, DraftFormat, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
 
@@ -28,6 +28,7 @@ import VerticalAlignBottomButton from './VerticalAlignBottomButton';
 type Props = Block & {
   format: DraftFormat,
   dispatch: (Action) => any,
+  selection: BlockId[],
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -48,6 +49,7 @@ const DraftButton = ({ as: Button, className, ...props }) => (
 export default function DraftToolbar({
   format = defaultDraftFormat,
   dispatch,
+  selection,
 }: Props) {
   const { editorState, setEditorState } = React.useContext(DraftEditorContext);
 
@@ -121,7 +123,7 @@ export default function DraftToolbar({
           <Toolbar.Button {...asProps} forwardedAs={UnorderedListButton} />
           <Toolbar.Separator transparent />
         </Toolbar.Group>
-        <ContentBlockToolbarGroup dispatch={dispatch} />
+        <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
       </Toolbar>
     )
   );

@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import type { Action } from '@seine/core';
+import type { Action, BlockId } from '@seine/core';
 import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
 
 import {
@@ -13,6 +13,7 @@ import {
 
 type Props = {
   dispatch: (Action) => any,
+  selection: BlockId[],
 };
 
 /**
@@ -68,7 +69,7 @@ export default function ContentToolbar({ dispatch, selection }: Props) {
           + text & pie chart
         </Toolbar.ActionButton>
       </Toolbar.Group>
-      {selection.length > 0 && <ContentBlockToolbarGroup dispatch={dispatch} />}
+      <ContentBlockToolbarGroup dispatch={dispatch} selection={selection} />
     </Toolbar>
   );
 }

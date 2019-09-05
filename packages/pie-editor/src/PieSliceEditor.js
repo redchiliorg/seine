@@ -18,9 +18,11 @@ type Props = PieSliceProps & {
 const PieSliceActionInput = styled(ActionInput)`
   background-color: transparent;
   border: none;
-  padding: 0;
   margin: 0;
   width: ${({ type }) => (type === 'number' ? '2em' : '')};
+  && {
+    padding: 0;
+  }
 `;
 
 /**
@@ -39,6 +41,9 @@ export default function PieSliceEditor({
   angle,
   color,
   step,
+  fontSize,
+  fontColor,
+  padding,
 }: Props) {
   const [titleText, setTitleText] = React.useState(null);
   const [percentText, setPercentText] = React.useState(null);
@@ -46,11 +51,15 @@ export default function PieSliceEditor({
   return (
     <>
       <PieSlice
-        angle={angle}
-        color={color}
-        size={size}
         title={title}
+        color={color}
+        index={index}
+        fontSize={fontSize}
+        fontColor={fontColor}
+        padding={padding}
         percent={percent}
+        size={size}
+        angle={angle}
         step={step}
         titleTextRef={setTitleText}
         percentTextRef={setPercentText}
