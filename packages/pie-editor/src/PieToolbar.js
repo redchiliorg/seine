@@ -10,7 +10,7 @@ type Props = Block & {
   selection: BlockId[],
 };
 
-const DefaultBody = { elements: [] };
+const defaultBody = { elements: [] };
 
 /**
  * Todo: move body.edit to editor specific property key of a block.
@@ -20,7 +20,7 @@ const DefaultBody = { elements: [] };
  * @returns {React.Node}
  */
 export default function PieToolbar({ id, body, dispatch, selection }: Props) {
-  body = body || DefaultBody;
+  body = body || defaultBody;
   return (
     <Toolbar>
       <Toolbar.Group>
@@ -35,7 +35,6 @@ export default function PieToolbar({ id, body, dispatch, selection }: Props) {
                 ...body.elements,
                 {
                   title: `Item #${body.elements.length}`,
-                  color: 'gray',
                   percent: 10,
                 },
               ],

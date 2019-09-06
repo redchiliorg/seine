@@ -4,12 +4,7 @@ import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap } from '@seine/content';
-import {
-  blockTypes,
-  useReducerEx,
-  editor as reduce,
-  initialState,
-} from '@seine/core';
+import { blockTypes, useReducerEx, editor, initialState } from '@seine/core';
 import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
   DraftEditor,
@@ -64,9 +59,9 @@ export type Props = {
  * @returns {React.Node}
  */
 export default function ContentEditor({
-  parent,
   onChange,
-  children = [],
+  parent,
+  children = [parent],
   as: Container = DefaultContainer,
   blockRenderMap = defaultEditorBlockRendererMap,
   theme = defaultEditorTheme,
@@ -79,23 +74,23 @@ export default function ContentEditor({
   const [{ blocks, selection }, dispatch] = useReducerEx<
     EditorState,
     EditorAction
-  >(reduce, initialState, init);
+  >(editor, initialState, init);
 
   React.useEffect(() => {
     onChange(blocks);
   }, [blocks, onChange]);
 
   const toolbarProps = {
-    ...(React.useMemo(
+    ...React.useMemo(
       () =>
-        selection.length === 1 &&
-        blocks.find(({ id }) => selection.includes(id)),
-      [blocks, selection]
-    ) || parent),
+        (selection.length === 1 &&
+          blocks.find(({ id }) => selection.includes(id))) ||
+        parent,
+      [blocks, parent, selection]
+    ),
     dispatch,
     selection,
   };
-
   return (
     <ThemeProvider theme={theme}>
       <DraftEditorContext.Provider value={useDraftEditorState(toolbarProps)}>

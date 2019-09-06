@@ -36,20 +36,6 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -91,20 +77,6 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         type="button"
       >
         + pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
       </button>
     </div>
   </div>
@@ -152,27 +124,12 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     <div
       className="sc-dnqmqq bkjoPw"
-      id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
       onClick={[Function]}
       type="pie"
     >
@@ -185,7 +142,6 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         <g>
           <path
             d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-            fill="#653867"
           />
           <text
             fill="black"
@@ -211,7 +167,6 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         <g>
           <path
             d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-            fill="#e5002d"
           />
           <text
             fill="black"
@@ -237,7 +192,6 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         <g>
           <path
             d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-            fill="#f80048"
           />
           <text
             fill="black"
@@ -263,7 +217,6 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         <g>
           <path
             d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-            fill="#ff3d69"
           />
           <text
             fill="white"
@@ -289,7 +242,6 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         <g>
           <path
             d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-            fill="#ff6d8c"
           />
           <text
             fill="black"
@@ -354,20 +306,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -385,7 +323,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
     >
       <div
         className="sc-dnqmqq bkjoPw"
-        id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
         onClick={[Function]}
         type="pie"
       >
@@ -398,7 +335,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           <g>
             <path
               d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-              fill="#653867"
             />
             <text
               fill="black"
@@ -424,7 +360,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           <g>
             <path
               d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-              fill="#e5002d"
             />
             <text
               fill="black"
@@ -450,7 +385,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           <g>
             <path
               d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-              fill="#f80048"
             />
             <text
               fill="black"
@@ -476,7 +410,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           <g>
             <path
               d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-              fill="#ff3d69"
             />
             <text
               fill="white"
@@ -502,7 +435,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           <g>
             <path
               d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-              fill="#ff6d8c"
             />
             <text
               fill="black"
@@ -569,20 +501,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -613,7 +531,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
           className="sc-dnqmqq bkjoPw"
-          id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
           onClick={[Function]}
           type="pie"
         >
@@ -626,7 +543,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             <g>
               <path
                 d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-                fill="#653867"
               />
               <text
                 fill="black"
@@ -652,7 +568,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             <g>
               <path
                 d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-                fill="#e5002d"
               />
               <text
                 fill="black"
@@ -678,7 +593,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             <g>
               <path
                 d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-                fill="#f80048"
               />
               <text
                 fill="black"
@@ -704,7 +618,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             <g>
               <path
                 d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-                fill="#ff3d69"
               />
               <text
                 fill="white"
@@ -730,7 +643,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             <g>
               <path
                 d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-                fill="#ff6d8c"
               />
               <text
                 fill="black"

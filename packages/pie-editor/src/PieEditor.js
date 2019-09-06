@@ -17,8 +17,14 @@ type Props = BlockEditor & {
 
 const Container = styled.div`
   position: relative;
-  border: ${({ id, selection }) =>
-    selection.includes(id) ? '1px dashed blue' : '1px solid transparent'};
+  ${({ isSelected }) =>
+    isSelected
+      ? css`
+          border: 1px dashed blue;
+        `
+      : css`
+          border: 1px solid transparent;
+        `};
 `;
 
 const Overlay = styled.div`

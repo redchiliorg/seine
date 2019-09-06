@@ -27,9 +27,8 @@ export default function Pie({
         return (
           <PieSlice
             key={index}
-            title={title}
-            color={color}
             index={index}
+            title={title}
             fontSize={fontSize}
             fontColor={fontColor}
             padding={padding}

@@ -22,6 +22,14 @@ export type Props = $Shape<Config> & {
   percent: number,
 };
 
+export const defaultPiePalette = [
+  '#653867',
+  '#e5002d',
+  '#f80048',
+  '#ff3d69',
+  '#ff6d8c',
+];
+
 /**
  * @description Slice element of pie chart.
  * @param {Props} props
@@ -29,18 +37,20 @@ export type Props = $Shape<Config> & {
  */
 export default function PieSlice({
   angle,
-  color,
+  index,
   percent,
   step,
   title,
   titleTextRef = null,
   percentTextRef = null,
   padding = 20,
-  size = 360,
   fontSize = 18,
+  size = 360,
   innerFontColor = 'white',
   outerFontColor = 'black',
+  palette = defaultPiePalette,
 }: Props) {
+  const color = palette[index % palette.length];
   const center = size / 2;
   const radius = center - padding;
   const middleAngle = angle + step / 2;

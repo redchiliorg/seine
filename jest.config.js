@@ -31,6 +31,6 @@ module.exports = {
     'json',
     'web.jsx',
     'jsx',
-    'node'
+    'node',
   ],
 };

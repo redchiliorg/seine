@@ -1,9 +1,10 @@
 // @flow
 
+export opaque type Color = string;
+
 export type PieElement = {
   title: string,
   percent: number,
-  color: string,
 };
 
 export type PieBody = {
@@ -15,6 +16,7 @@ export type PieFormat = {
   innerFontColor: string,
   outerFontColor: string,
   padding: number,
+  palette: Color[],
   size: number,
 };
 

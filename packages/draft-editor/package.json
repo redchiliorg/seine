@@ -1,6 +1,6 @@
 {
   "name": "@seine/draft-editor",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
