@@ -2,7 +2,7 @@
 import * as React from 'react';
 import type { Action, Block, PieBody, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
-import { BlockToolbarGroup, Toolbar } from '@seine/ui';
+import { ActionButton, BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -24,13 +24,13 @@ export default function PieToolbar({ id, body, dispatch, selection }: Props) {
   return (
     <Toolbar>
       <Toolbar.Group>
-        <Toolbar.ActionButton
+        <ActionButton
+          id={id}
           title={'Add new slice'}
           dispatch={dispatch}
-          action={{
-            id,
-            type: UPDATE_BLOCK_BODY,
-            body: {
+          type={UPDATE_BLOCK_BODY}
+          body={React.useMemo(
+            () => ({
               elements: [
                 ...body.elements,
                 {
@@ -39,11 +39,12 @@ export default function PieToolbar({ id, body, dispatch, selection }: Props) {
                   percent: 10,
                 },
               ],
-            },
-          }}
+            }),
+            [body.elements]
+          )}
         >
           Add slice
-        </Toolbar.ActionButton>
+        </ActionButton>
       </Toolbar.Group>
       <BlockToolbarGroup dispatch={dispatch} selection={selection} />
     </Toolbar>

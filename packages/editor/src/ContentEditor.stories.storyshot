@@ -2,7 +2,7 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-VigVT pbRoL"
+  className="sc-gZMcBi bTiXPO"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -12,82 +12,40 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add sibling text blocks"
+        title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
-    </div>
-    <div
-      className="sc-EHOje gFATzn"
-    />
-    <div
-      className="sc-ifAKCX dtaADw"
-    >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add titled pie"
+        title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add titled pie with description"
-        type="button"
-      >
-        + pie chart & text
-      </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add description with titled pie"
-        type="button"
-      >
-        + text & pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
+    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   />
 </div>
 `;
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-VigVT pbRoL"
+  className="sc-gZMcBi bTiXPO"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -97,75 +55,33 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add sibling text blocks"
+        title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
-    </div>
-    <div
-      className="sc-EHOje gFATzn"
-    />
-    <div
-      className="sc-ifAKCX dtaADw"
-    >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add titled pie"
+        title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add titled pie with description"
-        type="button"
-      >
-        + pie chart & text
-      </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add description with titled pie"
-        type="button"
-      >
-        + text & pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
+    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
@@ -174,7 +90,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-VigVT pbRoL"
+  className="sc-gZMcBi bTiXPO"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -184,84 +100,42 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add sibling text blocks"
+        title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
-    </div>
-    <div
-      className="sc-EHOje gFATzn"
-    />
-    <div
-      className="sc-ifAKCX dtaADw"
-    >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add titled pie"
+        title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add titled pie with description"
-        type="button"
-      >
-        + pie chart & text
-      </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add description with titled pie"
-        type="button"
-      >
-        + text & pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
+    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     <div
-      className="sc-gZMcBi iErnZl"
-      id="pie"
+      className="sc-dnqmqq bkjoPw"
+      id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
       onClick={[Function]}
       type="pie"
     >
       <div
-        className="sc-gqjmRU fXbUyS"
+        className="sc-iwsKbI eBfmuR"
       />
       <svg
         viewBox="0 0 360 360"
@@ -404,7 +278,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-VigVT pbRoL"
+  className="sc-gZMcBi bTiXPO"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -414,75 +288,33 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add sibling text blocks"
+        title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
-    </div>
-    <div
-      className="sc-EHOje gFATzn"
-    />
-    <div
-      className="sc-ifAKCX dtaADw"
-    >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add titled pie"
+        title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add titled pie with description"
-        type="button"
-      >
-        + pie chart & text
-      </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add description with titled pie"
-        type="button"
-      >
-        + text & pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
+    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     <div
       style={
@@ -496,13 +328,13 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-gZMcBi iErnZl"
-        id="pie"
+        className="sc-dnqmqq bkjoPw"
+        id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
         onClick={[Function]}
         type="pie"
       >
         <div
-          className="sc-gqjmRU fXbUyS"
+          className="sc-iwsKbI eBfmuR"
         />
         <svg
           viewBox="0 0 360 360"
@@ -647,7 +479,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-VigVT pbRoL"
+  className="sc-gZMcBi bTiXPO"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -657,75 +489,33 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add sibling text blocks"
+        title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
-    </div>
-    <div
-      className="sc-EHOje gFATzn"
-    />
-    <div
-      className="sc-ifAKCX dtaADw"
-    >
       <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
         onClick={[Function]}
-        size="small"
-        title="Add titled pie"
+        title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add titled pie with description"
-        type="button"
-      >
-        + pie chart & text
-      </button>
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--default sc-bwzfXH sc-bZQynM mui-btn mui-btn--default mui-btn--small bOrPFB--small uTxCW"
-        onClick={[Function]}
-        size="small"
-        title="Add description with titled pie"
-        type="button"
-      >
-        + text & pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jTzLTM mui-panel fmSAAF"
+    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     <div
       style={
@@ -752,13 +542,13 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-gZMcBi iErnZl"
-          id="pie"
+          className="sc-dnqmqq bkjoPw"
+          id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
           onClick={[Function]}
           type="pie"
         >
           <div
-            className="sc-gqjmRU fXbUyS"
+            className="sc-iwsKbI eBfmuR"
           />
           <svg
             viewBox="0 0 360 360"

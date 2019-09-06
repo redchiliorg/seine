@@ -1,19 +1,21 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { mocks } from '@seine/core';
-import { toRawContent } from '@seine/draft';
+
+import {
+  draft,
+  pie,
+  grid,
+  page,
+  title,
+} from '../../editor/src/ContentEditor.stories';
 
 import Content from './Content';
 
-const { grid, pie, page } = mocks;
-const draft = { ...mocks.draft, body: toRawContent(mocks.draft.body) };
-const title = { ...mocks.title, body: toRawContent(mocks.title.body) };
-
 storiesOf('Content', module)
-  .add('1. Draft', () => <Content>{[draft]}</Content>)
-  .add('2. Pie', () => <Content>{[pie]}</Content>)
+  .add('1. Draft', () => <Content parent={page}>{[draft]}</Content>)
+  .add('2. Pie', () => <Content parent={page}>{[pie]}</Content>)
   .add('3. Pie and draft', () => (
-    <Content>
+    <Content parent={page}>
       {[
         page,
         { ...grid, parent_id: page.id, body: {} },
@@ -23,12 +25,11 @@ storiesOf('Content', module)
     </Content>
   ))
   .add('4. Draft and titled pie', () => (
-    <Content>
+    <Content parent={page}>
       {[
-        page,
-        { ...grid, parent_id: page.id, body: {} },
+        grid,
         { ...draft, parent_id: grid.id },
-        { ...grid, id: 'sub-grid', parent_id: grid.id },
+        { ...grid, id: 'sub-grid', parent_id: grid.id, body: {} },
         { ...title, parent_id: 'sub-grid' },
         { ...pie, parent_id: 'sub-grid' },
       ]}

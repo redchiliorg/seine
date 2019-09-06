@@ -14,7 +14,7 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { BlockToolbarGroup, Toolbar } from '@seine/ui';
+import { Button, BlockToolbarGroup, Toolbar } from '@seine/ui';
 import type { Action, Block, DraftFormat, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
@@ -95,32 +95,32 @@ export default function DraftToolbar({
     editorState && (
       <Toolbar>
         <Toolbar.Group>
-          <Toolbar.Button {...asProps} forwardedAs={BoldButton} />
-          <Toolbar.Button {...asProps} forwardedAs={ItalicButton} />
-          <Toolbar.Button {...asProps} forwardedAs={UnderlineButton} />
+          <Button {...asProps} forwardedAs={BoldButton} />
+          <Button {...asProps} forwardedAs={ItalicButton} />
+          <Button {...asProps} forwardedAs={UnderlineButton} />
           <Toolbar.Separator />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockLeftButton} />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockCenterButton} />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockRightButton} />
+          <Button {...asProps} forwardedAs={AlignBlockLeftButton} />
+          <Button {...asProps} forwardedAs={AlignBlockCenterButton} />
+          <Button {...asProps} forwardedAs={AlignBlockRightButton} />
           <Toolbar.Separator />
-          <Toolbar.Button
+          <Button
             {...verticalAlignmentAsProps}
             forwardedAs={VerticalAlignTopButton}
           />
-          <Toolbar.Button
+          <Button
             {...verticalAlignmentAsProps}
             forwardedAs={VerticalAlignCenterButton}
           />
-          <Toolbar.Button
+          <Button
             {...verticalAlignmentAsProps}
             forwardedAs={VerticalAlignBottomButton}
           />
           <Toolbar.Separator />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineOneButton} />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineTwoButton} />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineThreeButton} />
-          <Toolbar.Button {...asProps} forwardedAs={OrderedListButton} />
-          <Toolbar.Button {...asProps} forwardedAs={UnorderedListButton} />
+          <Button {...asProps} forwardedAs={HeadlineOneButton} />
+          <Button {...asProps} forwardedAs={HeadlineTwoButton} />
+          <Button {...asProps} forwardedAs={HeadlineThreeButton} />
+          <Button {...asProps} forwardedAs={OrderedListButton} />
+          <Button {...asProps} forwardedAs={UnorderedListButton} />
           <Toolbar.Separator transparent />
         </Toolbar.Group>
         <BlockToolbarGroup dispatch={dispatch} selection={selection} />
