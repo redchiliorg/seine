@@ -37,11 +37,26 @@ const ContentPaper = styled(Paper)`
   }
 `;
 
-type Props = ContentProps & {
-  onChange?: (Block[]) => any,
+const defaultEditorBlockRendererMap = {
+  ...defaultBlockRenderMap,
+  [blockTypes.PIE]: PieEditor,
+  [blockTypes.DRAFT]: DraftEditor,
+  [blockTypes.GRID]: GridEditor,
+};
+
+const defaultEditorTheme = {
+  palette: {
+    text: '#C8C8C8',
+  },
+};
+
+export type Props = {
+  parent: Block,
+  onChange: (Block[]) => any,
+  children?: Block[],
   theme?: { [string]: any },
   as?: React.ComponentType<*>,
-};
+} & ContentProps;
 
 /**
  * @description Default content editor.
@@ -49,42 +64,34 @@ type Props = ContentProps & {
  * @returns {React.Node}
  */
 export default function ContentEditor({
-  children,
-  blockRenderMap = {
-    ...defaultBlockRenderMap,
-    [blockTypes.PIE]: PieEditor,
-    [blockTypes.DRAFT]: DraftEditor,
-    [blockTypes.GRID]: GridEditor,
-  },
-  theme = {
-    palette: {
-      text: '#C8C8C8',
-    },
-  },
+  parent,
   onChange,
+  children = [],
   as: Container = DefaultContainer,
+  blockRenderMap = defaultEditorBlockRendererMap,
+  theme = defaultEditorTheme,
   ...contentProps
 }: Props) {
+  const init = React.useCallback(
+    () => ({ ...initialState, blocks: children }),
+    [children]
+  );
   const [{ blocks, selection }, dispatch] = useReducerEx<
     EditorState,
     EditorAction
-  >(
-    reduce,
-    initialState,
-    React.useCallback(() => ({ ...initialState, blocks: children }), [children])
-  );
+  >(reduce, initialState, init);
 
   React.useEffect(() => {
-    onChange && onChange(blocks);
+    onChange(blocks);
   }, [blocks, onChange]);
 
   const toolbarProps = {
-    ...React.useMemo(
+    ...(React.useMemo(
       () =>
         selection.length === 1 &&
         blocks.find(({ id }) => selection.includes(id)),
       [blocks, selection]
-    ),
+    ) || parent),
     dispatch,
     selection,
   };
@@ -101,7 +108,11 @@ export default function ContentEditor({
             <ContentToolbar {...toolbarProps} />
           )}
           <ContentPaper>
-            <Content {...contentProps} blockRenderMap={blockRenderMap}>
+            <Content
+              {...contentProps}
+              parent={parent}
+              blockRenderMap={blockRenderMap}
+            >
               {blocks.map((block) => ({ ...block, selection, dispatch }))}
             </Content>
           </ContentPaper>
