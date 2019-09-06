@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Pie } from '@seine/pie';
 import type { BlockEditor, PieElement, PieProps } from '@seine/core';
 import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
@@ -24,8 +24,16 @@ const Container = styled.div`
 const Overlay = styled.div`
   position: absolute;
   z-index: 999;
-  width: 100%;
-  height: 100%;
+  ${({ width, height }) =>
+    width && height
+      ? css`
+          height: ${height}px;
+          width: ${width}px;
+        `
+      : css`
+          width: 100%;
+          height: 100%;
+        `}
 `;
 
 /**
@@ -44,7 +52,7 @@ export default function PieEditor({
   size = 360,
   ...containerProps
 }: Props) {
-  const overlay = React.useRef<HTMLDivElement | null>(null);
+  const overlayRef = React.useRef<HTMLDivElement | null>(null);
   const dispatchPie = React.useCallback(
     (action: Action) =>
       dispatch({
@@ -54,18 +62,21 @@ export default function PieEditor({
     [dispatch, elements]
   );
 
-  let angle = 0;
+  const { current: overlay } = overlayRef;
+  const angleRef = React.useRef();
+
   return (
     <Container
       {...useSelectableBlockProps({ id, selection }, dispatch)}
       {...containerProps}
     >
-      <Overlay ref={overlay} />
+      <Overlay ref={overlayRef} />
       {selection.length === 1 && selection[0] === id ? (
         <svg viewBox={`0 0 ${size} ${size}`}>
           {elements.map(({ title, percent, color }: PieElement, index) => {
-            const step = (percent * size) / 100;
-            angle += step;
+            const step = parseInt((percent * size) / 100);
+            const angle = index === 0 ? 0 : angleRef.current;
+            angleRef.current = angle + step;
             return (
               <PieSliceEditor
                 key={index}
@@ -77,10 +88,10 @@ export default function PieEditor({
                 padding={padding}
                 percent={percent}
                 size={size}
-                angle={angle - step}
+                angle={angle}
                 step={step}
                 dispatch={dispatchPie}
-                overlay={overlay.current}
+                overlay={overlay}
               />
             );
           })}

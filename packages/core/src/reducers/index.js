@@ -4,7 +4,6 @@ import * as Editor from './editor';
 export {
   default as editor,
   CREATE_BLOCK,
-  CREATE_BLOCKS_TREE,
   DELETE_SELECTED_BLOCKS,
   SELECT_BLOCK,
   UPDATE_BLOCK_BODY,

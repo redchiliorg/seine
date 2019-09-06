@@ -12,6 +12,7 @@ export default styled.button.attrs(
     className = 'mui-btn',
     color = 'default',
     size = 'medium',
+    type = 'button',
     transparent,
   }: Props) => ({
     className: clsx(
@@ -20,5 +21,6 @@ export default styled.button.attrs(
       `${className}--${size}`
     ),
     transparent,
+    type,
   })
 )``;

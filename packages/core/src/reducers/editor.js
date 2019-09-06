@@ -1,10 +1,7 @@
 // @flow
-import uuid from 'uuid/v4';
-
 import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 
 export const CREATE_BLOCK = 'seine/editor/createBlock';
-export const CREATE_BLOCKS_TREE = 'seine/editor/createBlocksTree';
 export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteSelectedBlocks';
 export const SELECT_BLOCK = 'seine/editor/selectBlock';
 export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
@@ -14,31 +11,24 @@ export const initialState = {
   selection: [],
   blocks: [],
 };
-type Blocks = $ReadOnlyArray<Block>;
-export type BlocksTree = Block & {
-  children: BlocksTree[],
-};
-type CreateBlockAction = {
+
+export type CreateBlockAction = {
   type: typeof CREATE_BLOCK,
-  block: Block,
+  block: $Shape<Block>,
 };
-type CreateBlocksTreeAction = {
-  type: typeof CREATE_BLOCKS_TREE,
-  children: BlocksTree[],
-};
-type DeleteSelectedBlocksAction = {
+export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
 };
-type SelectBlockAction = {
+export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
 };
-type UpdateBlockDataAction = {
+export type UpdateBlockDataAction = {
   type: typeof UPDATE_BLOCK_BODY,
   body: BlockBody,
 };
-type UpdateBlockFormatAction = {
+export type UpdateBlockFormatAction = {
   type: typeof UPDATE_BLOCK_FORMAT,
   format: BlockFormat,
 };
@@ -48,7 +38,6 @@ export type State = {
 };
 export type Action =
   | CreateBlockAction
-  | CreateBlocksTreeAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
   | UpdateBlockDataAction
@@ -99,13 +88,7 @@ export default function reduce(
     case CREATE_BLOCK:
       return {
         ...state,
-        blocks: [...state.blocks, createBlock(action.block)],
-      };
-
-    case CREATE_BLOCKS_TREE:
-      return {
-        ...state,
-        blocks: [...state.blocks, ...createBlocksTree(action.children)],
+        blocks: [...state.blocks, action.block],
       };
 
     case DELETE_SELECTED_BLOCKS:
@@ -157,40 +140,4 @@ export default function reduce(
     default:
       return state;
   }
-}
-
-/**
- * @description Create a block of the parent.
- * @param {Block} data
- * @param {string} parent_id
- * @returns {Block}
- */
-function createBlock(
-  { id, body, format, ...block }: Block,
-  parent_id = null
-): Block {
-  return {
-    id: id || uuid(),
-    parent_id,
-    ...(body ? { body } : {}),
-    ...(format ? { format } : {}),
-    ...block,
-  };
-}
-
-/**
- * @description Create blocks from tree.
- * @param {BlocksTree[]} children
- * @param {string} parent_id
- * @returns {Block[]}
- */
-function createBlocksTree(children: BlocksTree[], parent_id = null) {
-  return children.reduce((acc, { children, ...data }) => {
-    const block = createBlock(data, parent_id);
-    return [
-      ...acc,
-      block,
-      ...(children ? createBlocksTree(children, block.id) : []),
-    ];
-  }, []);
 }

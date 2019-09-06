@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Block } from '@seine/core';
-import { blockTypes } from '@seine/core';
+import { blockTypes, createBlock } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Pie } from '@seine/pie';
 
@@ -10,7 +10,7 @@ import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
-  parent?: string | null,
+  parent: Block,
   children: $ReadOnlyArray<Block>,
 };
 
@@ -28,11 +28,11 @@ export const defaultBlockRenderMap = {
  */
 function Content({
   blockRenderMap = defaultBlockRenderMap,
-  parent = null,
+  parent = createBlock(blockTypes.PAGE),
   children,
 }: Props): React.Node {
   return children
-    .filter((block: Block) => block['parent_id'] === parent)
+    .filter((block: Block) => block['parent_id'] === parent.id)
     .map(({ body, format, ...block }: Block) => {
       const ContentBlock = blockRenderMap[block.type];
       return (
@@ -42,7 +42,7 @@ function Content({
           {...(format ? format : {})}
           {...(body ? body : {})}
         >
-          <Content parent={block.id} blockRenderMap={blockRenderMap}>
+          <Content parent={block} blockRenderMap={blockRenderMap}>
             {children.filter((content) => content.id !== block.id)}
           </Content>
         </ContentBlock>
