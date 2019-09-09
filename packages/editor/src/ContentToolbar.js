@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, BlockId } from '@seine/core';
+import type { Action, Block } from '@seine/core';
 import { BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 import AddTextBlockButton from './AddTextBlockButton';
@@ -8,8 +8,9 @@ import AddSiblingTextBlocksButton from './AddSiblingTextsButton';
 import AddTitledPieActionButton from './AddPieButton';
 
 type Props = Block & {
+  blocks: $ReadOnlyArray<Block>,
   dispatch: (Action) => any,
-  selection: BlockId[],
+  children: React.Element<typeof BlockToolbarGroup>,
 };
 
 /**
@@ -18,18 +19,23 @@ type Props = Block & {
  * @returns {React.Node}
  */
 export default function ContentToolbar({
+  id,
+  blocks,
   dispatch,
-  selection,
-  ...block
+  children,
 }: Props) {
   return (
     <Toolbar>
       <Toolbar.Group>
-        <AddTextBlockButton dispatch={dispatch} id={block.id} />
-        <AddSiblingTextBlocksButton dispatch={dispatch} id={block.id} />
-        <AddTitledPieActionButton dispatch={dispatch} id={block.id} />
+        <AddTextBlockButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddSiblingTextBlocksButton
+          dispatch={dispatch}
+          id={id}
+          blocks={blocks}
+        />
+        <AddTitledPieActionButton dispatch={dispatch} id={id} blocks={blocks} />
       </Toolbar.Group>
-      <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+      {children}
     </Toolbar>
   );
 }

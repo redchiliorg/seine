@@ -10,7 +10,7 @@ node_modules/
 
 # production
 dist/
-lib/
+packages/*/lib
 
 # idea
 .idea

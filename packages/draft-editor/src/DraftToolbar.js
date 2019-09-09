@@ -14,21 +14,23 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { Button, BlockToolbarGroup, Toolbar } from '@seine/ui';
-import type { Action, Block, DraftFormat, BlockId } from '@seine/core';
-import { UPDATE_BLOCK_FORMAT } from '@seine/core';
+import { BlockToolbarGroup, Button, Toolbar } from '@seine/ui';
+import type { Action, Block, BlockId, DraftFormat } from '@seine/core';
+import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
 
 import theme from './DraftToolbar.module.css';
-import DraftEditorContext from './DraftEditorContext';
 import VerticalAlignTopButton from './VerticalAlignTopButton';
 import VerticalAlignCenterButton from './VerticalAlignCenterButton';
 import VerticalAlignBottomButton from './VerticalAlignBottomButton';
+import { defaultDraftEditor } from './DraftEditor';
 
 type Props = Block & {
   format: DraftFormat,
+  editor: { state: * },
   dispatch: (Action) => any,
   selection: BlockId[],
+  children: React.Element<typeof BlockToolbarGroup>,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -48,11 +50,12 @@ const DraftButton = ({ as: Button, className, ...props }) => (
  */
 export default function DraftToolbar({
   format = defaultDraftFormat,
+  editor: {
+    state: editorState = defaultDraftEditor.state,
+  } = defaultDraftEditor,
   dispatch,
-  selection,
+  children,
 }: Props) {
-  const { editorState, setEditorState } = React.useContext(DraftEditorContext);
-
   const asProps = {
     as: DraftButton,
 
@@ -61,8 +64,14 @@ export default function DraftToolbar({
 
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
-    setEditorState,
-
+    setEditorState: React.useCallback(
+      (state) =>
+        dispatch({
+          type: UPDATE_BLOCK_EDITOR,
+          editor: { state },
+        }),
+      [dispatch]
+    ),
     alignment:
       (format && format.textAlignment) || defaultDraftFormat.textAlignment,
     setAlignment: React.useCallback(
@@ -92,8 +101,8 @@ export default function DraftToolbar({
   };
 
   return (
-    editorState && (
-      <Toolbar>
+    <Toolbar>
+      {editorState && (
         <Toolbar.Group>
           <Button {...asProps} forwardedAs={BoldButton} />
           <Button {...asProps} forwardedAs={ItalicButton} />
@@ -123,8 +132,8 @@ export default function DraftToolbar({
           <Button {...asProps} forwardedAs={UnorderedListButton} />
           <Toolbar.Separator transparent />
         </Toolbar.Group>
-        <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-      </Toolbar>
-    )
+      )}
+      {children}
+    </Toolbar>
   );
 }

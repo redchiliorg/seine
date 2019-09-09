@@ -36,20 +36,6 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -91,20 +77,6 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
         type="button"
       >
         + pie chart
-      </button>
-    </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
       </button>
     </div>
   </div>
@@ -152,27 +124,12 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
   >
     <div
-      className="sc-dnqmqq bkjoPw"
-      id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
+      className="sc-dnqmqq cHyfRm"
       onClick={[Function]}
       type="pie"
     >
@@ -354,20 +311,6 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -384,8 +327,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-dnqmqq bkjoPw"
-        id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
+        className="sc-dnqmqq cHyfRm"
         onClick={[Function]}
         type="pie"
       >
@@ -569,20 +511,6 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
         + pie chart
       </button>
     </div>
-    <div
-      className="sc-ifAKCX sc-gzVnrw hWkdrP"
-    >
-      <button
-        className="sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--danger sc-bwzfXH sc-bZQynM mui-btn mui-btn--danger mui-btn--small bOrPFB--small uTxCW"
-        color="danger"
-        onClick={[Function]}
-        size="small"
-        title="Delete current selection"
-        type="button"
-      >
-        Delete
-      </button>
-    </div>
   </div>
   <div
     className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
@@ -612,8 +540,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-dnqmqq bkjoPw"
-          id="11f4a2d6-d36c-44ea-b87d-8e388f184679"
+          className="sc-dnqmqq cHyfRm"
           onClick={[Function]}
           type="pie"
         >
