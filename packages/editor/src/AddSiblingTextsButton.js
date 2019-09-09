@@ -1,5 +1,5 @@
 // @flow
-import type { Action, BlockId } from '@seine/core';
+import type { Action, Block, BlockId } from '@seine/core';
 import {
   blockTypes,
   CREATE_BLOCK,
@@ -13,9 +13,10 @@ import { CompositeActionButton } from '@seine/ui';
 type Props = {
   id: BlockId,
   dispatch: (Action) => any,
+  blocks: $ReadOnlyArray<Block>,
 };
 
-export default ({ id, dispatch }: Props) => (
+export default ({ id, dispatch, blocks }: Props) => (
   <CompositeActionButton
     title={'Add sibling text block'}
     dispatch={dispatch}
@@ -45,7 +46,8 @@ export default ({ id, dispatch }: Props) => (
             },
           ]
         ).map((block) => ({ type: CREATE_BLOCK, block })),
-      [id]
+      //eslint-disable-next-line
+      [id, blocks]
     )}
   >
     + 2 text columns

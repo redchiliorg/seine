@@ -4,20 +4,17 @@ import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap } from '@seine/content';
-import {
-  blockTypes,
-  useReducerEx,
-  editor as reduce,
-  initialState,
-} from '@seine/core';
 import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
-  DraftEditor,
-  DraftToolbar,
-  DraftEditorContext,
-  useDraftEditorState,
-} from '@seine/draft-editor';
-import { Paper } from '@seine/ui';
+  blockTypes,
+  DELETE_SELECTED_BLOCKS,
+  editor as reduce,
+  initialState,
+  SELECT_BLOCK,
+  useReducerEx,
+} from '@seine/core';
+import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
+import { ActionButton, Paper, Toolbar } from '@seine/ui';
 import { PieEditor, PieToolbar } from '@seine/pie-editor';
 
 import GridEditor from './GridEditor';
@@ -37,12 +34,25 @@ const ContentPaper = styled(Paper)`
   }
 `;
 
+const ContentToolbarGroup = styled(Toolbar.Group)`
+  margin-left: auto;
+`;
+
 const defaultEditorBlockRendererMap = {
   ...defaultBlockRenderMap,
   [blockTypes.PIE]: PieEditor,
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
 };
+
+const defaultBlockToolbarRenderMap = {
+  [blockTypes.PIE]: PieToolbar,
+  [blockTypes.DRAFT]: DraftToolbar,
+  [blockTypes.GRID]: ContentToolbar,
+  [blockTypes.PAGE]: ContentToolbar,
+};
+
+const defaultEditorChildren = [];
 
 const defaultEditorTheme = {
   palette: {
@@ -66,9 +76,10 @@ export type Props = {
 export default function ContentEditor({
   parent,
   onChange,
-  children = [],
+  children = defaultEditorChildren,
   as: Container = DefaultContainer,
   blockRenderMap = defaultEditorBlockRendererMap,
+  toolbarRenderMap = defaultBlockToolbarRenderMap,
   theme = defaultEditorTheme,
   ...contentProps
 }: Props) {
@@ -82,42 +93,70 @@ export default function ContentEditor({
   >(reduce, initialState, init);
 
   React.useEffect(() => {
-    onChange(blocks);
+    onChange(
+      // no extra data should be passed, like `editor` key value
+      blocks.map(({ id, body, format }) => ({
+        id,
+        body,
+        format,
+      }))
+    );
   }, [blocks, onChange]);
 
-  const toolbarProps = {
-    ...(React.useMemo(
-      () =>
-        selection.length === 1 &&
-        blocks.find(({ id }) => selection.includes(id)),
-      [blocks, selection]
-    ) || parent),
-    dispatch,
-    selection,
-  };
+  const currentBlock = React.useMemo(
+    () =>
+      selection.length === 1
+        ? blocks.find(({ id }) => selection.includes(id))
+        : parent,
+    [blocks, parent, selection]
+  );
+
+  const BlockToolbar = toolbarRenderMap[currentBlock.type];
 
   return (
     <ThemeProvider theme={theme}>
-      <DraftEditorContext.Provider value={useDraftEditorState(toolbarProps)}>
-        <Container>
-          {toolbarProps.type === blockTypes.PIE ? (
-            <PieToolbar {...toolbarProps} />
-          ) : toolbarProps.type === blockTypes.DRAFT ? (
-            <DraftToolbar {...toolbarProps} />
-          ) : (
-            <ContentToolbar {...toolbarProps} />
+      <Container>
+        <BlockToolbar
+          {...currentBlock}
+          blocks={blocks}
+          dispatch={dispatch}
+          selection={selection}
+        >
+          {selection.length > 0 && (
+            <ContentToolbarGroup>
+              <ActionButton
+                color={'danger'}
+                title={'Delete current selection'}
+                dispatch={dispatch}
+                type={DELETE_SELECTED_BLOCKS}
+              >
+                Delete
+              </ActionButton>
+              {selection.length === 1 && (
+                <ActionButton
+                  color={'primary'}
+                  title={'Cancel current selection'}
+                  dispatch={dispatch}
+                  type={SELECT_BLOCK}
+                  id={selection[0]}
+                  modifier={'sub'}
+                >
+                  Deselect
+                </ActionButton>
+              )}
+            </ContentToolbarGroup>
           )}
-          <ContentPaper>
-            <Content
-              {...contentProps}
-              parent={parent}
-              blockRenderMap={blockRenderMap}
-            >
-              {blocks.map((block) => ({ ...block, selection, dispatch }))}
-            </Content>
-          </ContentPaper>
-        </Container>
-      </DraftEditorContext.Provider>
+        </BlockToolbar>
+        <ContentPaper>
+          <Content
+            {...contentProps}
+            parent={parent}
+            blockRenderMap={blockRenderMap}
+          >
+            {blocks.map((block) => ({ ...block, selection, dispatch }))}
+          </Content>
+        </ContentPaper>
+      </Container>
     </ThemeProvider>
   );
 }

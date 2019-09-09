@@ -8,6 +8,7 @@ type Props = Block & {
   dispatch: (Action) => any,
   body: PieBody,
   selection: BlockId[],
+  children: React.Element<typeof BlockToolbarGroup>,
 };
 
 const DefaultBody = { elements: [] };
@@ -19,7 +20,7 @@ const DefaultBody = { elements: [] };
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieToolbar({ id, body, dispatch, selection }: Props) {
+export default function PieToolbar({ id, body, dispatch, children }: Props) {
   body = body || DefaultBody;
   return (
     <Toolbar>
@@ -46,7 +47,7 @@ export default function PieToolbar({ id, body, dispatch, selection }: Props) {
           Add slice
         </ActionButton>
       </Toolbar.Group>
-      <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+      {children}
     </Toolbar>
   );
 }

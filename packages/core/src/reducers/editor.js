@@ -1,47 +1,67 @@
 // @flow
 import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 
-export const CREATE_BLOCK = 'seine/editor/createBlock';
-export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteSelectedBlocks';
-export const SELECT_BLOCK = 'seine/editor/selectBlock';
-export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
-export const UPDATE_BLOCK_FORMAT = 'seine/editor/updateBlockFormat';
-
+opaque type BlockExtension = {
+  editor: { [string]: any },
+};
+export type State = {
+  selection: $ReadOnlyArray<BlockId>,
+  blocks: $ReadOnlyArray<Block & BlockExtension>,
+};
 export const initialState = {
   selection: [],
   blocks: [],
 };
 
+export const CREATE_BLOCK = 'seine/editor/createBlock';
 export type CreateBlockAction = {
   type: typeof CREATE_BLOCK,
   block: $Shape<Block>,
 };
+
+export const DELETE_SELECTED_BLOCKS = 'seine/editor/deleteSelectedBlocks';
 export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
 };
+
+export const SELECT_BLOCK = 'seine/editor/selectBlock';
 export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
 };
+
+export const UPDATE_BLOCK_BODY = 'seine/editor/updateBlockBody';
 export type UpdateBlockDataAction = {
   type: typeof UPDATE_BLOCK_BODY,
   body: BlockBody,
 };
+
+export const UPDATE_BLOCK_FORMAT = 'seine/editor/updateBlockFormat';
 export type UpdateBlockFormatAction = {
   type: typeof UPDATE_BLOCK_FORMAT,
   format: BlockFormat,
 };
-export type State = {
-  selection: $ReadOnlyArray<BlockId>,
-  blocks: Blocks,
+
+//
+// Memoize editor's inner state.
+//
+// Should be cleaned in onChange callbacks as it is
+// done in ContentEditor component.
+//
+export const UPDATE_BLOCK_EDITOR = 'seine/editor/updateBlockEditor';
+export type UpdateBlockEditorAction = {
+  type: typeof UPDATE_BLOCK_EDITOR,
+  editor: any,
 };
+
 export type Action =
   | CreateBlockAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
   | UpdateBlockDataAction
-  | UpdateBlockFormatAction;
+  | UpdateBlockFormatAction
+  | UpdateBlockEditorAction;
 
 /**
  * @description Reduce Content editor actions
@@ -102,6 +122,7 @@ export default function reduce(
       };
 
     case UPDATE_BLOCK_BODY:
+    case UPDATE_BLOCK_EDITOR:
     case UPDATE_BLOCK_FORMAT: {
       const index = state.blocks.findIndex(({ id }) =>
         state.selection.includes(id)
@@ -130,6 +151,8 @@ export default function reduce(
             ...block,
             ...(action.type === UPDATE_BLOCK_BODY
               ? { body: { ...block.body, ...action.body } }
+              : action.type === UPDATE_BLOCK_EDITOR
+              ? { editor: { ...block.editor, ...action.editor } }
               : { format: { ...block.format, ...action.format } }),
           },
           ...state.blocks.slice(index + 1),

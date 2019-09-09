@@ -1,6 +1,6 @@
 // @flow
 import { ActionButton } from '@seine/ui';
-import type { Action, BlockId } from '@seine/core';
+import type { Action, Block, BlockId } from '@seine/core';
 import { blockTypes, CREATE_BLOCK, createBlock } from '@seine/core';
 import * as React from 'react';
 import { toRawContent } from '@seine/draft';
@@ -8,9 +8,10 @@ import { toRawContent } from '@seine/draft';
 type Props = {
   id: BlockId,
   dispatch: (Action) => any,
+  blocks: $ReadOnlyArray<Block>,
 };
 
-export default ({ id, dispatch }: Props) => (
+export default ({ id, dispatch, blocks }: Props) => (
   <ActionButton
     title={'Add text block'}
     dispatch={dispatch}
@@ -23,7 +24,8 @@ export default ({ id, dispatch }: Props) => (
           { verticalAlignment: 'center' },
           id
         ),
-      [id]
+      //eslint-disable-next-line
+      [id, blocks]
     )}
   >
     + text

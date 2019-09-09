@@ -8,6 +8,7 @@ export {
   SELECT_BLOCK,
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_FORMAT,
+  UPDATE_BLOCK_EDITOR,
   initialState,
 } from './editor';
 

@@ -21,7 +21,7 @@
     "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
-    "dev:start": "start-storybook -p 9009 -s public --debug-webpack"
+    "dev:start": "start-storybook -p 9009 -s public"
   },
   "dependencies": {
     "serve": "^11.1.0"

@@ -6,7 +6,7 @@ import Button from './Button';
 type Action = { type: string, [string]: any };
 
 type Props = {
-  action: Action,
+  actions: Action[],
   dispatch: (Action) => any,
 };
 
