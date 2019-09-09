@@ -1,9 +1,14 @@
 {
   "name": "@seine/ui",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
+  "files": [
+    "lib/cjs/index.js.flow",
+    "lib/esm/index.js",
+    "lib/esm/index.js.flow"
+  ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
