@@ -16,6 +16,7 @@ import {
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { ActionButton, Paper, Toolbar } from '@seine/ui';
 import { PieEditor, PieToolbar } from '@seine/pie-editor';
+import { BarchartEditor, BarchartToolbar } from '@seine/barchart-editor';
 
 import GridEditor from './GridEditor';
 import ContentToolbar from './ContentToolbar';
@@ -43,6 +44,7 @@ const defaultEditorBlockRendererMap = {
   [blockTypes.PIE]: PieEditor,
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
+  [blockTypes.BARCHART]: BarchartEditor,
 };
 
 const defaultBlockToolbarRenderMap = {
@@ -50,6 +52,7 @@ const defaultBlockToolbarRenderMap = {
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: ContentToolbar,
   [blockTypes.PAGE]: ContentToolbar,
+  [blockTypes.BARCHART]: BarchartToolbar,
 };
 
 const defaultEditorChildren = [];

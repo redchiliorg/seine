@@ -5,9 +5,7 @@
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
-    "lib/cjs/index.js.flow",
-    "lib/esm/index.js",
-    "lib/esm/index.js.flow"
+    "lib/"
   ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",

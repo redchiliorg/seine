@@ -1,3 +1,4 @@
 module.exports = {
-  extends: './packages/core/babel.config.js',
+  presets: ['react-app'],
+  plugins: ['macros'],
 };

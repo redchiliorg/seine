@@ -1,20 +1,20 @@
 // @flow
+type Color = string;
 
 export type PieElement = {
   title: string,
   percent: number,
-  color: string,
+  color: Color,
 };
 
 export type PieBody = {
   elements: PieElement[],
+  palette: $ReadOnlyArray<Color>,
 };
 
 export type PieFormat = {
-  fontSize: number,
-  innerFontColor: string,
-  outerFontColor: string,
-  padding: number,
+  innerFontColor: Color,
+  outerFontColor: Color,
   size: number,
 };
 

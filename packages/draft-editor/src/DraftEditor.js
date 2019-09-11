@@ -23,8 +23,8 @@ const Container = styled.div`
     display: grid;
     align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
   }
-  ${({ id, selection }: Props) =>
-    selection.includes(id)
+  ${({ isSelected }: Props) =>
+    isSelected
       ? css`
           border: 1px dashed blue;
         `

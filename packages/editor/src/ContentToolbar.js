@@ -1,11 +1,12 @@
 // @flow
 import * as React from 'react';
 import type { Action, Block } from '@seine/core';
-import { BlockToolbarGroup, Toolbar } from '@seine/ui';
+import { typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 import AddTextBlockButton from './AddTextBlockButton';
-import AddSiblingTextBlocksButton from './AddSiblingTextsButton';
-import AddTitledPieActionButton from './AddPieButton';
+import AddSiblingTextsButton from './AddSiblingTextsButton';
+import AddPieButton from './AddPieButton';
+import AddBarchartButton from './AddBarchartButton';
 
 type Props = Block & {
   blocks: $ReadOnlyArray<Block>,
@@ -28,12 +29,9 @@ export default function ContentToolbar({
     <Toolbar>
       <Toolbar.Group>
         <AddTextBlockButton dispatch={dispatch} id={id} blocks={blocks} />
-        <AddSiblingTextBlocksButton
-          dispatch={dispatch}
-          id={id}
-          blocks={blocks}
-        />
-        <AddTitledPieActionButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddSiblingTextsButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddPieButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddBarchartButton dispatch={dispatch} id={id} blocks={blocks} />
       </Toolbar.Group>
       {children}
     </Toolbar>

@@ -13,12 +13,12 @@
     "start": "serve",
     "release": "run-s release:*",
     "release:build": "run-p release:build:*",
-    "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c",
-    "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c",
+    "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c ../../rollup.config.js",
+    "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c ../../rollup.config.js",
     "release:publish": "node scripts/publish.js",
     "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
-    "test:eslint": "eslint -c packages/core/.eslintrc.js --format unix packages/*/src",
+    "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
     "dev:start": "start-storybook -p 9009 -s public"
@@ -59,6 +59,7 @@
     "muicss": "^0.9.43",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
+    "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.8.6",
@@ -82,6 +83,7 @@
     "packages/content",
     "packages/draft-editor",
     "packages/pie-editor",
+    "packages/barchart-editor",
     "packages/editor"
   ]
 }

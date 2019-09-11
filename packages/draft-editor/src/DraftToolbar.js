@@ -14,7 +14,7 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { BlockToolbarGroup, Button, Toolbar } from '@seine/ui';
+import { typeof BlockToolbarGroup, Button, Toolbar } from '@seine/ui';
 import type { Action, Block, BlockId, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';

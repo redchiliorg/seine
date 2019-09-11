@@ -66,8 +66,7 @@ export function useSelectableBlockProps(
   dispatch: (Action) => any
 ) {
   return {
-    id,
-    selection,
+    isSelected: selection.includes(id),
     onClick: useCallback(
       (event: SyntheticMouseEvent<>) => {
         event.stopPropagation();

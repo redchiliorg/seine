@@ -10,6 +10,7 @@ import flowEntry from 'rollup-plugin-flow-entry';
 import cleanup from 'rollup-plugin-cleanup';
 import visualize from 'rollup-plugin-visualizer';
 
+const { NODE_ENV = 'production' } = process.env;
 const { external, format, name } = minimist(process.argv.slice(2), {
   alias: commandAliases,
   default: {
@@ -24,7 +25,7 @@ const {
   version: packageVersion,
   dependencies = {},
   peerDependencies = {},
-} = require(`${__dirname}/package.json`);
+} = require(path.resolve('package.json'));
 
 const config = {
   input: path.join('src', `${name}.js`),
@@ -33,7 +34,7 @@ const config = {
     format,
     ...(format === 'umd' && {
       name,
-      banner: `window.process = {env: {NODE_ENV: 'production'}};`,
+      banner: `window.process = {env: {NODE_ENV: '${NODE_ENV}'}};`,
       globals: {
         react: 'React',
         'react-dom': 'ReactDOM',
@@ -57,6 +58,7 @@ const config = {
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
+      rootMode: 'upward',
     }),
     commonjs(),
     nodeResolve({

@@ -1,7 +1,7 @@
 {
-  "name": "@seine/draft",
+  "name": "@seine/barchart-editor",
   "version": "0.3.12",
-  "description": "Seine draft.js renderer.",
+  "description": "Seine bar chart editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -12,11 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "@seine/core": "^0.3.0",
-    "clsx": "^1.0.4",
-    "recompose": "^0.30.0"
+    "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {
-    "draft-js": "^0.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

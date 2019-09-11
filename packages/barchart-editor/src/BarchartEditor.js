@@ -1,17 +1,15 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import type { BlockEditor } from '@seine/core';
 import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
-import { defaultPiePalette, Pie } from '@seine/pie';
-import { ActionInput, SVGInput, EditableElement } from '@seine/ui';
+import { ActionInput, EditableElement, SVGInput } from '@seine/ui';
 
-import reduce, { UPDATE_PIE_ELEMENT } from './reducer';
+import reduce, { UPDATE_BAR_CHART_ELEMENT } from './reducer';
+import Barchart, { defaultBarchartPalette } from './Barchart';
 
-type Props = BlockEditor & {
+type Props = {
   id: string,
   dispatch: Function,
-  edit: boolean,
 };
 
 const Container = styled.div`
@@ -29,7 +27,7 @@ const Overlay = styled.div`
 
 const InputGroup = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
   ${({ x, y, width, fontSize, height, maxWidth, maxHeight, size }) =>
     css`
@@ -42,26 +40,28 @@ const InputGroup = styled.div`
     `}
 `;
 
-const defaultPieEditor = {};
+const defaultBarchartEditor = {};
 
 /**
  * @description Pie editor component.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieEditor({
+export default function BarchartEditor({
   id,
   selection,
   dispatch,
   elements,
-  size = 360,
-  palette = defaultPiePalette,
-  editor: state = defaultPieEditor,
+  size = 100,
+  fontWeight = 500,
+  lineHeight = 1.75,
+  palette = defaultBarchartPalette,
+  editor: state = defaultBarchartEditor,
   ...containerProps
 }: Props) {
-  const isSelected = selection.length === 1 && selection[0] === id;
-  const overlayRef = React.useRef(null);
-  const dispatchPie = React.useCallback(
+  const overlayRef = React.useRef<React.Element<typeof Overlay>>(null);
+
+  const dispatchBarchart = React.useCallback(
     (action: Action) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
@@ -70,10 +70,10 @@ export default function PieEditor({
     [dispatch, elements]
   );
 
+  const isSelected = selection.length === 1 && selection[0] === id;
+
   const overlayBox =
     overlayRef.current && overlayRef.current.getBoundingClientRect();
-
-  const fontSize = size / 24;
 
   return (
     <Container
@@ -86,49 +86,46 @@ export default function PieEditor({
             overlayBox &&
             isSelected &&
             elements.map(
-              ({ title, percent }, index) =>
+              ({ title, value }, index) =>
                 index in state && (
                   <InputGroup
                     key={index}
                     {...state[index]}
                     size={size}
-                    fontSize={fontSize}
+                    fontSize={2}
                     maxWidth={overlayBox.width}
                     maxHeight={overlayBox.height}
+                    style={{ justifyContent: 'even' }}
                   >
                     <SVGInput.Input
-                      size={size}
-                      as={ActionInput}
-                      name={'percent'}
-                      value={Math.min(99, Math.max(percent, 1))}
-                      action={{ type: UPDATE_PIE_ELEMENT, index }}
-                      dispatch={dispatchPie}
-                      type={'number'}
-                      minvalue={0}
-                      maxvalue={100}
-                      textAlign={'center'}
-                      width={'100%'}
-                    />
-                    <SVGInput.Input
-                      size={size}
-                      fontSize={'0.75em'}
+                      fontSize={'1em'}
                       as={ActionInput}
                       name={'title'}
                       value={title}
-                      action={{ type: UPDATE_PIE_ELEMENT, index }}
-                      dispatch={dispatchPie}
-                      textAlign={'center'}
-                      width={'100%'}
+                      action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
+                      dispatch={dispatchBarchart}
+                    />
+                    <SVGInput.Input
+                      fontSize={'1em'}
+                      as={ActionInput}
+                      name={'value'}
+                      type={'number'}
+                      value={value}
+                      action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
+                      dispatch={dispatchBarchart}
+                      textAlign={'right'}
                     />
                   </InputGroup>
                 )
             ),
-          [dispatchPie, elements, fontSize, isSelected, overlayBox, size, state]
+          [dispatchBarchart, elements, isSelected, overlayBox, size, state]
         )}
       </Overlay>
-
-      <Pie
+      <Barchart
         size={size}
+        fontWeight={fontWeight}
+        lineHeight={lineHeight}
+        palette={palette}
         elements={React.useMemo(
           () =>
             isSelected
@@ -145,7 +142,6 @@ export default function PieEditor({
               : elements,
           [dispatch, elements, isSelected]
         )}
-        palette={palette}
       />
     </Container>
   );

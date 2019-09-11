@@ -5,9 +5,7 @@
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
-    "lib/cjs/index.js.flow",
-    "lib/esm/index.js",
-    "lib/esm/index.js.flow"
+    "lib/"
   ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
@@ -18,6 +16,7 @@
     "@seine/draft-editor": "^0.3.0",
     "@seine/pie": "^0.3.0",
     "@seine/pie-editor": "^0.3.0",
+    "@seine/barchart-editor": "^0.3.0",
     "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {

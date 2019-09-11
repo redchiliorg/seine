@@ -1,4 +1,6 @@
 // @flow
+import { equals } from 'ramda';
+
 import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 
 opaque type BlockExtension = {
@@ -143,21 +145,30 @@ export default function reduce(
       }
 
       const block = state.blocks[index];
-      return {
-        ...state,
-        blocks: [
-          ...state.blocks.slice(0, index),
-          {
-            ...block,
-            ...(action.type === UPDATE_BLOCK_BODY
-              ? { body: { ...block.body, ...action.body } }
-              : action.type === UPDATE_BLOCK_EDITOR
-              ? { editor: { ...block.editor, ...action.editor } }
-              : { format: { ...block.format, ...action.format } }),
-          },
-          ...state.blocks.slice(index + 1),
-        ],
-      };
+      if (
+        action.type !== UPDATE_BLOCK_EDITOR ||
+        !block.editor ||
+        !Object.entries(action.editor).every(([key, value]) =>
+          equals(value, block.editor[key])
+        )
+      ) {
+        return {
+          ...state,
+          blocks: [
+            ...state.blocks.slice(0, index),
+            {
+              ...block,
+              ...(action.type === UPDATE_BLOCK_BODY
+                ? { body: { ...block.body, ...action.body } }
+                : action.type === UPDATE_BLOCK_EDITOR
+                ? { editor: { ...block.editor, ...action.editor } }
+                : { format: { ...block.format, ...action.format } }),
+            },
+            ...state.blocks.slice(index + 1),
+          ],
+        };
+      }
+      return state;
     }
 
     default:

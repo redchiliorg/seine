@@ -19,6 +19,9 @@ export const defaultBlockRenderMap = {
   [blockTypes.DRAFT]: Draft,
   [blockTypes.GRID]: Grid,
   [blockTypes.PIE]: Pie,
+  [blockTypes.BARCHART]: ({ children, ...props }) => (
+    <p style={{ whiteSpace: 'pre' }}>{JSON.stringify(props, null, '\t')}</p>
+  ),
 };
 
 /**
