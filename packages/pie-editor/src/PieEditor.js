@@ -1,46 +1,21 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components';
-import type { BlockEditor } from '@seine/core';
+import type { BlockEditor, PieBody, PieFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
-import { defaultPiePalette, Pie } from '@seine/pie';
-import { ActionInput, SVGInput, EditableElement } from '@seine/ui';
+import { defaultPiePalette, defaultPieSize, Pie } from '@seine/pie';
+import {
+  ActionInput,
+  BlockContainer,
+  EditableElement,
+  EditableGroup,
+  EditableOverlay,
+  EditableInput,
+} from '@seine/ui';
 
 import reduce, { UPDATE_PIE_ELEMENT } from './reducer';
+import type { Action } from './reducer';
 
-type Props = BlockEditor & {
-  id: string,
-  dispatch: Function,
-  edit: boolean,
-};
-
-const Container = styled.div`
-  position: relative;
-  border: ${({ isSelected }) =>
-    isSelected ? '1px dashed blue' : '1px solid transparent'};
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-`;
-
-const InputGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  ${({ x, y, width, fontSize, height, maxWidth, maxHeight, size }) =>
-    css`
-      height: ${height}px;
-      left: ${(x * maxWidth) / size}px;
-      top: ${(y * maxHeight) / size}px;
-      height: ${(height * maxHeight) / size}px;
-      width: ${(width * maxWidth) / size}px;
-      font-size: ${(fontSize * maxWidth) / size}px;
-    `}
-`;
+type Props = BlockEditor & $Shape<PieFormat> & PieBody;
 
 const defaultPieEditor = {};
 
@@ -54,14 +29,13 @@ export default function PieEditor({
   selection,
   dispatch,
   elements,
-  size = 360,
+  size = defaultPieSize,
   palette = defaultPiePalette,
-  editor: state = defaultPieEditor,
-  ...containerProps
+  editor: boxes = defaultPieEditor,
 }: Props) {
   const isSelected = selection.length === 1 && selection[0] === id;
   const overlayRef = React.useRef(null);
-  const dispatchPie = React.useCallback(
+  const dispatchElements = React.useCallback(
     (action: Action) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
@@ -76,56 +50,67 @@ export default function PieEditor({
   const fontSize = size / 24;
 
   return (
-    <Container
-      {...useSelectableBlockProps({ id, selection }, dispatch)}
-      {...containerProps}
-    >
-      <Overlay ref={overlayRef}>
+    <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
+      <EditableOverlay ref={overlayRef}>
         {React.useMemo(
           () =>
             overlayBox &&
             isSelected &&
-            elements.map(
-              ({ title, percent }, index) =>
-                index in state && (
-                  <InputGroup
-                    key={index}
-                    {...state[index]}
+            elements.map(({ title, percent: value }, index) => {
+              if (index in boxes) {
+                const { x, y, width, height } = boxes[index];
+                return (
+                  <EditableGroup
+                    columns
+                    justify={'center'}
+                    x={x}
+                    y={y}
                     size={size}
+                    width={width}
+                    height={height}
                     fontSize={fontSize}
                     maxWidth={overlayBox.width}
                     maxHeight={overlayBox.height}
+                    key={index}
                   >
-                    <SVGInput.Input
+                    <EditableInput
                       size={size}
                       as={ActionInput}
                       name={'percent'}
-                      value={Math.min(99, Math.max(percent, 1))}
+                      value={Math.min(99, Math.max(value, 1))}
                       action={{ type: UPDATE_PIE_ELEMENT, index }}
-                      dispatch={dispatchPie}
+                      dispatch={dispatchElements}
                       type={'number'}
                       minvalue={0}
                       maxvalue={100}
-                      textAlign={'center'}
-                      width={'100%'}
+                      align={'center'}
                     />
-                    <SVGInput.Input
+                    <EditableInput
                       size={size}
-                      fontSize={'0.75em'}
+                      fontSize={0.75}
                       as={ActionInput}
                       name={'title'}
                       value={title}
                       action={{ type: UPDATE_PIE_ELEMENT, index }}
-                      dispatch={dispatchPie}
-                      textAlign={'center'}
-                      width={'100%'}
+                      dispatch={dispatchElements}
                     />
-                  </InputGroup>
-                )
-            ),
-          [dispatchPie, elements, fontSize, isSelected, overlayBox, size, state]
+                  </EditableGroup>
+                );
+              }
+
+              return false;
+            }),
+          [
+            dispatchElements,
+            elements,
+            fontSize,
+            isSelected,
+            overlayBox,
+            size,
+            boxes,
+          ]
         )}
-      </Overlay>
+      </EditableOverlay>
 
       <Pie
         size={size}
@@ -134,12 +119,10 @@ export default function PieEditor({
             isSelected
               ? elements.map((element, index) => ({
                   ...element,
-                  as: (props) => (
-                    <EditableElement
-                      {...props}
-                      index={index}
-                      dispatch={dispatch}
-                    />
+                  as: ({ children }) => (
+                    <EditableElement index={index} dispatch={dispatch}>
+                      {children}
+                    </EditableElement>
                   ),
                 }))
               : elements,
@@ -147,6 +130,6 @@ export default function PieEditor({
         )}
         palette={palette}
       />
-    </Container>
+    </BlockContainer>
   );
 }

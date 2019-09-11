@@ -1,4 +1,6 @@
 // @flow
+import type { Action } from '../reducers';
+
 import type { PageBody, PageFormat } from './page';
 import { PAGE } from './page';
 import type { GridBody, GridFormat } from './grid';
@@ -42,7 +44,8 @@ export type Block = {
   type: BlockType,
 };
 
-export type BlockEditor = Block & {
+export type BlockEditor = {
+  dispatch: (Action) => any,
   selection: BlockId[],
 };
 

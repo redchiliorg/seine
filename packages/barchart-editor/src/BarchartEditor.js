@@ -1,8 +1,15 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import type { BlockEditor } from '@seine/core';
 import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
-import { ActionInput, EditableElement, SVGInput } from '@seine/ui';
+import {
+  ActionInput,
+  BlockContainer,
+  EditableElement,
+  EditableGroup,
+  EditableOverlay,
+  EditableInput,
+} from '@seine/ui';
 import {
   Barchart,
   defaultBarchartFontWeight,
@@ -12,44 +19,17 @@ import {
 } from '@seine/barchart';
 
 import reduce, { UPDATE_BAR_CHART_ELEMENT } from './reducer';
+import type { Action } from './reducer';
 
-type Props = {
+type Props = BlockEditor & {
   id: string,
   dispatch: Function,
 };
 
-const Container = styled.div`
-  position: relative;
-  border: ${({ isSelected }) =>
-    isSelected ? '1px dashed blue' : '1px solid transparent'};
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-`;
-
-const InputGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  ${({ x, y, width, fontSize, height, maxWidth, maxHeight, size }) =>
-    css`
-      height: ${height}px;
-      left: ${(x * maxWidth) / size}px;
-      top: ${(y * maxHeight) / size}px;
-      height: ${(height * maxHeight) / size}px;
-      width: ${(width * maxWidth) / size}px;
-      font-size: ${(fontSize * maxWidth) / size}px;
-    `}
-`;
-
 const defaultBarchartEditor = {};
 
 /**
- * @description Pie editor component.
+ * @description Bar chart editor component.
  * @param {Props} props
  * @returns {React.Node}
  */
@@ -62,12 +42,11 @@ export default function BarchartEditor({
   fontWeight = defaultBarchartFontWeight,
   lineHeight = defaultBarchartLineHeight,
   palette = defaultBarchartPalette,
-  editor: state = defaultBarchartEditor,
-  ...containerProps
+  editor: boxes = defaultBarchartEditor,
 }: Props) {
-  const overlayRef = React.useRef<React.Element<typeof Overlay>>(null);
+  const overlayRef = React.useRef(null);
 
-  const dispatchBarchart = React.useCallback(
+  const dispatchElements = React.useCallback(
     (action: Action) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
@@ -82,51 +61,53 @@ export default function BarchartEditor({
     overlayRef.current && overlayRef.current.getBoundingClientRect();
 
   return (
-    <Container
-      {...useSelectableBlockProps({ id, selection }, dispatch)}
-      {...containerProps}
-    >
-      <Overlay ref={overlayRef}>
+    <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
+      <EditableOverlay ref={overlayRef}>
         {React.useMemo(
           () =>
             overlayBox &&
             isSelected &&
-            elements.map(
-              ({ title, value }, index) =>
-                index in state && (
-                  <InputGroup
+            elements.map(({ title, value }, index) => {
+              if (index in boxes) {
+                const { x, y, width, height } = boxes[index];
+                return (
+                  <EditableGroup
                     key={index}
-                    {...state[index]}
+                    x={x}
+                    y={y}
                     size={size}
+                    width={width}
+                    height={height}
                     fontSize={2}
                     maxWidth={overlayBox.width}
                     maxHeight={overlayBox.height}
-                    style={{ justifyContent: 'even' }}
                   >
-                    <SVGInput.Input
-                      fontSize={'1em'}
+                    <EditableInput
                       as={ActionInput}
                       name={'title'}
                       value={title}
                       action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
-                      dispatch={dispatchBarchart}
+                      dispatch={dispatchElements}
                     />
-                    <SVGInput.Input
-                      fontSize={'1em'}
+                    <EditableInput
                       as={ActionInput}
                       name={'value'}
                       type={'number'}
                       value={value}
                       action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
-                      dispatch={dispatchBarchart}
+                      dispatch={dispatchElements}
                       textAlign={'right'}
                     />
-                  </InputGroup>
-                )
-            ),
-          [dispatchBarchart, elements, isSelected, overlayBox, size, state]
+                  </EditableGroup>
+                );
+              }
+
+              return false;
+            }),
+          [dispatchElements, elements, isSelected, overlayBox, size, boxes]
         )}
-      </Overlay>
+      </EditableOverlay>
+
       <Barchart
         size={size}
         fontWeight={fontWeight}
@@ -137,18 +118,16 @@ export default function BarchartEditor({
             isSelected
               ? elements.map((element, index) => ({
                   ...element,
-                  as: (props) => (
-                    <EditableElement
-                      {...props}
-                      index={index}
-                      dispatch={dispatch}
-                    />
+                  as: ({ children }) => (
+                    <EditableElement index={index} dispatch={dispatch}>
+                      {children}
+                    </EditableElement>
                   ),
                 }))
               : elements,
           [dispatch, elements, isSelected]
         )}
       />
-    </Container>
+    </BlockContainer>
   );
 }
