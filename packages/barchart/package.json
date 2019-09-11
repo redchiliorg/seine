@@ -1,6 +1,6 @@
 {
   "name": "@seine/barchart",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "description": "Seine bar chart renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
