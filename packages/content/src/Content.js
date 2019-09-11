@@ -4,6 +4,7 @@ import type { Block } from '@seine/core';
 import { blockTypes, createBlock } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Pie } from '@seine/pie';
+import { Barchart } from '@seine/barchart';
 
 import Grid from './Grid';
 import Page from './Page';
@@ -19,9 +20,7 @@ export const defaultBlockRenderMap = {
   [blockTypes.DRAFT]: Draft,
   [blockTypes.GRID]: Grid,
   [blockTypes.PIE]: Pie,
-  [blockTypes.BARCHART]: ({ children, ...props }) => (
-    <p style={{ whiteSpace: 'pre' }}>{JSON.stringify(props, null, '\t')}</p>
-  ),
+  [blockTypes.BARCHART]: Barchart,
 };
 
 /**

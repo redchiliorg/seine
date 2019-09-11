@@ -3,9 +3,15 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
 import { ActionInput, EditableElement, SVGInput } from '@seine/ui';
+import {
+  Barchart,
+  defaultBarchartFontWeight,
+  defaultBarchartLineHeight,
+  defaultBarchartPalette,
+  defaultBarchartSize,
+} from '@seine/barchart';
 
 import reduce, { UPDATE_BAR_CHART_ELEMENT } from './reducer';
-import Barchart, { defaultBarchartPalette } from './Barchart';
 
 type Props = {
   id: string,
@@ -52,9 +58,9 @@ export default function BarchartEditor({
   selection,
   dispatch,
   elements,
-  size = 100,
-  fontWeight = 500,
-  lineHeight = 1.75,
+  size = defaultBarchartSize,
+  fontWeight = defaultBarchartFontWeight,
+  lineHeight = defaultBarchartLineHeight,
   palette = defaultBarchartPalette,
   editor: state = defaultBarchartEditor,
   ...containerProps

@@ -791,292 +791,292 @@ exports[`Storyshots ContentEditor 6. Barchart 1`] = `
         viewBox="0 0 100 100"
       >
         <g>
-          <rect
-            fill="#fa6479"
-            height={6.125}
-            width={37.397260273972606}
-            x={8}
-            y={0}
-          />
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={100}
-            x={45.397260273972606}
-            y={0}
-          />
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={3.5}
           >
             WFGLA
           </text>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={39.89041095890411}
+            x={10}
+            y={0}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={46.397260273972606}
+            x={50.89041095890411}
             y={3.5}
           >
             20.8
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#cb91a0"
-            height={6.125}
-            width={64.18664383561644}
-            x={8}
-            y={6.125}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={72.18664383561644}
-            y={6.125}
+            width={6}
+            x={50.89041095890411}
+            y={0}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={9.625}
           >
             Region A
           </text>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={68.46575342465755}
+            x={10}
+            y={6.125}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={73.18664383561644}
+            x={79.46575342465755}
             y={9.625}
           >
             35.7
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#a38ca4"
-            height={6.125}
-            width={28.407534246575345}
-            x={8}
-            y={12.25}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={36.407534246575345}
-            y={12.25}
+            width={6}
+            x={79.46575342465755}
+            y={6.125}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={15.75}
           >
             Region B
           </text>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={30.3013698630137}
+            x={10}
+            y={12.25}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={37.407534246575345}
+            x={41.301369863013704}
             y={15.75}
           >
             15.8
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#7482aa"
-            height={6.125}
-            width={73.53595890410959}
-            x={8}
-            y={18.375}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={81.53595890410959}
-            y={18.375}
+            width={6}
+            x={41.301369863013704}
+            y={12.25}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={21.875}
           >
             Region C
           </text>
+          <rect
+            fill="#7482aa"
+            height={6.125}
+            width={78.43835616438356}
+            x={10}
+            y={18.375}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={82.53595890410959}
+            x={89.43835616438356}
             y={21.875}
           >
             40.9
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#35aeb7"
-            height={6.125}
-            width={42.43150684931507}
-            x={8}
-            y={24.5}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={50.43150684931507}
-            y={24.5}
+            width={6}
+            x={89.43835616438356}
+            y={18.375}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={28}
           >
             Region D
           </text>
+          <rect
+            fill="#35aeb7"
+            height={6.125}
+            width={45.26027397260275}
+            x={10}
+            y={24.5}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={51.43150684931507}
+            x={56.26027397260275}
             y={28}
           >
             23.6
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#01b25c"
-            height={6.125}
-            width={31.64383561643836}
-            x={8}
-            y={30.625}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={39.64383561643836}
-            y={30.625}
+            width={6}
+            x={56.26027397260275}
+            y={24.5}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={34.125}
           >
             Region E
           </text>
+          <rect
+            fill="#01b25c"
+            height={6.125}
+            width={33.753424657534254}
+            x={10}
+            y={30.625}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={40.64383561643836}
+            x={44.753424657534254}
             y={34.125}
           >
             17.6
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#e1c54e"
-            height={6.125}
-            width={68.50171232876713}
-            x={8}
-            y={36.75}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={76.50171232876713}
-            y={36.75}
+            width={6}
+            x={44.753424657534254}
+            y={30.625}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={40.25}
           >
             Region F
           </text>
+          <rect
+            fill="#e1c54e"
+            height={6.125}
+            width={73.06849315068494}
+            x={10}
+            y={36.75}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={77.50171232876713}
+            x={84.06849315068494}
             y={40.25}
           >
             38.1
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#f89764"
-            height={6.125}
-            width={78.75}
-            x={8}
-            y={42.875}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={86.75}
-            y={42.875}
+            width={6}
+            x={84.06849315068494}
+            y={36.75}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={46.375}
           >
             Region G
           </text>
+          <rect
+            fill="#f89764"
+            height={6.125}
+            width={84}
+            x={10}
+            y={42.875}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="end"
-            x={100}
+            x={95}
             y={46.375}
           >
             43.8
           </text>
-        </g>
-        <g>
-          <rect
-            fill="#a3704d"
-            height={6.125}
-            width={29.486301369863014}
-            x={8}
-            y={49}
-          />
           <rect
             fill="transparent"
             height={6.125}
-            width={100}
-            x={37.486301369863014}
-            y={49}
+            width={6}
+            x={95}
+            y={42.875}
           />
+        </g>
+        <g>
           <text
             fontSize={2}
             fontWeight={500}
+            x={0}
             y={52.5}
           >
             Region H
           </text>
+          <rect
+            fill="#a3704d"
+            height={6.125}
+            width={31.45205479452055}
+            x={10}
+            y={49}
+          />
           <text
             fontSize={2}
             fontWeight={500}
-            textAnchor="start"
-            x={38.486301369863014}
+            x={42.45205479452055}
             y={52.5}
           >
             16.4
           </text>
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={6}
+            x={42.45205479452055}
+            y={49}
+          />
         </g>
       </svg>
     </div>

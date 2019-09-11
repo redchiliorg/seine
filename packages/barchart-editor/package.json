@@ -1,6 +1,6 @@
 {
   "name": "@seine/barchart-editor",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "description": "Seine bar chart editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,12 +11,12 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
+    "@seine/barchart": "^0.3.0",
     "@seine/core": "^0.3.0",
     "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }
