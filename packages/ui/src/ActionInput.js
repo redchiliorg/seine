@@ -26,11 +26,12 @@ export default function ActionInput({
       name={name}
       type={type}
       onChange={React.useCallback(
-        ({ currentTarget: { value } }: SyntheticInputEvent) =>
+        ({ currentTarget }: SyntheticInputEvent) =>
           dispatch({
             ...action,
             body: {
-              [name]: type === 'number' ? +value : value,
+              [name]:
+                type === 'number' ? +currentTarget.value : currentTarget.value,
             },
           }),
         [action, dispatch, name, type]

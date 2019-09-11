@@ -1,18 +1,17 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
-    "lib/cjs/index.js.flow",
-    "lib/esm/index.js",
-    "lib/esm/index.js.flow"
+    "lib/"
   ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
+    "@seine/barchart-editor": "^0.3.0",
     "@seine/core": "^0.3.0",
     "@seine/draft": "^0.3.0",
     "@seine/draft-editor": "^0.3.0",

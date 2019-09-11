@@ -1,13 +1,11 @@
 {
   "name": "@seine/content",
-  "version": "0.3.13",
-  "description": "Seine structured content renderer.",
+  "version": "0.3.14",
+  "description": "Seine content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
-    "lib/cjs/index.js.flow",
-    "lib/esm/index.js",
-    "lib/esm/index.js.flow"
+    "lib/"
   ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",

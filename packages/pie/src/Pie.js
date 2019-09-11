@@ -6,6 +6,14 @@ import PieSlice from './PieSlice';
 
 export type Props = $Shape<PieFormat> & PieBody;
 
+export const defaultPiePalette = [
+  '#653867',
+  '#e5002d',
+  '#f80048',
+  '#ff3d69',
+  '#ff6d8c',
+];
+
 /**
  * @description Pie chart content component.
  * @param {Props}: props
@@ -13,31 +21,31 @@ export type Props = $Shape<PieFormat> & PieBody;
  */
 export default function Pie({
   elements,
-  fontColor = 'white',
-  fontSize = 18,
-  padding = 20,
   size = 360,
+  palette = defaultPiePalette,
 }: Props) {
-  let angle = 0;
+  const lengthRef = React.useRef();
   return (
     <svg viewBox={`0 0 ${size} ${size}`}>
-      {elements.map(({ title, percent, color }: PieElement, index) => {
-        const step = (percent * size) / 100;
-        angle += step;
+      {elements.map(({ title, percent, as = 'g' }: PieElement, index) => {
+        const length = (percent * size) / 100;
+        const start = index === 0 ? 0 : lengthRef.current;
+        lengthRef.current = start + length;
         return (
           <PieSlice
+            as={as}
             key={index}
-            title={title}
-            color={color}
-            index={index}
-            fontSize={fontSize}
-            fontColor={fontColor}
-            padding={padding}
-            percent={percent}
+            start={start}
+            length={length}
+            color={defaultPiePalette[index % palette.length]}
+            innerFontColor={'white'}
+            outerFontColor={'black'}
+            isInnerText={percent >= 25}
             size={size}
-            angle={angle - step}
-            step={step}
-          />
+          >
+            <PieSlice.Percent size={1}>{percent}</PieSlice.Percent>
+            <PieSlice.Title size={0.75}>{title}</PieSlice.Title>
+          </PieSlice>
         );
       })}
     </svg>

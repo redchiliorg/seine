@@ -54,12 +54,10 @@ export default ({ id, dispatch, blocks }: Props) => (
                       {
                         title: 'First half',
                         percent: 50,
-                        color: '#653867',
                       },
                       {
                         title: 'Second half',
                         percent: 50,
-                        color: '#e5002d',
                       },
                     ],
                   },

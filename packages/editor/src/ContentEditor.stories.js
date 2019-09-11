@@ -33,14 +33,32 @@ export const pie = createBlock(
   blockTypes.PIE,
   {
     elements: [
-      { title: 'repairs', percent: 12, color: '#653867' },
-      { title: 'consulting', percent: 10, color: '#e5002d' },
-      { title: 'training', percent: 8, color: '#f80048' },
-      { title: 'product sales', percent: 64, color: '#ff3d69' },
-      { title: 'others', percent: 6, color: '#ff6d8c' },
+      { title: 'repairs', percent: 12 },
+      { title: 'consulting', percent: 10 },
+      { title: 'training', percent: 8 },
+      { title: 'product sales', percent: 64 },
+      { title: 'others', percent: 6 },
     ],
   },
   { fontSize: 14, padding: 60 },
+  page.id
+);
+export const barchart = createBlock(
+  blockTypes.BARCHART,
+  {
+    elements: [
+      { title: 'WFGLA', value: 20.8 },
+      { title: 'Region A', value: 35.7 },
+      { title: 'Region B', value: 15.8 },
+      { title: 'Region C', value: 40.9 },
+      { title: 'Region D', value: 23.6 },
+      { title: 'Region E', value: 17.6 },
+      { title: 'Region F', value: 38.1 },
+      { title: 'Region G', value: 43.8 },
+      { title: 'Region H', value: 16.4 },
+    ],
+  },
+  null,
   page.id
 );
 
@@ -80,5 +98,10 @@ storiesOf('ContentEditor', module)
         { ...title, parent_id: 'sub-grid' },
         { ...pie, parent_id: 'sub-grid' },
       ]}
+    </ContentEditor>
+  ))
+  .add('6. Barchart', () => (
+    <ContentEditor {...actions} parent={page}>
+      {[barchart]}
     </ContentEditor>
   ));

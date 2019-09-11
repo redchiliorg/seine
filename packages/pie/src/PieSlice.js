@@ -4,23 +4,29 @@ import type { PieFormat } from '@seine/core';
 
 import { describeArc, polarToCartesian } from './helpers';
 
-export type SVGTextElement = React.ElementType<*> & {
-  getAttribute: (string) => string,
-  getBBox: () => DOMRect,
-};
+const PieSlicePercent: ({ children: number, size: number }) => * = () => null;
+PieSlicePercent.defaultProps = { size: 1 };
+PieSlice.Percent = PieSlicePercent;
+
+const PieSliceTitle: ({ children: string, size: number }) => * = () => null;
+PieSliceTitle.defaultProps = { size: 0.75 };
+PieSlice.Title = PieSliceTitle;
 
 type Config = PieFormat & {
-  titleTextRef: React.ElementRef<SVGTextElement> | null,
-  percentTextRef: React.ElementRef<SVGTextElement> | null,
-  step: number,
+  as: React.ElementType,
+  isInnerText: boolean,
 };
 
-export type Props = $Shape<Config> & {
-  angle: number,
+export type Props = {
+  start: number,
+  length: number,
   color: string,
-  title: string,
-  percent: number,
-};
+  size: number,
+  children: [
+    React.ElementType<typeof PieSliceTitle>,
+    React.ElementType<typeof PieSlicePercent>
+  ],
+} & $Shape<Config>;
 
 /**
  * @description Slice element of pie chart.
@@ -28,64 +34,53 @@ export type Props = $Shape<Config> & {
  * @returns {React.Node}
  */
 export default function PieSlice({
-  angle,
+  start,
+  length,
   color,
-  percent,
-  step,
-  title,
-  titleTextRef = null,
-  percentTextRef = null,
-  padding = 20,
-  size = 360,
-  fontSize = 18,
-  innerFontColor = 'white',
-  outerFontColor = 'black',
+  size,
+  as: Group = 'g',
+  innerFontColor,
+  outerFontColor,
+  isInnerText = false,
+  children,
 }: Props) {
+  const fontSize = size / 24;
+  const gutter = size / 6;
   const center = size / 2;
-  const radius = center - padding;
-  const middleAngle = angle + step / 2;
-  const [innerTextX, innerTextY] = polarToCartesian(
+  const radius = center - gutter;
+  const textColor = isInnerText ? innerFontColor : outerFontColor;
+  const [textX, textY] = polarToCartesian(
     center,
     center,
-    radius / 2,
-    middleAngle
+    isInnerText ? radius / 2 : radius + radius / 3,
+    start + length / 2
   );
-  const [outerTextX, outerTextY] = polarToCartesian(
-    center,
-    center,
-    radius + radius / 3,
-    middleAngle
-  );
-  const smallFontSize = fontSize * 0.75;
-  const isInnerText = percent >= 25;
 
   return (
-    <g>
+    <>
       <path
         fill={color}
-        d={describeArc(center, center, radius, angle, angle + step)}
+        d={describeArc(center, center, radius, start, start + length)}
       />
-      <text
-        textAnchor="middle"
-        fontSize={fontSize}
-        fill={isInnerText ? innerFontColor : outerFontColor}
-        x={isInnerText ? innerTextX : outerTextX}
-        y={isInnerText ? innerTextY : outerTextY}
-        {...(percentTextRef ? { ref: percentTextRef, opacity: 0 } : {})}
-      >
-        {Math.round(percent)}%
-      </text>
-      <text
-        textAnchor="middle"
-        fontSize={smallFontSize}
-        dy={fontSize}
-        fill={isInnerText ? innerFontColor : outerFontColor}
-        x={isInnerText ? innerTextX : outerTextX}
-        y={isInnerText ? innerTextY : outerTextY}
-        {...(titleTextRef ? { ref: titleTextRef, opacity: 0 } : {})}
-      >
-        {title}
-      </text>
-    </g>
+      <Group>
+        {React.Children.map(
+          children,
+          (child: React.Node, index) =>
+            child && (
+              <text
+                key={child.type.name}
+                fontSize={fontSize * child.props.size}
+                textAnchor="middle"
+                fill={textColor}
+                x={textX}
+                y={textY}
+                dy={fontSize * index}
+              >
+                {child.props.children}
+              </text>
+            )
+        )}
+      </Group>
+    </>
   );
 }

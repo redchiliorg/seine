@@ -2,7 +2,7 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-gZMcBi bTiXPO"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -35,17 +35,25 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
       >
         + pie chart
       </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   />
 </div>
 `;
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-gZMcBi bTiXPO"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -78,10 +86,18 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
       >
         + pie chart
       </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
@@ -90,7 +106,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-gZMcBi bTiXPO"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -123,41 +139,50 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
       >
         + pie chart
       </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
-      className="sc-dnqmqq cHyfRm"
+      className="sc-dnqmqq bkjoPw"
+      fontSize={14}
       onClick={[Function]}
       type="pie"
     >
       <div
-        className="sc-iwsKbI eBfmuR"
+        className="sc-iwsKbI cLjAWh"
       />
       <svg
         viewBox="0 0 360 360"
       >
+        <path
+          d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+          fill="#653867"
+        />
         <g>
-          <path
-            d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-            fill="#653867"
-          />
           <text
+            dy={0}
             fill="black"
-            fontSize={14}
+            fontSize={15}
             textAnchor="middle"
             x={238.89992842954845}
             y={31.23576225787977}
           >
             12
-            %
           </text>
           <text
-            dy={14}
+            dy={15}
             fill="black"
-            fontSize={10.5}
+            fontSize={11.25}
             textAnchor="middle"
             x={238.89992842954845}
             y={31.23576225787977}
@@ -165,25 +190,25 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             repairs
           </text>
         </g>
+        <path
+          d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+          fill="#e5002d"
+        />
         <g>
-          <path
-            d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-            fill="#e5002d"
-          />
           <text
+            dy={0}
             fill="black"
-            fontSize={14}
+            fontSize={15}
             textAnchor="middle"
             x={320.2090688070182}
             y={102.91941214372557}
           >
             10
-            %
           </text>
           <text
-            dy={14}
+            dy={15}
             fill="black"
-            fontSize={10.5}
+            fontSize={11.25}
             textAnchor="middle"
             x={320.2090688070182}
             y={102.91941214372557}
@@ -191,25 +216,25 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             consulting
           </text>
         </g>
+        <path
+          d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+          fill="#f80048"
+        />
         <g>
-          <path
-            d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-            fill="#f80048"
-          />
           <text
+            dy={0}
             fill="black"
-            fontSize={14}
+            fontSize={15}
             textAnchor="middle"
             x={339.6842765485235}
             y={190.04648312469016}
           >
             8
-            %
           </text>
           <text
-            dy={14}
+            dy={15}
             fill="black"
-            fontSize={10.5}
+            fontSize={11.25}
             textAnchor="middle"
             x={339.6842765485235}
             y={190.04648312469016}
@@ -217,25 +242,25 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             training
           </text>
         </g>
+        <path
+          d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+          fill="#ff3d69"
+        />
         <g>
-          <path
-            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-            fill="#ff3d69"
-          />
           <text
+            dy={0}
             fill="white"
-            fontSize={14}
+            fontSize={15}
             textAnchor="middle"
             x={138.9271736442787}
             y={223.73811764528472}
           >
             64
-            %
           </text>
           <text
-            dy={14}
+            dy={15}
             fill="white"
-            fontSize={10.5}
+            fontSize={11.25}
             textAnchor="middle"
             x={138.9271736442787}
             y={223.73811764528472}
@@ -243,25 +268,25 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             product sales
           </text>
         </g>
+        <path
+          d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+          fill="#ff6d8c"
+        />
         <g>
-          <path
-            d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-            fill="#ff6d8c"
-          />
           <text
+            dy={0}
             fill="black"
-            fontSize={14}
+            fontSize={15}
             textAnchor="middle"
             x={150.01898966628391}
             y={22.834039883409844}
           >
             6
-            %
           </text>
           <text
-            dy={14}
+            dy={15}
             fill="black"
-            fontSize={10.5}
+            fontSize={11.25}
             textAnchor="middle"
             x={150.01898966628391}
             y={22.834039883409844}
@@ -277,7 +302,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-gZMcBi bTiXPO"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -310,10 +335,18 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       >
         + pie chart
       </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       style={
@@ -327,35 +360,36 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-dnqmqq cHyfRm"
+        className="sc-dnqmqq bkjoPw"
+        fontSize={14}
         onClick={[Function]}
         type="pie"
       >
         <div
-          className="sc-iwsKbI eBfmuR"
+          className="sc-iwsKbI cLjAWh"
         />
         <svg
           viewBox="0 0 360 360"
         >
+          <path
+            d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+            fill="#653867"
+          />
           <g>
-            <path
-              d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-              fill="#653867"
-            />
             <text
+              dy={0}
               fill="black"
-              fontSize={14}
+              fontSize={15}
               textAnchor="middle"
               x={238.89992842954845}
               y={31.23576225787977}
             >
               12
-              %
             </text>
             <text
-              dy={14}
+              dy={15}
               fill="black"
-              fontSize={10.5}
+              fontSize={11.25}
               textAnchor="middle"
               x={238.89992842954845}
               y={31.23576225787977}
@@ -363,25 +397,25 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               repairs
             </text>
           </g>
+          <path
+            d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+            fill="#e5002d"
+          />
           <g>
-            <path
-              d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-              fill="#e5002d"
-            />
             <text
+              dy={0}
               fill="black"
-              fontSize={14}
+              fontSize={15}
               textAnchor="middle"
               x={320.2090688070182}
               y={102.91941214372557}
             >
               10
-              %
             </text>
             <text
-              dy={14}
+              dy={15}
               fill="black"
-              fontSize={10.5}
+              fontSize={11.25}
               textAnchor="middle"
               x={320.2090688070182}
               y={102.91941214372557}
@@ -389,25 +423,25 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               consulting
             </text>
           </g>
+          <path
+            d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+            fill="#f80048"
+          />
           <g>
-            <path
-              d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-              fill="#f80048"
-            />
             <text
+              dy={0}
               fill="black"
-              fontSize={14}
+              fontSize={15}
               textAnchor="middle"
               x={339.6842765485235}
               y={190.04648312469016}
             >
               8
-              %
             </text>
             <text
-              dy={14}
+              dy={15}
               fill="black"
-              fontSize={10.5}
+              fontSize={11.25}
               textAnchor="middle"
               x={339.6842765485235}
               y={190.04648312469016}
@@ -415,25 +449,25 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               training
             </text>
           </g>
+          <path
+            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+            fill="#ff3d69"
+          />
           <g>
-            <path
-              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-              fill="#ff3d69"
-            />
             <text
+              dy={0}
               fill="white"
-              fontSize={14}
+              fontSize={15}
               textAnchor="middle"
               x={138.9271736442787}
               y={223.73811764528472}
             >
               64
-              %
             </text>
             <text
-              dy={14}
+              dy={15}
               fill="white"
-              fontSize={10.5}
+              fontSize={11.25}
               textAnchor="middle"
               x={138.9271736442787}
               y={223.73811764528472}
@@ -441,25 +475,25 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               product sales
             </text>
           </g>
+          <path
+            d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+            fill="#ff6d8c"
+          />
           <g>
-            <path
-              d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-              fill="#ff6d8c"
-            />
             <text
+              dy={0}
               fill="black"
-              fontSize={14}
+              fontSize={15}
               textAnchor="middle"
               x={150.01898966628391}
               y={22.834039883409844}
             >
               6
-              %
             </text>
             <text
-              dy={14}
+              dy={15}
               fill="black"
-              fontSize={10.5}
+              fontSize={11.25}
               textAnchor="middle"
               x={150.01898966628391}
               y={22.834039883409844}
@@ -477,7 +511,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-gZMcBi bTiXPO"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -510,10 +544,18 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         + pie chart
       </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
     </div>
   </div>
   <div
-    className="sc-htpNat sc-gqjmRU mui-panel hkOvba"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       style={
@@ -540,35 +582,36 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-dnqmqq cHyfRm"
+          className="sc-dnqmqq bkjoPw"
+          fontSize={14}
           onClick={[Function]}
           type="pie"
         >
           <div
-            className="sc-iwsKbI eBfmuR"
+            className="sc-iwsKbI cLjAWh"
           />
           <svg
             viewBox="0 0 360 360"
           >
+            <path
+              d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
+              fill="#653867"
+            />
             <g>
-              <path
-                d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-                fill="#653867"
-              />
               <text
+                dy={0}
                 fill="black"
-                fontSize={14}
+                fontSize={15}
                 textAnchor="middle"
                 x={238.89992842954845}
                 y={31.23576225787977}
               >
                 12
-                %
               </text>
               <text
-                dy={14}
+                dy={15}
                 fill="black"
-                fontSize={10.5}
+                fontSize={11.25}
                 textAnchor="middle"
                 x={238.89992842954845}
                 y={31.23576225787977}
@@ -576,25 +619,25 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 repairs
               </text>
             </g>
+            <path
+              d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
+              fill="#e5002d"
+            />
             <g>
-              <path
-                d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-                fill="#e5002d"
-              />
               <text
+                dy={0}
                 fill="black"
-                fontSize={14}
+                fontSize={15}
                 textAnchor="middle"
                 x={320.2090688070182}
                 y={102.91941214372557}
               >
                 10
-                %
               </text>
               <text
-                dy={14}
+                dy={15}
                 fill="black"
-                fontSize={10.5}
+                fontSize={11.25}
                 textAnchor="middle"
                 x={320.2090688070182}
                 y={102.91941214372557}
@@ -602,25 +645,25 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 consulting
               </text>
             </g>
+            <path
+              d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
+              fill="#f80048"
+            />
             <g>
-              <path
-                d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-                fill="#f80048"
-              />
               <text
+                dy={0}
                 fill="black"
-                fontSize={14}
+                fontSize={15}
                 textAnchor="middle"
                 x={339.6842765485235}
                 y={190.04648312469016}
               >
                 8
-                %
               </text>
               <text
-                dy={14}
+                dy={15}
                 fill="black"
-                fontSize={10.5}
+                fontSize={11.25}
                 textAnchor="middle"
                 x={339.6842765485235}
                 y={190.04648312469016}
@@ -628,25 +671,25 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 training
               </text>
             </g>
+            <path
+              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
+              fill="#ff3d69"
+            />
             <g>
-              <path
-                d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499364 L 180 180 L 135.82505367783858 68.42682169340986"
-                fill="#ff3d69"
-              />
               <text
+                dy={0}
                 fill="white"
-                fontSize={14}
+                fontSize={15}
                 textAnchor="middle"
                 x={138.9271736442787}
                 y={223.73811764528472}
               >
                 64
-                %
               </text>
               <text
-                dy={14}
+                dy={15}
                 fill="white"
-                fontSize={10.5}
+                fontSize={11.25}
                 textAnchor="middle"
                 x={138.9271736442787}
                 y={223.73811764528472}
@@ -654,25 +697,25 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 product sales
               </text>
             </g>
+            <path
+              d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
+              fill="#ff6d8c"
+            />
             <g>
-              <path
-                d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-                fill="#ff6d8c"
-              />
               <text
+                dy={0}
                 fill="black"
-                fontSize={14}
+                fontSize={15}
                 textAnchor="middle"
                 x={150.01898966628391}
                 y={22.834039883409844}
               >
                 6
-                %
               </text>
               <text
-                dy={14}
+                dy={15}
                 fill="black"
-                fontSize={10.5}
+                fontSize={11.25}
                 textAnchor="middle"
                 x={150.01898966628391}
                 y={22.834039883409844}
@@ -683,6 +726,359 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
           </svg>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ContentEditor 6. Barchart 1`] = `
+<div
+  className="sc-fjdhpX Whtcp"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+  >
+    <div
+      className="sc-gqjmRU liecxC"
+      onClick={[Function]}
+      type="barchart"
+    >
+      <div
+        className="sc-VigVT gRHzLG"
+      />
+      <svg
+        viewBox="0 0 100 100"
+      >
+        <g>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={37.397260273972606}
+            x={8}
+            y={0}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={45.397260273972606}
+            y={0}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={3.5}
+          >
+            WFGLA
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={46.397260273972606}
+            y={3.5}
+          >
+            20.8
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={64.18664383561644}
+            x={8}
+            y={6.125}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={72.18664383561644}
+            y={6.125}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={9.625}
+          >
+            Region A
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={73.18664383561644}
+            y={9.625}
+          >
+            35.7
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={28.407534246575345}
+            x={8}
+            y={12.25}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={36.407534246575345}
+            y={12.25}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={15.75}
+          >
+            Region B
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={37.407534246575345}
+            y={15.75}
+          >
+            15.8
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#7482aa"
+            height={6.125}
+            width={73.53595890410959}
+            x={8}
+            y={18.375}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={81.53595890410959}
+            y={18.375}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={21.875}
+          >
+            Region C
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={82.53595890410959}
+            y={21.875}
+          >
+            40.9
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#35aeb7"
+            height={6.125}
+            width={42.43150684931507}
+            x={8}
+            y={24.5}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={50.43150684931507}
+            y={24.5}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={28}
+          >
+            Region D
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={51.43150684931507}
+            y={28}
+          >
+            23.6
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#01b25c"
+            height={6.125}
+            width={31.64383561643836}
+            x={8}
+            y={30.625}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={39.64383561643836}
+            y={30.625}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={34.125}
+          >
+            Region E
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={40.64383561643836}
+            y={34.125}
+          >
+            17.6
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#e1c54e"
+            height={6.125}
+            width={68.50171232876713}
+            x={8}
+            y={36.75}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={76.50171232876713}
+            y={36.75}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={40.25}
+          >
+            Region F
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={77.50171232876713}
+            y={40.25}
+          >
+            38.1
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#f89764"
+            height={6.125}
+            width={78.75}
+            x={8}
+            y={42.875}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={86.75}
+            y={42.875}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={46.375}
+          >
+            Region G
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="end"
+            x={100}
+            y={46.375}
+          >
+            43.8
+          </text>
+        </g>
+        <g>
+          <rect
+            fill="#a3704d"
+            height={6.125}
+            width={29.486301369863014}
+            x={8}
+            y={49}
+          />
+          <rect
+            fill="transparent"
+            height={6.125}
+            width={100}
+            x={37.486301369863014}
+            y={49}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            y={52.5}
+          >
+            Region H
+          </text>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            textAnchor="start"
+            x={38.486301369863014}
+            y={52.5}
+          >
+            16.4
+          </text>
+        </g>
+      </svg>
     </div>
   </div>
 </div>

@@ -1,13 +1,11 @@
 {
   "name": "@seine/core",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Seine core utils and types.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
-    "lib/cjs/index.js.flow",
-    "lib/esm/index.js",
-    "lib/esm/index.js.flow"
+    "lib/"
   ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
