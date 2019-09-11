@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Block } from '@seine/core';
-import { blockTypes, createBlock } from '@seine/core';
+import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Pie } from '@seine/pie';
 import { Barchart } from '@seine/barchart';
@@ -30,7 +30,7 @@ export const defaultBlockRenderMap = {
  */
 function Content({
   blockRenderMap = defaultBlockRenderMap,
-  parent = createBlock(blockTypes.PAGE),
+  parent,
   children,
 }: Props): React.Node {
   return children
