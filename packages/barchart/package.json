@@ -1,7 +1,7 @@
 {
-  "name": "@seine/content",
-  "version": "0.3.14",
-  "description": "Seine content renderer.",
+  "name": "@seine/barchart",
+  "version": "0.3.13",
+  "description": "Seine bar chart renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -11,10 +11,7 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0",
-    "@seine/pie": "^0.3.0",
-    "@seine/barchart": "^0.3.0"
+    "@seine/core": "^0.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6",

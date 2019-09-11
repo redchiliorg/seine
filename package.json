@@ -80,6 +80,7 @@
     "packages/ui",
     "packages/draft",
     "packages/pie",
+    "packages/barchart",
     "packages/content",
     "packages/draft-editor",
     "packages/pie-editor",
