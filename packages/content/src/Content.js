@@ -3,8 +3,7 @@ import * as React from 'react';
 import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
-import { Pie } from '@seine/pie';
-import { Barchart } from '@seine/barchart';
+import { BarChart, PieChart } from '@seine/charts';
 
 import Grid from './Grid';
 import Page from './Page';
@@ -19,8 +18,8 @@ export const defaultBlockRenderMap = {
   [blockTypes.PAGE]: Page,
   [blockTypes.DRAFT]: Draft,
   [blockTypes.GRID]: Grid,
-  [blockTypes.PIE]: Pie,
-  [blockTypes.BARCHART]: Barchart,
+  [blockTypes.BAR_CHART]: BarChart,
+  [blockTypes.PIE_CHART]: PieChart,
 };
 
 /**

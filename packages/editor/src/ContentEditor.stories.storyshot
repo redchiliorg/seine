@@ -2,7 +2,7 @@
 
 exports[`Storyshots ContentEditor 1. Empty 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -46,14 +46,14 @@ exports[`Storyshots ContentEditor 1. Empty 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   />
 </div>
 `;
 
 exports[`Storyshots ContentEditor 2. Draft 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -97,7 +97,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
@@ -106,7 +106,7 @@ exports[`Storyshots ContentEditor 2. Draft 1`] = `
 
 exports[`Storyshots ContentEditor 3. Pie 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -150,146 +150,144 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-dnqmqq bkjoPw"
-      fontSize={14}
+      className="sc-bZQynM kXzfvt"
       onClick={[Function]}
-      type="pie"
     >
       <div
         className="sc-iwsKbI cLjAWh"
       />
       <svg
-        viewBox="0 0 360 360"
+        viewBox="0 0 100 100"
       >
         <path
-          d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-          fill="#653867"
+          d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+          fill="#fa6479"
         />
         <g>
           <text
-            dy={0}
             fill="black"
-            fontSize={15}
+            fontSize={4.166666666666667}
             textAnchor="middle"
-            x={238.89992842954845}
-            y={31.23576225787977}
+            x={66.36109123043012}
+            y={8.676600627188833}
           >
             12
+            %
           </text>
           <text
-            dy={15}
+            dy={4.166666666666667}
             fill="black"
-            fontSize={11.25}
+            fontSize={3.125}
             textAnchor="middle"
-            x={238.89992842954845}
-            y={31.23576225787977}
+            x={66.36109123043012}
+            y={8.676600627188833}
           >
             repairs
           </text>
         </g>
         <path
-          d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-          fill="#e5002d"
+          d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+          fill="#cb91a0"
         />
         <g>
           <text
-            dy={0}
             fill="black"
-            fontSize={15}
+            fontSize={4.166666666666667}
             textAnchor="middle"
-            x={320.2090688070182}
-            y={102.91941214372557}
+            x={88.94696355750504}
+            y={28.58872559547933}
           >
             10
+            %
           </text>
           <text
-            dy={15}
+            dy={4.166666666666667}
             fill="black"
-            fontSize={11.25}
+            fontSize={3.125}
             textAnchor="middle"
-            x={320.2090688070182}
-            y={102.91941214372557}
+            x={88.94696355750504}
+            y={28.58872559547933}
           >
             consulting
           </text>
         </g>
         <path
-          d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-          fill="#f80048"
+          d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+          fill="#a38ca4"
         />
         <g>
           <text
-            dy={0}
             fill="black"
-            fontSize={15}
+            fontSize={4.166666666666667}
             textAnchor="middle"
-            x={339.6842765485235}
-            y={190.04648312469016}
+            x={94.35674348570095}
+            y={52.79068975685838}
           >
             8
+            %
           </text>
           <text
-            dy={15}
+            dy={4.166666666666667}
             fill="black"
-            fontSize={11.25}
+            fontSize={3.125}
             textAnchor="middle"
-            x={339.6842765485235}
-            y={190.04648312469016}
+            x={94.35674348570095}
+            y={52.79068975685838}
           >
             training
           </text>
         </g>
         <path
-          d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
-          fill="#ff3d69"
+          d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+          fill="#7482aa"
         />
         <g>
           <text
-            dy={0}
             fill="white"
-            fontSize={15}
+            fontSize={4.166666666666667}
             textAnchor="middle"
-            x={138.9271736442787}
-            y={223.73811764528472}
+            x={38.59088156785519}
+            y={62.1494771236902}
           >
             64
+            %
           </text>
           <text
-            dy={15}
+            dy={4.166666666666667}
             fill="white"
-            fontSize={11.25}
+            fontSize={3.125}
             textAnchor="middle"
-            x={138.9271736442787}
-            y={223.73811764528472}
+            x={38.59088156785519}
+            y={62.1494771236902}
           >
             product sales
           </text>
         </g>
         <path
-          d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-          fill="#ff6d8c"
+          d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+          fill="#35aeb7"
         />
         <g>
           <text
-            dy={0}
             fill="black"
-            fontSize={15}
+            fontSize={4.166666666666667}
             textAnchor="middle"
-            x={150.01898966628391}
-            y={22.834039883409844}
+            x={41.67194157396776}
+            y={6.342788856502743}
           >
             6
+            %
           </text>
           <text
-            dy={15}
+            dy={4.166666666666667}
             fill="black"
-            fontSize={11.25}
+            fontSize={3.125}
             textAnchor="middle"
-            x={150.01898966628391}
-            y={22.834039883409844}
+            x={41.67194157396776}
+            y={6.342788856502743}
           >
             others
           </text>
@@ -302,7 +300,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
 
 exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -346,7 +344,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -360,143 +358,141 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
       }
     >
       <div
-        className="sc-dnqmqq bkjoPw"
-        fontSize={14}
+        className="sc-bZQynM kXzfvt"
         onClick={[Function]}
-        type="pie"
       >
         <div
           className="sc-iwsKbI cLjAWh"
         />
         <svg
-          viewBox="0 0 360 360"
+          viewBox="0 0 100 100"
         >
           <path
-            d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-            fill="#653867"
+            d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+            fill="#fa6479"
           />
           <g>
             <text
-              dy={0}
               fill="black"
-              fontSize={15}
+              fontSize={4.166666666666667}
               textAnchor="middle"
-              x={238.89992842954845}
-              y={31.23576225787977}
+              x={66.36109123043012}
+              y={8.676600627188833}
             >
               12
+              %
             </text>
             <text
-              dy={15}
+              dy={4.166666666666667}
               fill="black"
-              fontSize={11.25}
+              fontSize={3.125}
               textAnchor="middle"
-              x={238.89992842954845}
-              y={31.23576225787977}
+              x={66.36109123043012}
+              y={8.676600627188833}
             >
               repairs
             </text>
           </g>
           <path
-            d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-            fill="#e5002d"
+            d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+            fill="#cb91a0"
           />
           <g>
             <text
-              dy={0}
               fill="black"
-              fontSize={15}
+              fontSize={4.166666666666667}
               textAnchor="middle"
-              x={320.2090688070182}
-              y={102.91941214372557}
+              x={88.94696355750504}
+              y={28.58872559547933}
             >
               10
+              %
             </text>
             <text
-              dy={15}
+              dy={4.166666666666667}
               fill="black"
-              fontSize={11.25}
+              fontSize={3.125}
               textAnchor="middle"
-              x={320.2090688070182}
-              y={102.91941214372557}
+              x={88.94696355750504}
+              y={28.58872559547933}
             >
               consulting
             </text>
           </g>
           <path
-            d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-            fill="#f80048"
+            d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+            fill="#a38ca4"
           />
           <g>
             <text
-              dy={0}
               fill="black"
-              fontSize={15}
+              fontSize={4.166666666666667}
               textAnchor="middle"
-              x={339.6842765485235}
-              y={190.04648312469016}
+              x={94.35674348570095}
+              y={52.79068975685838}
             >
               8
+              %
             </text>
             <text
-              dy={15}
+              dy={4.166666666666667}
               fill="black"
-              fontSize={11.25}
+              fontSize={3.125}
               textAnchor="middle"
-              x={339.6842765485235}
-              y={190.04648312469016}
+              x={94.35674348570095}
+              y={52.79068975685838}
             >
               training
             </text>
           </g>
           <path
-            d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
-            fill="#ff3d69"
+            d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+            fill="#7482aa"
           />
           <g>
             <text
-              dy={0}
               fill="white"
-              fontSize={15}
+              fontSize={4.166666666666667}
               textAnchor="middle"
-              x={138.9271736442787}
-              y={223.73811764528472}
+              x={38.59088156785519}
+              y={62.1494771236902}
             >
               64
+              %
             </text>
             <text
-              dy={15}
+              dy={4.166666666666667}
               fill="white"
-              fontSize={11.25}
+              fontSize={3.125}
               textAnchor="middle"
-              x={138.9271736442787}
-              y={223.73811764528472}
+              x={38.59088156785519}
+              y={62.1494771236902}
             >
               product sales
             </text>
           </g>
           <path
-            d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-            fill="#ff6d8c"
+            d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+            fill="#35aeb7"
           />
           <g>
             <text
-              dy={0}
               fill="black"
-              fontSize={15}
+              fontSize={4.166666666666667}
               textAnchor="middle"
-              x={150.01898966628391}
-              y={22.834039883409844}
+              x={41.67194157396776}
+              y={6.342788856502743}
             >
               6
+              %
             </text>
             <text
-              dy={15}
+              dy={4.166666666666667}
               fill="black"
-              fontSize={11.25}
+              fontSize={3.125}
               textAnchor="middle"
-              x={150.01898966628391}
-              y={22.834039883409844}
+              x={41.67194157396776}
+              y={6.342788856502743}
             >
               others
             </text>
@@ -511,7 +507,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
 
 exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -555,7 +551,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       style={
@@ -582,143 +578,141 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
       >
         {"blocks":[{"key":1,"text":"V2. London income - Year 8 - 3,400,000","type":"header-two","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
         <div
-          className="sc-dnqmqq bkjoPw"
-          fontSize={14}
+          className="sc-bZQynM kXzfvt"
           onClick={[Function]}
-          type="pie"
         >
           <div
             className="sc-iwsKbI cLjAWh"
           />
           <svg
-            viewBox="0 0 360 360"
+            viewBox="0 0 100 100"
           >
             <path
-              d="M 262.14565271144266 92.52376470943062 A 120 120 0 0 0180 60 L 180 180 L 262.14565271144266 92.52376470943062"
-              fill="#653867"
+              d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+              fill="#fa6479"
             />
             <g>
               <text
-                dy={0}
                 fill="black"
-                fontSize={15}
+                fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={238.89992842954845}
-                y={31.23576225787977}
+                x={66.36109123043012}
+                y={8.676600627188833}
               >
                 12
+                %
               </text>
               <text
-                dy={15}
+                dy={4.166666666666667}
                 fill="black"
-                fontSize={11.25}
+                fontSize={3.125}
                 textAnchor="middle"
-                x={238.89992842954845}
-                y={31.23576225787977}
+                x={66.36109123043012}
+                y={8.676600627188833}
               >
                 repairs
               </text>
             </g>
             <path
-              d="M 297.87447008744266 157.51424224971305 A 120 120 0 0 0262.14565271144266 92.52376470943062 L 180 180 L 297.87447008744266 157.51424224971305"
-              fill="#e5002d"
+              d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+              fill="#cb91a0"
             />
             <g>
               <text
-                dy={0}
                 fill="black"
-                fontSize={15}
+                fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={320.2090688070182}
-                y={102.91941214372557}
+                x={88.94696355750504}
+                y={28.58872559547933}
               >
                 10
+                %
               </text>
               <text
-                dy={15}
+                dy={4.166666666666667}
                 fill="black"
-                fontSize={11.25}
+                fontSize={3.125}
                 textAnchor="middle"
-                x={320.2090688070182}
-                y={102.91941214372557}
+                x={88.94696355750504}
+                y={28.58872559547933}
               >
                 consulting
               </text>
             </g>
             <path
-              d="M 294.12678195541844 217.08203932499367 A 120 120 0 0 0297.87447008744266 157.51424224971305 L 180 180 L 294.12678195541844 217.08203932499367"
-              fill="#f80048"
+              d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+              fill="#a38ca4"
             />
             <g>
               <text
-                dy={0}
                 fill="black"
-                fontSize={15}
+                fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={339.6842765485235}
-                y={190.04648312469016}
+                x={94.35674348570095}
+                y={52.79068975685838}
               >
                 8
+                %
               </text>
               <text
-                dy={15}
+                dy={4.166666666666667}
                 fill="black"
-                fontSize={11.25}
+                fontSize={3.125}
                 textAnchor="middle"
-                x={339.6842765485235}
-                y={190.04648312469016}
+                x={94.35674348570095}
+                y={52.79068975685838}
               >
                 training
               </text>
             </g>
             <path
-              d="M 135.82505367783858 68.42682169340986 A 120 120 0 1 0294.12678195541844 217.08203932499367 L 180 180 L 135.82505367783858 68.42682169340986"
-              fill="#ff3d69"
+              d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+              fill="#7482aa"
             />
             <g>
               <text
-                dy={0}
                 fill="white"
-                fontSize={15}
+                fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={138.9271736442787}
-                y={223.73811764528472}
+                x={38.59088156785519}
+                y={62.1494771236902}
               >
                 64
+                %
               </text>
               <text
-                dy={15}
+                dy={4.166666666666667}
                 fill="white"
-                fontSize={11.25}
+                fontSize={3.125}
                 textAnchor="middle"
-                x={138.9271736442787}
-                y={223.73811764528472}
+                x={38.59088156785519}
+                y={62.1494771236902}
               >
                 product sales
               </text>
             </g>
             <path
-              d="M 179.99999999999997 60 A 120 120 0 0 0135.82505367783858 68.42682169340986 L 180 180 L 179.99999999999997 60"
-              fill="#ff6d8c"
+              d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+              fill="#35aeb7"
             />
             <g>
               <text
-                dy={0}
                 fill="black"
-                fontSize={15}
+                fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={150.01898966628391}
-                y={22.834039883409844}
+                x={41.67194157396776}
+                y={6.342788856502743}
               >
                 6
+                %
               </text>
               <text
-                dy={15}
+                dy={4.166666666666667}
                 fill="black"
-                fontSize={11.25}
+                fontSize={3.125}
                 textAnchor="middle"
-                x={150.01898966628391}
-                y={22.834039883409844}
+                x={41.67194157396776}
+                y={6.342788856502743}
               >
                 others
               </text>
@@ -731,9 +725,9 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
 </div>
 `;
 
-exports[`Storyshots ContentEditor 6. Barchart 1`] = `
+exports[`Storyshots ContentEditor 6. Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -777,15 +771,14 @@ exports[`Storyshots ContentEditor 6. Barchart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
-      className="sc-gqjmRU liecxC"
+      className="sc-bZQynM kXzfvt"
       onClick={[Function]}
-      type="barchart"
     >
       <div
-        className="sc-VigVT gRHzLG"
+        className="sc-iwsKbI cLjAWh"
       />
       <svg
         viewBox="0 0 100 100"

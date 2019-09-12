@@ -2,21 +2,24 @@
 import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { Content } from '@seine/content';
 import type { ContentProps } from '@seine/content';
-import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
   blockTypes,
   DELETE_SELECTED_BLOCKS,
-  editor as reduce,
-  initialState,
+  reduceEditor,
+  initialEditor,
   SELECT_BLOCK,
-  useReducerEx,
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { ActionButton, Paper, Toolbar } from '@seine/ui';
-import { PieEditor, PieToolbar } from '@seine/pie-editor';
-import { BarchartEditor, BarchartToolbar } from '@seine/barchart-editor';
+import { ActionButton, Paper, Toolbar, useReducerEx } from '@seine/ui';
+import {
+  PieChartEditor,
+  PieChartToolbar,
+  BarChartEditor,
+  BarChartToolbar,
+} from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
 import ContentToolbar from './ContentToolbar';
@@ -40,19 +43,19 @@ const ContentToolbarGroup = styled(Toolbar.Group)`
 `;
 
 const defaultEditorBlockRendererMap = {
-  ...defaultBlockRenderMap,
-  [blockTypes.PIE]: PieEditor,
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
-  [blockTypes.BARCHART]: BarchartEditor,
+  [blockTypes.PAGE]: Content,
+  [blockTypes.BAR_CHART]: BarChartEditor,
+  [blockTypes.PIE_CHART]: PieChartEditor,
 };
 
 const defaultBlockToolbarRenderMap = {
-  [blockTypes.PIE]: PieToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: ContentToolbar,
   [blockTypes.PAGE]: ContentToolbar,
-  [blockTypes.BARCHART]: BarchartToolbar,
+  [blockTypes.BAR_CHART]: BarChartToolbar,
+  [blockTypes.PIE_CHART]: PieChartToolbar,
 };
 
 const defaultEditorChildren = [];
@@ -87,13 +90,13 @@ export default function ContentEditor({
   ...contentProps
 }: Props) {
   const init = React.useCallback(
-    () => ({ ...initialState, blocks: children }),
+    () => ({ ...initialEditor, blocks: children }),
     [children]
   );
   const [{ blocks, selection }, dispatch] = useReducerEx<
     EditorState,
     EditorAction
-  >(reduce, initialState, init);
+  >(reduceEditor, initialEditor, init);
 
   React.useEffect(() => {
     onChange(

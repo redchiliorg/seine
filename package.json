@@ -12,11 +12,9 @@
   "scripts": {
     "start": "serve",
     "release": "run-s release:*",
-    "release:test": "run-s test:eslint",
     "release:build": "run-p release:build:*",
     "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c ../../rollup.config.js",
     "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c ../../rollup.config.js",
-    "release:build:test": "run-p test:jest",
     "release:publish": "node scripts/publish.js",
     "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
@@ -26,7 +24,9 @@
     "dev:start": "start-storybook -p 9009 -s public"
   },
   "dependencies": {
-    "serve": "^11.1.0"
+    "draft-js": "^0.11.0",
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
@@ -62,7 +62,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "ramda": "^0.26.1",
-    "react": "^16.8.6",
     "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.9.0",
@@ -74,19 +73,16 @@
     "rollup-plugin-flow-entry": "^0.3.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-visualizer": "^2.5.4",
-    "styled-components": "^4.3.2"
+    "rollup-plugin-visualizer": "^2.5.4"
   },
   "workspaces": [
     "packages/core",
     "packages/ui",
     "packages/draft",
-    "packages/pie",
-    "packages/barchart",
+    "packages/charts",
     "packages/content",
     "packages/draft-editor",
-    "packages/pie-editor",
-    "packages/barchart-editor",
+    "packages/charts-editor",
     "packages/editor"
   ]
 }

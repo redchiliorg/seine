@@ -7,7 +7,7 @@ import {
   grid,
   page,
   title,
-  barchart,
+  chart,
 } from '../../editor/src/ContentEditor.stories';
 
 import Content from './Content';
@@ -48,10 +48,10 @@ storiesOf('Content', module)
       </Content>
     </div>
   ))
-  .add('6. Barchart', () => (
+  .add('6. Bar chart', () => (
     <div className={'mui-panel'}>
       <Content parent={page}>
-        {[{ ...grid, columns: 'auto' }, { ...barchart, parent_id: grid.id }]}
+        {[{ ...grid, columns: 'auto' }, { ...chart, parent_id: grid.id }]}
       </Content>
     </div>
   ));

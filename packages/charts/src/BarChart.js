@@ -1,35 +1,28 @@
 // @flow
 import * as React from 'react';
-import type { BarchartBody, BarchartFormat } from '@seine/core';
+import type { ChartBody, ChartFormat } from '@seine/core';
 
-export const defaultBarchartSize = 100;
-export const defaultBarchartFontWeight = 500;
-export const defaultBarchartLineHeight = 1.75;
-export const defaultBarchartPalette = [
-  '#fa6479',
-  '#cb91a0',
-  '#a38ca4',
-  '#7482aa',
-  '#35aeb7',
-  '#01b25c',
-  '#e1c54e',
-  '#f89764',
-  '#a3704d',
-];
+import {
+  defaultChartFontWeight,
+  defaultChartLineHeight,
+  defaultChartPalette,
+  defaultChartSize,
+} from './constants';
 
-type Props = BarchartBody & $Shape<BarchartFormat>;
+type Props = ChartBody & ChartFormat;
 
 /**
  * @description Bar chart content renderer.
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function Barchart({
+export default function BarChart({
   elements,
-  size = defaultBarchartSize,
-  fontWeight = defaultBarchartFontWeight,
-  lineHeight = defaultBarchartLineHeight,
-  palette = defaultBarchartPalette,
+  size = defaultChartSize,
+  palette = defaultChartPalette,
+
+  fontWeight = defaultChartFontWeight,
+  lineHeight = defaultChartLineHeight,
 }: Props) {
   const fontSize = 2;
   const fontWidth = fontSize / 2;

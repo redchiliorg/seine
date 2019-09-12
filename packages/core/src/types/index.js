@@ -2,37 +2,31 @@
 import type { Action } from '../reducers';
 
 import type { PageBody, PageFormat } from './page';
-import { PAGE } from './page';
 import type { GridBody, GridFormat } from './grid';
-import { GRID } from './grid';
 import type { DraftBody, DraftFormat } from './draft';
-import { DRAFT } from './draft';
-import type { PieBody, PieFormat } from './pie';
-import { PIE } from './pie';
-import type { BarchartBody, BarchartFormat } from './barchart';
-import { BARCHART } from './barchart';
+import type { ChartBody, ChartFormat } from './charts';
+import * as Page from './page';
+import * as Grid from './grid';
+import * as Draft from './draft';
+import * as Charts from './charts';
 
-export type { PieElement } from './pie';
-
-export const blockTypes = { GRID, PAGE, DRAFT, PIE, BARCHART };
+export const blockTypes = {
+  ...Page,
+  ...Grid,
+  ...Draft,
+  ...Charts,
+};
 
 export type BlockType = $Values<typeof blockTypes>;
 
-export type BlockBody =
-  | null
-  | PageBody
-  | GridBody
-  | DraftBody
-  | PieBody
-  | BarchartBody;
+export type BlockBody = null | PageBody | GridBody | DraftBody | ChartBody;
 
 export type BlockFormat =
   | null
   | PageFormat
   | GridFormat
   | DraftFormat
-  | PieFormat
-  | BarchartFormat;
+  | ChartFormat;
 
 export type BlockId = string | null;
 
@@ -49,15 +43,8 @@ export type BlockEditor = {
   selection: BlockId[],
 };
 
-export type {
-  GridBody,
-  GridFormat,
-  PageBody,
-  PageFormat,
-  DraftBody,
-  DraftFormat,
-  PieBody,
-  PieFormat,
-  BarchartBody,
-  BarchartFormat,
-};
+export type * from './charts';
+export type * from './draft';
+export type * from './grid';
+export type * from './page';
+export type * from './theme';

@@ -2,11 +2,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
-import {
-  UPDATE_BLOCK_BODY,
-  UPDATE_BLOCK_EDITOR,
-  useSelectableBlockProps,
-} from '@seine/core';
+import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
+import { useSelectableBlockProps } from '@seine/ui';
 import { toDraftEditor, toRawContent } from '@seine/draft';
 import { Editor } from 'draft-js';
 

@@ -1,7 +1,7 @@
 {
-  "name": "@seine/pie",
+  "name": "@seine/charts",
   "version": "0.3.14",
-  "description": "Seine pie chart renderer.",
+  "description": "Seine charts renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [

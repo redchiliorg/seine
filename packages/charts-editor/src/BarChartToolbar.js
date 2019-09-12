@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, BarchartBody, BlockId } from '@seine/core';
+import type { Action, Block, ChartBody, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
 import { ActionButton, typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
-  body: BarchartBody,
+  body: ChartBody,
   selection: BlockId[],
   children: React.Element<typeof BlockToolbarGroup>,
 };
@@ -14,11 +14,11 @@ type Props = Block & {
 const DefaultBody = { elements: [] };
 
 /**
- * @description Action buttons to edit currently selected barchart.
+ * @description Action buttons to edit currently selected chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarchartToolbar({
+export default function BarChartToolbar({
   id,
   body,
   dispatch,

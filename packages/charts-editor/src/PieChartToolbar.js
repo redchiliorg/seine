@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, PieBody, BlockId } from '@seine/core';
+import type { Action, Block, ChartBody, BlockId } from '@seine/core';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
 import { ActionButton, typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 type Props = Block & {
   dispatch: (Action) => any,
-  body: PieBody,
+  body: ChartBody,
   selection: BlockId[],
   children: React.Element<typeof BlockToolbarGroup>,
 };
@@ -20,7 +20,12 @@ const DefaultBody = { elements: [] };
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieToolbar({ id, body, dispatch, children }: Props) {
+export default function PieChartToolbar({
+  id,
+  body,
+  dispatch,
+  children,
+}: Props) {
   body = body || DefaultBody;
   return (
     <Toolbar>

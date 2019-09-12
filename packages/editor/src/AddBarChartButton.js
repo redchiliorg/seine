@@ -39,7 +39,7 @@ export default ({ id, dispatch, blocks }: Props) => (
             },
 
             {
-              type: blockTypes.BARCHART,
+              type: blockTypes.BAR_CHART,
               body: {
                 elements: [
                   {

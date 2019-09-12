@@ -1,7 +1,7 @@
 {
-  "name": "@seine/pie-editor",
+  "name": "@seine/charts-editor",
   "version": "0.3.14",
-  "description": "Seine pie editor.",
+  "description": "Seine charts editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -11,13 +11,12 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
+    "@seine/charts": "^0.3.0",
     "@seine/core": "^0.3.0",
-    "@seine/pie": "^0.3.0",
     "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }

@@ -1,13 +1,13 @@
 // @flow
 import * as React from 'react';
 import { UPDATE_BLOCK_EDITOR } from '@seine/core';
-import type { Action } from '@seine/core';
 
+type Action = { type: string, [string]: * };
 type Props = {
   dispatch: (Action) => any,
   index: number,
   children: React.ChildrenArray<React.Node>,
-  as?: React.ElementType,
+  as?: HTMLElement | SVGElement,
 };
 
 /**
@@ -40,7 +40,16 @@ export default function EditableElement({
 
   return (
     <Element
-      ref={React.useCallback((ref) => ref && setBox(ref.getBBox()), [setBox])}
+      ref={React.useCallback(
+        (ref) =>
+          ref &&
+          setBox(
+            ref instanceof SVGElement
+              ? ref.getBBox()
+              : ref.getBoundingClientRect()
+          ),
+        [setBox]
+      )}
     >
       {React.Children.map(children, (child: React.Node, index) => (
         <React.Fragment key={index}>

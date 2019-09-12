@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
-import type { BlockEditor } from '@seine/core';
-import { UPDATE_BLOCK_BODY, useSelectableBlockProps } from '@seine/core';
+import type { BlockEditor, ChartBody, ChartFormat } from '@seine/core';
+import { UPDATE_BLOCK_BODY, UPDATE_ELEMENT, reduceElements } from '@seine/core';
 import {
   ActionInput,
   BlockContainer,
@@ -9,94 +9,88 @@ import {
   EditableGroup,
   EditableOverlay,
   EditableInput,
+  useSelectableBlockProps,
 } from '@seine/ui';
-import {
-  Barchart,
-  defaultBarchartFontWeight,
-  defaultBarchartLineHeight,
-  defaultBarchartPalette,
-  defaultBarchartSize,
-} from '@seine/barchart';
+import { defaultChartPalette, defaultChartSize, PieChart } from '@seine/charts';
 
-import reduce, { UPDATE_BAR_CHART_ELEMENT } from './reducer';
-import type { Action } from './reducer';
-
-type Props = BlockEditor & {
-  id: string,
-  dispatch: Function,
-};
-
-const defaultBarchartEditor = {};
+type Props = BlockEditor & $Shape<ChartFormat> & ChartBody;
 
 /**
- * @description Bar chart editor component.
+ * @description Pie editor component.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarchartEditor({
-  id,
-  selection,
-  dispatch,
+export default function PieChartEditor({
   elements,
-  size = defaultBarchartSize,
-  fontWeight = defaultBarchartFontWeight,
-  lineHeight = defaultBarchartLineHeight,
-  palette = defaultBarchartPalette,
-  editor: boxes = defaultBarchartEditor,
-}: Props) {
-  const overlayRef = React.useRef(null);
+  size = defaultChartSize,
+  palette = defaultChartPalette,
 
+  id,
+  dispatch,
+  selection,
+  editor = null,
+}: Props) {
+  const isSelected = selection.length === 1 && selection[0] === id;
+  const overlayRef = React.useRef(null);
   const dispatchElements = React.useCallback(
     (action: Action) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
-        body: { elements: reduce(elements, action) },
+        body: { elements: reduceElements(elements, action) },
       }),
     [dispatch, elements]
   );
 
-  const isSelected = selection.length === 1 && selection[0] === id;
-
   const overlayBox =
     overlayRef.current && overlayRef.current.getBoundingClientRect();
+
+  const fontSize = size / 24;
 
   return (
     <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
       <EditableOverlay ref={overlayRef}>
         {React.useMemo(
           () =>
+            editor !== null &&
             overlayBox &&
             isSelected &&
-            elements.map(({ title, value }, index) => {
-              if (index in boxes) {
-                const { x, y, width, height } = boxes[index];
+            elements.map(({ title, percent: value }, index) => {
+              if (index in editor) {
+                const { x, y, width, height } = editor[index];
                 return (
                   <EditableGroup
-                    key={index}
+                    columns
+                    justify={'center'}
                     x={x}
                     y={y}
                     size={size}
                     width={width}
                     height={height}
-                    fontSize={2}
+                    fontSize={fontSize}
                     maxWidth={overlayBox.width}
                     maxHeight={overlayBox.height}
+                    key={index}
                   >
                     <EditableInput
+                      size={size}
+                      as={ActionInput}
+                      name={'percent'}
+                      value={Math.min(99, Math.max(value, 1))}
+                      action={{ type: UPDATE_ELEMENT, index }}
+                      dispatch={dispatchElements}
+                      type={'number'}
+                      minvalue={0}
+                      maxvalue={100}
+                      align={'center'}
+                    />
+                    <EditableInput
+                      size={size}
+                      fontSize={0.75}
                       as={ActionInput}
                       name={'title'}
                       value={title}
-                      action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
+                      action={{ type: UPDATE_ELEMENT, index }}
                       dispatch={dispatchElements}
-                    />
-                    <EditableInput
-                      as={ActionInput}
-                      name={'value'}
-                      type={'number'}
-                      value={value}
-                      action={{ type: UPDATE_BAR_CHART_ELEMENT, index }}
-                      dispatch={dispatchElements}
-                      textAlign={'right'}
                     />
                   </EditableGroup>
                 );
@@ -104,15 +98,20 @@ export default function BarchartEditor({
 
               return false;
             }),
-          [dispatchElements, elements, isSelected, overlayBox, size, boxes]
+          [
+            dispatchElements,
+            elements,
+            fontSize,
+            isSelected,
+            overlayBox,
+            size,
+            editor,
+          ]
         )}
       </EditableOverlay>
 
-      <Barchart
+      <PieChart
         size={size}
-        fontWeight={fontWeight}
-        lineHeight={lineHeight}
-        palette={palette}
         elements={React.useMemo(
           () =>
             isSelected
@@ -127,6 +126,7 @@ export default function BarchartEditor({
               : elements,
           [dispatch, elements, isSelected]
         )}
+        palette={palette}
       />
     </BlockContainer>
   );

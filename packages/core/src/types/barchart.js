@@ -1,21 +1,21 @@
 // @flow
 type Color = string;
 
-export type BarchartElement = {
+export type ChartElement = {
   title: string,
   percent: number,
   color: Color,
 };
 
-export type BarchartBody = {
-  elements: BarchartElement[],
+export type ChartBody = {
+  elements: ChartElement[],
 };
 
-export type BarchartFormat = {
+export type ChartFormat = {
   size: number,
   fontWeight: number,
   lineHeight: number,
   palette: Color[],
 };
 
-export const BARCHART = 'barchart';
+export const BARCHART = 'chart';

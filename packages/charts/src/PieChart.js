@@ -1,31 +1,27 @@
 // @flow
 import * as React from 'react';
-import type { PieBody, PieElement, PieFormat } from '@seine/core';
+import type { ChartBody, PieElement, ChartFormat } from '@seine/core';
 
 import { describeArc, polarToCartesian } from './helpers';
+import {
+  defaultChartPalette,
+  defaultChartSize,
+  defaultChartUnits,
+} from './constants';
 
-type Props = $Shape<PieFormat> & PieBody;
-
-export const defaultPiePalette = [
-  '#653867',
-  '#e5002d',
-  '#f80048',
-  '#ff3d69',
-  '#ff6d8c',
-];
-export const defaultPieSize = 360;
-export const defaultPieUnits = '%';
+type Props = $Shape<ChartFormat> & ChartBody;
 
 /**
  * @description Pie chart content component.
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function Pie({
+export default function PieChart({
   elements,
-  palette = defaultPiePalette,
-  size = defaultPieSize,
-  units = defaultPieUnits,
+  size = defaultChartSize,
+  palette = defaultChartPalette,
+
+  units = defaultChartUnits,
 }: Props) {
   const fontSize = size / 24;
   const gutter = size / 6;

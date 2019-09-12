@@ -30,7 +30,7 @@ export const grid = createBlock(
   page.id
 );
 export const pie = createBlock(
-  blockTypes.PIE,
+  blockTypes.PIE_CHART,
   {
     elements: [
       { title: 'repairs', percent: 12 },
@@ -43,8 +43,8 @@ export const pie = createBlock(
   { fontSize: 14, padding: 60 },
   page.id
 );
-export const barchart = createBlock(
-  blockTypes.BARCHART,
+export const chart = createBlock(
+  blockTypes.BAR_CHART,
   {
     elements: [
       { title: 'WFGLA', value: 20.8 },
@@ -100,8 +100,8 @@ storiesOf('ContentEditor', module)
       ]}
     </ContentEditor>
   ))
-  .add('6. Barchart', () => (
+  .add('6. Chart', () => (
     <ContentEditor {...actions} parent={page}>
-      {[barchart]}
+      {[chart]}
     </ContentEditor>
   ));
