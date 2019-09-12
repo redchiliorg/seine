@@ -48,8 +48,8 @@ storiesOf('ContentEditor', module)
       ]}
     </ContentEditor>
   ))
-  .add('6. Chart', () => (
+  .add('6. Bar chart', () => (
     <ContentEditor {...actions} parent={page}>
-      {[barChart]}
+      {[grid, { ...barChart, parent_id: grid.id }]}
     </ContentEditor>
   ));

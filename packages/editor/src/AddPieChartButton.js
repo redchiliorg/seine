@@ -3,6 +3,7 @@ import * as React from 'react';
 import type { Action, Block, BlockId } from '@seine/core';
 import {
   blockTypes,
+  chartTypes,
   CREATE_BLOCK,
   createBlock,
   createBlocksFromTree,
@@ -26,47 +27,35 @@ export default ({ id, dispatch, blocks }: Props) => (
           createBlock(
             blockTypes.GRID,
             null,
-            { columns: 'repeat(auto-fit, minmax(300px, 1fr))' },
+            { columns: 'auto', rows: '0.025fr 0.975fr' },
             id
           ),
           [
             {
               type: blockTypes.DRAFT,
-              body: toRawContent('Text content'),
-              format: null,
+              body: toRawContent('<h2>Bar chart title</h2>'),
+              format: {
+                textAlignment: 'center',
+              },
             },
-            {
-              type: blockTypes.GRID,
-              format: { columns: '100%', rows: '0.025fr 0.975fr' },
-              children: [
-                {
-                  type: blockTypes.DRAFT,
-                  body: toRawContent('<h2>Pie title</h2>'),
-                  format: {
-                    textAlignment: 'center',
-                  },
-                },
 
-                {
-                  type: blockTypes.CHART,
-                  body: {
-                    elements: [
-                      {
-                        title: 'First half',
-                        percent: 50,
-                      },
-                      {
-                        title: 'Second half',
-                        percent: 50,
-                      },
-                    ],
+            {
+              type: blockTypes.CHART,
+              body: {
+                elements: [
+                  {
+                    title: 'First line',
+                    value: 35,
                   },
-                  format: {
-                    fontSize: 14,
-                    padding: 60,
+                  {
+                    title: 'Second line',
+                    value: 70,
                   },
-                },
-              ],
+                ],
+              },
+              format: {
+                kind: chartTypes.PIE,
+              },
             },
           ]
         ).map((block) => ({ type: CREATE_BLOCK, block })),

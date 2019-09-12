@@ -26,7 +26,7 @@ const defaultChartRenderMap = {
   [chartTypes.PIE]: PieChart,
 };
 
-type Props = ChartProps & Config;
+type Props = ChartProps & $Shape<Config>;
 
 /**
  * @description Switch to chart render component by its kind.
@@ -68,10 +68,10 @@ export default function Chart({
     <Component
       key={group.title}
       elements={group.elements}
+      size={size}
+      palette={palette}
       fontWeight={fontWeight}
       lineHeight={lineHeight}
-      palette={palette}
-      size={size}
     />
   ));
 }

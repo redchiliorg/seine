@@ -14,12 +14,7 @@ import {
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { ActionButton, Paper, Toolbar, useReducerEx } from '@seine/ui';
-import {
-  PieChartEditor,
-  PieChartToolbar,
-  BarChartEditor,
-  BarChartToolbar,
-} from '@seine/charts-editor';
+import { BarChartEditor, ChartToolbar } from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
 import ContentToolbar from './ContentToolbar';
@@ -47,15 +42,13 @@ const defaultEditorBlockRendererMap = {
   [blockTypes.GRID]: GridEditor,
   [blockTypes.PAGE]: Page,
   [blockTypes.CHART]: BarChartEditor,
-  [blockTypes.CHART]: PieChartEditor,
 };
 
 const defaultBlockToolbarRenderMap = {
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: ContentToolbar,
   [blockTypes.PAGE]: ContentToolbar,
-  [blockTypes.CHART]: BarChartToolbar,
-  [blockTypes.CHART]: PieChartToolbar,
+  [blockTypes.CHART]: ChartToolbar,
 };
 
 const defaultEditorChildren = [];

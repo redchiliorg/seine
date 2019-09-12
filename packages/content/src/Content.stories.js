@@ -7,6 +7,7 @@ import Content from './Content';
 import { defaultGridColumns } from './Grid';
 
 export const page = createBlock(blockTypes.PAGE);
+
 export const draft = createBlock(
   blockTypes.DRAFT,
   toRawContent(
@@ -21,6 +22,7 @@ export const draft = createBlock(
   { verticalAlignment: 'center' },
   page.id
 );
+
 export const grid = createBlock(
   blockTypes.GRID,
   null,
@@ -29,29 +31,29 @@ export const grid = createBlock(
   },
   page.id
 );
+
 export const pieChart = createBlock(
   blockTypes.CHART,
   {
     elements: [
-      { title: 'repairs', percent: 12 },
-      { title: 'consulting', percent: 10 },
-      { title: 'training', percent: 8 },
-      { title: 'product sales', percent: 64 },
-      { title: 'others', percent: 6 },
+      { title: 'repairs', value: 12 },
+      { title: 'consulting', value: 10 },
+      { title: 'training', value: 8 },
+      { title: 'product sales', value: 64 },
+      { title: 'others', value: 6 },
     ],
   },
   {
     kind: chartTypes.PIE,
-    fontSize: 14,
-    padding: 60,
   },
   page.id
 );
+
 export const barChart = createBlock(
   blockTypes.CHART,
   {
     elements: [
-      { title: 'WFGLA', value: 20.8 },
+      { title: 'WFLA', value: 20.8 },
       { title: 'Region A', value: 35.7 },
       { title: 'Region B', value: 15.8 },
       { title: 'Region C', value: 40.9 },
@@ -67,19 +69,20 @@ export const barChart = createBlock(
   },
   page.id
 );
+
 export const columnChart = createBlock(
   blockTypes.CHART,
   {
     elements: [
-      { title: 'WFGLA', value: 20.8 },
-      { title: 'Region A', value: 35.7 },
-      { title: 'Region B', value: 15.8 },
-      { title: 'Region C', value: 40.9 },
-      { title: 'Region D', value: 23.6 },
-      { title: 'Region E', value: 17.6 },
-      { title: 'Region F', value: 38.1 },
-      { title: 'Region G', value: 43.8 },
-      { title: 'Region H', value: 16.4 },
+      { title: 'Maelstorm', value: 50.1, group: 'Group 1' },
+      { title: 'Spring', value: 60.33, group: 'Group 1' },
+      { title: 'Electro', value: 13.0, group: 'Group 1' },
+      { title: 'Maelstorm', value: 90.0, group: 'Group 2' },
+      { title: 'Spring', value: 100.22, group: 'Group 2' },
+      { title: 'Electro', value: 14.0, group: 'Group 2' },
+      { title: 'Maelstorm', value: 66.0, group: 'Group 3' },
+      { title: 'Spring', value: 19.0, group: 'Group 3' },
+      { title: 'Electro', value: 19.0, group: 'Group 3' },
     ],
   },
   {
@@ -87,12 +90,14 @@ export const columnChart = createBlock(
   },
   page.id
 );
+
 export const title = createBlock(
   blockTypes.DRAFT,
   toRawContent('<h2>V2. London income - Year 8 - 3,400,000</h2>'),
   { textAlignment: 'center' },
   page.id
 );
+
 storiesOf('Content', module)
   .add('1. Draft', () => (
     <div className={'mui-panel'}>

@@ -22,7 +22,7 @@ export const defaultBlockRenderMap = {
 };
 
 /**
- * @description Structured content.
+ * @description Content blocks default renderer.
  * @param {Props} props
  * @returns {React.Node}
  */

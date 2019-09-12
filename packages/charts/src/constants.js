@@ -12,4 +12,5 @@ export const defaultChartPalette = [
 ];
 export const defaultChartFontWeight = 500;
 export const defaultChartLineHeight = 1.75;
+export const defaultChartFontSize = 2;
 export const defaultChartUnits = '%';

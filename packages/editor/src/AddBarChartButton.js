@@ -3,6 +3,7 @@ import * as React from 'react';
 import type { Action, Block, BlockId } from '@seine/core';
 import {
   blockTypes,
+  chartTypes,
   CREATE_BLOCK,
   createBlock,
   createBlocksFromTree,
@@ -51,6 +52,9 @@ export default ({ id, dispatch, blocks }: Props) => (
                     value: 70,
                   },
                 ],
+              },
+              format: {
+                kind: chartTypes.BAR,
               },
             },
           ]

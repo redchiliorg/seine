@@ -14,25 +14,18 @@ type Props = Block & {
 const DefaultBody = { elements: [] };
 
 /**
- * Todo: move body.edit to editor specific property key of a block.
- *
- * @description Action buttons to edit currently selected pie chart.
+ * @description Action buttons to edit currently selected chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartToolbar({
-  id,
-  body,
-  dispatch,
-  children,
-}: Props) {
+export default function ChartToolbar({ id, body, dispatch, children }: Props) {
   body = body || DefaultBody;
   return (
     <Toolbar>
       <Toolbar.Group>
         <ActionButton
           id={id}
-          title={'Add new slice'}
+          title={'Add new element'}
           dispatch={dispatch}
           type={UPDATE_BLOCK_BODY}
           body={React.useMemo(
@@ -41,15 +34,14 @@ export default function PieChartToolbar({
                 ...body.elements,
                 {
                   title: `Item #${body.elements.length}`,
-                  color: 'gray',
-                  percent: 10,
+                  value: 10,
                 },
               ],
             }),
             [body.elements]
           )}
         >
-          Add slice
+          Add element
         </ActionButton>
       </Toolbar.Group>
       {children}

@@ -21,7 +21,7 @@ export default function PieChart({
   units = defaultChartUnits,
 }: ChartProps) {
   const sum = React.useMemo(
-    () => elements.reduce((acc, { percent }) => acc + percent, 0),
+    () => elements.reduce((acc, { value }) => acc + value, 0),
     [elements]
   );
 
@@ -61,7 +61,7 @@ export default function PieChart({
 
   return (
     <svg viewBox={`0 0 ${size} ${size}`}>
-      {elements.map(({ title, percent: value, as: Group = 'g' }, index) => {
+      {elements.map(({ title, value, as: Group = 'g' }, index) => {
         const start = end;
         const startX = endX;
         const startY = endY;

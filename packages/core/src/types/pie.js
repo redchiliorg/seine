@@ -2,7 +2,7 @@
 
 export type PieElement = {
   title: string,
-  percent: number,
+  value: number,
   color: Color,
 };
 
