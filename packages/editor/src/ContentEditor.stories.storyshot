@@ -163,7 +163,7 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
         viewBox="0 0 100 100"
       >
         <path
-          d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+          d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
           fill="#fa6479"
         />
         <g>
@@ -171,8 +171,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={4.166666666666667}
             textAnchor="middle"
-            x={66.36109123043012}
-            y={8.676600627188833}
+            x={9.210905525156399}
+            y={67.6510173615458}
           >
             12
             %
@@ -182,14 +182,14 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={3.125}
             textAnchor="middle"
-            x={66.36109123043012}
-            y={8.676600627188833}
+            x={9.210905525156399}
+            y={67.6510173615458}
           >
             repairs
           </text>
         </g>
         <path
-          d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+          d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
           fill="#cb91a0"
         />
         <g>
@@ -197,8 +197,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={4.166666666666667}
             textAnchor="middle"
-            x={88.94696355750504}
-            y={28.58872559547933}
+            x={7.320280636580307}
+            y={37.60039528714537}
           >
             10
             %
@@ -208,14 +208,14 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={3.125}
             textAnchor="middle"
-            x={88.94696355750504}
-            y={28.58872559547933}
+            x={7.320280636580307}
+            y={37.60039528714537}
           >
             consulting
           </text>
         </g>
         <path
-          d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+          d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
           fill="#a38ca4"
         />
         <g>
@@ -223,8 +223,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={4.166666666666667}
             textAnchor="middle"
-            x={94.35674348570095}
-            y={52.79068975685838}
+            x={20.608361541171025}
+            y={16.66173023864625}
           >
             8
             %
@@ -234,14 +234,14 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={3.125}
             textAnchor="middle"
-            x={94.35674348570095}
-            y={52.79068975685838}
+            x={20.608361541171025}
+            y={16.66173023864625}
           >
             training
           </text>
         </g>
         <path
-          d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+          d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
           fill="#7482aa"
         />
         <g>
@@ -249,8 +249,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="white"
             fontSize={4.166666666666667}
             textAnchor="middle"
-            x={38.59088156785519}
-            y={62.1494771236902}
+            x={66.65844267276219}
+            y={49.47648734869786}
           >
             64
             %
@@ -260,14 +260,14 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="white"
             fontSize={3.125}
             textAnchor="middle"
-            x={38.59088156785519}
-            y={62.1494771236902}
+            x={66.65844267276219}
+            y={49.47648734869786}
           >
             product sales
           </text>
         </g>
         <path
-          d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+          d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
           fill="#35aeb7"
         />
         <g>
@@ -275,8 +275,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={4.166666666666667}
             textAnchor="middle"
-            x={41.67194157396776}
-            y={6.342788856502743}
+            x={25.01851653990525}
+            y={86.75913663442492}
           >
             6
             %
@@ -286,8 +286,8 @@ exports[`Storyshots ContentEditor 3. Pie 1`] = `
             fill="black"
             fontSize={3.125}
             textAnchor="middle"
-            x={41.67194157396776}
-            y={6.342788856502743}
+            x={25.01851653990525}
+            y={86.75913663442492}
           >
             others
           </text>
@@ -368,7 +368,7 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
           viewBox="0 0 100 100"
         >
           <path
-            d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+            d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
             fill="#fa6479"
           />
           <g>
@@ -376,8 +376,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={4.166666666666667}
               textAnchor="middle"
-              x={66.36109123043012}
-              y={8.676600627188833}
+              x={9.210905525156399}
+              y={67.6510173615458}
             >
               12
               %
@@ -387,14 +387,14 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={3.125}
               textAnchor="middle"
-              x={66.36109123043012}
-              y={8.676600627188833}
+              x={9.210905525156399}
+              y={67.6510173615458}
             >
               repairs
             </text>
           </g>
           <path
-            d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+            d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
             fill="#cb91a0"
           />
           <g>
@@ -402,8 +402,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={4.166666666666667}
               textAnchor="middle"
-              x={88.94696355750504}
-              y={28.58872559547933}
+              x={7.320280636580307}
+              y={37.60039528714537}
             >
               10
               %
@@ -413,14 +413,14 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={3.125}
               textAnchor="middle"
-              x={88.94696355750504}
-              y={28.58872559547933}
+              x={7.320280636580307}
+              y={37.60039528714537}
             >
               consulting
             </text>
           </g>
           <path
-            d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+            d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
             fill="#a38ca4"
           />
           <g>
@@ -428,8 +428,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={4.166666666666667}
               textAnchor="middle"
-              x={94.35674348570095}
-              y={52.79068975685838}
+              x={20.608361541171025}
+              y={16.66173023864625}
             >
               8
               %
@@ -439,14 +439,14 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={3.125}
               textAnchor="middle"
-              x={94.35674348570095}
-              y={52.79068975685838}
+              x={20.608361541171025}
+              y={16.66173023864625}
             >
               training
             </text>
           </g>
           <path
-            d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+            d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
             fill="#7482aa"
           />
           <g>
@@ -454,8 +454,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="white"
               fontSize={4.166666666666667}
               textAnchor="middle"
-              x={38.59088156785519}
-              y={62.1494771236902}
+              x={66.65844267276219}
+              y={49.47648734869786}
             >
               64
               %
@@ -465,14 +465,14 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="white"
               fontSize={3.125}
               textAnchor="middle"
-              x={38.59088156785519}
-              y={62.1494771236902}
+              x={66.65844267276219}
+              y={49.47648734869786}
             >
               product sales
             </text>
           </g>
           <path
-            d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+            d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
             fill="#35aeb7"
           />
           <g>
@@ -480,8 +480,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={4.166666666666667}
               textAnchor="middle"
-              x={41.67194157396776}
-              y={6.342788856502743}
+              x={25.01851653990525}
+              y={86.75913663442492}
             >
               6
               %
@@ -491,8 +491,8 @@ exports[`Storyshots ContentEditor 4. Pie and draft 1`] = `
               fill="black"
               fontSize={3.125}
               textAnchor="middle"
-              x={41.67194157396776}
-              y={6.342788856502743}
+              x={25.01851653990525}
+              y={86.75913663442492}
             >
               others
             </text>
@@ -588,7 +588,7 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
             viewBox="0 0 100 100"
           >
             <path
-              d="M 72.81823686428962 25.70104575261962 A 33.33333333333333 33.33333333333333 0 0 0 50 16.66666666666667 L 50 50 L 72.81823686428962 25.70104575261962"
+              d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
               fill="#fa6479"
             />
             <g>
@@ -596,8 +596,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={66.36109123043012}
-                y={8.676600627188833}
+                x={9.210905525156399}
+                y={67.6510173615458}
               >
                 12
                 %
@@ -607,14 +607,14 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={3.125}
                 textAnchor="middle"
-                x={66.36109123043012}
-                y={8.676600627188833}
+                x={9.210905525156399}
+                y={67.6510173615458}
               >
                 repairs
               </text>
             </g>
             <path
-              d="M 82.74290835762295 43.753956180475846 A 33.33333333333333 33.33333333333333 0 0 0 72.81823686428962 25.70104575261962 L 50 50 L 82.74290835762295 43.753956180475846"
+              d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
               fill="#cb91a0"
             />
             <g>
@@ -622,8 +622,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={88.94696355750504}
-                y={28.58872559547933}
+                x={7.320280636580307}
+                y={37.60039528714537}
               >
                 10
                 %
@@ -633,14 +633,14 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={3.125}
                 textAnchor="middle"
-                x={88.94696355750504}
-                y={28.58872559547933}
+                x={7.320280636580307}
+                y={37.60039528714537}
               >
                 consulting
               </text>
             </g>
             <path
-              d="M 81.70188387650512 60.300566479164914 A 33.33333333333333 33.33333333333333 0 0 0 82.74290835762295 43.753956180475846 L 50 50 L 81.70188387650512 60.300566479164914"
+              d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
               fill="#a38ca4"
             />
             <g>
@@ -648,8 +648,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={94.35674348570095}
-                y={52.79068975685838}
+                x={20.608361541171025}
+                y={16.66173023864625}
               >
                 8
                 %
@@ -659,14 +659,14 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={3.125}
                 textAnchor="middle"
-                x={94.35674348570095}
-                y={52.79068975685838}
+                x={20.608361541171025}
+                y={16.66173023864625}
               >
                 training
               </text>
             </g>
             <path
-              d="M 37.729181577177386 19.007450470391632 A 33.33333333333333 33.33333333333333 0 1 0 81.70188387650512 60.300566479164914 L 50 50 L 37.729181577177386 19.007450470391632"
+              d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
               fill="#7482aa"
             />
             <g>
@@ -674,8 +674,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="white"
                 fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={38.59088156785519}
-                y={62.1494771236902}
+                x={66.65844267276219}
+                y={49.47648734869786}
               >
                 64
                 %
@@ -685,14 +685,14 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="white"
                 fontSize={3.125}
                 textAnchor="middle"
-                x={38.59088156785519}
-                y={62.1494771236902}
+                x={66.65844267276219}
+                y={49.47648734869786}
               >
                 product sales
               </text>
             </g>
             <path
-              d="M 49.99999999999999 16.66666666666667 A 33.33333333333333 33.33333333333333 0 0 0 37.729181577177386 19.007450470391632 L 50 50 L 49.99999999999999 16.66666666666667"
+              d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
               fill="#35aeb7"
             />
             <g>
@@ -700,8 +700,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={4.166666666666667}
                 textAnchor="middle"
-                x={41.67194157396776}
-                y={6.342788856502743}
+                x={25.01851653990525}
+                y={86.75913663442492}
               >
                 6
                 %
@@ -711,8 +711,8 @@ exports[`Storyshots ContentEditor 5. Draft and titled pie 1`] = `
                 fill="black"
                 fontSize={3.125}
                 textAnchor="middle"
-                x={41.67194157396776}
-                y={6.342788856502743}
+                x={25.01851653990525}
+                y={86.75913663442492}
               >
                 others
               </text>
@@ -783,293 +783,230 @@ exports[`Storyshots ContentEditor 6. Chart 1`] = `
       <svg
         viewBox="0 0 100 100"
       >
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L NaN NaN"
+          fill="#fa6479"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={3.5}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             WFGLA
           </text>
-          <rect
-            fill="#fa6479"
-            height={6.125}
-            width={39.89041095890411}
-            x={10}
-            y={0}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={50.89041095890411}
-            y={3.5}
-          >
-            20.8
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={50.89041095890411}
-            y={0}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#cb91a0"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={9.625}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region A
           </text>
-          <rect
-            fill="#cb91a0"
-            height={6.125}
-            width={68.46575342465755}
-            x={10}
-            y={6.125}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={79.46575342465755}
-            y={9.625}
-          >
-            35.7
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={79.46575342465755}
-            y={6.125}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#a38ca4"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={15.75}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region B
           </text>
-          <rect
-            fill="#a38ca4"
-            height={6.125}
-            width={30.3013698630137}
-            x={10}
-            y={12.25}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={41.301369863013704}
-            y={15.75}
-          >
-            15.8
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={41.301369863013704}
-            y={12.25}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#7482aa"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={21.875}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region C
           </text>
-          <rect
-            fill="#7482aa"
-            height={6.125}
-            width={78.43835616438356}
-            x={10}
-            y={18.375}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={89.43835616438356}
-            y={21.875}
-          >
-            40.9
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={89.43835616438356}
-            y={18.375}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#35aeb7"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={28}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region D
           </text>
-          <rect
-            fill="#35aeb7"
-            height={6.125}
-            width={45.26027397260275}
-            x={10}
-            y={24.5}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={56.26027397260275}
-            y={28}
-          >
-            23.6
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={56.26027397260275}
-            y={24.5}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#01b25c"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={34.125}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region E
           </text>
-          <rect
-            fill="#01b25c"
-            height={6.125}
-            width={33.753424657534254}
-            x={10}
-            y={30.625}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={44.753424657534254}
-            y={34.125}
-          >
-            17.6
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={44.753424657534254}
-            y={30.625}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#e1c54e"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={40.25}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region F
           </text>
-          <rect
-            fill="#e1c54e"
-            height={6.125}
-            width={73.06849315068494}
-            x={10}
-            y={36.75}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={84.06849315068494}
-            y={40.25}
-          >
-            38.1
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={84.06849315068494}
-            y={36.75}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#f89764"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={46.375}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region G
           </text>
-          <rect
-            fill="#f89764"
-            height={6.125}
-            width={84}
-            x={10}
-            y={42.875}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={95}
-            y={46.375}
-          >
-            43.8
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={95}
-            y={42.875}
-          />
         </g>
+        <path
+          d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+          fill="#a3704d"
+        />
         <g>
           <text
-            fontSize={2}
-            fontWeight={500}
-            x={0}
-            y={52.5}
+            fill="black"
+            fontSize={4.166666666666667}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
+          >
+            %
+          </text>
+          <text
+            dy={4.166666666666667}
+            fill="black"
+            fontSize={3.125}
+            textAnchor="middle"
+            x={NaN}
+            y={NaN}
           >
             Region H
           </text>
-          <rect
-            fill="#a3704d"
-            height={6.125}
-            width={31.45205479452055}
-            x={10}
-            y={49}
-          />
-          <text
-            fontSize={2}
-            fontWeight={500}
-            x={42.45205479452055}
-            y={52.5}
-          >
-            16.4
-          </text>
-          <rect
-            fill="transparent"
-            height={6.125}
-            width={6}
-            x={42.45205479452055}
-            y={49}
-          />
         </g>
       </svg>
     </div>

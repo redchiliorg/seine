@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import type { ChartBody, ChartFormat } from '@seine/core';
 
 import {
   defaultChartFontWeight,
@@ -8,12 +7,11 @@ import {
   defaultChartPalette,
   defaultChartSize,
 } from './constants';
-
-type Props = $Shape<ChartFormat> & ChartBody;
+import type { ChartProps } from './types';
 
 /**
  * @description Bar chart content block renderer.
- * @param {Props}: props
+ * @param {ChartProps}: props
  * @returns {React.Node}
  */
 export default function BarChart({
@@ -23,7 +21,7 @@ export default function BarChart({
 
   fontWeight = defaultChartFontWeight,
   lineHeight = defaultChartLineHeight,
-}: Props) {
+}: ChartProps) {
   const fontSize = 2;
   const fontWidth = fontSize / 2;
   const fontHeight = fontSize * lineHeight;

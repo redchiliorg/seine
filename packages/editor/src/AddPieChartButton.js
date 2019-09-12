@@ -48,7 +48,7 @@ export default ({ id, dispatch, blocks }: Props) => (
                 },
 
                 {
-                  type: blockTypes.PIE_CHART,
+                  type: blockTypes.CHART,
                   body: {
                     elements: [
                       {

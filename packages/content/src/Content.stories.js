@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { createBlock, blockTypes } from '@seine/core';
+import { createBlock, blockTypes, chartTypes } from '@seine/core';
 import { toRawContent } from '@seine/draft';
 
 import Content from './Content';
@@ -30,7 +30,7 @@ export const grid = createBlock(
   page.id
 );
 export const pieChart = createBlock(
-  blockTypes.PIE_CHART,
+  blockTypes.CHART,
   {
     elements: [
       { title: 'repairs', percent: 12 },
@@ -40,11 +40,15 @@ export const pieChart = createBlock(
       { title: 'others', percent: 6 },
     ],
   },
-  { fontSize: 14, padding: 60 },
+  {
+    kind: chartTypes.PIE,
+    fontSize: 14,
+    padding: 60,
+  },
   page.id
 );
 export const barChart = createBlock(
-  blockTypes.BAR_CHART,
+  blockTypes.CHART,
   {
     elements: [
       { title: 'WFGLA', value: 20.8 },
@@ -58,11 +62,13 @@ export const barChart = createBlock(
       { title: 'Region H', value: 16.4 },
     ],
   },
-  null,
+  {
+    kind: chartTypes.BAR,
+  },
   page.id
 );
 export const columnChart = createBlock(
-  blockTypes.COLUMN_CHART,
+  blockTypes.CHART,
   {
     elements: [
       { title: 'WFGLA', value: 20.8 },
@@ -76,7 +82,9 @@ export const columnChart = createBlock(
       { title: 'Region H', value: 16.4 },
     ],
   },
-  null,
+  {
+    kind: chartTypes.COLUMN,
+  },
   page.id
 );
 export const title = createBlock(
@@ -100,7 +108,6 @@ storiesOf('Content', module)
     <div className={'mui-panel'}>
       <Content parent={page}>
         {[
-          page,
           grid,
           { ...pieChart, parent_id: grid.id },
           { ...draft, parent_id: grid.id },

@@ -30,7 +30,11 @@ storiesOf('ContentEditor', module)
   ))
   .add('4. Pie and draft', () => (
     <ContentEditor {...actions} parent={page}>
-      {[grid, { ...pieChart, parent_id: grid.id }, { ...draft, parent_id: grid.id }]}
+      {[
+        grid,
+        { ...pieChart, parent_id: grid.id },
+        { ...draft, parent_id: grid.id },
+      ]}
     </ContentEditor>
   ))
   .add('5. Draft and titled pie', () => (

@@ -43,8 +43,8 @@ export type BlockEditor = {
   selection: BlockId[],
 };
 
-export type * from './charts';
-export type * from './draft';
-export type * from './grid';
-export type * from './page';
-export type * from './theme';
+export * from './charts';
+export * from './draft';
+export * from './grid';
+export * from './page';
+export * from './theme';

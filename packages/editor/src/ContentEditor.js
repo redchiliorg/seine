@@ -46,16 +46,16 @@ const defaultEditorBlockRendererMap = {
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
   [blockTypes.PAGE]: Page,
-  [blockTypes.BAR_CHART]: BarChartEditor,
-  [blockTypes.PIE_CHART]: PieChartEditor,
+  [blockTypes.CHART]: BarChartEditor,
+  [blockTypes.CHART]: PieChartEditor,
 };
 
 const defaultBlockToolbarRenderMap = {
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: ContentToolbar,
   [blockTypes.PAGE]: ContentToolbar,
-  [blockTypes.BAR_CHART]: BarChartToolbar,
-  [blockTypes.PIE_CHART]: PieChartToolbar,
+  [blockTypes.CHART]: BarChartToolbar,
+  [blockTypes.CHART]: PieChartToolbar,
 };
 
 const defaultEditorChildren = [];
