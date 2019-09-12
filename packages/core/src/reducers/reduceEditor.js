@@ -6,7 +6,7 @@ import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 opaque type BlockExtension = {
   editor: { [string]: any },
 };
-export type State = {
+export type EditorState = {
   selection: $ReadOnlyArray<BlockId>,
   blocks: $ReadOnlyArray<Block & BlockExtension>,
 };
@@ -57,7 +57,7 @@ export type UpdateBlockEditorAction = {
   editor: any,
 };
 
-export type Action =
+export type EditorAction =
   | CreateBlockAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
@@ -67,14 +67,14 @@ export type Action =
 
 /**
  * @description Reduce Content editor actions
- * @param {State} state
- * @param {Action} action
- * @returns {State}
+ * @param {EditorState} state
+ * @param {EditorAction} action
+ * @returns {EditorState}
  */
-export default function reduceEditor(
-  state: State = initialEditor,
-  action: Action
-): State {
+export function reduceEditor(
+  state: EditorState = initialEditor,
+  action: EditorAction
+): EditorState {
   switch (action.type) {
     case SELECT_BLOCK: {
       const index = state.selection.indexOf(action.id);

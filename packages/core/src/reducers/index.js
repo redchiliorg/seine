@@ -1,26 +1,9 @@
 // @flow
-import * as Editor from './reduceEditor';
+import type { EditorAction, EditorState } from './reduceEditor';
+import type { ElementsAction, ElementsState } from './reduceElements';
 
-export {
-  default as reduceEditor,
-  CREATE_BLOCK,
-  DELETE_SELECTED_BLOCKS,
-  SELECT_BLOCK,
-  UPDATE_BLOCK_BODY,
-  UPDATE_BLOCK_FORMAT,
-  UPDATE_BLOCK_EDITOR,
-  initialEditor,
-} from './reduceEditor';
+export type State = EditorState | ElementsState;
+export type Action = EditorAction | ElementsAction;
 
-export {
-  default as reduceElements,
-  PUSH_ELEMENT,
-  UPDATE_ELEMENT,
-  initialElements,
-} from './reduceElements';
-
-export type EditorState = Editor.State;
-export type EditorAction = Editor.Action;
-
-export type State = EditorState;
-export type Action = EditorAction;
+export * from './reduceEditor';
+export * from './reduceElements';

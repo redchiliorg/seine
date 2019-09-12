@@ -20,21 +20,21 @@ type RemoveChartElementAction = {
   type: typeof REMOVE_ELEMENT,
   index: number,
 };
-export type State = $ReadOnlyArray<ChartElement>;
-export type Action =
+export type ElementsState = ChartElement[];
+export type ElementsAction =
   | PushChartElementAction
   | UpdateChartElementAction
   | RemoveChartElementAction;
 
 /**
- * @description Reduce chart editor block elements.
- * @param {State} state
- * @param {Action} action
- * @returns {State}
+ * @description Reduce block elements actions.
+ * @param {ElementsState} state
+ * @param {ElementsAction} action
+ * @returns {ElementsState}
  */
-export default function reduceElements(
-  state: State = initialElements,
-  action: Action
+export function reduceElements(
+  state: ElementsState = initialElements,
+  action: ElementsAction
 ) {
   switch (action.type) {
     case PUSH_ELEMENT:

@@ -12,7 +12,7 @@ import {
 type Props = $Shape<ChartFormat> & ChartBody;
 
 /**
- * @description Pie chart content component.
+ * @description Pie chart content block renderer.
  * @param {Props}: props
  * @returns {React.Node}
  */

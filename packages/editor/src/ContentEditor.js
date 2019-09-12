@@ -2,7 +2,7 @@
 import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Content } from '@seine/content';
+import { Content, Page } from '@seine/content';
 import type { ContentProps } from '@seine/content';
 import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
@@ -45,7 +45,7 @@ const ContentToolbarGroup = styled(Toolbar.Group)`
 const defaultEditorBlockRendererMap = {
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
-  [blockTypes.PAGE]: Content,
+  [blockTypes.PAGE]: Page,
   [blockTypes.BAR_CHART]: BarChartEditor,
   [blockTypes.PIE_CHART]: PieChartEditor,
 };
@@ -159,7 +159,10 @@ export default function ContentEditor({
             parent={parent}
             blockRenderMap={blockRenderMap}
           >
-            {blocks.map((block) => ({ ...block, selection, dispatch }))}
+            {React.useMemo(
+              () => blocks.map((block) => ({ ...block, selection, dispatch })),
+              [blocks, dispatch, selection]
+            )}
           </Content>
         </ContentPaper>
       </Container>

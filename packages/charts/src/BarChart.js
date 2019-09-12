@@ -9,10 +9,10 @@ import {
   defaultChartSize,
 } from './constants';
 
-type Props = ChartBody & ChartFormat;
+type Props = $Shape<ChartFormat> & ChartBody;
 
 /**
- * @description Bar chart content renderer.
+ * @description Bar chart content block renderer.
  * @param {Props}: props
  * @returns {React.Node}
  */
@@ -40,7 +40,7 @@ export default function BarChart({
   const maxLength = size - leftGutter - rightGutter;
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`}>
+    <svg viewBox={`0 0 ${size} ${(elements.length - 1) * lineWidth}`}>
       {elements.map(({ title, value, as: Group = 'g' }, index) => {
         const y = index * lineWidth;
         const length = (maxLength * value) / maxValue;
@@ -55,7 +55,6 @@ export default function BarChart({
             >
               {title}
             </text>
-
             <rect
               x={leftGutter}
               y={y}
@@ -63,7 +62,6 @@ export default function BarChart({
               height={lineWidth}
               fill={palette[index % palette.length]}
             />
-
             <text
               x={leftGutter + length + fontWidth}
               y={y + fontHeight}
@@ -72,15 +70,6 @@ export default function BarChart({
             >
               {value}
             </text>
-
-            {/** right spacing to prevent auto filling of a grid cell */}
-            <rect
-              x={leftGutter + length + fontWidth}
-              y={y}
-              width={rightGutter}
-              height={lineWidth}
-              fill={'transparent'}
-            />
           </Group>
         );
       })}

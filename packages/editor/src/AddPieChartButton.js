@@ -37,7 +37,7 @@ export default ({ id, dispatch, blocks }: Props) => (
             },
             {
               type: blockTypes.GRID,
-              format: { columns: '600px', rows: '0.025fr 0.975fr' },
+              format: { columns: '100%', rows: '0.025fr 0.975fr' },
               children: [
                 {
                   type: blockTypes.DRAFT,
@@ -48,7 +48,7 @@ export default ({ id, dispatch, blocks }: Props) => (
                 },
 
                 {
-                  type: blockTypes.BAR_CHART,
+                  type: blockTypes.PIE_CHART,
                   body: {
                     elements: [
                       {

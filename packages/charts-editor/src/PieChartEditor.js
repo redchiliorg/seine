@@ -1,6 +1,11 @@
 // @flow
 import * as React from 'react';
-import type { BlockEditor, ChartBody, ChartFormat } from '@seine/core';
+import type {
+  BlockEditor,
+  ChartBody,
+  ChartFormat,
+  ElementsAction,
+} from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_ELEMENT, reduceElements } from '@seine/core';
 import {
   ActionInput,
@@ -33,7 +38,7 @@ export default function PieChartEditor({
   const isSelected = selection.length === 1 && selection[0] === id;
   const overlayRef = React.useRef(null);
   const dispatchElements = React.useCallback(
-    (action: Action) =>
+    (action: ElementsAction) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
         body: { elements: reduceElements(elements, action) },
@@ -75,7 +80,7 @@ export default function PieChartEditor({
                       size={size}
                       as={ActionInput}
                       name={'percent'}
-                      value={Math.min(99, Math.max(value, 1))}
+                      value={value}
                       action={{ type: UPDATE_ELEMENT, index }}
                       dispatch={dispatchElements}
                       type={'number'}
