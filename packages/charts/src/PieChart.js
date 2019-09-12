@@ -33,14 +33,14 @@ export default function PieChart({
   );
   const quarter = sum / 4;
 
-  let end = 0;
+  let end = (3 * Math.PI) / 4;
 
   return (
     <svg viewBox={`0 0 ${size} ${size}`}>
       {elements.map(
         ({ title, percent: value, as: Group = 'g' }: PieElement, index) => {
           const start = end;
-          const length = (value * 360) / sum;
+          const length = (2 * value * Math.PI) / sum;
 
           const textColor = value >= quarter ? 'white' : 'black';
           const [textX, textY] = polarToCartesian(

@@ -6,20 +6,18 @@ import type { ChartElement } from '@seine/core';
  * @param {number} centerX
  * @param {number} centerY
  * @param {number} radius
- * @param {number} angleInDegrees
+ * @param {number} angle
  * @returns {[number, number]}
  */
 export function polarToCartesian(
   centerX: number,
   centerY: number,
   radius: number,
-  angleInDegrees: number
+  angle: number
 ) {
-  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
-
   return [
-    centerX + radius * Math.cos(angleInRadians),
-    centerY + radius * Math.sin(angleInRadians),
+    centerX + radius * Math.cos(angle),
+    centerY + radius * Math.sin(angle),
   ];
 }
 
@@ -42,7 +40,7 @@ export function describeArc(
   const [startX, startY] = polarToCartesian(x, y, radius, end);
   const [endX, endY] = polarToCartesian(x, y, radius, start);
 
-  const arcSweep = end - start <= 180 ? '0' : '1';
+  const arcSweep = end - start <= Math.PI ? '0' : '1';
 
   return [
     `M ${startX} ${startY}`,
