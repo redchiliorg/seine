@@ -50,8 +50,8 @@ export default function BarChart({
         const len = (barMaxLen * value) / maxValue;
 
         return (
-          <Group key={index}>
-            <svg y={barLineStart} fontSize={fontSize} fontWeight={fontWeight}>
+          <svg y={barLineStart} fontSize={fontSize} fontWeight={fontWeight}>
+            <Group key={index}>
               <text dy={fontHeight}>{title}</text>
 
               <path
@@ -64,8 +64,8 @@ export default function BarChart({
               <text dy={fontHeight} dx={titleMaxLen + len + 2 * textGutter}>
                 {value}
               </text>
-            </svg>
-          </Group>
+            </Group>
+          </svg>
         );
       })}
     </svg>

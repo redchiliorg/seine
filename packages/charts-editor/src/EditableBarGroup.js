@@ -11,6 +11,7 @@ type Props = {
   height: number,
   maxWidth: number,
   maxHeight: number,
+  lineHeight: number,
   value: number,
   title: string,
   fontSize: number,
@@ -36,38 +37,46 @@ export default function EditablePieGroup({
   title,
 
   fontSize,
+  lineHeight,
   size,
 
   dispatch,
   index,
+
+  elements,
 }: Props) {
+  const barLineSize = fontSize * 3;
+  const maxSize = elements.length * barLineSize;
+
   return (
     <EditableGroup
-      key={index}
       x={x}
-      y={y}
-      size={size}
+      y={y + barLineSize * index}
+      size={maxSize}
       width={width}
-      height={height}
-      fontSize={fontSize}
+      height={height + lineHeight}
       maxWidth={maxWidth}
       maxHeight={maxHeight}
+      fontSize={fontSize / 2}
     >
       <EditableInput
         as={ActionInput}
+        size={maxSize}
         name={'title'}
         value={title}
         action={{ type: UPDATE_ELEMENT, index }}
         dispatch={dispatch}
+        width={size / 2}
       />
       <EditableInput
         as={ActionInput}
+        size={maxSize}
         name={'value'}
         type={'number'}
         value={value}
         action={{ type: UPDATE_ELEMENT, index }}
         dispatch={dispatch}
-        textAlign={'right'}
+        align={'right'}
       />
     </EditableGroup>
   );

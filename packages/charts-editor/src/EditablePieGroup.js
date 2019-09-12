@@ -11,6 +11,7 @@ type Props = {
   height: number,
   maxWidth: number,
   maxHeight: number,
+  lineHeight: number,
   value: number,
   title: string,
   fontSize: number,
@@ -53,7 +54,6 @@ export default function EditablePieGroup({
       fontSize={fontSize}
       maxWidth={maxWidth}
       maxHeight={maxHeight}
-      key={index}
     >
       <EditableInput
         size={size}

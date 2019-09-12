@@ -88,9 +88,11 @@ export default function ChartEditor({
                   {...element}
                   {...editor[index]}
                   dispatch={dispatchElements}
-                  maxWidth={maxWidth}
-                  maxHeight={maxHeight}
                   fontSize={fontSize}
+                  lineHeight={lineHeight}
+                  maxHeight={maxHeight}
+                  maxWidth={maxWidth}
+                  elements={elements}
                   size={size}
                 />
               )
