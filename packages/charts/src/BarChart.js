@@ -9,6 +9,7 @@ import {
   defaultChartSize,
 } from './constants';
 import type { ChartProps } from './types';
+import { useChartFormat } from './hooks';
 
 /**
  * @description Bar chart content block renderer.
@@ -17,54 +18,55 @@ import type { ChartProps } from './types';
  */
 export default function BarChart({
   elements,
-  size = defaultChartSize,
-  palette = defaultChartPalette,
-  fontSize = defaultChartFontSize,
-
   fontWeight = defaultChartFontWeight,
+  fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
+  palette = defaultChartPalette,
+  size = defaultChartSize,
 }: ChartProps) {
-  const fontWidth = fontSize / 2;
-  const textGutter = 2;
-  const maxLen = size;
-
-  const fontHeight = fontSize * lineHeight;
-  const barLineSize = fontSize * 3;
-  const maxSize = elements.length * barLineSize;
-
-  const [titleMaxLen, valueMaxLen, maxValue] = React.useMemo(
-    () => [
-      Math.max(...elements.map(({ title }) => title.length)) * fontWidth,
-      Math.max(...elements.map(({ value }) => `${value}`.length)) * fontWidth,
-      Math.max(...elements.map(({ value }) => value)),
-    ],
-    [elements, fontWidth]
+  const { barHeight, fontHeight, fontWidth, textPadding } = useChartFormat(
+    fontSize,
+    lineHeight
   );
 
-  const barMaxLen = maxLen - (titleMaxLen + valueMaxLen + textGutter * 2);
+  const titleMaxLen =
+    Math.max(...elements.map(({ title }) => title.length)) * fontWidth;
+  const valueMaxLen =
+    Math.max(...elements.map(({ value }) => `${value}`.length)) * fontWidth;
+
+  const barMaxLen = size - (titleMaxLen + valueMaxLen + textPadding * 2);
+  const maxValue = Math.max(...elements.map(({ value }) => value));
 
   return (
-    <svg viewBox={`0 0 ${maxLen} ${maxSize}`}>
+    <svg
+      viewBox={`0 0 ${size} ${(elements.length * barHeight) / 2}`}
+      width={'100%'}
+      height={'100%'}
+    >
       {elements.map(({ title, value, as: Group = 'g' }, index) => {
-        const barLineStart = index * barLineSize;
         const len = (barMaxLen * value) / maxValue;
 
         return (
-          <svg y={barLineStart} fontSize={fontSize} fontWeight={fontWeight}>
-            <Group key={index}>
-              <text dy={fontHeight}>{title}</text>
-
-              <path
-                d={`m${titleMaxLen + textGutter},0 h${len}`}
-                strokeWidth={2 * barLineSize}
-                stroke={palette[index % palette.length]}
-                fill={'none'}
-              />
-
-              <text dy={fontHeight} dx={titleMaxLen + len + 2 * textGutter}>
+          <svg
+            key={index}
+            fontSize={fontSize}
+            fontWeight={fontWeight}
+            y={(index * barHeight) / 2}
+            fill={palette[index % palette.length]}
+          >
+            <Group>
+              <text y={fontHeight}>{title}</text>
+              <text dy={fontHeight} x={titleMaxLen + len + 2 * textPadding}>
                 {value}
               </text>
             </Group>
+
+            <rect
+              x={titleMaxLen + textPadding}
+              y={0}
+              width={len}
+              height={barHeight / 2}
+            />
           </svg>
         );
       })}

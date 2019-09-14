@@ -134,20 +134,12 @@ storiesOf('Content', module)
     </div>
   ))
   .add('6. Bar chart', () => (
-    <div className={'mui-panel'}>
-      <Content parent={page}>
-        {[grid, { ...barChart, parent_id: grid.id }]}
-      </Content>
+    <div className={'mui-panel'} style={{ height: '100%', width: '100%' }}>
+      <Content parent={page}>{[barChart]}</Content>
     </div>
   ))
   .add('7. Column chart', () => (
-    <div className={'mui-panel'}>
-      <Content parent={page}>
-        {[
-          { ...grid, format: null },
-          { ...columnChart, parent_id: grid.id },
-          { ...draft, parent_id: grid.id },
-        ]}
-      </Content>
+    <div className={'mui-panel'} style={{ height: '100%', width: '100%' }}>
+      <Content parent={page}>{[columnChart]}</Content>
     </div>
   ));

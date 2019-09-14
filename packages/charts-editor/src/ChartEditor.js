@@ -34,7 +34,7 @@ const defaultEditableGroupRenderMap = {
 };
 
 /**
- * @description Bar chart editor component.
+ * @description Chart editor component.
  * @param {Props} props
  * @returns {React.Node}
  */
@@ -76,27 +76,42 @@ export default function ChartEditor({
   return (
     <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
       <EditableOverlay ref={overlayRef}>
-        {editor !== null &&
-          overlayBox &&
-          isSelected &&
-          elements.map(
-            (element, index) =>
-              index in editor && (
-                <EditableGroup
-                  key={index}
-                  index={index}
-                  {...element}
-                  {...editor[index]}
-                  dispatch={dispatchElements}
-                  fontSize={fontSize}
-                  lineHeight={lineHeight}
-                  maxHeight={maxHeight}
-                  maxWidth={maxWidth}
-                  elements={elements}
-                  size={size}
-                />
-              )
-          )}
+        {React.useMemo(
+          () =>
+            editor !== null &&
+            overlayBox &&
+            isSelected &&
+            elements.map(
+              (element, index) =>
+                index in editor && (
+                  <EditableGroup
+                    key={index}
+                    index={index}
+                    {...element}
+                    {...editor[index]}
+                    dispatch={dispatchElements}
+                    fontSize={fontSize}
+                    lineHeight={lineHeight}
+                    maxHeight={maxHeight}
+                    maxWidth={maxWidth}
+                    elements={elements}
+                    size={size}
+                  />
+                )
+            ),
+          [
+            dispatchElements,
+            editor,
+            elements,
+            fontSize,
+            isSelected,
+            lineHeight,
+            maxHeight,
+            maxWidth,
+            overlayBox,
+            size,
+          ]
+        )}
       </EditableOverlay>
 
       <Chart

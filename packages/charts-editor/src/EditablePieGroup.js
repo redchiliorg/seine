@@ -2,27 +2,12 @@
 import * as React from 'react';
 import { ActionInput, EditableGroup, EditableInput } from '@seine/ui';
 import { UPDATE_ELEMENT } from '@seine/core';
-import type { ElementsAction } from '@seine/core';
 
-type Props = {
-  x: number,
-  y: number,
-  width: number,
-  height: number,
-  maxWidth: number,
-  maxHeight: number,
-  lineHeight: number,
-  value: number,
-  title: string,
-  fontSize: number,
-  size: number,
-  dispatch: (ElementsAction) => any,
-  index: number,
-};
+import type { EditableGroupProps } from './types';
 
 /**
  * @description Pie chart editable elements group.
- * @param {Props} props
+ * @param {EditableGroupProps} props
  * @returns {React.Node}
  */
 export default function EditablePieGroup({
@@ -41,7 +26,7 @@ export default function EditablePieGroup({
 
   dispatch,
   index,
-}: Props) {
+}: EditableGroupProps) {
   return (
     <EditableGroup
       columns

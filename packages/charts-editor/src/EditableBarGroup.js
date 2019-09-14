@@ -2,27 +2,12 @@
 import * as React from 'react';
 import { ActionInput, EditableGroup, EditableInput } from '@seine/ui';
 import { UPDATE_ELEMENT } from '@seine/core';
-import type { ElementsAction } from '@seine/core';
 
-type Props = {
-  x: number,
-  y: number,
-  width: number,
-  height: number,
-  maxWidth: number,
-  maxHeight: number,
-  lineHeight: number,
-  value: number,
-  title: string,
-  fontSize: number,
-  size: number,
-  dispatch: (ElementsAction) => any,
-  index: number,
-};
+import type { EditableGroupProps } from './types';
 
 /**
  * @description Bar chart editable elements group.
- * @param {Props} props
+ * @param {EditableGroupProps} props
  * @returns {React.Node}
  */
 export default function EditablePieGroup({
@@ -44,7 +29,7 @@ export default function EditablePieGroup({
   index,
 
   elements,
-}: Props) {
+}: EditableGroupProps) {
   const barLineSize = fontSize * 3;
   const maxSize = elements.length * barLineSize;
 

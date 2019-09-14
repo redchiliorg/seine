@@ -2,12 +2,14 @@
 import * as React from 'react';
 
 import {
+  defaultChartFontSize,
   defaultChartFontWeight,
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartSize,
 } from './constants';
 import type { ChartProps } from './types';
+import { useChartFormat } from './hooks';
 
 /**
  * @description Column chart content block renderer.
@@ -16,51 +18,50 @@ import type { ChartProps } from './types';
  */
 export default function ColumnChart({
   elements,
-  size = defaultChartSize,
-  palette = defaultChartPalette,
-
   fontWeight = defaultChartFontWeight,
+  fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
+  palette = defaultChartPalette,
+  size = defaultChartSize,
 }: ChartProps) {
-  const fontSize = 2;
-  const fontWidth = fontSize / 2;
-  const fontHeight = fontSize * lineHeight;
-  const lineWidth = fontHeight * lineHeight;
+  const { barHeight, textPadding } = useChartFormat(1.5 * fontSize, lineHeight);
 
-  const gutter = size / ((9 * elements.length) / 16) + fontHeight;
-
-  size = size - 2 * gutter;
-
+  const barMaxLen = size - (textPadding + lineHeight);
   const maxValue = Math.max(...elements.map(({ value }) => value));
 
-  const maxLength = size - fontHeight;
+  const width = (elements.length * barHeight) / 2;
 
   return (
-    <svg viewBox={`0 0 ${elements.length * lineWidth} ${size}`}>
+    <svg
+      viewBox={`0 0 ${width} ${size}`}
+      width={'100%'}
+      height={'100%'}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+    >
       {elements.map(({ title, value, as: Group = 'g' }, index) => {
-        const fill = palette[index % palette.length];
-        const x = index * lineWidth;
-        const length = (maxLength * value) / maxValue;
+        const len = (barMaxLen * value) / maxValue;
+        const color = palette[index % palette.length];
 
         return (
-          <Group key={index}>
-            <text
-              x={x + fontWidth}
-              y={maxLength - length + fontHeight / 2}
-              fill={fill}
-              fontSize={fontSize}
-              fontWeight={fontWeight}
-            >
-              {value}
-            </text>
-            <rect
-              x={x}
-              y={maxLength - length + fontHeight}
-              width={lineWidth}
-              height={length}
-              fill={fill}
+          <svg key={index} x={(index * barHeight) / 2}>
+            <Group>
+              <text
+                fill={color}
+                x={barHeight / 4}
+                y={size - len - textPadding}
+                textAnchor={'middle'}
+              >
+                {value}
+              </text>
+            </Group>
+
+            <path
+              d={`M0,${size} v${-len}`}
+              strokeWidth={barHeight}
+              stroke={color}
             />
-          </Group>
+          </svg>
         );
       })}
     </svg>
