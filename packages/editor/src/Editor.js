@@ -2,7 +2,7 @@
 import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Content, Page } from '@seine/content';
+import { Content } from '@seine/content';
 import type { ContentProps } from '@seine/content';
 import type { Block, EditorAction, EditorState } from '@seine/core';
 import {
@@ -40,7 +40,7 @@ const ContentToolbarGroup = styled(Toolbar.Group)`
 const defaultEditorBlockRendererMap = {
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
-  [blockTypes.PAGE]: Page,
+  [blockTypes.PAGE]: ({ children }) => children,
   [blockTypes.CHART]: BarChartEditor,
 };
 
@@ -63,8 +63,8 @@ export type Props = {
   parent: Block,
   onChange: (Block[]) => any,
   children?: Block[],
-  theme?: { [string]: any },
   as?: React.ComponentType<*>,
+  theme?: { [string]: any },
 } & ContentProps;
 
 /**
@@ -72,7 +72,7 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentEditor({
+export default function Editor({
   parent,
   onChange,
   children = defaultEditorChildren,

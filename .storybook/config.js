@@ -1,11 +1,7 @@
-import { configure } from '@storybook/react';
+import { addParameters, configure } from '@storybook/react';
 import requireContext from 'require-context.macro';
 import './index.css';
 
-const req = requireContext('../packages', true, /\.stories.js$/);
+addParameters({ options: { makeDisplayName: (key) => `close to ${key}` } });
 
-function loadStories() {
-  req.keys().forEach((filename) => req(filename));
-}
-
-configure(loadStories, module);
+configure(requireContext('../packages', true, /\.stories.js$/), module);

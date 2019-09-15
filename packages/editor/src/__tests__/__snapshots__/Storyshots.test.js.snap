@@ -1,0 +1,1156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Content Content Of Bar Chart 1`] = `
+<div
+  className="mui-panel"
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <svg
+    viewBox="0 0 100 49"
+  >
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={3.5}
+      >
+        WFLA
+      </text>
+      <rect
+        fill="#fa6479"
+        height={6.125}
+        width={39.89041095890411}
+        x={10}
+        y={0}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={50.89041095890411}
+        y={3.5}
+      >
+        20.8
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={9.625}
+      >
+        Region A
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={6.125}
+        width={68.46575342465755}
+        x={10}
+        y={6.125}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={79.46575342465755}
+        y={9.625}
+      >
+        35.7
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={15.75}
+      >
+        Region B
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={6.125}
+        width={30.3013698630137}
+        x={10}
+        y={12.25}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={41.301369863013704}
+        y={15.75}
+      >
+        15.8
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={21.875}
+      >
+        Region C
+      </text>
+      <rect
+        fill="#7482aa"
+        height={6.125}
+        width={78.43835616438356}
+        x={10}
+        y={18.375}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={89.43835616438356}
+        y={21.875}
+      >
+        40.9
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={28}
+      >
+        Region D
+      </text>
+      <rect
+        fill="#35aeb7"
+        height={6.125}
+        width={45.26027397260275}
+        x={10}
+        y={24.5}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={56.26027397260275}
+        y={28}
+      >
+        23.6
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={34.125}
+      >
+        Region E
+      </text>
+      <rect
+        fill="#01b25c"
+        height={6.125}
+        width={33.753424657534254}
+        x={10}
+        y={30.625}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={44.753424657534254}
+        y={34.125}
+      >
+        17.6
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={40.25}
+      >
+        Region F
+      </text>
+      <rect
+        fill="#e1c54e"
+        height={6.125}
+        width={73.06849315068494}
+        x={10}
+        y={36.75}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={84.06849315068494}
+        y={40.25}
+      >
+        38.1
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={46.375}
+      >
+        Region G
+      </text>
+      <rect
+        fill="#f89764"
+        height={6.125}
+        width={84}
+        x={10}
+        y={42.875}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={95}
+        y={46.375}
+      >
+        43.8
+      </text>
+    </g>
+    <g>
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={0}
+        y={52.5}
+      >
+        Region H
+      </text>
+      <rect
+        fill="#a3704d"
+        height={6.125}
+        width={31.45205479452055}
+        x={10}
+        y={49}
+      />
+      <text
+        fontSize={2}
+        fontWeight={500}
+        x={42.45205479452055}
+        y={52.5}
+      >
+        16.4
+      </text>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Storyshots Content Content Of Column Chart 1`] = `
+<div
+  className="mui-panel"
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-3.170594139639391}
+      >
+        50.1
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-24.097924378879128}
+        width={6.125}
+        x={0}
+        y={-1.420594139639391}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={1.7500000000000036}
+      >
+        60.33
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-29.018518518518523}
+        width={6.125}
+        x={6.125}
+        y={3.5000000000000036}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-21.015564088869244}
+      >
+        13
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-6.252954429649275}
+        width={6.125}
+        x={12.25}
+        y={-19.265564088869244}
+      />
+    </g>
+  </svg>
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-1.209182391331666}
+      >
+        90
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-26.059336127186853}
+        width={6.125}
+        x={0}
+        y={0.5408176086683341}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={1.75}
+      >
+        100.22
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-29.01851851851852}
+        width={6.125}
+        x={6.125}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-23.21484400984501}
+      >
+        14
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-4.05367450867351}
+        width={6.125}
+        x={12.25}
+        y={-21.46484400984501}
+      />
+    </g>
+  </svg>
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={1.75}
+      >
+        66
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-29.01851851851852}
+        width={6.125}
+        x={0}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={-18.914702581369248}
+      >
+        19
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-8.353815937149271}
+        width={6.125}
+        x={6.125}
+        y={-17.164702581369248}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-18.914702581369248}
+      >
+        19
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-8.353815937149271}
+        width={6.125}
+        x={12.25}
+        y={-17.164702581369248}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Storyshots Content Content Of Draft 1`] = `
+<div
+  className="mui-panel"
+>
+  {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+</div>
+`;
+
+exports[`Storyshots Content Content Of Pie Chart 1`] = `
+<div
+  className="mui-panel"
+>
+  <svg
+    viewBox="0 0 100 100"
+  >
+    <path
+      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L NaN NaN"
+      fill="#fa6479"
+    />
+    <g>
+      <text
+        fill="black"
+        fontSize={4.166666666666667}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        %
+      </text>
+      <text
+        dy={4.166666666666667}
+        fill="black"
+        fontSize={3.125}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        repairs
+      </text>
+    </g>
+    <path
+      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+      fill="#cb91a0"
+    />
+    <g>
+      <text
+        fill="black"
+        fontSize={4.166666666666667}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        %
+      </text>
+      <text
+        dy={4.166666666666667}
+        fill="black"
+        fontSize={3.125}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        consulting
+      </text>
+    </g>
+    <path
+      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+      fill="#a38ca4"
+    />
+    <g>
+      <text
+        fill="black"
+        fontSize={4.166666666666667}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        %
+      </text>
+      <text
+        dy={4.166666666666667}
+        fill="black"
+        fontSize={3.125}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        training
+      </text>
+    </g>
+    <path
+      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+      fill="#7482aa"
+    />
+    <g>
+      <text
+        fill="black"
+        fontSize={4.166666666666667}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        %
+      </text>
+      <text
+        dy={4.166666666666667}
+        fill="black"
+        fontSize={3.125}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        product sales
+      </text>
+    </g>
+    <path
+      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+      fill="#35aeb7"
+    />
+    <g>
+      <text
+        fill="black"
+        fontSize={4.166666666666667}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        %
+      </text>
+      <text
+        dy={4.166666666666667}
+        fill="black"
+        fontSize={3.125}
+        textAnchor="middle"
+        x={NaN}
+        y={NaN}
+      >
+        others
+      </text>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Storyshots Editor Editor Of Bar Chart 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM kXzfvt"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI cLjAWh"
+      />
+      <svg
+        viewBox="0 0 100 49"
+      >
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={3.5}
+          >
+            WFLA
+          </text>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={39.89041095890411}
+            x={10}
+            y={0}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={50.89041095890411}
+            y={3.5}
+          >
+            20.8
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={9.625}
+          >
+            Region A
+          </text>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={68.46575342465755}
+            x={10}
+            y={6.125}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={79.46575342465755}
+            y={9.625}
+          >
+            35.7
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={15.75}
+          >
+            Region B
+          </text>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={30.3013698630137}
+            x={10}
+            y={12.25}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={41.301369863013704}
+            y={15.75}
+          >
+            15.8
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={21.875}
+          >
+            Region C
+          </text>
+          <rect
+            fill="#7482aa"
+            height={6.125}
+            width={78.43835616438356}
+            x={10}
+            y={18.375}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={89.43835616438356}
+            y={21.875}
+          >
+            40.9
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={28}
+          >
+            Region D
+          </text>
+          <rect
+            fill="#35aeb7"
+            height={6.125}
+            width={45.26027397260275}
+            x={10}
+            y={24.5}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={56.26027397260275}
+            y={28}
+          >
+            23.6
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={34.125}
+          >
+            Region E
+          </text>
+          <rect
+            fill="#01b25c"
+            height={6.125}
+            width={33.753424657534254}
+            x={10}
+            y={30.625}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={44.753424657534254}
+            y={34.125}
+          >
+            17.6
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={40.25}
+          >
+            Region F
+          </text>
+          <rect
+            fill="#e1c54e"
+            height={6.125}
+            width={73.06849315068494}
+            x={10}
+            y={36.75}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={84.06849315068494}
+            y={40.25}
+          >
+            38.1
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={46.375}
+          >
+            Region G
+          </text>
+          <rect
+            fill="#f89764"
+            height={6.125}
+            width={84}
+            x={10}
+            y={42.875}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={95}
+            y={46.375}
+          >
+            43.8
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={52.5}
+          >
+            Region H
+          </text>
+          <rect
+            fill="#a3704d"
+            height={6.125}
+            width={31.45205479452055}
+            x={10}
+            y={49}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={42.45205479452055}
+            y={52.5}
+          >
+            16.4
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Editor Editor Of Draft 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
+  </div>
+</div>
+`;
+
+exports[`Storyshots Editor Editor Of Empty Content 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  />
+</div>
+`;
+
+exports[`Storyshots Editor Editor Of Pie Chart 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM kXzfvt"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI cLjAWh"
+      />
+      <svg
+        viewBox="0 0 100 24.5"
+      >
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={3.5}
+          >
+            repairs
+          </text>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={15.1875}
+            x={15}
+            y={0}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={31.1875}
+            y={3.5}
+          >
+            12
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={9.625}
+          >
+            consulting
+          </text>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={12.65625}
+            x={15}
+            y={6.125}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={28.65625}
+            y={9.625}
+          >
+            10
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={15.75}
+          >
+            training
+          </text>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={10.125}
+            x={15}
+            y={12.25}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={26.125}
+            y={15.75}
+          >
+            8
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={21.875}
+          >
+            product sales
+          </text>
+          <rect
+            fill="#7482aa"
+            height={6.125}
+            width={81}
+            x={15}
+            y={18.375}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={97}
+            y={21.875}
+          >
+            64
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={28}
+          >
+            others
+          </text>
+          <rect
+            fill="#35aeb7"
+            height={6.125}
+            width={7.59375}
+            x={15}
+            y={24.5}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={23.59375}
+            y={28}
+          >
+            6
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;

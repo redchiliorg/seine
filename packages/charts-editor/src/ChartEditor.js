@@ -11,11 +11,15 @@ import {
 import type { ChartProps } from '@seine/charts';
 import {
   Chart,
+  defaultChartDy,
   defaultChartFontSize,
   defaultChartFontWeight,
   defaultChartLineHeight,
+  defaultChartMaxValue,
+  defaultChartMinValue,
   defaultChartPalette,
   defaultChartSize,
+  defaultChartTitle,
 } from '@seine/charts';
 
 import EditablePieGroup from './EditablePieGroup';
@@ -39,20 +43,27 @@ const defaultEditableGroupRenderMap = {
  * @returns {React.Node}
  */
 export default function ChartEditor({
-  id,
-  selection,
-  dispatch,
   elements,
-  kind,
+
+  dy = defaultChartDy,
   size = defaultChartSize,
   fontSize = defaultChartFontSize,
   fontWeight = defaultChartFontWeight,
+  kind = chartTypes.BAR,
   lineHeight = defaultChartLineHeight,
+  maxValue = defaultChartMaxValue,
+  minValue = defaultChartMinValue,
   palette = defaultChartPalette,
+  title = defaultChartTitle,
+
   editableGroupRenderMap: {
     [kind]: EditableGroup,
   } = defaultEditableGroupRenderMap,
   editor = null,
+
+  id,
+  selection,
+  dispatch,
 }: Props) {
   const overlayRef = React.useRef(null);
 
@@ -76,65 +87,52 @@ export default function ChartEditor({
   return (
     <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
       <EditableOverlay ref={overlayRef}>
-        {React.useMemo(
-          () =>
-            editor !== null &&
-            overlayBox &&
-            isSelected &&
-            elements.map(
-              (element, index) =>
-                index in editor && (
-                  <EditableGroup
-                    key={index}
-                    index={index}
-                    {...element}
-                    {...editor[index]}
-                    dispatch={dispatchElements}
-                    fontSize={fontSize}
-                    lineHeight={lineHeight}
-                    maxHeight={maxHeight}
-                    maxWidth={maxWidth}
-                    elements={elements}
-                    size={size}
-                  />
-                )
-            ),
-          [
-            dispatchElements,
-            editor,
-            elements,
-            fontSize,
-            isSelected,
-            lineHeight,
-            maxHeight,
-            maxWidth,
-            overlayBox,
-            size,
-          ]
-        )}
+        {editor !== null &&
+          overlayBox &&
+          isSelected &&
+          elements.map(
+            (element, index) =>
+              index in editor && (
+                <EditableGroup
+                  key={index}
+                  index={index}
+                  {...element}
+                  {...editor[index]}
+                  dispatch={dispatchElements}
+                  fontSize={fontSize}
+                  lineHeight={lineHeight}
+                  maxHeight={maxHeight}
+                  maxWidth={maxWidth}
+                  elements={elements}
+                  size={size}
+                />
+              )
+          )}
       </EditableOverlay>
 
       <Chart
+        elements={
+          isSelected
+            ? elements.map((element, index) => ({
+                ...element,
+                as: ({ children }) => (
+                  <EditableElement index={index} dispatch={dispatch}>
+                    {children}
+                  </EditableElement>
+                ),
+              }))
+            : elements
+        }
+        dy={dy}
         fontSize={fontSize}
         fontWeight={fontWeight}
-        lineHeight={lineHeight}
         kind={kind}
-        elements={React.useMemo(
-          () =>
-            isSelected
-              ? elements.map((element, index) => ({
-                  ...element,
-                  as: ({ children }) => (
-                    <EditableElement index={index} dispatch={dispatch}>
-                      {children}
-                    </EditableElement>
-                  ),
-                }))
-              : elements,
-          [dispatch, elements, isSelected]
-        )}
-        size={size}
+        lineHeight={lineHeight}
+        minValue={minValue}
+        maxValue={maxValue}
         palette={palette}
+        size={size}
+        title={title}
       />
     </BlockContainer>
   );

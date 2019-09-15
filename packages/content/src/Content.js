@@ -6,16 +6,16 @@ import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 
 import Grid from './Grid';
-import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
   parent: Block,
   children: $ReadOnlyArray<Block>,
+  as?: React.ComponentType<*>,
 };
 
 export const defaultBlockRenderMap = {
-  [blockTypes.PAGE]: Page,
+  [blockTypes.PAGE]: ({ children }) => children,
   [blockTypes.GRID]: Grid,
   [blockTypes.DRAFT]: Draft,
   [blockTypes.CHART]: Chart,

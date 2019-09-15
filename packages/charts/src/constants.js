@@ -1,4 +1,10 @@
-export const defaultChartSize = 100;
+export const defaultChartDy = 10;
+export const defaultChartTitle = '';
+export const defaultChartFontSize = 2;
+export const defaultChartFontWeight = 500;
+export const defaultChartLineHeight = 1.75;
+export const defaultChartMinValue = 0;
+export const defaultChartMaxValue = 100;
 export const defaultChartPalette = [
   '#fa6479',
   '#cb91a0',
@@ -10,7 +16,5 @@ export const defaultChartPalette = [
   '#f89764',
   '#a3704d',
 ];
-export const defaultChartFontWeight = 500;
-export const defaultChartLineHeight = 1.75;
-export const defaultChartFontSize = 2;
+export const defaultChartSize = 100;
 export const defaultChartUnits = '%';

@@ -9,7 +9,7 @@ import {
   defaultChartSize,
 } from './constants';
 import type { ChartProps } from './types';
-import { useChartFormat } from './hooks';
+import { useChartFormat } from './helpers';
 
 /**
  * @description Bar chart content block renderer.
@@ -24,7 +24,7 @@ export default function BarChart({
   palette = defaultChartPalette,
   size = defaultChartSize,
 }: ChartProps) {
-  const { barHeight, fontHeight, fontWidth, textPadding } = useChartFormat(
+  const { barHeight, fontHeight, fontWidth } = useChartFormat(
     fontSize,
     lineHeight
   );
@@ -34,38 +34,36 @@ export default function BarChart({
   const valueMaxLen =
     Math.max(...elements.map(({ value }) => `${value}`.length)) * fontWidth;
 
-  const barMaxLen = size - (titleMaxLen + valueMaxLen + textPadding * 2);
+  const barMaxLen = size - (titleMaxLen + valueMaxLen + fontSize * 2);
   const maxValue = Math.max(...elements.map(({ value }) => value));
+
+  const height = (elements.length * barHeight) / 2;
 
   return (
     <svg
-      viewBox={`0 0 ${size} ${(elements.length * barHeight) / 2}`}
+      viewBox={`0 0 ${size} ${height}`}
       width={'100%'}
-      height={'100%'}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      preserveAspectRatio={'xMidYMax meet'}
     >
       {elements.map(({ title, value, as: Group = 'g' }, index) => {
         const len = (barMaxLen * value) / maxValue;
+        const color = palette[index % palette.length];
 
         return (
-          <svg
-            key={index}
-            fontSize={fontSize}
-            fontWeight={fontWeight}
-            y={(index * barHeight) / 2}
-            fill={palette[index % palette.length]}
-          >
+          <svg key={index} y={(index * barHeight) / 2} fill={color}>
             <Group>
               <text y={fontHeight}>{title}</text>
-              <text dy={fontHeight} x={titleMaxLen + len + 2 * textPadding}>
+              <text dy={fontHeight} x={titleMaxLen + len + 1.5 * fontSize}>
                 {value}
               </text>
             </Group>
 
-            <rect
-              x={titleMaxLen + textPadding}
-              y={0}
-              width={len}
-              height={barHeight / 2}
+            <path
+              d={`M${titleMaxLen + fontSize},0 h${len}`}
+              strokeWidth={barHeight}
+              stroke={color}
             />
           </svg>
         );
