@@ -33,5 +33,5 @@ export default function Chart({
   chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
   ...chartProps
 }: Props) {
-  return kind === chartTypes.COLUMN ? <ExactChart {...chartProps} /> : null;
+  return <ExactChart {...chartProps} />;
 }

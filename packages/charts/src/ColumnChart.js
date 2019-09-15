@@ -33,7 +33,7 @@ export default function ColumnChart({
 
   ...svgProps
 }: ChartProps & *) {
-  const [maxValue, , titles, groups] = React.useMemo(
+  const [maxValue, , titleGroups, groups] = React.useMemo(
     () => [
       dy <= initialMaxValue
         ? initialMaxValue
@@ -41,14 +41,22 @@ export default function ColumnChart({
       initialMaxValue > initialMinValue
         ? initialMinValue
         : Math.min(...elements.map(({ value }) => value)),
-      uniqElementTitles(elements),
+      splitEvery(3, uniqElementTitles(elements)),
       groupElements(elements),
     ],
     [dy, elements, initialMaxValue, initialMinValue]
   );
 
   return (
-    <svg {...svgProps} viewBox={`0 0 ${99 * Math.max(2, groups.length)} 210`}>
+    <svg
+      {...svgProps}
+      viewBox={[
+        0,
+        0,
+        groups.length > 2 ? 99 * groups.length : 198,
+        titleGroups.length ? 210 : 140,
+      ].join(' ')}
+    >
       {groups.map(([group, elements], index) => (
         <BarGroup
           key={group}
@@ -74,7 +82,7 @@ export default function ColumnChart({
         maxValue={maxValue}
         title={title}
       />
-      {splitEvery(3, titles).map((titles, index) => (
+      {titleGroups.map((titles, index) => (
         <Legend
           key={index}
           fontSize={1.5 * fontSize}
