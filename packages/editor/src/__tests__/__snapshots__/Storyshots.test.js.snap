@@ -1,257 +1,1074 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Content Content Of Bar Chart 1`] = `
-<div
-  className="mui-panel"
-  style={
-    Object {
-      "height": "100%",
-      "width": "100%",
-    }
-  }
+exports[`Storyshots Content Content Of Draft 1`] = `"{\\"blocks\\":[{\\"key\\":1,\\"text\\":\\"This block is draft.js content. Click here to edit the text.\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}},{\\"key\\":2,\\"text\\":\\"\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}},{\\"key\\":3,\\"text\\":\\"We are planning to add text formatting toolbar soon.\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}},{\\"key\\":4,\\"text\\":\\"\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}},{\\"key\\":5,\\"text\\":\\"Draft.js is a framework for building rich text editors in React,\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}},{\\"key\\":6,\\"text\\":\\"powered by an immutable model and abstracting over cross-browser differences.\\",\\"type\\":\\"unstyled\\",\\"depth\\":0,\\"inlineStyleRanges\\":[],\\"entityRanges\\":[],\\"data\\":{}}],\\"entityMap\\":{}}"`;
+
+exports[`Storyshots Content of charts Bar 1`] = `
+<svg
+  viewBox="0 0 100 49"
 >
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={3.5}
+    >
+      WFLA
+    </text>
+    <rect
+      fill="#fa6479"
+      height={6.125}
+      width={39.89041095890411}
+      x={10}
+      y={0}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={50.89041095890411}
+      y={3.5}
+    >
+      20.8
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={9.625}
+    >
+      Region A
+    </text>
+    <rect
+      fill="#cb91a0"
+      height={6.125}
+      width={68.46575342465755}
+      x={10}
+      y={6.125}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={79.46575342465755}
+      y={9.625}
+    >
+      35.7
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={15.75}
+    >
+      Region B
+    </text>
+    <rect
+      fill="#a38ca4"
+      height={6.125}
+      width={30.3013698630137}
+      x={10}
+      y={12.25}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={41.301369863013704}
+      y={15.75}
+    >
+      15.8
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={21.875}
+    >
+      Region C
+    </text>
+    <rect
+      fill="#7482aa"
+      height={6.125}
+      width={78.43835616438356}
+      x={10}
+      y={18.375}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={89.43835616438356}
+      y={21.875}
+    >
+      40.9
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={28}
+    >
+      Region D
+    </text>
+    <rect
+      fill="#35aeb7"
+      height={6.125}
+      width={45.26027397260275}
+      x={10}
+      y={24.5}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={56.26027397260275}
+      y={28}
+    >
+      23.6
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={34.125}
+    >
+      Region E
+    </text>
+    <rect
+      fill="#01b25c"
+      height={6.125}
+      width={33.753424657534254}
+      x={10}
+      y={30.625}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={44.753424657534254}
+      y={34.125}
+    >
+      17.6
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={40.25}
+    >
+      Region F
+    </text>
+    <rect
+      fill="#e1c54e"
+      height={6.125}
+      width={73.06849315068494}
+      x={10}
+      y={36.75}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={84.06849315068494}
+      y={40.25}
+    >
+      38.1
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={46.375}
+    >
+      Region G
+    </text>
+    <rect
+      fill="#f89764"
+      height={6.125}
+      width={84}
+      x={10}
+      y={42.875}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={95}
+      y={46.375}
+    >
+      43.8
+    </text>
+  </g>
+  <g>
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={0}
+      y={52.5}
+    >
+      Region H
+    </text>
+    <rect
+      fill="#a3704d"
+      height={6.125}
+      width={31.45205479452055}
+      x={10}
+      y={49}
+    />
+    <text
+      fontSize={2}
+      fontWeight={500}
+      x={42.45205479452055}
+      y={52.5}
+    >
+      16.4
+    </text>
+  </g>
+</svg>
+`;
+
+exports[`Storyshots Content of charts Column 1`] = `
+<svg
+  viewBox="0 0 18.375 -25.51851851851852"
+>
+  <g>
+    <text
+      fill="#fa6479"
+      fontSize={2}
+      fontWeight={500}
+      x={1}
+      y={-3.170594139639391}
+    >
+      50.1
+    </text>
+    <rect
+      fill="#fa6479"
+      height={-24.097924378879128}
+      width={6.125}
+      x={0}
+      y={-1.420594139639391}
+    />
+  </g>
+  <g>
+    <text
+      fill="#cb91a0"
+      fontSize={2}
+      fontWeight={500}
+      x={7.125}
+      y={1.7500000000000036}
+    >
+      60.33
+    </text>
+    <rect
+      fill="#cb91a0"
+      height={-29.018518518518523}
+      width={6.125}
+      x={6.125}
+      y={3.5000000000000036}
+    />
+  </g>
+  <g>
+    <text
+      fill="#a38ca4"
+      fontSize={2}
+      fontWeight={500}
+      x={13.25}
+      y={-21.015564088869244}
+    >
+      13
+    </text>
+    <rect
+      fill="#a38ca4"
+      height={-6.252954429649275}
+      width={6.125}
+      x={12.25}
+      y={-19.265564088869244}
+    />
+  </g>
+</svg>
+`;
+
+exports[`Storyshots Content of charts Four Groups O Three Columns 1`] = `
+Array [
   <svg
-    viewBox="0 0 100 49"
+    viewBox="0 0 18.375 -25.51851851851852"
   >
     <g>
       <text
+        fill="#fa6479"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={3.5}
+        x={1}
+        y={1.7500000000000036}
       >
-        WFLA
+        60.33
       </text>
       <rect
         fill="#fa6479"
-        height={6.125}
-        width={39.89041095890411}
-        x={10}
-        y={0}
+        height={-29.018518518518523}
+        width={6.125}
+        x={0}
+        y={3.5000000000000036}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={50.89041095890411}
-        y={3.5}
-      >
-        20.8
-      </text>
     </g>
     <g>
       <text
+        fill="#cb91a0"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={9.625}
+        x={7.125}
+        y={-21.015564088869244}
       >
-        Region A
+        13
       </text>
       <rect
         fill="#cb91a0"
-        height={6.125}
-        width={68.46575342465755}
-        x={10}
-        y={6.125}
+        height={-6.252954429649275}
+        width={6.125}
+        x={6.125}
+        y={-19.265564088869244}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={79.46575342465755}
-        y={9.625}
-      >
-        35.7
-      </text>
     </g>
     <g>
       <text
+        fill="#a38ca4"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={15.75}
+        x={13.25}
+        y={-3.170594139639391}
       >
-        Region B
+        50.1
       </text>
       <rect
         fill="#a38ca4"
-        height={6.125}
-        width={30.3013698630137}
-        x={10}
-        y={12.25}
+        height={-24.097924378879128}
+        width={6.125}
+        x={12.25}
+        y={-1.420594139639391}
       />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
       <text
+        fill="#fa6479"
         fontSize={2}
         fontWeight={500}
-        x={41.301369863013704}
-        y={15.75}
+        x={1}
+        y={-23.21484400984501}
       >
-        15.8
+        14
       </text>
+      <rect
+        fill="#fa6479"
+        height={-4.05367450867351}
+        width={6.125}
+        x={0}
+        y={-21.46484400984501}
+      />
     </g>
     <g>
       <text
+        fill="#cb91a0"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={21.875}
+        x={7.125}
+        y={1.75}
       >
-        Region C
+        100.22
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-29.01851851851852}
+        width={6.125}
+        x={6.125}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-1.209182391331666}
+      >
+        90
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-26.059336127186853}
+        width={6.125}
+        x={12.25}
+        y={0.5408176086683341}
+      />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-18.914702581369248}
+      >
+        19
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-8.353815937149271}
+        width={6.125}
+        x={0}
+        y={-17.164702581369248}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={-14.517957351290683}
+      >
+        29
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-12.750561167227835}
+        width={6.125}
+        x={6.125}
+        y={-12.767957351290683}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={1.75}
+      >
+        66
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-29.01851851851852}
+        width={6.125}
+        x={12.25}
+        y={3.5}
+      />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-18.533944444444444}
+      >
+        30.1
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-8.734574074074075}
+        width={6.125}
+        x={0}
+        y={-16.783944444444444}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={1.75}
+      >
+        100
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-29.01851851851852}
+        width={6.125}
+        x={6.125}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-24.851275925925925}
+      >
+        8.33
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-2.4172425925925927}
+        width={6.125}
+        x={12.25}
+        y={-23.101275925925925}
+      />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-1.215536917986487}
+      >
+        81
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-26.052981600532032}
+        width={6.125}
+        x={0}
+        y={0.534463082013513}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={1.75}
+      >
+        90.22
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-29.01851851851852}
+        width={6.125}
+        x={6.125}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={-14.40284859232986}
+      >
+        40
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-12.86566992618866}
+        width={6.125}
+        x={12.25}
+        y={-12.65284859232986}
+      />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 18.375 -25.51851851851852"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={-17.415031755014777}
+      >
+        34
+      </text>
+      <rect
+        fill="#fa6479"
+        height={-9.853486763503742}
+        width={6.125}
+        x={0}
+        y={-15.665031755014777}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={-6.112502820407546}
+      >
+        73
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={-21.156015698110973}
+        width={6.125}
+        x={6.125}
+        y={-4.362502820407546}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={1.7500000000000036}
+      >
+        100.13
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={-29.018518518518523}
+        width={6.125}
+        x={12.25}
+        y={3.5000000000000036}
+      />
+    </g>
+  </svg>,
+]
+`;
+
+exports[`Storyshots Content of charts Pie 1`] = `
+<svg
+  viewBox="0 0 100 100"
+>
+  <path
+    d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L NaN NaN"
+    fill="#fa6479"
+  />
+  <g>
+    <text
+      fill="black"
+      fontSize={4.166666666666667}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      %
+    </text>
+    <text
+      dy={4.166666666666667}
+      fill="black"
+      fontSize={3.125}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      repairs
+    </text>
+  </g>
+  <path
+    d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+    fill="#cb91a0"
+  />
+  <g>
+    <text
+      fill="black"
+      fontSize={4.166666666666667}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      %
+    </text>
+    <text
+      dy={4.166666666666667}
+      fill="black"
+      fontSize={3.125}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      consulting
+    </text>
+  </g>
+  <path
+    d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+    fill="#a38ca4"
+  />
+  <g>
+    <text
+      fill="black"
+      fontSize={4.166666666666667}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      %
+    </text>
+    <text
+      dy={4.166666666666667}
+      fill="black"
+      fontSize={3.125}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      training
+    </text>
+  </g>
+  <path
+    d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+    fill="#7482aa"
+  />
+  <g>
+    <text
+      fill="black"
+      fontSize={4.166666666666667}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      %
+    </text>
+    <text
+      dy={4.166666666666667}
+      fill="black"
+      fontSize={3.125}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      product sales
+    </text>
+  </g>
+  <path
+    d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
+    fill="#35aeb7"
+  />
+  <g>
+    <text
+      fill="black"
+      fontSize={4.166666666666667}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      %
+    </text>
+    <text
+      dy={4.166666666666667}
+      fill="black"
+      fontSize={3.125}
+      textAnchor="middle"
+      x={NaN}
+      y={NaN}
+    >
+      others
+    </text>
+  </g>
+</svg>
+`;
+
+exports[`Storyshots Content of charts Three Groups Of Five Columns 1`] = `
+Array [
+  <svg
+    viewBox="0 0 30.625 21.888888888888886"
+  >
+    <g>
+      <text
+        fill="#fa6479"
+        fontSize={2}
+        fontWeight={500}
+        x={1}
+        y={1.75}
+      >
+        60.33
+      </text>
+      <rect
+        fill="#fa6479"
+        height={18.388888888888886}
+        width={6.125}
+        x={0}
+        y={3.5}
+      />
+    </g>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={10.080322117244044}
+      >
+        33
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={10.058566771644841}
+        width={6.125}
+        x={6.125}
+        y={11.830322117244044}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={13.12837265410612}
+      >
+        23
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={7.010516234782767}
+        width={6.125}
+        x={12.25}
+        y={14.87837265410612}
+      />
+    </g>
+    <g>
+      <text
+        fill="#7482aa"
+        fontSize={2}
+        fontWeight={500}
+        x={19.375}
+        y={16.17642319096819}
+      >
+        13
       </text>
       <rect
         fill="#7482aa"
-        height={6.125}
-        width={78.43835616438356}
-        x={10}
-        y={18.375}
+        height={3.962465697920695}
+        width={6.125}
+        x={18.375}
+        y={17.92642319096819}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={89.43835616438356}
-        y={21.875}
-      >
-        40.9
-      </text>
     </g>
     <g>
       <text
+        fill="#35aeb7"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={28}
+        x={25.5}
+        y={4.8681556992099}
       >
-        Region D
+        50.1
       </text>
       <rect
         fill="#35aeb7"
-        height={6.125}
-        width={45.26027397260275}
-        x={10}
-        y={24.5}
+        height={15.270733189678985}
+        width={6.125}
+        x={24.5}
+        y={6.6181556992099}
       />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 30.625 21.888888888888886"
+  >
+    <g>
       <text
+        fill="#fa6479"
         fontSize={2}
         fontWeight={500}
-        x={56.26027397260275}
-        y={28}
+        x={1}
+        y={3.6252189627264464}
       >
-        23.6
+        90
       </text>
+      <rect
+        fill="#fa6479"
+        height={16.51366992616244}
+        width={6.125}
+        x={0}
+        y={5.375218962726446}
+      />
     </g>
     <g>
       <text
+        fill="#cb91a0"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={34.125}
+        x={7.125}
+        y={1.75}
       >
-        Region E
+        100.22
       </text>
       <rect
-        fill="#01b25c"
-        height={6.125}
-        width={33.753424657534254}
-        x={10}
-        y={30.625}
+        fill="#cb91a0"
+        height={18.388888888888886}
+        width={6.125}
+        x={6.125}
+        y={3.5}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={44.753424657534254}
-        y={34.125}
-      >
-        17.6
-      </text>
     </g>
     <g>
       <text
+        fill="#a38ca4"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={40.25}
+        x={13.25}
+        y={17.57009578926362}
       >
-        Region F
+        14
       </text>
       <rect
-        fill="#e1c54e"
-        height={6.125}
-        width={73.06849315068494}
-        x={10}
-        y={36.75}
+        fill="#a38ca4"
+        height={2.5687930996252684}
+        width={6.125}
+        x={12.25}
+        y={19.32009578926362}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={84.06849315068494}
-        y={40.25}
-      >
-        38.1
-      </text>
     </g>
     <g>
       <text
+        fill="#7482aa"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={46.375}
+        x={19.375}
+        y={18.26366992616244}
       >
-        Region G
+        10.22
       </text>
       <rect
-        fill="#f89764"
-        height={6.125}
-        width={84}
-        x={10}
-        y={42.875}
+        fill="#7482aa"
+        height={1.8752189627264462}
+        width={6.125}
+        x={18.375}
+        y={20.01366992616244}
       />
-      <text
-        fontSize={2}
-        fontWeight={500}
-        x={95}
-        y={46.375}
-      >
-        43.8
-      </text>
     </g>
     <g>
       <text
+        fill="#35aeb7"
         fontSize={2}
         fontWeight={500}
-        x={0}
-        y={52.5}
+        x={25.5}
+        y={17.57009578926362}
       >
-        Region H
+        14
       </text>
       <rect
-        fill="#a3704d"
-        height={6.125}
-        width={31.45205479452055}
-        x={10}
-        y={49}
+        fill="#35aeb7"
+        height={2.5687930996252684}
+        width={6.125}
+        x={24.5}
+        y={19.32009578926362}
       />
+    </g>
+  </svg>,
+  <svg
+    viewBox="0 0 30.625 21.888888888888886"
+  >
+    <g>
       <text
+        fill="#fa6479"
         fontSize={2}
         fontWeight={500}
-        x={42.45205479452055}
-        y={52.5}
+        x={1}
+        y={1.75}
       >
-        16.4
+        95.45
       </text>
+      <rect
+        fill="#fa6479"
+        height={18.388888888888886}
+        width={6.125}
+        x={0}
+        y={3.5}
+      />
     </g>
-  </svg>
-</div>
+    <g>
+      <text
+        fill="#cb91a0"
+        fontSize={2}
+        fontWeight={500}
+        x={7.125}
+        y={10.506155055002617}
+      >
+        50
+      </text>
+      <rect
+        fill="#cb91a0"
+        height={9.632733833886268}
+        width={6.125}
+        x={6.125}
+        y={12.256155055002617}
+      />
+    </g>
+    <g>
+      <text
+        fill="#a38ca4"
+        fontSize={2}
+        fontWeight={500}
+        x={13.25}
+        y={16.478450032012105}
+      >
+        19
+      </text>
+      <rect
+        fill="#a38ca4"
+        height={3.6604388568767816}
+        width={6.125}
+        x={12.25}
+        y={18.228450032012105}
+      />
+    </g>
+    <g>
+      <text
+        fill="#7482aa"
+        fontSize={2}
+        fontWeight={500}
+        x={19.375}
+        y={14.55190326523485}
+      >
+        29
+      </text>
+      <rect
+        fill="#7482aa"
+        height={5.586985623654035}
+        width={6.125}
+        x={18.375}
+        y={16.30190326523485}
+      />
+    </g>
+    <g>
+      <text
+        fill="#35aeb7"
+        fontSize={2}
+        fontWeight={500}
+        x={25.5}
+        y={7.423680228159011}
+      >
+        66
+      </text>
+      <rect
+        fill="#35aeb7"
+        height={12.715208660729875}
+        width={6.125}
+        x={24.5}
+        y={9.17368022815901}
+      />
+    </g>
+  </svg>,
+]
 `;
 
-exports[`Storyshots Content Content Of Column Chart 1`] = `
-<div
-  className="mui-panel"
-  style={
-    Object {
-      "height": "100%",
-      "width": "100%",
-    }
-  }
->
+exports[`Storyshots Content of charts Three Groups Of Three Columns 1`] = `
+Array [
   <svg
     viewBox="0 0 18.375 -25.51851851851852"
   >
@@ -309,7 +1126,7 @@ exports[`Storyshots Content Content Of Column Chart 1`] = `
         y={-19.265564088869244}
       />
     </g>
-  </svg>
+  </svg>,
   <svg
     viewBox="0 0 18.375 -25.51851851851852"
   >
@@ -367,7 +1184,7 @@ exports[`Storyshots Content Content Of Column Chart 1`] = `
         y={-21.46484400984501}
       />
     </g>
-  </svg>
+  </svg>,
   <svg
     viewBox="0 0 18.375 -25.51851851851852"
   >
@@ -395,16 +1212,16 @@ exports[`Storyshots Content Content Of Column Chart 1`] = `
         fontSize={2}
         fontWeight={500}
         x={7.125}
-        y={-18.914702581369248}
+        y={-14.517957351290683}
       >
-        19
+        29
       </text>
       <rect
         fill="#cb91a0"
-        height={-8.353815937149271}
+        height={-12.750561167227835}
         width={6.125}
         x={6.125}
-        y={-17.164702581369248}
+        y={-12.767957351290683}
       />
     </g>
     <g>
@@ -425,151 +1242,296 @@ exports[`Storyshots Content Content Of Column Chart 1`] = `
         y={-17.164702581369248}
       />
     </g>
-  </svg>
-</div>
+  </svg>,
+]
 `;
 
-exports[`Storyshots Content Content Of Draft 1`] = `
+exports[`Storyshots Editor Editor Of 3 Grouped Chart 1`] = `
 <div
-  className="mui-panel"
+  className="sc-gqjmRU iVAfed"
 >
-  {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
-</div>
-`;
-
-exports[`Storyshots Content Content Of Pie Chart 1`] = `
-<div
-  className="mui-panel"
->
-  <svg
-    viewBox="0 0 100 100"
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
   >
-    <path
-      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L NaN NaN"
-      fill="#fa6479"
-    />
-    <g>
-      <text
-        fill="black"
-        fontSize={4.166666666666667}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
       >
-        %
-      </text>
-      <text
-        dy={4.166666666666667}
-        fill="black"
-        fontSize={3.125}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
       >
-        repairs
-      </text>
-    </g>
-    <path
-      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
-      fill="#cb91a0"
-    />
-    <g>
-      <text
-        fill="black"
-        fontSize={4.166666666666667}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
       >
-        %
-      </text>
-      <text
-        dy={4.166666666666667}
-        fill="black"
-        fontSize={3.125}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
       >
-        consulting
-      </text>
-    </g>
-    <path
-      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
-      fill="#a38ca4"
-    />
-    <g>
-      <text
-        fill="black"
-        fontSize={4.166666666666667}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM kXzfvt"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI cLjAWh"
+      />
+      <svg
+        viewBox="0 0 100 49"
       >
-        %
-      </text>
-      <text
-        dy={4.166666666666667}
-        fill="black"
-        fontSize={3.125}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
-      >
-        training
-      </text>
-    </g>
-    <path
-      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
-      fill="#7482aa"
-    />
-    <g>
-      <text
-        fill="black"
-        fontSize={4.166666666666667}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
-      >
-        %
-      </text>
-      <text
-        dy={4.166666666666667}
-        fill="black"
-        fontSize={3.125}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
-      >
-        product sales
-      </text>
-    </g>
-    <path
-      d="M NaN NaN A 33.33333333333333 33.33333333333333 0 0 0 NaN NaN L 50 50 L NaN NaN"
-      fill="#35aeb7"
-    />
-    <g>
-      <text
-        fill="black"
-        fontSize={4.166666666666667}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
-      >
-        %
-      </text>
-      <text
-        dy={4.166666666666667}
-        fill="black"
-        fontSize={3.125}
-        textAnchor="middle"
-        x={NaN}
-        y={NaN}
-      >
-        others
-      </text>
-    </g>
-  </svg>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={3.5}
+          >
+            Maelstorm
+          </text>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={53.342646178407506}
+            x={11}
+            y={0}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={65.3426461784075}
+            y={3.5}
+          >
+            66
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={9.625}
+          >
+            Spring
+          </text>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={23.43843544202754}
+            x={11}
+            y={6.125}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={35.43843544202754}
+            y={9.625}
+          >
+            29
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={15.75}
+          >
+            Electro
+          </text>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={15.35621632408701}
+            x={11}
+            y={12.25}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={27.356216324087008}
+            y={15.75}
+          >
+            19
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={21.875}
+          >
+            Maelstorm
+          </text>
+          <rect
+            fill="#7482aa"
+            height={6.125}
+            width={72.73997206146478}
+            x={11}
+            y={18.375}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={84.73997206146478}
+            y={21.875}
+          >
+            90
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={28}
+          >
+            Spring
+          </text>
+          <rect
+            fill="#35aeb7"
+            height={6.125}
+            width={81}
+            x={11}
+            y={24.5}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={93}
+            y={28}
+          >
+            100.22
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={34.125}
+          >
+            Electro
+          </text>
+          <rect
+            fill="#01b25c"
+            height={6.125}
+            width={11.315106765116743}
+            x={11}
+            y={30.625}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={23.315106765116745}
+            y={34.125}
+          >
+            14
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={40.25}
+          >
+            Maelstorm
+          </text>
+          <rect
+            fill="#e1c54e"
+            height={6.125}
+            width={40.49191778088206}
+            x={11}
+            y={36.75}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={52.49191778088206}
+            y={40.25}
+          >
+            50.1
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={46.375}
+          >
+            Spring
+          </text>
+          <rect
+            fill="#f89764"
+            height={6.125}
+            width={48.76002793853522}
+            x={11}
+            y={42.875}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={60.76002793853522}
+            y={46.375}
+          >
+            60.33
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={52.5}
+          >
+            Electro
+          </text>
+          <rect
+            fill="#a3704d"
+            height={6.125}
+            width={10.50688485332269}
+            x={11}
+            y={49}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={22.50688485332269}
+            y={52.5}
+          >
+            13
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
 </div>
 `;
 
@@ -854,6 +1816,145 @@ exports[`Storyshots Editor Editor Of Bar Chart 1`] = `
             y={52.5}
           >
             16.4
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Editor Editor Of Column Chart 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        onClick={[Function]}
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM kXzfvt"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-iwsKbI cLjAWh"
+      />
+      <svg
+        viewBox="0 0 100 12.25"
+      >
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={3.5}
+          >
+            Maelstorm
+          </text>
+          <rect
+            fill="#fa6479"
+            height={6.125}
+            width={68.09547488811536}
+            x={11}
+            y={0}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={80.09547488811536}
+            y={3.5}
+          >
+            50.1
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={9.625}
+          >
+            Spring
+          </text>
+          <rect
+            fill="#cb91a0"
+            height={6.125}
+            width={82}
+            x={11}
+            y={6.125}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={94}
+            y={9.625}
+          >
+            60.33
+          </text>
+        </g>
+        <g>
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={0}
+            y={15.75}
+          >
+            Electro
+          </text>
+          <rect
+            fill="#a38ca4"
+            height={6.125}
+            width={17.669484501906183}
+            x={11}
+            y={12.25}
+          />
+          <text
+            fontSize={2}
+            fontWeight={500}
+            x={29.669484501906183}
+            y={15.75}
+          >
+            13
           </text>
         </g>
       </svg>
