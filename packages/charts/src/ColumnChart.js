@@ -12,6 +12,52 @@ import {
 import type { ChartProps } from './types';
 import { groupElements, uniqElementTitles } from './helpers';
 
+type Props = $Rest<ChartProps, {| kind: string |}> & {
+  as?: React.ElementType,
+};
+
+/**
+ * @description Legend of column chart.
+ * @param {Props} props
+ * @returns {React.Node}
+ */
+function ColumnChartLegend({
+  fontSize,
+  lineHeight,
+  palette,
+  titles,
+
+  size = 10,
+  x = 62,
+  y = 141,
+}: {
+  fontSize: number,
+  lineHeight: number,
+  palette: number,
+  titles: string[],
+  size?: number,
+  x?: number,
+  y?: number,
+}) {
+  const gutter = fontSize * lineHeight;
+
+  return titles.map((title, index) => (
+    <g key={index} fontSize={fontSize}>
+      <rect
+        x={x}
+        y={y + (size + gutter) * index}
+        width={size}
+        height={size}
+        fill={palette[index % palette.length]}
+      />
+      <text x={x + size + gutter} y={y + (size + gutter) * index + gutter}>
+        {title}
+      </text>
+    </g>
+  ));
+}
+ColumnChart.Legend = ColumnChartLegend;
+
 /**
  * @description Column chart content block renderer.
  * @param {ChartProps}: props
@@ -28,11 +74,17 @@ export default function ColumnChart({
   palette = defaultChartPalette,
   title = defaultChartTitle,
 
+  as: View = 'svg',
   barGroupWidth = 66,
   xPadding = 53,
 
-  ...svgProps
-}: ChartProps & *) {
+  id,
+  parent_id,
+  size,
+  type,
+
+  ...viewProps
+}: Props) {
   const [maxValue, , titleGroups, groups] = React.useMemo(
     () => [
       dy <= initialMaxValue
@@ -48,28 +100,36 @@ export default function ColumnChart({
   );
 
   return (
-    <svg
-      {...svgProps}
-      viewBox={[
-        0,
-        0,
-        groups.length > 2 ? 99 * groups.length : 198,
-        titleGroups.length ? 210 : 140,
-      ].join(' ')}
+    <View
+      viewBox={React.useMemo(
+        () =>
+          [
+            0,
+            0,
+            groups.length > 2 ? 99 * groups.length : 198,
+            titleGroups.length ? 210 : 140,
+          ].join(' '),
+        [groups.length, titleGroups.length]
+      )}
+      {...viewProps}
     >
-      {groups.map(([group, elements], index) => (
-        <BarGroup
-          key={group}
-          elements={elements}
-          group={group}
-          fontSize={1.5 * fontSize}
-          index={index}
-          lineHeight={lineHeight}
-          maxValue={maxValue}
-          palette={palette}
-          transform={`translate(${index * barGroupWidth})`}
-        />
-      ))}
+      {React.useMemo(
+        () =>
+          groups.map(([group, elements], index) => (
+            <ChartColumnGroup
+              key={group}
+              elements={elements}
+              fontSize={1.5 * fontSize}
+              group={group}
+              index={index}
+              lineHeight={lineHeight}
+              maxValue={maxValue}
+              palette={palette}
+              transform={`translate(${index * barGroupWidth})`}
+            />
+          )),
+        [barGroupWidth, fontSize, groups, lineHeight, maxValue, palette]
+      )}
       <path
         d={`m${xPadding + 10} ${110}h${66 * groups.length}`}
         stroke={'#000'}
@@ -82,49 +142,21 @@ export default function ColumnChart({
         maxValue={maxValue}
         title={title}
       />
-      {titleGroups.map((titles, index) => (
-        <Legend
-          key={index}
-          fontSize={1.5 * fontSize}
-          lineHeight={lineHeight}
-          palette={palette.slice(index * 3)}
-          titles={titles}
-          x={62 + 80 * index}
-        />
-      ))}
-    </svg>
-  );
-}
-
-// eslint-disable-next-line
-function Legend({
-  fontSize,
-  lineHeight,
-  palette,
-  titles,
-
-  size = 10,
-  x = 62,
-  y = 141,
-}) {
-  const gutter = fontSize * lineHeight;
-  return (
-    <g fontSize={fontSize}>
-      {titles.map((title, index) => (
-        <g key={title}>
-          <rect
-            x={x}
-            y={y + (size + gutter) * index}
-            width={size}
-            height={size}
-            fill={palette[index % palette.length]}
-          />
-          <text x={x + size + gutter} y={y + (size + gutter) * index + gutter}>
-            {title}
-          </text>
-        </g>
-      ))}
-    </g>
+      {React.useMemo(
+        () =>
+          titleGroups.map((titles, index) => (
+            <ColumnChartLegend
+              key={index}
+              fontSize={1.5 * fontSize}
+              lineHeight={lineHeight}
+              palette={palette.slice(index * 3)}
+              titles={titles}
+              x={62 + 80 * index}
+            />
+          )),
+        [fontSize, lineHeight, palette, titleGroups]
+      )}
+    </View>
   );
 }
 
@@ -136,9 +168,9 @@ function BarGroupYAxis({
   maxValue,
   title,
 
+  height = 90,
   x = 52,
   y = 20,
-  height = 90,
 }) {
   return (
     <g fill={'#000000'} textAnchor="middle" fontSize={fontSize}>
@@ -166,7 +198,7 @@ function BarGroupYAxis({
 }
 
 // eslint-disable-next-line
-function BarGroup({
+function ChartColumnGroup({
   elements,
   fontSize,
   group,
@@ -175,25 +207,25 @@ function BarGroup({
   maxValue,
   palette,
 
+  size = 10,
   x = 80,
   y = 110,
-  size = 10,
 
   ...svgGroupProps
 }) {
   return (
     <g {...svgGroupProps}>
       {elements.map(({ value }, index) => (
-        <Bar
+        <ChartColumn
           key={index}
           fill={palette[index % palette.length]}
           fontSize={fontSize}
           lineHeight={lineHeight}
           maxValue={maxValue}
           value={value}
+          width={size}
           x={x + size * index}
           y={y}
-          width={size}
         />
       ))}
       <text
@@ -209,17 +241,17 @@ function BarGroup({
 }
 
 // eslint-disable-next-line
-function Bar({
+function ChartColumn({
   fill,
   fontSize,
   lineHeight,
   maxValue,
   value,
 
+  height = 80,
+  width = 10,
   x = 80,
   y = 110,
-  width = 10,
-  height = 80,
 }) {
   const rectHeight = (height * value) / maxValue;
 

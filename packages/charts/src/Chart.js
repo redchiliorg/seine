@@ -17,7 +17,7 @@ type Config = {
 
 type Props = ChartProps & $Shape<Config>;
 
-const defaultChartRenderMap = {
+export const defaultChartRenderMap = {
   [chartTypes.BAR]: BarChart,
   [chartTypes.COLUMN]: ColumnChart,
   [chartTypes.PIE]: PieChart,

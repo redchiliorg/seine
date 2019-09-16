@@ -1,13 +1,14 @@
 // @flow
 import * as React from 'react';
 import { UPDATE_BLOCK_EDITOR } from '@seine/core';
+import type { ChartSVGElement } from '@seine/charts-editor/src';
 
 type Action = { type: string, [string]: * };
 type Props = {
   dispatch: (Action) => any,
   index: number,
   children: React.ChildrenArray<React.Node>,
-  as?: HTMLElement | SVGElement,
+  as?: HTMLElement | ChartSVGElement,
 };
 
 /**

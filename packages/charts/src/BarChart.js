@@ -11,6 +11,8 @@ import {
 import type { ChartProps } from './types';
 import { useChartFormat } from './helpers';
 
+type Props = $Rest<ChartProps, {| kind: string |}>;
+
 /**
  * @description Bar chart content block renderer.
  * @param {ChartProps}: props
@@ -23,7 +25,7 @@ export default function BarChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   size = defaultChartSize,
-}: ChartProps) {
+}: Props) {
   const { barHeight, fontHeight, fontWidth } = useChartFormat(
     fontSize,
     lineHeight

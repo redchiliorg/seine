@@ -2,11 +2,15 @@
 import * as React from 'react';
 
 import {
+  defaultChartFontSize,
+  defaultChartLineHeight,
   defaultChartPalette,
   defaultChartSize,
   defaultChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
+
+type Props = $Rest<ChartProps, {| kind: string |}>;
 
 /**
  * @description Pie chart content block renderer.
@@ -15,30 +19,23 @@ import type { ChartProps } from './types';
  */
 export default function PieChart({
   elements,
-  size = defaultChartSize,
+  fontSize = defaultChartFontSize,
+  lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
-
+  size = defaultChartSize,
   units = defaultChartUnits,
-}: ChartProps) {
+}): Props {
   const sum = React.useMemo(
     () => elements.reduce((acc, { value }) => acc + value, 0),
     [elements]
   );
 
-  const [
-    radius,
-    innerRadius,
-    outerRadius,
-    center,
-    fontSize,
-    quarter,
-  ] = React.useMemo(
+  const [radius, innerRadius, outerRadius, center, quarter] = React.useMemo(
     () => [
       size / 2 - size / 6,
       size / 2 - size / 6 + size / 9,
       size / 6,
       size / 2,
-      size / 24,
       sum / 4,
     ],
     [size, sum]
@@ -95,7 +92,7 @@ export default function PieChart({
             />
             <Group>
               <text
-                fontSize={fontSize}
+                fontSize={2 * fontSize}
                 textAnchor="middle"
                 fill={textColor}
                 x={textX}
@@ -106,12 +103,12 @@ export default function PieChart({
               </text>
 
               <text
-                fontSize={0.75 * fontSize}
+                fontSize={1.5 * fontSize}
                 textAnchor="middle"
                 fill={textColor}
                 x={textX}
                 y={textY}
-                dy={fontSize}
+                dy={fontSize * lineHeight}
               >
                 {title}
               </text>
