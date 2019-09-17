@@ -11,12 +11,12 @@
   "license": "MIT",
   "scripts": {
     "start": "serve",
+    "build": "build-storybook -o dist",
     "release": "run-s release:*",
     "release:build": "run-p release:build:*",
     "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c ../../rollup.config.js",
     "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c ../../rollup.config.js",
     "release:publish": "node scripts/publish.js",
-    "storybook": "build-storybook -o dist",
     "test": "run-s test:*",
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
