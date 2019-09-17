@@ -16,3 +16,4 @@ export const defaultChartPalette = [
 ];
 export const defaultChartSize = 100;
 export const defaultChartUnits = '%';
+export const defaultMinValue = 0;

@@ -15,6 +15,8 @@ export type ChartFormat = {
   fontSize: number,
   fontWeight: number,
   lineHeight: number,
+  minValue: number,
+  maxValue: number,
   palette: string[],
   units: string,
 };
@@ -26,7 +28,5 @@ export type ChartElement = {
 };
 export type ChartBody = {
   elements: $ReadOnlyArray<Element>,
-  minValue: number,
-  maxValue: number,
   title: string,
 };
