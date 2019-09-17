@@ -7,6 +7,7 @@ import {
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartTitle,
+  defaultMinValue,
 } from './constants';
 import type { ChartProps } from './types';
 import { groupElements, uniqElementTitles } from './helpers';
@@ -24,7 +25,7 @@ type Props = $Rest<ChartProps, {| kind: string |}> & {
 export default function ColumnChart({
   elements,
   maxValue: initialMaxValue,
-  minValue: initialMinValue,
+  minValue: initialMinValue = defaultMinValue,
 
   dy = defaultChartDy,
   fontSize = defaultChartFontSize,
@@ -34,7 +35,7 @@ export default function ColumnChart({
 
   as: View = 'svg',
   barGroupWidth = 66,
-  xPadding = 53,
+  xPadding = 23,
 
   id,
   parent_id,
@@ -43,19 +44,20 @@ export default function ColumnChart({
 
   ...viewProps
 }: Props) {
-  const [maxValue, , titles, groups] = React.useMemo(
-    () => [
+  const [maxValue, minValue, titles, groups] = React.useMemo(() => {
+    const maxValue =
       dy <= initialMaxValue
         ? initialMaxValue
-        : Math.max(...elements.map(({ value }) => value)),
-      initialMaxValue > initialMinValue
+        : Math.max(...elements.map(({ value }) => value));
+    return [
+      maxValue,
+      maxValue > initialMinValue
         ? initialMinValue
         : Math.min(...elements.map(({ value }) => value)),
       uniqElementTitles(elements),
       groupElements(elements),
-    ],
-    [dy, elements, initialMaxValue, initialMinValue]
-  );
+    ];
+  }, [dy, elements, initialMaxValue, initialMinValue]);
 
   return (
     <View
@@ -64,7 +66,11 @@ export default function ColumnChart({
           [
             0,
             0,
-            groups.length > 2 ? 99 * groups.length : 198,
+            groups.length > 2
+              ? 79 * groups.length
+              : groups.length === 2
+              ? 99 * groups.length
+              : 128,
             titles.length ? 210 : 140,
           ].join(' '),
         [groups.length, titles.length]
@@ -83,15 +89,27 @@ export default function ColumnChart({
               group={group}
               index={index}
               lineHeight={lineHeight}
+              minValue={minValue}
               maxValue={maxValue}
               palette={palette}
               transform={`translate(${index * barGroupWidth})`}
+              x={xPadding * 2}
             />
           )),
-        [barGroupWidth, fontSize, groups, lineHeight, maxValue, palette]
+        [
+          barGroupWidth,
+          fontSize,
+          groups,
+          lineHeight,
+          maxValue,
+          minValue,
+          palette,
+          xPadding,
+        ]
       )}
       <path
-        d={`m${xPadding + 10} ${110}h${66 * groups.length}`}
+        d={`m${xPadding + 20} ${110}h${barGroupWidth * groups.length -
+          (groups.length > 1 ? 10 * (6 - titles.length) : 0)}`}
         stroke={'#000'}
         strokeWidth={0.1}
       />
@@ -100,7 +118,9 @@ export default function ColumnChart({
         fontSize={1.5 * fontSize}
         lineHeight={lineHeight}
         maxValue={maxValue}
+        minValue={minValue}
         title={title}
+        x={xPadding}
       />
       {titles.map((title, index) => (
         <ColumnChartLegend
@@ -111,8 +131,10 @@ export default function ColumnChart({
           size={10}
           title={title}
           width={80}
-          x={62}
-          y={141 + (10 + fontSize * lineHeight) * index}
+          x={xPadding + 10 + 13 + barGroupWidth * (index % groups.length)}
+          y={
+            141 + (10 + fontSize * lineHeight) * parseInt(index / groups.length)
+          }
         />
       ))}
     </View>
@@ -125,22 +147,23 @@ function BarGroupYAxis({
   fontSize,
   lineHeight,
   maxValue,
+  minValue,
   title,
+  x,
 
   height = 90,
-  x = 52,
   y = 20,
 }) {
   return (
     <g fill={'#000000'} textAnchor="middle" fontSize={fontSize}>
-      {Array.from({ length: Math.ceil(maxValue / dy) }).map(
+      {Array.from({ length: Math.floor((maxValue - minValue) / dy) + 1 }).map(
         (_, index, { length }) => (
           <text
             key={index}
             x={x + 1}
             y={y + height - (index * height) / length}
           >
-            <tspan>{index * dy}</tspan>
+            <tspan>{minValue + index * dy}</tspan>
           </text>
         )
       )}
@@ -163,6 +186,7 @@ function ChartColumnGroup({
   group,
   index,
   lineHeight,
+  minValue,
   maxValue,
   palette,
 
@@ -180,6 +204,7 @@ function ChartColumnGroup({
           fill={palette[index % palette.length]}
           fontSize={fontSize}
           lineHeight={lineHeight}
+          minValue={minValue}
           maxValue={maxValue}
           value={value}
           width={size}
@@ -205,6 +230,7 @@ function ChartColumn({
   fontSize,
   lineHeight,
   maxValue,
+  minValue,
   value,
 
   height = 80,
@@ -212,17 +238,29 @@ function ChartColumn({
   x = 80,
   y = 110,
 }) {
-  const rectHeight = (height * value) / maxValue;
+  const rectHeight = (height * value) / (maxValue - minValue);
+  const dy = (height * minValue) / (maxValue - minValue);
 
   return (
     <g fill={fill} fontSize={fontSize}>
-      <rect x={x} y={y - rectHeight} width={width} height={rectHeight} />
+      <rect
+        x={x}
+        y={dy + y - rectHeight}
+        width={width}
+        height={rectHeight - dy}
+      />
       <text
         x={x}
-        y={y - rectHeight - (fontSize * lineHeight) / 2}
+        y={Math.min(dy + y - rectHeight, y) - (fontSize * lineHeight) / 2}
         textAnchor="middle"
       >
-        <tspan dx={width / 2}>{value}</tspan>
+        <tspan dx={width / 2}>
+          {value < minValue
+            ? `< ${minValue}`
+            : value > maxValue
+            ? `> ${maxValue}`
+            : value}
+        </tspan>
       </text>
     </g>
   );
