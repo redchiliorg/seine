@@ -14,17 +14,23 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
-import type { Action, Block, DraftFormat } from '@seine/core';
-import { UPDATE_BLOCK_FORMAT } from '@seine/core';
+import { typeof BlockToolbarGroup, Button, Toolbar } from '@seine/ui';
+import type { Action, Block, BlockId, DraftFormat } from '@seine/core';
+import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
 
 import theme from './DraftToolbar.module.css';
-import DraftEditorContext from './DraftEditorContext';
+import VerticalAlignTopButton from './VerticalAlignTopButton';
+import VerticalAlignCenterButton from './VerticalAlignCenterButton';
+import VerticalAlignBottomButton from './VerticalAlignBottomButton';
+import { defaultDraftEditor } from './DraftEditor';
 
 type Props = Block & {
   format: DraftFormat,
+  editor: { state: * },
   dispatch: (Action) => any,
+  selection: BlockId[],
+  children: React.Element<typeof BlockToolbarGroup>,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (
@@ -44,16 +50,28 @@ const DraftButton = ({ as: Button, className, ...props }) => (
  */
 export default function DraftToolbar({
   format = defaultDraftFormat,
+  editor: {
+    state: editorState = defaultDraftEditor.state,
+  } = defaultDraftEditor,
   dispatch,
+  children,
 }: Props) {
-  const { editorState, setEditorState } = React.useContext(DraftEditorContext);
   const asProps = {
     as: DraftButton,
+
     size: 'small',
     color: 'flat',
+
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
-    setEditorState,
+    setEditorState: React.useCallback(
+      (state) =>
+        dispatch({
+          type: UPDATE_BLOCK_EDITOR,
+          editor: { state },
+        }),
+      [dispatch]
+    ),
     alignment:
       (format && format.textAlignment) || defaultDraftFormat.textAlignment,
     setAlignment: React.useCallback(
@@ -66,27 +84,56 @@ export default function DraftToolbar({
     ),
   };
 
+  const verticalAlignmentAsProps = {
+    ...asProps,
+
+    alignment:
+      (format && format.verticalAlignment) ||
+      defaultDraftFormat.verticalAlignment,
+    setAlignment: React.useCallback(
+      ({ alignment }) =>
+        dispatch({
+          type: UPDATE_BLOCK_FORMAT,
+          format: { verticalAlignment: alignment },
+        }),
+      [dispatch]
+    ),
+  };
+
   return (
-    editorState && (
-      <Toolbar>
+    <Toolbar>
+      {editorState && (
         <Toolbar.Group>
-          <Toolbar.Button {...asProps} forwardedAs={BoldButton} />
-          <Toolbar.Button {...asProps} forwardedAs={ItalicButton} />
-          <Toolbar.Button {...asProps} forwardedAs={UnderlineButton} />
+          <Button {...asProps} forwardedAs={BoldButton} />
+          <Button {...asProps} forwardedAs={ItalicButton} />
+          <Button {...asProps} forwardedAs={UnderlineButton} />
           <Toolbar.Separator />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockLeftButton} />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockCenterButton} />
-          <Toolbar.Button {...asProps} forwardedAs={AlignBlockRightButton} />
+          <Button {...asProps} forwardedAs={AlignBlockLeftButton} />
+          <Button {...asProps} forwardedAs={AlignBlockCenterButton} />
+          <Button {...asProps} forwardedAs={AlignBlockRightButton} />
           <Toolbar.Separator />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineOneButton} />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineTwoButton} />
-          <Toolbar.Button {...asProps} forwardedAs={HeadlineThreeButton} />
-          <Toolbar.Button {...asProps} forwardedAs={OrderedListButton} />
-          <Toolbar.Button {...asProps} forwardedAs={UnorderedListButton} />
+          <Button
+            {...verticalAlignmentAsProps}
+            forwardedAs={VerticalAlignTopButton}
+          />
+          <Button
+            {...verticalAlignmentAsProps}
+            forwardedAs={VerticalAlignCenterButton}
+          />
+          <Button
+            {...verticalAlignmentAsProps}
+            forwardedAs={VerticalAlignBottomButton}
+          />
+          <Toolbar.Separator />
+          <Button {...asProps} forwardedAs={HeadlineOneButton} />
+          <Button {...asProps} forwardedAs={HeadlineTwoButton} />
+          <Button {...asProps} forwardedAs={HeadlineThreeButton} />
+          <Button {...asProps} forwardedAs={OrderedListButton} />
+          <Button {...asProps} forwardedAs={UnorderedListButton} />
           <Toolbar.Separator transparent />
         </Toolbar.Group>
-        <ContentBlockToolbarGroup dispatch={dispatch} />
-      </Toolbar>
-    )
+      )}
+      {children}
+    </Toolbar>
   );
 }

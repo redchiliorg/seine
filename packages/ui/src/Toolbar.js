@@ -2,8 +2,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import ActionButton from './ActionButton';
-import Button from './Button';
 import Paper from './Paper';
 
 const Container = styled(Paper)`
@@ -31,12 +29,6 @@ Toolbar.Separator = styled.div`
   margin: 0.5em;
   opacity: ${({ transparent = false }) => (transparent ? 0 : 1.0)};
 `;
-
-const ToolbarButton = (Toolbar.Button = styled(Button)``);
-
-Toolbar.ActionButton = (props) => (
-  <ToolbarButton as={ActionButton} {...props} size={'small'} />
-);
 
 /**
  * @description Toolbar

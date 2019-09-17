@@ -1,1 +1,1 @@
-export { default as ContentEditor } from './ContentEditor';
+export { default as Editor } from './Editor';

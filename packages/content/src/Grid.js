@@ -6,6 +6,11 @@ export type Props = (GridBody & GridFormat) & {
   children: React.ChildrenArray<React.Node>,
 };
 
+export const defaultGridColumns = 'repeat(auto-fit, minmax(300px, 1fr))';
+export const defaultGridColumnGap = 20;
+export const defaultGridRowGap = 20;
+export const defaultGridRows = '';
+
 /**
  * @description Grid container content component.
  * @param {Props} props
@@ -13,10 +18,12 @@ export type Props = (GridBody & GridFormat) & {
  */
 export default function Grid({
   children,
-  columns = 'repeat(auto-fit, minmax(300px, 1fr))',
-  columnGap = 20,
-  rows = '',
-  rowGap = 20,
+
+  columns = defaultGridColumns,
+  columnGap = defaultGridColumnGap,
+
+  rows = defaultGridRows,
+  rowGap = defaultGridRowGap,
 }: Props) {
   return (
     <div

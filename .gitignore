@@ -10,7 +10,7 @@ node_modules/
 
 # production
 dist/
-lib/
+packages/*/lib
 
 # idea
 .idea
@@ -28,7 +28,6 @@ atlassian-ide-plugin.xml
 .idea/httpRequests
 
 
-
 # misc
 .DS_Store
 .env.local
@@ -39,3 +38,5 @@ atlassian-ide-plugin.xml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+stats.html

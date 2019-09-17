@@ -1,15 +1,16 @@
 {
   "name": "@seine/core",
-  "version": "0.3.0",
+  "version": "0.3.15",
   "description": "Seine core utils and types.",
-  "main": "lib/esm/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
     "uuid": "^3.3.2"
-  },
-  "peerDependencies": {
-    "react": "^16.8.6"
   }
 }

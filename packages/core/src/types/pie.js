@@ -2,19 +2,18 @@
 
 export type PieElement = {
   title: string,
-  percent: number,
-  color: string,
+  value: number,
+  color: Color,
 };
 
-export type PieBody = {
+export type ChartBody = {
   elements: PieElement[],
+  palette: $ReadOnlyArray<Color>,
 };
 
-export type PieFormat = {
-  fontSize: number,
-  innerFontColor: string,
-  outerFontColor: string,
-  padding: number,
+export type ChartFormat = {
+  innerFontColor: Color,
+  outerFontColor: Color,
   size: number,
 };
 
