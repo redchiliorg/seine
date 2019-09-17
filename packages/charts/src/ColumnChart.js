@@ -69,13 +69,15 @@ export default function ColumnChart({
           ].join(' '),
         [groups.length, titles.length]
       )}
+      height={'100%'}
+      width={'100%'}
       {...viewProps}
     >
       {React.useMemo(
         () =>
           groups.map(([group, elements], index) => (
             <ChartColumnGroup
-              key={group}
+              key={index}
               elements={elements}
               fontSize={1.5 * fontSize}
               group={group}
