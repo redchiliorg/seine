@@ -5,8 +5,9 @@ import { typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
 
 import AddTextBlockButton from './AddTextBlockButton';
 import AddSiblingTextsButton from './AddSiblingTextsButton';
-import AddPieButton from './AddPieButton';
-import AddBarchartButton from './AddBarchartButton';
+import AddPieButton from './AddPieChartButton';
+import AddChartButton from './AddBarChartButton';
+import AddColumnChartButton from './AddColumnChartButton';
 
 type Props = Block & {
   blocks: $ReadOnlyArray<Block>,
@@ -31,7 +32,8 @@ export default function ContentToolbar({
         <AddTextBlockButton dispatch={dispatch} id={id} blocks={blocks} />
         <AddSiblingTextsButton dispatch={dispatch} id={id} blocks={blocks} />
         <AddPieButton dispatch={dispatch} id={id} blocks={blocks} />
-        <AddBarchartButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddChartButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddColumnChartButton dispatch={dispatch} id={id} blocks={blocks} />
       </Toolbar.Group>
       {children}
     </Toolbar>

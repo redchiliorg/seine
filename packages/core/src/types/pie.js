@@ -1,18 +1,17 @@
 // @flow
-type Color = string;
 
 export type PieElement = {
   title: string,
-  percent: number,
+  value: number,
   color: Color,
 };
 
-export type PieBody = {
+export type ChartBody = {
   elements: PieElement[],
   palette: $ReadOnlyArray<Color>,
 };
 
-export type PieFormat = {
+export type ChartFormat = {
   innerFontColor: Color,
   outerFontColor: Color,
   size: number,

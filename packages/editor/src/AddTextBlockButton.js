@@ -1,8 +1,8 @@
 // @flow
-import { ActionButton } from '@seine/ui';
-import type { Action, Block, BlockId } from '@seine/core';
-import { blockTypes, CREATE_BLOCK, createBlock } from '@seine/core';
 import * as React from 'react';
+import { blockTypes, CREATE_BLOCK, createBlock } from '@seine/core';
+import type { Action, Block, BlockId } from '@seine/core';
+import { ActionButton } from '@seine/ui';
 import { toRawContent } from '@seine/draft';
 
 type Props = {

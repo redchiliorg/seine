@@ -1,13 +1,11 @@
 // @flow
 import * as React from 'react';
 import type { Block } from '@seine/core';
-import { blockTypes, createBlock } from '@seine/core';
+import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
-import { Pie } from '@seine/pie';
-import { Barchart } from '@seine/barchart';
+import { Chart } from '@seine/charts';
 
 import Grid from './Grid';
-import Page from './Page';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
@@ -16,21 +14,20 @@ export type Props = {
 };
 
 export const defaultBlockRenderMap = {
-  [blockTypes.PAGE]: Page,
-  [blockTypes.DRAFT]: Draft,
+  [blockTypes.PAGE]: ({ children }) => children,
   [blockTypes.GRID]: Grid,
-  [blockTypes.PIE]: Pie,
-  [blockTypes.BARCHART]: Barchart,
+  [blockTypes.DRAFT]: Draft,
+  [blockTypes.CHART]: Chart,
 };
 
 /**
- * @description Structured content.
+ * @description Content blocks default renderer.
  * @param {Props} props
  * @returns {React.Node}
  */
 function Content({
   blockRenderMap = defaultBlockRenderMap,
-  parent = createBlock(blockTypes.PAGE),
+  parent,
   children,
 }: Props): React.Node {
   return children
