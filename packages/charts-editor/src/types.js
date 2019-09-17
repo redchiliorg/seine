@@ -15,22 +15,6 @@ export type ChartEditorProps = {
   },
 } & ChartProps;
 
-export type EditableGroupProps = {
-  x: number,
-  y: number,
-  width: number,
-  height: number,
-  maxWidth: number,
-  maxHeight: number,
-  lineHeight: number,
-  value: number,
-  title: string,
-  fontSize: number,
-  size: number,
-  dispatch: (ElementsAction) => any,
-  index: number,
-};
-
 export type ChartSVGElement = {
   getBBox: () => DOMRectReadOnly,
 } & HTMLElement;

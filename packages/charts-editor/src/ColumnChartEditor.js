@@ -1,16 +1,14 @@
 // @flow
 import * as React from 'react';
-import { EditableGroup, EditableOverlay } from '@seine/ui';
+import { ForeignInput } from '@seine/ui';
 import {
   ColumnChart,
-  defaultChartFontSize,
-  defaultChartLineHeight,
-  defaultChartPalette,
-  defaultChartSize,
+  ColumnChartLegend,
+  ColumnChartLegendProps,
 } from '@seine/charts';
+import { UPDATE_ELEMENT } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
-import ColumnChartEditorView from './ColumnChartEditorView';
 
 /**
  * @description Editor of column chart
@@ -21,55 +19,55 @@ export default function ColumnChartEditor({
   dispatchElements,
   dispatch,
   editor,
-
-  elements,
-
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
-  palette = defaultChartPalette,
-  size = defaultChartSize,
-
   ...chartProps
 }: Props) {
-  const [overlay, setOverlay] = React.useState(null);
-  const overlayBox = overlay && overlay.getBoundingClientRect();
-
-  const barLineSize = fontSize * 3;
-  const maxSize = elements.length * barLineSize;
-
   return (
-    <>
-      <EditableOverlay ref={setOverlay}>
-        {!!(editor && overlayBox) &&
-          elements.map(
-            ({ value, title }, index) =>
-              index in editor && (
-                <EditableGroup
-                  {...editor[index]}
-                  y={editor[index].y + barLineSize * index}
-                  width={editor[index].width}
-                  height={editor[index].height}
-                  size={maxSize}
-                  maxWidth={overlayBox.width}
-                  maxHeight={overlayBox.height}
-                >
-                  &nbsp;
-                </EditableGroup>
-              )
-          )}
-      </EditableOverlay>
+    <ColumnChart
+      {...chartProps}
+      as={React.useCallback(
+        ({ children, ...viewProps }) => (
+          <svg {...viewProps}>
+            {children}
+            {React.Children.map(children, (child: ?React.Node) => {
+              if (React.isValidElement(child)) {
+                switch (child.type) {
+                  case ColumnChartLegend: {
+                    const {
+                      fontSize,
+                      lineHeight,
+                      size,
+                      title,
+                      width,
+                      x,
+                      y,
+                    }: ColumnChartLegendProps = child.props;
 
-      <ColumnChart
-        {...chartProps}
-        elements={elements}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
-        palette={palette}
-        size={size}
-        /* view and its props */
-        as={ColumnChartEditorView}
-        dispatch={dispatch}
-      />
-    </>
+                    return (
+                      <ForeignInput
+                        fontSize={fontSize}
+                        height={size}
+                        lineHeight={lineHeight}
+                        onChange={() =>
+                          dispatch({ type: UPDATE_ELEMENT, index: child.key })
+                        }
+                        value={title}
+                        width={width}
+                        x={x + size + fontSize * lineHeight}
+                        y={y}
+                      />
+                    );
+                  }
+
+                  default:
+                    return null;
+                }
+              }
+            })}
+            )}
+          </svg>
+        ),
+        [dispatch]
+      )}
+    />
   );
 }

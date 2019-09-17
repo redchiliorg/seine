@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import { splitEvery } from 'ramda';
 
 import {
   defaultChartDy,
@@ -11,52 +10,11 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { groupElements, uniqElementTitles } from './helpers';
+import ColumnChartLegend from './ColumnChartLegend';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
 };
-
-/**
- * @description Legend of column chart.
- * @param {Props} props
- * @returns {React.Node}
- */
-function ColumnChartLegend({
-  fontSize,
-  lineHeight,
-  palette,
-  titles,
-
-  size = 10,
-  x = 62,
-  y = 141,
-}: {
-  fontSize: number,
-  lineHeight: number,
-  palette: number,
-  titles: string[],
-  size?: number,
-  x?: number,
-  y?: number,
-}) {
-  const gutter = fontSize * lineHeight;
-
-  return titles.map((title, index) => (
-    <g key={index} fontSize={fontSize}>
-      <rect
-        x={x}
-        y={y + (size + gutter) * index}
-        width={size}
-        height={size}
-        fill={palette[index % palette.length]}
-      />
-      <text x={x + size + gutter} y={y + (size + gutter) * index + gutter}>
-        {title}
-      </text>
-    </g>
-  ));
-}
-ColumnChart.Legend = ColumnChartLegend;
 
 /**
  * @description Column chart content block renderer.
@@ -85,7 +43,7 @@ export default function ColumnChart({
 
   ...viewProps
 }: Props) {
-  const [maxValue, , titleGroups, groups] = React.useMemo(
+  const [maxValue, , titles, groups] = React.useMemo(
     () => [
       dy <= initialMaxValue
         ? initialMaxValue
@@ -93,7 +51,7 @@ export default function ColumnChart({
       initialMaxValue > initialMinValue
         ? initialMinValue
         : Math.min(...elements.map(({ value }) => value)),
-      splitEvery(3, uniqElementTitles(elements)),
+      uniqElementTitles(elements),
       groupElements(elements),
     ],
     [dy, elements, initialMaxValue, initialMinValue]
@@ -107,9 +65,9 @@ export default function ColumnChart({
             0,
             0,
             groups.length > 2 ? 99 * groups.length : 198,
-            titleGroups.length ? 210 : 140,
+            titles.length ? 210 : 140,
           ].join(' '),
-        [groups.length, titleGroups.length]
+        [groups.length, titles.length]
       )}
       {...viewProps}
     >
@@ -142,20 +100,19 @@ export default function ColumnChart({
         maxValue={maxValue}
         title={title}
       />
-      {React.useMemo(
-        () =>
-          titleGroups.map((titles, index) => (
-            <ColumnChartLegend
-              key={index}
-              fontSize={1.5 * fontSize}
-              lineHeight={lineHeight}
-              palette={palette.slice(index * 3)}
-              titles={titles}
-              x={62 + 80 * index}
-            />
-          )),
-        [fontSize, lineHeight, palette, titleGroups]
-      )}
+      {titles.map((title, index) => (
+        <ColumnChartLegend
+          key={index}
+          fill={palette[index % palette.length]}
+          fontSize={1.5 * fontSize}
+          lineHeight={lineHeight}
+          size={10}
+          title={title}
+          width={80}
+          x={62}
+          y={141 + (10 + fontSize * lineHeight) * index}
+        />
+      ))}
     </View>
   );
 }

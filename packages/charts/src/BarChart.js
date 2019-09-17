@@ -9,7 +9,6 @@ import {
   defaultChartSize,
 } from './constants';
 import type { ChartProps } from './types';
-import { useChartFormat } from './helpers';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -26,10 +25,14 @@ export default function BarChart({
   palette = defaultChartPalette,
   size = defaultChartSize,
 }: Props) {
-  const { barHeight, fontHeight, fontWidth } = useChartFormat(
-    fontSize,
-    lineHeight
-  );
+  const { barHeight, fontHeight, fontWidth } = React.useMemo(() => {
+    return {
+      barHeight: fontSize * 6,
+      fontHeight: fontSize * lineHeight,
+      fontWidth: fontSize / 2,
+      textPadding: fontSize,
+    };
+  }, [fontSize, lineHeight]);
 
   const titleMaxLen =
     Math.max(...elements.map(({ title }) => title.length)) * fontWidth;

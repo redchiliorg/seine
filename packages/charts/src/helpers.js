@@ -17,7 +17,6 @@ import {
   uniq,
 } from 'ramda';
 import type { ChartElement } from '@seine/core';
-import { useMemo } from 'react';
 
 /**
  * @function
@@ -65,20 +64,3 @@ export const uniqElementTitles: (
   map(prop('title')),
   uniq
 );
-
-/**
- * @description Use format of chart element.
- * @param {number} fontSize
- * @param {number} lineHeight
- * @returns {object}
- */
-export function useChartFormat(fontSize: number, lineHeight: number) {
-  return useMemo(() => {
-    return {
-      barHeight: fontSize * 6,
-      fontHeight: fontSize * lineHeight,
-      fontWidth: fontSize / 2,
-      textPadding: fontSize,
-    };
-  }, [fontSize, lineHeight]);
-}

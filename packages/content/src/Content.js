@@ -11,7 +11,6 @@ export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
   parent: Block,
   children: $ReadOnlyArray<Block>,
-  as?: React.ComponentType<*>,
 };
 
 export const defaultBlockRenderMap = {

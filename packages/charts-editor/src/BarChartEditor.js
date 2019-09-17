@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
 import {
-  ActionInput,
   EditableElement,
   EditableGroup,
   EditableInput,
@@ -46,41 +45,61 @@ export default function BarChartEditor({
   return (
     <>
       <EditableOverlay ref={setOverlay}>
-        {!!(editor && overlayBox) &&
-          elements.map(
-            ({ value, title }, index) =>
-              index in editor && (
-                <EditableGroup
-                  maxWidth={overlayBox.width}
-                  maxHeight={overlayBox.height}
-                  width={editor[index].width}
-                  height={editor[index].height}
-                  x={editor[index].x}
-                  y={editor[index].y + barLineSize * index}
-                  size={maxSize}
-                >
-                  <EditableInput
-                    as={ActionInput}
-                    fontSize={`${0.65 * fontSize}em`}
-                    name={'title'}
-                    value={title}
-                    action={{ type: UPDATE_ELEMENT, index }}
-                    dispatch={dispatchElements}
-                    width={size / 2}
-                  />
-                  <EditableInput
-                    as={ActionInput}
-                    fontSize={`${0.65 * fontSize}em`}
-                    name={'value'}
-                    type={'number'}
-                    value={value}
-                    action={{ type: UPDATE_ELEMENT, index }}
-                    dispatch={dispatchElements}
-                    align={'right'}
-                  />
-                </EditableGroup>
-              )
-          )}
+        {React.useMemo(
+          () =>
+            !!(editor && overlayBox) &&
+            elements.map(
+              ({ value, title }, index) =>
+                index in editor && (
+                  <EditableGroup
+                    maxWidth={overlayBox.width}
+                    maxHeight={overlayBox.height}
+                    width={editor[index].width}
+                    height={editor[index].height}
+                    x={editor[index].x}
+                    y={editor[index].y + barLineSize * index}
+                    size={maxSize}
+                  >
+                    <EditableInput
+                      fontSize={`${0.65 * fontSize}em`}
+                      onChange={({ currentTarget }) =>
+                        dispatchElements({
+                          type: UPDATE_ELEMENT,
+                          index,
+                          body: { title: currentTarget.value },
+                        })
+                      }
+                      value={title}
+                      width={size / 2}
+                    />
+                    <EditableInput
+                      align={'right'}
+                      fontSize={`${0.65 * fontSize}em`}
+                      name={'value'}
+                      onChange={({ currentTarget }) =>
+                        dispatchElements({
+                          type: UPDATE_ELEMENT,
+                          index,
+                          body: { value: +currentTarget.value },
+                        })
+                      }
+                      type={'number'}
+                      value={value}
+                    />
+                  </EditableGroup>
+                )
+            ),
+          [
+            barLineSize,
+            dispatchElements,
+            editor,
+            elements,
+            fontSize,
+            maxSize,
+            overlayBox,
+            size,
+          ]
+        )}
       </EditableOverlay>
 
       <BarChart

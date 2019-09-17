@@ -6,7 +6,6 @@ export { default as Paper } from './Paper';
 export { default as Toolbar } from './Toolbar';
 
 export { default as ActionButton } from './ActionButton';
-export { default as ActionInput } from './ActionInput';
 export { default as CompositeActionButton } from './CompositeActionButton';
 
 export { default as BlockContainer } from './BlockContainer';
@@ -15,3 +14,4 @@ export { default as EditableElement } from './EditableElement';
 export { default as EditableGroup } from './EditableGroup';
 export { default as EditableInput } from './EditableInput';
 export { default as EditableOverlay } from './EditableOverlay';
+export { default as ForeignInput } from './ForeignInput';
