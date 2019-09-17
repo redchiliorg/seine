@@ -1,12 +1,11 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import Editor from 'draft-js/lib/DraftEditor.react';
 import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
-import { useSelectableBlockProps } from '@seine/core';
-import { Draft } from '@seine/draft';
-
-import DraftEditorContext from './DraftEditorContext';
+import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
+import { useSelectableBlockProps } from '@seine/ui';
+import { toDraftEditor, toRawContent } from '@seine/draft';
+import { Editor } from 'draft-js';
 
 type Props = (DraftBody & DraftFormat & BlockEditor) & {
   id: string,
@@ -21,8 +20,8 @@ const Container = styled.div`
     display: grid;
     align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
   }
-  ${({ id, selection }: Props) =>
-    selection.includes(id)
+  ${({ isSelected }: Props) =>
+    isSelected
       ? css`
           border: 1px dashed blue;
         `
@@ -30,6 +29,10 @@ const Container = styled.div`
           border: 1px solid transparent;
         `}
 `;
+
+export const defaultDraftEditor = {
+  state: null,
+};
 
 /**
  * @description Draft block editor component.
@@ -44,29 +47,56 @@ export default function DraftEditor({
   blocks,
   textAlignment,
   verticalAlignment,
+  editor: { state = defaultDraftEditor.state } = defaultDraftEditor,
   ...containerProps
 }: Props) {
-  const { editorState, setEditorState } = React.useContext(DraftEditorContext);
+  const readOnly = selection.length !== 1 || selection[0] !== id;
+
+  const editorRef = React.useRef<?Editor>(null);
+
+  React.useEffect(() => {
+    const { current } = editorRef;
+    if (!readOnly && current && current.editor) {
+      current.editor.focus();
+    }
+  }, [readOnly]);
+
+  const editorState = React.useMemo(
+    () => state || toDraftEditor({ blocks, entityMap }),
+    // eslint-disable-next-line
+    [id, state]
+  );
+
+  const contentState = editorState && editorState.getCurrentContent();
+  React.useEffect(() => {
+    if (!readOnly) {
+      dispatch({
+        type: UPDATE_BLOCK_BODY,
+        body: toRawContent(contentState),
+      });
+    }
+  }, [contentState, dispatch, readOnly]);
 
   return (
     <Container
+      verticalAlignment={verticalAlignment}
       {...useSelectableBlockProps({ id, selection }, dispatch)}
       {...containerProps}
     >
-      {selection.length === 1 && selection[0] === id && editorState ? (
-        <Editor
-          textAlignment={textAlignment}
-          editorState={editorState}
-          onChange={setEditorState}
-        />
-      ) : (
-        <Draft
-          textAlignment={textAlignment}
-          verticalAlignment={verticalAlignment}
-          entityMap={entityMap}
-          blocks={blocks}
-        />
-      )}
+      <Editor
+        textAlignment={textAlignment}
+        editorState={editorState}
+        ref={editorRef}
+        onChange={React.useCallback(
+          (state) =>
+            dispatch({
+              type: UPDATE_BLOCK_EDITOR,
+              editor: { state },
+            }),
+          [dispatch]
+        )}
+        readOnly={readOnly}
+      />
     </Container>
   );
 }

@@ -1,14 +1,10 @@
 // @flow
 import * as React from 'react';
+import type { Action } from '@seine/core';
 
 import Button from './Button';
 
-type Action = { type: string, [string]: any };
-
-type Props = {
-  action: Action,
-  dispatch: (Action) => any,
-};
+type Props = Action & React.ElementProps<HTMLButtonElement>;
 
 /**
  * @description Declarative action button.
@@ -16,16 +12,20 @@ type Props = {
  * @returns {React.Node}
  */
 export default function ActionButton({
-  action,
+  className,
+  children,
   dispatch,
-  type = 'button',
-  ...buttonProps
+  color,
+  title,
+  ...action
 }: Props) {
   return (
     <Button
-      {...buttonProps}
-      type={type}
+      color={color}
+      title={title}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
-    />
+    >
+      {children}
+    </Button>
   );
 }

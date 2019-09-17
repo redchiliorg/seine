@@ -1,18 +1,18 @@
 // @flow
 import * as React from 'react';
-import type { Action } from '@seine/core';
-import { Toolbar, ContentBlockToolbarGroup } from '@seine/ui';
+import type { Action, Block } from '@seine/core';
+import { typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
 
-import {
-  ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION,
-  ADD_SIBLING_TEXT_BLOCKS_ACTION,
-  ADD_TEXT_BLOCK_ACTION,
-  ADD_TITLED_PIE_ACTION,
-  ADD_TITLED_PIE_WITH_DESCRIPTION_ACTION,
-} from './constants';
+import AddTextBlockButton from './AddTextBlockButton';
+import AddSiblingTextsButton from './AddSiblingTextsButton';
+import AddPieButton from './AddPieChartButton';
+import AddChartButton from './AddBarChartButton';
+import AddColumnChartButton from './AddColumnChartButton';
 
-type Props = {
+type Props = Block & {
+  blocks: $ReadOnlyArray<Block>,
   dispatch: (Action) => any,
+  children: React.Element<typeof BlockToolbarGroup>,
 };
 
 /**
@@ -20,55 +20,22 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ContentToolbar({ dispatch, selection }: Props) {
+export default function ContentToolbar({
+  id,
+  blocks,
+  dispatch,
+  children,
+}: Props) {
   return (
     <Toolbar>
       <Toolbar.Group>
-        <Toolbar.ActionButton
-          title={'Add text block'}
-          dispatch={dispatch}
-          action={ADD_TEXT_BLOCK_ACTION}
-        >
-          + text
-        </Toolbar.ActionButton>
-
-        <Toolbar.ActionButton
-          title={'Add sibling text blocks'}
-          dispatch={dispatch}
-          action={ADD_SIBLING_TEXT_BLOCKS_ACTION}
-        >
-          + 2 text columns
-        </Toolbar.ActionButton>
+        <AddTextBlockButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddSiblingTextsButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddPieButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddChartButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddColumnChartButton dispatch={dispatch} id={id} blocks={blocks} />
       </Toolbar.Group>
-
-      <Toolbar.Separator />
-
-      <Toolbar.Group>
-        <Toolbar.ActionButton
-          title={'Add titled pie'}
-          dispatch={dispatch}
-          action={ADD_TITLED_PIE_ACTION}
-        >
-          + pie chart
-        </Toolbar.ActionButton>
-
-        <Toolbar.ActionButton
-          title={'Add titled pie with description'}
-          dispatch={dispatch}
-          action={ADD_TITLED_PIE_WITH_DESCRIPTION_ACTION}
-        >
-          + pie chart & text
-        </Toolbar.ActionButton>
-
-        <Toolbar.ActionButton
-          title={'Add description with titled pie'}
-          dispatch={dispatch}
-          action={ADD_DESCRIPTION_WITH_TITLED_PIE_ACTION}
-        >
-          + text & pie chart
-        </Toolbar.ActionButton>
-      </Toolbar.Group>
-      {selection.length > 0 && <ContentBlockToolbarGroup dispatch={dispatch} />}
+      {children}
     </Toolbar>
   );
 }

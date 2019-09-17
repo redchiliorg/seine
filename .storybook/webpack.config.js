@@ -1,44 +1,16 @@
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        exclude: /\.module\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: false,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.module\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(png|jpg|gif|svg|eot|woff|woff2|ttf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {},
-          },
-        ],
-      },
-    ],
-  },
+const path = require('path');
+
+const { workspaces } = require('../package.json');
+
+module.exports = async ({ config, mode }) => {
+  workspaces.forEach((workspace) => {
+    const workSpacePath = path.resolve(workspace);
+    const packageJsonPath = path.join(workSpacePath, 'package.json');
+    const entryPath = path.join(workSpacePath, 'src', 'index.js');
+
+    const { name: moduleId } = require(packageJsonPath);
+
+    config.resolve.alias[moduleId] = require.resolve(entryPath);
+  });
+  return config;
 };

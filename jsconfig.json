@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@seine/*": ["./packages/*/src"]
+    }
+  },
+  "exclude": ["node_modules", "lib"]
+}

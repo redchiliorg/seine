@@ -1,27 +1,32 @@
 // @flow
-import type { GridBody, GridFormat } from './grid';
+import type { Action } from '../reducers';
+
 import type { PageBody, PageFormat } from './page';
+import type { GridBody, GridFormat } from './grid';
 import type { DraftBody, DraftFormat } from './draft';
-import type { PieBody, PieFormat } from './pie';
-import { GRID } from './grid';
-import { PAGE } from './page';
-import { DRAFT } from './draft';
-import { PIE } from './pie';
+import type { ChartBody, ChartFormat } from './charts';
+import * as Page from './page';
+import * as Grid from './grid';
+import * as Draft from './draft';
+import * as Charts from './charts';
 
-export type { PieElement } from './pie';
-
-export const blockTypes = { GRID, PAGE, DRAFT, PIE };
+export const blockTypes = {
+  ...Page,
+  ...Grid,
+  ...Draft,
+  ...Charts,
+};
 
 export type BlockType = $Values<typeof blockTypes>;
 
-export type BlockBody = null | PageBody | GridBody | PieBody | DraftBody;
+export type BlockBody = null | PageBody | GridBody | DraftBody | ChartBody;
 
 export type BlockFormat =
   | null
   | PageFormat
   | GridFormat
-  | PieFormat
-  | DraftFormat;
+  | DraftFormat
+  | ChartFormat;
 
 export type BlockId = string | null;
 
@@ -34,16 +39,12 @@ export type Block = {
 };
 
 export type BlockEditor = {
+  dispatch: (Action) => any,
   selection: BlockId[],
 };
 
-export type {
-  GridBody,
-  GridFormat,
-  PageBody,
-  PageFormat,
-  DraftBody,
-  DraftFormat,
-  PieBody,
-  PieFormat,
-};
+export * from './charts';
+export * from './draft';
+export * from './grid';
+export * from './page';
+export * from './theme';
