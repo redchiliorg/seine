@@ -18,6 +18,7 @@
     "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c ../../rollup.config.js",
     "release:publish": "node scripts/publish.js",
     "test": "run-s test:*",
+    "test:build": "run-s release:build",
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
