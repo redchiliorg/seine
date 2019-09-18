@@ -7,6 +7,7 @@ import {
   CREATE_BLOCK,
   createBlock,
   createBlocksFromTree,
+  createTitleIdentityBlockElements,
 } from '@seine/core';
 import { toRawContent } from '@seine/draft';
 import { CompositeActionButton } from '@seine/ui';
@@ -42,7 +43,7 @@ export default ({ id, dispatch, blocks }: Props) => (
             {
               type: blockTypes.CHART,
               body: {
-                elements: [
+                elements: createTitleIdentityBlockElements([
                   {
                     title: 'First Column',
                     value: 35,
@@ -73,7 +74,7 @@ export default ({ id, dispatch, blocks }: Props) => (
                     value: 35,
                     group: 'group 3',
                   },
-                ],
+                ]),
               },
               format: {
                 kind: chartTypes.COLUMN,

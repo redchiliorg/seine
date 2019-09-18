@@ -4,7 +4,7 @@ import type { Action } from '../reducers';
 import type { PageBody, PageFormat } from './page';
 import type { GridBody, GridFormat } from './grid';
 import type { DraftBody, DraftFormat } from './draft';
-import type { ChartBody, ChartFormat } from './charts';
+import type { ChartBody, ChartElement, ChartFormat } from './charts';
 import * as Page from './page';
 import * as Grid from './grid';
 import * as Draft from './draft';
@@ -16,6 +16,8 @@ export const blockTypes = {
   ...Draft,
   ...Charts,
 };
+
+export type BlockElement = ChartElement;
 
 export type BlockType = $Values<typeof blockTypes>;
 
