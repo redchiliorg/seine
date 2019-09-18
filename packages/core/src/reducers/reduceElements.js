@@ -1,30 +1,44 @@
 // @flow
-import type { ChartElement } from '../types';
+import type { BlockElement } from '../types';
 
 export const PUSH_ELEMENT = '@seine/charts/pushElement';
 export const UPDATE_ELEMENT = '@seine/charts/updateElement';
 export const REMOVE_ELEMENT = '@seine/charts/removeElement';
+export const UPDATE_ELEMENT_BY_ID = '@seine/charts/updateElementById';
+export const UPDATE_ELEMENT_BY_GROUP = '@seine/charts/updateElementByGroup';
 
 export const initialElements = [];
 
-type PushChartElementAction = {
+type PushBlockElementAction = {
   type: typeof PUSH_ELEMENT,
-  body: ChartElement,
+  body: $Shape<BlockElement>,
 };
-type UpdateChartElementAction = {
+type UpdateBlockElementAction = {
   type: typeof UPDATE_ELEMENT,
-  index: number,
-  body: ChartElement,
+  index: string,
+  body: $Shape<BlockElement>,
 };
-type RemoveChartElementAction = {
+type UpdateBlockElementByIdAction = {
+  type: typeof UPDATE_ELEMENT,
+  id: string,
+  body: BlockElement,
+};
+type UpdateBlockElementByGroup = {
+  type: typeof UPDATE_ELEMENT,
+  group: string,
+  body: BlockElement,
+};
+type RemoveBlockElementAction = {
   type: typeof REMOVE_ELEMENT,
   index: number,
 };
-export type ElementsState = ChartElement[];
+export type ElementsState = $ReadOnlyArray<BlockElement>;
 export type ElementsAction =
-  | PushChartElementAction
-  | UpdateChartElementAction
-  | RemoveChartElementAction;
+  | PushBlockElementAction
+  | UpdateBlockElementAction
+  | UpdateBlockElementByIdAction
+  | UpdateBlockElementByGroup
+  | RemoveBlockElementAction;
 
 /**
  * @description Reduce block elements actions.
@@ -45,6 +59,16 @@ export function reduceElements(
         { ...state[action.index], ...action.body },
         ...state.slice(action.index + 1),
       ];
+    case UPDATE_ELEMENT_BY_ID:
+      return state.map((element) =>
+        element.id === action.id ? { ...element, ...action.body } : element
+      );
+    case UPDATE_ELEMENT_BY_GROUP:
+      return state.map((element) =>
+        element.group === action.group
+          ? { ...element, ...action.body }
+          : element
+      );
     case REMOVE_ELEMENT:
       return [
         ...state.slice(0, action.index),

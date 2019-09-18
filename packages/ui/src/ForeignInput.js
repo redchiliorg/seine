@@ -12,14 +12,20 @@ type Props = {
 } & $Shape<HTMLInputElement>;
 
 const Input = styled.input`
-  ${({ fontSize, lineHeight, transform }) => css`
+  ${({ align = 'left', color, fontSize, lineHeight, transform, width }) => css`
+    ${color &&
+      css`
+        color: ${color};
+      `};
+    text-align: ${align};
     border: 0;
     display: block;
-    font-size: ${Math.floor(fontSize)}px;
+    font-size: ${fontSize}px;
     height: ${lineHeight * fontSize + fontSize}px;
     position: relative;
     transform: ${transform};
     transform-origin: left top;
+    width: ${width}px;
   `}
 `;
 
@@ -59,6 +65,7 @@ export default function ForeignInput({
           fontSize={fontSize / yScale}
           lineHeight={lineHeight}
           transform={`scale(${xScale},${yScale})`}
+          width={width / xScale}
           {...inputProps}
         />
       </div>

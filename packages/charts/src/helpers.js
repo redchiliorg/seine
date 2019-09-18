@@ -1,7 +1,7 @@
 // @flow
 import {
+  addIndex,
   append,
-  ascend,
   converge,
   filter,
   groupBy,
@@ -11,10 +11,9 @@ import {
   pipe,
   prepend,
   prop,
+  reduce,
   reject,
-  sortWith,
   toPairs,
-  uniq,
 } from 'ramda';
 import type { ChartElement } from '@seine/core';
 
@@ -26,12 +25,7 @@ import type { ChartElement } from '@seine/core';
 export const groupElements: (
   elements: ChartElement[]
 ) => $ReadOnlyArray<[?string, ChartElement[]]> = pipe(
-  sortWith([
-    /* ascending sort by group */
-    ascend(prop('group')),
-    /* ascending sort by value */
-    ascend(prop('value')),
-  ]),
+  addIndex(map)((element, index) => ({ ...element, index })),
 
   converge(append, [
     /* take [null, elements] for ungrouped elements */
@@ -52,15 +46,10 @@ export const groupElements: (
   reject(([_, { length }]) => length === 0)
 );
 
-/**
- * @function
- * @param {ChartElement[]} elements
- * @returns {string[]}
- */
-export const uniqElementTitles: (
+export const titleIdentityElements: (
   elements: ChartElement[]
-) => $ReadOnlyArray<string> = pipe(
-  filter(has('group')),
-  map(prop('title')),
-  uniq
+) => $ReadOnlyArray<{ id: string, title: string }> = reduce(
+  (acc, { id, title }) =>
+    !acc.some((element) => element.id === id) ? [...acc, { id, title }] : acc,
+  []
 );

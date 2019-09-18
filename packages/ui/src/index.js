@@ -15,3 +15,5 @@ export { default as EditableGroup } from './EditableGroup';
 export { default as EditableInput } from './EditableInput';
 export { default as EditableOverlay } from './EditableOverlay';
 export { default as ForeignInput } from './ForeignInput';
+export { default as Input } from './Input';
+export { default as Label } from './Label';
