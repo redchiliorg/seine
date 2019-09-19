@@ -30,6 +30,7 @@ function BarChartEditorView({
   children,
   dispatchElements,
   fontSize,
+  selection,
   ...viewProps
 }) {
   return (

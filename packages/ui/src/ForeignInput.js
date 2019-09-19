@@ -7,16 +7,28 @@ type Props = {
   fontSize: number,
   height: number,
   lineHeight?: number,
-  width: number,
+  width?: number,
   x: number,
   y: number,
 } & $Shape<HTMLInputElement>;
 
 const Input = styled.input`
-  ${({ align = 'left', color, fontSize, lineHeight, transform, width }) => css`
+  ${({
+    align = 'left',
+    color,
+    fontSize,
+    lineHeight,
+    transform,
+    transparent,
+    width,
+  }) => css`
     ${color &&
       css`
         color: ${color};
+      `};
+    ${transparent &&
+      css`
+        background: transparent;
       `};
     text-align: ${align};
     border: 0;
@@ -26,7 +38,7 @@ const Input = styled.input`
     position: relative;
     transform: ${transform};
     transform-origin: left top;
-    width: ${width}px;
+    width: ${width ? width + 'px' : 'auto'};
   `}
 `;
 
@@ -39,7 +51,8 @@ export default function ForeignInput({
   fontSize,
   height,
   lineHeight = null,
-  width,
+  width = null,
+  transparent = false,
   x,
   y,
   ...inputProps
@@ -67,6 +80,7 @@ export default function ForeignInput({
           lineHeight={lineHeight}
           transform={`scale(${xScale},${yScale})`}
           width={width / xScale}
+          transparent={transparent}
           {...inputProps}
         />
       </div>

@@ -19,7 +19,7 @@ const defaultBody = { elements: [] };
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartToolbar({
+export default function PieChartToolbar({
   id,
   format,
   body,
@@ -30,13 +30,13 @@ export default function BarChartToolbar({
   return (
     <Toolbar>
       <Toolbar.Group>
-        <AddBarChartElementButton
+        <AddPieChartElementButton
           body={body}
           dispatch={dispatch}
           format={format}
           id={id}
         />
-        <RemoveBarChartElementButton
+        <RemovePieChartElementButton
           body={body}
           dispatch={dispatch}
           format={format}
@@ -49,7 +49,7 @@ export default function BarChartToolbar({
 }
 
 // eslint-disable-next-line
-function AddBarChartElementButton({ id, dispatch, body }) {
+function AddPieChartElementButton({ id, dispatch, body }) {
   return (
     <ActionButton
       id={id}
@@ -62,7 +62,7 @@ function AddBarChartElementButton({ id, dispatch, body }) {
             ...body.elements,
             createBlockElement({
               title: `Item #${body.elements.length + 1}`,
-              value: 0,
+              value: 10,
             }),
           ],
         }),
@@ -75,7 +75,7 @@ function AddBarChartElementButton({ id, dispatch, body }) {
 }
 
 // eslint-disable-next-line
-function RemoveBarChartElementButton({ body, dispatch, id }) {
+function RemovePieChartElementButton({ body, dispatch, id }) {
   return (
     <ActionButton
       id={id}

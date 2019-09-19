@@ -10,6 +10,10 @@ export type { Props as BarChartTitleProps } from './BarChartTitle';
 export type { Props as BarChartValueProps } from './BarChartValue';
 
 export { default as PieChart } from './PieChart';
+export { default as PieChartTitle } from './PieChartTitle';
+export { default as PieChartValue } from './PieChartValue';
+export type { Props as PieChartTitleProps } from './PieChartTitle';
+export type { Props as PieChartValueProps } from './PieChartValue';
 
 export { default as ColumnChart } from './ColumnChart';
 export { default as ColumnChartLegend } from './ColumnChartLegend';
