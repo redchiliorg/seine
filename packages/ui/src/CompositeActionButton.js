@@ -24,6 +24,7 @@ export default function CompositeActionButton({
   return (
     <Button
       {...buttonProps}
+      size={'small'}
       type={type}
       onClick={React.useCallback(() => actions.forEach(dispatch), [
         dispatch,

@@ -4,6 +4,10 @@ export * from './helpers';
 export { default as Chart, defaultChartRenderMap } from './Chart';
 
 export { default as BarChart } from './BarChart';
+export { default as BarChartTitle } from './BarChartTitle';
+export { default as BarChartValue } from './BarChartValue';
+export type { Props as BarChartTitleProps } from './BarChartTitle';
+export type { Props as BarChartValueProps } from './BarChartValue';
 
 export { default as PieChart } from './PieChart';
 

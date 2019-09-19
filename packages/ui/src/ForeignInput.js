@@ -3,9 +3,10 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 
 type Props = {
+  color?: string,
   fontSize: number,
   height: number,
-  lineHeight: number,
+  lineHeight?: number,
   width: number,
   x: number,
   y: number,
@@ -21,7 +22,7 @@ const Input = styled.input`
     border: 0;
     display: block;
     font-size: ${fontSize}px;
-    height: ${lineHeight * fontSize + fontSize}px;
+    height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
     position: relative;
     transform: ${transform};
     transform-origin: left top;
@@ -37,7 +38,7 @@ const Input = styled.input`
 export default function ForeignInput({
   fontSize,
   height,
-  lineHeight,
+  lineHeight = null,
   width,
   x,
   y,
