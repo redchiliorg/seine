@@ -22,11 +22,12 @@ export type ChartFormat = {
 };
 
 export type ChartElement = {
+  id: string,
   group: string,
   title: string,
   value: number,
 };
 export type ChartBody = {
-  elements: $ReadOnlyArray<Element>,
+  elements: $ReadOnlyArray<ChartElement>,
   title: string,
 };

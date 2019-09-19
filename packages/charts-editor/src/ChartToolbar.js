@@ -1,8 +1,12 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, ChartBody, BlockId } from '@seine/core';
-import { UPDATE_BLOCK_BODY } from '@seine/core';
-import { ActionButton, typeof BlockToolbarGroup, Toolbar } from '@seine/ui';
+import type { Action, Block, BlockId, ChartBody } from '@seine/core';
+import { chartTypes } from '@seine/core';
+import type { BlockToolbarGroup } from '@seine/ui';
+import { Toolbar } from '@seine/ui';
+
+import ColumnChartToolbar from './ColumnChartToolbar';
+import BarChartToolbar from './BarChartToolbar';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -11,40 +15,39 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const DefaultBody = { elements: [] };
+const defaultBody = { elements: [] };
 
 /**
  * @description Action buttons to edit currently selected chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartToolbar({ id, body, dispatch, children }: Props) {
-  body = body || DefaultBody;
+export default function ChartToolbar({
+  body,
+  children,
+  format,
+  ...toolbarProps
+}: Props) {
   return (
-    <Toolbar>
-      <Toolbar.Group>
-        <ActionButton
-          id={id}
-          title={'Add new element'}
-          dispatch={dispatch}
-          type={UPDATE_BLOCK_BODY}
-          body={React.useMemo(
-            () => ({
-              elements: [
-                ...body.elements,
-                {
-                  title: `Item #${body.elements.length}`,
-                  value: 10,
-                },
-              ],
-            }),
-            [body.elements]
-          )}
-        >
-          Add element
-        </ActionButton>
-      </Toolbar.Group>
-      {children}
-    </Toolbar>
+    !!format &&
+    (format.kind === chartTypes.COLUMN ? (
+      <ColumnChartToolbar
+        {...toolbarProps}
+        body={body || defaultBody}
+        format={format}
+      >
+        {children}
+      </ColumnChartToolbar>
+    ) : format.kind === chartTypes.BAR ? (
+      <BarChartToolbar
+        {...toolbarProps}
+        body={body || defaultBody}
+        format={format}
+      >
+        {children}
+      </BarChartToolbar>
+    ) : (
+      <Toolbar>{children}</Toolbar>
+    ))
   );
 }

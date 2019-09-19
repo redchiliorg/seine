@@ -33,10 +33,6 @@ const defaultChartEditorRenderMap = {
  * @returns {React.Node}
  */
 export default function ChartEditor({
-  elements,
-
-  id,
-  selection,
   dispatch,
   editor = null,
 
@@ -44,33 +40,40 @@ export default function ChartEditor({
   chartEditorRenderMap: {
     [kind]: ExactChartEditor,
   } = defaultChartEditorRenderMap,
-
   ...chartProps
 }: Props) {
   const dispatchElements = React.useCallback(
     (action: ElementsAction) =>
       dispatch({
         type: UPDATE_BLOCK_BODY,
-        body: { elements: reduceElements(elements, action) },
+        body: { elements: reduceElements(chartProps.elements, action) },
       }),
-    [dispatch, elements]
+    [dispatch, chartProps.elements]
   );
 
-  const isSelected = selection.length === 1 && selection[0] === id;
+  const isSelected =
+    chartProps.selection.length === 1 &&
+    chartProps.selection[0] === chartProps.id;
 
   return (
-    <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
+    <BlockContainer
+      {...useSelectableBlockProps(
+        {
+          id: chartProps.id,
+          selection: chartProps.selection,
+        },
+        dispatch
+      )}
+    >
       {isSelected ? (
         <ExactChartEditor
           dispatch={dispatch}
           dispatchElements={dispatchElements}
-          id={id}
           editor={editor}
-          elements={elements}
           {...chartProps}
         />
       ) : (
-        <Chart id={id} elements={elements} kind={kind} {...chartProps} />
+        <Chart kind={kind} {...chartProps} />
       )}
     </BlockContainer>
   );
