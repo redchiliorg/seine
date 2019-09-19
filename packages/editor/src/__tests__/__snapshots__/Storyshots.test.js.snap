@@ -409,7 +409,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -466,7 +466,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -677,7 +677,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -734,7 +734,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -952,7 +952,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1009,7 +1009,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -1142,7 +1142,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1199,7 +1199,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -2238,7 +2238,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -2295,7 +2295,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -2902,7 +2902,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -2959,7 +2959,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -3462,7 +3462,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -3519,7 +3519,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -7298,7 +7298,7 @@ exports[`Storyshots 2 - Content Draft Content 1`] = `"{\\"blocks\\":[{\\"key\\":
 
 exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -7355,14 +7355,14 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   />
 </div>
 `;
 
 exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -7419,7 +7419,7 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
