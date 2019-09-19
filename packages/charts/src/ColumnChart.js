@@ -35,16 +35,14 @@ export default function ColumnChart({
   title = defaultChartTitle,
 
   as: View = 'svg',
-  barGroupWidth = 66,
-  xPadding = 23,
-
   id,
   parent_id,
   size,
   type,
-
   ...viewProps
 }: Props) {
+  const barGroupWidth = 66;
+  const xPadding = 23;
   const [maxValue, minValue, titles, groups] = React.useMemo(() => {
     const maxValue =
       dy <= initialMaxValue

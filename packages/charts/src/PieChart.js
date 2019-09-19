@@ -9,6 +9,8 @@ import {
   defaultChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
+import PieChartTitle from './PieChartTitle';
+import PieChartValue from './PieChartValue';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -24,6 +26,12 @@ export default function PieChart({
   palette = defaultChartPalette,
   size = defaultChartSize,
   units = defaultChartUnits,
+
+  as: View = 'svg',
+  id,
+  parent_id,
+  type,
+  ...viewProps
 }): Props {
   const sum = React.useMemo(
     () => elements.reduce((acc, { value }) => acc + value, 0),
@@ -57,8 +65,8 @@ export default function PieChart({
   let endY = Math.sin(end);
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`}>
-      {elements.map(({ title, value, as: Group = 'g' }, index) => {
+    <View viewBox={[0, 0, size, size].join(' ')} {...viewProps}>
+      {elements.map(({ title, value }, index) => {
         const start = end;
         const startX = endX;
         const startY = endY;
@@ -78,44 +86,45 @@ export default function PieChart({
           (value >= quarter ? outerRadius : innerRadius) *
             Math.sin(start + length / 2);
 
-        return (
-          <React.Fragment key={index}>
-            <path
-              fill={colors[index]}
-              d={[
-                `M ${center + radius * endX} ${center + radius * endY}`,
-                `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
-                  radius * startX} ${center + radius * startY}`,
-                `L ${center} ${center}`,
-                `L ${center + radius * endX} ${center + radius * endY}`,
-              ].join(' ')}
-            />
-            <Group>
-              <text
-                fontSize={2 * fontSize}
-                textAnchor="middle"
-                fill={textColor}
-                x={textX}
-                y={textY}
-              >
-                {value}
-                {units}
-              </text>
+        return [
+          <path
+            d={[
+              `M ${center + radius * endX} ${center + radius * endY}`,
+              `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
+                radius * startX} ${center + radius * startY}`,
+              `L ${center} ${center}`,
+              `L ${center + radius * endX} ${center + radius * endY}`,
+            ].join(' ')}
+            fill={colors[index]}
+            key={'slice'}
+          />,
 
-              <text
-                fontSize={1.5 * fontSize}
-                textAnchor="middle"
-                fill={textColor}
-                x={textX}
-                y={textY}
-                dy={fontSize * lineHeight}
-              >
-                {title}
-              </text>
-            </Group>
-          </React.Fragment>
-        );
+          <PieChartValue
+            fill={textColor}
+            fontSize={2 * fontSize}
+            index={index}
+            key={'value'}
+            lineHeight={lineHeight}
+            units={units}
+            value={value}
+            width={2 * fontSize * String(value).length}
+            x={textX}
+            y={textY}
+          />,
+
+          <PieChartTitle
+            fill={textColor}
+            fontSize={1.5 * fontSize}
+            index={index}
+            key={'title'}
+            lineHeight={lineHeight}
+            title={title}
+            width={1.5 * fontSize * title.length}
+            x={textX}
+            y={fontSize * lineHeight + textY}
+          />,
+        ];
       })}
-    </svg>
+    </View>
   );
 }
