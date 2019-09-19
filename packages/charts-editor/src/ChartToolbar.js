@@ -3,8 +3,10 @@ import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import { chartTypes } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
+import { Toolbar } from '@seine/ui';
 
 import ColumnChartToolbar from './ColumnChartToolbar';
+import BarChartToolbar from './BarChartToolbar';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -27,7 +29,8 @@ export default function ChartToolbar({
   ...toolbarProps
 }: Props) {
   return (
-    !!(format && format.kind === chartTypes.COLUMN) && (
+    !!format &&
+    (format.kind === chartTypes.COLUMN ? (
       <ColumnChartToolbar
         {...toolbarProps}
         body={body || defaultBody}
@@ -35,6 +38,16 @@ export default function ChartToolbar({
       >
         {children}
       </ColumnChartToolbar>
-    )
+    ) : format.kind === chartTypes.BAR ? (
+      <BarChartToolbar
+        {...toolbarProps}
+        body={body || defaultBody}
+        format={format}
+      >
+        {children}
+      </BarChartToolbar>
+    ) : (
+      <Toolbar>{children}</Toolbar>
+    ))
   );
 }

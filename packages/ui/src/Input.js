@@ -9,7 +9,7 @@ export default styled.input.attrs(
   })
 )`
   && {
-    height: 36px;
+    height: 32px;
     margin: 6px 8px;
     padding: 0 8px;
     ${({ type }) =>

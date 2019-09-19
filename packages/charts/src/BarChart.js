@@ -9,6 +9,8 @@ import {
   defaultChartSize,
 } from './constants';
 import type { ChartProps } from './types';
+import BarChartTitle from './BarChartTitle';
+import BarChartValue from './BarChartValue';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -24,6 +26,9 @@ export default function BarChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   size = defaultChartSize,
+
+  as: View = 'svg',
+  ...viewProps
 }: Props) {
   const { barHeight, fontHeight, fontWidth } = React.useMemo(() => {
     return {
@@ -45,34 +50,56 @@ export default function BarChart({
   const height = (elements.length * barHeight) / 2;
 
   return (
-    <svg
+    <View
       viewBox={`0 0 ${size} ${height}`}
       width={'100%'}
       fontSize={fontSize}
       fontWeight={fontWeight}
       preserveAspectRatio={'xMidYMax meet'}
+      {...viewProps}
     >
-      {elements.map(({ title, value, as: Group = 'g' }, index) => {
+      {elements.map(({ title, value }, index) => {
         const len = (barMaxLen * value) / maxValue;
         const color = palette[index % palette.length];
+        const y = (index * barHeight) / 2;
 
-        return (
-          <svg key={index} y={(index * barHeight) / 2} fill={color}>
-            <Group>
-              <text y={fontHeight}>{title}</text>
-              <text dy={fontHeight} x={titleMaxLen + len + 1.5 * fontSize}>
-                {value}
-              </text>
-            </Group>
+        return [
+          <BarChartTitle
+            fill={color}
+            height={barHeight}
+            index={index}
+            key={'title'}
+            lineHeight={fontHeight}
+            x={0}
+            y={y}
+            width={titleMaxLen}
+          >
+            {title}
+          </BarChartTitle>,
 
-            <path
-              d={`M${titleMaxLen + fontSize},0 h${len}`}
-              strokeWidth={barHeight}
-              stroke={color}
-            />
-          </svg>
-        );
+          <BarChartValue
+            fill={color}
+            height={barHeight}
+            index={index}
+            key={'value'}
+            lineHeight={fontHeight}
+            x={titleMaxLen + len + 1.5 * fontSize}
+            y={y}
+            width={valueMaxLen}
+          >
+            {value}
+          </BarChartValue>,
+
+          <rect
+            fill={color}
+            height={barHeight / 2}
+            key={'bar'}
+            width={len}
+            x={titleMaxLen + fontSize}
+            y={y}
+          />,
+        ];
       })}
-    </svg>
+    </View>
   );
 }

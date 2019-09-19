@@ -4,217 +4,202 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
 <svg
   fontSize={2}
   fontWeight={500}
+  id="01648d04-78ad-402b-b255-14a6066d7927"
+  parent_id="bee1c449-5515-4b12-9779-cfa11f1f62d9"
   preserveAspectRatio="xMidYMax meet"
+  type="chart"
   viewBox="0 0 100 54"
   width="100%"
 >
-  <svg
+  <text
     fill="#fa6479"
+    x={0}
+    y={3.5}
+  >
+    WFLA
+  </text>
+  <text
+    fill="#fa6479"
+    x={50.89041095890411}
+    y={3.5}
+  >
+    20.8
+  </text>
+  <rect
+    fill="#fa6479"
+    height={6}
+    width={39.89041095890411}
+    x={10}
     y={0}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        WFLA
-      </text>
-      <text
-        dy={3.5}
-        x={50.89041095890411}
-      >
-        20.8
-      </text>
-    </g>
-    <path
-      d="M10,0 h39.89041095890411"
-      stroke="#fa6479"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#cb91a0"
+    x={0}
+    y={9.5}
+  >
+    Region A
+  </text>
+  <text
+    fill="#cb91a0"
+    x={79.46575342465755}
+    y={9.5}
+  >
+    35.7
+  </text>
+  <rect
+    fill="#cb91a0"
+    height={6}
+    width={68.46575342465755}
+    x={10}
     y={6}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region A
-      </text>
-      <text
-        dy={3.5}
-        x={79.46575342465755}
-      >
-        35.7
-      </text>
-    </g>
-    <path
-      d="M10,0 h68.46575342465755"
-      stroke="#cb91a0"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#a38ca4"
+    x={0}
+    y={15.5}
+  >
+    Region B
+  </text>
+  <text
+    fill="#a38ca4"
+    x={41.301369863013704}
+    y={15.5}
+  >
+    15.8
+  </text>
+  <rect
+    fill="#a38ca4"
+    height={6}
+    width={30.3013698630137}
+    x={10}
     y={12}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region B
-      </text>
-      <text
-        dy={3.5}
-        x={41.301369863013704}
-      >
-        15.8
-      </text>
-    </g>
-    <path
-      d="M10,0 h30.3013698630137"
-      stroke="#a38ca4"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#7482aa"
+    x={0}
+    y={21.5}
+  >
+    Region C
+  </text>
+  <text
+    fill="#7482aa"
+    x={89.43835616438356}
+    y={21.5}
+  >
+    40.9
+  </text>
+  <rect
+    fill="#7482aa"
+    height={6}
+    width={78.43835616438356}
+    x={10}
     y={18}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region C
-      </text>
-      <text
-        dy={3.5}
-        x={89.43835616438356}
-      >
-        40.9
-      </text>
-    </g>
-    <path
-      d="M10,0 h78.43835616438356"
-      stroke="#7482aa"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#35aeb7"
+    x={0}
+    y={27.5}
+  >
+    Region D
+  </text>
+  <text
+    fill="#35aeb7"
+    x={56.26027397260275}
+    y={27.5}
+  >
+    23.6
+  </text>
+  <rect
+    fill="#35aeb7"
+    height={6}
+    width={45.26027397260275}
+    x={10}
     y={24}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region D
-      </text>
-      <text
-        dy={3.5}
-        x={56.26027397260275}
-      >
-        23.6
-      </text>
-    </g>
-    <path
-      d="M10,0 h45.26027397260275"
-      stroke="#35aeb7"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#01b25c"
+    x={0}
+    y={33.5}
+  >
+    Region E
+  </text>
+  <text
+    fill="#01b25c"
+    x={44.753424657534254}
+    y={33.5}
+  >
+    17.6
+  </text>
+  <rect
+    fill="#01b25c"
+    height={6}
+    width={33.753424657534254}
+    x={10}
     y={30}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region E
-      </text>
-      <text
-        dy={3.5}
-        x={44.753424657534254}
-      >
-        17.6
-      </text>
-    </g>
-    <path
-      d="M10,0 h33.753424657534254"
-      stroke="#01b25c"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#e1c54e"
+    x={0}
+    y={39.5}
+  >
+    Region F
+  </text>
+  <text
+    fill="#e1c54e"
+    x={84.06849315068494}
+    y={39.5}
+  >
+    38.1
+  </text>
+  <rect
+    fill="#e1c54e"
+    height={6}
+    width={73.06849315068494}
+    x={10}
     y={36}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region F
-      </text>
-      <text
-        dy={3.5}
-        x={84.06849315068494}
-      >
-        38.1
-      </text>
-    </g>
-    <path
-      d="M10,0 h73.06849315068494"
-      stroke="#e1c54e"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#f89764"
+    x={0}
+    y={45.5}
+  >
+    Region G
+  </text>
+  <text
+    fill="#f89764"
+    x={95}
+    y={45.5}
+  >
+    43.8
+  </text>
+  <rect
+    fill="#f89764"
+    height={6}
+    width={84}
+    x={10}
     y={42}
-  >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region G
-      </text>
-      <text
-        dy={3.5}
-        x={95}
-      >
-        43.8
-      </text>
-    </g>
-    <path
-      d="M10,0 h84"
-      stroke="#f89764"
-      strokeWidth={12}
-    />
-  </svg>
-  <svg
+  />
+  <text
     fill="#a3704d"
-    y={48}
+    x={0}
+    y={51.5}
   >
-    <g>
-      <text
-        y={3.5}
-      >
-        Region H
-      </text>
-      <text
-        dy={3.5}
-        x={42.45205479452055}
-      >
-        16.4
-      </text>
-    </g>
-    <path
-      d="M10,0 h31.45205479452055"
-      stroke="#a3704d"
-      strokeWidth={12}
-    />
-  </svg>
+    Region H
+  </text>
+  <text
+    fill="#a3704d"
+    x={42.45205479452055}
+    y={51.5}
+  >
+    16.4
+  </text>
+  <rect
+    fill="#a3704d"
+    height={6}
+    width={31.45205479452055}
+    x={10}
+    y={48}
+  />
 </svg>
 `;
 
@@ -437,40 +422,45 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -488,217 +478,203 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
       <svg
         fontSize={2}
         fontWeight={500}
+        id="01648d04-78ad-402b-b255-14a6066d7927"
+        parent_id="bee1c449-5515-4b12-9779-cfa11f1f62d9"
         preserveAspectRatio="xMidYMax meet"
+        selection={Array []}
+        type="chart"
         viewBox="0 0 100 54"
         width="100%"
       >
-        <svg
+        <text
           fill="#fa6479"
+          x={0}
+          y={3.5}
+        >
+          WFLA
+        </text>
+        <text
+          fill="#fa6479"
+          x={50.89041095890411}
+          y={3.5}
+        >
+          20.8
+        </text>
+        <rect
+          fill="#fa6479"
+          height={6}
+          width={39.89041095890411}
+          x={10}
           y={0}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              WFLA
-            </text>
-            <text
-              dy={3.5}
-              x={50.89041095890411}
-            >
-              20.8
-            </text>
-          </g>
-          <path
-            d="M10,0 h39.89041095890411"
-            stroke="#fa6479"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#cb91a0"
+          x={0}
+          y={9.5}
+        >
+          Region A
+        </text>
+        <text
+          fill="#cb91a0"
+          x={79.46575342465755}
+          y={9.5}
+        >
+          35.7
+        </text>
+        <rect
+          fill="#cb91a0"
+          height={6}
+          width={68.46575342465755}
+          x={10}
           y={6}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region A
-            </text>
-            <text
-              dy={3.5}
-              x={79.46575342465755}
-            >
-              35.7
-            </text>
-          </g>
-          <path
-            d="M10,0 h68.46575342465755"
-            stroke="#cb91a0"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#a38ca4"
+          x={0}
+          y={15.5}
+        >
+          Region B
+        </text>
+        <text
+          fill="#a38ca4"
+          x={41.301369863013704}
+          y={15.5}
+        >
+          15.8
+        </text>
+        <rect
+          fill="#a38ca4"
+          height={6}
+          width={30.3013698630137}
+          x={10}
           y={12}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region B
-            </text>
-            <text
-              dy={3.5}
-              x={41.301369863013704}
-            >
-              15.8
-            </text>
-          </g>
-          <path
-            d="M10,0 h30.3013698630137"
-            stroke="#a38ca4"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#7482aa"
+          x={0}
+          y={21.5}
+        >
+          Region C
+        </text>
+        <text
+          fill="#7482aa"
+          x={89.43835616438356}
+          y={21.5}
+        >
+          40.9
+        </text>
+        <rect
+          fill="#7482aa"
+          height={6}
+          width={78.43835616438356}
+          x={10}
           y={18}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region C
-            </text>
-            <text
-              dy={3.5}
-              x={89.43835616438356}
-            >
-              40.9
-            </text>
-          </g>
-          <path
-            d="M10,0 h78.43835616438356"
-            stroke="#7482aa"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#35aeb7"
+          x={0}
+          y={27.5}
+        >
+          Region D
+        </text>
+        <text
+          fill="#35aeb7"
+          x={56.26027397260275}
+          y={27.5}
+        >
+          23.6
+        </text>
+        <rect
+          fill="#35aeb7"
+          height={6}
+          width={45.26027397260275}
+          x={10}
           y={24}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region D
-            </text>
-            <text
-              dy={3.5}
-              x={56.26027397260275}
-            >
-              23.6
-            </text>
-          </g>
-          <path
-            d="M10,0 h45.26027397260275"
-            stroke="#35aeb7"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#01b25c"
+          x={0}
+          y={33.5}
+        >
+          Region E
+        </text>
+        <text
+          fill="#01b25c"
+          x={44.753424657534254}
+          y={33.5}
+        >
+          17.6
+        </text>
+        <rect
+          fill="#01b25c"
+          height={6}
+          width={33.753424657534254}
+          x={10}
           y={30}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region E
-            </text>
-            <text
-              dy={3.5}
-              x={44.753424657534254}
-            >
-              17.6
-            </text>
-          </g>
-          <path
-            d="M10,0 h33.753424657534254"
-            stroke="#01b25c"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#e1c54e"
+          x={0}
+          y={39.5}
+        >
+          Region F
+        </text>
+        <text
+          fill="#e1c54e"
+          x={84.06849315068494}
+          y={39.5}
+        >
+          38.1
+        </text>
+        <rect
+          fill="#e1c54e"
+          height={6}
+          width={73.06849315068494}
+          x={10}
           y={36}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region F
-            </text>
-            <text
-              dy={3.5}
-              x={84.06849315068494}
-            >
-              38.1
-            </text>
-          </g>
-          <path
-            d="M10,0 h73.06849315068494"
-            stroke="#e1c54e"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#f89764"
+          x={0}
+          y={45.5}
+        >
+          Region G
+        </text>
+        <text
+          fill="#f89764"
+          x={95}
+          y={45.5}
+        >
+          43.8
+        </text>
+        <rect
+          fill="#f89764"
+          height={6}
+          width={84}
+          x={10}
           y={42}
-        >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region G
-            </text>
-            <text
-              dy={3.5}
-              x={95}
-            >
-              43.8
-            </text>
-          </g>
-          <path
-            d="M10,0 h84"
-            stroke="#f89764"
-            strokeWidth={12}
-          />
-        </svg>
-        <svg
+        />
+        <text
           fill="#a3704d"
-          y={48}
+          x={0}
+          y={51.5}
         >
-          <g>
-            <text
-              y={3.5}
-            >
-              Region H
-            </text>
-            <text
-              dy={3.5}
-              x={42.45205479452055}
-            >
-              16.4
-            </text>
-          </g>
-          <path
-            d="M10,0 h31.45205479452055"
-            stroke="#a3704d"
-            strokeWidth={12}
-          />
-        </svg>
+          Region H
+        </text>
+        <text
+          fill="#a3704d"
+          x={42.45205479452055}
+          y={51.5}
+        >
+          16.4
+        </text>
+        <rect
+          fill="#a3704d"
+          height={6}
+          width={31.45205479452055}
+          x={10}
+          y={48}
+        />
       </svg>
     </div>
   </div>
@@ -717,40 +693,45 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -987,40 +968,45 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -1186,40 +1172,45 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -2277,40 +2268,45 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -2936,40 +2932,45 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -3491,40 +3492,45 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -7337,40 +7343,45 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
@@ -7396,40 +7407,45 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
       className="sc-ifAKCX dtaADw"
     >
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add text block"
         type="button"
       >
         + text
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add sibling text block"
         type="button"
       >
         + 2 text columns
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add pie chart"
         type="button"
       >
         + pie chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >
         + bar chart
       </button>
       <button
-        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--medium uTxCW"
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
+        size="small"
         title="Add bar chart"
         type="button"
       >

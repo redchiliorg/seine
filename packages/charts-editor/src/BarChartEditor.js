@@ -1,122 +1,118 @@
 // @flow
 import * as React from 'react';
 import {
-  EditableElement,
-  EditableGroup,
-  EditableInput,
-  EditableOverlay,
-} from '@seine/ui';
-import {
   BarChart,
-  defaultChartFontSize,
-  defaultChartLineHeight,
-  defaultChartPalette,
-  defaultChartSize,
+  BarChartTitle,
+  BarChartTitleProps,
+  BarChartValue,
+  BarChartValueProps,
 } from '@seine/charts';
 import { UPDATE_ELEMENT } from '@seine/core';
+import { ForeignInput } from '@seine/ui';
 
 import type { ChartEditorProps as Props } from './types';
 
 /**
- * @description Editor of bar chart
+ * @description Editor of column chart
  * props {Props}
  * @returns {React.Node}
  */
 export default function BarChartEditor({
-  dispatchElements,
   dispatch,
   editor,
-
-  elements,
-
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
-  palette = defaultChartPalette,
-  size = defaultChartSize,
-
   ...chartProps
 }: Props) {
-  const [overlay, setOverlay] = React.useState(null);
-  const overlayBox = overlay && overlay.getBoundingClientRect();
+  return <BarChart {...chartProps} as={BarChartEditorView} />;
+}
 
-  const barLineSize = fontSize * 3;
-  const maxSize = elements.length * barLineSize;
-
+// eslint-disable-next-line
+function BarChartEditorView({
+  children,
+  dispatchElements,
+  fontSize,
+  ...viewProps
+}) {
   return (
-    <>
-      <EditableOverlay ref={setOverlay}>
-        {React.useMemo(
-          () =>
-            !!(editor && overlayBox) &&
-            elements.map(
-              ({ value, title }, index) =>
-                index in editor && (
-                  <EditableGroup
-                    maxWidth={overlayBox.width}
-                    maxHeight={overlayBox.height}
-                    width={editor[index].width}
-                    height={editor[index].height}
-                    x={editor[index].x}
-                    y={editor[index].y + barLineSize * index}
-                    size={maxSize}
-                  >
-                    <EditableInput
-                      fontSize={`${0.65 * fontSize}em`}
+    <svg {...viewProps} fontSize={fontSize}>
+      {React.useMemo(
+        () =>
+          React.Children.map(children, (child: ?React.Node) => {
+            if (React.isValidElement(child)) {
+              switch (child.type) {
+                case BarChartValue: {
+                  const {
+                    children: value,
+                    fill,
+                    height,
+                    index,
+                    lineHeight,
+                    width,
+                    x,
+                    y,
+                  }: BarChartValueProps | BarChartTitleProps = child.props;
+
+                  return (
+                    <ForeignInput
+                      color={fill}
+                      fontSize={0.9 * fontSize}
+                      height={height / 3}
+                      key={child.key}
                       onChange={({ currentTarget }) =>
                         dispatchElements({
                           type: UPDATE_ELEMENT,
+                          body: { value: currentTarget.value },
                           index,
-                          body: { title: currentTarget.value },
-                        })
-                      }
-                      value={title}
-                      width={size / 2}
-                    />
-                    <EditableInput
-                      align={'right'}
-                      fontSize={`${0.65 * fontSize}em`}
-                      name={'value'}
-                      onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_ELEMENT,
-                          index,
-                          body: { value: +currentTarget.value },
                         })
                       }
                       type={'number'}
                       value={value}
+                      width={width + fontSize}
+                      x={x}
+                      y={y + (fontSize * lineHeight) / 3}
                     />
-                  </EditableGroup>
-                )
-            ),
-          [
-            barLineSize,
-            dispatchElements,
-            editor,
-            elements,
-            fontSize,
-            maxSize,
-            overlayBox,
-            size,
-          ]
-        )}
-      </EditableOverlay>
+                  );
+                }
 
-      <BarChart
-        {...chartProps}
-        elements={elements.map((element, index) => ({
-          ...element,
-          as: ({ children }) => (
-            <EditableElement index={index} dispatch={dispatch}>
-              {children}
-            </EditableElement>
-          ),
-        }))}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
-        palette={palette}
-        size={size}
-      />
-    </>
+                case BarChartTitle: {
+                  const {
+                    children: title,
+                    fill,
+                    height,
+                    index,
+                    lineHeight,
+                    width,
+                    x,
+                    y,
+                  }: BarChartValueProps | BarChartTitleProps = child.props;
+
+                  return (
+                    <ForeignInput
+                      color={fill}
+                      fontSize={0.9 * fontSize}
+                      height={height / 3}
+                      key={child.key}
+                      onChange={({ currentTarget }) =>
+                        dispatchElements({
+                          type: UPDATE_ELEMENT,
+                          body: { title: currentTarget.value },
+                          index,
+                        })
+                      }
+                      value={title}
+                      width={width + 2 * fontSize}
+                      x={x}
+                      y={y + (fontSize * lineHeight) / 3}
+                    />
+                  );
+                }
+
+                default:
+                  return child;
+              }
+            }
+          }),
+        [children, dispatchElements, fontSize]
+      )}
+    </svg>
   );
 }
