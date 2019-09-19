@@ -103,31 +103,27 @@ function ColumnChartEditorView({ children, dispatchElements, ...viewProps }) {
                   x={x}
                   y={y + (fontSize * lineHeight) / 4}
                 />,
-                ...elements.map(({ index, value }, order) => {
-                  const fill = palette[order % palette.length];
-
-                  return (
-                    <ForeignInput
-                      color={fill}
-                      fontSize={0.9 * fontSize}
-                      height={size}
-                      key={[child.key, 'input', order]}
-                      lineHeight={lineHeight}
-                      onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_ELEMENT,
-                          body: { value: +currentTarget.value },
-                          index,
-                        })
-                      }
-                      type={'number'}
-                      value={+value}
-                      width={size}
-                      x={x + size * order}
-                      y={y + (fontSize * lineHeight) / 4 + size}
-                    />
-                  );
-                }),
+                ...elements.map(({ index, value }, order) => (
+                  <ForeignInput
+                    color={palette[order % palette.length]}
+                    fontSize={0.9 * fontSize}
+                    height={size}
+                    key={[child.key, 'input', order]}
+                    lineHeight={lineHeight}
+                    onChange={({ currentTarget }) =>
+                      dispatchElements({
+                        type: UPDATE_ELEMENT,
+                        body: { value: +currentTarget.value },
+                        index,
+                      })
+                    }
+                    type={'number'}
+                    value={+value}
+                    width={size}
+                    x={x + size * order}
+                    y={y + (fontSize * lineHeight) / 4 + size}
+                  />
+                )),
               ];
 
             default:

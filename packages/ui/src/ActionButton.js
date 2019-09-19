@@ -23,6 +23,7 @@ export default function ActionButton({
     <Button
       color={color}
       title={title}
+      size={'small'}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
     >
       {children}

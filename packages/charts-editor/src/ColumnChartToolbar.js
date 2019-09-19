@@ -20,7 +20,7 @@ type Props = Block & {
 const defaultBody = { elements: [] };
 
 /**
- * @description Action buttons to edit currently selected chart.
+ * @description Action buttons to edit currently selected column chart.
  * @param {Props} props
  * @returns {React.Node}
  */
@@ -42,7 +42,21 @@ export default function ColumnChartToolbar({
           format={format}
         />
 
+        <RemoveColumnChartElementButton
+          body={body}
+          dispatch={dispatch}
+          format={format}
+          id={id}
+        />
+
         <AddColumnChartGroupButton
+          id={id}
+          body={body}
+          dispatch={dispatch}
+          format={format}
+        />
+
+        <RemoveColumnChartGroupButton
           id={id}
           body={body}
           dispatch={dispatch}
@@ -120,7 +134,7 @@ function AddColumnChartElementButton({ id, dispatch, format, body }) {
         [body.elements, format.minValue]
       )}
     >
-      Add element
+      Add item
     </ActionButton>
   );
 }
@@ -150,6 +164,51 @@ function AddColumnChartGroupButton({ id, dispatch, format, body }) {
       )}
     >
       Add group
+    </ActionButton>
+  );
+}
+
+// eslint-disable-next-line
+function RemoveColumnChartElementButton({ body, dispatch, id }) {
+  return (
+    <ActionButton
+      id={id}
+      title={'Remove element'}
+      dispatch={dispatch}
+      type={UPDATE_BLOCK_BODY}
+      body={React.useMemo(
+        () => ({
+          elements: groupElements(body.elements).reduce(
+            (acc, [_, elements]) => [...acc, ...elements.slice(0, -1)],
+            []
+          ),
+        }),
+        [body.elements]
+      )}
+    >
+      Rm item
+    </ActionButton>
+  );
+}
+
+// eslint-disable-next-line
+function RemoveColumnChartGroupButton({ body, dispatch, id }) {
+  return (
+    <ActionButton
+      id={id}
+      title={'Remove element'}
+      dispatch={dispatch}
+      type={UPDATE_BLOCK_BODY}
+      body={React.useMemo(
+        () => ({
+          elements: groupElements(body.elements)
+            .slice(0, -1)
+            .reduce((acc, [_, elements]) => [...acc, ...elements], []),
+        }),
+        [body.elements]
+      )}
+    >
+      Rm group
     </ActionButton>
   );
 }
