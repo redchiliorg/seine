@@ -14,7 +14,7 @@ import {
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { ActionButton, Paper, Toolbar, useReducerEx } from '@seine/ui';
-import { BarChartEditor, ChartToolbar } from '@seine/charts-editor';
+import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
 import ContentToolbar from './ContentToolbar';
@@ -41,7 +41,7 @@ const defaultEditorBlockRendererMap = {
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: GridEditor,
   [blockTypes.PAGE]: ({ children }) => children,
-  [blockTypes.CHART]: BarChartEditor,
+  [blockTypes.CHART]: ChartEditor,
 };
 
 const defaultBlockToolbarRenderMap = {

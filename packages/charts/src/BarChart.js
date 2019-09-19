@@ -28,6 +28,9 @@ export default function BarChart({
   size = defaultChartSize,
 
   as: View = 'svg',
+  id,
+  parent_id,
+  type,
   ...viewProps
 }: Props) {
   const { barHeight, fontHeight, fontWidth } = React.useMemo(() => {
