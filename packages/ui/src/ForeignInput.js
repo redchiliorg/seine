@@ -3,23 +3,30 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 
 type Props = {
+  color?: string,
   fontSize: number,
   height: number,
-  lineHeight: number,
+  lineHeight?: number,
   width: number,
   x: number,
   y: number,
 } & $Shape<HTMLInputElement>;
 
 const Input = styled.input`
-  ${({ fontSize, lineHeight, transform }) => css`
+  ${({ align = 'left', color, fontSize, lineHeight, transform, width }) => css`
+    ${color &&
+      css`
+        color: ${color};
+      `};
+    text-align: ${align};
     border: 0;
     display: block;
-    font-size: ${Math.floor(fontSize)}px;
-    height: ${lineHeight * fontSize + fontSize}px;
+    font-size: ${fontSize}px;
+    height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
     position: relative;
     transform: ${transform};
     transform-origin: left top;
+    width: ${width}px;
   `}
 `;
 
@@ -31,7 +38,7 @@ const Input = styled.input`
 export default function ForeignInput({
   fontSize,
   height,
-  lineHeight,
+  lineHeight = null,
   width,
   x,
   y,
@@ -59,6 +66,7 @@ export default function ForeignInput({
           fontSize={fontSize / yScale}
           lineHeight={lineHeight}
           transform={`scale(${xScale},${yScale})`}
+          width={width / xScale}
           {...inputProps}
         />
       </div>
