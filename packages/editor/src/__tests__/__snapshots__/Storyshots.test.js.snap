@@ -458,10 +458,19 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -726,10 +735,19 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -1001,10 +1019,19 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -1191,10 +1218,19 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -2287,10 +2323,19 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -2951,10 +2996,19 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -3511,10 +3565,19 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -4204,10 +4267,19 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -8161,10 +8233,19 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
@@ -8225,10 +8306,19 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
         className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
         onClick={[Function]}
         size="small"
-        title="Add bar chart"
+        title="Add column chart"
         type="button"
       >
         + column chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add line chart"
+        type="button"
+      >
+        + line chart
       </button>
     </div>
   </div>
