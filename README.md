@@ -1,32 +1,39 @@
-Seine
-=====
+# Seine
 
 Seine is a Javascript library of React components and utilities
 to view and edit structured content.
 
-Installation
-------------
+## Installation
+
+Dependencies
 
 ```bash
-npm install react react-dom draft-js styled-components seine
-```
-or
-```bash
-yarn add react react-dom draft-js styled-components seine
+yarn add react react-dom draft-js styled-components
 ```
 
-Serve Storybook
----------------
-To build and start static server at port 5000 run
+Content editor
 
 ```bash
-npm build
-npm start -l 5000
+yarn add @seine/editor
 ```
-or
+
+Content renderer
+
+```bash
+yarn add @seine/content
 ```
+
+## Storybook
+
+Run in development mode
+```bash
+yarn dev:start
+```
+
+Build and serve production static files
+```bash
 yarn build
-yarn start -l 5000
+yarn start
 ```
 
 For other options see `yarn start --help` command output.
