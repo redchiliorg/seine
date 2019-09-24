@@ -8,6 +8,7 @@ import AddSiblingTextsButton from './AddSiblingTextsButton';
 import AddPieButton from './AddPieChartButton';
 import AddChartButton from './AddBarChartButton';
 import AddColumnChartButton from './AddColumnChartButton';
+import AddLineChartButton from './AddLineChartButton';
 
 type Props = Block & {
   blocks: $ReadOnlyArray<Block>,
@@ -34,6 +35,7 @@ export default function ContentToolbar({
         <AddPieButton dispatch={dispatch} id={id} blocks={blocks} />
         <AddChartButton dispatch={dispatch} id={id} blocks={blocks} />
         <AddColumnChartButton dispatch={dispatch} id={id} blocks={blocks} />
+        <AddLineChartButton dispatch={dispatch} id={id} blocks={blocks} />
       </Toolbar.Group>
       {children}
     </Toolbar>
