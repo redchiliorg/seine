@@ -11,7 +11,7 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { groupElements, titleIdentityElements } from './helpers';
-import ColumnChartLegend from './ColumnChartLegend';
+import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
@@ -125,7 +125,7 @@ export default function ColumnChart({
         x={xPadding}
       />
       {titles.map(({ id, title }, index) => (
-        <ColumnChartLegend
+        <ChartLegendItem
           key={id}
           fill={palette[index % palette.length]}
           fontSize={1.5 * fontSize}
