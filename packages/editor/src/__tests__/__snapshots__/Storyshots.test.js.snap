@@ -3780,6 +3780,272 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 </div>
 `;
 
+exports[`Storyshots 1 - Charts Line Chart 1`] = `
+<svg
+  fontSize={4}
+  height="100%"
+  strokeWidth={0.5}
+  viewBox="0 0 297 210"
+  width="100%"
+>
+  <text
+    fontSize="1.5em"
+    fontWeight="bold"
+    x={20}
+    y={50}
+  >
+    Sales ($ millions)
+  </text>
+  <marker
+    id="arrowUp"
+    orient="auto"
+    overflow="visible"
+  >
+    <path
+      d="m0 0 5-5-18 5 18 5-5-5z"
+      fill="#00ff00"
+      fillRule="evenodd"
+      stroke="#0f0"
+      transform="scale(0.6) translate(3.6)"
+    />
+  </marker>
+  <path
+    d="m20 58v86"
+    fill="none"
+    markerStart="url(#arrowUp)"
+    stroke="#00ff00"
+  />
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={20}
+    y={151}
+  >
+    Year 1
+  </text>
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={59}
+    y={151}
+  >
+    Year 2
+  </text>
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={98}
+    y={151}
+  >
+    Year 3
+  </text>
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={137}
+    y={151}
+  >
+    Year 4
+  </text>
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={176}
+    y={151}
+  >
+    Year 5
+  </text>
+  <text
+    fill="#000000"
+    fontWeight="bold"
+    textAnchor="middle"
+    x={215}
+    y={151}
+  >
+    Year 6
+  </text>
+  <path
+    d="m20  144 195 0"
+    stroke="#505050"
+  />
+  <path
+    d="m20  133.25 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={135.25}
+  >
+    40
+  </text>
+  <path
+    d="m20  122.5 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={124.5}
+  >
+    80
+  </text>
+  <path
+    d="m20  111.75 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={113.75}
+  >
+    120
+  </text>
+  <path
+    d="m20  101 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={103}
+  >
+    160
+  </text>
+  <path
+    d="m20  90.25 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={92.25}
+  >
+    200
+  </text>
+  <path
+    d="m20  79.5 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={81.5}
+  >
+    240
+  </text>
+  <path
+    d="m20  68.75 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={70.75}
+  >
+    280
+  </text>
+  <marker
+    id={
+      Array [
+        "point",
+        "Maelstorm",
+      ]
+    }
+    orient="auto"
+    overflow="visible"
+  >
+    <circle
+      cx={0}
+      fill="#fa6479"
+      r={3}
+      stroke="none"
+    />
+  </marker>
+  <path
+    d="M 20 127.5103244837758 59 126.74926253687316 98 125.48082595870207 137 124.97345132743362 176 123.95870206489676 215 121.16814159292035"
+    fill="none"
+    markerEnd="url(#point,Maelstorm)"
+    markerMid="url(#point,Maelstorm)"
+    markerStart="url(#point,Maelstorm)"
+    stroke="#fa6479"
+  />
+  <g
+    fontSize={4}
+    width={80}
+  >
+    <rect
+      fill="#fa6479"
+      height={10}
+      width={10}
+      x={225}
+      y={61.5}
+    />
+    <text
+      x={242}
+      y={68.5}
+    >
+      Maelstorm
+    </text>
+  </g>
+  <marker
+    id={
+      Array [
+        "point",
+        "Spring",
+      ]
+    }
+    orient="auto"
+    overflow="visible"
+  >
+    <circle
+      cx={0}
+      fill="#cb91a0"
+      r={3}
+      stroke="none"
+    />
+  </marker>
+  <path
+    d="M 20 99.6047197640118 59 92.24778761061947 98 85.39823008849558 137 83.87610619469027 176 72.96755162241888 215 58"
+    fill="none"
+    markerEnd="url(#point,Spring)"
+    markerMid="url(#point,Spring)"
+    markerStart="url(#point,Spring)"
+    stroke="#cb91a0"
+  />
+  <g
+    fontSize={4}
+    width={80}
+  >
+    <rect
+      fill="#cb91a0"
+      height={10}
+      width={10}
+      x={225}
+      y={78.5}
+    />
+    <text
+      x={242}
+      y={85.5}
+    >
+      Spring
+    </text>
+  </g>
+</svg>
+`;
+
 exports[`Storyshots 1 - Charts Pie Chart 1`] = `
 <svg
   viewBox="0 0 100 100"
