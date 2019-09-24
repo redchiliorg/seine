@@ -4,6 +4,7 @@ export const chartTypes = {
   BAR: 'bar',
   COLUMN: 'column',
   PIE: 'pie',
+  LINE: 'line',
 };
 
 export type ChartType = $Keys<typeof chartTypes>;

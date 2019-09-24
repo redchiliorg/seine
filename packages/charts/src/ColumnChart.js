@@ -10,8 +10,8 @@ import {
   defaultMinValue,
 } from './constants';
 import type { ChartProps } from './types';
-import { groupElements, titleIdentityElements } from './helpers';
-import ColumnChartLegend from './ColumnChartLegend';
+import { useGroupedElements } from './helpers';
+import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
@@ -35,30 +35,20 @@ export default function ColumnChart({
   title = defaultChartTitle,
 
   as: View = 'svg',
-  barGroupWidth = 66,
-  xPadding = 23,
-
   id,
   parent_id,
   size,
   type,
-
   ...viewProps
 }: Props) {
-  const [maxValue, minValue, titles, groups] = React.useMemo(() => {
-    const maxValue =
-      dy <= initialMaxValue
-        ? initialMaxValue
-        : Math.max(...elements.map(({ value }) => value));
-    return [
-      maxValue,
-      maxValue > initialMinValue
-        ? initialMinValue
-        : Math.min(...elements.map(({ value }) => value)),
-      titleIdentityElements(elements),
-      groupElements(elements),
-    ];
-  }, [dy, elements, initialMaxValue, initialMinValue]);
+  const barGroupWidth = 66;
+  const xPadding = 23;
+  const [maxValue, minValue, titles, groups] = useGroupedElements(
+    elements,
+    initialMinValue,
+    initialMaxValue,
+    dy
+  );
 
   return (
     <View
@@ -127,7 +117,7 @@ export default function ColumnChart({
         x={xPadding}
       />
       {titles.map(({ id, title }, index) => (
-        <ColumnChartLegend
+        <ChartLegendItem
           key={id}
           fill={palette[index % palette.length]}
           fontSize={1.5 * fontSize}

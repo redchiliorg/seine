@@ -5,28 +5,43 @@ import styled, { css } from 'styled-components';
 type Props = {
   color?: string,
   fontSize: number,
+  fontWeight?: 'normal' | 'bold',
   height: number,
   lineHeight?: number,
-  width: number,
+  width?: number,
   x: number,
   y: number,
 } & $Shape<HTMLInputElement>;
 
 const Input = styled.input`
-  ${({ align = 'left', color, fontSize, lineHeight, transform, width }) => css`
+  ${({
+    align = 'left',
+    color,
+    fontSize,
+    fontWeight = 'normal',
+    lineHeight,
+    transform,
+    transparent,
+    width,
+  }) => css`
     ${color &&
       css`
         color: ${color};
+      `};
+    ${transparent &&
+      css`
+        background: transparent;
       `};
     text-align: ${align};
     border: 0;
     display: block;
     font-size: ${fontSize}px;
+    font-weight: ${fontWeight};
     height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
     position: relative;
     transform: ${transform};
     transform-origin: left top;
-    width: ${width}px;
+    width: ${width ? width + 'px' : 'auto'};
   `}
 `;
 
@@ -39,7 +54,8 @@ export default function ForeignInput({
   fontSize,
   height,
   lineHeight = null,
-  width,
+  width = null,
+  transparent = false,
   x,
   y,
   ...inputProps
@@ -67,6 +83,7 @@ export default function ForeignInput({
           lineHeight={lineHeight}
           transform={`scale(${xScale},${yScale})`}
           width={width / xScale}
+          transparent={transparent}
           {...inputProps}
         />
       </div>

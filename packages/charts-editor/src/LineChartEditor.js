@@ -1,100 +1,103 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
 import {
-  PieChart,
-  PieChartTitle,
-  PieChartTitleProps,
-  PieChartValue,
-  PieChartValueProps,
+  ChartLegendItem,
+  LineChart,
+  LineChartGroup,
+  LineChartGroupProps,
+  LineChartValue,
+  LineChartValueProps,
 } from '@seine/charts';
-import { UPDATE_ELEMENT } from '@seine/core';
+import { ForeignInput } from '@seine/ui';
+import { UPDATE_ELEMENT, UPDATE_ELEMENT_BY_GROUP } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
+import ChartLegendItemInput from './ChartLegendItemInput';
 
 /**
  * @description Editor of column chart
  * props {Props}
  * @returns {React.Node}
  */
-export default function PieChartEditor({
+export default function LineChartEditor({
   dispatch,
   editor,
   ...chartProps
 }: Props) {
-  return <PieChart {...chartProps} as={PieChartEditorView} />;
+  return <LineChart {...chartProps} as={LineChartEditorView} />;
 }
 
 // eslint-disable-next-line
-function PieChartEditorView({
-  children,
-  dispatchElements,
-  selection,
-  ...viewProps
-}) {
+function LineChartEditorView({ children, dispatchElements, ...viewProps }) {
   return (
     <svg {...viewProps}>
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
-            case PieChartTitle: {
-              let {
-                fill,
+            case ChartLegendItem:
+              return [
+                child,
+                <ChartLegendItemInput
+                  {...child.props}
+                  key={[child.key, 'input']}
+                  id={child.key}
+                  dispatchElements={dispatchElements}
+                />,
+              ];
+
+            case LineChartGroup: {
+              const {
                 fontSize,
-                index,
+                fontWeight,
+                group,
+                height,
                 lineHeight,
                 width,
-                title,
                 x,
                 y,
-              }: PieChartTitleProps = child.props;
-              fontSize = 0.85 * fontSize;
-
-              return (
+              }: LineChartGroupProps = child.props;
+              return [
+                child,
                 <ForeignInput
-                  transparent
                   align={'center'}
-                  color={fill}
                   fontSize={fontSize}
-                  height={2 * fontSize * lineHeight}
-                  key={child.key}
+                  fontWeight={fontWeight}
+                  height={height}
+                  key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
                     dispatchElements({
-                      type: UPDATE_ELEMENT,
-                      body: { title: currentTarget.value },
-                      index,
+                      type: UPDATE_ELEMENT_BY_GROUP,
+                      body: { group: currentTarget.value },
+                      group,
                     })
                   }
-                  value={title}
+                  value={group}
                   width={width}
                   x={x - width / 2}
                   y={y - fontSize * lineHeight}
-                />
-              );
+                />,
+              ];
             }
 
-            case PieChartValue: {
-              let {
-                fill,
+            case LineChartValue: {
+              const {
                 fontSize,
+                fontWeight,
+                height,
                 index,
                 lineHeight,
-                width,
                 value,
+                width,
                 x,
                 y,
-              }: PieChartValueProps = child.props;
-              fontSize = 0.85 * fontSize;
-
+              }: LineChartValueProps = child.props;
               return (
                 <ForeignInput
-                  transparent
-                  align={'center'}
-                  color={fill}
                   fontSize={fontSize}
-                  height={2 * fontSize * lineHeight}
-                  key={child.key}
+                  fontWeight={fontWeight}
+                  height={height}
+                  key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
                     dispatchElements({
@@ -103,10 +106,11 @@ function PieChartEditorView({
                       index,
                     })
                   }
-                  type={'number'}
+                  transparent
                   value={value}
+                  type={'number'}
                   width={width}
-                  x={x - width / 2}
+                  x={x}
                   y={y - fontSize * lineHeight}
                 />
               );

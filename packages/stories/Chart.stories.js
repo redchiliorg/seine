@@ -325,3 +325,55 @@ export const TwoGroupsOfSixColumnsMinValueMinus20MaxValue100AndDy18 = () => (
 export const EditorOfTwoGroupsOfSixColumns = () => (
   <TwoGroupsOfSixColumns as={Editor} actions={actions('onChange')} />
 );
+
+export const LineChart = ({ actions, as: Component = Content }) => (
+  <Component
+    {...actions}
+    parent={{
+      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      type: 'page',
+      body: null,
+      format: null,
+      parent_id: null,
+    }}
+  >
+    {[
+      {
+        id: '01648d04-78ad-402b-b255-14a6066d7927',
+        type: 'chart',
+        body: {
+          elements: createTitleIdentityBlockElements([
+            { title: 'Easymode', value: 175, group: 'Year 1' },
+            { title: 'Rest', value: 65, group: 'Year 1' },
+
+            { title: 'Easymode', value: 204, group: 'Year 2' },
+            { title: 'Rest', value: 68, group: 'Year 2' },
+
+            { title: 'Easymode', value: 231, group: 'Year 3' },
+            { title: 'Rest', value: 73, group: 'Year 3' },
+
+            { title: 'Easymode', value: 237, group: 'Year 4' },
+            { title: 'Rest', value: 75, group: 'Year 4' },
+
+            { title: 'Easymode', value: 280, group: 'Year 5' },
+            { title: 'Rest', value: 79, group: 'Year 5' },
+
+            { title: 'Easymode', value: 339, group: 'Year 6' },
+            { title: 'Rest', value: 90, group: 'Year 6' },
+          ]),
+          title: 'Sales ($ millions)',
+        },
+        format: {
+          dy: 40,
+          kind: 'line',
+          maxValue: 400,
+        },
+        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      },
+    ]}
+  </Component>
+);
+
+export const LineChartEditor = () => (
+  <LineChart as={Editor} actions={actions('onChange')} />
+);

@@ -1,22 +1,12 @@
 // @flow
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
-import type {
-  ColumnChartGroupProps,
-  ColumnChartLegendProps,
-} from '@seine/charts';
-import {
-  ColumnChart,
-  ColumnChartGroup,
-  ColumnChartLegend,
-} from '@seine/charts';
-import {
-  UPDATE_ELEMENT,
-  UPDATE_ELEMENT_BY_GROUP,
-  UPDATE_ELEMENT_BY_ID,
-} from '@seine/core';
+import type { ColumnChartGroupProps } from '@seine/charts';
+import { ChartLegendItem, ColumnChart, ColumnChartGroup } from '@seine/charts';
+import { UPDATE_ELEMENT, UPDATE_ELEMENT_BY_GROUP } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
+import ChartLegendItemInput from './ChartLegendItemInput';
 
 /**
  * @description Editor of column chart
@@ -38,37 +28,16 @@ function ColumnChartEditorView({ children, dispatchElements, ...viewProps }) {
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
-            case ColumnChartLegend: {
-              const {
-                fontSize,
-                lineHeight,
-                size,
-                title,
-                width,
-                x,
-                y,
-              }: ColumnChartLegendProps = child.props;
+            case ChartLegendItem:
               return [
                 child,
-                <ForeignInput
-                  fontSize={fontSize}
-                  height={size}
+                <ChartLegendItemInput
+                  {...child.props}
                   key={[child.key, 'input']}
-                  lineHeight={lineHeight}
-                  onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT_BY_ID,
-                      body: { title: currentTarget.value },
-                      id: child.key,
-                    })
-                  }
-                  value={title}
-                  width={width - 2 * (size + fontSize * lineHeight)}
-                  x={x + size + fontSize * lineHeight}
-                  y={y}
+                  id={child.key}
+                  dispatchElements={dispatchElements}
                 />,
               ];
-            }
 
             case ColumnChartGroup:
               const {

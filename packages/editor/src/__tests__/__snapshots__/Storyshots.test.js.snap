@@ -4,10 +4,7 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
 <svg
   fontSize={2}
   fontWeight={500}
-  id="01648d04-78ad-402b-b255-14a6066d7927"
-  parent_id="bee1c449-5515-4b12-9779-cfa11f1f62d9"
   preserveAspectRatio="xMidYMax meet"
-  type="chart"
   viewBox="0 0 100 54"
   width="100%"
 >
@@ -412,7 +409,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -469,7 +466,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -478,11 +475,8 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
       <svg
         fontSize={2}
         fontWeight={500}
-        id="01648d04-78ad-402b-b255-14a6066d7927"
-        parent_id="bee1c449-5515-4b12-9779-cfa11f1f62d9"
         preserveAspectRatio="xMidYMax meet"
         selection={Array []}
-        type="chart"
         viewBox="0 0 100 54"
         width="100%"
       >
@@ -683,7 +677,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -740,7 +734,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -958,7 +952,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1015,145 +1009,131 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
       onClick={[Function]}
     >
       <svg
+        selection={Array []}
         viewBox="0 0 100 100"
       >
         <path
           d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
           fill="#fa6479"
         />
-        <g>
-          <text
-            fill="black"
-            fontSize={4}
-            textAnchor="middle"
-            x={9.210905525156399}
-            y={67.6510173615458}
-          >
-            12
-            %
-          </text>
-          <text
-            dy={3.5}
-            fill="black"
-            fontSize={3}
-            textAnchor="middle"
-            x={9.210905525156399}
-            y={67.6510173615458}
-          >
-            repairs
-          </text>
-        </g>
+        <text
+          fill="black"
+          fontSize={4}
+          textAnchor="middle"
+          x={9.210905525156399}
+          y={67.6510173615458}
+        >
+          12
+          %
+        </text>
+        <text
+          fill="black"
+          fontSize={3}
+          textAnchor="middle"
+          x={9.210905525156399}
+          y={71.1510173615458}
+        >
+          repairs
+        </text>
         <path
           d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
           fill="#cb91a0"
         />
-        <g>
-          <text
-            fill="black"
-            fontSize={4}
-            textAnchor="middle"
-            x={7.320280636580307}
-            y={37.60039528714537}
-          >
-            10
-            %
-          </text>
-          <text
-            dy={3.5}
-            fill="black"
-            fontSize={3}
-            textAnchor="middle"
-            x={7.320280636580307}
-            y={37.60039528714537}
-          >
-            consulting
-          </text>
-        </g>
+        <text
+          fill="black"
+          fontSize={4}
+          textAnchor="middle"
+          x={7.320280636580307}
+          y={37.60039528714537}
+        >
+          10
+          %
+        </text>
+        <text
+          fill="black"
+          fontSize={3}
+          textAnchor="middle"
+          x={7.320280636580307}
+          y={41.10039528714537}
+        >
+          consulting
+        </text>
         <path
           d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
           fill="#a38ca4"
         />
-        <g>
-          <text
-            fill="black"
-            fontSize={4}
-            textAnchor="middle"
-            x={20.608361541171025}
-            y={16.66173023864625}
-          >
-            8
-            %
-          </text>
-          <text
-            dy={3.5}
-            fill="black"
-            fontSize={3}
-            textAnchor="middle"
-            x={20.608361541171025}
-            y={16.66173023864625}
-          >
-            training
-          </text>
-        </g>
+        <text
+          fill="black"
+          fontSize={4}
+          textAnchor="middle"
+          x={20.608361541171025}
+          y={16.66173023864625}
+        >
+          8
+          %
+        </text>
+        <text
+          fill="black"
+          fontSize={3}
+          textAnchor="middle"
+          x={20.608361541171025}
+          y={20.16173023864625}
+        >
+          training
+        </text>
         <path
           d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
           fill="#7482aa"
         />
-        <g>
-          <text
-            fill="white"
-            fontSize={4}
-            textAnchor="middle"
-            x={66.65844267276219}
-            y={49.47648734869786}
-          >
-            64
-            %
-          </text>
-          <text
-            dy={3.5}
-            fill="white"
-            fontSize={3}
-            textAnchor="middle"
-            x={66.65844267276219}
-            y={49.47648734869786}
-          >
-            product sales
-          </text>
-        </g>
+        <text
+          fill="white"
+          fontSize={4}
+          textAnchor="middle"
+          x={66.65844267276219}
+          y={49.47648734869786}
+        >
+          64
+          %
+        </text>
+        <text
+          fill="white"
+          fontSize={3}
+          textAnchor="middle"
+          x={66.65844267276219}
+          y={52.97648734869786}
+        >
+          product sales
+        </text>
         <path
           d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
           fill="#35aeb7"
         />
-        <g>
-          <text
-            fill="black"
-            fontSize={4}
-            textAnchor="middle"
-            x={25.01851653990525}
-            y={86.75913663442492}
-          >
-            6
-            %
-          </text>
-          <text
-            dy={3.5}
-            fill="black"
-            fontSize={3}
-            textAnchor="middle"
-            x={25.01851653990525}
-            y={86.75913663442492}
-          >
-            others
-          </text>
-        </g>
+        <text
+          fill="black"
+          fontSize={4}
+          textAnchor="middle"
+          x={25.01851653990525}
+          y={86.75913663442492}
+        >
+          6
+          %
+        </text>
+        <text
+          fill="black"
+          fontSize={3}
+          textAnchor="middle"
+          x={25.01851653990525}
+          y={90.25913663442492}
+        >
+          others
+        </text>
       </svg>
     </div>
   </div>
@@ -1162,7 +1142,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1219,7 +1199,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -2258,7 +2238,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -2315,7 +2295,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -2922,7 +2902,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -2979,7 +2959,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -3482,7 +3462,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -3539,7 +3519,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -3800,6 +3780,820 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 </div>
 `;
 
+exports[`Storyshots 1 - Charts Line Chart 1`] = `
+<svg
+  fontSize={4}
+  height="100%"
+  strokeWidth={0.5}
+  viewBox="0 0 297 100"
+  width="100%"
+>
+  <text
+    fontSize="1.5em"
+    fontWeight="bold"
+    x={20}
+    y={-1}
+  >
+    Sales ($ millions)
+  </text>
+  <marker
+    id="arrowUp"
+    orient="auto"
+    overflow="visible"
+  >
+    <path
+      d="m0 0 3-3-11 3 11 3-3-3z"
+      fill="#00ff00"
+      fillRule="evenodd"
+      stroke="#0f0"
+    />
+  </marker>
+  <path
+    d="m20 7v86"
+    fill="none"
+    markerStart="url(#arrowUp)"
+    stroke="#00ff00"
+  />
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={20}
+    y={100}
+  >
+    Year 1
+  </text>
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={59}
+    y={100}
+  >
+    Year 2
+  </text>
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={98}
+    y={100}
+  >
+    Year 3
+  </text>
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={137}
+    y={100}
+  >
+    Year 4
+  </text>
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={176}
+    y={100}
+  >
+    Year 5
+  </text>
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    textAnchor="middle"
+    x={215}
+    y={100}
+  >
+    Year 6
+  </text>
+  <path
+    d="m20  93 195 0"
+    stroke="#505050"
+  />
+  <path
+    d="m20  84.4 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={86.4}
+  >
+    40
+  </text>
+  <path
+    d="m20  75.8 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={77.8}
+  >
+    80
+  </text>
+  <path
+    d="m20  67.2 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={69.2}
+  >
+    120
+  </text>
+  <path
+    d="m20  58.6 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={60.6}
+  >
+    160
+  </text>
+  <path
+    d="m20  50 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={52}
+  >
+    200
+  </text>
+  <path
+    d="m20  41.4 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={43.4}
+  >
+    240
+  </text>
+  <path
+    d="m20  32.8 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={34.8}
+  >
+    280
+  </text>
+  <path
+    d="m20  24.200000000000003 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={26.200000000000003}
+  >
+    320
+  </text>
+  <path
+    d="m20  15.599999999999994 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={17.599999999999994}
+  >
+    360
+  </text>
+  <marker
+    id={
+      Array [
+        "point",
+        0,
+      ]
+    }
+    orient="auto"
+    overflow="visible"
+  >
+    <circle
+      cx={0}
+      fill="#fa6479"
+      r={3}
+      stroke="none"
+    />
+  </marker>
+  <path
+    d="M 20 55.375 59 49.14 98 43.335 137 42.045 176 32.8 215 20.114999999999995"
+    fill="none"
+    markerEnd="url(#point,0)"
+    markerMid="url(#point,0)"
+    markerStart="url(#point,0)"
+    stroke="#fa6479"
+  />
+  <text
+    fontSize={4}
+    x={20}
+    y={51.375}
+  >
+    175
+  </text>
+  <text
+    fontSize={4}
+    x={59}
+    y={45.14}
+  >
+    204
+  </text>
+  <text
+    fontSize={4}
+    x={98}
+    y={39.335}
+  >
+    231
+  </text>
+  <text
+    fontSize={4}
+    x={137}
+    y={38.045}
+  >
+    237
+  </text>
+  <text
+    fontSize={4}
+    x={176}
+    y={28.799999999999997}
+  >
+    280
+  </text>
+  <text
+    fontSize={4}
+    x={215}
+    y={16.114999999999995}
+  >
+    339
+  </text>
+  <g
+    fontSize={4}
+    width={102}
+  >
+    <rect
+      fill="#fa6479"
+      height={10}
+      width={10}
+      x={229}
+      y={10.5}
+    />
+    <text
+      x={246}
+      y={17.5}
+    >
+      Easymode
+    </text>
+  </g>
+  <marker
+    id={
+      Array [
+        "point",
+        1,
+      ]
+    }
+    orient="auto"
+    overflow="visible"
+  >
+    <circle
+      cx={0}
+      fill="#cb91a0"
+      r={3}
+      stroke="none"
+    />
+  </marker>
+  <path
+    d="M 20 79.025 59 78.38 98 77.305 137 76.875 176 76.015 215 73.65"
+    fill="none"
+    markerEnd="url(#point,1)"
+    markerMid="url(#point,1)"
+    markerStart="url(#point,1)"
+    stroke="#cb91a0"
+  />
+  <text
+    fontSize={4}
+    x={20}
+    y={75.025}
+  >
+    65
+  </text>
+  <text
+    fontSize={4}
+    x={59}
+    y={74.38}
+  >
+    68
+  </text>
+  <text
+    fontSize={4}
+    x={98}
+    y={73.305}
+  >
+    73
+  </text>
+  <text
+    fontSize={4}
+    x={137}
+    y={72.875}
+  >
+    75
+  </text>
+  <text
+    fontSize={4}
+    x={176}
+    y={72.015}
+  >
+    79
+  </text>
+  <text
+    fontSize={4}
+    x={215}
+    y={69.65}
+  >
+    90
+  </text>
+  <g
+    fontSize={4}
+    width={102}
+  >
+    <rect
+      fill="#cb91a0"
+      height={10}
+      width={10}
+      x={229}
+      y={27.5}
+    />
+    <text
+      x={246}
+      y={34.5}
+    >
+      Rest
+    </text>
+  </g>
+</svg>
+`;
+
+exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add bar chart"
+        type="button"
+      >
+        + column chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM bpEAdn"
+      onClick={[Function]}
+    >
+      <svg
+        fontSize={4}
+        height="100%"
+        selection={Array []}
+        strokeWidth={0.5}
+        viewBox="0 0 297 100"
+        width="100%"
+      >
+        <text
+          fontSize="1.5em"
+          fontWeight="bold"
+          x={20}
+          y={-1}
+        >
+          Sales ($ millions)
+        </text>
+        <marker
+          id="arrowUp"
+          orient="auto"
+          overflow="visible"
+        >
+          <path
+            d="m0 0 3-3-11 3 11 3-3-3z"
+            fill="#00ff00"
+            fillRule="evenodd"
+            stroke="#0f0"
+          />
+        </marker>
+        <path
+          d="m20 7v86"
+          fill="none"
+          markerStart="url(#arrowUp)"
+          stroke="#00ff00"
+        />
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={20}
+          y={100}
+        >
+          Year 1
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={59}
+          y={100}
+        >
+          Year 2
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={98}
+          y={100}
+        >
+          Year 3
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={137}
+          y={100}
+        >
+          Year 4
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={176}
+          y={100}
+        >
+          Year 5
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={215}
+          y={100}
+        >
+          Year 6
+        </text>
+        <path
+          d="m20  93 195 0"
+          stroke="#505050"
+        />
+        <path
+          d="m20  84.4 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={86.4}
+        >
+          40
+        </text>
+        <path
+          d="m20  75.8 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={77.8}
+        >
+          80
+        </text>
+        <path
+          d="m20  67.2 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={69.2}
+        >
+          120
+        </text>
+        <path
+          d="m20  58.6 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={60.6}
+        >
+          160
+        </text>
+        <path
+          d="m20  50 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={52}
+        >
+          200
+        </text>
+        <path
+          d="m20  41.4 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={43.4}
+        >
+          240
+        </text>
+        <path
+          d="m20  32.8 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={34.8}
+        >
+          280
+        </text>
+        <path
+          d="m20  24.200000000000003 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={26.200000000000003}
+        >
+          320
+        </text>
+        <path
+          d="m20  15.599999999999994 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={17.599999999999994}
+        >
+          360
+        </text>
+        <marker
+          id={
+            Array [
+              "point",
+              0,
+            ]
+          }
+          orient="auto"
+          overflow="visible"
+        >
+          <circle
+            cx={0}
+            fill="#fa6479"
+            r={3}
+            stroke="none"
+          />
+        </marker>
+        <path
+          d="M 20 55.375 59 49.14 98 43.335 137 42.045 176 32.8 215 20.114999999999995"
+          fill="none"
+          markerEnd="url(#point,0)"
+          markerMid="url(#point,0)"
+          markerStart="url(#point,0)"
+          stroke="#fa6479"
+        />
+        <text
+          fontSize={4}
+          x={20}
+          y={51.375}
+        >
+          175
+        </text>
+        <text
+          fontSize={4}
+          x={59}
+          y={45.14}
+        >
+          204
+        </text>
+        <text
+          fontSize={4}
+          x={98}
+          y={39.335}
+        >
+          231
+        </text>
+        <text
+          fontSize={4}
+          x={137}
+          y={38.045}
+        >
+          237
+        </text>
+        <text
+          fontSize={4}
+          x={176}
+          y={28.799999999999997}
+        >
+          280
+        </text>
+        <text
+          fontSize={4}
+          x={215}
+          y={16.114999999999995}
+        >
+          339
+        </text>
+        <g
+          fontSize={4}
+          width={102}
+        >
+          <rect
+            fill="#fa6479"
+            height={10}
+            width={10}
+            x={229}
+            y={10.5}
+          />
+          <text
+            x={246}
+            y={17.5}
+          >
+            Easymode
+          </text>
+        </g>
+        <marker
+          id={
+            Array [
+              "point",
+              1,
+            ]
+          }
+          orient="auto"
+          overflow="visible"
+        >
+          <circle
+            cx={0}
+            fill="#cb91a0"
+            r={3}
+            stroke="none"
+          />
+        </marker>
+        <path
+          d="M 20 79.025 59 78.38 98 77.305 137 76.875 176 76.015 215 73.65"
+          fill="none"
+          markerEnd="url(#point,1)"
+          markerMid="url(#point,1)"
+          markerStart="url(#point,1)"
+          stroke="#cb91a0"
+        />
+        <text
+          fontSize={4}
+          x={20}
+          y={75.025}
+        >
+          65
+        </text>
+        <text
+          fontSize={4}
+          x={59}
+          y={74.38}
+        >
+          68
+        </text>
+        <text
+          fontSize={4}
+          x={98}
+          y={73.305}
+        >
+          73
+        </text>
+        <text
+          fontSize={4}
+          x={137}
+          y={72.875}
+        >
+          75
+        </text>
+        <text
+          fontSize={4}
+          x={176}
+          y={72.015}
+        >
+          79
+        </text>
+        <text
+          fontSize={4}
+          x={215}
+          y={69.65}
+        >
+          90
+        </text>
+        <g
+          fontSize={4}
+          width={102}
+        >
+          <rect
+            fill="#cb91a0"
+            height={10}
+            width={10}
+            x={229}
+            y={27.5}
+          />
+          <text
+            x={246}
+            y={34.5}
+          >
+            Rest
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots 1 - Charts Pie Chart 1`] = `
 <svg
   viewBox="0 0 100 100"
@@ -3808,132 +4602,117 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
     d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
     fill="#fa6479"
   />
-  <g>
-    <text
-      fill="black"
-      fontSize={4}
-      textAnchor="middle"
-      x={9.210905525156399}
-      y={67.6510173615458}
-    >
-      12
-      %
-    </text>
-    <text
-      dy={3.5}
-      fill="black"
-      fontSize={3}
-      textAnchor="middle"
-      x={9.210905525156399}
-      y={67.6510173615458}
-    >
-      repairs
-    </text>
-  </g>
+  <text
+    fill="black"
+    fontSize={4}
+    textAnchor="middle"
+    x={9.210905525156399}
+    y={67.6510173615458}
+  >
+    12
+    %
+  </text>
+  <text
+    fill="black"
+    fontSize={3}
+    textAnchor="middle"
+    x={9.210905525156399}
+    y={71.1510173615458}
+  >
+    repairs
+  </text>
   <path
     d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
     fill="#cb91a0"
   />
-  <g>
-    <text
-      fill="black"
-      fontSize={4}
-      textAnchor="middle"
-      x={7.320280636580307}
-      y={37.60039528714537}
-    >
-      10
-      %
-    </text>
-    <text
-      dy={3.5}
-      fill="black"
-      fontSize={3}
-      textAnchor="middle"
-      x={7.320280636580307}
-      y={37.60039528714537}
-    >
-      consulting
-    </text>
-  </g>
+  <text
+    fill="black"
+    fontSize={4}
+    textAnchor="middle"
+    x={7.320280636580307}
+    y={37.60039528714537}
+  >
+    10
+    %
+  </text>
+  <text
+    fill="black"
+    fontSize={3}
+    textAnchor="middle"
+    x={7.320280636580307}
+    y={41.10039528714537}
+  >
+    consulting
+  </text>
   <path
     d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
     fill="#a38ca4"
   />
-  <g>
-    <text
-      fill="black"
-      fontSize={4}
-      textAnchor="middle"
-      x={20.608361541171025}
-      y={16.66173023864625}
-    >
-      8
-      %
-    </text>
-    <text
-      dy={3.5}
-      fill="black"
-      fontSize={3}
-      textAnchor="middle"
-      x={20.608361541171025}
-      y={16.66173023864625}
-    >
-      training
-    </text>
-  </g>
+  <text
+    fill="black"
+    fontSize={4}
+    textAnchor="middle"
+    x={20.608361541171025}
+    y={16.66173023864625}
+  >
+    8
+    %
+  </text>
+  <text
+    fill="black"
+    fontSize={3}
+    textAnchor="middle"
+    x={20.608361541171025}
+    y={20.16173023864625}
+  >
+    training
+  </text>
   <path
     d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
     fill="#7482aa"
   />
-  <g>
-    <text
-      fill="white"
-      fontSize={4}
-      textAnchor="middle"
-      x={66.65844267276219}
-      y={49.47648734869786}
-    >
-      64
-      %
-    </text>
-    <text
-      dy={3.5}
-      fill="white"
-      fontSize={3}
-      textAnchor="middle"
-      x={66.65844267276219}
-      y={49.47648734869786}
-    >
-      product sales
-    </text>
-  </g>
+  <text
+    fill="white"
+    fontSize={4}
+    textAnchor="middle"
+    x={66.65844267276219}
+    y={49.47648734869786}
+  >
+    64
+    %
+  </text>
+  <text
+    fill="white"
+    fontSize={3}
+    textAnchor="middle"
+    x={66.65844267276219}
+    y={52.97648734869786}
+  >
+    product sales
+  </text>
   <path
     d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
     fill="#35aeb7"
   />
-  <g>
-    <text
-      fill="black"
-      fontSize={4}
-      textAnchor="middle"
-      x={25.01851653990525}
-      y={86.75913663442492}
-    >
-      6
-      %
-    </text>
-    <text
-      dy={3.5}
-      fill="black"
-      fontSize={3}
-      textAnchor="middle"
-      x={25.01851653990525}
-      y={86.75913663442492}
-    >
-      others
-    </text>
-  </g>
+  <text
+    fill="black"
+    fontSize={4}
+    textAnchor="middle"
+    x={25.01851653990525}
+    y={86.75913663442492}
+  >
+    6
+    %
+  </text>
+  <text
+    fill="black"
+    fontSize={3}
+    textAnchor="middle"
+    x={25.01851653990525}
+    y={90.25913663442492}
+  >
+    others
+  </text>
 </svg>
 `;
 
@@ -7333,7 +8112,7 @@ exports[`Storyshots 2 - Content Draft Content 1`] = `"{\\"blocks\\":[{\\"key\\":
 
 exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -7390,14 +8169,14 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   />
 </div>
 `;
 
 exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
 <div
-  className="sc-fjdhpX Whtcp"
+  className="sc-gqjmRU iVAfed"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -7454,7 +8233,7 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>

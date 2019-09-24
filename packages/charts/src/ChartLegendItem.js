@@ -17,7 +17,7 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartLegend({
+export default function ChartLegendItem({
   fill,
   fontSize,
   lineHeight,
