@@ -20,7 +20,7 @@ type Props = {
 
 export default ({ id, dispatch, blocks }: Props) => (
   <CompositeActionButton
-    title={'Add column chart'}
+    title={'Add line chart'}
     dispatch={dispatch}
     actions={React.useMemo(
       () =>
@@ -34,7 +34,7 @@ export default ({ id, dispatch, blocks }: Props) => (
           [
             {
               type: blockTypes.DRAFT,
-              body: toRawContent('<h2>Column chart title</h2>'),
+              body: toRawContent('<h2>Line chart title</h2>'),
               format: {
                 textAlignment: 'center',
               },
@@ -45,39 +45,29 @@ export default ({ id, dispatch, blocks }: Props) => (
               body: {
                 elements: createTitleIdentityBlockElements([
                   {
-                    title: 'First Column',
-                    value: 35,
+                    title: 'Top',
+                    value: 100,
                     group: 'group 1',
                   },
                   {
-                    title: 'Second Column',
-                    value: 70,
+                    title: 'Bottom',
+                    value: 10,
                     group: 'group 1',
                   },
                   {
-                    title: 'First Column',
-                    value: 70,
+                    title: 'Top',
+                    value: 100,
                     group: 'group 2',
                   },
                   {
-                    title: 'Second Column',
-                    value: 35,
+                    title: 'Bottom',
+                    value: 10,
                     group: 'group 2',
-                  },
-                  {
-                    title: 'First Column',
-                    value: 35,
-                    group: 'group 3',
-                  },
-                  {
-                    title: 'Second Column',
-                    value: 35,
-                    group: 'group 3',
                   },
                 ]),
               },
               format: {
-                kind: chartTypes.COLUMN,
+                kind: chartTypes.LINE,
               },
             },
           ]
@@ -86,6 +76,6 @@ export default ({ id, dispatch, blocks }: Props) => (
       [id, blocks]
     )}
   >
-    + column chart
+    + line chart
   </CompositeActionButton>
 );

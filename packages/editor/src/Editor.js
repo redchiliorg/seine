@@ -94,10 +94,12 @@ export default function Editor({
   React.useEffect(() => {
     onChange(
       // no extra data should be passed, like `editor` key value
-      blocks.map(({ id, body, format }) => ({
-        id,
+      blocks.map(({ id, body, format, parent_id, type }) => ({
         body,
         format,
+        id,
+        parent_id,
+        type,
       }))
     );
   }, [blocks, onChange]);
