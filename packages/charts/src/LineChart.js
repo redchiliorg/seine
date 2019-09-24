@@ -63,24 +63,6 @@ export default function LineChart({
     ];
   }, [dy, elements, initialMaxValue, initialMinValue]);
 
-  /*
-  <g
-    fill="#008080"
-    stroke="#008080"
-    strokeLinecap="square"
-    strokeLinejoin="round"
-    strokeWidth="0"
-  >
-    <circle cx="20" cy="112" r="2" />
-    <circle cx="58" cy="106" r="2" />
-    <circle cx="96" cy="104" r="2" />
-    <circle cx="135" cy="102" r="2" />
-    <circle cx="173" cy="94" r="2" />
-    <circle cx="211" cy="85" r="2" />
-  </g>
-  <path d="m20 112 38-6 38-2 39-2 38-8 38-9" fill="none" stroke="#008080" />;
-   */
-
   return (
     <View
       fontSize={fontSize}
@@ -119,16 +101,16 @@ export default function LineChart({
 
       {}
 
-      {groups.map(([group], index) => (
+      {groups.map(([title], index) => (
         <text
           fill="#000000"
           fontWeight={'bold'}
-          key={group}
+          key={title}
           textAnchor={'middle'}
           x={x + (index * width) / (groups.length - 1)}
           y={y + height + fontSize * lineHeight}
         >
-          {group}
+          {title}
         </text>
       ))}
 
@@ -142,7 +124,7 @@ export default function LineChart({
           index > 0 ? (
             <text
               fontWeight={'bold'}
-              key={'title'}
+              key={['title', index]}
               textAnchor={'end'}
               x={x - fontSize}
               y={y + height - (index * height) / length + fontSize / 2}
@@ -155,8 +137,8 @@ export default function LineChart({
 
       {titles.map(({ id, title }, index) => [
         <marker
-          key={['point', id]}
-          id={['point', id]}
+          key={['point', title]}
+          id={['point', title]}
           overflow="visible"
           orient="auto"
         >
@@ -185,17 +167,17 @@ export default function LineChart({
             'M'
           )}
           fill={'none'}
-          key={['path', id]}
-          markerEnd={`url(#${['point', id]})`}
-          markerMid={`url(#${['point', id]})`}
-          markerStart={`url(#${['point', id]})`}
+          key={['path', title]}
+          markerEnd={`url(#${['point', title]})`}
+          markerMid={`url(#${['point', title]})`}
+          markerStart={`url(#${['point', title]})`}
           stroke={palette[index % palette.length]}
         />,
 
         <ChartLegendItem
           fill={palette[index % palette.length]}
           fontSize={fontSize}
-          key={['legend', id]}
+          key={['legend', title]}
           lineHeight={lineHeight}
           size={10}
           title={title}
