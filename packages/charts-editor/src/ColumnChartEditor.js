@@ -5,11 +5,7 @@ import type {
   ColumnChartGroupProps,
   ColumnChartLegendProps,
 } from '@seine/charts';
-import {
-  ColumnChart,
-  ColumnChartGroup,
-  ColumnChartLegend,
-} from '@seine/charts';
+import { ColumnChart, ColumnChartGroup, ChartLegendItem } from '@seine/charts';
 import {
   UPDATE_ELEMENT,
   UPDATE_ELEMENT_BY_GROUP,
@@ -38,7 +34,7 @@ function ColumnChartEditorView({ children, dispatchElements, ...viewProps }) {
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
-            case ColumnChartLegend: {
+            case ChartLegendItem: {
               const {
                 fontSize,
                 lineHeight,

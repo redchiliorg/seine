@@ -5,6 +5,7 @@ import { chartTypes } from '@seine/core';
 
 import BarChart from './BarChart';
 import ColumnChart from './ColumnChart';
+import LineChart from './LineChart';
 import PieChart from './PieChart';
 import type { ChartProps } from './types';
 
@@ -20,6 +21,7 @@ type Props = ChartProps & $Shape<Config>;
 export const defaultChartRenderMap = {
   [chartTypes.BAR]: BarChart,
   [chartTypes.COLUMN]: ColumnChart,
+  [chartTypes.LINE]: LineChart,
   [chartTypes.PIE]: PieChart,
 };
 
