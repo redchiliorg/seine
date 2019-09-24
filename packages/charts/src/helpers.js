@@ -1,4 +1,5 @@
 // @flow
+import { useMemo } from 'react';
 import {
   addIndex,
   append,
@@ -53,3 +54,29 @@ export const titleIdentityElements: (
     !acc.some((element) => element.id === id) ? [...acc, { id, title }] : acc,
   []
 );
+
+/**
+ * @description Use grouped chart elements, like in column and line charts.
+ * @param {ChartElement[]} elements
+ * @param {number?} min
+ * @param {number?} max
+ * @param {number?} dy
+ * @returns {[number, number, Array<*>, Array<*>]}
+ */
+export function useGroupedElements(
+  elements,
+  min,
+  max,
+  dy
+): [number, number, *, *] {
+  return useMemo(() => {
+    const maxValue =
+      dy <= max ? max : Math.max(...elements.map(({ value }) => value));
+    return [
+      maxValue,
+      maxValue > min ? min : Math.min(...elements.map(({ value }) => value)),
+      titleIdentityElements(elements),
+      groupElements(elements),
+    ];
+  }, [dy, elements, max, min]);
+}

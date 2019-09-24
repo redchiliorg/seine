@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components';
 type Props = {
   color?: string,
   fontSize: number,
+  fontWeight?: 'normal' | 'bold',
   height: number,
   lineHeight?: number,
   width?: number,
@@ -17,6 +18,7 @@ const Input = styled.input`
     align = 'left',
     color,
     fontSize,
+    fontWeight = 'normal',
     lineHeight,
     transform,
     transparent,
@@ -34,6 +36,7 @@ const Input = styled.input`
     border: 0;
     display: block;
     font-size: ${fontSize}px;
+    font-weight: ${fontWeight};
     height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
     position: relative;
     transform: ${transform};

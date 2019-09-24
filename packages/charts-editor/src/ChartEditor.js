@@ -10,6 +10,7 @@ import PieChartEditor from './PieChartEditor';
 import type { ChartEditorProps } from './types';
 import BarChartEditor from './BarChartEditor';
 import ColumnChartEditor from './ColumnChartEditor';
+import LineChartEditor from './LineChartEditor';
 
 type Props = ChartProps &
   BlockEditor & {
@@ -25,6 +26,7 @@ const defaultChartEditorRenderMap = {
   [chartTypes.PIE]: PieChartEditor,
   [chartTypes.BAR]: BarChartEditor,
   [chartTypes.COLUMN]: ColumnChartEditor,
+  [chartTypes.LINE]: LineChartEditor,
 };
 
 /**

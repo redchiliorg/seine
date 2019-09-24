@@ -10,8 +10,10 @@ import {
   defaultMinValue,
 } from './constants';
 import type { ChartProps } from './types';
-import { groupElements, titleIdentityElements } from './helpers';
+import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
+import LineChartGroup from './LineChartGroup';
+import LineChartValue from './LineChartValue';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -45,30 +47,21 @@ export default function LineChart({
   const height = 86;
   const width = 195;
   const x = 20;
-  const y = 58;
-  const yAxisColor = '#00ff00';
+  const y = 7;
 
-  const [maxValue, minValue, titles, groups] = React.useMemo(() => {
-    const maxValue =
-      dy <= initialMaxValue
-        ? initialMaxValue
-        : Math.max(...elements.map(({ value }) => value));
-    return [
-      maxValue,
-      maxValue > initialMinValue
-        ? initialMinValue
-        : Math.min(...elements.map(({ value }) => value)),
-      titleIdentityElements(elements),
-      groupElements(elements),
-    ];
-  }, [dy, elements, initialMaxValue, initialMinValue]);
+  const [maxValue, minValue, titles, groups] = useGroupedElements(
+    elements,
+    initialMinValue,
+    initialMaxValue,
+    dy
+  );
 
   return (
     <View
       fontSize={fontSize}
       height={'100%'}
       strokeWidth={0.5}
-      viewBox={[0, 0, 297, 210].join(' ')}
+      viewBox={[0, 0, 297, 100].join(' ')}
       width={'100%'}
       {...viewProps}
     >
@@ -84,9 +77,8 @@ export default function LineChart({
 
       <marker id="arrowUp" overflow="visible" orient="auto">
         <path
-          transform="scale(0.6) translate(3.6)"
-          d="m0 0 5-5-18 5 18 5-5-5z"
-          fill={yAxisColor}
+          d="m0 0 3-3-11 3 11 3-3-3z"
+          fill="#00ff00"
           fillRule="evenodd"
           stroke="#0f0"
         />
@@ -94,24 +86,23 @@ export default function LineChart({
       <path
         d={`m${x} ${y}v${height}`}
         fill="none"
-        key={'y-axis'}
+        key="y-axis"
         markerStart="url(#arrowUp)"
-        stroke={yAxisColor}
+        stroke="#00ff00"
       />
 
-      {}
-
-      {groups.map(([title], index) => (
-        <text
-          fill="#000000"
+      {groups.map(([group], index) => (
+        <LineChartGroup
+          fontSize={fontSize}
           fontWeight={'bold'}
-          key={title}
-          textAnchor={'middle'}
+          group={group}
+          height={fontSize * lineHeight}
+          key={index}
+          lineHeight={lineHeight}
+          width={8 * fontSize}
           x={x + (index * width) / (groups.length - 1)}
           y={y + height + fontSize * lineHeight}
-        >
-          {title}
-        </text>
+        />
       ))}
 
       {Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
@@ -135,10 +126,10 @@ export default function LineChart({
         ]
       )}
 
-      {titles.map(({ id, title }, index) => [
+      {titles.map(({ id, title }, titleIndex) => [
         <marker
-          key={['point', title]}
-          id={['point', title]}
+          key={['point', titleIndex]}
+          id={['point', titleIndex]}
           overflow="visible"
           orient="auto"
         >
@@ -146,7 +137,7 @@ export default function LineChart({
             cx={0}
             r={3}
             stroke={'none'}
-            fill={palette[index % palette.length]}
+            fill={palette[titleIndex % palette.length]}
           />
         </marker>,
 
@@ -167,26 +158,53 @@ export default function LineChart({
             'M'
           )}
           fill={'none'}
-          key={['path', title]}
-          markerEnd={`url(#${['point', title]})`}
-          markerMid={`url(#${['point', title]})`}
-          markerStart={`url(#${['point', title]})`}
-          stroke={palette[index % palette.length]}
+          key={['path', titleIndex]}
+          markerEnd={`url(#${['point', titleIndex]})`}
+          markerMid={`url(#${['point', titleIndex]})`}
+          markerStart={`url(#${['point', titleIndex]})`}
+          stroke={palette[titleIndex % palette.length]}
         />,
 
+        ...groups.map(([, elements], groupIndex) =>
+          elements
+            .filter((element) => element.id === id)
+            .map(({ index, value }) => (
+              <LineChartValue
+                fontSize={fontSize}
+                height={2 * fontSize * lineHeight}
+                index={index}
+                key={['value', titleIndex, groupIndex]}
+                lineHeight={lineHeight}
+                value={value}
+                width={3 * fontSize}
+                x={x + (groupIndex * width) / (groups.length - 1)}
+                y={
+                  y +
+                  height -
+                  ((elements
+                    .filter((element) => element.id === id)
+                    .map(({ value }) => value)[0] || 0) *
+                    height) /
+                    (maxValue - minValue) -
+                  fontSize
+                }
+              />
+            ))
+        ),
+
         <ChartLegendItem
-          fill={palette[index % palette.length]}
+          fill={palette[titleIndex % palette.length]}
           fontSize={fontSize}
-          key={['legend', title]}
+          key={id}
           lineHeight={lineHeight}
           size={10}
           title={title}
-          width={80}
-          x={x + width + 10}
+          width={297 - width}
+          x={x + width + 10 + fontSize}
           y={
             y +
             (fontSize * lineHeight) / 2 +
-            (10 + fontSize * lineHeight) * index
+            (10 + fontSize * lineHeight) * titleIndex
           }
         />,
       ])}

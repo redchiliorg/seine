@@ -26,7 +26,7 @@ const defaultBody = { elements: [] };
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartToolbar({
+export default function LineChartToolbar({
   id,
   format,
   body,
@@ -42,28 +42,36 @@ export default function ColumnChartToolbar({
           dispatch={dispatch}
           format={format}
           id={id}
-        />
+        >
+          Add line
+        </ChartElementAddButton>
 
         <RemoveChartElementButton
           body={body}
           dispatch={dispatch}
           format={format}
           id={id}
-        />
+        >
+          Rm line
+        </RemoveChartElementButton>
 
         <ChartGroupAddButton
           body={body}
           dispatch={dispatch}
           format={format}
           id={id}
-        />
+        >
+          Add point
+        </ChartGroupAddButton>
 
         <ChartGroupRemoveButton
           body={body}
           dispatch={dispatch}
           format={format}
           id={id}
-        />
+        >
+          Rm point
+        </ChartGroupRemoveButton>
 
         <ChartMinValueInput
           body={body}

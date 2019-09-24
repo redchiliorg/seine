@@ -8,6 +8,7 @@ import { Toolbar } from '@seine/ui';
 import ColumnChartToolbar from './ColumnChartToolbar';
 import BarChartToolbar from './BarChartToolbar';
 import PieChartToolbar from './PieChartToolbar';
+import LineChartToolbar from './LineChartToolbar';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -47,6 +48,14 @@ export default function ChartToolbar({
       >
         {children}
       </ColumnChartToolbar>
+    ) : format.kind === chartTypes.LINE ? (
+      <LineChartToolbar
+        {...toolbarProps}
+        body={body || defaultBody}
+        format={format}
+      >
+        {children}
+      </LineChartToolbar>
     ) : format.kind === chartTypes.PIE ? (
       <PieChartToolbar
         {...toolbarProps}

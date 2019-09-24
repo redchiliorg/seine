@@ -16,6 +16,10 @@ export type { Props as ColumnChartLegendProps } from './ChartLegendItem';
 export type { Props as ColumnChartGroupProps } from './ColumnChartGroup';
 
 export { default as LineChart } from './LineChart';
+export { default as LineChartGroup } from './LineChartGroup';
+export type { Props as LineChartGroupProps } from './LineChartGroup';
+export { default as LineChartValue } from './LineChartValue';
+export type { Props as LineChartValueProps } from './LineChartValue';
 
 export { default as PieChart } from './PieChart';
 export { default as PieChartTitle } from './PieChartTitle';

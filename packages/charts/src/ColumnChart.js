@@ -10,7 +10,7 @@ import {
   defaultMinValue,
 } from './constants';
 import type { ChartProps } from './types';
-import { groupElements, titleIdentityElements } from './helpers';
+import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
 
@@ -43,20 +43,12 @@ export default function ColumnChart({
 }: Props) {
   const barGroupWidth = 66;
   const xPadding = 23;
-  const [maxValue, minValue, titles, groups] = React.useMemo(() => {
-    const maxValue =
-      dy <= initialMaxValue
-        ? initialMaxValue
-        : Math.max(...elements.map(({ value }) => value));
-    return [
-      maxValue,
-      maxValue > initialMinValue
-        ? initialMinValue
-        : Math.min(...elements.map(({ value }) => value)),
-      titleIdentityElements(elements),
-      groupElements(elements),
-    ];
-  }, [dy, elements, initialMaxValue, initialMinValue]);
+  const [maxValue, minValue, titles, groups] = useGroupedElements(
+    elements,
+    initialMinValue,
+    initialMaxValue,
+    dy
+  );
 
   return (
     <View

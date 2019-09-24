@@ -343,32 +343,37 @@ export const LineChart = ({ actions, as: Component = Content }) => (
         type: 'chart',
         body: {
           elements: createTitleIdentityBlockElements([
-            { title: 'Maelstorm', value: 65, group: 'Year 1' },
-            { title: 'Spring', value: 175, group: 'Year 1' },
+            { title: 'Easymode', value: 175, group: 'Year 1' },
+            { title: 'Rest', value: 65, group: 'Year 1' },
 
-            { title: 'Maelstorm', value: 68, group: 'Year 2' },
-            { title: 'Spring', value: 204, group: 'Year 2' },
+            { title: 'Easymode', value: 204, group: 'Year 2' },
+            { title: 'Rest', value: 68, group: 'Year 2' },
 
-            { title: 'Maelstorm', value: 73, group: 'Year 3' },
-            { title: 'Spring', value: 231, group: 'Year 3' },
+            { title: 'Easymode', value: 231, group: 'Year 3' },
+            { title: 'Rest', value: 73, group: 'Year 3' },
 
-            { title: 'Maelstorm', value: 75, group: 'Year 4' },
-            { title: 'Spring', value: 237, group: 'Year 4' },
+            { title: 'Easymode', value: 237, group: 'Year 4' },
+            { title: 'Rest', value: 75, group: 'Year 4' },
 
-            { title: 'Maelstorm', value: 79, group: 'Year 5' },
-            { title: 'Spring', value: 280, group: 'Year 5' },
+            { title: 'Easymode', value: 280, group: 'Year 5' },
+            { title: 'Rest', value: 79, group: 'Year 5' },
 
-            { title: 'Maelstorm', value: 90, group: 'Year 6' },
-            { title: 'Spring', value: 339, group: 'Year 6' },
+            { title: 'Easymode', value: 339, group: 'Year 6' },
+            { title: 'Rest', value: 90, group: 'Year 6' },
           ]),
           title: 'Sales ($ millions)',
         },
         format: {
           dy: 40,
           kind: 'line',
+          maxValue: 400,
         },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
     ]}
   </Component>
+);
+
+export const LineChartEditor = () => (
+  <LineChart as={Editor} actions={actions('onChange')} />
 );

@@ -3785,14 +3785,14 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
   fontSize={4}
   height="100%"
   strokeWidth={0.5}
-  viewBox="0 0 297 210"
+  viewBox="0 0 297 100"
   width="100%"
 >
   <text
     fontSize="1.5em"
     fontWeight="bold"
     x={20}
-    y={50}
+    y={-1}
   >
     Sales ($ millions)
   </text>
@@ -3802,166 +3802,189 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     overflow="visible"
   >
     <path
-      d="m0 0 5-5-18 5 18 5-5-5z"
+      d="m0 0 3-3-11 3 11 3-3-3z"
       fill="#00ff00"
       fillRule="evenodd"
       stroke="#0f0"
-      transform="scale(0.6) translate(3.6)"
     />
   </marker>
   <path
-    d="m20 58v86"
+    d="m20 7v86"
     fill="none"
     markerStart="url(#arrowUp)"
     stroke="#00ff00"
   />
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={20}
-    y={151}
+    y={100}
   >
     Year 1
   </text>
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={59}
-    y={151}
+    y={100}
   >
     Year 2
   </text>
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={98}
-    y={151}
+    y={100}
   >
     Year 3
   </text>
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={137}
-    y={151}
+    y={100}
   >
     Year 4
   </text>
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={176}
-    y={151}
+    y={100}
   >
     Year 5
   </text>
   <text
-    fill="#000000"
+    fontSize={4}
     fontWeight="bold"
     textAnchor="middle"
     x={215}
-    y={151}
+    y={100}
   >
     Year 6
   </text>
   <path
-    d="m20  144 195 0"
+    d="m20  93 195 0"
     stroke="#505050"
   />
   <path
-    d="m20  133.25 195 0"
+    d="m20  84.4 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={135.25}
+    y={86.4}
   >
     40
   </text>
   <path
-    d="m20  122.5 195 0"
+    d="m20  75.8 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={124.5}
+    y={77.8}
   >
     80
   </text>
   <path
-    d="m20  111.75 195 0"
+    d="m20  67.2 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={113.75}
+    y={69.2}
   >
     120
   </text>
   <path
-    d="m20  101 195 0"
+    d="m20  58.6 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={103}
+    y={60.6}
   >
     160
   </text>
   <path
-    d="m20  90.25 195 0"
+    d="m20  50 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={92.25}
+    y={52}
   >
     200
   </text>
   <path
-    d="m20  79.5 195 0"
+    d="m20  41.4 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={81.5}
+    y={43.4}
   >
     240
   </text>
   <path
-    d="m20  68.75 195 0"
+    d="m20  32.8 195 0"
     stroke="#f0f0f0"
   />
   <text
     fontWeight="bold"
     textAnchor="end"
     x={16}
-    y={70.75}
+    y={34.8}
   >
     280
+  </text>
+  <path
+    d="m20  24.200000000000003 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={26.200000000000003}
+  >
+    320
+  </text>
+  <path
+    d="m20  15.599999999999994 195 0"
+    stroke="#f0f0f0"
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="end"
+    x={16}
+    y={17.599999999999994}
+  >
+    360
   </text>
   <marker
     id={
       Array [
         "point",
-        "Maelstorm",
+        0,
       ]
     }
     orient="auto"
@@ -3975,36 +3998,78 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     />
   </marker>
   <path
-    d="M 20 127.5103244837758 59 126.74926253687316 98 125.48082595870207 137 124.97345132743362 176 123.95870206489676 215 121.16814159292035"
+    d="M 20 55.375 59 49.14 98 43.335 137 42.045 176 32.8 215 20.114999999999995"
     fill="none"
-    markerEnd="url(#point,Maelstorm)"
-    markerMid="url(#point,Maelstorm)"
-    markerStart="url(#point,Maelstorm)"
+    markerEnd="url(#point,0)"
+    markerMid="url(#point,0)"
+    markerStart="url(#point,0)"
     stroke="#fa6479"
   />
+  <text
+    fontSize={4}
+    x={20}
+    y={51.375}
+  >
+    175
+  </text>
+  <text
+    fontSize={4}
+    x={59}
+    y={45.14}
+  >
+    204
+  </text>
+  <text
+    fontSize={4}
+    x={98}
+    y={39.335}
+  >
+    231
+  </text>
+  <text
+    fontSize={4}
+    x={137}
+    y={38.045}
+  >
+    237
+  </text>
+  <text
+    fontSize={4}
+    x={176}
+    y={28.799999999999997}
+  >
+    280
+  </text>
+  <text
+    fontSize={4}
+    x={215}
+    y={16.114999999999995}
+  >
+    339
+  </text>
   <g
     fontSize={4}
-    width={80}
+    width={102}
   >
     <rect
       fill="#fa6479"
       height={10}
       width={10}
-      x={225}
-      y={61.5}
+      x={229}
+      y={10.5}
     />
     <text
-      x={242}
-      y={68.5}
+      x={246}
+      y={17.5}
     >
-      Maelstorm
+      Easymode
     </text>
   </g>
   <marker
     id={
       Array [
         "point",
-        "Spring",
+        1,
       ]
     }
     orient="auto"
@@ -4018,32 +4083,515 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     />
   </marker>
   <path
-    d="M 20 99.6047197640118 59 92.24778761061947 98 85.39823008849558 137 83.87610619469027 176 72.96755162241888 215 58"
+    d="M 20 79.025 59 78.38 98 77.305 137 76.875 176 76.015 215 73.65"
     fill="none"
-    markerEnd="url(#point,Spring)"
-    markerMid="url(#point,Spring)"
-    markerStart="url(#point,Spring)"
+    markerEnd="url(#point,1)"
+    markerMid="url(#point,1)"
+    markerStart="url(#point,1)"
     stroke="#cb91a0"
   />
+  <text
+    fontSize={4}
+    x={20}
+    y={75.025}
+  >
+    65
+  </text>
+  <text
+    fontSize={4}
+    x={59}
+    y={74.38}
+  >
+    68
+  </text>
+  <text
+    fontSize={4}
+    x={98}
+    y={73.305}
+  >
+    73
+  </text>
+  <text
+    fontSize={4}
+    x={137}
+    y={72.875}
+  >
+    75
+  </text>
+  <text
+    fontSize={4}
+    x={176}
+    y={72.015}
+  >
+    79
+  </text>
+  <text
+    fontSize={4}
+    x={215}
+    y={69.65}
+  >
+    90
+  </text>
   <g
     fontSize={4}
-    width={80}
+    width={102}
   >
     <rect
       fill="#cb91a0"
       height={10}
       width={10}
-      x={225}
-      y={78.5}
+      x={229}
+      y={27.5}
     />
     <text
-      x={242}
-      y={85.5}
+      x={246}
+      y={34.5}
     >
-      Spring
+      Rest
     </text>
   </g>
 </svg>
+`;
+
+exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
+<div
+  className="sc-gqjmRU iVAfed"
+>
+  <div
+    className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-ifAKCX dtaADw"
+    >
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add text block"
+        type="button"
+      >
+        + text
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add sibling text block"
+        type="button"
+      >
+        + 2 text columns
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add pie chart"
+        type="button"
+      >
+        + pie chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add bar chart"
+        type="button"
+      >
+        + bar chart
+      </button>
+      <button
+        className="sc-bwzfXH mui-btn mui-btn--default mui-btn--small uTxCW"
+        onClick={[Function]}
+        size="small"
+        title="Add bar chart"
+        type="button"
+      >
+        + column chart
+      </button>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat sc-VigVT mui-panel dmHvgR"
+  >
+    <div
+      className="sc-bZQynM bpEAdn"
+      onClick={[Function]}
+    >
+      <svg
+        fontSize={4}
+        height="100%"
+        selection={Array []}
+        strokeWidth={0.5}
+        viewBox="0 0 297 100"
+        width="100%"
+      >
+        <text
+          fontSize="1.5em"
+          fontWeight="bold"
+          x={20}
+          y={-1}
+        >
+          Sales ($ millions)
+        </text>
+        <marker
+          id="arrowUp"
+          orient="auto"
+          overflow="visible"
+        >
+          <path
+            d="m0 0 3-3-11 3 11 3-3-3z"
+            fill="#00ff00"
+            fillRule="evenodd"
+            stroke="#0f0"
+          />
+        </marker>
+        <path
+          d="m20 7v86"
+          fill="none"
+          markerStart="url(#arrowUp)"
+          stroke="#00ff00"
+        />
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={20}
+          y={100}
+        >
+          Year 1
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={59}
+          y={100}
+        >
+          Year 2
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={98}
+          y={100}
+        >
+          Year 3
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={137}
+          y={100}
+        >
+          Year 4
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={176}
+          y={100}
+        >
+          Year 5
+        </text>
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          textAnchor="middle"
+          x={215}
+          y={100}
+        >
+          Year 6
+        </text>
+        <path
+          d="m20  93 195 0"
+          stroke="#505050"
+        />
+        <path
+          d="m20  84.4 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={86.4}
+        >
+          40
+        </text>
+        <path
+          d="m20  75.8 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={77.8}
+        >
+          80
+        </text>
+        <path
+          d="m20  67.2 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={69.2}
+        >
+          120
+        </text>
+        <path
+          d="m20  58.6 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={60.6}
+        >
+          160
+        </text>
+        <path
+          d="m20  50 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={52}
+        >
+          200
+        </text>
+        <path
+          d="m20  41.4 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={43.4}
+        >
+          240
+        </text>
+        <path
+          d="m20  32.8 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={34.8}
+        >
+          280
+        </text>
+        <path
+          d="m20  24.200000000000003 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={26.200000000000003}
+        >
+          320
+        </text>
+        <path
+          d="m20  15.599999999999994 195 0"
+          stroke="#f0f0f0"
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="end"
+          x={16}
+          y={17.599999999999994}
+        >
+          360
+        </text>
+        <marker
+          id={
+            Array [
+              "point",
+              0,
+            ]
+          }
+          orient="auto"
+          overflow="visible"
+        >
+          <circle
+            cx={0}
+            fill="#fa6479"
+            r={3}
+            stroke="none"
+          />
+        </marker>
+        <path
+          d="M 20 55.375 59 49.14 98 43.335 137 42.045 176 32.8 215 20.114999999999995"
+          fill="none"
+          markerEnd="url(#point,0)"
+          markerMid="url(#point,0)"
+          markerStart="url(#point,0)"
+          stroke="#fa6479"
+        />
+        <text
+          fontSize={4}
+          x={20}
+          y={51.375}
+        >
+          175
+        </text>
+        <text
+          fontSize={4}
+          x={59}
+          y={45.14}
+        >
+          204
+        </text>
+        <text
+          fontSize={4}
+          x={98}
+          y={39.335}
+        >
+          231
+        </text>
+        <text
+          fontSize={4}
+          x={137}
+          y={38.045}
+        >
+          237
+        </text>
+        <text
+          fontSize={4}
+          x={176}
+          y={28.799999999999997}
+        >
+          280
+        </text>
+        <text
+          fontSize={4}
+          x={215}
+          y={16.114999999999995}
+        >
+          339
+        </text>
+        <g
+          fontSize={4}
+          width={102}
+        >
+          <rect
+            fill="#fa6479"
+            height={10}
+            width={10}
+            x={229}
+            y={10.5}
+          />
+          <text
+            x={246}
+            y={17.5}
+          >
+            Easymode
+          </text>
+        </g>
+        <marker
+          id={
+            Array [
+              "point",
+              1,
+            ]
+          }
+          orient="auto"
+          overflow="visible"
+        >
+          <circle
+            cx={0}
+            fill="#cb91a0"
+            r={3}
+            stroke="none"
+          />
+        </marker>
+        <path
+          d="M 20 79.025 59 78.38 98 77.305 137 76.875 176 76.015 215 73.65"
+          fill="none"
+          markerEnd="url(#point,1)"
+          markerMid="url(#point,1)"
+          markerStart="url(#point,1)"
+          stroke="#cb91a0"
+        />
+        <text
+          fontSize={4}
+          x={20}
+          y={75.025}
+        >
+          65
+        </text>
+        <text
+          fontSize={4}
+          x={59}
+          y={74.38}
+        >
+          68
+        </text>
+        <text
+          fontSize={4}
+          x={98}
+          y={73.305}
+        >
+          73
+        </text>
+        <text
+          fontSize={4}
+          x={137}
+          y={72.875}
+        >
+          75
+        </text>
+        <text
+          fontSize={4}
+          x={176}
+          y={72.015}
+        >
+          79
+        </text>
+        <text
+          fontSize={4}
+          x={215}
+          y={69.65}
+        >
+          90
+        </text>
+        <g
+          fontSize={4}
+          width={102}
+        >
+          <rect
+            fill="#cb91a0"
+            height={10}
+            width={10}
+            x={229}
+            y={27.5}
+          />
+          <text
+            x={246}
+            y={34.5}
+          >
+            Rest
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots 1 - Charts Pie Chart 1`] = `
