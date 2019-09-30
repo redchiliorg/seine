@@ -2,6 +2,7 @@
 import { equals } from 'ramda';
 
 import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
+import { blockTypes } from '../types';
 
 opaque type BlockExtension = {
   editor: { [string]: any },
@@ -120,7 +121,13 @@ export function reduceEditor(
       return {
         ...state,
         selection: [],
-        blocks: state.blocks.filter(({ id }) => !state.selection.includes(id)),
+        blocks: state.blocks
+          .filter(({ id }) => !state.selection.includes(id))
+          .filter(
+            ({ id, type }, _, blocks) =>
+              type !== blockTypes.GRID ||
+              blocks.some(({ parent_id }) => parent_id === id)
+          ),
       };
 
     case UPDATE_BLOCK_BODY:
