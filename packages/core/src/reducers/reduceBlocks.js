@@ -7,11 +7,11 @@ import { blockTypes } from '../types';
 opaque type BlockExtension = {
   editor: { [string]: any },
 };
-export type EditorState = {
+export type BlocksState = {
   selection: $ReadOnlyArray<BlockId>,
   blocks: $ReadOnlyArray<Block & BlockExtension>,
 };
-export const initialEditor = {
+export const initialBlocksState = {
   selection: [],
   blocks: [],
 };
@@ -50,7 +50,7 @@ export type UpdateBlockFormatAction = {
 // Memoize editor's inner state.
 //
 // Should be cleaned in onChange callbacks as it is
-// done in ContentEditor component.
+// done in Editor component.
 //
 export const UPDATE_BLOCK_EDITOR = '@seine/editor/updateBlockEditor';
 export type UpdateBlockEditorAction = {
@@ -58,7 +58,7 @@ export type UpdateBlockEditorAction = {
   editor: any,
 };
 
-export type EditorAction =
+export type BlocksAction =
   | CreateBlockAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
@@ -68,14 +68,14 @@ export type EditorAction =
 
 /**
  * @description Reduce Content editor actions
- * @param {EditorState} state
- * @param {EditorAction} action
- * @returns {EditorState}
+ * @param {BlocksState} state
+ * @param {BlocksAction} action
+ * @returns {BlocksState}
  */
-export function reduceEditor(
-  state: EditorState = initialEditor,
-  action: EditorAction
-): EditorState {
+export function reduceBlocks(
+  state: BlocksState = initialBlocksState,
+  action: BlocksAction
+): BlocksState {
   switch (action.type) {
     case SELECT_BLOCK: {
       const index = state.selection.indexOf(action.id);

@@ -1,9 +1,9 @@
 // @flow
-import type { EditorAction, EditorState } from './reduceEditor';
+import type { BlocksAction, BlocksState } from './reduceBlocks';
 import type { ElementsAction, ElementsState } from './reduceElements';
 
-export type State = EditorState | ElementsState;
-export type Action = EditorAction | ElementsAction;
+export type State = BlocksState | ElementsState;
+export type Action = BlocksAction | ElementsAction;
 
-export * from './reduceEditor';
+export * from './reduceBlocks';
 export * from './reduceElements';

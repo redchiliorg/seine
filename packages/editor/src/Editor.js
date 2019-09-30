@@ -4,12 +4,12 @@ import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Content } from '@seine/content';
 import type { ContentProps } from '@seine/content';
-import type { Block, EditorAction, EditorState } from '@seine/core';
+import type { Block, BlocksAction, BlocksState } from '@seine/core';
 import {
   blockTypes,
   DELETE_SELECTED_BLOCKS,
-  reduceEditor,
-  initialEditor,
+  reduceBlocks,
+  initialBlocksState,
   SELECT_BLOCK,
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
@@ -83,13 +83,13 @@ export default function Editor({
   ...contentProps
 }: Props) {
   const init = React.useCallback(
-    () => ({ ...initialEditor, blocks: children }),
+    () => ({ ...initialBlocksState, blocks: children }),
     [children]
   );
   const [{ blocks, selection }, dispatch] = useReducerEx<
-    EditorState,
-    EditorAction
-  >(reduceEditor, initialEditor, init);
+    BlocksState,
+    BlocksAction
+  >(reduceBlocks, initialBlocksState, init);
 
   React.useEffect(() => {
     onChange(
