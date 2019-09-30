@@ -2,35 +2,32 @@
 import * as React from 'react';
 import {
   ChartLegendItem,
-  LineChart,
   LineChartGroup,
   LineChartGroupProps,
   LineChartValue,
   LineChartValueProps,
 } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
-import { UPDATE_ELEMENT, UPDATE_ELEMENT_BY_GROUP } from '@seine/core';
+import {
+  UPDATE_BLOCK_ELEMENT,
+  UPDATE_BLOCK_ELEMENT_BY_GROUP,
+} from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
 
 /**
- * @description Editor of column chart
- * props {Props}
+ * @description Editor of line chart
+ * @param {Props} props
  * @returns {React.Node}
  */
 export default function LineChartEditor({
+  children,
   dispatch,
-  editor,
-  ...chartProps
+  ...svgProps
 }: Props) {
-  return <LineChart {...chartProps} as={LineChartEditorView} />;
-}
-
-// eslint-disable-next-line
-function LineChartEditorView({ children, dispatchElements, ...viewProps }) {
   return (
-    <svg {...viewProps}>
+    <svg {...svgProps}>
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
@@ -41,7 +38,7 @@ function LineChartEditorView({ children, dispatchElements, ...viewProps }) {
                   {...child.props}
                   key={[child.key, 'input']}
                   id={child.key}
-                  dispatchElements={dispatchElements}
+                  dispatch={dispatch}
                 />,
               ];
 
@@ -66,8 +63,8 @@ function LineChartEditorView({ children, dispatchElements, ...viewProps }) {
                   key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT_BY_GROUP,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
                       body: { group: currentTarget.value },
                       group,
                     })
@@ -100,8 +97,8 @@ function LineChartEditorView({ children, dispatchElements, ...viewProps }) {
                   key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT,
                       body: { value: +currentTarget.value },
                       index,
                     })

@@ -1,40 +1,30 @@
 // @flow
 import * as React from 'react';
 import {
-  BarChart,
   BarChartTitle,
   BarChartTitleProps,
   BarChartValue,
   BarChartValueProps,
 } from '@seine/charts';
-import { UPDATE_ELEMENT } from '@seine/core';
+import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { ForeignInput } from '@seine/ui';
 
 import type { ChartEditorProps as Props } from './types';
 
 /**
- * @description Editor of column chart
- * props {Props}
+ * @description Editor of bar chart
+ * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartEditor({
-  dispatch,
-  editor,
-  ...chartProps
-}: Props) {
-  return <BarChart {...chartProps} as={BarChartEditorView} />;
-}
-
-// eslint-disable-next-line
-function BarChartEditorView({
+export default function BarChartEditorView({
   children,
-  dispatchElements,
+  dispatch,
   fontSize,
   selection,
-  ...viewProps
-}) {
+  ...svgProps
+}: Props) {
   return (
-    <svg {...viewProps} fontSize={fontSize}>
+    <svg {...svgProps} fontSize={fontSize}>
       {React.useMemo(
         () =>
           React.Children.map(children, (child: ?React.Node) => {
@@ -59,8 +49,8 @@ function BarChartEditorView({
                       height={height / 3}
                       key={child.key}
                       onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_ELEMENT,
+                        dispatch({
+                          type: UPDATE_BLOCK_ELEMENT,
                           body: { value: currentTarget.value },
                           index,
                         })
@@ -93,8 +83,8 @@ function BarChartEditorView({
                       height={height / 3}
                       key={child.key}
                       onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_ELEMENT,
+                        dispatch({
+                          type: UPDATE_BLOCK_ELEMENT,
                           body: { title: currentTarget.value },
                           index,
                         })
@@ -112,7 +102,7 @@ function BarChartEditorView({
               }
             }
           }),
-        [children, dispatchElements, fontSize]
+        [children, dispatch, fontSize]
       )}
     </svg>
   );

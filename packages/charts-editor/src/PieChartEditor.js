@@ -2,38 +2,28 @@
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
 import {
-  PieChart,
   PieChartTitle,
   PieChartTitleProps,
   PieChartValue,
   PieChartValueProps,
 } from '@seine/charts';
-import { UPDATE_ELEMENT } from '@seine/core';
+import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
 
 /**
- * @description Editor of column chart
- * props {Props}
+ * @description Editor of pie chart
+ * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartEditor({
-  dispatch,
-  editor,
-  ...chartProps
-}: Props) {
-  return <PieChart {...chartProps} as={PieChartEditorView} />;
-}
-
-// eslint-disable-next-line
-function PieChartEditorView({
+export default function PieChartEditorView({
   children,
-  dispatchElements,
+  dispatch,
   selection,
-  ...viewProps
-}) {
+  ...svgProps
+}: Props) {
   return (
-    <svg {...viewProps}>
+    <svg {...svgProps}>
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
@@ -60,8 +50,8 @@ function PieChartEditorView({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT,
                       body: { title: currentTarget.value },
                       index,
                     })
@@ -97,8 +87,8 @@ function PieChartEditorView({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT,
                       body: { value: +currentTarget.value },
                       index,
                     })

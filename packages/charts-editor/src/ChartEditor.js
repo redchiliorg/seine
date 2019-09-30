@@ -1,32 +1,36 @@
 // @flow
 import * as React from 'react';
-import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
-import { chartTypes, reduceElements, UPDATE_BLOCK_BODY } from '@seine/core';
+import type { BlocksAction, ChartType, ElementsAction } from '@seine/core';
+import {
+  chartTypes,
+  initialElementsState,
+  reduceElements,
+  UPDATE_BLOCK_BODY,
+} from '@seine/core';
 import { BlockContainer, useSelectableBlockProps } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
 import { Chart, defaultChartRenderMap } from '@seine/charts';
 
-import PieChartEditor from './PieChartEditor';
 import type { ChartEditorProps } from './types';
+import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
 import ColumnChartEditor from './ColumnChartEditor';
 import LineChartEditor from './LineChartEditor';
 
-type Props = ChartProps &
-  BlockEditor & {
-    id: string,
-    dispatch: Function,
-    chartEditorRenderMap: {
-      [kind: ChartType]: React.ComponentType<ChartEditorProps>,
-    },
-  };
+type Props = ChartProps & {
+  id: string,
+  dispatch: (BlocksAction) => any,
+  chartEditorRenderMap: {
+    [kind: ChartType]: React.ComponentType<ChartEditorProps>,
+  },
+};
 
 const defaultChartEditorRenderMap = {
   ...defaultChartRenderMap,
-  [chartTypes.PIE]: PieChartEditor,
-  [chartTypes.BAR]: BarChartEditor,
-  [chartTypes.COLUMN]: ColumnChartEditor,
-  [chartTypes.LINE]: LineChartEditor,
+  [chartTypes.PIE]: (props) => <Chart as={PieChartEditor} {...props} />,
+  [chartTypes.BAR]: (props) => <Chart as={BarChartEditor} {...props} />,
+  [chartTypes.COLUMN]: (props) => <Chart as={ColumnChartEditor} {...props} />,
+  [chartTypes.LINE]: (props) => <Chart as={LineChartEditor} {...props} />,
 };
 
 /**
@@ -36,7 +40,6 @@ const defaultChartEditorRenderMap = {
  */
 export default function ChartEditor({
   dispatch,
-  editor = null,
 
   kind = chartTypes.BAR,
   chartEditorRenderMap: {
@@ -44,18 +47,29 @@ export default function ChartEditor({
   } = defaultChartEditorRenderMap,
   ...chartProps
 }: Props) {
-  const dispatchElements = React.useCallback(
-    (action: ElementsAction) =>
-      dispatch({
-        type: UPDATE_BLOCK_BODY,
-        body: { elements: reduceElements(chartProps.elements, action) },
-      }),
-    [dispatch, chartProps.elements]
+  const [elementsSelection, setElementsSelection] = React.useState<number>(
+    initialElementsState.selection
   );
 
-  const isSelected =
-    chartProps.selection.length === 1 &&
-    chartProps.selection[0] === chartProps.id;
+  const dispatchElements = React.useCallback(
+    (action: ElementsAction) => {
+      const { elements, selection } = reduceElements(
+        {
+          elements: chartProps.elements,
+          selection: elementsSelection,
+        },
+        action
+      );
+      if (selection !== elementsSelection) {
+        setElementsSelection(selection);
+      }
+      dispatch({
+        type: UPDATE_BLOCK_BODY,
+        body: { elements },
+      });
+    },
+    [chartProps.elements, elementsSelection, dispatch]
+  );
 
   return (
     <BlockContainer
@@ -67,11 +81,13 @@ export default function ChartEditor({
         dispatch
       )}
     >
-      {isSelected ? (
+      {!!(
+        chartProps.selection.length === 1 &&
+        chartProps.selection[0] === chartProps.id
+      ) ? (
         <ExactChartEditor
-          dispatch={dispatch}
-          dispatchElements={dispatchElements}
-          editor={editor}
+          dispatch={dispatchElements}
+          kind={kind}
           {...chartProps}
         />
       ) : (

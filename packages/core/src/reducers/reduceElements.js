@@ -1,79 +1,124 @@
 // @flow
 import type { BlockElement } from '../types';
 
-export const PUSH_ELEMENT = '@seine/charts/pushElement';
-export const UPDATE_ELEMENT = '@seine/charts/updateElement';
-export const REMOVE_ELEMENT = '@seine/charts/removeElement';
-export const UPDATE_ELEMENT_BY_ID = '@seine/charts/updateElementById';
-export const UPDATE_ELEMENT_BY_GROUP = '@seine/charts/updateElementByGroup';
+export type ElementsState = {
+  selection: number,
+  elements: $ReadOnlyArray<BlockElement>,
+};
 
-export const initialElements = [];
+export const initialElementsState: ElementsState = {
+  selection: -1,
+  elements: [],
+};
 
+export const PUSH_BLOCK_ELEMENT = '@seine/core/pushBlockElement';
 type PushBlockElementAction = {
-  type: typeof PUSH_ELEMENT,
+  type: typeof PUSH_BLOCK_ELEMENT,
   body: $Shape<BlockElement>,
 };
+
+export const REMOVE_BLOCK_ELEMENT = '@seine/core/removeBlockElement';
+type RemoveBlockElementAction = {
+  type: typeof REMOVE_BLOCK_ELEMENT,
+  index: number,
+};
+
+export const SELECT_BLOCK_ELEMENT = '@seine/core/selectBlockElement';
+type SelectBlockElementAction = {
+  type: typeof SELECT_BLOCK_ELEMENT,
+  index: number | null,
+  body: $Shape<BlockElement>,
+};
+
+export const UPDATE_BLOCK_ELEMENT = '@seine/core/updateBlockElement';
 type UpdateBlockElementAction = {
-  type: typeof UPDATE_ELEMENT,
-  index: string,
+  type: typeof UPDATE_BLOCK_ELEMENT,
+  index: number,
   body: $Shape<BlockElement>,
 };
+
+export const UPDATE_BLOCK_ELEMENT_BY_ID = '@seine/core/updateBlockElementById';
 type UpdateBlockElementByIdAction = {
-  type: typeof UPDATE_ELEMENT,
+  type: typeof UPDATE_BLOCK_ELEMENT,
   id: string,
   body: BlockElement,
 };
+
+export const UPDATE_BLOCK_ELEMENT_BY_GROUP = '@seine/core/updateElementByGroup';
 type UpdateBlockElementByGroup = {
-  type: typeof UPDATE_ELEMENT,
+  type: typeof UPDATE_BLOCK_ELEMENT,
   group: string,
   body: BlockElement,
 };
-type RemoveBlockElementAction = {
-  type: typeof REMOVE_ELEMENT,
-  index: number,
-};
-export type ElementsState = $ReadOnlyArray<BlockElement>;
+
 export type ElementsAction =
   | PushBlockElementAction
   | UpdateBlockElementAction
   | UpdateBlockElementByIdAction
   | UpdateBlockElementByGroup
-  | RemoveBlockElementAction;
+  | RemoveBlockElementAction
+  | SelectBlockElementAction;
 
 /**
- * @description Reduce block elements actions.
+ * @description Reduce actions of block elements.
  * @param {ElementsState} state
  * @param {ElementsAction} action
  * @returns {ElementsState}
  */
 export function reduceElements(
-  state: ElementsState = initialElements,
+  state: ElementsState = initialElementsState,
   action: ElementsAction
-) {
+): ElementsState {
   switch (action.type) {
-    case PUSH_ELEMENT:
-      return [...state, action.body];
-    case UPDATE_ELEMENT:
-      return [
-        ...state.slice(0, action.index),
-        { ...state[action.index], ...action.body },
-        ...state.slice(action.index + 1),
-      ];
-    case UPDATE_ELEMENT_BY_ID:
-      return state.map((element) =>
-        element.id === action.id ? { ...element, ...action.body } : element
-      );
-    case UPDATE_ELEMENT_BY_GROUP:
-      return state.map((element) =>
-        element.group === action.group
-          ? { ...element, ...action.body }
-          : element
-      );
-    case REMOVE_ELEMENT:
-      return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1),
-      ];
+    case PUSH_BLOCK_ELEMENT:
+      return {
+        ...state,
+        elements: [...state.elements, action.body],
+      };
+    case UPDATE_BLOCK_ELEMENT:
+      return {
+        ...state,
+        elements: [
+          ...state.elements.slice(0, action.index),
+          { ...state.elements[action.index], ...action.body },
+          ...state.elements.slice(action.index + 1),
+        ],
+      };
+    case UPDATE_BLOCK_ELEMENT_BY_ID:
+      return {
+        ...state,
+        elements: state.elements.map((element) =>
+          element.id === action.id ? { ...element, ...action.body } : element
+        ),
+      };
+    case UPDATE_BLOCK_ELEMENT_BY_GROUP:
+      return {
+        ...state,
+        elements: state.elements.map((element) =>
+          element.group === action.group
+            ? { ...element, ...action.body }
+            : element
+        ),
+      };
+    case REMOVE_BLOCK_ELEMENT:
+      return {
+        ...state,
+        elements: [
+          ...state.elements.slice(0, action.index),
+          ...state.elements.slice(action.index + 1),
+        ],
+      };
+
+    case SELECT_BLOCK_ELEMENT: {
+      if (state.selection !== action.index) {
+        return state;
+      }
+      return {
+        ...state,
+        selection: action.index,
+      };
+    }
+
     default:
       return state;
   }
