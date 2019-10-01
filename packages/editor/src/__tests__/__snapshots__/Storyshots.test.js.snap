@@ -9,189 +9,189 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
   width="100%"
 >
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     x={0}
     y={3.5}
   >
     WFLA
   </text>
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     x={50.89041095890411}
     y={3.5}
   >
     20.8
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     height={6}
     width={39.89041095890411}
     x={10}
     y={0}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     x={0}
     y={9.5}
   >
     Region A
   </text>
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     x={79.46575342465755}
     y={9.5}
   >
     35.7
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     height={6}
     width={68.46575342465755}
     x={10}
     y={6}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     x={0}
     y={15.5}
   >
     Region B
   </text>
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     x={41.301369863013704}
     y={15.5}
   >
     15.8
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     height={6}
     width={30.3013698630137}
     x={10}
     y={12}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     x={0}
     y={21.5}
   >
     Region C
   </text>
   <text
-    fill="#7482aa"
+    fill="#e57878"
     x={89.43835616438356}
     y={21.5}
   >
     40.9
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     height={6}
     width={78.43835616438356}
     x={10}
     y={18}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     x={0}
     y={27.5}
   >
     Region D
   </text>
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     x={56.26027397260275}
     y={27.5}
   >
     23.6
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     height={6}
     width={45.26027397260275}
     x={10}
     y={24}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     x={0}
     y={33.5}
   >
     Region E
   </text>
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     x={44.753424657534254}
     y={33.5}
   >
     17.6
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     height={6}
     width={33.753424657534254}
     x={10}
     y={30}
   />
   <text
-    fill="#e1c54e"
+    fill="#b8c8d8"
     x={0}
     y={39.5}
   >
     Region F
   </text>
   <text
-    fill="#e1c54e"
+    fill="#b8c8d8"
     x={84.06849315068494}
     y={39.5}
   >
     38.1
   </text>
   <rect
-    fill="#e1c54e"
+    fill="#b8c8d8"
     height={6}
     width={73.06849315068494}
     x={10}
     y={36}
   />
   <text
-    fill="#f89764"
+    fill="#ebebeb"
     x={0}
     y={45.5}
   >
     Region G
   </text>
   <text
-    fill="#f89764"
+    fill="#ebebeb"
     x={95}
     y={45.5}
   >
     43.8
   </text>
   <rect
-    fill="#f89764"
+    fill="#ebebeb"
     height={6}
     width={84}
     x={10}
     y={42}
   />
   <text
-    fill="#a3704d"
+    fill="#ff7171"
     x={0}
     y={51.5}
   >
     Region H
   </text>
   <text
-    fill="#a3704d"
+    fill="#ff7171"
     x={42.45205479452055}
     y={51.5}
   >
     16.4
   </text>
   <rect
-    fill="#a3704d"
+    fill="#ff7171"
     height={6}
     width={31.45205479452055}
     x={10}
@@ -207,7 +207,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={66.43460964694182}
     width={10}
@@ -215,7 +215,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     y={43.56539035305818}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -228,7 +228,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -236,7 +236,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -249,7 +249,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={17.238521465274324}
     width={10}
@@ -257,7 +257,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     y={92.76147853472568}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -355,7 +355,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -373,7 +373,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={46}
@@ -391,7 +391,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={46}
@@ -409,7 +409,7 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -475,7 +475,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -490,189 +490,189 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
         width="100%"
       >
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           x={0}
           y={3.5}
         >
           WFLA
         </text>
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           x={50.89041095890411}
           y={3.5}
         >
           20.8
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           height={6}
           width={39.89041095890411}
           x={10}
           y={0}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           x={0}
           y={9.5}
         >
           Region A
         </text>
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           x={79.46575342465755}
           y={9.5}
         >
           35.7
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           height={6}
           width={68.46575342465755}
           x={10}
           y={6}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           x={0}
           y={15.5}
         >
           Region B
         </text>
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           x={41.301369863013704}
           y={15.5}
         >
           15.8
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           height={6}
           width={30.3013698630137}
           x={10}
           y={12}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           x={0}
           y={21.5}
         >
           Region C
         </text>
         <text
-          fill="#7482aa"
+          fill="#e57878"
           x={89.43835616438356}
           y={21.5}
         >
           40.9
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           height={6}
           width={78.43835616438356}
           x={10}
           y={18}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           x={0}
           y={27.5}
         >
           Region D
         </text>
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           x={56.26027397260275}
           y={27.5}
         >
           23.6
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           height={6}
           width={45.26027397260275}
           x={10}
           y={24}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           x={0}
           y={33.5}
         >
           Region E
         </text>
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           x={44.753424657534254}
           y={33.5}
         >
           17.6
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           height={6}
           width={33.753424657534254}
           x={10}
           y={30}
         />
         <text
-          fill="#e1c54e"
+          fill="#b8c8d8"
           x={0}
           y={39.5}
         >
           Region F
         </text>
         <text
-          fill="#e1c54e"
+          fill="#b8c8d8"
           x={84.06849315068494}
           y={39.5}
         >
           38.1
         </text>
         <rect
-          fill="#e1c54e"
+          fill="#b8c8d8"
           height={6}
           width={73.06849315068494}
           x={10}
           y={36}
         />
         <text
-          fill="#f89764"
+          fill="#ebebeb"
           x={0}
           y={45.5}
         >
           Region G
         </text>
         <text
-          fill="#f89764"
+          fill="#ebebeb"
           x={95}
           y={45.5}
         >
           43.8
         </text>
         <rect
-          fill="#f89764"
+          fill="#ebebeb"
           height={6}
           width={84}
           x={10}
           y={42}
         />
         <text
-          fill="#a3704d"
+          fill="#ff7171"
           x={0}
           y={51.5}
         >
           Region H
         </text>
         <text
-          fill="#a3704d"
+          fill="#ff7171"
           x={42.45205479452055}
           y={51.5}
         >
           16.4
         </text>
         <rect
-          fill="#a3704d"
+          fill="#ff7171"
           height={6}
           width={31.45205479452055}
           x={10}
@@ -686,7 +686,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -752,7 +752,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -765,7 +765,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
         width="100%"
       >
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={66.43460964694182}
           width={10}
@@ -773,7 +773,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           y={43.56539035305818}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={46}
@@ -786,7 +786,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -794,7 +794,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={56}
@@ -807,7 +807,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={17.238521465274324}
           width={10}
@@ -815,7 +815,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           y={92.76147853472568}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={66}
@@ -913,7 +913,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           width={80}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={46}
@@ -931,7 +931,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           width={80}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={46}
@@ -949,7 +949,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           width={80}
         >
           <rect
-            fill="#a38ca4"
+            fill="#cbcbcb"
             height={10}
             width={10}
             x={46}
@@ -970,7 +970,7 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1036,7 +1036,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -1048,7 +1048,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
       >
         <path
           d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
-          fill="#fa6479"
+          fill="#71a2ff"
         />
         <text
           fill="black"
@@ -1071,7 +1071,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         </text>
         <path
           d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
-          fill="#cb91a0"
+          fill="#c0d4e2"
         />
         <text
           fill="black"
@@ -1094,7 +1094,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         </text>
         <path
           d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
-          fill="#a38ca4"
+          fill="#cbcbcb"
         />
         <text
           fill="black"
@@ -1117,7 +1117,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         </text>
         <path
           d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
-          fill="#7482aa"
+          fill="#e57878"
         />
         <text
           fill="white"
@@ -1140,7 +1140,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         </text>
         <path
           d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
-          fill="#35aeb7"
+          fill="#8adb96"
         />
         <text
           fill="black"
@@ -1169,7 +1169,7 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -1235,7 +1235,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -1248,7 +1248,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
         width="100%"
       >
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={39.992017561364996}
           width={10}
@@ -1256,7 +1256,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={70.007982438635}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={46}
@@ -1269,7 +1269,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={48.15805228497305}
           width={10}
@@ -1277,7 +1277,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={61.84194771502695}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={56}
@@ -1290,7 +1290,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={10.37717022550389}
           width={10}
@@ -1298,7 +1298,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={99.62282977449611}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={66}
@@ -1311,7 +1311,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={18.359608860506885}
           width={10}
@@ -1319,7 +1319,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={91.64039113949312}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={76}
@@ -1332,7 +1332,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={26.342047495509878}
           width={10}
@@ -1340,7 +1340,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={83.65795250449013}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={86}
@@ -1353,7 +1353,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={40.710437038515266}
           width={10}
@@ -1361,7 +1361,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={69.28956296148473}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={96}
@@ -1382,7 +1382,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           Group 1
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={71.84194771502695}
           width={10}
@@ -1390,7 +1390,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={38.15805228497305}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={112}
@@ -1403,7 +1403,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -1411,7 +1411,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={122}
@@ -1424,7 +1424,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -1432,7 +1432,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={132}
@@ -1445,7 +1445,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={8.15805228497306}
           width={10}
@@ -1453,7 +1453,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={101.84194771502695}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={142}
@@ -1466,7 +1466,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -1474,7 +1474,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={152}
@@ -1487,7 +1487,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={21.55258431450808}
           width={10}
@@ -1495,7 +1495,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={88.44741568549192}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={162}
@@ -1516,7 +1516,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           Group 2
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={52.684094991019755}
           width={10}
@@ -1524,7 +1524,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={57.315905008980245}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={178}
@@ -1537,7 +1537,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={23.14907204150868}
           width={10}
@@ -1545,7 +1545,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={86.85092795849133}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={188}
@@ -1558,7 +1558,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={15.166633406505687}
           width={10}
@@ -1566,7 +1566,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={94.83336659349432}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={198}
@@ -1579,7 +1579,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={39.91219317501497}
           width={10}
@@ -1587,7 +1587,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={70.08780682498502}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={208}
@@ -1600,7 +1600,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={76.19237677110357}
           width={10}
@@ -1608,7 +1608,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={33.80762322889643}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={218}
@@ -1621,7 +1621,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={79.82438635002994}
           width={10}
@@ -1629,7 +1629,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={30.17561364997006}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={228}
@@ -1650,7 +1650,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           Group 3
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={39.992017561364996}
           width={10}
@@ -1658,7 +1658,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={70.007982438635}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={244}
@@ -1671,7 +1671,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={48.15805228497305}
           width={10}
@@ -1679,7 +1679,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={61.84194771502695}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={254}
@@ -1692,7 +1692,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={10.37717022550389}
           width={10}
@@ -1700,7 +1700,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={99.62282977449611}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={264}
@@ -1713,7 +1713,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={18.359608860506885}
           width={10}
@@ -1721,7 +1721,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={91.64039113949312}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={274}
@@ -1734,7 +1734,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={26.342047495509878}
           width={10}
@@ -1742,7 +1742,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={83.65795250449013}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={284}
@@ -1755,7 +1755,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={57.8726801037717}
           width={10}
@@ -1763,7 +1763,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={52.1273198962283}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={294}
@@ -1784,7 +1784,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           Group 4
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={71.84194771502695}
           width={10}
@@ -1792,7 +1792,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={38.15805228497305}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={310}
@@ -1805,7 +1805,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -1813,7 +1813,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={320}
@@ -1826,7 +1826,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -1834,7 +1834,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={330}
@@ -1847,7 +1847,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={8.15805228497306}
           width={10}
@@ -1855,7 +1855,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={101.84194771502695}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={340}
@@ -1868,7 +1868,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -1876,7 +1876,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={350}
@@ -1889,7 +1889,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={24.945120734384354}
           width={10}
@@ -1897,7 +1897,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={85.05487926561565}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={360}
@@ -1918,7 +1918,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           Group 5
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={52.684094991019755}
           width={10}
@@ -1926,7 +1926,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={57.315905008980245}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={376}
@@ -1939,7 +1939,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={23.14907204150868}
           width={10}
@@ -1947,7 +1947,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={86.85092795849133}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={386}
@@ -1960,7 +1960,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={15.166633406505687}
           width={10}
@@ -1968,7 +1968,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={94.83336659349432}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={396}
@@ -1981,7 +1981,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={39.91219317501497}
           width={10}
@@ -1989,7 +1989,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={70.08780682498502}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={406}
@@ -2002,7 +2002,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={76.19237677110357}
           width={10}
@@ -2010,7 +2010,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={33.80762322889643}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={416}
@@ -2023,7 +2023,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={3.9912193175014967}
           width={10}
@@ -2031,7 +2031,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           y={106.0087806824985}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={426}
@@ -2163,7 +2163,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={46}
@@ -2181,7 +2181,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={112}
@@ -2199,7 +2199,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#a38ca4"
+            fill="#cbcbcb"
             height={10}
             width={10}
             x={178}
@@ -2217,7 +2217,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#7482aa"
+            fill="#e57878"
             height={10}
             width={10}
             x={244}
@@ -2235,7 +2235,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#35aeb7"
+            fill="#8adb96"
             height={10}
             width={10}
             x={310}
@@ -2253,7 +2253,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#01b25c"
+            fill="#6895eb"
             height={10}
             width={10}
             x={376}
@@ -2274,7 +2274,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -2340,7 +2340,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -2353,7 +2353,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
         width="100%"
       >
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={39.992017561364996}
           width={10}
@@ -2361,7 +2361,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={70.007982438635}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={46}
@@ -2374,7 +2374,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={48.15805228497305}
           width={10}
@@ -2382,7 +2382,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={61.84194771502695}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={56}
@@ -2395,7 +2395,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={10.37717022550389}
           width={10}
@@ -2403,7 +2403,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={99.62282977449611}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={66}
@@ -2424,7 +2424,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           Group 1
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={71.84194771502695}
           width={10}
@@ -2432,7 +2432,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={38.15805228497305}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={112}
@@ -2445,7 +2445,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -2453,7 +2453,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={122}
@@ -2466,7 +2466,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -2474,7 +2474,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={132}
@@ -2495,7 +2495,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           Group 2
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={52.684094991019755}
           width={10}
@@ -2503,7 +2503,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={57.315905008980245}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={178}
@@ -2516,7 +2516,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={23.14907204150868}
           width={10}
@@ -2524,7 +2524,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={86.85092795849133}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={188}
@@ -2537,7 +2537,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={15.166633406505687}
           width={10}
@@ -2545,7 +2545,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={94.83336659349432}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={198}
@@ -2566,7 +2566,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           Group 3
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={24.02714029135901}
           width={10}
@@ -2574,7 +2574,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={85.97285970864098}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={244}
@@ -2587,7 +2587,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={6.649371382957494}
           width={10}
@@ -2595,7 +2595,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={103.3506286170425}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={254}
@@ -2608,7 +2608,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={79.82438635002994}
           width={10}
@@ -2616,7 +2616,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={30.17561364997006}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={264}
@@ -2637,7 +2637,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           Group 4
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={31.929754540011974}
           width={10}
@@ -2645,7 +2645,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={78.07024545998803}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={310}
@@ -2658,7 +2658,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={72.01756136499701}
           width={10}
@@ -2666,7 +2666,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={37.98243863500299}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={320}
@@ -2679,7 +2679,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={64.65775294352424}
           width={10}
@@ -2687,7 +2687,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={45.342247056475756}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={330}
@@ -2708,7 +2708,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           Group 5
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={79.92815805228497}
           width={10}
@@ -2716,7 +2716,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={30.07184194771503}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={376}
@@ -2729,7 +2729,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={58.27180203552185}
           width={10}
@@ -2737,7 +2737,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={51.72819796447815}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={386}
@@ -2750,7 +2750,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={27.140291359010178}
           width={10}
@@ -2758,7 +2758,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           y={82.85970864098982}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={396}
@@ -2890,7 +2890,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={46}
@@ -2908,7 +2908,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={112}
@@ -2926,7 +2926,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#a38ca4"
+            fill="#cbcbcb"
             height={10}
             width={10}
             x={178}
@@ -2947,7 +2947,7 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -3013,7 +3013,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -3026,7 +3026,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
         width="100%"
       >
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={39.992017561364996}
           width={10}
@@ -3034,7 +3034,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={70.007982438635}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={46}
@@ -3047,7 +3047,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={48.15805228497305}
           width={10}
@@ -3055,7 +3055,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={61.84194771502695}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={56}
@@ -3068,7 +3068,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={10.37717022550389}
           width={10}
@@ -3076,7 +3076,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={99.62282977449611}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={66}
@@ -3089,7 +3089,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={18.359608860506885}
           width={10}
@@ -3097,7 +3097,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={91.64039113949312}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={76}
@@ -3110,7 +3110,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={26.342047495509878}
           width={10}
@@ -3118,7 +3118,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={83.65795250449013}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={86}
@@ -3131,7 +3131,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={40.710437038515266}
           width={10}
@@ -3139,7 +3139,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={69.28956296148473}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={96}
@@ -3160,7 +3160,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           Group 1
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={71.84194771502695}
           width={10}
@@ -3168,7 +3168,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={38.15805228497305}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={112}
@@ -3181,7 +3181,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -3189,7 +3189,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={122}
@@ -3202,7 +3202,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -3210,7 +3210,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#a38ca4"
+          fill="#cbcbcb"
           fontSize={3}
           textAnchor="middle"
           x={132}
@@ -3223,7 +3223,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           height={8.15805228497306}
           width={10}
@@ -3231,7 +3231,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={101.84194771502695}
         />
         <text
-          fill="#7482aa"
+          fill="#e57878"
           fontSize={3}
           textAnchor="middle"
           x={142}
@@ -3244,7 +3244,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           height={11.17541408900419}
           width={10}
@@ -3252,7 +3252,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={98.82458591099581}
         />
         <text
-          fill="#35aeb7"
+          fill="#8adb96"
           fontSize={3}
           textAnchor="middle"
           x={152}
@@ -3265,7 +3265,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           height={24.945120734384354}
           width={10}
@@ -3273,7 +3273,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           y={85.05487926561565}
         />
         <text
-          fill="#01b25c"
+          fill="#6895eb"
           fontSize={3}
           textAnchor="middle"
           x={162}
@@ -3405,7 +3405,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={46}
@@ -3423,7 +3423,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={112}
@@ -3441,7 +3441,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#a38ca4"
+            fill="#cbcbcb"
             height={10}
             width={10}
             x={46}
@@ -3459,7 +3459,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#7482aa"
+            fill="#e57878"
             height={10}
             width={10}
             x={112}
@@ -3477,7 +3477,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#35aeb7"
+            fill="#8adb96"
             height={10}
             width={10}
             x={46}
@@ -3495,7 +3495,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#01b25c"
+            fill="#6895eb"
             height={10}
             width={10}
             x={112}
@@ -3516,7 +3516,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -3582,7 +3582,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -3595,7 +3595,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
         width="100%"
       >
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={39.992017561364996}
           width={10}
@@ -3603,7 +3603,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           y={70.007982438635}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={46}
@@ -3616,7 +3616,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={48.15805228497305}
           width={10}
@@ -3624,7 +3624,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           y={61.84194771502695}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={56}
@@ -3645,7 +3645,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           Group 1
         </text>
         <rect
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           height={71.84194771502695}
           width={10}
@@ -3653,7 +3653,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           y={38.15805228497305}
         />
         <text
-          fill="#fa6479"
+          fill="#71a2ff"
           fontSize={3}
           textAnchor="middle"
           x={112}
@@ -3666,7 +3666,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           </tspan>
         </text>
         <rect
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           height={80}
           width={10}
@@ -3674,7 +3674,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           y={30}
         />
         <text
-          fill="#cb91a0"
+          fill="#c0d4e2"
           fontSize={3}
           textAnchor="middle"
           x={122}
@@ -3806,7 +3806,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={46}
@@ -3824,7 +3824,7 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           width={80}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={112}
@@ -4055,7 +4055,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
   >
     <circle
       cx={0}
-      fill="#fa6479"
+      fill="#71a2ff"
       r={3}
       stroke="none"
     />
@@ -4066,7 +4066,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     markerEnd="url(#point,0)"
     markerMid="url(#point,0)"
     markerStart="url(#point,0)"
-    stroke="#fa6479"
+    stroke="#71a2ff"
   />
   <text
     fontSize={4}
@@ -4115,7 +4115,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     width={102}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={229}
@@ -4140,7 +4140,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
   >
     <circle
       cx={0}
-      fill="#cb91a0"
+      fill="#c0d4e2"
       r={3}
       stroke="none"
     />
@@ -4151,7 +4151,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     markerEnd="url(#point,1)"
     markerMid="url(#point,1)"
     markerStart="url(#point,1)"
-    stroke="#cb91a0"
+    stroke="#c0d4e2"
   />
   <text
     fontSize={4}
@@ -4200,7 +4200,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
     width={102}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={229}
@@ -4218,7 +4218,7 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -4284,7 +4284,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     <div
       className="sc-bZQynM bpEAdn"
@@ -4502,7 +4502,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
         >
           <circle
             cx={0}
-            fill="#fa6479"
+            fill="#71a2ff"
             r={3}
             stroke="none"
           />
@@ -4513,7 +4513,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
           markerStart="url(#point,0)"
-          stroke="#fa6479"
+          stroke="#71a2ff"
         />
         <text
           fontSize={4}
@@ -4562,7 +4562,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
           width={102}
         >
           <rect
-            fill="#fa6479"
+            fill="#71a2ff"
             height={10}
             width={10}
             x={229}
@@ -4587,7 +4587,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
         >
           <circle
             cx={0}
-            fill="#cb91a0"
+            fill="#c0d4e2"
             r={3}
             stroke="none"
           />
@@ -4598,7 +4598,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
           markerStart="url(#point,1)"
-          stroke="#cb91a0"
+          stroke="#c0d4e2"
         />
         <text
           fontSize={4}
@@ -4647,7 +4647,7 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
           width={102}
         >
           <rect
-            fill="#cb91a0"
+            fill="#c0d4e2"
             height={10}
             width={10}
             x={229}
@@ -4672,7 +4672,7 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
 >
   <path
     d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
-    fill="#fa6479"
+    fill="#71a2ff"
   />
   <text
     fill="black"
@@ -4695,7 +4695,7 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
   </text>
   <path
     d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
-    fill="#cb91a0"
+    fill="#c0d4e2"
   />
   <text
     fill="black"
@@ -4718,7 +4718,7 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
   </text>
   <path
     d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
-    fill="#a38ca4"
+    fill="#cbcbcb"
   />
   <text
     fill="black"
@@ -4741,7 +4741,7 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
   </text>
   <path
     d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
-    fill="#7482aa"
+    fill="#e57878"
   />
   <text
     fill="white"
@@ -4764,7 +4764,7 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
   </text>
   <path
     d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
-    fill="#35aeb7"
+    fill="#8adb96"
   />
   <text
     fill="black"
@@ -4795,7 +4795,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={39.992017561364996}
     width={10}
@@ -4803,7 +4803,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={70.007982438635}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -4816,7 +4816,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={48.15805228497305}
     width={10}
@@ -4824,7 +4824,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={61.84194771502695}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -4837,7 +4837,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={10.37717022550389}
     width={10}
@@ -4845,7 +4845,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={99.62282977449611}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -4858,7 +4858,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={18.359608860506885}
     width={10}
@@ -4866,7 +4866,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={91.64039113949312}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={76}
@@ -4879,7 +4879,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={26.342047495509878}
     width={10}
@@ -4887,7 +4887,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={83.65795250449013}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={86}
@@ -4900,7 +4900,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={40.710437038515266}
     width={10}
@@ -4908,7 +4908,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={69.28956296148473}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={96}
@@ -4929,7 +4929,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={71.84194771502695}
     width={10}
@@ -4937,7 +4937,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={38.15805228497305}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -4950,7 +4950,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -4958,7 +4958,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -4971,7 +4971,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -4979,7 +4979,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={132}
@@ -4992,7 +4992,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={8.15805228497306}
     width={10}
@@ -5000,7 +5000,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={101.84194771502695}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={142}
@@ -5013,7 +5013,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -5021,7 +5021,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={152}
@@ -5034,7 +5034,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={21.55258431450808}
     width={10}
@@ -5042,7 +5042,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={88.44741568549192}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={162}
@@ -5063,7 +5063,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     Group 2
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={52.684094991019755}
     width={10}
@@ -5071,7 +5071,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={57.315905008980245}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={178}
@@ -5084,7 +5084,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={23.14907204150868}
     width={10}
@@ -5092,7 +5092,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={86.85092795849133}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={188}
@@ -5105,7 +5105,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={15.166633406505687}
     width={10}
@@ -5113,7 +5113,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={94.83336659349432}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={198}
@@ -5126,7 +5126,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={39.91219317501497}
     width={10}
@@ -5134,7 +5134,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={70.08780682498502}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={208}
@@ -5147,7 +5147,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={76.19237677110357}
     width={10}
@@ -5155,7 +5155,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={33.80762322889643}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={218}
@@ -5168,7 +5168,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={79.82438635002994}
     width={10}
@@ -5176,7 +5176,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={30.17561364997006}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={228}
@@ -5197,7 +5197,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     Group 3
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={39.992017561364996}
     width={10}
@@ -5205,7 +5205,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={70.007982438635}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={244}
@@ -5218,7 +5218,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={48.15805228497305}
     width={10}
@@ -5226,7 +5226,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={61.84194771502695}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={254}
@@ -5239,7 +5239,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={10.37717022550389}
     width={10}
@@ -5247,7 +5247,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={99.62282977449611}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={264}
@@ -5260,7 +5260,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={18.359608860506885}
     width={10}
@@ -5268,7 +5268,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={91.64039113949312}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={274}
@@ -5281,7 +5281,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={26.342047495509878}
     width={10}
@@ -5289,7 +5289,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={83.65795250449013}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={284}
@@ -5302,7 +5302,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={57.8726801037717}
     width={10}
@@ -5310,7 +5310,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={52.1273198962283}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={294}
@@ -5331,7 +5331,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     Group 4
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={71.84194771502695}
     width={10}
@@ -5339,7 +5339,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={38.15805228497305}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={310}
@@ -5352,7 +5352,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -5360,7 +5360,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={320}
@@ -5373,7 +5373,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -5381,7 +5381,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={330}
@@ -5394,7 +5394,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={8.15805228497306}
     width={10}
@@ -5402,7 +5402,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={101.84194771502695}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={340}
@@ -5415,7 +5415,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -5423,7 +5423,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={350}
@@ -5436,7 +5436,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={24.945120734384354}
     width={10}
@@ -5444,7 +5444,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={85.05487926561565}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={360}
@@ -5465,7 +5465,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     Group 5
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={52.684094991019755}
     width={10}
@@ -5473,7 +5473,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={57.315905008980245}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={376}
@@ -5486,7 +5486,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={23.14907204150868}
     width={10}
@@ -5494,7 +5494,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={86.85092795849133}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={386}
@@ -5507,7 +5507,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={15.166633406505687}
     width={10}
@@ -5515,7 +5515,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={94.83336659349432}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={396}
@@ -5528,7 +5528,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={39.91219317501497}
     width={10}
@@ -5536,7 +5536,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={70.08780682498502}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={406}
@@ -5549,7 +5549,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={76.19237677110357}
     width={10}
@@ -5557,7 +5557,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={33.80762322889643}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={416}
@@ -5570,7 +5570,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={3.9912193175014967}
     width={10}
@@ -5578,7 +5578,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     y={106.0087806824985}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={426}
@@ -5710,7 +5710,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -5728,7 +5728,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -5746,7 +5746,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={178}
@@ -5764,7 +5764,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#7482aa"
+      fill="#e57878"
       height={10}
       width={10}
       x={244}
@@ -5782,7 +5782,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#35aeb7"
+      fill="#8adb96"
       height={10}
       width={10}
       x={310}
@@ -5800,7 +5800,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#01b25c"
+      fill="#6895eb"
       height={10}
       width={10}
       x={376}
@@ -5823,7 +5823,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={39.992017561364996}
     width={10}
@@ -5831,7 +5831,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={70.007982438635}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -5844,7 +5844,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={48.15805228497305}
     width={10}
@@ -5852,7 +5852,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={61.84194771502695}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -5865,7 +5865,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={10.37717022550389}
     width={10}
@@ -5873,7 +5873,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={99.62282977449611}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -5894,7 +5894,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={71.84194771502695}
     width={10}
@@ -5902,7 +5902,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={38.15805228497305}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -5915,7 +5915,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -5923,7 +5923,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -5936,7 +5936,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -5944,7 +5944,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={132}
@@ -5965,7 +5965,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     Group 2
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={52.684094991019755}
     width={10}
@@ -5973,7 +5973,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={57.315905008980245}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={178}
@@ -5986,7 +5986,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={23.14907204150868}
     width={10}
@@ -5994,7 +5994,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={86.85092795849133}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={188}
@@ -6007,7 +6007,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={15.166633406505687}
     width={10}
@@ -6015,7 +6015,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={94.83336659349432}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={198}
@@ -6036,7 +6036,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     Group 3
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={24.02714029135901}
     width={10}
@@ -6044,7 +6044,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={85.97285970864098}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={244}
@@ -6057,7 +6057,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={6.649371382957494}
     width={10}
@@ -6065,7 +6065,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={103.3506286170425}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={254}
@@ -6078,7 +6078,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={79.82438635002994}
     width={10}
@@ -6086,7 +6086,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={30.17561364997006}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={264}
@@ -6107,7 +6107,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     Group 4
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={31.929754540011974}
     width={10}
@@ -6115,7 +6115,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={78.07024545998803}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={310}
@@ -6128,7 +6128,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={72.01756136499701}
     width={10}
@@ -6136,7 +6136,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={37.98243863500299}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={320}
@@ -6149,7 +6149,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={64.65775294352424}
     width={10}
@@ -6157,7 +6157,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={45.342247056475756}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={330}
@@ -6178,7 +6178,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     Group 5
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={79.92815805228497}
     width={10}
@@ -6186,7 +6186,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={30.07184194771503}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={376}
@@ -6199,7 +6199,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={58.27180203552185}
     width={10}
@@ -6207,7 +6207,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={51.72819796447815}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={386}
@@ -6220,7 +6220,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={27.140291359010178}
     width={10}
@@ -6228,7 +6228,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     y={82.85970864098982}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={396}
@@ -6360,7 +6360,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -6378,7 +6378,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -6396,7 +6396,7 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={178}
@@ -6419,7 +6419,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={39.992017561364996}
     width={10}
@@ -6427,7 +6427,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={70.007982438635}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -6440,7 +6440,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={48.15805228497305}
     width={10}
@@ -6448,7 +6448,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={61.84194771502695}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -6461,7 +6461,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={10.37717022550389}
     width={10}
@@ -6469,7 +6469,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={99.62282977449611}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -6482,7 +6482,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={18.359608860506885}
     width={10}
@@ -6490,7 +6490,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={91.64039113949312}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={76}
@@ -6503,7 +6503,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={26.342047495509878}
     width={10}
@@ -6511,7 +6511,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={83.65795250449013}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={86}
@@ -6524,7 +6524,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={40.710437038515266}
     width={10}
@@ -6532,7 +6532,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={69.28956296148473}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={96}
@@ -6553,7 +6553,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={71.84194771502695}
     width={10}
@@ -6561,7 +6561,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={38.15805228497305}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -6574,7 +6574,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -6582,7 +6582,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -6595,7 +6595,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -6603,7 +6603,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={132}
@@ -6616,7 +6616,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={8.15805228497306}
     width={10}
@@ -6624,7 +6624,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={101.84194771502695}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={142}
@@ -6637,7 +6637,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={11.17541408900419}
     width={10}
@@ -6645,7 +6645,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={98.82458591099581}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={152}
@@ -6658,7 +6658,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={24.945120734384354}
     width={10}
@@ -6666,7 +6666,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     y={85.05487926561565}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={162}
@@ -6798,7 +6798,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -6816,7 +6816,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -6834,7 +6834,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={46}
@@ -6852,7 +6852,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#7482aa"
+      fill="#e57878"
       height={10}
       width={10}
       x={112}
@@ -6870,7 +6870,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#35aeb7"
+      fill="#8adb96"
       height={10}
       width={10}
       x={46}
@@ -6888,7 +6888,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#01b25c"
+      fill="#6895eb"
       height={10}
       width={10}
       x={112}
@@ -6911,7 +6911,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={30.1}
     width={10}
@@ -6919,7 +6919,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={79.9}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -6932,7 +6932,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={40.33}
     width={10}
@@ -6940,7 +6940,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={69.67}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -6953,7 +6953,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={-7}
     width={10}
@@ -6961,7 +6961,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={117}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -6974,7 +6974,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={3}
     width={10}
@@ -6982,7 +6982,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={107}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={76}
@@ -6995,7 +6995,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={13}
     width={10}
@@ -7003,7 +7003,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={97}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={86}
@@ -7016,7 +7016,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={31}
     width={10}
@@ -7024,7 +7024,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={79}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={96}
@@ -7045,7 +7045,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={70}
     width={10}
@@ -7053,7 +7053,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={40}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -7066,7 +7066,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80.22}
     width={10}
@@ -7074,7 +7074,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={29.78}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -7087,7 +7087,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={-6}
     width={10}
@@ -7095,7 +7095,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={116}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={132}
@@ -7108,7 +7108,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={-9.78}
     width={10}
@@ -7116,7 +7116,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={119.78}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={142}
@@ -7129,7 +7129,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={-6}
     width={10}
@@ -7137,7 +7137,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={116}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={152}
@@ -7150,7 +7150,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={11.25}
     width={10}
@@ -7158,7 +7158,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     y={98.75}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={162}
@@ -7338,7 +7338,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -7356,7 +7356,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -7374,7 +7374,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={46}
@@ -7392,7 +7392,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#7482aa"
+      fill="#e57878"
       height={10}
       width={10}
       x={112}
@@ -7410,7 +7410,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#35aeb7"
+      fill="#8adb96"
       height={10}
       width={10}
       x={46}
@@ -7428,7 +7428,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     width={80}
   >
     <rect
-      fill="#01b25c"
+      fill="#6895eb"
       height={10}
       width={10}
       x={112}
@@ -7451,7 +7451,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={28.282352941176473}
     width={10}
@@ -7459,7 +7459,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={81.71764705882353}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -7472,7 +7472,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={33.09647058823529}
     width={10}
@@ -7480,7 +7480,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={76.90352941176471}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -7493,7 +7493,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={10.823529411764707}
     width={10}
@@ -7501,7 +7501,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={99.1764705882353}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={66}
@@ -7514,7 +7514,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={15.529411764705884}
     width={10}
@@ -7522,7 +7522,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={94.47058823529412}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={76}
@@ -7535,7 +7535,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={20.235294117647058}
     width={10}
@@ -7543,7 +7543,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={89.76470588235294}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={86}
@@ -7556,7 +7556,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={28.705882352941178}
     width={10}
@@ -7564,7 +7564,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={81.29411764705883}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={96}
@@ -7585,7 +7585,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={47.05882352941176}
     width={10}
@@ -7593,7 +7593,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={62.94117647058824}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -7606,7 +7606,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={51.868235294117646}
     width={10}
@@ -7614,7 +7614,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={58.131764705882354}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -7627,7 +7627,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     height={11.294117647058822}
     width={10}
@@ -7635,7 +7635,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={98.70588235294117}
   />
   <text
-    fill="#a38ca4"
+    fill="#cbcbcb"
     fontSize={3}
     textAnchor="middle"
     x={132}
@@ -7648,7 +7648,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     height={9.51529411764706}
     width={10}
@@ -7656,7 +7656,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={100.48470588235294}
   />
   <text
-    fill="#7482aa"
+    fill="#e57878"
     fontSize={3}
     textAnchor="middle"
     x={142}
@@ -7669,7 +7669,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     height={11.294117647058822}
     width={10}
@@ -7677,7 +7677,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={98.70588235294117}
   />
   <text
-    fill="#35aeb7"
+    fill="#8adb96"
     fontSize={3}
     textAnchor="middle"
     x={152}
@@ -7690,7 +7690,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     </tspan>
   </text>
   <rect
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     height={19.41176470588235}
     width={10}
@@ -7698,7 +7698,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     y={90.58823529411765}
   />
   <text
-    fill="#01b25c"
+    fill="#6895eb"
     fontSize={3}
     textAnchor="middle"
     x={162}
@@ -7822,7 +7822,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -7840,7 +7840,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -7858,7 +7858,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#a38ca4"
+      fill="#cbcbcb"
       height={10}
       width={10}
       x={46}
@@ -7876,7 +7876,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#7482aa"
+      fill="#e57878"
       height={10}
       width={10}
       x={112}
@@ -7894,7 +7894,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#35aeb7"
+      fill="#8adb96"
       height={10}
       width={10}
       x={46}
@@ -7912,7 +7912,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     width={80}
   >
     <rect
-      fill="#01b25c"
+      fill="#6895eb"
       height={10}
       width={10}
       x={112}
@@ -7935,7 +7935,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
   width="100%"
 >
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={39.992017561364996}
     width={10}
@@ -7943,7 +7943,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     y={70.007982438635}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={46}
@@ -7956,7 +7956,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={48.15805228497305}
     width={10}
@@ -7964,7 +7964,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     y={61.84194771502695}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={56}
@@ -7985,7 +7985,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     Group 1
   </text>
   <rect
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     height={71.84194771502695}
     width={10}
@@ -7993,7 +7993,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     y={38.15805228497305}
   />
   <text
-    fill="#fa6479"
+    fill="#71a2ff"
     fontSize={3}
     textAnchor="middle"
     x={112}
@@ -8006,7 +8006,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     </tspan>
   </text>
   <rect
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     height={80}
     width={10}
@@ -8014,7 +8014,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     y={30}
   />
   <text
-    fill="#cb91a0"
+    fill="#c0d4e2"
     fontSize={3}
     textAnchor="middle"
     x={122}
@@ -8146,7 +8146,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#fa6479"
+      fill="#71a2ff"
       height={10}
       width={10}
       x={46}
@@ -8164,7 +8164,7 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     width={80}
   >
     <rect
-      fill="#cb91a0"
+      fill="#c0d4e2"
       height={10}
       width={10}
       x={112}
@@ -8184,7 +8184,7 @@ exports[`Storyshots 2 - Content Draft Content 1`] = `"{\\"blocks\\":[{\\"key\\":
 
 exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -8250,14 +8250,14 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   />
 </div>
 `;
 
 exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
 <div
-  className="sc-jTzLTM eQHHrd"
+  className="sc-fjdhpX Whtcp"
 >
   <div
     className="sc-htpNat sc-bxivhb mui-panel ecWhHw"
@@ -8323,7 +8323,7 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat sc-fjdhpX mui-panel dRfury"
+    className="sc-htpNat sc-jzJRlG mui-panel fTbryG"
   >
     {"blocks":[{"key":1,"text":"This block is draft.js content. Click here to edit the text.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":2,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":3,"text":"We are planning to add text formatting toolbar soon.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":4,"text":"","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":5,"text":"Draft.js is a framework for building rich text editors in React,","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},{"key":6,"text":"powered by an immutable model and abstracting over cross-browser differences.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}],"entityMap":{}}
   </div>
