@@ -11,6 +11,7 @@ import {
 import type { ChartProps } from './types';
 import PieChartTitle from './PieChartTitle';
 import PieChartValue from './PieChartValue';
+import PieChartSlice from './PieChartSlice';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -38,7 +39,7 @@ export default function PieChart({
     [elements]
   );
 
-  const [radius, innerRadius, outerRadius, center, quarter] = React.useMemo(
+  const [radius, outerRadius, innerRadius, center, quarter] = React.useMemo(
     () => [
       size / 2 - size / 6,
       size / 2 - size / 6 + size / 9,
@@ -47,17 +48,6 @@ export default function PieChart({
       sum / 4,
     ],
     [size, sum]
-  );
-
-  const colors = React.useMemo(
-    () =>
-      Array.from({ length: elements.length }).map((...[, index]) => {
-        const color = palette[index % palette.length];
-        return index === elements.length - 1 && color === palette[0]
-          ? palette[1]
-          : color;
-      }),
-    [elements.length, palette]
   );
 
   let end = (3 * Math.PI) / 4;
@@ -79,24 +69,30 @@ export default function PieChart({
         const textColor = value >= quarter ? 'white' : 'black';
         const textX =
           center +
-          (value >= quarter ? outerRadius : innerRadius) *
+          (value >= quarter ? innerRadius : outerRadius) *
             Math.cos(start + length / 2);
         const textY =
           center +
-          (value >= quarter ? outerRadius : innerRadius) *
+          (value >= quarter ? innerRadius : outerRadius) *
             Math.sin(start + length / 2);
 
         return [
-          <path
-            d={[
-              `M ${center + radius * endX} ${center + radius * endY}`,
-              `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
-                radius * startX} ${center + radius * startY}`,
-              `L ${center} ${center}`,
-              `L ${center + radius * endX} ${center + radius * endY}`,
-            ].join(' ')}
-            fill={colors[index]}
+          <PieChartSlice
+            center={center}
+            fontSize={fontSize}
+            endX={endX}
+            endY={endY}
+            index={index}
             key={'slice'}
+            length={length}
+            lineHeight={lineHeight}
+            palette={palette}
+            radius={radius}
+            start={start}
+            startX={startX}
+            startY={startY}
+            textX={textX}
+            textY={textY}
           />,
 
           <PieChartValue

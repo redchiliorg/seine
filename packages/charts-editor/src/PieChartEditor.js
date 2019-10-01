@@ -2,12 +2,14 @@
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
 import {
+  PieChartSlice,
+  PieChartSliceProps,
   PieChartTitle,
   PieChartTitleProps,
   PieChartValue,
   PieChartValueProps,
 } from '@seine/charts';
-import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
 
@@ -16,14 +18,24 @@ import type { ChartEditorProps as Props } from './types';
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartEditorView({
+export default function PieChartEditor({
   children,
   dispatch,
+  selectionIndex,
   selection,
   ...svgProps
 }: Props) {
   return (
     <svg {...svgProps}>
+      <pattern
+        id="selected-slice"
+        viewBox={'0 0 3 2'}
+        width={'1%'}
+        height={'1%'}
+      >
+        <circle cx={1} cy={1} r={1} opacity={0.25} />
+      </pattern>
+
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
@@ -99,6 +111,32 @@ export default function PieChartEditorView({
                   x={x - width / 2}
                   y={y - fontSize * lineHeight}
                 />
+              );
+            }
+
+            case PieChartSlice: {
+              const { index }: PieChartSliceProps = child.props;
+              return index === selectionIndex ? (
+                [
+                  child,
+                  <PieChartSlice
+                    {...child.props}
+                    key={[child.key, 'selected']}
+                    palette={['url(#selected-slice)']}
+                  />,
+                ]
+              ) : (
+                <g
+                  key={[child.key, 'click-target']}
+                  onClick={() =>
+                    dispatch({
+                      index,
+                      type: SELECT_BLOCK_ELEMENT,
+                    })
+                  }
+                >
+                  {child}
+                </g>
               );
             }
 

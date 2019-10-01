@@ -110,7 +110,7 @@ export function reduceElements(
       };
 
     case SELECT_BLOCK_ELEMENT: {
-      if (state.selection !== action.index) {
+      if (state.selection === action.index) {
         return state;
       }
       return {

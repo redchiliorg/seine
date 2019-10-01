@@ -22,8 +22,10 @@ export { default as LineChartValue } from './LineChartValue';
 export type { Props as LineChartValueProps } from './LineChartValue';
 
 export { default as PieChart } from './PieChart';
+export { default as PieChartSlice } from './PieChartSlice';
 export { default as PieChartTitle } from './PieChartTitle';
 export { default as PieChartValue } from './PieChartValue';
+export type { Props as PieChartSliceProps } from './PieChartSlice';
 export type { Props as PieChartTitleProps } from './PieChartTitle';
 export type { Props as PieChartValueProps } from './PieChartValue';
 

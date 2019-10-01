@@ -6,6 +6,7 @@ import {
   initialElementsState,
   reduceElements,
   UPDATE_BLOCK_BODY,
+  UPDATE_BLOCK_EDITOR,
 } from '@seine/core';
 import { BlockContainer, useSelectableBlockProps } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
@@ -33,6 +34,8 @@ const defaultChartEditorRenderMap = {
   [chartTypes.LINE]: (props) => <Chart as={LineChartEditor} {...props} />,
 };
 
+const defaultEditor = { selection: initialElementsState.selection };
+
 /**
  * @description Chart editor component.
  * @param {Props} props
@@ -45,30 +48,34 @@ export default function ChartEditor({
   chartEditorRenderMap: {
     [kind]: ExactChartEditor,
   } = defaultChartEditorRenderMap,
+  editor = defaultEditor,
   ...chartProps
 }: Props) {
-  const [elementsSelection, setElementsSelection] = React.useState<number>(
-    initialElementsState.selection
-  );
-
   const dispatchElements = React.useCallback(
     (action: ElementsAction) => {
       const { elements, selection } = reduceElements(
         {
           elements: chartProps.elements,
-          selection: elementsSelection,
+          selection: editor.selection,
         },
         action
       );
-      if (selection !== elementsSelection) {
-        setElementsSelection(selection);
+
+      if (elements !== chartProps.elements) {
+        dispatch({
+          type: UPDATE_BLOCK_BODY,
+          body: { elements },
+        });
       }
-      dispatch({
-        type: UPDATE_BLOCK_BODY,
-        body: { elements },
-      });
+
+      if (selection !== editor.selection) {
+        dispatch({
+          type: UPDATE_BLOCK_EDITOR,
+          editor: { selection },
+        });
+      }
     },
-    [chartProps.elements, elementsSelection, dispatch]
+    [chartProps.elements, editor, dispatch]
   );
 
   return (
@@ -87,6 +94,7 @@ export default function ChartEditor({
       ) ? (
         <ExactChartEditor
           dispatch={dispatchElements}
+          selectionIndex={editor.selection}
           kind={kind}
           {...chartProps}
         />

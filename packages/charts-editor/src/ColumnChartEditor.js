@@ -16,7 +16,7 @@ import ChartLegendItemInput from './ChartLegendItemInput';
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartEditorView({
+export default function ColumnChartEditor({
   children,
   dispatch,
   ...svgProps

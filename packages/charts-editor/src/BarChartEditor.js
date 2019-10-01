@@ -16,7 +16,7 @@ import type { ChartEditorProps as Props } from './types';
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartEditorView({
+export default function BarChartEditor({
   children,
   dispatch,
   fontSize,

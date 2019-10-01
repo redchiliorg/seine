@@ -1,5 +1,12 @@
 // @flow
-import { useEffect, useMemo, useReducer, useRef, useCallback } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState,
+} from 'react';
 import type { Action, BlockId, State } from '@seine/core';
 import { SELECT_BLOCK } from '@seine/core';
 
@@ -77,4 +84,20 @@ export function useSelectableBlockProps(
       [dispatch, id]
     ),
   };
+}
+
+/**
+ * @description Use xScale and yScale of svg element set by a function
+ * @returns {[Function, number, number]}
+ */
+export function useSvgScaleRef() {
+  const [svgElement, setSvgElement] = useState(null);
+  const [xScale, yScale] = useMemo(() => {
+    if (svgElement) {
+      const { a, d } = svgElement.getScreenCTM().inverse();
+      return [a, d];
+    }
+    return [1, 1];
+  }, [svgElement]);
+  return [[xScale, yScale], setSvgElement];
 }
