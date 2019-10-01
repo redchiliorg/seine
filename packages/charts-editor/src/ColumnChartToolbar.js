@@ -15,6 +15,7 @@ import ChartMinValueInput from './ChartMinValueInput';
 import ChartMaxValueInput from './ChartMaxValueInput';
 import ChartValueStepInput from './ChartValueStepInput';
 import ChartElementColorButton from './ChartElementColorButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -50,7 +51,7 @@ export default function ColumnChartToolbar({
           id={id}
         />
 
-        {editor.selection > -1 && (
+        {editor.selection > -1 ? (
           <>
             <ChartElementRemoveButton
               body={body}
@@ -67,8 +68,23 @@ export default function ColumnChartToolbar({
               id={id}
             />
           </>
+        ) : (
+          <>
+            <Toolbar.Separator />
+            <ChartPaletteSelect
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
         )}
+      </Toolbar.Group>
 
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}

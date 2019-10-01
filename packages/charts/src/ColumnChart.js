@@ -150,17 +150,13 @@ function BarGroupYAxis({
 }) {
   return (
     <g fill={'#000000'} textAnchor="middle" fontSize={fontSize}>
-      {Array.from({ length: Math.floor((maxValue - minValue) / dy) + 1 }).map(
-        (_, index, { length }) => (
-          <text
-            key={index}
-            x={x + 1}
-            y={y + height - (index * height) / length}
-          >
-            <tspan>{minValue + index * dy}</tspan>
-          </text>
-        )
-      )}
+      {Array.from({
+        length: dy > 0 ? Math.floor((maxValue - minValue) / dy) + 1 : 0,
+      }).map((_, index, { length }) => (
+        <text key={index} x={x + 1} y={y + height - (index * height) / length}>
+          <tspan>{minValue + index * dy}</tspan>
+        </text>
+      ))}
       <text
         x={x - lineHeight * 2 * fontSize}
         y={y + height / 2}
