@@ -19,6 +19,7 @@ import ChartLegendItemInput from './ChartLegendItemInput';
 export default function LineChartEditor({
   children,
   dispatch,
+  editor,
   ...svgProps
 }: Props) {
   return (

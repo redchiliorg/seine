@@ -4,6 +4,7 @@ import { ForeignInput } from '@seine/ui';
 import type { ColumnChartGroupProps } from '@seine/charts';
 import { ChartLegendItem, ColumnChartGroup } from '@seine/charts';
 import {
+  SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
 } from '@seine/core';
@@ -19,6 +20,7 @@ import ChartLegendItemInput from './ChartLegendItemInput';
 export default function ColumnChartEditor({
   children,
   dispatch,
+  editor,
   ...svgProps
 }: Props) {
   return (
@@ -42,7 +44,10 @@ export default function ColumnChartEditor({
                 elements,
                 fontSize,
                 group,
+                height,
                 lineHeight,
+                maxValue,
+                minValue,
                 palette,
                 size,
                 x,
@@ -70,6 +75,7 @@ export default function ColumnChartEditor({
                   x={x}
                   y={y + (fontSize * lineHeight) / 4}
                 />,
+
                 ...elements.map(({ index, value }, order) => (
                   <ForeignInput
                     color={palette[order % palette.length]}
@@ -91,6 +97,36 @@ export default function ColumnChartEditor({
                     y={y + (fontSize * lineHeight) / 4 + size}
                   />
                 )),
+
+                ...elements.map(({ value }, index) => {
+                  const rectHeight = (height * value) / (maxValue - minValue);
+                  const dy = (height * minValue) / (maxValue - minValue);
+                  const fill = palette[index % palette.length];
+                  return (
+                    <rect
+                      fill={fill}
+                      fontSize={fontSize}
+                      height={rectHeight - dy}
+                      key={['bar', 'selection', index]}
+                      width={size}
+                      x={x + size * index}
+                      y={dy + y - rectHeight}
+                      {...(editor.selection === index
+                        ? {
+                            strokeDasharray: 0.5,
+                            strokeWidth: 0.15,
+                            stroke: 'black',
+                          }
+                        : {
+                            onClick: () =>
+                              dispatch({
+                                index,
+                                type: SELECT_BLOCK_ELEMENT,
+                              }),
+                          })}
+                    />
+                  );
+                }),
               ];
 
             default:
