@@ -4,14 +4,14 @@ import type {
   BlockId,
   ChartBody,
   ChartFormat,
-  EditorAction,
+  BlocksAction,
 } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import * as React from 'react';
 
 type Props = {
   body: ChartBody,
-  dispatch: (EditorAction) => any,
+  dispatch: (BlocksAction) => any,
   format: ChartFormat,
   id: BlockId,
 };

@@ -4,6 +4,15 @@ import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import { createBlockElement, UPDATE_BLOCK_BODY } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
 import { ActionButton, Toolbar } from '@seine/ui';
+import {
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
+
+import ChartElementColorButton from './ChartElementColorButton';
+import ChartElementRemoveButton from './ChartElementRemoveButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -12,21 +21,22 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
-
 /**
  * @description Action buttons to edit currently selected bar chart.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function PieChartToolbar({
-  id,
-  format,
   body,
-  dispatch,
   children,
+  dispatch,
+  editor,
+  format,
+  id,
 }: Props) {
-  body = body || defaultBody;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
@@ -36,12 +46,35 @@ export default function PieChartToolbar({
           format={format}
           id={id}
         />
-        <RemovePieChartElementButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
+        {editor.selection > -1 ? (
+          <>
+            <ChartElementRemoveButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        ) : (
+          <>
+            <Toolbar.Separator />
+            <ChartPaletteSelect
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        )}
       </Toolbar.Group>
       {children}
     </Toolbar>
@@ -49,7 +82,7 @@ export default function PieChartToolbar({
 }
 
 // eslint-disable-next-line
-function AddPieChartElementButton({ id, dispatch, body }) {
+function AddPieChartElementButton({ body, dispatch, id }) {
   return (
     <ActionButton
       id={id}
@@ -69,27 +102,7 @@ function AddPieChartElementButton({ id, dispatch, body }) {
         [body.elements]
       )}
     >
-      Add item
-    </ActionButton>
-  );
-}
-
-// eslint-disable-next-line
-function RemovePieChartElementButton({ body, dispatch, id }) {
-  return (
-    <ActionButton
-      id={id}
-      title={'Remove element'}
-      dispatch={dispatch}
-      type={UPDATE_BLOCK_BODY}
-      body={React.useMemo(
-        () => ({
-          elements: body.elements.slice(0, -1),
-        }),
-        [body.elements]
-      )}
-    >
-      Remove last
+      Add slice
     </ActionButton>
   );
 }

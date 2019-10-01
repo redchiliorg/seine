@@ -7,40 +7,40 @@ import { blockTypes } from '../types';
 opaque type BlockExtension = {
   editor: { [string]: any },
 };
-export type EditorState = {
+export type BlocksState = {
   selection: $ReadOnlyArray<BlockId>,
   blocks: $ReadOnlyArray<Block & BlockExtension>,
 };
-export const initialEditor = {
+export const initialBlocksState: BlocksState = {
   selection: [],
   blocks: [],
 };
 
-export const CREATE_BLOCK = '@seine/editor/createBlock';
+export const CREATE_BLOCK = '@seine/core/createBlock';
 export type CreateBlockAction = {
   type: typeof CREATE_BLOCK,
   block: $Shape<Block>,
 };
 
-export const DELETE_SELECTED_BLOCKS = '@seine/editor/deleteSelectedBlocks';
+export const DELETE_SELECTED_BLOCKS = '@seine/core/deleteSelectedBlocks';
 export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
 };
 
-export const SELECT_BLOCK = '@seine/editor/selectBlock';
+export const SELECT_BLOCK = '@seine/core/selectBlock';
 export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
 };
 
-export const UPDATE_BLOCK_BODY = '@seine/editor/updateBlockBody';
+export const UPDATE_BLOCK_BODY = '@seine/core/updateBlockBody';
 export type UpdateBlockDataAction = {
   type: typeof UPDATE_BLOCK_BODY,
   body: BlockBody,
 };
 
-export const UPDATE_BLOCK_FORMAT = '@seine/editor/updateBlockFormat';
+export const UPDATE_BLOCK_FORMAT = '@seine/core/updateBlockFormat';
 export type UpdateBlockFormatAction = {
   type: typeof UPDATE_BLOCK_FORMAT,
   format: BlockFormat,
@@ -50,15 +50,15 @@ export type UpdateBlockFormatAction = {
 // Memoize editor's inner state.
 //
 // Should be cleaned in onChange callbacks as it is
-// done in ContentEditor component.
+// done in Editor component.
 //
 export const UPDATE_BLOCK_EDITOR = '@seine/editor/updateBlockEditor';
 export type UpdateBlockEditorAction = {
   type: typeof UPDATE_BLOCK_EDITOR,
-  editor: any,
+  editor: { [string]: any },
 };
 
-export type EditorAction =
+export type BlocksAction =
   | CreateBlockAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
@@ -68,14 +68,14 @@ export type EditorAction =
 
 /**
  * @description Reduce Content editor actions
- * @param {EditorState} state
- * @param {EditorAction} action
- * @returns {EditorState}
+ * @param {BlocksState} state
+ * @param {BlocksAction} action
+ * @returns {BlocksState}
  */
-export function reduceEditor(
-  state: EditorState = initialEditor,
-  action: EditorAction
-): EditorState {
+export function reduceBlocks(
+  state: BlocksState = initialBlocksState,
+  action: BlocksAction
+): BlocksState {
   switch (action.type) {
     case SELECT_BLOCK: {
       const index = state.selection.indexOf(action.id);

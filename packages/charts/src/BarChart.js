@@ -96,7 +96,7 @@ export default function BarChart({
           <rect
             fill={color}
             height={barHeight / 2}
-            key={'bar'}
+            key={['bar', index]}
             width={len}
             x={titleMaxLen + fontSize}
             y={y}

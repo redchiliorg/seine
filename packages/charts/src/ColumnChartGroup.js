@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import type { BlockElement } from '@seine/core/src/types';
+import type { BlockElement } from '@seine/core';
 
 export type Props = {
   elements: BlockElement[],

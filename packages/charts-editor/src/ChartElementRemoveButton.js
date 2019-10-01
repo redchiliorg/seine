@@ -1,51 +1,56 @@
 // @flow
 import * as React from 'react';
-import { ActionButton } from '@seine/ui';
-import { UPDATE_BLOCK_BODY } from '@seine/core';
-import { groupElements } from '@seine/charts';
+import { CompositeActionButton } from '@seine/ui';
 import type {
   BlockId,
+  BlocksAction,
   ChartBody,
   ChartFormat,
-  EditorAction,
 } from '@seine/core';
+import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
 
 type Props = {
   body: ChartBody,
   children?: string,
-  dispatch: (EditorAction) => any,
+  dispatch: (BlocksAction) => any,
   format: ChartFormat,
   id: BlockId,
 };
 
-/**
- * @description Button that removes last element (of each group).
- * @param {Props} props
- * @returns {React.Node}
- */
-export default function RemoveColumnChartElementButton({
+// eslint-disable-next-line
+export default function ChartElementRemoveButton({
   body,
   children = 'Rm item',
   dispatch,
+  editor,
   id,
 }: Props) {
   return (
-    <ActionButton
-      id={id}
+    <CompositeActionButton
       title={'Remove element'}
       dispatch={dispatch}
-      type={UPDATE_BLOCK_BODY}
-      body={React.useMemo(
-        () => ({
-          elements: groupElements(body.elements).reduce(
-            (acc, [_, elements]) => [...acc, ...elements.slice(0, -1)],
-            []
-          ),
-        }),
-        [body.elements]
+      actions={React.useMemo(
+        () => [
+          {
+            editor: { selection: -1 },
+            id: id,
+            type: UPDATE_BLOCK_EDITOR,
+          },
+          {
+            body: {
+              elements: [
+                ...body.elements.slice(0, editor.selection),
+                ...body.elements.slice(editor.selection + 1),
+              ],
+            },
+            id: id,
+            type: UPDATE_BLOCK_BODY,
+          },
+        ],
+        [body.elements, editor.selection, id]
       )}
     >
       {children}
-    </ActionButton>
+    </CompositeActionButton>
   );
 }

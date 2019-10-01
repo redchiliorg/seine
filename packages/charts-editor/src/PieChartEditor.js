@@ -1,39 +1,39 @@
 // @flow
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
-import {
-  PieChart,
-  PieChartTitle,
+import { PieChartSlice, PieChartTitle, PieChartValue } from '@seine/charts';
+import type {
+  PieChartSliceProps,
   PieChartTitleProps,
-  PieChartValue,
   PieChartValueProps,
 } from '@seine/charts';
-import { UPDATE_ELEMENT } from '@seine/core';
+import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
 
 /**
- * @description Editor of column chart
- * props {Props}
+ * @description Editor of pie chart
+ * @param {Props} props
  * @returns {React.Node}
  */
 export default function PieChartEditor({
+  children,
   dispatch,
   editor,
-  ...chartProps
-}: Props) {
-  return <PieChart {...chartProps} as={PieChartEditorView} />;
-}
-
-// eslint-disable-next-line
-function PieChartEditorView({
-  children,
-  dispatchElements,
   selection,
-  ...viewProps
-}) {
+  ...svgProps
+}: Props) {
   return (
-    <svg {...viewProps}>
+    <svg {...svgProps}>
+      <pattern
+        id="selected-slice"
+        viewBox={'0 0 3 2'}
+        width={'1%'}
+        height={'1%'}
+      >
+        <circle cx={1} cy={1} r={1} opacity={0.25} />
+      </pattern>
+
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
@@ -60,8 +60,8 @@ function PieChartEditorView({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT,
                       body: { title: currentTarget.value },
                       index,
                     })
@@ -97,8 +97,8 @@ function PieChartEditorView({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatchElements({
-                      type: UPDATE_ELEMENT,
+                    dispatch({
+                      type: UPDATE_BLOCK_ELEMENT,
                       body: { value: +currentTarget.value },
                       index,
                     })
@@ -109,6 +109,32 @@ function PieChartEditorView({
                   x={x - width / 2}
                   y={y - fontSize * lineHeight}
                 />
+              );
+            }
+
+            case PieChartSlice: {
+              const { index }: PieChartSliceProps = child.props;
+              return index === editor.selection ? (
+                [
+                  child,
+                  <PieChartSlice
+                    {...child.props}
+                    key={[child.key, 'selected']}
+                    palette={['url(#selected-slice)']}
+                  />,
+                ]
+              ) : (
+                <g
+                  key={[child.key, 'click-target']}
+                  onClick={() =>
+                    dispatch({
+                      index,
+                      type: SELECT_BLOCK_ELEMENT,
+                    })
+                  }
+                >
+                  {child}
+                </g>
               );
             }
 

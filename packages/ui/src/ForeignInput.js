@@ -2,6 +2,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 
+import { useSvgScaleRef } from './hooks';
+
 type Props = {
   color?: string,
   fontSize: number,
@@ -60,14 +62,7 @@ export default function ForeignInput({
   y,
   ...inputProps
 }: Props) {
-  const [svgElement, setSvgElement] = React.useState(null);
-  const [xScale, yScale] = React.useMemo(() => {
-    if (svgElement) {
-      const { a, d } = svgElement.getScreenCTM().inverse();
-      return [a, d];
-    }
-    return [1, 1];
-  }, [svgElement]);
+  const [[xScale, yScale], setSvgElement] = useSvgScaleRef();
 
   return (
     <foreignObject

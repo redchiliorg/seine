@@ -3,14 +3,18 @@ import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
+import {
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
 
 import ChartElementAddButton from './ChartElementAddButton';
-import RemoveChartElementButton from './ChartElementRemoveButton';
+import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartMinValueInput from './ChartMinValueInput';
 import ChartMaxValueInput from './ChartMaxValueInput';
 import ChartValueStepInput from './ChartValueStepInput';
-import ChartGroupAddButton from './ChartGroupAddButton';
-import ChartGroupRemoveButton from './ChartGroupRemoveButton';
+import ChartElementColorButton from './ChartElementColorButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -19,8 +23,6 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
-
 /**
  * @description Action buttons to edit currently selected column chart.
  * @param {Props} props
@@ -28,12 +30,15 @@ const defaultBody = { elements: [] };
  */
 export default function ColumnChartToolbar({
   id,
+  editor,
   format,
   body,
   dispatch,
   children,
 }: Props) {
-  body = body || defaultBody;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
@@ -44,26 +49,24 @@ export default function ColumnChartToolbar({
           id={id}
         />
 
-        <RemoveChartElementButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
-
-        <ChartGroupAddButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
-
-        <ChartGroupRemoveButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
+        {editor.selection > -1 && (
+          <>
+            <ChartElementRemoveButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        )}
 
         <ChartMinValueInput
           body={body}

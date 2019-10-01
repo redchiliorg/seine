@@ -10,13 +10,13 @@ import type {
   BlockId,
   ChartBody,
   ChartFormat,
-  EditorAction,
+  BlocksAction,
 } from '@seine/core';
 
 type Props = {
   body: ChartBody,
   children?: string,
-  dispatch: (EditorAction) => any,
+  dispatch: (BlocksAction) => any,
   format: ChartFormat,
   id: BlockId,
 };

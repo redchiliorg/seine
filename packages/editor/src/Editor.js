@@ -2,18 +2,12 @@
 import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Content } from '@seine/content';
 import type { ContentProps } from '@seine/content';
-import type { Block, EditorAction, EditorState } from '@seine/core';
-import {
-  blockTypes,
-  DELETE_SELECTED_BLOCKS,
-  reduceEditor,
-  initialEditor,
-  SELECT_BLOCK,
-} from '@seine/core';
+import { Content } from '@seine/content';
+import type { Block, BlocksAction, BlocksState } from '@seine/core';
+import { blockTypes, initialBlocksState, reduceBlocks } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { ActionButton, Paper, Toolbar, useReducerEx } from '@seine/ui';
+import { BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
@@ -31,10 +25,6 @@ const ContentPaper = styled(Paper)`
     display: inline-block;
     height: 1.5em;
   }
-`;
-
-const ContentToolbarGroup = styled(Toolbar.Group)`
-  margin-left: auto;
 `;
 
 const defaultEditorBlockRendererMap = {
@@ -83,13 +73,13 @@ export default function Editor({
   ...contentProps
 }: Props) {
   const init = React.useCallback(
-    () => ({ ...initialEditor, blocks: children }),
+    () => ({ ...initialBlocksState, blocks: children }),
     [children]
   );
   const [{ blocks, selection }, dispatch] = useReducerEx<
-    EditorState,
-    EditorAction
-  >(reduceEditor, initialEditor, init);
+    BlocksState,
+    BlocksAction
+  >(reduceBlocks, initialBlocksState, init);
 
   React.useEffect(() => {
     onChange(
@@ -123,31 +113,9 @@ export default function Editor({
           dispatch={dispatch}
           selection={selection}
         >
-          {selection.length > 0 && (
-            <ContentToolbarGroup>
-              <ActionButton
-                color={'danger'}
-                title={'Delete current selection'}
-                dispatch={dispatch}
-                type={DELETE_SELECTED_BLOCKS}
-              >
-                Delete
-              </ActionButton>
-              {selection.length === 1 && (
-                <ActionButton
-                  color={'primary'}
-                  title={'Cancel current selection'}
-                  dispatch={dispatch}
-                  type={SELECT_BLOCK}
-                  id={selection[0]}
-                  modifier={'sub'}
-                >
-                  Deselect
-                </ActionButton>
-              )}
-            </ContentToolbarGroup>
-          )}
+          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
         </BlockToolbar>
+
         <ContentPaper>
           <Content
             {...contentProps}
@@ -155,7 +123,7 @@ export default function Editor({
             blockRenderMap={blockRenderMap}
           >
             {React.useMemo(
-              () => blocks.map((block) => ({ ...block, selection, dispatch })),
+              () => blocks.map((block) => ({ ...block, dispatch, selection })),
               [blocks, dispatch, selection]
             )}
           </Content>

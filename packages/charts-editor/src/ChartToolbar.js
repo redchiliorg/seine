@@ -17,53 +17,25 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
+const defaultFormat = {};
 
 /**
  * @description Action buttons to edit currently selected chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartToolbar({
-  body,
-  children,
-  format,
-  ...toolbarProps
-}: Props) {
+export default function ChartToolbar({ children, ...toolbarProps }: Props) {
+  const { kind, ...format } = toolbarProps.format || defaultFormat;
   return (
     !!format &&
-    (format.kind === chartTypes.BAR ? (
-      <BarChartToolbar
-        {...toolbarProps}
-        body={body || defaultBody}
-        format={format}
-      >
-        {children}
-      </BarChartToolbar>
-    ) : format.kind === chartTypes.COLUMN ? (
-      <ColumnChartToolbar
-        {...toolbarProps}
-        body={body || defaultBody}
-        format={format}
-      >
-        {children}
-      </ColumnChartToolbar>
-    ) : format.kind === chartTypes.LINE ? (
-      <LineChartToolbar
-        {...toolbarProps}
-        body={body || defaultBody}
-        format={format}
-      >
-        {children}
-      </LineChartToolbar>
-    ) : format.kind === chartTypes.PIE ? (
-      <PieChartToolbar
-        {...toolbarProps}
-        body={body || defaultBody}
-        format={format}
-      >
-        {children}
-      </PieChartToolbar>
+    (kind === chartTypes.BAR ? (
+      <BarChartToolbar {...toolbarProps}>{children}</BarChartToolbar>
+    ) : kind === chartTypes.COLUMN ? (
+      <ColumnChartToolbar {...toolbarProps}>{children}</ColumnChartToolbar>
+    ) : kind === chartTypes.LINE ? (
+      <LineChartToolbar {...toolbarProps}>{children}</LineChartToolbar>
+    ) : kind === chartTypes.PIE ? (
+      <PieChartToolbar {...toolbarProps}>{children}</PieChartToolbar>
     ) : (
       <Toolbar>{children}</Toolbar>
     ))

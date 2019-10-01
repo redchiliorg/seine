@@ -2,14 +2,14 @@
 import * as React from 'react';
 import type { ColumnChartLegendProps } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
-import { UPDATE_ELEMENT_BY_ID } from '@seine/core';
+import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
 
 /**
  * @description Input to edit a title of chart legend item
  * @returns {React.Node}
  */
 export default function ChartLegendItemInput({
-  dispatchElements,
+  dispatch,
   fontSize,
   id,
   lineHeight,
@@ -26,8 +26,8 @@ export default function ChartLegendItemInput({
       key={[id, 'input']}
       lineHeight={lineHeight}
       onChange={({ currentTarget }) =>
-        dispatchElements({
-          type: UPDATE_ELEMENT_BY_ID,
+        dispatch({
+          type: UPDATE_BLOCK_ELEMENT_BY_ID,
           body: { title: currentTarget.value },
           id,
         })
