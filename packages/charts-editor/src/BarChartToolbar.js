@@ -1,16 +1,18 @@
 // @flow
 import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
-import { createBlockElement, UPDATE_BLOCK_BODY } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
-import { ActionButton, Toolbar } from '@seine/ui';
+import { Toolbar } from '@seine/ui';
 import {
   defaultChartBody,
   defaultChartEditor,
   defaultChartFormat,
 } from '@seine/charts';
+
 import ChartElementColorButton from './ChartElementColorButton';
 import ChartElementRemoveButton from './ChartElementRemoveButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
+import ChartElementAddButton from './ChartElementAddButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -38,14 +40,14 @@ export default function BarChartToolbar({
   return (
     <Toolbar>
       <Toolbar.Group>
-        <AddBarChartElementButton
+        <ChartElementAddButton
           body={body}
           dispatch={dispatch}
           editor={editor}
           format={format}
           id={id}
         />
-        {editor.selection > -1 && (
+        {editor.selection > -1 ? (
           <>
             <ChartElementRemoveButton
               body={body}
@@ -62,55 +64,20 @@ export default function BarChartToolbar({
               id={id}
             />
           </>
+        ) : (
+          <>
+            <Toolbar.Separator />
+            <ChartPaletteSelect
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
         )}
       </Toolbar.Group>
       {children}
     </Toolbar>
-  );
-}
-
-// eslint-disable-next-line
-function AddBarChartElementButton({ id, dispatch, body }) {
-  return (
-    <ActionButton
-      id={id}
-      title={'Add element'}
-      dispatch={dispatch}
-      type={UPDATE_BLOCK_BODY}
-      body={React.useMemo(
-        () => ({
-          elements: [
-            ...body.elements,
-            createBlockElement({
-              title: `Item #${body.elements.length + 1}`,
-              value: 0,
-            }),
-          ],
-        }),
-        [body.elements]
-      )}
-    >
-      Add item
-    </ActionButton>
-  );
-}
-
-// eslint-disable-next-line
-function RemoveBarChartElementButton({ body, dispatch, id }) {
-  return (
-    <ActionButton
-      id={id}
-      title={'Remove element'}
-      dispatch={dispatch}
-      type={UPDATE_BLOCK_BODY}
-      body={React.useMemo(
-        () => ({
-          elements: body.elements.slice(0, -1),
-        }),
-        [body.elements]
-      )}
-    >
-      Remove last
-    </ActionButton>
   );
 }

@@ -94,7 +94,7 @@ export default function ChartEditor({
       ) ? (
         <ExactChartEditor
           dispatch={dispatchElements}
-          selectionIndex={editor.selection}
+          editor={editor}
           kind={kind}
           {...chartProps}
         />

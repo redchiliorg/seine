@@ -15,6 +15,7 @@ import type { ChartEditorProps as Props } from './types';
 export default function BarChartEditor({
   children,
   dispatch,
+  editor,
   fontSize,
   selection,
   ...svgProps
@@ -94,25 +95,33 @@ export default function BarChartEditor({
                 }
 
                 case 'rect':
-                  return [
+                  const index = +child.key.split(',')[1];
+                  return (
                     <rect
                       {...child.props}
                       key={child.key}
-                      onClick={() =>
-                        dispatch({
-                          index: +child.key.split(',')[1],
-                          type: SELECT_BLOCK_ELEMENT,
-                        })
-                      }
-                    />,
-                  ];
+                      {...(editor.selection === index
+                        ? {
+                            strokeDasharray: 0.25,
+                            strokeWidth: 0.05,
+                            stroke: 'black',
+                          }
+                        : {
+                            onClick: () =>
+                              dispatch({
+                                index,
+                                type: SELECT_BLOCK_ELEMENT,
+                              }),
+                          })}
+                    />
+                  );
 
                 default:
                   return child;
               }
             }
           }),
-        [children, dispatch, fontSize]
+        [children, dispatch, editor.selection, fontSize]
       )}
     </svg>
   );

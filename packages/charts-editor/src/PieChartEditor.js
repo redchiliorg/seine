@@ -19,7 +19,7 @@ import type { ChartEditorProps as Props } from './types';
 export default function PieChartEditor({
   children,
   dispatch,
-  selectionIndex,
+  editor,
   selection,
   ...svgProps
 }: Props) {
@@ -114,7 +114,7 @@ export default function PieChartEditor({
 
             case PieChartSlice: {
               const { index }: PieChartSliceProps = child.props;
-              return index === selectionIndex ? (
+              return index === editor.selection ? (
                 [
                   child,
                   <PieChartSlice
