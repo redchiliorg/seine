@@ -1,12 +1,7 @@
 // @flow
 import * as React from 'react';
-import {
-  ChartLegendItem,
-  LineChartGroup,
-  LineChartGroupProps,
-  LineChartValue,
-  LineChartValueProps,
-} from '@seine/charts';
+import { ChartLegendItem, LineChartGroup, LineChartValue } from '@seine/charts';
+import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
 import {
   UPDATE_BLOCK_ELEMENT,
