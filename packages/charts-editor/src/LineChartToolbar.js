@@ -3,6 +3,11 @@ import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
+import {
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
 
 import ChartElementAddButton from './ChartElementAddButton';
 import RemoveChartElementButton from './ChartElementRemoveButton';
@@ -19,27 +24,29 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
-
 /**
  * @description Action buttons to edit currently selected column chart.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function LineChartToolbar({
-  id,
-  format,
   body,
-  dispatch,
   children,
+  dispatch,
+  editor,
+  format,
+  id,
 }: Props) {
-  body = body || defaultBody;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
         <ChartElementAddButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
@@ -49,6 +56,7 @@ export default function LineChartToolbar({
         <RemoveChartElementButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
@@ -58,6 +66,7 @@ export default function LineChartToolbar({
         <ChartGroupAddButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
@@ -67,6 +76,7 @@ export default function LineChartToolbar({
         <ChartGroupRemoveButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
@@ -76,6 +86,7 @@ export default function LineChartToolbar({
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -83,6 +94,7 @@ export default function LineChartToolbar({
         <ChartMaxValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -90,6 +102,7 @@ export default function LineChartToolbar({
         <ChartValueStepInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />

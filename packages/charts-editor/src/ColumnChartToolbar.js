@@ -45,6 +45,7 @@ export default function ColumnChartToolbar({
         <ChartElementAddButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -71,6 +72,7 @@ export default function ColumnChartToolbar({
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -78,6 +80,7 @@ export default function ColumnChartToolbar({
         <ChartMaxValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -85,6 +88,7 @@ export default function ColumnChartToolbar({
         <ChartValueStepInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
