@@ -1,12 +1,8 @@
 // @flow
 import * as React from 'react';
-import {
-  BarChartTitle,
-  BarChartTitleProps,
-  BarChartValue,
-  BarChartValueProps,
-} from '@seine/charts';
-import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import { BarChartTitle, BarChartValue } from '@seine/charts';
+import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
+import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { ForeignInput } from '@seine/ui';
 
 import type { ChartEditorProps as Props } from './types';
@@ -40,7 +36,7 @@ export default function BarChartEditor({
                     width,
                     x,
                     y,
-                  }: BarChartValueProps | BarChartTitleProps = child.props;
+                  }: BarChartValueProps = child.props;
 
                   return (
                     <ForeignInput
@@ -74,7 +70,7 @@ export default function BarChartEditor({
                     width,
                     x,
                     y,
-                  }: BarChartValueProps | BarChartTitleProps = child.props;
+                  }: BarChartTitleProps = child.props;
 
                   return (
                     <ForeignInput
@@ -96,6 +92,20 @@ export default function BarChartEditor({
                     />
                   );
                 }
+
+                case 'rect':
+                  return [
+                    <rect
+                      {...child.props}
+                      key={child.key}
+                      onClick={() =>
+                        dispatch({
+                          index: +child.key.split(',')[1],
+                          type: SELECT_BLOCK_ELEMENT,
+                        })
+                      }
+                    />,
+                  ];
 
                 default:
                   return child;

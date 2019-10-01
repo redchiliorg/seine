@@ -1,3 +1,5 @@
+import { initialElementsState } from '@seine/core';
+
 export const defaultChartDy = 10;
 export const defaultChartTitle = '';
 export const defaultChartFontSize = 2;
@@ -17,3 +19,7 @@ export const defaultChartPalette = [
 export const defaultChartSize = 100;
 export const defaultChartUnits = '%';
 export const defaultMinValue = 0;
+
+export const defaultChartBody = { elements: [] };
+export const defaultChartEditor = { selection: initialElementsState.selection };
+export const defaultChartFormat = { palette: defaultChartPalette };

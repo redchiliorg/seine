@@ -1,35 +1,23 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components';
-import { SketchPicker } from 'react-color';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
-import {
-  createBlockElement,
-  initialElementsState,
-  UPDATE_BLOCK_BODY,
-  UPDATE_BLOCK_EDITOR,
-  UPDATE_BLOCK_FORMAT,
-} from '@seine/core';
+import { createBlockElement, UPDATE_BLOCK_BODY } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
+import { ActionButton, Toolbar } from '@seine/ui';
 import {
-  ActionButton,
-  Button,
-  CompositeActionButton,
-  Toolbar,
-} from '@seine/ui';
-import { defaultChartPalette } from '@seine/charts';
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
+
+import ChartElementColorButton from './ChartElementColorButton';
+import ChartElementRemoveButton from './ChartElementRemoveButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
   body: ChartBody,
   selection: BlockId[],
   children: React.Element<typeof BlockToolbarGroup>,
-};
-
-const defaultBody = { elements: [] };
-const defaultEditor = { selection: initialElementsState.selection };
-const defaultFormat = {
-  palette: defaultChartPalette,
 };
 
 /**
@@ -45,9 +33,9 @@ export default function PieChartToolbar({
   format,
   id,
 }: Props) {
-  body = body || defaultBody;
-  editor = editor || defaultEditor;
-  format = format || defaultFormat;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
@@ -57,87 +45,27 @@ export default function PieChartToolbar({
           format={format}
           id={id}
         />
-        {editor.selection > -1 && [
-          <RemovePieChartElementButton
-            key={'remove'}
-            body={body}
-            dispatch={dispatch}
-            editor={editor}
-            format={format}
-            id={id}
-          />,
-          <PieColorButton
-            body={body}
-            dispatch={dispatch}
-            editor={editor}
-            format={format}
-            id={id}
-            key={'color'}
-          />,
-        ]}
+        {editor.selection > -1 && (
+          <>
+            <ChartElementRemoveButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        )}
       </Toolbar.Group>
       {children}
     </Toolbar>
-  );
-}
-
-const StyledColorButton = styled(Button)`
-  &&& {
-    ${({ color }) =>
-      css`
-        background-color: ${color};
-      `}
-  }
-`;
-
-const ColorPickerContainer = styled.div`
-  margin-right: -250px;
-  margin-top: 50px;
-  position: absolute;
-  z-index: 999;
-  ${({ open }) =>
-    !open &&
-    css`
-      display: none;
-    `}
-`;
-
-// eslint-disable-next-line
-function PieColorButton({
-  dispatch,
-  editor: { selection },
-  format: { palette = defaultFormat.palette },
-}) {
-  const [open, setOpen] = React.useState(false);
-  const colorIndex = selection % palette.length;
-  const color = palette[colorIndex];
-  return (
-    <>
-      <StyledColorButton
-        color={color}
-        onClick={React.useCallback(() => setOpen(!open), [open])}
-        size={'small'}
-      />
-      <ColorPickerContainer open={open}>
-        <SketchPicker
-          color={color}
-          onChange={React.useCallback(
-            ({ hex }) =>
-              dispatch({
-                type: UPDATE_BLOCK_FORMAT,
-                format: {
-                  palette: [
-                    ...palette.slice(0, colorIndex),
-                    hex,
-                    ...palette.slice(colorIndex + 1),
-                  ],
-                },
-              }),
-            [colorIndex, dispatch, palette]
-          )}
-        />
-      </ColorPickerContainer>
-    </>
   );
 }
 
@@ -164,37 +92,5 @@ function AddPieChartElementButton({ body, dispatch, id }) {
     >
       Add slice
     </ActionButton>
-  );
-}
-
-// eslint-disable-next-line
-function RemovePieChartElementButton({ body, dispatch, editor, id }) {
-  return (
-    <CompositeActionButton
-      title={'Remove element'}
-      dispatch={dispatch}
-      actions={React.useMemo(
-        () => [
-          {
-            editor: { selection: -1 },
-            id: id,
-            type: UPDATE_BLOCK_EDITOR,
-          },
-          {
-            body: {
-              elements: [
-                ...body.elements.slice(0, editor.selection),
-                ...body.elements.slice(editor.selection + 1),
-              ],
-            },
-            id: id,
-            type: UPDATE_BLOCK_BODY,
-          },
-        ],
-        [body.elements, editor.selection, id]
-      )}
-    >
-      Remove slice
-    </CompositeActionButton>
   );
 }

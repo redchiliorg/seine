@@ -1,12 +1,10 @@
 // @flow
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
-import {
-  PieChartSlice,
+import { PieChartSlice, PieChartTitle, PieChartValue } from '@seine/charts';
+import type {
   PieChartSliceProps,
-  PieChartTitle,
   PieChartTitleProps,
-  PieChartValue,
   PieChartValueProps,
 } from '@seine/charts';
 import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';

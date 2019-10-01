@@ -4,6 +4,13 @@ import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import { createBlockElement, UPDATE_BLOCK_BODY } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
 import { ActionButton, Toolbar } from '@seine/ui';
+import {
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
+import ChartElementColorButton from './ChartElementColorButton';
+import ChartElementRemoveButton from './ChartElementRemoveButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -12,36 +19,50 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
-
 /**
  * @description Action buttons to edit currently selected bar chart.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function BarChartToolbar({
-  id,
-  format,
   body,
-  dispatch,
   children,
+  dispatch,
+  editor,
+  format,
+  id,
 }: Props) {
-  body = body || defaultBody;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
         <AddBarChartElementButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
-        <RemoveBarChartElementButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
+        {editor.selection > -1 && (
+          <>
+            <ChartElementRemoveButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        )}
       </Toolbar.Group>
       {children}
     </Toolbar>
