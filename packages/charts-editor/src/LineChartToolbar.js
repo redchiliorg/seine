@@ -10,12 +10,14 @@ import {
 } from '@seine/charts';
 
 import ChartElementAddButton from './ChartElementAddButton';
-import RemoveChartElementButton from './ChartElementRemoveButton';
 import ChartMinValueInput from './ChartMinValueInput';
 import ChartMaxValueInput from './ChartMaxValueInput';
 import ChartValueStepInput from './ChartValueStepInput';
 import ChartGroupAddButton from './ChartGroupAddButton';
 import ChartGroupRemoveButton from './ChartGroupRemoveButton';
+import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
+import ChartElementColorButton from './ChartElementColorButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -43,26 +45,39 @@ export default function LineChartToolbar({
   return (
     <Toolbar>
       <Toolbar.Group>
-        <ChartElementAddButton
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        >
-          Add line
-        </ChartElementAddButton>
+        {editor.selection > -1 ? (
+          <>
+            <ChartElementRemoveByIdButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            >
+              rm line
+            </ChartElementRemoveByIdButton>
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        ) : (
+          <ChartPaletteSelect
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+        )}
+      </Toolbar.Group>
 
-        <RemoveChartElementButton
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        >
-          Rm line
-        </RemoveChartElementButton>
+      <Toolbar.Separator />
 
+      <Toolbar.Group>
         <ChartGroupAddButton
           body={body}
           dispatch={dispatch}
@@ -80,9 +95,23 @@ export default function LineChartToolbar({
           format={format}
           id={id}
         >
-          Rm point
+          Remove point
         </ChartGroupRemoveButton>
 
+        <ChartElementAddButton
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        >
+          Add line
+        </ChartElementAddButton>
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}

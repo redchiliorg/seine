@@ -158,7 +158,7 @@ export default function LineChart({
             'M'
           )}
           fill={'none'}
-          key={['path', titleIndex]}
+          key={['line', titleIndex]}
           markerEnd={`url(#${['point', titleIndex]})`}
           markerMid={`url(#${['point', titleIndex]})`}
           markerStart={`url(#${['point', titleIndex]})`}
