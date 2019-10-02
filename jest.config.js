@@ -18,6 +18,7 @@ module.exports = {
     '^.+\\.module\\.(css|sass|scss)$',
   ],
   moduleNameMapper: {
+    '^@seine/(.*)$': '<rootDir>/packages/$1/src/index.js',
     '^react-native$': 'react-native-web',
     '^.+\\.module\\.(css|sass|scss)$': require.resolve('identity-obj-proxy'),
   },
