@@ -4,8 +4,7 @@ import styled, { css } from 'styled-components';
 import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
 import { useSelectableBlockProps } from '@seine/ui';
-import { toDraftEditor, toRawContent } from '@seine/draft';
-import { Editor } from 'draft-js';
+import { Editor, convertToRaw, convertFromRaw, EditorState } from 'draft-js';
 
 type Props = (DraftBody & DraftFormat & BlockEditor) & {
   id: string,
@@ -62,20 +61,21 @@ export default function DraftEditor({
   }, [readOnly]);
 
   const editorState = React.useMemo(
-    () => state || toDraftEditor({ blocks, entityMap }),
+    () =>
+      state ||
+      EditorState.createWithContent(convertFromRaw({ blocks, entityMap })),
     // eslint-disable-next-line
     [id, state]
   );
 
-  const contentState = editorState && editorState.getCurrentContent();
   React.useEffect(() => {
-    if (!readOnly) {
+    if (editorState && !readOnly) {
       dispatch({
         type: UPDATE_BLOCK_BODY,
-        body: toRawContent(contentState),
+        body: convertToRaw(editorState.getCurrentContent()),
       });
     }
-  }, [contentState, dispatch, readOnly]);
+  }, [dispatch, editorState, readOnly]);
 
   return (
     <Container

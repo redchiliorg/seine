@@ -3,14 +3,21 @@ import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import type { BlockToolbarGroup } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
+import {
+  defaultChartBody,
+  defaultChartEditor,
+  defaultChartFormat,
+} from '@seine/charts';
 
 import ChartElementAddButton from './ChartElementAddButton';
-import RemoveChartElementButton from './ChartElementRemoveButton';
 import ChartMinValueInput from './ChartMinValueInput';
 import ChartMaxValueInput from './ChartMaxValueInput';
 import ChartValueStepInput from './ChartValueStepInput';
 import ChartGroupAddButton from './ChartGroupAddButton';
 import ChartGroupRemoveButton from './ChartGroupRemoveButton';
+import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
+import ChartElementColorButton from './ChartElementColorButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -19,45 +26,62 @@ type Props = Block & {
   children: React.Element<typeof BlockToolbarGroup>,
 };
 
-const defaultBody = { elements: [] };
-
 /**
  * @description Action buttons to edit currently selected column chart.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function LineChartToolbar({
-  id,
-  format,
   body,
-  dispatch,
   children,
+  dispatch,
+  editor,
+  format,
+  id,
 }: Props) {
-  body = body || defaultBody;
+  body = body || defaultChartBody;
+  editor = editor || defaultChartEditor;
+  format = format || defaultChartFormat;
   return (
     <Toolbar>
       <Toolbar.Group>
-        <ChartElementAddButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        >
-          Add line
-        </ChartElementAddButton>
+        {editor.selection > -1 ? (
+          <>
+            <ChartElementRemoveByIdButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            >
+              rm line
+            </ChartElementRemoveByIdButton>
+            <ChartElementColorButton
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
+        ) : (
+          <ChartPaletteSelect
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+        )}
+      </Toolbar.Group>
 
-        <RemoveChartElementButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        >
-          Rm line
-        </RemoveChartElementButton>
+      <Toolbar.Separator />
 
+      <Toolbar.Group>
         <ChartGroupAddButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
@@ -67,15 +91,31 @@ export default function LineChartToolbar({
         <ChartGroupRemoveButton
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         >
-          Rm point
+          Remove point
         </ChartGroupRemoveButton>
 
+        <ChartElementAddButton
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        >
+          Add line
+        </ChartElementAddButton>
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -83,6 +123,7 @@ export default function LineChartToolbar({
         <ChartMaxValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -90,6 +131,7 @@ export default function LineChartToolbar({
         <ChartValueStepInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />

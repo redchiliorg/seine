@@ -4,6 +4,7 @@ import { ChartLegendItem, LineChartGroup, LineChartValue } from '@seine/charts';
 import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
 import {
+  SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
 } from '@seine/core';
@@ -19,6 +20,7 @@ import ChartLegendItemInput from './ChartLegendItemInput';
 export default function LineChartEditor({
   children,
   dispatch,
+  editor,
   ...svgProps
 }: Props) {
   return (
@@ -106,6 +108,40 @@ export default function LineChartEditor({
                   y={y - fontSize * lineHeight}
                 />
               );
+            }
+
+            case 'path': {
+              const [scope, key] = child.key.split(',');
+              const index = +key;
+
+              if (scope === 'line') {
+                return [
+                  child,
+                  <path
+                    {...child.props}
+                    key={[child.key, 'click-target']}
+                    {...(editor.selection === index
+                      ? {
+                          strokeDasharray: 0.5,
+                          strokeWidth: 0.15,
+                          stroke: 'black',
+                        }
+                      : {
+                          strokeWidth: 4,
+                          stroke: 'transparent',
+                          markerEnd: 'none',
+                          markerMid: 'none',
+                          markerStart: 'none',
+                          onClick: () =>
+                            dispatch({
+                              index,
+                              type: SELECT_BLOCK_ELEMENT,
+                            }),
+                        })}
+                  />,
+                ];
+              }
+              return child;
             }
 
             default:

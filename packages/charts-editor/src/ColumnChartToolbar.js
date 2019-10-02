@@ -10,11 +10,13 @@ import {
 } from '@seine/charts';
 
 import ChartElementAddButton from './ChartElementAddButton';
-import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartMinValueInput from './ChartMinValueInput';
 import ChartMaxValueInput from './ChartMaxValueInput';
 import ChartValueStepInput from './ChartValueStepInput';
 import ChartElementColorButton from './ChartElementColorButton';
+import ChartPaletteSelect from './ChartPaletteSelect';
+import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
+import ChartGroupAddButton from './ChartGroupAddButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -42,16 +44,9 @@ export default function ColumnChartToolbar({
   return (
     <Toolbar>
       <Toolbar.Group>
-        <ChartElementAddButton
-          body={body}
-          dispatch={dispatch}
-          format={format}
-          id={id}
-        />
-
-        {editor.selection > -1 && (
+        {editor.selection > -1 ? (
           <>
-            <ChartElementRemoveButton
+            <ChartElementRemoveByIdButton
               body={body}
               dispatch={dispatch}
               editor={editor}
@@ -66,11 +61,46 @@ export default function ColumnChartToolbar({
               id={id}
             />
           </>
+        ) : (
+          <>
+            <Toolbar.Separator />
+            <ChartPaletteSelect
+              body={body}
+              dispatch={dispatch}
+              editor={editor}
+              format={format}
+              id={id}
+            />
+          </>
         )}
+      </Toolbar.Group>
 
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartGroupAddButton
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
+        <ChartElementAddButton
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
         <ChartMinValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -78,6 +108,7 @@ export default function ColumnChartToolbar({
         <ChartMaxValueInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />
@@ -85,6 +116,7 @@ export default function ColumnChartToolbar({
         <ChartValueStepInput
           body={body}
           dispatch={dispatch}
+          editor={editor}
           format={format}
           id={id}
         />

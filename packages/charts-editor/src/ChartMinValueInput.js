@@ -1,10 +1,10 @@
 // @flow
-import { Input, Label } from '@seine/ui';
+import { Input } from '@seine/ui';
 import type {
   BlockId,
+  BlocksAction,
   ChartBody,
   ChartFormat,
-  BlocksAction,
 } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import * as React from 'react';
@@ -23,20 +23,18 @@ type Props = {
  */
 export default function ChartMinValueInput({ dispatch, format }: Props) {
   return (
-    <>
-      <Label>min</Label>
-      <Input
-        onChange={React.useCallback(
-          ({ currentTarget }) =>
-            dispatch({
-              type: UPDATE_BLOCK_FORMAT,
-              format: { minValue: +currentTarget.value },
-            }),
-          [dispatch]
-        )}
-        type={'number'}
-        value={typeof format.minValue === 'number' ? format.minValue : ''}
-      />
-    </>
+    <Input
+      onChange={React.useCallback(
+        ({ currentTarget }) =>
+          dispatch({
+            type: UPDATE_BLOCK_FORMAT,
+            format: { minValue: +currentTarget.value },
+          }),
+        [dispatch]
+      )}
+      placeholder={'min'}
+      type={'number'}
+      value={typeof format.minValue === 'number' ? format.minValue : ''}
+    />
   );
 }
