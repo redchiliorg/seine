@@ -84,6 +84,7 @@ export default function DraftEditor({
       {...containerProps}
     >
       <Editor
+        editorKey={id}
         textAlignment={textAlignment}
         editorState={editorState}
         ref={editorRef}
