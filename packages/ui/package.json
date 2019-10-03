@@ -15,6 +15,8 @@
     "clsx": "^1.0.4"
   },
   "peerDependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   }

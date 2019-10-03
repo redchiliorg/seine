@@ -87,12 +87,15 @@ export type UpdateBlockEditorAction = {
   editor: { [string]: any },
 };
 
-export type BlocksAction =
-  | CreateBlockAction
+export type BlocksCreateAction =
   | CreateBottomBlockAction
   | CreateLeftBlockAction
   | CreateRightBlockAction
-  | CreateTopBlockAction
+  | CreateTopBlockAction;
+
+export type BlocksAction =
+  | CreateBlockAction
+  | BlocksCreateAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
   | UpdateBlockDataAction
@@ -116,26 +119,28 @@ export function reduceBlocks(
         blocks: [...state.blocks, action.block],
       };
 
+    case CREATE_TOP_BLOCK:
     case CREATE_BOTTOM_BLOCK: {
-      const index = state.blocks.findIndex(({ id }) => id === action.id);
-      return {
-        ...state,
-        blocks: [
-          ...state.blocks.slice(0, index + 1),
-          action.block,
-          ...state.blocks.slice(index + 1),
-        ],
-      };
-    }
+      let index = state.blocks.findIndex(({ id }) => id === action.id);
+      if (index === -1) {
+        return state;
+      }
+      const parentIndex = state.blocks.findIndex(
+        ({ id }) => id === state.blocks[index].parent_id
+      );
+      if (parentIndex > -1) {
+        index = parentIndex;
+      }
 
-    case CREATE_TOP_BLOCK: {
-      const index = state.blocks.findIndex(({ id }) => id === action.id);
       return {
         ...state,
         blocks: [
-          ...state.blocks.slice(0, index),
-          action.block,
-          ...state.blocks.slice(index),
+          ...state.blocks.slice(
+            0,
+            index + +(action.type === CREATE_BOTTOM_BLOCK)
+          ),
+          { ...action.block, parent_id: state.blocks[index].parent_id },
+          ...state.blocks.slice(index + +(action.type === CREATE_BOTTOM_BLOCK)),
         ],
       };
     }
@@ -146,25 +151,35 @@ export function reduceBlocks(
       if (index === -1) {
         return state;
       }
+      const parentIndex = state.blocks.findIndex(
+        ({ id, type }) =>
+          id === state.blocks[index].parent_id && type === blockTypes.GRID
+      );
+
       const parent =
-        state.blocks.find(
-          ({ id, type }) =>
-            id === state.blocks[index].parent_id && type === blockTypes.GRID
-        ) ||
+        state.blocks[parentIndex] ||
         createBlock(
           blockTypes.GRID,
           null,
           null,
           state.blocks[index]['parent_id']
         );
+
+      const block = { ...action.block, parent_id: parent.id };
+      const target =
+        state.blocks[index].parent_id !== parent.id
+          ? { ...state.blocks[index], parent_id: parent.id }
+          : state.blocks[index];
+
       return {
         ...state,
         blocks: [
           ...state.blocks.slice(0, index),
-          parent,
+          ...(parentIndex === -1 ? [parent] : []),
           ...(action.type === CREATE_LEFT_BLOCK
-            ? [action.block, ...state.blocks.slice(index + 1)]
-            : [...state.blocks.slice(index + 1), action.block]),
+            ? [block, target]
+            : [target, block]),
+          ...state.blocks.slice(index + 1),
         ],
       };
     }

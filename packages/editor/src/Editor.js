@@ -1,5 +1,4 @@
 // @flow
-import 'muicss/dist/css/mui-noglobals.min.css';
 import * as React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import type { ContentProps } from '@seine/content';
@@ -11,7 +10,6 @@ import { BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
-import ContentToolbar from './ContentToolbar';
 
 const DefaultContainer = styled.div`
   width: 75%;
@@ -36,8 +34,8 @@ const defaultEditorBlockRendererMap = {
 
 const defaultBlockToolbarRenderMap = {
   [blockTypes.DRAFT]: DraftToolbar,
-  [blockTypes.GRID]: ContentToolbar,
-  [blockTypes.PAGE]: ContentToolbar,
+  [blockTypes.GRID]: () => null,
+  [blockTypes.PAGE]: () => null,
   [blockTypes.CHART]: ChartToolbar,
 };
 

@@ -1,6 +1,4 @@
 // @flow
-import styled from 'styled-components';
+import Paper from '@material-ui/core/Paper';
 
-export default styled.div.attrs(({ className = 'mui-panel' }) => ({
-  className,
-}))``;
+export default Paper;

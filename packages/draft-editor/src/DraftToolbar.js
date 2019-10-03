@@ -59,9 +59,6 @@ export default function DraftToolbar({
   const asProps = {
     as: DraftButton,
 
-    size: 'small',
-    color: 'flat',
-
     editorState,
     getEditorState: React.useCallback(() => editorState, [editorState]),
     setEditorState: React.useCallback(
@@ -104,6 +101,7 @@ export default function DraftToolbar({
     <Toolbar>
       {editorState && (
         <Toolbar.Group>
+          <Button {...asProps} forwardedAs={BoldButton} />
           <Button {...asProps} forwardedAs={BoldButton} />
           <Button {...asProps} forwardedAs={ItalicButton} />
           <Button {...asProps} forwardedAs={UnderlineButton} />

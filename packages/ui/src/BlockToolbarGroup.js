@@ -26,7 +26,7 @@ export default function BlockToolbarGroup({ dispatch, selection }: Props) {
     selection.length > 0 && (
       <ToolbarGroup>
         <ActionButton
-          color={'danger'}
+          color={'secondary'}
           title={'Delete current selection'}
           dispatch={dispatch}
           type={DELETE_SELECTED_BLOCKS}
