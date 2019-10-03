@@ -20,6 +20,7 @@ export const initialBlocksState: BlocksState = {
 export const CREATE_BLOCK = '@seine/core/createBlock';
 export type CreateBlockAction = {
   type: typeof CREATE_BLOCK,
+  id?: BlockId,
   block: $Shape<Block>,
 };
 
@@ -88,13 +89,13 @@ export type UpdateBlockEditorAction = {
 };
 
 export type BlocksCreateAction =
+  | CreateBlockAction
   | CreateBottomBlockAction
   | CreateLeftBlockAction
   | CreateRightBlockAction
   | CreateTopBlockAction;
 
 export type BlocksAction =
-  | CreateBlockAction
   | BlocksCreateAction
   | DeleteSelectedBlocksAction
   | SelectBlockAction
@@ -116,7 +117,10 @@ export function reduceBlocks(
     case CREATE_BLOCK:
       return {
         ...state,
-        blocks: [...state.blocks, action.block],
+        blocks: [
+          ...state.blocks,
+          action.id ? { ...action.block, parent_id: action.id } : action.block,
+        ],
       };
 
     case CREATE_TOP_BLOCK:

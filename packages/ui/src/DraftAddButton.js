@@ -19,14 +19,20 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  */
 export default function DraftAddButton({
   children = 'Rich text',
+  parent_id = null,
   title = 'Add text block',
   ...buttonProps
 }: Props) {
   return (
     <ActionButton
-      block={createBlock(blockTypes.DRAFT, toRawContent('Rich text'), {
-        verticalAlignment: 'center',
-      })}
+      block={createBlock(
+        blockTypes.DRAFT,
+        toRawContent('Rich text'),
+        {
+          verticalAlignment: 'center',
+        },
+        parent_id
+      )}
       title={title}
       {...buttonProps}
     >

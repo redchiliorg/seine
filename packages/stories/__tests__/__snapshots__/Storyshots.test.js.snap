@@ -9125,6 +9125,40 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
   className="sc-cSHVUG dygeWe"
 >
+  <button
+    className="MuiButtonBase-root MuiFab-root sc-bwzfXH fgfovP MuiFab-sizeSmall"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiFab-label"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+        />
+      </svg>
+    </span>
+  </button>
   <div
     className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kWNLdf MuiPaper-rounded"
   />
@@ -9143,7 +9177,7 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-1312"
+        className="MuiBox-root MuiBox-root-1337"
       >
         <div
           className="DraftEditor-root"

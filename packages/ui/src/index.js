@@ -2,6 +2,7 @@
 export * from './hooks';
 
 export { default as BlockActions } from './BlockActions';
+export { default as BlockAddFab } from './BlockAddFab';
 export { default as Button } from './Button';
 export { default as Paper } from './Paper';
 export { default as Toolbar } from './Toolbar';

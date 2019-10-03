@@ -4,9 +4,14 @@ import styled, { ThemeProvider } from 'styled-components';
 import type { ContentProps } from '@seine/content';
 import { Content } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
-import { blockTypes, initialBlocksState, reduceBlocks } from '@seine/core';
+import {
+  blockTypes,
+  CREATE_BLOCK,
+  initialBlocksState,
+  reduceBlocks,
+} from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
+import { BlockAddFab, BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 
 import GridEditor from './GridEditor';
@@ -35,7 +40,10 @@ const defaultEditorBlockRendererMap = {
 const defaultBlockToolbarRenderMap = {
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: () => null,
-  [blockTypes.PAGE]: () => null,
+  [blockTypes.PAGE]: ({ blocks, id, dispatch }) =>
+    blocks.length ? null : (
+      <BlockAddFab dispatch={dispatch} id={id} type={CREATE_BLOCK} />
+    ),
   [blockTypes.CHART]: ChartToolbar,
 };
 
