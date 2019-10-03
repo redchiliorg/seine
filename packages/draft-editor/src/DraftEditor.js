@@ -84,7 +84,7 @@ export default function DraftEditor({
       verticalAlignment={verticalAlignment}
       {...useSelectableBlockProps({ id, selection }, dispatch)}
     >
-      <BlockActions id={id} dispatch={dispatch}>
+      <BlockActions dispatch={dispatch} id={id}>
         <Editor
           editorKey={id}
           textAlignment={textAlignment}
