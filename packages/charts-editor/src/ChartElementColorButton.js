@@ -6,12 +6,11 @@ import { SketchPicker } from 'react-color';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultChartEditor, defaultChartFormat } from '@seine/charts';
 
-const StyledColorButton = styled(Button)`
+const StyledColorButton = styled(Button).attrs(({ children = '' }) => ({
+  children,
+}))`
   &&& {
-    ${({ color }) =>
-      css`
-        background-color: ${color};
-      `}
+    background-color: ${({ bgcolor }) => bgcolor};
   }
 `;
 
@@ -39,7 +38,7 @@ export default function ChartElementColorButton({
   return (
     <>
       <StyledColorButton
-        color={color}
+        bgcolor={color}
         onClick={React.useCallback(() => setOpen(!open), [open])}
         size={'small'}
       />
