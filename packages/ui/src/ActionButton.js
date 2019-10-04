@@ -1,8 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Action } from '@seine/core';
-
-import Button from './Button';
+import MuiButton from '@material-ui/core/Button';
 
 type Props = Action & React.ElementProps<HTMLButtonElement>;
 
@@ -12,19 +11,25 @@ type Props = Action & React.ElementProps<HTMLButtonElement>;
  * @returns {React.Node}
  */
 export default function ActionButton({
+  as: Button = MuiButton,
   className,
   children,
   dispatch,
-  color,
+  fullWidth = false,
+  color = 'default',
+  size = 'small',
+  variant = 'contained',
   title,
   ...action
 }: Props) {
   return (
     <Button
       color={color}
-      title={title}
-      size={'small'}
+      fullWidth={fullWidth}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
+      size={size}
+      title={title}
+      variant={variant}
     >
       {children}
     </Button>

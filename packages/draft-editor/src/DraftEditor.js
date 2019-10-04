@@ -3,8 +3,8 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
-import { useSelectableBlockProps } from '@seine/ui';
-import { Editor, convertToRaw, convertFromRaw, EditorState } from 'draft-js';
+import { BlockActions, useSelectableBlockProps } from '@seine/ui';
+import { convertFromRaw, convertToRaw, Editor, EditorState } from 'draft-js';
 
 type Props = (DraftBody & DraftFormat & BlockEditor) & {
   id: string,
@@ -12,6 +12,9 @@ type Props = (DraftBody & DraftFormat & BlockEditor) & {
 };
 
 const Container = styled.div`
+  position: relative;
+  height: 100%;
+
   .DraftEditor-root {
     height: 100%;
   }
@@ -47,7 +50,6 @@ export default function DraftEditor({
   textAlignment,
   verticalAlignment,
   editor: { state = defaultDraftEditor.state } = defaultDraftEditor,
-  ...containerProps
 }: Props) {
   const readOnly = selection.length !== 1 || selection[0] !== id;
 
@@ -81,23 +83,24 @@ export default function DraftEditor({
     <Container
       verticalAlignment={verticalAlignment}
       {...useSelectableBlockProps({ id, selection }, dispatch)}
-      {...containerProps}
     >
-      <Editor
-        editorKey={id}
-        textAlignment={textAlignment}
-        editorState={editorState}
-        ref={editorRef}
-        onChange={React.useCallback(
-          (state) =>
-            dispatch({
-              type: UPDATE_BLOCK_EDITOR,
-              editor: { state },
-            }),
-          [dispatch]
-        )}
-        readOnly={readOnly}
-      />
+      <BlockActions dispatch={dispatch} id={id}>
+        <Editor
+          editorKey={id}
+          textAlignment={textAlignment}
+          editorState={editorState}
+          ref={editorRef}
+          onChange={React.useCallback(
+            (state) =>
+              dispatch({
+                type: UPDATE_BLOCK_EDITOR,
+                editor: { state },
+              }),
+            [dispatch]
+          )}
+          readOnly={readOnly}
+        />
+      </BlockActions>
     </Container>
   );
 }

@@ -60,7 +60,14 @@ const config = {
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        '../../node_modules/@material-ui/utils/node_modules/react-is/index.js': [
+          'ForwardRef',
+        ],
+        '../../node_modules/prop-types/index.js': ['elementType'],
+      },
+    }),
     nodeResolve({
       preferBuiltins: true,
     }),

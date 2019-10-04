@@ -8,7 +8,11 @@ import {
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
 } from '@seine/core';
-import { BlockContainer, useSelectableBlockProps } from '@seine/ui';
+import {
+  BlockActions,
+  BlockContainer,
+  useSelectableBlockProps,
+} from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
 import { Chart, defaultChartRenderMap } from '@seine/charts';
 
@@ -99,7 +103,9 @@ export default function ChartEditor({
           {...chartProps}
         />
       ) : (
-        <Chart kind={kind} {...chartProps} />
+        <BlockActions id={chartProps.id} dispatch={dispatch}>
+          <Chart kind={kind} {...chartProps} />
+        </BlockActions>
       )}
     </BlockContainer>
   );
