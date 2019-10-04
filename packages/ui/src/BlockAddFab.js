@@ -17,9 +17,11 @@ import PieChartAddButton from './PieChartAddButton';
 import LineChartAddButton from './LineChartAddButton';
 
 const Fab = styled(MuiFab)`
-  opacity: 0.5;
-  :hover {
-    opacity: inherit;
+  && {
+    opacity: 0.5;
+    :hover {
+      opacity: inherit;
+    }
   }
 `;
 

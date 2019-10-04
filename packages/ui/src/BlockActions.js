@@ -19,34 +19,36 @@ type Props = {
   id: BlockId,
 };
 
-const Container = styled(Grid).attrs((props) => ({
-  ...props,
-}))`
-  height: 100%;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  z-index: 999;
+const Container = styled(Grid)`
+  && {
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+  }
 `;
 
 const Item = styled(Grid)`
-  display: flex;
-  align-items: center;
-  pointer-events: all;
-  opacity: 0;
-  transition: opacity 0.1s;
-  &:hover {
-    opacity: 1;
+  && {
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+    opacity: 0;
+    transition: opacity 0.1s;
+    :hover {
+      opacity: 1;
+    }
+    ${({ direction }) =>
+      direction === 'column'
+        ? css`
+            width: 100%;
+          `
+        : css`
+            height: 100%;
+          `}
   }
-  ${({ direction }) =>
-    direction === 'column'
-      ? css`
-          width: 100%;
-        `
-      : css`
-          height: 100%;
-        `}
 `;
 
 /**

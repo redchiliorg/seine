@@ -44,9 +44,11 @@ export const defaultToolbarRenderMap = {
 };
 
 const ContentPaper = styled(Paper)`
-  max-height: 40rem;
-  min-height: 6rem;
-  overflow: hidden auto;
+  && {
+    max-height: 40rem;
+    min-height: 6rem;
+    overflow: hidden auto;
+  }
 `;
 
 export type Props = {

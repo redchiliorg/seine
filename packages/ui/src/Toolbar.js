@@ -1,19 +1,15 @@
 // @flow
 import * as React from 'react';
 import styled from 'styled-components';
-
-import Paper from './Paper';
+import Paper from '@material-ui/core/Paper';
 
 const Container = styled(Paper)`
   && {
     background-color: #c8c8c8;
     margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    display: flex;
+    padding: 0 1em;
   }
-  display: flex;
-  padding-left: 1em;
-  padding-right: 1em;
 `;
 
 Toolbar.Group = styled.div`
