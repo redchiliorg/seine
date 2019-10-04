@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { ContentProps } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
@@ -14,6 +14,7 @@ import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockAddFab, BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import Box from '@material-ui/core/Box';
+import { useTheme } from '@material-ui/core/styles';
 
 const defaultEditorChildren = [];
 
@@ -107,27 +108,29 @@ export default function Editor({
   );
 
   return (
-    <Container>
-      <BlockToolbar
-        {...block}
-        blocks={blocks}
-        dispatch={dispatch}
-        selection={selection}
-      >
-        <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-      </BlockToolbar>
+    <ThemeProvider theme={useTheme()}>
+      <Container>
+        <BlockToolbar
+          {...block}
+          blocks={blocks}
+          dispatch={dispatch}
+          selection={selection}
+        >
+          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+        </BlockToolbar>
 
-      {contentChildren.length > 0 && (
-        <ContentPaper>
-          <Content
-            {...contentProps}
-            parent={parent}
-            blockRenderMap={blockRenderMap}
-          >
-            {contentChildren}
-          </Content>
-        </ContentPaper>
-      )}
-    </Container>
+        {contentChildren.length > 0 && (
+          <ContentPaper>
+            <Content
+              {...contentProps}
+              parent={parent}
+              blockRenderMap={blockRenderMap}
+            >
+              {contentChildren}
+            </Content>
+          </ContentPaper>
+        )}
+      </Container>
+    </ThemeProvider>
   );
 }
