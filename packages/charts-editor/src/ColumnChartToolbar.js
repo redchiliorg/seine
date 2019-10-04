@@ -17,6 +17,7 @@ import ChartElementColorButton from './ChartElementColorButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
 import ChartGroupAddButton from './ChartGroupAddButton';
+import ChartSwitchFormatInput from './ChartSwitchFormatInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -119,6 +120,18 @@ export default function ColumnChartToolbar({
           editor={editor}
           format={format}
           id={id}
+        />
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartSwitchFormatInput
+          dispatch={dispatch}
+          format={format}
+          label={'y axis'}
+          id={id}
+          name={'yAxis'}
         />
       </Toolbar.Group>
       {children}

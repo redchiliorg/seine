@@ -7,7 +7,9 @@ import {
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartTitle,
-  defaultMinValue,
+  defaultChartMinValue,
+  defaultChartXAxis,
+  defaultChartYAxis,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
@@ -27,13 +29,15 @@ type Props = $Rest<ChartProps, {| kind: string |}> & {
 export default function LineChart({
   elements,
   maxValue: initialMaxValue,
-  minValue: initialMinValue = defaultMinValue,
+  minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
   fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   title = defaultChartTitle,
+  xAxis = defaultChartXAxis,
+  yAxis = defaultChartYAxis,
 
   as: View = 'svg',
   id,
@@ -83,36 +87,42 @@ export default function LineChart({
           stroke="#0f0"
         />
       </marker>
-      <path
-        d={`m${x} ${y}v${height}`}
-        fill="none"
-        key="y-axis"
-        markerStart="url(#arrowUp)"
-        stroke="#00ff00"
-      />
-
-      {groups.map(([group], index) => (
-        <LineChartGroup
-          fontSize={fontSize}
-          fontWeight={'bold'}
-          group={group}
-          height={fontSize * lineHeight}
-          key={index}
-          lineHeight={lineHeight}
-          width={8 * fontSize}
-          x={x + (index * width) / (groups.length - 1)}
-          y={y + height + fontSize * lineHeight}
+      {yAxis ? (
+        <path
+          d={`m${x} ${y}v${height}`}
+          fill="none"
+          key="y-axis"
+          markerStart="url(#arrowUp)"
+          stroke="#00ff00"
         />
-      ))}
+      ) : null}
+
+      {xAxis
+        ? groups.map(([group], index) => (
+            <LineChartGroup
+              fontSize={fontSize}
+              fontWeight={'bold'}
+              group={group}
+              height={fontSize * lineHeight}
+              key={index}
+              lineHeight={lineHeight}
+              width={8 * fontSize}
+              x={x + (index * width) / (groups.length - 1)}
+              y={y + height + fontSize * lineHeight}
+            />
+          ))
+        : null}
 
       {Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
         (_, index, { length }) => [
-          <path
-            d={`m${x}  ${y + height - (index * height) / length} ${width} 0`}
-            key={['grid', index]}
-            stroke={index > 0 ? '#f0f0f0' : '#505050'}
-          />,
-          index > 0 ? (
+          (xAxis && index === 0) || (yAxis && index > 0) ? (
+            <path
+              d={`m${x}  ${y + height - (index * height) / length} ${width} 0`}
+              key={['grid', index]}
+              stroke={index > 0 ? '#f0f0f0' : '#505050'}
+            />
+          ) : null,
+          yAxis && index > 0 ? (
             <text
               fontWeight={'bold'}
               key={['title', index]}

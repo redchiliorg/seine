@@ -20,6 +20,8 @@ export type ChartFormat = {
   maxValue: number,
   palette: string[],
   units: string,
+  xAxis: boolean,
+  yAxis: boolean,
 };
 
 export type ChartElement = {

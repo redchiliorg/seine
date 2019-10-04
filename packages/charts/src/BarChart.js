@@ -2,11 +2,13 @@
 import * as React from 'react';
 
 import {
+  defaultChartDx,
   defaultChartFontSize,
   defaultChartFontWeight,
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartSize,
+  defaultChartXAxis,
 } from './constants';
 import type { ChartProps } from './types';
 import BarChartTitle from './BarChartTitle';
@@ -26,6 +28,8 @@ export default function BarChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   size = defaultChartSize,
+  dx = defaultChartDx,
+  xAxis = defaultChartXAxis,
 
   as: View = 'svg',
   id,
@@ -54,7 +58,7 @@ export default function BarChart({
 
   return (
     <View
-      viewBox={`0 0 ${size} ${height}`}
+      viewBox={`0 0 ${size} ${height + fontSize * lineHeight}`}
       width={'100%'}
       fontSize={fontSize}
       fontWeight={fontWeight}
@@ -103,6 +107,30 @@ export default function BarChart({
           />,
         ];
       })}
+      {xAxis
+        ? Array.from({ length: Math.floor(maxValue / dx) }).map(
+            (_, index, { length }) => [
+              <line
+                key={['line', index]}
+                x1={titleMaxLen + fontSize + (barMaxLen * index) / length}
+                x2={titleMaxLen + fontSize + (barMaxLen * (index + 1)) / length}
+                y1={(elements.length * barHeight) / 2}
+                y2={(elements.length * barHeight) / 2}
+                stroke={'black'}
+                strokeWidth={'0.1em'}
+              />,
+              <text
+                fontWeight={'bold'}
+                key={['title', index]}
+                textAnchor={'middle'}
+                x={titleMaxLen + (barMaxLen * (index + 1)) / length}
+                y={(elements.length * barHeight) / 2 + fontSize * lineHeight}
+              >
+                {(index + 1) * dx}
+              </text>,
+            ]
+          )
+        : null}
     </View>
   );
 }
