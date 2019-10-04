@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import type { ContentProps } from '@seine/content';
 import { Content } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
@@ -49,18 +49,11 @@ const defaultBlockToolbarRenderMap = {
 
 const defaultEditorChildren = [];
 
-const defaultEditorTheme = {
-  palette: {
-    text: '#C8C8C8',
-  },
-};
-
 export type Props = {
   parent: Block,
   onChange: (Block[]) => any,
   children?: Block[],
   as?: React.ComponentType<*>,
-  theme?: { [string]: any },
 } & ContentProps;
 
 /**
@@ -75,7 +68,6 @@ export default function Editor({
   as: Container = DefaultContainer,
   blockRenderMap = defaultEditorBlockRendererMap,
   toolbarRenderMap = defaultBlockToolbarRenderMap,
-  theme = defaultEditorTheme,
   ...contentProps
 }: Props) {
   const init = React.useCallback(
@@ -111,30 +103,28 @@ export default function Editor({
   const BlockToolbar = toolbarRenderMap[currentBlock.type];
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <BlockToolbar
-          {...currentBlock}
-          blocks={blocks}
-          dispatch={dispatch}
-          selection={selection}
-        >
-          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-        </BlockToolbar>
+    <Container>
+      <BlockToolbar
+        {...currentBlock}
+        blocks={blocks}
+        dispatch={dispatch}
+        selection={selection}
+      >
+        <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+      </BlockToolbar>
 
-        <ContentPaper>
-          <Content
-            {...contentProps}
-            parent={parent}
-            blockRenderMap={blockRenderMap}
-          >
-            {React.useMemo(
-              () => blocks.map((block) => ({ ...block, dispatch, selection })),
-              [blocks, dispatch, selection]
-            )}
-          </Content>
-        </ContentPaper>
-      </Container>
-    </ThemeProvider>
+      <ContentPaper>
+        <Content
+          {...contentProps}
+          parent={parent}
+          blockRenderMap={blockRenderMap}
+        >
+          {React.useMemo(
+            () => blocks.map((block) => ({ ...block, dispatch, selection })),
+            [blocks, dispatch, selection]
+          )}
+        </Content>
+      </ContentPaper>
+    </Container>
   );
 }
