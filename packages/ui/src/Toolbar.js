@@ -6,7 +6,7 @@ import Paper from './Paper';
 
 const Container = styled(Paper)`
   && {
-    background-color: ${({ theme }) => theme.palette.text};
+    background-color: #c8c8c8;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;

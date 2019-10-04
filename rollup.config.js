@@ -46,9 +46,18 @@ const config = {
   },
   plugins: [
     {
-      name: 'debug',
+      name: 'hooks',
       buildStart() {
         this.warn(`Building package ${packageName}@${packageVersion}`);
+      },
+      resolveId(id) {
+        if (NODE_ENV === 'production' && id === 'react-is') {
+          const moduleDir = path.dirname(require.resolve(id));
+          return require.resolve(
+            path.join(moduleDir, 'cjs', 'react-is.production.min.js')
+          );
+        }
+        return null;
       },
     },
     visualize({
@@ -60,14 +69,7 @@ const config = {
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
-    commonjs({
-      namedExports: {
-        '../../node_modules/@material-ui/utils/node_modules/react-is/index.js': [
-          'ForwardRef',
-        ],
-        '../../node_modules/prop-types/index.js': ['elementType'],
-      },
-    }),
+    commonjs(),
     nodeResolve({
       preferBuiltins: true,
     }),

@@ -17,26 +17,20 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function DraftAddButton({
-  children = 'Rich text',
-  parent_id = null,
-  title = 'Add text block',
-  ...buttonProps
-}: Props) {
+export default React.forwardRef(function DraftAddButton(
+  { children = 'Rich text', title = 'Add text block', ...buttonProps }: Props,
+  ref
+) {
   return (
     <ActionButton
-      block={createBlock(
-        blockTypes.DRAFT,
-        toRawContent('Rich text'),
-        {
-          verticalAlignment: 'center',
-        },
-        parent_id
-      )}
+      block={createBlock(blockTypes.DRAFT, toRawContent('Rich text'), {
+        verticalAlignment: 'center',
+      })}
       title={title}
+      ref={ref}
       {...buttonProps}
     >
       {children}
     </ActionButton>
   );
-}
+});

@@ -1,5 +1,4 @@
 // @flow
-import { compose } from 'recompose';
 import EditorState from 'draft-js/lib/EditorState';
 import ContentState from 'draft-js/lib/ContentState';
 import CompositeDecorator from 'draft-js/lib/CompositeDraftDecorator';
@@ -60,7 +59,4 @@ export function toDraftContent(value: any) {
  *  @param {any} value
  *  @returns {RawDraftContentState}
  */
-export const toRawContent: (value: any) => RawDraftContentState = compose(
-  convertToRaw,
-  toDraftContent
-);
+export const toRawContent = (value: any) => convertToRaw(toDraftContent(value));

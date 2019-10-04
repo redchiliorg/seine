@@ -84,23 +84,24 @@ export default function DraftEditor({
       verticalAlignment={verticalAlignment}
       {...useSelectableBlockProps({ id, selection }, dispatch)}
     >
-      <BlockActions dispatch={dispatch} id={id}>
-        <Editor
-          editorKey={id}
-          textAlignment={textAlignment}
-          editorState={editorState}
-          ref={editorRef}
-          onChange={React.useCallback(
-            (state) =>
-              dispatch({
-                type: UPDATE_BLOCK_EDITOR,
-                editor: { state },
-              }),
-            [dispatch]
-          )}
-          readOnly={readOnly}
-        />
-      </BlockActions>
+      {!(selection.length === 1 && selection[0] === id) && (
+        <BlockActions dispatch={dispatch} id={id} />
+      )}
+      <Editor
+        editorKey={id}
+        textAlignment={textAlignment}
+        editorState={editorState}
+        ref={editorRef}
+        onChange={React.useCallback(
+          (state) =>
+            dispatch({
+              type: UPDATE_BLOCK_EDITOR,
+              editor: { state },
+            }),
+          [dispatch]
+        )}
+        readOnly={readOnly}
+      />
     </Container>
   );
 }

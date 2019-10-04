@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { ContentProps } from '@seine/content';
-import { Content } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
 import {
   blockTypes,
@@ -13,54 +13,46 @@ import {
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockAddFab, BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
+import Box from '@material-ui/core/Box';
 
-import GridEditor from './GridEditor';
+const defaultEditorChildren = [];
 
 const DefaultContainer = styled.div`
   width: 75%;
 `;
 
-const ContentPaper = styled(Paper)`
-  max-height: 40rem;
-  overflow: hidden auto;
-  :after {
-    content: '';
-    display: inline-block;
-    height: 1.5em;
-  }
-`;
-
-const defaultEditorBlockRendererMap = {
-  [blockTypes.DRAFT]: DraftEditor,
-  [blockTypes.GRID]: GridEditor,
-  [blockTypes.PAGE]: ({ children }) => children,
+export const defaultEditorBlockRendererMap = {
   [blockTypes.CHART]: ChartEditor,
+  [blockTypes.DRAFT]: DraftEditor,
+  [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) =>
+    defaultBlockRenderMap[blockTypes.GRID](props),
+  [blockTypes.PAGE]: ({ dispatch, editor, selection, ...props }) =>
+    defaultBlockRenderMap[blockTypes.PAGE](props),
 };
 
-const defaultBlockToolbarRenderMap = {
+export const defaultToolbarRenderMap = {
+  [blockTypes.CHART]: ChartToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: () => null,
-  [blockTypes.PAGE]: ({ blocks, id, dispatch }) =>
+  [blockTypes.PAGE]: ({ blocks, dispatch, id }) =>
     blocks.length ? null : (
-      <BlockAddFab dispatch={dispatch} id={id} type={CREATE_BLOCK} />
+      <Box display={'flex'} justifyContent={'center'} width={'100%'}>
+        <BlockAddFab dispatch={dispatch} id={id} type={CREATE_BLOCK} />
+      </Box>
     ),
-  [blockTypes.CHART]: ChartToolbar,
 };
 
-const defaultEditorChildren = [];
-
-const defaultEditorTheme = {
-  palette: {
-    text: '#C8C8C8',
-  },
-};
+const ContentPaper = styled(Paper)`
+  max-height: 40rem;
+  min-height: 6rem;
+  overflow: hidden auto;
+`;
 
 export type Props = {
   parent: Block,
   onChange: (Block[]) => any,
   children?: Block[],
   as?: React.ComponentType<*>,
-  theme?: { [string]: any },
 } & ContentProps;
 
 /**
@@ -74,8 +66,7 @@ export default function Editor({
   children = defaultEditorChildren,
   as: Container = DefaultContainer,
   blockRenderMap = defaultEditorBlockRendererMap,
-  toolbarRenderMap = defaultBlockToolbarRenderMap,
-  theme = defaultEditorTheme,
+  toolbarRenderMap = defaultToolbarRenderMap,
   ...contentProps
 }: Props) {
   const init = React.useCallback(
@@ -100,7 +91,7 @@ export default function Editor({
     );
   }, [blocks, onChange]);
 
-  const currentBlock = React.useMemo(
+  const { type, ...block } = React.useMemo(
     () =>
       selection.length === 1
         ? blocks.find(({ id }) => selection.includes(id))
@@ -108,33 +99,35 @@ export default function Editor({
     [blocks, parent, selection]
   );
 
-  const BlockToolbar = toolbarRenderMap[currentBlock.type];
+  const BlockToolbar = toolbarRenderMap[type];
+
+  const contentChildren = React.useMemo(
+    () => blocks.map((block) => ({ ...block, dispatch, selection })),
+    [blocks, dispatch, selection]
+  );
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <BlockToolbar
-          {...currentBlock}
-          blocks={blocks}
-          dispatch={dispatch}
-          selection={selection}
-        >
-          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-        </BlockToolbar>
+    <Container>
+      <BlockToolbar
+        {...block}
+        blocks={blocks}
+        dispatch={dispatch}
+        selection={selection}
+      >
+        <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+      </BlockToolbar>
 
+      {contentChildren.length > 0 && (
         <ContentPaper>
           <Content
             {...contentProps}
             parent={parent}
             blockRenderMap={blockRenderMap}
           >
-            {React.useMemo(
-              () => blocks.map((block) => ({ ...block, dispatch, selection })),
-              [blocks, dispatch, selection]
-            )}
+            {contentChildren}
           </Content>
         </ContentPaper>
-      </Container>
-    </ThemeProvider>
+      )}
+    </Container>
   );
 }

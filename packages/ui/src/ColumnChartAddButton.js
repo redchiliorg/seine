@@ -21,11 +21,14 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartAddButton({
-  children = 'column chart',
-  title = 'Add column chart',
-  ...buttonProps
-}: Props) {
+export default React.forwardRef(function ColumnChartAddButton(
+  {
+    children = 'column chart',
+    title = 'Add column chart',
+    ...buttonProps
+  }: Props,
+  ref
+) {
   return (
     <ActionButton
       {...buttonProps}
@@ -67,9 +70,10 @@ export default function ColumnChartAddButton({
         },
         { kind: chartTypes.COLUMN }
       )}
+      ref={ref}
       title={title}
     >
       {children}
     </ActionButton>
   );
-}
+});

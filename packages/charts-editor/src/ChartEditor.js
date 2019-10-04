@@ -14,7 +14,7 @@ import {
   useSelectableBlockProps,
 } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
-import { Chart, defaultChartRenderMap } from '@seine/charts';
+import { Chart } from '@seine/charts';
 
 import type { ChartEditorProps } from './types';
 import PieChartEditor from './PieChartEditor';
@@ -31,14 +31,39 @@ type Props = ChartProps & {
 };
 
 const defaultChartEditorRenderMap = {
-  ...defaultChartRenderMap,
-  [chartTypes.PIE]: (props) => <Chart as={PieChartEditor} {...props} />,
-  [chartTypes.BAR]: (props) => <Chart as={BarChartEditor} {...props} />,
-  [chartTypes.COLUMN]: (props) => <Chart as={ColumnChartEditor} {...props} />,
-  [chartTypes.LINE]: (props) => <Chart as={LineChartEditor} {...props} />,
+  [chartTypes.PIE]: (props) => <Chart {...props} as={PieChartEditor} />,
+  [chartTypes.BAR]: (props) => <Chart {...props} as={BarChartEditor} />,
+  [chartTypes.COLUMN]: (props) => <Chart {...props} as={ColumnChartEditor} />,
+  [chartTypes.LINE]: (props) => <Chart {...props} as={LineChartEditor} />,
 };
 
 const defaultEditor = { selection: initialElementsState.selection };
+
+const ChartEditorContent = ({
+  kind = chartTypes.BAR,
+  chartEditorRenderMap: {
+    [kind]: ExactChartEditor,
+  } = defaultChartEditorRenderMap,
+  dispatch,
+  dispatchElements,
+  editor,
+  selection,
+  ...chartProps
+}) =>
+  selection.length === 1 && selection[0] === chartProps.id ? (
+    <ExactChartEditor
+      {...chartProps}
+      dispatch={dispatchElements}
+      editor={editor}
+      kind={kind}
+      selection={selection}
+    />
+  ) : (
+    <>
+      <BlockActions dispatch={dispatch} id={chartProps.id} />
+      <Chart kind={kind} {...chartProps} />
+    </>
+  );
 
 /**
  * @description Chart editor component.
@@ -47,66 +72,47 @@ const defaultEditor = { selection: initialElementsState.selection };
  */
 export default function ChartEditor({
   dispatch,
-
-  kind = chartTypes.BAR,
-  chartEditorRenderMap: {
-    [kind]: ExactChartEditor,
-  } = defaultChartEditorRenderMap,
   editor = defaultEditor,
+  selection,
   ...chartProps
 }: Props) {
-  const dispatchElements = React.useCallback(
-    (action: ElementsAction) => {
-      const { elements, selection } = reduceElements(
-        {
-          elements: chartProps.elements,
-          selection: editor.selection,
-        },
-        action
-      );
-
-      if (elements !== chartProps.elements) {
-        dispatch({
-          type: UPDATE_BLOCK_BODY,
-          body: { elements },
-        });
-      }
-
-      if (selection !== editor.selection) {
-        dispatch({
-          type: UPDATE_BLOCK_EDITOR,
-          editor: { selection },
-        });
-      }
-    },
-    [chartProps.elements, editor, dispatch]
-  );
-
   return (
     <BlockContainer
-      {...useSelectableBlockProps(
-        {
-          id: chartProps.id,
-          selection: chartProps.selection,
-        },
-        dispatch
-      )}
+      {...useSelectableBlockProps({ id: chartProps.id, selection }, dispatch)}
     >
-      {!!(
-        chartProps.selection.length === 1 &&
-        chartProps.selection[0] === chartProps.id
-      ) ? (
-        <ExactChartEditor
-          dispatch={dispatchElements}
-          editor={editor}
-          kind={kind}
-          {...chartProps}
-        />
-      ) : (
-        <BlockActions id={chartProps.id} dispatch={dispatch}>
-          <Chart kind={kind} {...chartProps} />
-        </BlockActions>
-      )}
+      <ChartEditorContent
+        {...chartProps}
+        id={chartProps.id}
+        dispatch={dispatch}
+        dispatchElements={React.useCallback(
+          (action: ElementsAction) => {
+            const { elements, selection } = reduceElements(
+              {
+                elements: chartProps.elements,
+                selection: editor.selection,
+              },
+              action
+            );
+
+            if (elements !== chartProps.elements) {
+              dispatch({
+                type: UPDATE_BLOCK_BODY,
+                body: { elements },
+              });
+            }
+
+            if (selection !== editor.selection) {
+              dispatch({
+                type: UPDATE_BLOCK_EDITOR,
+                editor: { selection },
+              });
+            }
+          },
+          [chartProps.elements, editor, dispatch]
+        )}
+        editor={editor}
+        selection={selection}
+      />
     </BlockContainer>
   );
 }

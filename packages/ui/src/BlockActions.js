@@ -14,14 +14,14 @@ import styled, { css } from 'styled-components';
 import BlockAddFab from './BlockAddFab';
 
 type Props = {
-  children: React.Node,
+  children?: React.Node,
   dispatch: (BlocksAction) => any,
   id: BlockId,
 };
 
-const Container = styled(({ ...props }) => (
-  <Grid {...props} alignItems={'center'} justify={'space-between'} container />
-))`
+const Container = styled(Grid).attrs((props) => ({
+  ...props,
+}))`
   height: 100%;
   left: 0;
   pointer-events: none;
@@ -30,7 +30,7 @@ const Container = styled(({ ...props }) => (
   z-index: 999;
 `;
 
-const Item = styled(({ ...props }) => <Grid {...props} item />)`
+const Item = styled(Grid)`
   display: flex;
   align-items: center;
   pointer-events: all;
@@ -54,26 +54,29 @@ const Item = styled(({ ...props }) => <Grid {...props} item />)`
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BlockActions({ children, ...action }: Props) {
+export default function BlockActions(props: Props) {
   return (
     <Box>
-      {children}
-
-      <Container>
-        <Item>
-          <BlockAddFab {...action} type={CREATE_LEFT_BLOCK} />
+      <Container alignItems={'center'} container justify={'space-between'}>
+        <Item item>
+          <BlockAddFab {...props} type={CREATE_LEFT_BLOCK} />
         </Item>
-        <Item>
-          <BlockAddFab {...action} type={CREATE_RIGHT_BLOCK} />
+        <Item item>
+          <BlockAddFab {...props} type={CREATE_RIGHT_BLOCK} />
         </Item>
       </Container>
 
-      <Container direction={'column'}>
-        <Item container direction={'column'}>
-          <BlockAddFab {...action} type={CREATE_TOP_BLOCK} />
+      <Container
+        alignItems={'center'}
+        container
+        direction={'column'}
+        justify={'space-between'}
+      >
+        <Item container item direction={'column'}>
+          <BlockAddFab {...props} type={CREATE_TOP_BLOCK} />
         </Item>
-        <Item container direction={'column'}>
-          <BlockAddFab {...action} type={CREATE_BOTTOM_BLOCK} />
+        <Item container item direction={'column'}>
+          <BlockAddFab {...props} type={CREATE_BOTTOM_BLOCK} />
         </Item>
       </Container>
     </Box>

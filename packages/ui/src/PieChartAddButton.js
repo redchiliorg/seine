@@ -16,11 +16,10 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartAddButton({
-  children = 'Pie chart',
-  title = 'Add pie chart',
-  ...buttonProps
-}: Props) {
+export default React.forwardRef(function PieChartAddButton(
+  { children = 'Pie chart', title = 'Add pie chart', ...buttonProps }: Props,
+  ref
+) {
   return (
     <ActionButton
       {...buttonProps}
@@ -40,9 +39,10 @@ export default function PieChartAddButton({
         },
         { kind: chartTypes.PIE }
       )}
+      ref={ref}
       title={title}
     >
       {children}
     </ActionButton>
   );
-}
+});
