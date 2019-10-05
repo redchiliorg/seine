@@ -1,6 +1,7 @@
 {
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
+  "homepage": "https://redchiliorg.github.io/seine",
   "version": "0.0.0",
   "keywords": [
     "react",
@@ -10,6 +11,8 @@
   "repository": "redchiliorg/seine",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "serve",
     "build": "build-storybook -o dist",
     "release": "run-s release:*",
@@ -26,6 +29,7 @@
   },
   "dependencies": {
     "draft-js": "^0.11.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "serve": "^11.1.0",
     "styled-components": "^4.3.2"
