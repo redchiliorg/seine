@@ -14,7 +14,7 @@ import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockAddFab, BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import Box from '@material-ui/core/Box';
-import { useTheme, StylesProvider } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 const defaultEditorChildren = [];
 
@@ -111,30 +111,28 @@ export default function Editor({
 
   return (
     <ThemeProvider theme={useTheme()}>
-      <StylesProvider injectFirst>
-        <Container>
-          <BlockToolbar
-            {...block}
-            blocks={blocks}
-            dispatch={dispatch}
-            selection={selection}
-          >
-            <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-          </BlockToolbar>
+      <Container>
+        <BlockToolbar
+          {...block}
+          blocks={blocks}
+          dispatch={dispatch}
+          selection={selection}
+        >
+          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+        </BlockToolbar>
 
-          {contentChildren.length > 0 && (
-            <ContentPaper>
-              <Content
-                {...contentProps}
-                parent={parent}
-                blockRenderMap={blockRenderMap}
-              >
-                {contentChildren}
-              </Content>
-            </ContentPaper>
-          )}
-        </Container>
-      </StylesProvider>
+        {contentChildren.length > 0 && (
+          <ContentPaper>
+            <Content
+              {...contentProps}
+              parent={parent}
+              blockRenderMap={blockRenderMap}
+            >
+              {contentChildren}
+            </Content>
+          </ContentPaper>
+        )}
+      </Container>
     </ThemeProvider>
   );
 }
