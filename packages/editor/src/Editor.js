@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { ContentProps } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
@@ -11,10 +11,15 @@ import {
   reduceBlocks,
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { BlockAddFab, BlockToolbarGroup, Paper, useReducerEx } from '@seine/ui';
+import {
+  BlockAddFab,
+  BlockToolbarGroup,
+  Paper,
+  StylesProvider,
+  useReducerEx,
+} from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import Box from '@material-ui/core/Box';
-import { useTheme } from '@material-ui/core/styles';
 
 const defaultEditorChildren = [];
 
@@ -110,7 +115,7 @@ export default function Editor({
   );
 
   return (
-    <ThemeProvider theme={useTheme()}>
+    <StylesProvider>
       <Container>
         <BlockToolbar
           {...block}
@@ -133,6 +138,6 @@ export default function Editor({
           </ContentPaper>
         )}
       </Container>
-    </ThemeProvider>
+    </StylesProvider>
   );
 }

@@ -15,3 +15,4 @@ export { default as BlockToolbarGroup } from './BlockToolbarGroup';
 export { default as ForeignInput } from './ForeignInput';
 export { default as Input } from './Input';
 export { default as Label } from './Label';
+export { default as StylesProvider } from './StylesProvider';
