@@ -409,26 +409,26 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-186"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-186"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -446,11 +446,11 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -463,10 +463,10 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -484,11 +484,11 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -502,13 +502,13 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -526,11 +526,11 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -543,10 +543,10 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -564,11 +564,11 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -786,26 +786,26 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-343"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-343"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -823,11 +823,11 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -840,10 +840,10 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -861,11 +861,11 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -879,13 +879,13 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -903,11 +903,11 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -920,10 +920,10 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -941,11 +941,11 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1170,26 +1170,26 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-29"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-29"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1207,11 +1207,11 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1224,10 +1224,10 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1245,11 +1245,11 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1263,13 +1263,13 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1287,11 +1287,11 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1304,10 +1304,10 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1325,11 +1325,11 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1469,26 +1469,26 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-657"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-657"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1506,11 +1506,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1523,10 +1523,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1544,11 +1544,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1562,13 +1562,13 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1586,11 +1586,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1603,10 +1603,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -1624,11 +1624,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -2674,26 +2674,26 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-814"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-814"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -2711,11 +2711,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -2728,10 +2728,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -2749,11 +2749,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -2767,13 +2767,13 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -2791,11 +2791,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -2808,10 +2808,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -2829,11 +2829,11 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -3447,26 +3447,26 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-971"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-971"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -3484,11 +3484,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -3501,10 +3501,10 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -3522,11 +3522,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -3540,13 +3540,13 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -3564,11 +3564,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -3581,10 +3581,10 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -3602,11 +3602,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4116,26 +4116,26 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-500"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-500"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4153,11 +4153,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4170,10 +4170,10 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4191,11 +4191,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4209,13 +4209,13 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4233,11 +4233,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4250,10 +4250,10 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4271,11 +4271,11 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4918,26 +4918,26 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-htoDjs ibbPhR"
+      className="sc-dnqmqq cMOoyO"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-1128"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1128"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4955,11 +4955,11 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -4972,10 +4972,10 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4993,11 +4993,11 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -5011,13 +5011,13 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -5035,11 +5035,11 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -5052,10 +5052,10 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -5073,11 +5073,11 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -9115,13 +9115,13 @@ exports[`Storyshots 2 - Content Draft Content 1`] = `
 
 exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiBox-root MuiBox-root-1258"
+    className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1258"
   >
     <button
-      className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+      className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -9139,11 +9139,11 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
       type="button"
     >
       <span
-        className="MuiFab-label"
+        className="@seine/ui-MuiFab-label"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root"
+          className="@seine/ui-MuiSvgIcon-root"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -9160,26 +9160,26 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 
 exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
 <div
-  className="sc-cSHVUG dygeWe"
+  className="sc-kAzzGY hXSnfR"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 sc-kAzzGY kBOGlO MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-VigVT dsIZWk"
+      className="sc-jTzLTM cwQMd"
       onClick={[Function]}
     >
       <div
-        className="MuiBox-root MuiBox-root-1312"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1312"
       >
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -9197,11 +9197,11 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -9214,10 +9214,10 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb epDBgh MuiGrid-item"
+            className="@seine/ui-MuiGrid-root sc-bxivhb epDBgh @seine/ui-MuiGrid-item"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -9235,11 +9235,11 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -9253,13 +9253,13 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root sc-htpNat gDzFQz MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          className="@seine/ui-MuiGrid-root sc-htpNat gDzFQz @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -9277,11 +9277,11 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -9294,10 +9294,10 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
             </button>
           </div>
           <div
-            className="MuiGrid-root sc-bxivhb bkGnKo MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
+            className="@seine/ui-MuiGrid-root sc-bxivhb bkGnKo @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
           >
             <button
-              className="MuiButtonBase-root MuiFab-root sc-bwzfXH jSebtf MuiFab-sizeSmall"
+              className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bwzfXH jSebtf @seine/ui-MuiFab-sizeSmall"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -9315,11 +9315,11 @@ exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
               type="button"
             >
               <span
-                className="MuiFab-label"
+                className="@seine/ui-MuiFab-label"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root"
+                  className="@seine/ui-MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"

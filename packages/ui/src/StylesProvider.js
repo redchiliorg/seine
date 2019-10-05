@@ -9,7 +9,7 @@ import {
 import { ThemeProvider } from 'styled-components';
 import { create } from 'jss';
 
-export const defaultJSS = create(jssPreset());
+export const defaultJss = create(jssPreset());
 export const defaultGenerateClassName = createGenerateClassName({
   seed: '@seine/ui',
 });
@@ -23,7 +23,7 @@ type Props = React.ComponentProps<typeof MuiStylesProvider>;
  */
 export default function StylesProvider({
   children,
-  jss = defaultJSS,
+  jss = defaultJss,
   generateClassName = defaultGenerateClassName,
   ...stylesProviderProps
 }: Props) {
