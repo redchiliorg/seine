@@ -5,7 +5,7 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
   fontSize={2}
   fontWeight={500}
   preserveAspectRatio="xMidYMax meet"
-  viewBox="0 0 100 54"
+  viewBox="0 0 100 57.5"
   width="100%"
 >
   <text
@@ -197,6 +197,70 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
     x={10}
     y={48}
   />
+  <line
+    stroke="black"
+    strokeWidth="0.1em"
+    x1={10}
+    x2={31}
+    y1={54}
+    y2={54}
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="middle"
+    x={29}
+    y={57.5}
+  >
+    10
+  </text>
+  <line
+    stroke="black"
+    strokeWidth="0.1em"
+    x1={31}
+    x2={52}
+    y1={54}
+    y2={54}
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="middle"
+    x={50}
+    y={57.5}
+  >
+    20
+  </text>
+  <line
+    stroke="black"
+    strokeWidth="0.1em"
+    x1={52}
+    x2={73}
+    y1={54}
+    y2={54}
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="middle"
+    x={71}
+    y={57.5}
+  >
+    30
+  </text>
+  <line
+    stroke="black"
+    strokeWidth="0.1em"
+    x1={73}
+    x2={94}
+    y1={54}
+    y2={54}
+  />
+  <text
+    fontWeight="bold"
+    textAnchor="middle"
+    x={92}
+    y={57.5}
+  >
+    40
+  </text>
 </svg>
 `;
 
@@ -409,10 +473,10 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -586,7 +650,7 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMax meet"
-        viewBox="0 0 100 54"
+        viewBox="0 0 100 57.5"
         width="100%"
       >
         <text
@@ -778,6 +842,70 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
           x={10}
           y={48}
         />
+        <line
+          stroke="black"
+          strokeWidth="0.1em"
+          x1={10}
+          x2={31}
+          y1={54}
+          y2={54}
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="middle"
+          x={29}
+          y={57.5}
+        >
+          10
+        </text>
+        <line
+          stroke="black"
+          strokeWidth="0.1em"
+          x1={31}
+          x2={52}
+          y1={54}
+          y2={54}
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="middle"
+          x={50}
+          y={57.5}
+        >
+          20
+        </text>
+        <line
+          stroke="black"
+          strokeWidth="0.1em"
+          x1={52}
+          x2={73}
+          y1={54}
+          y2={54}
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="middle"
+          x={71}
+          y={57.5}
+        >
+          30
+        </text>
+        <line
+          stroke="black"
+          strokeWidth="0.1em"
+          x1={73}
+          x2={94}
+          y1={54}
+          y2={54}
+        />
+        <text
+          fontWeight="bold"
+          textAnchor="middle"
+          x={92}
+          y={57.5}
+        >
+          40
+        </text>
       </svg>
     </div>
   </div>
@@ -786,10 +914,10 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -1170,10 +1298,10 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -1469,10 +1597,10 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -2674,10 +2802,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -3447,10 +3575,10 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -4116,10 +4244,10 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -4918,10 +5046,10 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
 
 exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-dnqmqq cMOoyO"
@@ -9115,7 +9243,7 @@ exports[`Storyshots 2 - Content Draft Content 1`] = `
 
 exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
     className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1258"
@@ -9160,10 +9288,10 @@ exports[`Storyshots 2 - Content Editor Of Content 1`] = `
 
 exports[`Storyshots 2 - Content Editor Of Draft Content 1`] = `
 <div
-  className="sc-kAzzGY hXSnfR"
+  className="sc-chPdSV jJFYZO"
 >
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-chPdSV hyEWMe @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-EHOje sc-kgoBCf kUojwL @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-jTzLTM cwQMd"
