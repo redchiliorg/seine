@@ -109,10 +109,8 @@ export default function Editor({
     [blocks, dispatch, selection]
   );
 
-  const theme = useTheme();
-
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={useTheme()}>
       <StylesProvider injectFirst>
         <Container>
           <BlockToolbar
