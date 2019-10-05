@@ -13,6 +13,7 @@ import ChartElementColorButton from './ChartElementColorButton';
 import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartElementAddButton from './ChartElementAddButton';
+import ChartSwitchFormatInput from './ChartSwitchFormatInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -76,6 +77,18 @@ export default function BarChartToolbar({
             />
           </>
         )}
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartSwitchFormatInput
+          dispatch={dispatch}
+          format={format}
+          label={'x axis'}
+          id={id}
+          name={'xAxis'}
+        />
       </Toolbar.Group>
       {children}
     </Toolbar>

@@ -18,6 +18,7 @@ import ChartGroupRemoveButton from './ChartGroupRemoveButton';
 import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
 import ChartElementColorButton from './ChartElementColorButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
+import ChartSwitchFormatInput from './ChartSwitchFormatInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -134,6 +135,25 @@ export default function LineChartToolbar({
           editor={editor}
           format={format}
           id={id}
+        />
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartSwitchFormatInput
+          dispatch={dispatch}
+          format={format}
+          label={'x axis'}
+          id={id}
+          name={'xAxis'}
+        />
+        <ChartSwitchFormatInput
+          dispatch={dispatch}
+          format={format}
+          label={'y axis'}
+          id={id}
+          name={'yAxis'}
         />
       </Toolbar.Group>
       {children}

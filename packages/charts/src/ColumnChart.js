@@ -7,7 +7,8 @@ import {
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartTitle,
-  defaultMinValue,
+  defaultChartMinValue,
+  defaultChartYAxis,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
@@ -26,13 +27,14 @@ type Props = $Rest<ChartProps, {| kind: string |}> & {
 export default function ColumnChart({
   elements,
   maxValue: initialMaxValue,
-  minValue: initialMinValue = defaultMinValue,
+  minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
   fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   title = defaultChartTitle,
+  yAxis = defaultChartYAxis,
 
   as: View = 'svg',
   id,
@@ -107,15 +109,17 @@ export default function ColumnChart({
         stroke={'#000'}
         strokeWidth={0.1}
       />
-      <BarGroupYAxis
-        dy={dy}
-        fontSize={1.5 * fontSize}
-        lineHeight={lineHeight}
-        maxValue={maxValue}
-        minValue={minValue}
-        title={title}
-        x={xPadding}
-      />
+      {yAxis ? (
+        <BarGroupYAxis
+          dy={dy}
+          fontSize={1.5 * fontSize}
+          lineHeight={lineHeight}
+          maxValue={maxValue}
+          minValue={minValue}
+          title={title}
+          x={xPadding}
+        />
+      ) : null}
       {titles.map(({ id, title }, index) => (
         <ChartLegendItem
           key={id}

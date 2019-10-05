@@ -1,6 +1,7 @@
 import { initialElementsState } from '@seine/core';
 
 export const defaultChartDy = 10;
+export const defaultChartDx = 10;
 export const defaultChartTitle = '';
 export const defaultChartFontSize = 2;
 export const defaultChartFontWeight = 500;
@@ -22,11 +23,17 @@ export const defaultChartPalette = [
 ];
 export const defaultChartSize = 100;
 export const defaultChartUnits = '%';
-export const defaultMinValue = 0;
+export const defaultChartMinValue = 0;
+export const defaultChartXAxis = true;
+export const defaultChartYAxis = true;
 
 export const defaultChartBody = { elements: [] };
 export const defaultChartEditor = { selection: initialElementsState.selection };
-export const defaultChartFormat = { palette: defaultChartPalette };
+export const defaultChartFormat = {
+  palette: defaultChartPalette,
+  xAxis: defaultChartXAxis,
+  yAxis: defaultChartYAxis,
+};
 
 export const chartPaletteMcKinseyDeep = [
   '#222667',
