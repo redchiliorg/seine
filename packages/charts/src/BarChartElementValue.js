@@ -13,11 +13,11 @@ export type Props = {
 };
 
 /**
- * @description Value of a chart bar.
+ * @description Value of an element in bar chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartValue({
+export default function BarChartElementValue({
   children,
   fill,
   lineHeight,

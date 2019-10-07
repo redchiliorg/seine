@@ -1,6 +1,12 @@
 // @flow
 import * as React from 'react';
-import { ChartLegendItem, LineChartGroup, LineChartValue } from '@seine/charts';
+import {
+  ChartLegendItem,
+  ChartTitle,
+  ChartTitleProps,
+  LineChartGroup,
+  LineChartValue,
+} from '@seine/charts';
 import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
 import {
@@ -11,6 +17,7 @@ import {
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
+import ChartTitleInput from './ChartTitleInput';
 
 /**
  * @description Editor of line chart
@@ -20,6 +27,7 @@ import ChartLegendItemInput from './ChartLegendItemInput';
 export default function LineChartEditor({
   children,
   dispatch,
+  dispatchElements,
   editor,
   ...svgProps
 }: Props) {
@@ -28,6 +36,15 @@ export default function LineChartEditor({
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
+            case ChartTitle: {
+              const { children, ...props }: ChartTitleProps = child.props;
+              return (
+                <ChartTitleInput key={child.key} dispatch={dispatch} {...props}>
+                  {children}
+                </ChartTitleInput>
+              );
+            }
+
             case ChartLegendItem:
               return [
                 child,
@@ -35,7 +52,7 @@ export default function LineChartEditor({
                   {...child.props}
                   key={[child.key, 'input']}
                   id={child.key}
-                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
                 />,
               ];
 
@@ -60,7 +77,7 @@ export default function LineChartEditor({
                   key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatch({
+                    dispatchElements({
                       type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
                       body: { group: currentTarget.value },
                       group,
@@ -94,7 +111,7 @@ export default function LineChartEditor({
                   key={[child.key, 'input']}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatch({
+                    dispatchElements({
                       type: UPDATE_BLOCK_ELEMENT,
                       body: { value: +currentTarget.value },
                       index,
@@ -133,7 +150,7 @@ export default function LineChartEditor({
                           markerMid: 'none',
                           markerStart: 'none',
                           onClick: () =>
-                            dispatch({
+                            dispatchElements({
                               index,
                               type: SELECT_BLOCK_ELEMENT,
                             }),

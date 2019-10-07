@@ -6,12 +6,14 @@ import {
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartSize,
+  defaultChartTitle,
   defaultChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
 import PieChartTitle from './PieChartTitle';
 import PieChartValue from './PieChartValue';
 import PieChartSlice from './PieChartSlice';
+import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -26,6 +28,7 @@ export default function PieChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   size = defaultChartSize,
+  title = defaultChartTitle,
   units = defaultChartUnits,
 
   as: View = 'svg',
@@ -55,7 +58,25 @@ export default function PieChart({
   let endY = Math.sin(end);
 
   return (
-    <View viewBox={[0, 0, size, size].join(' ')} {...viewProps}>
+    <View
+      viewBox={[
+        0,
+        -2.5 * lineHeight * fontSize,
+        size,
+        size + 2 * lineHeight * fontSize,
+      ].join(' ')}
+      {...viewProps}
+    >
+      <ChartTitle
+        fontSize={2 * fontSize}
+        fontWeight={'bold'}
+        lineHeight={lineHeight}
+        x={0}
+        y={0 - 2 * fontSize}
+      >
+        {title}
+      </ChartTitle>
+
       {elements.map(({ title, value }, index) => {
         const start = end;
         const startX = endX;

@@ -5,15 +5,17 @@ import {
   defaultChartDy,
   defaultChartFontSize,
   defaultChartLineHeight,
+  defaultChartMinValue,
   defaultChartPalette,
   defaultChartTitle,
-  defaultChartMinValue,
   defaultChartYAxis,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
+import { ColumnChartYAxis } from './ColumnChartYAxis';
+import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -58,20 +60,30 @@ export default function ColumnChart({
         () =>
           [
             0,
-            0,
+            -3.5 * lineHeight * fontSize,
             groups.length > 2
               ? 79 * groups.length
               : groups.length === 2
               ? 99 * groups.length
               : 128,
-            titles.length ? 210 : 140,
+            (titles.length ? 210 : 140) + 1.5 * 3.5 * lineHeight * fontSize,
           ].join(' '),
-        [groups.length, titles.length]
+        [fontSize, groups.length, lineHeight, titles.length]
       )}
       height={'100%'}
       width={'100%'}
       {...viewProps}
     >
+      <ChartTitle
+        fontSize={3.5 * fontSize}
+        fontWeight={'bold'}
+        lineHeight={lineHeight}
+        x={0}
+        y={0 - 2 * fontSize}
+      >
+        {title}
+      </ChartTitle>
+
       {React.useMemo(
         () =>
           groups.map(([group, elements], index) => (
@@ -110,14 +122,15 @@ export default function ColumnChart({
         strokeWidth={0.1}
       />
       {yAxis ? (
-        <BarGroupYAxis
+        <ColumnChartYAxis
           dy={dy}
           fontSize={1.5 * fontSize}
-          lineHeight={lineHeight}
+          height={90}
           maxValue={maxValue}
           minValue={minValue}
           title={title}
           x={xPadding}
+          y={20}
         />
       ) : null}
       {titles.map(({ id, title }, index) => (
@@ -136,39 +149,5 @@ export default function ColumnChart({
         />
       ))}
     </View>
-  );
-}
-
-// eslint-disable-next-line
-function BarGroupYAxis({
-  dy,
-  fontSize,
-  lineHeight,
-  maxValue,
-  minValue,
-  title,
-  x,
-
-  height = 90,
-  y = 20,
-}) {
-  return (
-    <g fill={'#000000'} textAnchor="middle" fontSize={fontSize}>
-      {Array.from({
-        length: dy > 0 ? Math.floor((maxValue - minValue) / dy) + 1 : 0,
-      }).map((_, index, { length }) => (
-        <text key={index} x={x + 1} y={y + height - (index * height) / length}>
-          <tspan>{minValue + index * dy}</tspan>
-        </text>
-      ))}
-      <text
-        x={x - lineHeight * 2 * fontSize}
-        y={y + height / 2}
-        fontSize={'2em'}
-        writingMode="vertical-lr"
-      >
-        {title}
-      </text>
-    </g>
   );
 }

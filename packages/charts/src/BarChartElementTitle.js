@@ -13,11 +13,11 @@ export type Props = {
 };
 
 /**
- * @description Title of a chart bar.
+ * @description Title of an element in bar chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartTitle({
+export default function BarChartElementTitle({
   children,
   fill,
   lineHeight,

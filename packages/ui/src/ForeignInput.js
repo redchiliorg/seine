@@ -56,8 +56,8 @@ export default function ForeignInput({
   fontSize,
   height,
   lineHeight = null,
-  width = null,
   transparent = false,
+  width = '100%',
   x,
   y,
   ...inputProps
