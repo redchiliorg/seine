@@ -1,7 +1,13 @@
 // @flow
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
-import { PieChartSlice, PieChartTitle, PieChartValue } from '@seine/charts';
+import {
+  ChartTitle,
+  ChartTitleProps,
+  PieChartSlice,
+  PieChartTitle,
+  PieChartValue,
+} from '@seine/charts';
 import type {
   PieChartSliceProps,
   PieChartTitleProps,
@@ -10,6 +16,7 @@ import type {
 import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
+import ChartTitleInput from './ChartTitleInput';
 
 /**
  * @description Editor of pie chart
@@ -19,6 +26,7 @@ import type { ChartEditorProps as Props } from './types';
 export default function PieChartEditor({
   children,
   dispatch,
+  dispatchElement,
   editor,
   selection,
   ...svgProps
@@ -37,6 +45,15 @@ export default function PieChartEditor({
       {React.Children.map(children, (child: ?React.Node) => {
         if (React.isValidElement(child)) {
           switch (child.type) {
+            case ChartTitle: {
+              const { children, ...props }: ChartTitleProps = child.props;
+              return (
+                <ChartTitleInput key={child.key} dispatch={dispatch} {...props}>
+                  {children}
+                </ChartTitleInput>
+              );
+            }
+
             case PieChartTitle: {
               let {
                 fill,

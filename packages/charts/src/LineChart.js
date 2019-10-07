@@ -16,6 +16,7 @@ import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
 import LineChartGroup from './LineChartGroup';
 import LineChartValue from './LineChartValue';
+import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -36,8 +37,8 @@ export default function LineChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   title = defaultChartTitle,
-  xAxis = defaultChartXAxis,
   yAxis = defaultChartYAxis,
+  xAxis = defaultChartXAxis,
 
   as: View = 'svg',
   id,
@@ -65,19 +66,24 @@ export default function LineChart({
       fontSize={fontSize}
       height={'100%'}
       strokeWidth={0.5}
-      viewBox={[0, 0, 297, 100].join(' ')}
+      viewBox={[
+        0,
+        -2.5 * lineHeight * fontSize,
+        297,
+        100 + 3 * lineHeight * fontSize,
+      ].join(' ')}
       width={'100%'}
       {...viewProps}
     >
-      <text
-        fontSize={'1.5em'}
+      <ChartTitle
+        fontSize={2 * fontSize}
         fontWeight={'bold'}
-        key={'title'}
+        lineHeight={lineHeight}
         x={x}
-        y={y - (1.5 + 0.5) * fontSize}
+        y={y - 2 * lineHeight * fontSize}
       >
         {title}
-      </text>
+      </ChartTitle>
 
       <marker id="arrowUp" overflow="visible" orient="auto">
         <path

@@ -3,12 +3,14 @@ export * from './constants';
 export * from './helpers';
 export { default as Chart, defaultChartRenderMap } from './Chart';
 export { default as ChartLegendItem } from './ChartLegendItem';
+export { default as ChartTitle } from './ChartTitle';
+export type { Props as ChartTitleProps } from './ChartTitle';
 
 export { default as BarChart } from './BarChart';
-export { default as BarChartTitle } from './BarChartTitle';
-export { default as BarChartValue } from './BarChartValue';
-export type { Props as BarChartTitleProps } from './BarChartTitle';
-export type { Props as BarChartValueProps } from './BarChartValue';
+export { default as BarChartElementTitle } from './BarChartElementTitle';
+export { default as BarChartElementValue } from './BarChartElementValue';
+export type { Props as BarChartTitleProps } from './BarChartElementTitle';
+export type { Props as BarChartValueProps } from './BarChartElementValue';
 
 export { default as ColumnChart } from './ColumnChart';
 export { default as ColumnChartGroup } from './ColumnChartGroup';

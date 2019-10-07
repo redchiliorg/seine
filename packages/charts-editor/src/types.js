@@ -1,9 +1,10 @@
 // @flow
-import type { ElementsAction } from '@seine/core';
+import type { BlocksAction, ElementsAction } from '@seine/core';
 import type { ChartProps } from '@seine/charts';
 
 export type ChartEditorProps = {
-  dispatch: (ElementsAction) => any,
+  dispatch: (BlocksAction) => any,
+  dispatchElement: (ElementsAction) => any,
 } & ChartProps;
 
 export type ChartSVGElement = {

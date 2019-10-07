@@ -8,11 +8,13 @@ import {
   defaultChartLineHeight,
   defaultChartPalette,
   defaultChartSize,
+  defaultChartTitle,
   defaultChartXAxis,
 } from './constants';
 import type { ChartProps } from './types';
-import BarChartTitle from './BarChartTitle';
-import BarChartValue from './BarChartValue';
+import BarChartElementTitle from './BarChartElementTitle';
+import BarChartElementValue from './BarChartElementValue';
+import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -23,12 +25,14 @@ type Props = $Rest<ChartProps, {| kind: string |}>;
  */
 export default function BarChart({
   elements,
+
+  dx = defaultChartDx,
   fontWeight = defaultChartFontWeight,
   fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   size = defaultChartSize,
-  dx = defaultChartDx,
+  title = defaultChartTitle,
   xAxis = defaultChartXAxis,
 
   as: View = 'svg',
@@ -58,20 +62,35 @@ export default function BarChart({
 
   return (
     <View
-      viewBox={`0 0 ${size} ${height + fontSize * lineHeight}`}
+      viewBox={[
+        0,
+        -2 * lineHeight * fontSize,
+        size,
+        height + 3.5 * lineHeight * fontSize,
+      ].join(' ')}
       width={'100%'}
       fontSize={fontSize}
       fontWeight={fontWeight}
       preserveAspectRatio={'xMidYMax meet'}
       {...viewProps}
     >
+      <ChartTitle
+        fontSize={2 * fontSize}
+        fontWeight={'bold'}
+        lineHeight={lineHeight}
+        x={0}
+        y={0 - 2 * fontSize}
+      >
+        {title}
+      </ChartTitle>
+
       {elements.map(({ title, value }, index) => {
         const len = (barMaxLen * value) / maxValue;
         const color = palette[index % palette.length];
         const y = (index * barHeight) / 2;
 
         return [
-          <BarChartTitle
+          <BarChartElementTitle
             fill={color}
             height={barHeight}
             index={index}
@@ -82,9 +101,9 @@ export default function BarChart({
             width={titleMaxLen}
           >
             {title}
-          </BarChartTitle>,
+          </BarChartElementTitle>,
 
-          <BarChartValue
+          <BarChartElementValue
             fill={color}
             height={barHeight}
             index={index}
@@ -95,7 +114,7 @@ export default function BarChart({
             width={valueMaxLen}
           >
             {value}
-          </BarChartValue>,
+          </BarChartElementValue>,
 
           <rect
             fill={color}

@@ -5,9 +5,17 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
   fontSize={2}
   fontWeight={500}
   preserveAspectRatio="xMidYMax meet"
-  viewBox="0 0 100 57.5"
+  viewBox="0 -7 100 66.25"
   width="100%"
 >
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Chart title
+  </text>
   <text
     fill="#71a2ff"
     x={0}
@@ -267,9 +275,17 @@ exports[`Storyshots 1 - Charts Bar Chart 1`] = `
 exports[`Storyshots 1 - Charts Column Chart 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 128 210"
+  viewBox="0 -12.25 128 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Chart title
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -344,76 +360,83 @@ exports[`Storyshots 1 - Charts Column Chart 1`] = `
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        0
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={97.14285714285714}
-    >
-      <tspan>
-        10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={84.28571428571428}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={71.42857142857143}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={58.57142857142857}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={45.71428571428571}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={32.85714285714286}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      
-    </text>
-  </g>
+    <tspan>
+      0
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={97.14285714285714}
+  >
+    <tspan>
+      10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={84.28571428571428}
+  >
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={71.42857142857143}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={58.57142857142857}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={45.71428571428571}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={32.85714285714286}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -650,9 +673,17 @@ exports[`Storyshots 1 - Charts Editor Of Bar Chart 1`] = `
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMax meet"
-        viewBox="0 0 100 57.5"
+        viewBox="0 -7 100 66.25"
         width="100%"
       >
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Chart title
+        </text>
         <text
           fill="#71a2ff"
           x={0}
@@ -1089,9 +1120,17 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
       </div>
       <svg
         height="100%"
-        viewBox="0 0 128 210"
+        viewBox="0 -12.25 128 228.375"
         width="100%"
       >
+        <text
+          fontSize={7}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Chart title
+        </text>
         <rect
           fill="#71a2ff"
           fontSize={3}
@@ -1166,76 +1205,83 @@ exports[`Storyshots 1 - Charts Editor Of Column Chart 1`] = `
           stroke="#000"
           strokeWidth={0.1}
         />
-        <g
+        <text
           fill="#000000"
           fontSize={3}
           textAnchor="middle"
+          x={24}
+          y={110}
         >
-          <text
-            x={24}
-            y={110}
-          >
-            <tspan>
-              0
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={97.14285714285714}
-          >
-            <tspan>
-              10
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={84.28571428571428}
-          >
-            <tspan>
-              20
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={71.42857142857143}
-          >
-            <tspan>
-              30
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={58.57142857142857}
-          >
-            <tspan>
-              40
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={45.71428571428571}
-          >
-            <tspan>
-              50
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={32.85714285714286}
-          >
-            <tspan>
-              60
-            </tspan>
-          </text>
-          <text
-            fontSize="2em"
-            writingMode="vertical-lr"
-            x={12.5}
-            y={65}
-          >
-            
-          </text>
-        </g>
+          <tspan>
+            0
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={97.14285714285714}
+        >
+          <tspan>
+            10
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={84.28571428571428}
+        >
+          <tspan>
+            20
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={71.42857142857143}
+        >
+          <tspan>
+            30
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={58.57142857142857}
+        >
+          <tspan>
+            40
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={45.71428571428571}
+        >
+          <tspan>
+            50
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={32.85714285714286}
+        >
+          <tspan>
+            60
+          </tspan>
+        </text>
         <g
           fontSize={3}
           width={80}
@@ -1472,8 +1518,16 @@ exports[`Storyshots 1 - Charts Editor Of Pie Chart 1`] = `
         </div>
       </div>
       <svg
-        viewBox="0 0 100 100"
+        viewBox="0 -8.75 100 107"
       >
+        <text
+          fontSize={4}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Chart title
+        </text>
         <path
           d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
           fill="#71a2ff"
@@ -1772,9 +1826,17 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
       </div>
       <svg
         height="100%"
-        viewBox="0 0 474 210"
+        viewBox="0 -12.25 474 228.375"
         width="100%"
       >
+        <text
+          fontSize={7}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Column chart: 3 groups of 5 elements
+        </text>
         <rect
           fill="#71a2ff"
           fontSize={3}
@@ -2584,108 +2646,127 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Six Columns 1`] = `
           stroke="#000"
           strokeWidth={0.1}
         />
-        <g
+        <text
           fill="#000000"
           fontSize={3}
           textAnchor="middle"
+          x={24}
+          y={110}
         >
-          <text
-            x={24}
-            y={110}
-          >
-            <tspan>
-              0
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={101.81818181818181}
-          >
-            <tspan>
-              10
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={93.63636363636364}
-          >
-            <tspan>
-              20
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={85.45454545454545}
-          >
-            <tspan>
-              30
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={77.27272727272728}
-          >
-            <tspan>
-              40
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={69.0909090909091}
-          >
-            <tspan>
-              50
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={60.90909090909091}
-          >
-            <tspan>
-              60
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={52.72727272727273}
-          >
-            <tspan>
-              70
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={44.54545454545455}
-          >
-            <tspan>
-              80
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={36.36363636363636}
-          >
-            <tspan>
-              90
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={28.181818181818187}
-          >
-            <tspan>
-              100
-            </tspan>
-          </text>
-          <text
-            fontSize="2em"
-            writingMode="vertical-lr"
-            x={12.5}
-            y={65}
-          >
-            Column chart: 3 groups of 5 elements
-          </text>
-        </g>
+          <tspan>
+            0
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={101.81818181818181}
+        >
+          <tspan>
+            10
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={93.63636363636364}
+        >
+          <tspan>
+            20
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={85.45454545454545}
+        >
+          <tspan>
+            30
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={77.27272727272728}
+        >
+          <tspan>
+            40
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={69.0909090909091}
+        >
+          <tspan>
+            50
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={60.90909090909091}
+        >
+          <tspan>
+            60
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={52.72727272727273}
+        >
+          <tspan>
+            70
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={44.54545454545455}
+        >
+          <tspan>
+            80
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={36.36363636363636}
+        >
+          <tspan>
+            90
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={28.181818181818187}
+        >
+          <tspan>
+            100
+          </tspan>
+        </text>
         <g
           fontSize={3}
           width={80}
@@ -2977,9 +3058,17 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
       </div>
       <svg
         height="100%"
-        viewBox="0 0 474 210"
+        viewBox="0 -12.25 474 228.375"
         width="100%"
       >
+        <text
+          fontSize={7}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Column chart: 4 groups of 3 elements
+        </text>
         <rect
           fill="#71a2ff"
           fontSize={3}
@@ -3411,108 +3500,127 @@ exports[`Storyshots 1 - Charts Editor Of Six Groups Of Two Columns 1`] = `
           stroke="#000"
           strokeWidth={0.1}
         />
-        <g
+        <text
           fill="#000000"
           fontSize={3}
           textAnchor="middle"
+          x={24}
+          y={110}
         >
-          <text
-            x={24}
-            y={110}
-          >
-            <tspan>
-              0
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={101.81818181818181}
-          >
-            <tspan>
-              10
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={93.63636363636364}
-          >
-            <tspan>
-              20
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={85.45454545454545}
-          >
-            <tspan>
-              30
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={77.27272727272728}
-          >
-            <tspan>
-              40
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={69.0909090909091}
-          >
-            <tspan>
-              50
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={60.90909090909091}
-          >
-            <tspan>
-              60
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={52.72727272727273}
-          >
-            <tspan>
-              70
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={44.54545454545455}
-          >
-            <tspan>
-              80
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={36.36363636363636}
-          >
-            <tspan>
-              90
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={28.181818181818187}
-          >
-            <tspan>
-              100
-            </tspan>
-          </text>
-          <text
-            fontSize="2em"
-            writingMode="vertical-lr"
-            x={12.5}
-            y={65}
-          >
-            Column chart: 4 groups of 3 elements
-          </text>
-        </g>
+          <tspan>
+            0
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={101.81818181818181}
+        >
+          <tspan>
+            10
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={93.63636363636364}
+        >
+          <tspan>
+            20
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={85.45454545454545}
+        >
+          <tspan>
+            30
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={77.27272727272728}
+        >
+          <tspan>
+            40
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={69.0909090909091}
+        >
+          <tspan>
+            50
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={60.90909090909091}
+        >
+          <tspan>
+            60
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={52.72727272727273}
+        >
+          <tspan>
+            70
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={44.54545454545455}
+        >
+          <tspan>
+            80
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={36.36363636363636}
+        >
+          <tspan>
+            90
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={28.181818181818187}
+        >
+          <tspan>
+            100
+          </tspan>
+        </text>
         <g
           fontSize={3}
           width={80}
@@ -3750,9 +3858,17 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
       </div>
       <svg
         height="100%"
-        viewBox="0 0 198 210"
+        viewBox="0 -12.25 198 228.375"
         width="100%"
       >
+        <text
+          fontSize={7}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Column chart: 3 groups of 5 elements
+        </text>
         <rect
           fill="#71a2ff"
           fontSize={3}
@@ -4026,108 +4142,127 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Six Columns 1`] = `
           stroke="#000"
           strokeWidth={0.1}
         />
-        <g
+        <text
           fill="#000000"
           fontSize={3}
           textAnchor="middle"
+          x={24}
+          y={110}
         >
-          <text
-            x={24}
-            y={110}
-          >
-            <tspan>
-              0
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={101.81818181818181}
-          >
-            <tspan>
-              10
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={93.63636363636364}
-          >
-            <tspan>
-              20
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={85.45454545454545}
-          >
-            <tspan>
-              30
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={77.27272727272728}
-          >
-            <tspan>
-              40
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={69.0909090909091}
-          >
-            <tspan>
-              50
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={60.90909090909091}
-          >
-            <tspan>
-              60
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={52.72727272727273}
-          >
-            <tspan>
-              70
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={44.54545454545455}
-          >
-            <tspan>
-              80
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={36.36363636363636}
-          >
-            <tspan>
-              90
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={28.181818181818187}
-          >
-            <tspan>
-              100
-            </tspan>
-          </text>
-          <text
-            fontSize="2em"
-            writingMode="vertical-lr"
-            x={12.5}
-            y={65}
-          >
-            Column chart: 3 groups of 5 elements
-          </text>
-        </g>
+          <tspan>
+            0
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={101.81818181818181}
+        >
+          <tspan>
+            10
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={93.63636363636364}
+        >
+          <tspan>
+            20
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={85.45454545454545}
+        >
+          <tspan>
+            30
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={77.27272727272728}
+        >
+          <tspan>
+            40
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={69.0909090909091}
+        >
+          <tspan>
+            50
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={60.90909090909091}
+        >
+          <tspan>
+            60
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={52.72727272727273}
+        >
+          <tspan>
+            70
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={44.54545454545455}
+        >
+          <tspan>
+            80
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={36.36363636363636}
+        >
+          <tspan>
+            90
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={28.181818181818187}
+        >
+          <tspan>
+            100
+          </tspan>
+        </text>
         <g
           fontSize={3}
           width={80}
@@ -4419,9 +4554,17 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
       </div>
       <svg
         height="100%"
-        viewBox="0 0 198 210"
+        viewBox="0 -12.25 198 228.375"
         width="100%"
       >
+        <text
+          fontSize={7}
+          fontWeight="bold"
+          x={0}
+          y={-4}
+        >
+          Column chart: 3 groups, 3 elements
+        </text>
         <rect
           fill="#71a2ff"
           fontSize={3}
@@ -4527,108 +4670,127 @@ exports[`Storyshots 1 - Charts Editor Of Two Groups Of Two Columns 1`] = `
           stroke="#000"
           strokeWidth={0.1}
         />
-        <g
+        <text
           fill="#000000"
           fontSize={3}
           textAnchor="middle"
+          x={24}
+          y={110}
         >
-          <text
-            x={24}
-            y={110}
-          >
-            <tspan>
-              0
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={101.81818181818181}
-          >
-            <tspan>
-              10
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={93.63636363636364}
-          >
-            <tspan>
-              20
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={85.45454545454545}
-          >
-            <tspan>
-              30
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={77.27272727272728}
-          >
-            <tspan>
-              40
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={69.0909090909091}
-          >
-            <tspan>
-              50
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={60.90909090909091}
-          >
-            <tspan>
-              60
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={52.72727272727273}
-          >
-            <tspan>
-              70
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={44.54545454545455}
-          >
-            <tspan>
-              80
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={36.36363636363636}
-          >
-            <tspan>
-              90
-            </tspan>
-          </text>
-          <text
-            x={24}
-            y={28.181818181818187}
-          >
-            <tspan>
-              100
-            </tspan>
-          </text>
-          <text
-            fontSize="2em"
-            writingMode="vertical-lr"
-            x={12.5}
-            y={65}
-          >
-            Column chart: 3 groups, 3 elements
-          </text>
-        </g>
+          <tspan>
+            0
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={101.81818181818181}
+        >
+          <tspan>
+            10
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={93.63636363636364}
+        >
+          <tspan>
+            20
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={85.45454545454545}
+        >
+          <tspan>
+            30
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={77.27272727272728}
+        >
+          <tspan>
+            40
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={69.0909090909091}
+        >
+          <tspan>
+            50
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={60.90909090909091}
+        >
+          <tspan>
+            60
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={52.72727272727273}
+        >
+          <tspan>
+            70
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={44.54545454545455}
+        >
+          <tspan>
+            80
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={36.36363636363636}
+        >
+          <tspan>
+            90
+          </tspan>
+        </text>
+        <text
+          fill="#000000"
+          fontSize={3}
+          textAnchor="middle"
+          x={24}
+          y={28.181818181818187}
+        >
+          <tspan>
+            100
+          </tspan>
+        </text>
         <g
           fontSize={3}
           width={80}
@@ -4676,14 +4838,14 @@ exports[`Storyshots 1 - Charts Line Chart 1`] = `
   fontSize={4}
   height="100%"
   strokeWidth={0.5}
-  viewBox="0 0 297 100"
+  viewBox="0 -17.5 297 121"
   width="100%"
 >
   <text
-    fontSize="1.5em"
+    fontSize={8}
     fontWeight="bold"
     x={20}
-    y={-1}
+    y={-7}
   >
     Sales ($ millions)
   </text>
@@ -5223,14 +5385,14 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
         fontSize={4}
         height="100%"
         strokeWidth={0.5}
-        viewBox="0 0 297 100"
+        viewBox="0 -17.5 297 121"
         width="100%"
       >
         <text
-          fontSize="1.5em"
+          fontSize={8}
           fontWeight="bold"
           x={20}
-          y={-1}
+          y={-7}
         >
           Sales ($ millions)
         </text>
@@ -5596,8 +5758,16 @@ exports[`Storyshots 1 - Charts Line Chart Editor 1`] = `
 
 exports[`Storyshots 1 - Charts Pie Chart 1`] = `
 <svg
-  viewBox="0 0 100 100"
+  viewBox="0 -8.75 100 107"
 >
+  <text
+    fontSize={4}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Chart title
+  </text>
   <path
     d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
     fill="#71a2ff"
@@ -5719,9 +5889,17 @@ exports[`Storyshots 1 - Charts Pie Chart 1`] = `
 exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 474 210"
+  viewBox="0 -12.25 474 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 3 groups of 5 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -6531,108 +6709,127 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        0
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={101.81818181818181}
-    >
-      <tspan>
-        10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={93.63636363636364}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={85.45454545454545}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={77.27272727272728}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={69.0909090909091}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={60.90909090909091}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={52.72727272727273}
-    >
-      <tspan>
-        70
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={44.54545454545455}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={36.36363636363636}
-    >
-      <tspan>
-        90
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={28.181818181818187}
-    >
-      <tspan>
-        100
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 3 groups of 5 elements
-    </text>
-  </g>
+    <tspan>
+      0
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={101.81818181818181}
+  >
+    <tspan>
+      10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={93.63636363636364}
+  >
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={85.45454545454545}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={77.27272727272728}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={69.0909090909091}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={60.90909090909091}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={52.72727272727273}
+  >
+    <tspan>
+      70
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={44.54545454545455}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={36.36363636363636}
+  >
+    <tspan>
+      90
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={28.181818181818187}
+  >
+    <tspan>
+      100
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -6747,9 +6944,17 @@ exports[`Storyshots 1 - Charts Six Groups Of Six Columns 1`] = `
 exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 474 210"
+  viewBox="0 -12.25 474 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 4 groups of 3 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -7181,108 +7386,127 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        0
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={101.81818181818181}
-    >
-      <tspan>
-        10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={93.63636363636364}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={85.45454545454545}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={77.27272727272728}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={69.0909090909091}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={60.90909090909091}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={52.72727272727273}
-    >
-      <tspan>
-        70
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={44.54545454545455}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={36.36363636363636}
-    >
-      <tspan>
-        90
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={28.181818181818187}
-    >
-      <tspan>
-        100
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 4 groups of 3 elements
-    </text>
-  </g>
+    <tspan>
+      0
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={101.81818181818181}
+  >
+    <tspan>
+      10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={93.63636363636364}
+  >
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={85.45454545454545}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={77.27272727272728}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={69.0909090909091}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={60.90909090909091}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={52.72727272727273}
+  >
+    <tspan>
+      70
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={44.54545454545455}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={36.36363636363636}
+  >
+    <tspan>
+      90
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={28.181818181818187}
+  >
+    <tspan>
+      100
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -7343,9 +7567,17 @@ exports[`Storyshots 1 - Charts Six Groups Of Two Columns 1`] = `
 exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 198 210"
+  viewBox="0 -12.25 198 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 3 groups of 5 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -7619,108 +7851,127 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        0
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={101.81818181818181}
-    >
-      <tspan>
-        10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={93.63636363636364}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={85.45454545454545}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={77.27272727272728}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={69.0909090909091}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={60.90909090909091}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={52.72727272727273}
-    >
-      <tspan>
-        70
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={44.54545454545455}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={36.36363636363636}
-    >
-      <tspan>
-        90
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={28.181818181818187}
-    >
-      <tspan>
-        100
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 3 groups of 5 elements
-    </text>
-  </g>
+    <tspan>
+      0
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={101.81818181818181}
+  >
+    <tspan>
+      10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={93.63636363636364}
+  >
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={85.45454545454545}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={77.27272727272728}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={69.0909090909091}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={60.90909090909091}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={52.72727272727273}
+  >
+    <tspan>
+      70
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={44.54545454545455}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={36.36363636363636}
+  >
+    <tspan>
+      90
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={28.181818181818187}
+  >
+    <tspan>
+      100
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -7835,9 +8086,17 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns 1`] = `
 exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 100 And Dy 5 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 198 210"
+  viewBox="0 -12.25 198 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 3 groups of 5 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -8111,156 +8370,193 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={104.70588235294117}
-    >
-      <tspan>
-        25
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={99.41176470588235}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={94.11764705882354}
-    >
-      <tspan>
-        35
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={88.82352941176471}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={83.52941176470588}
-    >
-      <tspan>
-        45
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={78.23529411764706}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={72.94117647058823}
-    >
-      <tspan>
-        55
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={67.64705882352942}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={62.35294117647059}
-    >
-      <tspan>
-        65
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={57.05882352941177}
-    >
-      <tspan>
-        70
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={51.76470588235294}
-    >
-      <tspan>
-        75
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={46.470588235294116}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={41.17647058823529}
-    >
-      <tspan>
-        85
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={35.882352941176464}
-    >
-      <tspan>
-        90
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={30.588235294117652}
-    >
-      <tspan>
-        95
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={25.294117647058826}
-    >
-      <tspan>
-        100
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 3 groups of 5 elements
-    </text>
-  </g>
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={104.70588235294117}
+  >
+    <tspan>
+      25
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={99.41176470588235}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={94.11764705882354}
+  >
+    <tspan>
+      35
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={88.82352941176471}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={83.52941176470588}
+  >
+    <tspan>
+      45
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={78.23529411764706}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={72.94117647058823}
+  >
+    <tspan>
+      55
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={67.64705882352942}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={62.35294117647059}
+  >
+    <tspan>
+      65
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={57.05882352941177}
+  >
+    <tspan>
+      70
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={51.76470588235294}
+  >
+    <tspan>
+      75
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={46.470588235294116}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={41.17647058823529}
+  >
+    <tspan>
+      85
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={35.882352941176464}
+  >
+    <tspan>
+      90
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={30.588235294117652}
+  >
+    <tspan>
+      95
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={25.294117647058826}
+  >
+    <tspan>
+      100
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -8375,9 +8671,17 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value 20 Max Value 
 exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max Value 100 And Dy 18 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 198 210"
+  viewBox="0 -12.25 198 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 3 groups of 5 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -8651,100 +8955,116 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        -10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={101}
-    >
-      <tspan>
-        8
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={92}
-    >
-      <tspan>
-        26
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={83}
-    >
-      <tspan>
-        44
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={74}
-    >
-      <tspan>
-        62
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={65}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={56}
-    >
-      <tspan>
-        98
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={47}
-    >
-      <tspan>
-        116
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={38}
-    >
-      <tspan>
-        134
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={29}
-    >
-      <tspan>
-        152
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 3 groups of 5 elements
-    </text>
-  </g>
+    <tspan>
+      -10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={101}
+  >
+    <tspan>
+      8
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={92}
+  >
+    <tspan>
+      26
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={83}
+  >
+    <tspan>
+      44
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={74}
+  >
+    <tspan>
+      62
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={65}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={56}
+  >
+    <tspan>
+      98
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={47}
+  >
+    <tspan>
+      116
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={38}
+  >
+    <tspan>
+      134
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={29}
+  >
+    <tspan>
+      152
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}
@@ -8859,9 +9179,17 @@ exports[`Storyshots 1 - Charts Two Groups Of Six Columns Min Value Minus 20 Max 
 exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
 <svg
   height="100%"
-  viewBox="0 0 198 210"
+  viewBox="0 -12.25 198 228.375"
   width="100%"
 >
+  <text
+    fontSize={7}
+    fontWeight="bold"
+    x={0}
+    y={-4}
+  >
+    Column chart: 3 groups, 3 elements
+  </text>
   <rect
     fill="#71a2ff"
     fontSize={3}
@@ -8967,108 +9295,127 @@ exports[`Storyshots 1 - Charts Two Groups Of Two Columns 1`] = `
     stroke="#000"
     strokeWidth={0.1}
   />
-  <g
+  <text
     fill="#000000"
     fontSize={3}
     textAnchor="middle"
+    x={24}
+    y={110}
   >
-    <text
-      x={24}
-      y={110}
-    >
-      <tspan>
-        0
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={101.81818181818181}
-    >
-      <tspan>
-        10
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={93.63636363636364}
-    >
-      <tspan>
-        20
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={85.45454545454545}
-    >
-      <tspan>
-        30
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={77.27272727272728}
-    >
-      <tspan>
-        40
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={69.0909090909091}
-    >
-      <tspan>
-        50
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={60.90909090909091}
-    >
-      <tspan>
-        60
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={52.72727272727273}
-    >
-      <tspan>
-        70
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={44.54545454545455}
-    >
-      <tspan>
-        80
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={36.36363636363636}
-    >
-      <tspan>
-        90
-      </tspan>
-    </text>
-    <text
-      x={24}
-      y={28.181818181818187}
-    >
-      <tspan>
-        100
-      </tspan>
-    </text>
-    <text
-      fontSize="2em"
-      writingMode="vertical-lr"
-      x={12.5}
-      y={65}
-    >
-      Column chart: 3 groups, 3 elements
-    </text>
-  </g>
+    <tspan>
+      0
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={101.81818181818181}
+  >
+    <tspan>
+      10
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={93.63636363636364}
+  >
+    <tspan>
+      20
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={85.45454545454545}
+  >
+    <tspan>
+      30
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={77.27272727272728}
+  >
+    <tspan>
+      40
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={69.0909090909091}
+  >
+    <tspan>
+      50
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={60.90909090909091}
+  >
+    <tspan>
+      60
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={52.72727272727273}
+  >
+    <tspan>
+      70
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={44.54545454545455}
+  >
+    <tspan>
+      80
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={36.36363636363636}
+  >
+    <tspan>
+      90
+    </tspan>
+  </text>
+  <text
+    fill="#000000"
+    fontSize={3}
+    textAnchor="middle"
+    x={24}
+    y={28.181818181818187}
+  >
+    <tspan>
+      100
+    </tspan>
+  </text>
   <g
     fontSize={3}
     width={80}

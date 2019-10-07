@@ -1,11 +1,17 @@
 // @flow
 import * as React from 'react';
-import { BarChartTitle, BarChartValue } from '@seine/charts';
+import {
+  BarChartElementTitle,
+  BarChartElementValue,
+  ChartTitle,
+  ChartTitleProps,
+} from '@seine/charts';
 import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
 import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { ForeignInput } from '@seine/ui';
 
 import type { ChartEditorProps as Props } from './types';
+import ChartTitleInput from './ChartTitleInput';
 
 /**
  * @description Editor of bar chart
@@ -15,6 +21,7 @@ import type { ChartEditorProps as Props } from './types';
 export default function BarChartEditor({
   children,
   dispatch,
+  dispatchElements,
   editor,
   fontSize,
   selection,
@@ -27,7 +34,20 @@ export default function BarChartEditor({
           React.Children.map(children, (child: ?React.Node) => {
             if (React.isValidElement(child)) {
               switch (child.type) {
-                case BarChartValue: {
+                case ChartTitle: {
+                  const { children, ...props }: ChartTitleProps = child.props;
+                  return (
+                    <ChartTitleInput
+                      key={child.key}
+                      dispatch={dispatch}
+                      {...props}
+                    >
+                      {children}
+                    </ChartTitleInput>
+                  );
+                }
+
+                case BarChartElementValue: {
                   const {
                     children: value,
                     fill,
@@ -46,7 +66,7 @@ export default function BarChartEditor({
                       height={height / 3}
                       key={child.key}
                       onChange={({ currentTarget }) =>
-                        dispatch({
+                        dispatchElements({
                           type: UPDATE_BLOCK_ELEMENT,
                           body: { value: currentTarget.value },
                           index,
@@ -61,7 +81,7 @@ export default function BarChartEditor({
                   );
                 }
 
-                case BarChartTitle: {
+                case BarChartElementTitle: {
                   const {
                     children: title,
                     fill,
@@ -80,7 +100,7 @@ export default function BarChartEditor({
                       height={height / 3}
                       key={child.key}
                       onChange={({ currentTarget }) =>
-                        dispatch({
+                        dispatchElements({
                           type: UPDATE_BLOCK_ELEMENT,
                           body: { title: currentTarget.value },
                           index,
@@ -108,7 +128,7 @@ export default function BarChartEditor({
                           }
                         : {
                             onClick: () =>
-                              dispatch({
+                              dispatchElements({
                                 index,
                                 type: SELECT_BLOCK_ELEMENT,
                               }),
@@ -121,7 +141,7 @@ export default function BarChartEditor({
               }
             }
           }),
-        [children, dispatch, editor.selection, fontSize]
+        [children, dispatch, dispatchElements, editor.selection, fontSize]
       )}
     </svg>
   );

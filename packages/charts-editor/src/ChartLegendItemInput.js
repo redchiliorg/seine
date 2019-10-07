@@ -23,7 +23,6 @@ export default function ChartLegendItemInput({
     <ForeignInput
       fontSize={fontSize}
       height={size}
-      key={[id, 'input']}
       lineHeight={lineHeight}
       onChange={({ currentTarget }) =>
         dispatch({

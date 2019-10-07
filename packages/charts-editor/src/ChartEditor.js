@@ -53,7 +53,8 @@ const ChartEditorContent = ({
   selection.length === 1 && selection[0] === chartProps.id ? (
     <ExactChartEditor
       {...chartProps}
-      dispatch={dispatchElements}
+      dispatch={dispatch}
+      dispatchElements={dispatchElements}
       editor={editor}
       kind={kind}
       selection={selection}
