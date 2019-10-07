@@ -14,6 +14,7 @@ import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartElementAddButton from './ChartElementAddButton';
 import ChartSwitchFormatInput from './ChartSwitchFormatInput';
+import ChartUnitsInput from './ChartUnitsInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -77,6 +78,18 @@ export default function BarChartToolbar({
             />
           </>
         )}
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartUnitsInput
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
       </Toolbar.Group>
 
       <Toolbar.Separator />

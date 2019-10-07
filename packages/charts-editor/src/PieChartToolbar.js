@@ -13,6 +13,7 @@ import {
 import ChartElementColorButton from './ChartElementColorButton';
 import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
+import ChartUnitsInput from './ChartUnitsInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -75,6 +76,18 @@ export default function PieChartToolbar({
             />
           </>
         )}
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartUnitsInput
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
       </Toolbar.Group>
       {children}
     </Toolbar>

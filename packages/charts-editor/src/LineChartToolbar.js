@@ -19,6 +19,7 @@ import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
 import ChartElementColorButton from './ChartElementColorButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartSwitchFormatInput from './ChartSwitchFormatInput';
+import ChartUnitsInput from './ChartUnitsInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -108,6 +109,18 @@ export default function LineChartToolbar({
         >
           Add line
         </ChartElementAddButton>
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartUnitsInput
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
       </Toolbar.Group>
 
       <Toolbar.Separator />

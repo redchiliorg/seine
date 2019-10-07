@@ -10,6 +10,7 @@ import {
   defaultChartSize,
   defaultChartTitle,
   defaultChartXAxis,
+  defaultChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
 import BarChartElementTitle from './BarChartElementTitle';
@@ -33,6 +34,7 @@ export default function BarChart({
   palette = defaultChartPalette,
   size = defaultChartSize,
   title = defaultChartTitle,
+  units = defaultChartUnits,
   xAxis = defaultChartXAxis,
 
   as: View = 'svg',
@@ -111,6 +113,7 @@ export default function BarChart({
             lineHeight={fontHeight}
             x={titleMaxLen + len + 1.5 * fontSize}
             y={y}
+            units={units}
             width={valueMaxLen}
           >
             {value}
@@ -146,6 +149,7 @@ export default function BarChart({
                 y={(elements.length * barHeight) / 2 + fontSize * lineHeight}
               >
                 {(index + 1) * dx}
+                {units}
               </text>,
             ]
           )

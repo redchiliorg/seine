@@ -45,6 +45,7 @@ export default function LineChart({
   parent_id,
   size,
   type,
+  units,
   ...viewProps
 }: Props) {
   fontSize *= 2;
@@ -88,20 +89,11 @@ export default function LineChart({
       <marker id="arrowUp" overflow="visible" orient="auto">
         <path
           d="m0 0 3-3-11 3 11 3-3-3z"
-          fill="#00ff00"
+          fill="#000000"
           fillRule="evenodd"
-          stroke="#0f0"
+          stroke="#000000"
         />
       </marker>
-      {yAxis ? (
-        <path
-          d={`m${x} ${y}v${height}`}
-          fill="none"
-          key="y-axis"
-          markerStart="url(#arrowUp)"
-          stroke="#00ff00"
-        />
-      ) : null}
 
       {xAxis
         ? groups.map(([group], index) => (
@@ -137,10 +129,21 @@ export default function LineChart({
               y={y + height - (index * height) / length + fontSize / 2}
             >
               {minValue + index * dy}
+              {units}
             </text>
           ) : null,
         ]
       )}
+
+      {yAxis ? (
+        <path
+          d={`m${x} ${y}v${height}`}
+          fill="none"
+          key="y-axis"
+          markerStart="url(#arrowUp)"
+          stroke="#000000"
+        />
+      ) : null}
 
       {titles.map(({ id, title }, titleIndex) => [
         <marker
@@ -191,6 +194,7 @@ export default function LineChart({
                 index={index}
                 key={['value', titleIndex, groupIndex]}
                 lineHeight={lineHeight}
+                units={units}
                 value={value}
                 width={3 * fontSize}
                 x={x + (groupIndex * width) / (groups.length - 1)}

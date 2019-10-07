@@ -1,6 +1,6 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.40",
+  "version": "0.3.42",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -18,7 +18,9 @@
     "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {
+    "@material-ui/core": "^4.3.3",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }

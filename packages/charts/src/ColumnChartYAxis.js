@@ -8,6 +8,7 @@ export function ColumnChartYAxis({
   height,
   maxValue,
   minValue,
+  units,
   x,
   y,
 }) {
@@ -22,7 +23,10 @@ export function ColumnChartYAxis({
       x={x + 1}
       y={y + height - (index * height) / length}
     >
-      <tspan>{minValue + index * dy}</tspan>
+      <tspan>
+        {minValue + index * dy}
+        {units}
+      </tspan>
     </text>
   ));
 }
