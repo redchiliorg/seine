@@ -88,20 +88,11 @@ export default function LineChart({
       <marker id="arrowUp" overflow="visible" orient="auto">
         <path
           d="m0 0 3-3-11 3 11 3-3-3z"
-          fill="#00ff00"
+          fill="#000000"
           fillRule="evenodd"
-          stroke="#0f0"
+          stroke="#000000"
         />
       </marker>
-      {yAxis ? (
-        <path
-          d={`m${x} ${y}v${height}`}
-          fill="none"
-          key="y-axis"
-          markerStart="url(#arrowUp)"
-          stroke="#00ff00"
-        />
-      ) : null}
 
       {xAxis
         ? groups.map(([group], index) => (
@@ -141,6 +132,16 @@ export default function LineChart({
           ) : null,
         ]
       )}
+
+      {yAxis ? (
+        <path
+          d={`m${x} ${y}v${height}`}
+          fill="none"
+          key="y-axis"
+          markerStart="url(#arrowUp)"
+          stroke="#000000"
+        />
+      ) : null}
 
       {titles.map(({ id, title }, titleIndex) => [
         <marker
