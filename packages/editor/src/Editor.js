@@ -7,6 +7,7 @@ import type { Block, BlocksAction, BlocksState } from '@seine/core';
 import {
   blockTypes,
   CREATE_BLOCK,
+  DESELECT_ALL_BLOCKS,
   initialBlocksState,
   reduceBlocks,
 } from '@seine/core';
@@ -20,6 +21,7 @@ import {
 } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import Box from '@material-ui/core/Box';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
 const defaultEditorChildren = [];
 
@@ -116,28 +118,35 @@ export default function Editor({
 
   return (
     <StylesProvider>
-      <Container>
-        <BlockToolbar
-          {...block}
-          blocks={blocks}
-          dispatch={dispatch}
-          selection={selection}
-        >
-          <BlockToolbarGroup dispatch={dispatch} selection={selection} />
-        </BlockToolbar>
-
-        {contentChildren.length > 0 && (
-          <ContentPaper>
-            <Content
-              {...contentProps}
-              parent={parent}
-              blockRenderMap={blockRenderMap}
-            >
-              {contentChildren}
-            </Content>
-          </ContentPaper>
+      <ClickAwayListener
+        onClickAway={React.useCallback(
+          () => dispatch({ type: DESELECT_ALL_BLOCKS }),
+          [dispatch]
         )}
-      </Container>
+      >
+        <Container>
+          <BlockToolbar
+            {...block}
+            blocks={blocks}
+            dispatch={dispatch}
+            selection={selection}
+          >
+            <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+          </BlockToolbar>
+
+          {contentChildren.length > 0 && (
+            <ContentPaper>
+              <Content
+                {...contentProps}
+                parent={parent}
+                blockRenderMap={blockRenderMap}
+              >
+                {contentChildren}
+              </Content>
+            </ContentPaper>
+          )}
+        </Container>
+      </ClickAwayListener>
     </StylesProvider>
   );
 }

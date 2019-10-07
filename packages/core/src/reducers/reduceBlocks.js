@@ -57,6 +57,11 @@ export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
 };
 
+export const DESELECT_ALL_BLOCKS = '@seine/core/deselectAllBlocks';
+export type DeselectAllBlocksAction = {
+  type: typeof DESELECT_ALL_BLOCKS,
+};
+
 export const SELECT_BLOCK = '@seine/core/selectBlock';
 export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
@@ -98,6 +103,7 @@ export type BlocksCreateAction =
 export type BlocksAction =
   | BlocksCreateAction
   | DeleteSelectedBlocksAction
+  | DeselectAllBlocksAction
   | SelectBlockAction
   | UpdateBlockDataAction
   | UpdateBlockFormatAction
@@ -219,7 +225,7 @@ export function reduceBlocks(
       }
     }
 
-    case DELETE_SELECTED_BLOCKS:
+    case DELETE_SELECTED_BLOCKS: {
       if (state.selection.length === 0) {
         return state;
       }
@@ -245,6 +251,17 @@ export function reduceBlocks(
               : block;
           }),
       };
+    }
+
+    case DESELECT_ALL_BLOCKS: {
+      if (state.selection.length === 0) {
+        return state;
+      }
+      return {
+        ...state,
+        selection: [],
+      };
+    }
 
     case UPDATE_BLOCK_BODY:
     case UPDATE_BLOCK_EDITOR:
