@@ -7,6 +7,7 @@ export type Props = {
   height: number,
   lineHeight: number,
   index: number,
+  units: string,
   width: number,
   x: number,
   y: number,
@@ -21,12 +22,14 @@ export default function BarChartElementValue({
   children,
   fill,
   lineHeight,
+  units,
   x,
   y,
 }: Props) {
   return (
     <text x={x} y={y + lineHeight} fill={fill}>
       {children}
+      {units}
     </text>
   );
 }

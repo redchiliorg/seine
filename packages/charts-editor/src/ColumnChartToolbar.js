@@ -18,6 +18,7 @@ import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
 import ChartGroupAddButton from './ChartGroupAddButton';
 import ChartSwitchFormatInput from './ChartSwitchFormatInput';
+import ChartUnitsInput from './ChartUnitsInput';
 
 type Props = Block & {
   dispatch: (Action) => any,
@@ -87,6 +88,18 @@ export default function ColumnChartToolbar({
           id={id}
         />
         <ChartElementAddButton
+          body={body}
+          dispatch={dispatch}
+          editor={editor}
+          format={format}
+          id={id}
+        />
+      </Toolbar.Group>
+
+      <Toolbar.Separator />
+
+      <Toolbar.Group>
+        <ChartUnitsInput
           body={body}
           dispatch={dispatch}
           editor={editor}

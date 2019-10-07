@@ -45,6 +45,7 @@ export default function LineChart({
   parent_id,
   size,
   type,
+  units,
   ...viewProps
 }: Props) {
   fontSize *= 2;
@@ -128,6 +129,7 @@ export default function LineChart({
               y={y + height - (index * height) / length + fontSize / 2}
             >
               {minValue + index * dy}
+              {units}
             </text>
           ) : null,
         ]
@@ -192,6 +194,7 @@ export default function LineChart({
                 index={index}
                 key={['value', titleIndex, groupIndex]}
                 lineHeight={lineHeight}
+                units={units}
                 value={value}
                 width={3 * fontSize}
                 x={x + (groupIndex * width) / (groups.length - 1)}

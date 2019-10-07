@@ -8,6 +8,7 @@ import {
   defaultChartMinValue,
   defaultChartPalette,
   defaultChartTitle,
+  defaultChartUnits,
   defaultChartYAxis,
 } from './constants';
 import type { ChartProps } from './types';
@@ -36,6 +37,7 @@ export default function ColumnChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   title = defaultChartTitle,
+  units = defaultChartUnits,
   yAxis = defaultChartYAxis,
 
   as: View = 'svg',
@@ -99,21 +101,13 @@ export default function ColumnChart({
               maxValue={maxValue}
               palette={palette}
               size={10}
+              units={units}
               width={10}
               x={xPadding * 2 + index * barGroupWidth}
               y={110}
             />
           )),
-        [
-          barGroupWidth,
-          fontSize,
-          groups,
-          lineHeight,
-          maxValue,
-          minValue,
-          palette,
-          xPadding,
-        ]
+        [fontSize, groups, lineHeight, maxValue, minValue, palette, units]
       )}
       <path
         d={`m${xPadding + 20} ${110}h${barGroupWidth * groups.length -
@@ -129,6 +123,7 @@ export default function ColumnChart({
           maxValue={maxValue}
           minValue={minValue}
           title={title}
+          units={units}
           x={xPadding}
           y={20}
         />

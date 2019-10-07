@@ -6,6 +6,7 @@ export type Props = {
   height: number,
   index: number,
   lineHeight: number,
+  units: string,
   value: number,
   width: number,
   x: number,
@@ -17,10 +18,17 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function LineChartValue({ fontSize, value, x, y }: Props) {
+export default function LineChartValue({
+  fontSize,
+  units,
+  value,
+  x,
+  y,
+}: Props) {
   return (
     <text fontSize={fontSize} x={x} y={y}>
       {value}
+      {units}
     </text>
   );
 }

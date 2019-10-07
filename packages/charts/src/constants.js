@@ -21,9 +21,9 @@ export const defaultChartPalette = [
   '#acbecb',
   '#707070',
 ];
-export const defaultChartSize = 100;
-export const defaultChartUnits = '%';
 export const defaultChartMinValue = 0;
+export const defaultChartSize = 100;
+export const defaultChartUnits = '';
 export const defaultChartXAxis = true;
 export const defaultChartYAxis = true;
 
@@ -74,3 +74,5 @@ export const chartPaletteBlack = [
   '#afafaf',
   '#dbdcdb',
 ];
+
+export const defaultPieChartUnits = '%';

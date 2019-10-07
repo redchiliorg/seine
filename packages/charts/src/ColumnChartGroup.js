@@ -12,6 +12,7 @@ export type Props = {
   maxValue: number,
   palette: string[],
   size: number,
+  units: string,
   width: number,
   x: number,
   y: number,
@@ -32,6 +33,7 @@ export default function ColumnChartGroup({
   maxValue,
   palette,
   size,
+  units,
   width,
   x,
   y,
@@ -67,6 +69,7 @@ export default function ColumnChartGroup({
               : value > maxValue
               ? `> ${maxValue}`
               : value}
+            {units}
           </tspan>
         </text>,
       ];

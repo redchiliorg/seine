@@ -7,7 +7,7 @@ import {
   defaultChartPalette,
   defaultChartSize,
   defaultChartTitle,
-  defaultChartUnits,
+  defaultPieChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
 import PieChartTitle from './PieChartTitle';
@@ -29,7 +29,7 @@ export default function PieChart({
   palette = defaultChartPalette,
   size = defaultChartSize,
   title = defaultChartTitle,
-  units = defaultChartUnits,
+  units = defaultPieChartUnits,
 
   as: View = 'svg',
   id,
