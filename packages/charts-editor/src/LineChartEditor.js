@@ -71,7 +71,7 @@ export default function LineChartEditor({
                 child,
                 <ForeignInput
                   align={'center'}
-                  fontSize={fontSize}
+                  fontSize={0.9 * fontSize}
                   fontWeight={fontWeight}
                   height={height}
                   key={[child.key, 'input']}
