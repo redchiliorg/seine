@@ -27,7 +27,12 @@ export const SELECT_BLOCK_ELEMENT = '@seine/core/selectBlockElement';
 type SelectBlockElementAction = {
   type: typeof SELECT_BLOCK_ELEMENT,
   index: number | null,
-  body: $Shape<BlockElement>,
+};
+
+export const DESELECT_BLOCK_ELEMENT = '@seine/core/deselectBlockElement';
+type DeselectBlockElementAction = {
+  type: typeof DESELECT_BLOCK_ELEMENT,
+  index: number,
 };
 
 export const UPDATE_BLOCK_ELEMENT = '@seine/core/updateBlockElement';
@@ -57,7 +62,8 @@ export type ElementsAction =
   | UpdateBlockElementByIdAction
   | UpdateBlockElementByGroup
   | RemoveBlockElementAction
-  | SelectBlockElementAction;
+  | SelectBlockElementAction
+  | DeselectBlockElementAction;
 
 /**
  * @description Reduce actions of block elements.
@@ -116,6 +122,16 @@ export function reduceElements(
       return {
         ...state,
         selection: action.index,
+      };
+    }
+
+    case DESELECT_BLOCK_ELEMENT: {
+      if (state.selection !== action.index) {
+        return state;
+      }
+      return {
+        ...state,
+        selection: -1,
       };
     }
 

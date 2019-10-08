@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import { Input } from '@seine/ui';
 import type {
   BlockId,
   BlocksAction,
@@ -9,6 +8,7 @@ import type {
 } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultChartFormat, defaultChartUnits } from '@seine/charts';
+import { TextField } from '@seine/ui';
 import styled from 'styled-components';
 
 type Props = {
@@ -18,7 +18,7 @@ type Props = {
   id: BlockId,
 };
 
-const StyledInput = styled(Input)`
+const Input = styled(TextField)`
   max-width: 4em;
 `;
 
@@ -32,7 +32,7 @@ export default function ChartUnitsInput({
   format: { units = defaultChartUnits } = defaultChartFormat,
 }: Props) {
   return (
-    <StyledInput
+    <Input
       onChange={React.useCallback(
         ({ currentTarget }) =>
           dispatch({
@@ -41,7 +41,10 @@ export default function ChartUnitsInput({
           }),
         [dispatch]
       )}
-      placeholder={'units'}
+      InputProps={{
+        placeholder: 'units',
+      }}
+      margin={'dense'}
       value={units}
     />
   );

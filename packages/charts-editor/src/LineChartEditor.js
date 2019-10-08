@@ -8,8 +8,9 @@ import {
   LineChartValue,
 } from '@seine/charts';
 import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
-import { ForeignInput } from '@seine/ui';
+import { ClickAwayListener, ForeignInput } from '@seine/ui';
 import {
+  DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
@@ -134,28 +135,40 @@ export default function LineChartEditor({
               if (scope === 'line') {
                 return [
                   child,
-                  <path
-                    {...child.props}
+                  <ClickAwayListener
                     key={[child.key, 'click-target']}
-                    {...(editor.selection === index
-                      ? {
-                          strokeDasharray: 0.5,
-                          strokeWidth: 0.15,
-                          stroke: 'black',
-                        }
-                      : {
-                          strokeWidth: 4,
-                          stroke: 'transparent',
-                          markerEnd: 'none',
-                          markerMid: 'none',
-                          markerStart: 'none',
-                          onClick: () =>
-                            dispatchElements({
-                              index,
-                              type: SELECT_BLOCK_ELEMENT,
-                            }),
-                        })}
-                  />,
+                    onClickAway={(event) =>
+                      !(event.target instanceof HTMLButtonElement) &&
+                      dispatchElements({
+                        type: DESELECT_BLOCK_ELEMENT,
+                        index,
+                      })
+                    }
+                  >
+                    <path
+                      {...child.props}
+                      {...(editor.selection === index
+                        ? {
+                            strokeDasharray: 0.5,
+                            strokeWidth: 0.15,
+                            stroke: 'black',
+                          }
+                        : {
+                            strokeWidth: 4,
+                            stroke: 'transparent',
+                            markerEnd: 'none',
+                            markerMid: 'none',
+                            markerStart: 'none',
+                            onClick: (event) => {
+                              event.stopPropagation();
+                              dispatchElements({
+                                index,
+                                type: SELECT_BLOCK_ELEMENT,
+                              });
+                            },
+                          })}
+                    />
+                  </ClickAwayListener>,
                 ];
               }
               return child;

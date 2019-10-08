@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
+import { ClickAwayListener, ForeignInput } from '@seine/ui';
 import type { ColumnChartGroupProps } from '@seine/charts';
 import {
   ChartLegendItem,
@@ -9,6 +9,7 @@ import {
   ColumnChartGroup,
 } from '@seine/charts';
 import {
+  DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
@@ -119,28 +120,40 @@ export default function ColumnChartEditor({
                   const dy = (height * minValue) / (maxValue - minValue);
                   const fill = palette[index % palette.length];
                   return (
-                    <rect
-                      fill={fill}
-                      fontSize={fontSize}
-                      height={rectHeight - dy}
+                    <ClickAwayListener
                       key={['bar', 'selection', index]}
-                      width={size}
-                      x={x + size * index}
-                      y={dy + y - rectHeight}
-                      {...(editor.selection === index
-                        ? {
-                            strokeDasharray: 0.5,
-                            strokeWidth: 0.15,
-                            stroke: 'black',
-                          }
-                        : {
-                            onClick: () =>
-                              dispatchElements({
-                                index,
-                                type: SELECT_BLOCK_ELEMENT,
-                              }),
-                          })}
-                    />
+                      onClickAway={(event) =>
+                        !(event.target instanceof HTMLButtonElement) &&
+                        dispatchElements({
+                          type: DESELECT_BLOCK_ELEMENT,
+                          index,
+                        })
+                      }
+                    >
+                      <rect
+                        fill={fill}
+                        fontSize={fontSize}
+                        height={rectHeight - dy}
+                        width={size}
+                        x={x + size * index}
+                        y={dy + y - rectHeight}
+                        {...(editor.selection === index
+                          ? {
+                              strokeDasharray: 0.5,
+                              strokeWidth: 0.15,
+                              stroke: 'black',
+                            }
+                          : {
+                              onClick: (event) => {
+                                event.stopPropagation();
+                                dispatchElements({
+                                  index,
+                                  type: SELECT_BLOCK_ELEMENT,
+                                });
+                              },
+                            })}
+                      />
+                    </ClickAwayListener>
                   );
                 }),
               ];

@@ -7,8 +7,12 @@ import {
   ChartTitleProps,
 } from '@seine/charts';
 import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
-import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
-import { ForeignInput } from '@seine/ui';
+import {
+  DESELECT_BLOCK_ELEMENT,
+  SELECT_BLOCK_ELEMENT,
+  UPDATE_BLOCK_ELEMENT,
+} from '@seine/core';
+import { ClickAwayListener, ForeignInput } from '@seine/ui';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
@@ -117,23 +121,35 @@ export default function BarChartEditor({
                 case 'rect':
                   const index = +child.key.split(',')[1];
                   return (
-                    <rect
-                      {...child.props}
+                    <ClickAwayListener
                       key={child.key}
-                      {...(editor.selection === index
-                        ? {
-                            strokeDasharray: 0.25,
-                            strokeWidth: 0.05,
-                            stroke: 'black',
-                          }
-                        : {
-                            onClick: () =>
-                              dispatchElements({
-                                index,
-                                type: SELECT_BLOCK_ELEMENT,
-                              }),
-                          })}
-                    />
+                      onClickAway={(event) =>
+                        !(event.target instanceof HTMLButtonElement) &&
+                        dispatchElements({
+                          type: DESELECT_BLOCK_ELEMENT,
+                          index,
+                        })
+                      }
+                    >
+                      <rect
+                        {...child.props}
+                        {...(editor.selection === index
+                          ? {
+                              strokeDasharray: 0.25,
+                              strokeWidth: 0.05,
+                              stroke: 'black',
+                            }
+                          : {
+                              onClick: (event) => {
+                                event.stopPropagation();
+                                dispatchElements({
+                                  index,
+                                  type: SELECT_BLOCK_ELEMENT,
+                                });
+                              },
+                            })}
+                      />
+                    </ClickAwayListener>
                   );
 
                 default:
