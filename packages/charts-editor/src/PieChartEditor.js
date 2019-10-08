@@ -26,7 +26,7 @@ import ChartTitleInput from './ChartTitleInput';
 export default function PieChartEditor({
   children,
   dispatch,
-  dispatchElement,
+  dispatchElements,
   editor,
   selection,
   ...svgProps
@@ -114,7 +114,7 @@ export default function PieChartEditor({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatch({
+                    dispatchElements({
                       type: UPDATE_BLOCK_ELEMENT,
                       body: { value: +currentTarget.value },
                       index,
@@ -144,7 +144,7 @@ export default function PieChartEditor({
                 <g
                   key={[child.key, 'click-target']}
                   onClick={() =>
-                    dispatch({
+                    dispatchElements({
                       index,
                       type: SELECT_BLOCK_ELEMENT,
                     })

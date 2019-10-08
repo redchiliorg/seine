@@ -120,7 +120,11 @@ export default function Editor({
     <StylesProvider>
       <ClickAwayListener
         onClickAway={React.useCallback(
-          () => dispatch({ type: DESELECT_ALL_BLOCKS }),
+          (event) =>
+            !(
+              event.target instanceof HTMLElement &&
+              event.target.getAttribute('role') === 'option'
+            ) && dispatch({ type: DESELECT_ALL_BLOCKS }),
           [dispatch]
         )}
       >
