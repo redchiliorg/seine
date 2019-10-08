@@ -27,21 +27,12 @@ export const defaultChartUnits = '';
 export const defaultChartXAxis = true;
 export const defaultChartYAxis = true;
 
-export const defaultChartBody = { elements: [] };
-export const defaultChartEditor = { selection: initialElementsState.selection };
-export const defaultChartFormat = {
-  palette: defaultChartPalette,
-  xAxis: defaultChartXAxis,
-  yAxis: defaultChartYAxis,
-};
-
 export const chartPaletteMcKinseyDeep = [
   '#222667',
   '#2d3386',
   '#5960a4',
   '#7e8cbb',
   '#a5afd3',
-  '#c0c9da',
   '#c0c9da',
 ];
 
@@ -74,5 +65,25 @@ export const chartPaletteBlack = [
   '#afafaf',
   '#dbdcdb',
 ];
+
+export const chartPaletteKeyValues = {
+  bcg: chartPaletteBCG,
+  black: chartPaletteBlack,
+  default: defaultChartPalette,
+  mcKinseyDeep: chartPaletteMcKinseyDeep,
+  mcKinseyLight: chartPaletteMcKinseyLight,
+};
+export const defaultChartPaletteKey = 'default';
+
+export const defaultChartBody = {
+  elements: [],
+};
+export const defaultChartEditor = { selection: initialElementsState.selection };
+export const defaultChartFormat = {
+  palette: defaultChartPalette,
+  paletteKey: defaultChartPaletteKey,
+  xAxis: defaultChartXAxis,
+  yAxis: defaultChartYAxis,
+};
 
 export const defaultPieChartUnits = '%';

@@ -4,7 +4,12 @@ import styled, { css } from 'styled-components';
 import { Button } from '@seine/ui';
 import { SketchPicker } from 'react-color';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
-import { defaultChartEditor, defaultChartFormat } from '@seine/charts';
+import {
+  chartPaletteKeyValues,
+  defaultChartEditor,
+  defaultChartFormat,
+  defaultChartPaletteKey,
+} from '@seine/charts';
 
 const StyledColorButton = styled(Button).attrs(({ children = '' }) => ({
   children,
@@ -30,7 +35,10 @@ const ColorPickerContainer = styled.div`
 export default function ChartElementColorButton({
   dispatch,
   editor: { selection = defaultChartEditor.selection } = defaultChartEditor,
-  format: { palette = defaultChartFormat.palette } = defaultChartFormat,
+  format: {
+    palette = defaultChartFormat.palette,
+    paletteKey = defaultChartPaletteKey,
+  } = defaultChartFormat,
 }) {
   const [open, setOpen] = React.useState(false);
   const colorIndex = selection % palette.length;
@@ -45,6 +53,7 @@ export default function ChartElementColorButton({
       <ColorPickerContainer open={open}>
         <SketchPicker
           color={color}
+          presetColors={chartPaletteKeyValues[paletteKey]}
           onChange={React.useCallback(
             ({ hex }) =>
               dispatch({

@@ -11,6 +11,7 @@ import {
   defaultChartTitle,
   defaultChartXAxis,
   defaultChartUnits,
+  defaultChartPaletteKey,
 } from './constants';
 import type { ChartProps } from './types';
 import BarChartElementTitle from './BarChartElementTitle';
@@ -32,6 +33,7 @@ export default function BarChart({
   fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
+  paletteKey = defaultChartPaletteKey,
   size = defaultChartSize,
   title = defaultChartTitle,
   units = defaultChartUnits,

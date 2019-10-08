@@ -19,6 +19,7 @@ export type ChartFormat = {
   minValue: number,
   maxValue: number,
   palette: string[],
+  paletteKey: 'bcg' | 'black' | 'default' | 'mcKinseyDeep' | 'mcKinseyLight',
   units: string,
   xAxis: boolean,
   yAxis: boolean,

@@ -10,6 +10,7 @@ import {
   defaultChartMinValue,
   defaultChartXAxis,
   defaultChartYAxis,
+  defaultChartPaletteKey,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
@@ -36,6 +37,7 @@ export default function LineChart({
   fontSize = defaultChartFontSize,
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
+  paletteKey = defaultChartPaletteKey,
   title = defaultChartTitle,
   yAxis = defaultChartYAxis,
   xAxis = defaultChartXAxis,

@@ -1,17 +1,17 @@
 // @flow
 import * as React from 'react';
 import {
-  chartPaletteBCG,
-  chartPaletteBlack,
-  chartPaletteMcKinseyDeep,
-  chartPaletteMcKinseyLight,
-  defaultChartPalette,
+  chartPaletteKeyValues,
+  defaultChartFormat,
+  defaultChartPaletteKey,
 } from '@seine/charts';
-import { ActionButton } from '@seine/ui';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
+import FormControl from '@material-ui/core/FormControl';
+import MenuItem from '@material-ui/core/MenuItem';
+import MuiSelect from '@material-ui/core/Select';
 import styled, { css } from 'styled-components';
 
-const ButtonText = styled.span`
+const Label = styled.span.attrs(({ role = 'option' }) => ({ role }))`
   font-weight: bold;
   ${(props) =>
     css`
@@ -19,61 +19,68 @@ const ButtonText = styled.span`
     `}
 `;
 
+const Select = styled(MuiSelect)`
+  height: 100%;
+`;
+
 /**
  * @description Buttons to select chart's default palette
  * @returns {*}
  */
-export default function ChartPaletteSelect({ dispatch, id }) {
+export default function ChartPaletteSelect({
+  dispatch,
+  format: { paletteKey = defaultChartPaletteKey } = defaultChartFormat,
+  id,
+}) {
   return (
-    <>
-      <ActionButton
-        dispatch={dispatch}
-        format={{ palette: defaultChartPalette }}
-        id={id}
-        type={UPDATE_BLOCK_FORMAT}
+    <FormControl>
+      <Select
+        value={paletteKey}
+        onChange={React.useCallback(
+          (event) => {
+            const paletteKey = event.target.value;
+            dispatch(
+              {
+                format: {
+                  palette: chartPaletteKeyValues[paletteKey],
+                  paletteKey,
+                },
+                id,
+                type: UPDATE_BLOCK_FORMAT,
+              },
+              []
+            );
+          },
+          [dispatch, id]
+        )}
+        row
       >
-        <ButtonText color={defaultChartPalette[3]}>General</ButtonText>
-      </ActionButton>
+        <MenuItem value={'default'}>
+          <Label color={chartPaletteKeyValues.default[3]}>
+            General Palette
+          </Label>
+        </MenuItem>
 
-      <ActionButton
-        dispatch={dispatch}
-        format={{ palette: chartPaletteMcKinseyDeep }}
-        id={id}
-        type={UPDATE_BLOCK_FORMAT}
-      >
-        <ButtonText color={chartPaletteMcKinseyDeep[0]}>
-          McKinsey Deep
-        </ButtonText>
-      </ActionButton>
+        <MenuItem value={'mcKinseyDeep'}>
+          <Label color={chartPaletteKeyValues.mcKinseyDeep[0]}>
+            McKinsey Deep
+          </Label>
+        </MenuItem>
 
-      <ActionButton
-        dispatch={dispatch}
-        format={{ palette: chartPaletteMcKinseyLight }}
-        id={id}
-        type={UPDATE_BLOCK_FORMAT}
-      >
-        <ButtonText color={chartPaletteMcKinseyLight[0]}>
-          McKinsey Light
-        </ButtonText>
-      </ActionButton>
+        <MenuItem value={'mcKinseyLight'}>
+          <Label color={chartPaletteKeyValues.mcKinseyLight[0]}>
+            McKinsey Light
+          </Label>
+        </MenuItem>
 
-      <ActionButton
-        dispatch={dispatch}
-        format={{ palette: chartPaletteBCG }}
-        id={id}
-        type={UPDATE_BLOCK_FORMAT}
-      >
-        <ButtonText color={chartPaletteBCG[0]}>BCG</ButtonText>
-      </ActionButton>
+        <MenuItem value={'bcg'}>
+          <Label color={chartPaletteKeyValues.bcg[0]}>BCG</Label>
+        </MenuItem>
 
-      <ActionButton
-        dispatch={dispatch}
-        format={{ palette: chartPaletteBlack }}
-        id={id}
-        type={UPDATE_BLOCK_FORMAT}
-      >
-        <ButtonText color={chartPaletteBlack[0]}>Black</ButtonText>
-      </ActionButton>
-    </>
+        <MenuItem value={'black'}>
+          <Label color={chartPaletteKeyValues.black[0]}>Black</Label>
+        </MenuItem>
+      </Select>
+    </FormControl>
   );
 }
