@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
+import { ClickAwayListener, ForeignInput } from '@seine/ui';
 import {
   ChartTitle,
   ChartTitleProps,
@@ -13,7 +13,11 @@ import type {
   PieChartTitleProps,
   PieChartValueProps,
 } from '@seine/charts';
-import { SELECT_BLOCK_ELEMENT, UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import {
+  DESELECT_BLOCK_ELEMENT,
+  SELECT_BLOCK_ELEMENT,
+  UPDATE_BLOCK_ELEMENT,
+} from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
@@ -133,22 +137,35 @@ export default function PieChartEditor({
               const { index }: PieChartSliceProps = child.props;
               return index === editor.selection ? (
                 [
-                  child,
-                  <PieChartSlice
-                    {...child.props}
+                  <ClickAwayListener
                     key={[child.key, 'selected']}
-                    palette={['url(#selected-slice)']}
-                  />,
+                    onClickAway={(event) =>
+                      !(event.target instanceof HTMLButtonElement) &&
+                      dispatchElements({
+                        type: DESELECT_BLOCK_ELEMENT,
+                        index,
+                      })
+                    }
+                  >
+                    <g>
+                      {child}
+                      <PieChartSlice
+                        {...child.props}
+                        palette={['url(#selected-slice)']}
+                      />
+                    </g>
+                  </ClickAwayListener>,
                 ]
               ) : (
                 <g
                   key={[child.key, 'click-target']}
-                  onClick={() =>
+                  onClick={(event) => {
+                    event.stopPropagation();
                     dispatchElements({
                       index,
                       type: SELECT_BLOCK_ELEMENT,
-                    })
-                  }
+                    });
+                  }}
                 >
                   {child}
                 </g>

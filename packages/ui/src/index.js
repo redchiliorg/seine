@@ -1,4 +1,9 @@
 // @flow
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import TextField from '@material-ui/core/TextField';
+
+export { ClickAwayListener, TextField };
+
 export * from './hooks';
 
 export { default as BlockActions } from './BlockActions';
