@@ -19,7 +19,9 @@ type Props = {
 };
 
 const Input = styled(TextField)`
-  max-width: 4em;
+  && {
+    max-width: 4em;
+  }
 `;
 
 /**

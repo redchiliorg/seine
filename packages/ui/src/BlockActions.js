@@ -19,35 +19,40 @@ type Props = {
   id: BlockId,
 };
 
-const Container = styled(Grid)`
+const Container = Box;
+
+const Group = styled(Grid)`
   && {
-    height: 100%;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    z-index: 999;
+    ${({ theme, extended }) => css`
+      height: calc(100% + ${extended ? 2 * theme.spacing(5) : 0}px);
+      left: 0;
+      position: absolute;
+      pointer-events: none;
+      top: -${extended ? theme.spacing(5) : 0}px;
+      z-index: 999;
+    `}
   }
 `;
 
 const Item = styled(Grid)`
   && {
-    display: flex;
-    align-items: center;
-    pointer-events: all;
-    opacity: 0;
-    transition: opacity 0.1s;
-    :hover {
-      opacity: 1;
-    }
-    ${({ direction }) =>
-      direction === 'column'
+    ${({ direction }) => css`
+      align-items: center;
+      display: flex;
+      opacity: 0;
+      :hover {
+        opacity: 1;
+      }
+      pointer-events: all;
+      transition: opacity 0.1s;
+      ${direction === 'column'
         ? css`
             width: 100%;
           `
         : css`
             height: 100%;
           `}
+    `}
   }
 `;
 
@@ -56,31 +61,37 @@ const Item = styled(Grid)`
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BlockActions(props: Props) {
+export default function BlockActions({ extended = false, ...fabProps }: Props) {
   return (
-    <Box>
-      <Container alignItems={'center'} container justify={'space-between'}>
+    <Container extended={extended}>
+      <Group
+        alignItems={'center'}
+        container
+        extended={extended}
+        justify={'space-between'}
+      >
         <Item item>
-          <BlockAddFab {...props} type={CREATE_LEFT_BLOCK} />
+          <BlockAddFab {...fabProps} type={CREATE_LEFT_BLOCK} />
         </Item>
         <Item item>
-          <BlockAddFab {...props} type={CREATE_RIGHT_BLOCK} />
+          <BlockAddFab {...fabProps} type={CREATE_RIGHT_BLOCK} />
         </Item>
-      </Container>
+      </Group>
 
-      <Container
+      <Group
         alignItems={'center'}
         container
         direction={'column'}
+        extended={extended}
         justify={'space-between'}
       >
         <Item container item direction={'column'}>
-          <BlockAddFab {...props} type={CREATE_TOP_BLOCK} />
+          <BlockAddFab {...fabProps} type={CREATE_TOP_BLOCK} />
         </Item>
         <Item container item direction={'column'}>
-          <BlockAddFab {...props} type={CREATE_BOTTOM_BLOCK} />
+          <BlockAddFab {...fabProps} type={CREATE_BOTTOM_BLOCK} />
         </Item>
-      </Container>
-    </Box>
+      </Group>
+    </Container>
   );
 }

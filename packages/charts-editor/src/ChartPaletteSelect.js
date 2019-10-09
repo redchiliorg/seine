@@ -20,7 +20,9 @@ const Label = styled.span.attrs(({ role = 'option' }) => ({ role }))`
 `;
 
 const Select = styled(MuiSelect)`
-  height: 100%;
+  && {
+    height: 100%;
+  }
 `;
 
 /**

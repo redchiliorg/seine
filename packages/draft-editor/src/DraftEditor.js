@@ -14,6 +14,7 @@ type Props = (DraftBody & DraftFormat & BlockEditor) & {
 const Container = styled.div`
   position: relative;
   height: 100%;
+  z-index: 1000;
 
   .DraftEditor-root {
     height: 100%;
@@ -85,7 +86,7 @@ export default function DraftEditor({
       {...useSelectableBlockProps({ id, selection }, dispatch)}
     >
       {!(selection.length === 1 && selection[0] === id) && (
-        <BlockActions dispatch={dispatch} id={id} />
+        <BlockActions dispatch={dispatch} id={id} extended />
       )}
       <Editor
         editorKey={id}

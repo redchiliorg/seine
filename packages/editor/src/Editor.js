@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { ContentProps } from '@seine/content';
 import type { Block, BlocksAction, BlocksState } from '@seine/core';
@@ -52,9 +52,13 @@ export const defaultToolbarRenderMap = {
 
 const ContentPaper = styled(Paper)`
   && {
-    max-height: 40rem;
-    min-height: 6rem;
-    overflow: hidden auto;
+    ${({ theme }) => css`
+      max-height: ${10 * theme.spacing(6)}px;
+      min-height: ${2 * theme.spacing(6)}px;
+      padding-bottom: ${theme.spacing(6)}px;
+      padding-top: ${theme.spacing(6)}px;
+      overflow: hidden auto;
+    `}
   }
 `;
 
