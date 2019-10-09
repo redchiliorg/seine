@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
-import { ClickAwayListener, ForeignInput } from '@seine/ui';
+import { ForeignInput } from '@seine/ui';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import type { ColumnChartGroupProps } from '@seine/charts';
 import {
   ChartLegendItem,
@@ -123,7 +124,10 @@ export default function ColumnChartEditor({
                     <ClickAwayListener
                       key={['bar', 'selection', index]}
                       onClickAway={(event) =>
-                        !(event.target instanceof HTMLButtonElement) &&
+                        !(
+                          editor.selection === index ||
+                          event.target instanceof HTMLButtonElement
+                        ) &&
                         dispatchElements({
                           type: DESELECT_BLOCK_ELEMENT,
                           index,

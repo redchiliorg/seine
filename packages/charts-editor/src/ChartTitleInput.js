@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
-import type { ChartTitleProps } from '@seine/charts';
+import { ChartTitleProps } from '@seine/charts';
 import type { BlocksAction } from '@seine/core';
 
 type Props = ChartTitleProps & {

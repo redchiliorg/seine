@@ -8,7 +8,7 @@ import type {
 } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultChartFormat, defaultChartUnits } from '@seine/charts';
-import { TextField } from '@seine/ui';
+import TextField from '@material-ui/core/TextField';
 import styled from 'styled-components';
 
 type Props = {

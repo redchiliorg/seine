@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
-import type { BlockToolbarGroup } from '@seine/ui';
+import type { BlockDeleteButton } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
 import {
   defaultChartBody,
@@ -20,7 +20,7 @@ type Props = Block & {
   dispatch: (Action) => any,
   body: ChartBody,
   selection: BlockId[],
-  children: React.Element<typeof BlockToolbarGroup>,
+  children: React.Element<typeof BlockDeleteButton>,
 };
 
 /**
@@ -41,68 +41,70 @@ export default function BarChartToolbar({
   format = format || defaultChartFormat;
   return (
     <Toolbar>
-      <Toolbar.Group>
-        <ChartElementAddButton
+      {editor.selection > -1 && (
+        <>
+          <ChartElementRemoveButton
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+          <Toolbar.Separator />
+        </>
+      )}
+      <ChartElementAddButton
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
+
+      <Toolbar.Separator />
+
+      {editor.selection === -1 && (
+        <ChartPaletteSelect
           body={body}
           dispatch={dispatch}
           editor={editor}
           format={format}
           id={id}
         />
-        {editor.selection > -1 ? (
-          <>
-            <ChartElementRemoveButton
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-            <ChartElementColorButton
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-          </>
-        ) : (
-          <>
-            <Toolbar.Separator />
-            <ChartPaletteSelect
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-          </>
-        )}
-      </Toolbar.Group>
+      )}
 
-      <Toolbar.Separator />
-
-      <Toolbar.Group>
-        <ChartUnitsInput
+      {editor.selection > -1 && (
+        <ChartElementColorButton
           body={body}
           dispatch={dispatch}
           editor={editor}
           format={format}
           id={id}
         />
-      </Toolbar.Group>
+      )}
 
       <Toolbar.Separator />
 
-      <Toolbar.Group>
-        <ChartSwitchFormatInput
-          dispatch={dispatch}
-          format={format}
-          label={'x axis'}
-          id={id}
-          name={'xAxis'}
-        />
-      </Toolbar.Group>
+      <ChartUnitsInput
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
+
+      <Toolbar.Separator />
+
+      <ChartSwitchFormatInput
+        dispatch={dispatch}
+        format={format}
+        label={'x axis'}
+        id={id}
+        name={'xAxis'}
+      />
+
+      <Toolbar.Separator />
+
       {children}
     </Toolbar>
   );

@@ -54,6 +54,7 @@ export default function ChartElementAddButton({
         }),
         [body.elements, format.minValue]
       )}
+      variant={'text'}
     >
       {children}
     </ActionButton>

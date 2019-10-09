@@ -14,7 +14,7 @@ import {
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import {
   BlockAddFab,
-  BlockToolbarGroup,
+  BlockDeleteButton,
   Paper,
   StylesProvider,
   useReducerEx,
@@ -135,7 +135,7 @@ export default function Editor({
             dispatch={dispatch}
             selection={selection}
           >
-            <BlockToolbarGroup dispatch={dispatch} selection={selection} />
+            <BlockDeleteButton dispatch={dispatch} selection={selection} />
           </BlockToolbar>
 
           {contentChildren.length > 0 && (

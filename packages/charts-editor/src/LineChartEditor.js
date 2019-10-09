@@ -8,7 +8,8 @@ import {
   LineChartValue,
 } from '@seine/charts';
 import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
-import { ClickAwayListener, ForeignInput } from '@seine/ui';
+import { ForeignInput } from '@seine/ui';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,

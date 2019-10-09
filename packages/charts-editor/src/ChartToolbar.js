@@ -2,7 +2,7 @@
 import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
 import { chartTypes } from '@seine/core';
-import type { BlockToolbarGroup } from '@seine/ui';
+import type { BlockDeleteButton } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
 
 import ColumnChartToolbar from './ColumnChartToolbar';
@@ -14,7 +14,7 @@ type Props = Block & {
   dispatch: (Action) => any,
   body: ChartBody,
   selection: BlockId[],
-  children: React.Element<typeof BlockToolbarGroup>,
+  children: React.Element<typeof BlockDeleteButton>,
 };
 
 const defaultFormat = {};
