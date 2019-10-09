@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
-import { ClickAwayListener, ForeignInput } from '@seine/ui';
+import { ForeignInput } from '@seine/ui';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
   ChartTitle,
   ChartTitleProps,

@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { actions } from '@storybook/addon-actions';
+import { Content } from '@seine/content';
+import { Editor } from '@seine/editor';
 
-import Content from '../content/src/Content';
-import Editor from '../editor/src/Editor';
+export default { title: 'Rich text' };
 
-export default { title: '2 - Content' };
-
-export const EditorOfContent = () => (
-  <Editor
-    {...actions('onChange')}
+export const SingleLineContent = ({ as: Component = Content, ...props }) => (
+  <Component
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -16,12 +15,39 @@ export const EditorOfContent = () => (
       format: null,
       parent_id: null,
     }}
-  />
+  >
+    {[
+      {
+        id: '15402f46-8545-4804-aa93-e492dbb2b1d3',
+        type: 'draft',
+        body: {
+          blocks: [
+            {
+              key: '3ofq1',
+              text:
+                'This block is draft.js content. Click here to edit the text.',
+              type: 'unstyled',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+          ],
+          entityMap: {},
+        },
+        format: { verticalAlignment: 'center' },
+        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      },
+    ]}
+  </Component>
+);
+export const EditorOfSingleLineContent = () => (
+  <SingleLineContent as={Editor} {...actions('onChange')} />
 );
 
-export const DraftContent = ({ actions, as: Component = Content }) => (
+export const MultilineContent = ({ as: Component = Content, ...props }) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -102,6 +128,6 @@ export const DraftContent = ({ actions, as: Component = Content }) => (
     ]}
   </Component>
 );
-export const EditorOfDraftContent = () => (
-  <DraftContent as={Editor} actions={actions('onChange')} />
+export const EditorOfMultilineContent = () => (
+  <MultilineContent as={Editor} {...actions('onChange')} />
 );

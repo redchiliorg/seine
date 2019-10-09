@@ -52,6 +52,7 @@ export default function ChartElementRemoveByIdButton({
         ],
         [body.elements, element, id]
       )}
+      variant={'text'}
     >
       {children}
     </CompositeActionButton>

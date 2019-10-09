@@ -43,6 +43,7 @@ export default function ChartGroupRemoveButton({
         }),
         [body.elements]
       )}
+      variant={'text'}
     >
       {children}
     </ActionButton>

@@ -49,6 +49,7 @@ export default function ChartElementRemoveButton({
         ],
         [body.elements, editor.selection, id]
       )}
+      variant={'text'}
     >
       {children}
     </CompositeActionButton>

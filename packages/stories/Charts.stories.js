@@ -1,48 +1,13 @@
 import * as React from 'react';
 import { actions } from '@storybook/addon-actions';
-
 import {
   createBlockElements,
   createTitleIdentityBlockElements,
-} from '../core/src/utils';
-import Content from '../content/src/Content';
-import Editor from '../editor/src/Editor';
+} from '@seine/core';
+import { Content } from '@seine/content';
+import { Editor } from '@seine/editor';
 
-export default { title: '1 - Charts' };
-
-export const PieChart = ({ actions, as: Component = Content }) => (
-  <Component
-    {...actions}
-    parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
-      type: 'page',
-      body: null,
-      format: null,
-      parent_id: null,
-    }}
-  >
-    {[
-      {
-        id: '63d30846-a1dc-4c50-a32a-21ca99c38bce',
-        type: 'chart',
-        body: {
-          elements: createBlockElements([
-            { title: 'repairs', value: 12 },
-            { title: 'consulting', value: 10 },
-            { title: 'training', value: 8 },
-            { title: 'product sales', value: 64 },
-            { title: 'others', value: 6 },
-          ]),
-        },
-        format: { kind: 'pie' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
-      },
-    ]}
-  </Component>
-);
-export const EditorOfPieChart = () => (
-  <PieChart as={Editor} actions={actions('onChange')} />
-);
+export default { title: 'Charts' };
 
 export const BarChart = ({ actions, as: Component = Content }) => (
   <Component
@@ -374,6 +339,41 @@ export const LineChart = ({ actions, as: Component = Content }) => (
   </Component>
 );
 
-export const LineChartEditor = () => (
+export const EditorOfLineChart = () => (
   <LineChart as={Editor} actions={actions('onChange')} />
+);
+
+export const PieChart = ({ actions, as: Component = Content }) => (
+  <Component
+    {...actions}
+    parent={{
+      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      type: 'page',
+      body: null,
+      format: null,
+      parent_id: null,
+    }}
+  >
+    {[
+      {
+        id: '63d30846-a1dc-4c50-a32a-21ca99c38bce',
+        type: 'chart',
+        body: {
+          elements: createBlockElements([
+            { title: 'repairs', value: 12 },
+            { title: 'consulting', value: 10 },
+            { title: 'training', value: 8 },
+            { title: 'product sales', value: 64 },
+            { title: 'others', value: 6 },
+          ]),
+        },
+        format: { kind: 'pie' },
+        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      },
+    ]}
+  </Component>
+);
+
+export const EditorOfPieChart = () => (
+  <PieChart as={Editor} actions={actions('onChange')} />
 );

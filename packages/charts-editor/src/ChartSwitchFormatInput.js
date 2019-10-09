@@ -1,10 +1,10 @@
 // @flow
-import { Input } from '@seine/ui';
 import type { BlockId, BlocksAction, ChartFormat } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import * as React from 'react';
 import styled from 'styled-components';
 import { defaultChartFormat } from '@seine/charts';
+import Checkbox from '@material-ui/core/Checkbox';
 
 type Props = {
   dispatch: (BlocksAction) => any,
@@ -32,9 +32,7 @@ export default function ChartSwitchFormatInput({
 }: Props) {
   return (
     <>
-      <Label>{label}</Label>
-      <Input
-        type={'checkbox'}
+      <Checkbox
         onChange={React.useCallback(
           ({ currentTarget }) =>
             dispatch({
@@ -45,6 +43,7 @@ export default function ChartSwitchFormatInput({
         )}
         checked={name in format ? format[name] : defaultChartFormat[name]}
       />
+      <Label>{label}</Label>
     </>
   );
 }

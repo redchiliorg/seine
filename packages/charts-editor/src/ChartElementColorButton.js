@@ -16,7 +16,10 @@ const StyledColorButton = styled(Button).attrs(({ children = '' }) => ({
 }))`
   &&& {
     background-color: ${({ bgcolor }) => bgcolor};
-  }
+  ${({ theme }) =>
+    css`
+      height: ${theme.spacing(4)}px;
+    `}
 `;
 
 const ColorPickerContainer = styled.div`

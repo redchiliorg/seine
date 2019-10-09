@@ -2,13 +2,13 @@
 import * as React from 'react';
 import { groupElements, titleIdentityElements } from '@seine/charts';
 import { ActionButton } from '@seine/ui';
-import { UPDATE_BLOCK_BODY } from '@seine/core';
 import type {
   BlockId,
+  BlocksAction,
   ChartBody,
   ChartFormat,
-  BlocksAction,
 } from '@seine/core';
+import { UPDATE_BLOCK_BODY } from '@seine/core';
 
 type Props = {
   body: ChartBody,
@@ -51,6 +51,7 @@ export default function ChartGroupAddButton({
         }),
         [body.elements, format.minValue, groupsCount]
       )}
+      variant={'text'}
     >
       {children}
     </ActionButton>

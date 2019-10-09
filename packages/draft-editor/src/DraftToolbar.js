@@ -14,7 +14,7 @@ import {
   UnorderedListButton,
 } from 'draft-js-buttons';
 import clsx from 'clsx';
-import { typeof BlockToolbarGroup, Button, Toolbar } from '@seine/ui';
+import { typeof BlockDeleteButton, Button, Toolbar } from '@seine/ui';
 import type { Action, Block, BlockId, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
@@ -30,7 +30,7 @@ type Props = Block & {
   editor: { state: * },
   dispatch: (Action) => any,
   selection: BlockId[],
-  children: React.Element<typeof BlockToolbarGroup>,
+  children: React.Element<typeof BlockDeleteButton>,
 };
 
 const DraftButton = ({ as: Button, className, ...props }) => (

@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Action, Block, BlockId, ChartBody } from '@seine/core';
-import type { BlockToolbarGroup } from '@seine/ui';
+import type { BlockDeleteButton } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
 import {
   defaultChartBody,
@@ -19,12 +19,13 @@ import ChartElementRemoveByIdButton from './ChartElementRemoveByIdButton';
 import ChartGroupAddButton from './ChartGroupAddButton';
 import ChartSwitchFormatInput from './ChartSwitchFormatInput';
 import ChartUnitsInput from './ChartUnitsInput';
+import ChartGroupRemoveButton from './ChartGroupRemoveButton';
 
 type Props = Block & {
   dispatch: (Action) => any,
   body: ChartBody,
   selection: BlockId[],
-  children: React.Element<typeof BlockToolbarGroup>,
+  children: React.Element<typeof BlockDeleteButton>,
 };
 
 /**
@@ -45,108 +46,121 @@ export default function ColumnChartToolbar({
   format = format || defaultChartFormat;
   return (
     <Toolbar>
-      <Toolbar.Group>
-        {editor.selection > -1 ? (
-          <>
-            <ChartElementRemoveByIdButton
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-            <ChartElementColorButton
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-          </>
-        ) : (
-          <>
-            <Toolbar.Separator />
-            <ChartPaletteSelect
-              body={body}
-              dispatch={dispatch}
-              editor={editor}
-              format={format}
-              id={id}
-            />
-          </>
-        )}
-      </Toolbar.Group>
+      <ChartGroupAddButton
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
 
       <Toolbar.Separator />
 
-      <Toolbar.Group>
-        <ChartGroupAddButton
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
-        <ChartElementAddButton
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
-      </Toolbar.Group>
+      <ChartGroupRemoveButton
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
 
       <Toolbar.Separator />
 
-      <Toolbar.Group>
-        <ChartUnitsInput
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
-      </Toolbar.Group>
+      {editor.selection > -1 && (
+        <>
+          <ChartElementRemoveByIdButton
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+          <Toolbar.Separator />
+        </>
+      )}
+
+      <ChartElementAddButton
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
 
       <Toolbar.Separator />
 
-      <Toolbar.Group>
-        <ChartMinValueInput
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
+      {editor.selection > -1 && (
+        <>
+          <ChartElementColorButton
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+          <Toolbar.Separator />
+        </>
+      )}
 
-        <ChartMaxValueInput
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
+      {editor.selection === -1 && (
+        <>
+          <ChartPaletteSelect
+            body={body}
+            dispatch={dispatch}
+            editor={editor}
+            format={format}
+            id={id}
+          />
+          <Toolbar.Separator />
+        </>
+      )}
 
-        <ChartValueStepInput
-          body={body}
-          dispatch={dispatch}
-          editor={editor}
-          format={format}
-          id={id}
-        />
-      </Toolbar.Group>
+      <ChartUnitsInput
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
 
       <Toolbar.Separator />
 
-      <Toolbar.Group>
-        <ChartSwitchFormatInput
-          dispatch={dispatch}
-          format={format}
-          label={'y axis'}
-          id={id}
-          name={'yAxis'}
-        />
-      </Toolbar.Group>
+      <ChartMinValueInput
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
+
+      <ChartMaxValueInput
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
+
+      <ChartValueStepInput
+        body={body}
+        dispatch={dispatch}
+        editor={editor}
+        format={format}
+        id={id}
+      />
+
+      <Toolbar.Separator />
+
+      <ChartSwitchFormatInput
+        dispatch={dispatch}
+        format={format}
+        label={'y'}
+        id={id}
+        name={'yAxis'}
+      />
+
+      <Toolbar.Separator />
+
       {children}
     </Toolbar>
   );
