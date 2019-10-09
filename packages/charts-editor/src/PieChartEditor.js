@@ -81,7 +81,7 @@ export default function PieChartEditor({
                   key={child.key}
                   lineHeight={lineHeight}
                   onChange={({ currentTarget }) =>
-                    dispatch({
+                    dispatchElements({
                       type: UPDATE_BLOCK_ELEMENT,
                       body: { title: currentTarget.value },
                       index,
