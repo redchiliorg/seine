@@ -50,6 +50,7 @@ export default function DraftEditor({
   blocks,
   textAlignment,
   verticalAlignment,
+  addButtonRenderMap,
   editor: { state = defaultDraftEditor.state } = defaultDraftEditor,
 }: Props) {
   const readOnly = selection.length !== 1 || selection[0] !== id;
@@ -86,7 +87,12 @@ export default function DraftEditor({
       {...useSelectableBlockProps({ id, selection }, dispatch)}
     >
       {!(selection.length === 1 && selection[0] === id) && (
-        <BlockActions dispatch={dispatch} id={id} extended />
+        <BlockActions
+          addButtonRenderMap={addButtonRenderMap}
+          dispatch={dispatch}
+          id={id}
+          extended
+        />
       )}
       <Editor
         editorKey={id}

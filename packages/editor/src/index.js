@@ -1,5 +1,2 @@
-export {
-  default as Editor,
-  defaultEditorBlockRendererMap,
-  defaultToolbarRenderMap,
-} from './Editor';
+export * from './Editor';
+export { default as Editor } from './Editor';

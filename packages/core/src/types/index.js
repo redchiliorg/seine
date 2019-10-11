@@ -1,34 +1,53 @@
 // @flow
-import type { Action } from '../reducers';
+import type { BlocksAction, BlocksCreateAction } from '../reducers';
 
-import type { PageBody, PageFormat } from './page';
-import type { GridBody, GridFormat } from './grid';
-import type { DraftBody, DraftFormat } from './draft';
 import type { ChartBody, ChartElement, ChartFormat } from './charts';
-import * as Page from './page';
-import * as Grid from './grid';
-import * as Draft from './draft';
 import * as Charts from './charts';
+import type { DraftBody, DraftFormat } from './draft';
+import * as Draft from './draft';
+import type { GridBody, GridFormat } from './grid';
+import * as Grid from './grid';
+import type { ImageBody, ImageFormat } from './image';
+import * as Image from './image';
+import type { PageBody, PageFormat } from './page';
+import * as Page from './page';
+
+export * from './charts';
+export * from './draft';
+export * from './grid';
+export * from './image';
+export * from './page';
+export * from './theme';
+
+const { chartTypes, ...Chart }: { ...*, CHART: * } = Charts;
 
 export const blockTypes = {
-  ...Page,
-  ...Grid,
+  ...Chart,
   ...Draft,
-  ...Charts,
+  ...Grid,
+  ...Image,
+  ...Page,
 };
 
 export type BlockElement = ChartElement;
 
 export type BlockType = $Values<typeof blockTypes>;
 
-export type BlockBody = null | PageBody | GridBody | DraftBody | ChartBody;
+export type BlockBody =
+  | null
+  | ChartBody
+  | DraftBody
+  | GridBody
+  | ImageBody
+  | PageBody;
 
 export type BlockFormat =
   | null
-  | PageFormat
-  | GridFormat
+  | ChartFormat
   | DraftFormat
-  | ChartFormat;
+  | GridFormat
+  | ImageFormat
+  | PageFormat;
 
 export type BlockId = string | null;
 
@@ -40,13 +59,22 @@ export type Block = {
   type: BlockType,
 };
 
+export type AddButtonProps = $Rest<
+  BlocksCreateAction,
+  {| block: Block, type: string |}
+> & {
+  dispatch: (BlocksAction) => any,
+};
+
 export type BlockEditor = {
-  dispatch: (Action) => any,
+  addButtonRenderMap: {
+    [BlockType]: React$Component<AddButtonProps>,
+  },
+  dispatch: (BlocksAction) => any,
+  editor: { [string]: any },
   selection: BlockId[],
 };
 
-export * from './charts';
-export * from './draft';
-export * from './grid';
-export * from './page';
-export * from './theme';
+export type ToolbarProps = (Block & BlockEditor) & {
+  children?: React$Node,
+};

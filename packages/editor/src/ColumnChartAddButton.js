@@ -7,8 +7,7 @@ import {
   createBlock,
   createTitleIdentityBlockElements,
 } from '@seine/core';
-
-import ActionButton from './ActionButton';
+import { ActionButton } from '@seine/ui';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
@@ -21,8 +20,12 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function LineChartAddButton(
-  { children = 'line chart', title = 'Add line chart', ...buttonProps }: Props,
+export default React.forwardRef(function ColumnChartAddButton(
+  {
+    children = 'column chart',
+    title = 'Add column chart',
+    ...buttonProps
+  }: Props,
   ref
 ) {
   return (
@@ -33,28 +36,38 @@ export default React.forwardRef(function LineChartAddButton(
         {
           elements: createTitleIdentityBlockElements([
             {
-              title: 'Top',
-              value: 100,
+              title: 'First Column',
+              value: 35,
               group: 'group 1',
             },
             {
-              title: 'Bottom',
-              value: 10,
+              title: 'Second Column',
+              value: 70,
               group: 'group 1',
             },
             {
-              title: 'Top',
-              value: 100,
+              title: 'First Column',
+              value: 70,
               group: 'group 2',
             },
             {
-              title: 'Bottom',
-              value: 10,
+              title: 'Second Column',
+              value: 35,
               group: 'group 2',
+            },
+            {
+              title: 'First Column',
+              value: 35,
+              group: 'group 3',
+            },
+            {
+              title: 'Second Column',
+              value: 35,
+              group: 'group 3',
             },
           ]),
         },
-        { kind: chartTypes.LINE }
+        { kind: chartTypes.COLUMN }
       )}
       ref={ref}
       title={title}

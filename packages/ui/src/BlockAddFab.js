@@ -4,17 +4,8 @@ import styled from 'styled-components';
 import AddIcon from '@material-ui/icons/Add';
 import MuiFab from '@material-ui/core/Fab';
 import Menu from '@material-ui/core/Menu';
-import type {
-  BlocksAction,
-  BlocksCreateAction,
-} from '@seine/core/src/reducers';
-import type { Block } from '@seine/core/src/types';
-
-import ColumnChartAddButton from './ColumnChartAddButton';
-import BarChartAddButton from './BarChartAddButton';
-import DraftAddButton from './DraftAddButton';
-import PieChartAddButton from './PieChartAddButton';
-import LineChartAddButton from './LineChartAddButton';
+import type { AddButtonProps, BlockType } from '@seine/core';
+import { blockTypes } from '@seine/core';
 
 const Fab = styled(MuiFab)`
   && {
@@ -25,17 +16,21 @@ const Fab = styled(MuiFab)`
   }
 `;
 
-type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
-  children?: React.Node,
-  dispatch: (BlocksAction) => any,
+export type Props = AddButtonProps & {
+  addButtonRenderMap: {
+    [BlockType]: React.ComponentType<AddButtonProps>,
+  },
 };
 
 /**
- * @description Fab that opens menu with block type selection to add.
+ * @description Fab of the actions to add a block relative to the current one.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BlockAddFab(props: Props) {
+export default function BlockAddFab({
+  addButtonRenderMap,
+  ...addButtonProps
+}: Props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   return (
@@ -58,11 +53,17 @@ export default function BlockAddFab(props: Props) {
         }, [])}
         open={!!anchorEl}
       >
-        <DraftAddButton {...props} variant={'text'} fullWidth />
-        <PieChartAddButton {...props} variant={'text'} fullWidth />
-        <BarChartAddButton {...props} variant={'text'} fullWidth />
-        <ColumnChartAddButton {...props} variant={'text'} fullWidth />
-        <LineChartAddButton {...props} variant={'text'} fullWidth />
+        {Object.values(blockTypes).map((blockType) => {
+          const BlockAddButton = addButtonRenderMap[blockType];
+          return (
+            <BlockAddButton
+              {...addButtonProps}
+              fullWidth
+              key={blockType}
+              variant={'text'}
+            />
+          );
+        })}
       </Menu>
     </>
   );

@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import type { BlockId, BlocksAction } from '@seine/core';
 import {
   CREATE_BOTTOM_BLOCK,
   CREATE_LEFT_BLOCK,
@@ -11,13 +10,8 @@ import {
 } from '@seine/core';
 import styled, { css } from 'styled-components';
 
+import type { Props as FabProps } from './BlockAddFab';
 import BlockAddFab from './BlockAddFab';
-
-type Props = {
-  children?: React.Node,
-  dispatch: (BlocksAction) => any,
-  id: BlockId,
-};
 
 const Container = Box;
 
@@ -36,7 +30,7 @@ const Group = styled(Grid)`
 
 const Item = styled(Grid)`
   && {
-    ${({ direction }) => css`
+    ${(props) => css`
       align-items: center;
       display: flex;
       opacity: 0;
@@ -45,7 +39,7 @@ const Item = styled(Grid)`
       }
       pointer-events: all;
       transition: opacity 0.1s;
-      ${direction === 'column'
+      ${props.direction === 'column'
         ? css`
             width: 100%;
           `
@@ -56,6 +50,10 @@ const Item = styled(Grid)`
   }
 `;
 
+type Props = FabProps & {
+  extended?: boolean,
+};
+
 /**
  * @description Block overlay with action buttons.
  * @param {Props} props
@@ -64,34 +62,36 @@ const Item = styled(Grid)`
 export default function BlockActions({ extended = false, ...fabProps }: Props) {
   return (
     <Container extended={extended}>
-      <Group
-        alignItems={'center'}
-        container
-        extended={extended}
-        justify={'space-between'}
-      >
-        <Item item>
-          <BlockAddFab {...fabProps} type={CREATE_LEFT_BLOCK} />
-        </Item>
-        <Item item>
-          <BlockAddFab {...fabProps} type={CREATE_RIGHT_BLOCK} />
-        </Item>
-      </Group>
+      <>
+        <Group
+          alignItems={'center'}
+          container
+          extended={extended}
+          justify={'space-between'}
+        >
+          <Item item>
+            <BlockAddFab {...fabProps} type={CREATE_LEFT_BLOCK} />
+          </Item>
+          <Item item>
+            <BlockAddFab {...fabProps} type={CREATE_RIGHT_BLOCK} />
+          </Item>
+        </Group>
 
-      <Group
-        alignItems={'center'}
-        container
-        direction={'column'}
-        extended={extended}
-        justify={'space-between'}
-      >
-        <Item container item direction={'column'}>
-          <BlockAddFab {...fabProps} type={CREATE_TOP_BLOCK} />
-        </Item>
-        <Item container item direction={'column'}>
-          <BlockAddFab {...fabProps} type={CREATE_BOTTOM_BLOCK} />
-        </Item>
-      </Group>
+        <Group
+          alignItems={'center'}
+          container
+          direction={'column'}
+          extended={extended}
+          justify={'space-between'}
+        >
+          <Item container item direction={'column'}>
+            <BlockAddFab {...fabProps} type={CREATE_TOP_BLOCK} />
+          </Item>
+          <Item container item direction={'column'}>
+            <BlockAddFab {...fabProps} type={CREATE_BOTTOM_BLOCK} />
+          </Item>
+        </Group>
+      </>
     </Container>
   );
 }

@@ -3,8 +3,7 @@ import * as React from 'react';
 import type { Block, BlocksAction, BlocksCreateAction } from '@seine/core';
 import { blockTypes, createBlock } from '@seine/core';
 import { toRawContent } from '@seine/draft';
-
-import ActionButton from './ActionButton';
+import { ActionButton } from '@seine/ui';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,

@@ -2,8 +2,7 @@
 import * as React from 'react';
 import type { Block, BlocksAction, BlocksCreateAction } from '@seine/core';
 import { blockTypes, chartTypes, createBlock } from '@seine/core';
-
-import ActionButton from './ActionButton';
+import { ActionButton } from '@seine/ui';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
@@ -12,12 +11,12 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
 };
 
 /**
- * @description Action button to create bar chart block.
+ * @description Action button to create pie chart block.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function BarChartAddButton(
-  { children = 'Bar chart', title = 'Add bar chart', ...buttonProps }: Props,
+export default React.forwardRef(function PieChartAddButton(
+  { children = 'Pie chart', title = 'Add pie chart', ...buttonProps }: Props,
   ref
 ) {
   return (
@@ -28,16 +27,16 @@ export default React.forwardRef(function BarChartAddButton(
         {
           elements: [
             {
-              title: 'First line',
-              value: 35,
+              title: 'First slice',
+              value: 30,
             },
             {
-              title: 'Second line',
+              title: 'Second slice',
               value: 70,
             },
           ],
         },
-        { kind: chartTypes.BAR }
+        { kind: chartTypes.PIE }
       )}
       ref={ref}
       title={title}
