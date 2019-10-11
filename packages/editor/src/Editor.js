@@ -80,6 +80,7 @@ export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: () => null,
+  [blockTypes.IMAGE]: () => null,
   [blockTypes.PAGE]: ({ id, addButtonRenderMap, blocks, dispatch }) =>
     !blocks.length && (
       <Box width={'100%'} display={'flex'} justifyContent={'center'}>
