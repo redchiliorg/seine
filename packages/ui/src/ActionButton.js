@@ -10,27 +10,23 @@ type Props = Action & React.ElementProps<HTMLButtonElement>;
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function ActionButton(
-  {
-    as: Button = MuiButton,
-    className,
-    children,
-    dispatch,
-    fullWidth = false,
-    color = 'default',
-    size = 'small',
-    variant = 'contained',
-    title,
-    ...action
-  }: Props,
-  ref
-) {
+export default function ActionButton({
+  as: Button = MuiButton,
+  className,
+  children,
+  dispatch,
+  fullWidth = false,
+  color = 'default',
+  size = 'small',
+  variant = 'contained',
+  title,
+  ...action
+}: Props) {
   return (
     <Button
       color={color}
       fullWidth={fullWidth}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
-      ref={ref}
       size={size}
       title={title}
       variant={variant}
@@ -38,4 +34,4 @@ export default React.forwardRef(function ActionButton(
       {children}
     </Button>
   );
-});
+}

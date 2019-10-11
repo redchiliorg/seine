@@ -20,10 +20,11 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function LineChartAddButton(
-  { children = 'line chart', title = 'Add line chart', ...buttonProps }: Props,
-  ref
-) {
+export default function LineChartAddButton({
+  children = 'line chart',
+  title = 'Add line chart',
+  ...buttonProps
+}: Props) {
   return (
     <ActionButton
       {...buttonProps}
@@ -55,10 +56,9 @@ export default React.forwardRef(function LineChartAddButton(
         },
         { kind: chartTypes.LINE }
       )}
-      ref={ref}
       title={title}
     >
       {children}
     </ActionButton>
   );
-});
+}

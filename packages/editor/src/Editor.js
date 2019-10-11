@@ -62,14 +62,14 @@ export const defaultEditorBlockRendererMap = {
 };
 
 export const defaultAddButtonRenderMap = {
-  [blockTypes.CHART]: React.forwardRef((props: AddButtonProps, ref) => (
-    <div ref={ref}>
+  [blockTypes.CHART]: (props: AddButtonProps) => (
+    <>
       <PieChartAddButton {...props} />
       <BarChartAddButton {...props} />
       <ColumnChartAddButton {...props} />
       <LineChartAddButton {...props} />
-    </div>
-  )),
+    </>
+  ),
   [blockTypes.DRAFT]: DraftAddButton,
   [blockTypes.GRID]: () => null,
   [blockTypes.IMAGE]: /* todo */ () => null,
