@@ -11,10 +11,8 @@
   "repository": "redchiliorg/seine",
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "start": "serve",
-    "build": "build-storybook -o dist",
+    "start": "yarn workspace stories start",
+    "build": "yarn workspace stories build",
     "release": "run-s release:*",
     "release:build": "run-p release:build:*",
     "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c ../../rollup.config.js",
@@ -25,24 +23,10 @@
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
-    "dev:start": "start-storybook -p 9009 -s public"
-  },
-  "dependencies": {
-    "draft-js": "^0.11.0",
-    "gh-pages": "^2.1.1",
-    "react": "^16.8.6",
-    "serve": "^11.1.0",
-    "styled-components": "^4.3.2"
+    "dev:start": "yarn workspace stories start"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
-    "@material-ui/core": "^4.3.3",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.3.3",
-    "@storybook/addon-actions": "^5.2.0",
-    "@storybook/addon-storyshots": "^5.2.0",
-    "@storybook/addons": "^5.2.0",
-    "@storybook/react": "^5.2.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.5",
@@ -50,7 +34,6 @@
     "babel-plugin-macros": "^2.6.1",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.1",
-    "draft-js": "^0.11.0",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react-app": "^5.0.1",
@@ -62,6 +45,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "flow-bin": "^0.105.2",
+    "glob": "^7.1.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-pnp-resolver": "^1.2.1",
@@ -70,11 +54,8 @@
     "minimist": "^1.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "ramda": "^0.26.1",
     "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.9.0",
-    "require-context.macro": "^1.1.1",
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-cleanup": "^3.1.1",
@@ -85,13 +66,6 @@
     "rollup-plugin-visualizer": "^2.5.4"
   },
   "workspaces": [
-    "packages/core",
-    "packages/ui",
-    "packages/draft",
-    "packages/charts",
-    "packages/content",
-    "packages/draft-editor",
-    "packages/charts-editor",
-    "packages/editor"
+    "packages/*"
   ]
 }

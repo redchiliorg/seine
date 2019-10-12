@@ -27,12 +27,16 @@ const AppBar = styled(MuiAppBar)`
   }
 `;
 
+type Props = {
+  children: React.Node,
+};
+
 /**
  * @description Toolbar
- * @param {any} props
+ * @param {Props} props
  * @returns {React.Node}
  */
-export default function Toolbar(props: *) {
+export default function Toolbar(props: Props) {
   return (
     <AppBar position={'relative'}>
       <MuiToolbar

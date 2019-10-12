@@ -7,8 +7,7 @@ import {
   createBlock,
   createTitleIdentityBlockElements,
 } from '@seine/core';
-
-import ActionButton from './ActionButton';
+import { ActionButton } from '@seine/ui';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
@@ -21,14 +20,11 @@ type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function ColumnChartAddButton(
-  {
-    children = 'column chart',
-    title = 'Add column chart',
-    ...buttonProps
-  }: Props,
-  ref
-) {
+export default function LineChartAddButton({
+  children = 'line chart',
+  title = 'Add line chart',
+  ...buttonProps
+}: Props) {
   return (
     <ActionButton
       {...buttonProps}
@@ -37,43 +33,32 @@ export default React.forwardRef(function ColumnChartAddButton(
         {
           elements: createTitleIdentityBlockElements([
             {
-              title: 'First Column',
-              value: 35,
+              title: 'Top',
+              value: 100,
               group: 'group 1',
             },
             {
-              title: 'Second Column',
-              value: 70,
+              title: 'Bottom',
+              value: 10,
               group: 'group 1',
             },
             {
-              title: 'First Column',
-              value: 70,
+              title: 'Top',
+              value: 100,
               group: 'group 2',
             },
             {
-              title: 'Second Column',
-              value: 35,
+              title: 'Bottom',
+              value: 10,
               group: 'group 2',
-            },
-            {
-              title: 'First Column',
-              value: 35,
-              group: 'group 3',
-            },
-            {
-              title: 'Second Column',
-              value: 35,
-              group: 'group 3',
             },
           ]),
         },
-        { kind: chartTypes.COLUMN }
+        { kind: chartTypes.LINE }
       )}
-      ref={ref}
       title={title}
     >
       {children}
     </ActionButton>
   );
-});
+}

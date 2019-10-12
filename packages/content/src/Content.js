@@ -1,11 +1,12 @@
 // @flow
 import * as React from 'react';
-import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
+import type { Block } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 
 import Grid from './Grid';
+import Image from './Image';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
@@ -14,10 +15,11 @@ export type Props = {
 };
 
 export const defaultBlockRenderMap = {
-  [blockTypes.PAGE]: ({ children }) => children,
-  [blockTypes.GRID]: Grid,
-  [blockTypes.DRAFT]: Draft,
   [blockTypes.CHART]: Chart,
+  [blockTypes.DRAFT]: Draft,
+  [blockTypes.GRID]: Grid,
+  [blockTypes.IMAGE]: Image,
+  [blockTypes.PAGE]: ({ children }) => children,
 };
 
 /**
@@ -37,9 +39,9 @@ function Content({
       return (
         <ContentBlock
           key={block.id}
-          {...block}
           {...(format ? format : {})}
           {...(body ? body : {})}
+          {...block}
         >
           <Content parent={block} blockRenderMap={blockRenderMap}>
             {children.filter((content) => content.id !== block.id)}

@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Editor Empty 1`] = `
+<div
+  className="sc-kGXeez eUilzy"
+>
+  <div
+    className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1490"
+  >
+    <div
+      className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1491"
+      onMouseLeave={[Function]}
+    >
+      <button
+        className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-htpNat kaKtQr @seine/ui-MuiFab-sizeSmall"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="@seine/ui-MuiFab-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="@seine/ui-MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-bxivhb eeHViL"
+        open={false}
+        type="@seine/core/createBlock"
+      >
+        <button
+          className="@seine/ui-MuiButtonBase-root @seine/ui-MuiButton-root @seine/ui-MuiButton-text @seine/ui-MuiButton-text sc-bwzfXH hhBAIj @seine/ui-MuiButton-textSizeSmall @seine/ui-MuiButton-sizeSmall @seine/ui-MuiButton-fullWidth"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add pie chart"
+          type="button"
+        >
+          <span
+            className="@seine/ui-MuiButton-label"
+          >
+            Pie chart
+          </span>
+        </button>
+        <button
+          className="@seine/ui-MuiButtonBase-root @seine/ui-MuiButton-root @seine/ui-MuiButton-text @seine/ui-MuiButton-text sc-bwzfXH hhBAIj @seine/ui-MuiButton-textSizeSmall @seine/ui-MuiButton-sizeSmall @seine/ui-MuiButton-fullWidth"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add bar chart"
+          type="button"
+        >
+          <span
+            className="@seine/ui-MuiButton-label"
+          >
+            Bar chart
+          </span>
+        </button>
+        <button
+          className="@seine/ui-MuiButtonBase-root @seine/ui-MuiButton-root @seine/ui-MuiButton-text @seine/ui-MuiButton-text sc-bwzfXH hhBAIj @seine/ui-MuiButton-textSizeSmall @seine/ui-MuiButton-sizeSmall @seine/ui-MuiButton-fullWidth"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add column chart"
+          type="button"
+        >
+          <span
+            className="@seine/ui-MuiButton-label"
+          >
+            column chart
+          </span>
+        </button>
+        <button
+          className="@seine/ui-MuiButtonBase-root @seine/ui-MuiButton-root @seine/ui-MuiButton-text @seine/ui-MuiButton-text sc-bwzfXH hhBAIj @seine/ui-MuiButton-textSizeSmall @seine/ui-MuiButton-sizeSmall @seine/ui-MuiButton-fullWidth"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add line chart"
+          type="button"
+        >
+          <span
+            className="@seine/ui-MuiButton-label"
+          >
+            line chart
+          </span>
+        </button>
+        <button
+          className="@seine/ui-MuiButtonBase-root @seine/ui-MuiButton-root @seine/ui-MuiButton-text @seine/ui-MuiButton-text sc-bwzfXH hhBAIj @seine/ui-MuiButton-textSizeSmall @seine/ui-MuiButton-sizeSmall @seine/ui-MuiButton-fullWidth"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="Add text block"
+          type="button"
+        >
+          <span
+            className="@seine/ui-MuiButton-label"
+          >
+            Rich text
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

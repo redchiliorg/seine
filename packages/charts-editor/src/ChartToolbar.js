@@ -1,8 +1,7 @@
 // @flow
 import * as React from 'react';
-import type { Action, Block, BlockId, ChartBody } from '@seine/core';
+import type { ChartBody, ChartFormat, ToolbarProps } from '@seine/core';
 import { chartTypes } from '@seine/core';
-import type { BlockDeleteButton } from '@seine/ui';
 import { Toolbar } from '@seine/ui';
 
 import ColumnChartToolbar from './ColumnChartToolbar';
@@ -10,11 +9,9 @@ import BarChartToolbar from './BarChartToolbar';
 import PieChartToolbar from './PieChartToolbar';
 import LineChartToolbar from './LineChartToolbar';
 
-type Props = Block & {
-  dispatch: (Action) => any,
+type Props = ToolbarProps & {
   body: ChartBody,
-  selection: BlockId[],
-  children: React.Element<typeof BlockDeleteButton>,
+  format: ChartFormat,
 };
 
 const defaultFormat = {};

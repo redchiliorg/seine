@@ -1,9 +1,17 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Content, defaultBlockRenderMap } from '@seine/content';
 import type { ContentProps } from '@seine/content';
-import type { Block, BlocksAction, BlocksState } from '@seine/core';
+import { Content, defaultBlockRenderMap } from '@seine/content';
+import type {
+  AddButtonProps,
+  Block,
+  BlockEditor,
+  BlocksAction,
+  BlocksState,
+  BlockType,
+  ToolbarProps,
+} from '@seine/core';
 import {
   blockTypes,
   CREATE_BLOCK,
@@ -20,8 +28,14 @@ import {
   useReducerEx,
 } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
-import Box from '@material-ui/core/Box';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import { Box } from '@material-ui/core';
+
+import PieChartAddButton from './PieChartAddButton';
+import BarChartAddButton from './BarChartAddButton';
+import ColumnChartAddButton from './ColumnChartAddButton';
+import LineChartAddButton from './LineChartAddButton';
+import DraftAddButton from './DraftAddButton';
 
 const defaultEditorChildren = [];
 
@@ -30,22 +44,52 @@ const DefaultContainer = styled.div`
 `;
 
 export const defaultEditorBlockRendererMap = {
+  ...defaultBlockRenderMap,
   [blockTypes.CHART]: ChartEditor,
   [blockTypes.DRAFT]: DraftEditor,
   [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) =>
     defaultBlockRenderMap[blockTypes.GRID](props),
-  [blockTypes.PAGE]: ({ dispatch, editor, selection, ...props }) =>
-    defaultBlockRenderMap[blockTypes.PAGE](props),
+  [blockTypes.PAGE]: ({
+    id,
+    addButtonRenderMap,
+    dispatch,
+    editor,
+    selection,
+    ...props
+  }: BlockEditor & Block) => (
+    <>{defaultBlockRenderMap[blockTypes.PAGE](props)}</>
+  ),
+};
+
+export const defaultAddButtonRenderMap = {
+  [blockTypes.CHART]: (props: AddButtonProps) => (
+    <>
+      <PieChartAddButton {...props} />
+      <BarChartAddButton {...props} />
+      <ColumnChartAddButton {...props} />
+      <LineChartAddButton {...props} />
+    </>
+  ),
+  [blockTypes.DRAFT]: DraftAddButton,
+  [blockTypes.GRID]: () => null,
+  [blockTypes.IMAGE]: /* todo */ () => null,
+  [blockTypes.PAGE]: () => null,
 };
 
 export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: () => null,
-  [blockTypes.PAGE]: ({ blocks, dispatch, id }) =>
-    blocks.length ? null : (
-      <Box display={'flex'} justifyContent={'center'} width={'100%'}>
-        <BlockAddFab dispatch={dispatch} id={id} type={CREATE_BLOCK} />
+  [blockTypes.IMAGE]: () => null,
+  [blockTypes.PAGE]: ({ id, addButtonRenderMap, blocks, dispatch }) =>
+    !blocks.length && (
+      <Box width={'100%'} display={'flex'} justifyContent={'center'}>
+        <BlockAddFab
+          addButtonRenderMap={addButtonRenderMap}
+          dispatch={dispatch}
+          id={id}
+          type={CREATE_BLOCK}
+        />
       </Box>
     ),
 };
@@ -63,10 +107,16 @@ const ContentPaper = styled(Paper)`
 `;
 
 export type Props = {
-  parent: Block,
-  onChange: (Block[]) => any,
-  children?: Block[],
   as?: React.ComponentType<*>,
+  children?: Block[],
+  onChange: (Block[]) => any,
+  parent: Block,
+  addButtonRenderMap?: {
+    [BlockType]: React.ComponentType<AddButtonProps>,
+  },
+  toolbarRenderMap?: {
+    [BlockType]: React.ComponentType<ToolbarProps>,
+  },
 } & ContentProps;
 
 /**
@@ -75,11 +125,12 @@ export type Props = {
  * @returns {React.Node}
  */
 export default function Editor({
-  parent,
-  onChange,
-  children = defaultEditorChildren,
+  addButtonRenderMap = defaultAddButtonRenderMap,
   as: Container = DefaultContainer,
   blockRenderMap = defaultEditorBlockRendererMap,
+  children = defaultEditorChildren,
+  onChange,
+  parent,
   toolbarRenderMap = defaultToolbarRenderMap,
   ...contentProps
 }: Props) {
@@ -116,8 +167,14 @@ export default function Editor({
   const BlockToolbar = toolbarRenderMap[type];
 
   const contentChildren = React.useMemo(
-    () => blocks.map((block) => ({ ...block, dispatch, selection })),
-    [blocks, dispatch, selection]
+    () =>
+      blocks.map((block) => ({
+        ...block,
+        addButtonRenderMap,
+        dispatch,
+        selection,
+      })),
+    [addButtonRenderMap, blocks, dispatch, selection]
   );
 
   return (
@@ -136,12 +193,12 @@ export default function Editor({
           <BlockToolbar
             {...block}
             blocks={blocks}
+            addButtonRenderMap={addButtonRenderMap}
             dispatch={dispatch}
             selection={selection}
           >
             <BlockDeleteButton dispatch={dispatch} selection={selection} />
           </BlockToolbar>
-
           {contentChildren.length > 0 && (
             <ContentPaper>
               <Content

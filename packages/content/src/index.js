@@ -1,5 +1,9 @@
 // @flow
 export { default as Content, defaultBlockRenderMap } from './Content';
-export { default as Grid } from './Grid';
 export type { Props as ContentProps } from './Content';
+
+export { default as Grid } from './Grid';
 export type { Props as GridProps } from './Grid';
+
+export { default as Image } from './Image';
+export type { Props as ImageProps } from './Image';

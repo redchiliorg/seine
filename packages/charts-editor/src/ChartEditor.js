@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import type { BlocksAction, ChartType, ElementsAction } from '@seine/core';
+import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
 import {
   chartTypes,
   initialElementsState,
@@ -16,16 +16,14 @@ import {
 import type { ChartProps } from '@seine/charts';
 import { Chart } from '@seine/charts';
 
-import type { ChartEditorProps } from './types';
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
 import ColumnChartEditor from './ColumnChartEditor';
 import LineChartEditor from './LineChartEditor';
+import type { ChartEditorProps } from './types';
 
-type Props = ChartProps & {
-  id: string,
-  dispatch: (BlocksAction) => any,
-  chartEditorRenderMap: {
+type Props = (ChartProps & BlockEditor) & {
+  chartEditorRenderMap?: {
     [kind: ChartType]: React.ComponentType<ChartEditorProps>,
   },
 };
@@ -41,6 +39,7 @@ const defaultEditor = { selection: initialElementsState.selection };
 
 const ChartEditorContent = ({
   kind = chartTypes.BAR,
+  addButtonRenderMap,
   chartEditorRenderMap: {
     [kind]: ExactChartEditor,
   } = defaultChartEditorRenderMap,
@@ -49,7 +48,7 @@ const ChartEditorContent = ({
   editor,
   selection,
   ...chartProps
-}) =>
+}: Props) =>
   selection.length === 1 && selection[0] === chartProps.id ? (
     <ExactChartEditor
       {...chartProps}
@@ -61,7 +60,11 @@ const ChartEditorContent = ({
     />
   ) : (
     <>
-      <BlockActions dispatch={dispatch} id={chartProps.id} />
+      <BlockActions
+        addButtonRenderMap={addButtonRenderMap}
+        dispatch={dispatch}
+        id={chartProps.id}
+      />
       <Chart kind={kind} {...chartProps} />
     </>
   );
@@ -72,6 +75,7 @@ const ChartEditorContent = ({
  * @returns {React.Node}
  */
 export default function ChartEditor({
+  addButtonRenderMap,
   dispatch,
   editor = defaultEditor,
   selection,
@@ -83,6 +87,7 @@ export default function ChartEditor({
     >
       <ChartEditorContent
         {...chartProps}
+        addButtonRenderMap={addButtonRenderMap}
         id={chartProps.id}
         dispatch={dispatch}
         dispatchElements={React.useCallback(

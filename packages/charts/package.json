@@ -1,6 +1,6 @@
 {
   "name": "@seine/charts",
-  "version": "0.3.51",
+  "version": "0.3.55",
   "description": "Seine charts renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,7 +11,8 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "^0.3.0"
+    "@seine/core": "^0.3.0",
+    "ramda": "^0.26.1"
   },
   "peerDependencies": {
     "react": "^16.8.6",

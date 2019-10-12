@@ -1,3 +1,9 @@
-import initStoryshots from '@storybook/addon-storyshots';
+import initStoryshots, {
+  multiSnapshotWithOptions,
+} from '@storybook/addon-storyshots';
 
-initStoryshots();
+initStoryshots({
+  configPath: 'packages/stories/.storybook',
+  integrityOptions: { cwd: __dirname },
+  test: multiSnapshotWithOptions(),
+});
