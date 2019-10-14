@@ -1,12 +1,11 @@
 // @flow
 import * as React from 'react';
+import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
 import {
   BarChartElementTitle,
   BarChartElementValue,
   ChartTitle,
-  ChartTitleProps,
 } from '@seine/charts';
-import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
@@ -28,138 +27,136 @@ export default function BarChartEditor({
   dispatch,
   dispatchElements,
   editor,
-  fontSize,
-  selection,
-  ...svgProps
 }: Props) {
-  return (
-    <svg {...svgProps} fontSize={fontSize}>
-      {React.useMemo(
-        () =>
-          React.Children.map(children, (child: ?React.Node) => {
-            if (React.isValidElement(child)) {
-              switch (child.type) {
-                case ChartTitle: {
-                  const { children, ...props }: ChartTitleProps = child.props;
-                  return (
-                    <ChartTitleInput
-                      key={child.key}
-                      dispatch={dispatch}
-                      {...props}
-                    >
-                      {children}
-                    </ChartTitleInput>
-                  );
-                }
+  return React.Children.map(children, (parent: ?React.Node) => {
+    switch (parent.type) {
+      case ChartTitle:
+        return (
+          <ChartTitle {...parent.props} key={parent.key}>
+            <ChartTitleInput
+              dispatch={dispatch}
+              value={parent.props.children}
+            />
+          </ChartTitle>
+        );
 
-                case BarChartElementValue: {
-                  const {
-                    children: value,
-                    fill,
-                    height,
-                    index,
-                    lineHeight,
-                    width,
-                    x,
-                    y,
-                  }: BarChartValueProps = child.props;
+      case 'svg':
+        return (
+          <svg {...parent.props} key={parent.key}>
+            {React.Children.map(parent.props.children, (child: ?React.Node) => {
+              if (React.isValidElement(child)) {
+                switch (child.type) {
+                  case BarChartElementValue: {
+                    const {
+                      children: value,
+                      fill,
+                      height,
+                      index,
+                      lineHeight,
+                      width,
+                      x,
+                      y,
+                    }: BarChartValueProps = child.props;
 
-                  return (
-                    <ForeignInput
-                      color={fill}
-                      fontSize={0.9 * fontSize}
-                      height={height / 3}
-                      key={child.key}
-                      onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_BLOCK_ELEMENT,
-                          body: { value: currentTarget.value },
-                          index,
-                        })
-                      }
-                      type={'number'}
-                      value={value}
-                      width={width + fontSize}
-                      x={x}
-                      y={y + (fontSize * lineHeight) / 3}
-                    />
-                  );
-                }
-
-                case BarChartElementTitle: {
-                  const {
-                    children: title,
-                    fill,
-                    height,
-                    index,
-                    lineHeight,
-                    width,
-                    x,
-                    y,
-                  }: BarChartTitleProps = child.props;
-
-                  return (
-                    <ForeignInput
-                      color={fill}
-                      fontSize={0.9 * fontSize}
-                      height={height / 3}
-                      key={child.key}
-                      onChange={({ currentTarget }) =>
-                        dispatchElements({
-                          type: UPDATE_BLOCK_ELEMENT,
-                          body: { title: currentTarget.value },
-                          index,
-                        })
-                      }
-                      value={title}
-                      width={width + 2 * fontSize}
-                      x={x}
-                      y={y + (fontSize * lineHeight) / 3}
-                    />
-                  );
-                }
-
-                case 'rect':
-                  const index = +child.key.split(',')[1];
-                  return (
-                    <ClickAwayListener
-                      key={child.key}
-                      onClickAway={(event) =>
-                        !(event.target instanceof HTMLButtonElement) &&
-                        dispatchElements({
-                          type: DESELECT_BLOCK_ELEMENT,
-                          index,
-                        })
-                      }
-                    >
-                      <rect
-                        {...child.props}
-                        {...(editor.selection === index
-                          ? {
-                              strokeDasharray: 0.25,
-                              strokeWidth: 0.05,
-                              stroke: 'black',
-                            }
-                          : {
-                              onClick: (event) => {
-                                event.stopPropagation();
-                                dispatchElements({
-                                  index,
-                                  type: SELECT_BLOCK_ELEMENT,
-                                });
-                              },
-                            })}
+                    return (
+                      <ForeignInput
+                        color={fill}
+                        fontSize={0.9 * parent.props.fontSize}
+                        height={height / 3}
+                        key={child.key}
+                        onChange={({ currentTarget }) =>
+                          dispatchElements({
+                            type: UPDATE_BLOCK_ELEMENT,
+                            body: { value: currentTarget.value },
+                            index,
+                          })
+                        }
+                        type={'number'}
+                        value={value}
+                        width={width + parent.props.fontSize}
+                        x={x}
+                        y={y + (parent.props.fontSize * lineHeight) / 3}
                       />
-                    </ClickAwayListener>
-                  );
+                    );
+                  }
 
-                default:
-                  return child;
+                  case BarChartElementTitle: {
+                    const {
+                      children: title,
+                      fill,
+                      height,
+                      index,
+                      lineHeight,
+                      width,
+                      x,
+                      y,
+                    }: BarChartTitleProps = child.props;
+
+                    return (
+                      <ForeignInput
+                        color={fill}
+                        fontSize={0.9 * parent.props.fontSize}
+                        height={height / 3}
+                        key={child.key}
+                        onChange={({ currentTarget }) =>
+                          dispatchElements({
+                            type: UPDATE_BLOCK_ELEMENT,
+                            body: { title: currentTarget.value },
+                            index,
+                          })
+                        }
+                        value={title}
+                        width={width + 2 * parent.props.fontSize}
+                        x={x}
+                        y={y + (parent.props.fontSize * lineHeight) / 3}
+                      />
+                    );
+                  }
+
+                  case 'rect':
+                    const index = +child.key.split(',')[1];
+                    return (
+                      <ClickAwayListener
+                        key={child.key}
+                        onClickAway={(event) =>
+                          !(event.target instanceof HTMLButtonElement) &&
+                          dispatchElements({
+                            type: DESELECT_BLOCK_ELEMENT,
+                            index,
+                          })
+                        }
+                      >
+                        <rect
+                          {...child.props}
+                          {...(editor.selection === index
+                            ? {
+                                strokeDasharray: 0.25,
+                                strokeWidth: 0.05,
+                                stroke: 'black',
+                              }
+                            : {
+                                onClick: (event) => {
+                                  event.stopPropagation();
+                                  dispatchElements({
+                                    index,
+                                    type: SELECT_BLOCK_ELEMENT,
+                                  });
+                                },
+                              })}
+                        />
+                      </ClickAwayListener>
+                    );
+
+                  default:
+                    return child;
+                }
               }
-            }
-          }),
-        [children, dispatch, dispatchElements, editor.selection, fontSize]
-      )}
-    </svg>
-  );
+            })}
+          </svg>
+        );
+
+      default:
+        return parent;
+    }
+  });
 }

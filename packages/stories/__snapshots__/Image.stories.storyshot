@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots Image Image Content 1`] = `
-<img
-  align="middle"
-  src="https://foter.com/photos/394/dock-watering-natural.jpg"
-/>
-`;
