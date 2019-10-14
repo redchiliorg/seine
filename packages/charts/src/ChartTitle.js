@@ -1,30 +1,21 @@
 // @flow
 import * as React from 'react';
+import styled from 'styled-components';
 
 export type Props = {
   children: string,
-  fontSize: number,
-  fontWeight: 'normal' | 'bold',
-  lineHeight: number,
-  x: number,
-  y: number,
 };
+
+const Title = styled.h1`
+  text-align: left;
+  width: 100%;
+`;
 
 /**
  * @description Title of bar chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartTitle({
-  children,
-  fontSize,
-  fontWeight,
-  x,
-  y,
-}: Props) {
-  return (
-    <text fontSize={fontSize} fontWeight={fontWeight} x={x} y={y}>
-      {children}
-    </text>
-  );
+export default function ChartTitle({ children }: Props) {
+  return <Title>{children}</Title>;
 }

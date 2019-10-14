@@ -1,41 +1,35 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
 import { UPDATE_BLOCK_BODY } from '@seine/core';
-import { ChartTitleProps } from '@seine/charts';
 import type { BlocksAction } from '@seine/core';
+import styled from 'styled-components';
 
-type Props = ChartTitleProps & {
+type Props = {
   dispatch: (BlocksAction) => any,
+  value: string,
 };
+
+const Input = styled.input`
+  && {
+    border: none;
+    font: inherit;
+  }
+`;
 
 /**
  * @description Input to edit a title of chart legend item
  * @returns {React.Node}
  */
-export default function ChartTitleInput({
-  fontSize,
-  fontWeight,
-  children,
-  dispatch,
-  lineHeight,
-  x,
-  y,
-}: Props) {
+export default function ChartTitleInput({ dispatch, value }: Props) {
   return (
-    <ForeignInput
-      fontSize={0.85 * fontSize}
-      fontWeight={fontWeight}
-      height={lineHeight * fontSize}
+    <Input
       onChange={({ currentTarget }) =>
         dispatch({
           type: UPDATE_BLOCK_BODY,
           body: { title: currentTarget.value },
         })
       }
-      value={children}
-      x={x}
-      y={y - fontSize / 2}
+      value={value}
     />
   );
 }

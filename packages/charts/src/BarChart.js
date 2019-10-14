@@ -39,7 +39,7 @@ export default function BarChart({
   units = defaultChartUnits,
   xAxis = defaultChartXAxis,
 
-  as: View = 'svg',
+  as: View = React.Fragment,
   id,
   parent_id,
   type,
@@ -65,97 +65,91 @@ export default function BarChart({
   const height = (elements.length * barHeight) / 2;
 
   return (
-    <View
-      viewBox={[
-        0,
-        -2 * lineHeight * fontSize,
-        size,
-        height + 3.5 * lineHeight * fontSize,
-      ].join(' ')}
-      width={'100%'}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      preserveAspectRatio={'xMidYMax meet'}
-      {...viewProps}
-    >
-      <ChartTitle
-        fontSize={2 * fontSize}
-        fontWeight={'bold'}
-        lineHeight={lineHeight}
-        x={0}
-        y={0 - 2 * fontSize}
+    <View {...viewProps}>
+      <ChartTitle>{title}</ChartTitle>
+      <svg
+        viewBox={[
+          0,
+          -2 * lineHeight * fontSize,
+          size,
+          height + 3.5 * lineHeight * fontSize,
+        ].join(' ')}
+        width={'100%'}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        preserveAspectRatio={'xMidYMax meet'}
       >
-        {title}
-      </ChartTitle>
+        {elements.map(({ title, value }, index) => {
+          const len = (barMaxLen * value) / maxValue;
+          const color = palette[index % palette.length];
+          const y = (index * barHeight) / 2;
 
-      {elements.map(({ title, value }, index) => {
-        const len = (barMaxLen * value) / maxValue;
-        const color = palette[index % palette.length];
-        const y = (index * barHeight) / 2;
+          return [
+            <BarChartElementTitle
+              fill={color}
+              height={barHeight}
+              index={index}
+              key={'title'}
+              lineHeight={fontHeight}
+              x={0}
+              y={y}
+              width={titleMaxLen}
+            >
+              {title}
+            </BarChartElementTitle>,
 
-        return [
-          <BarChartElementTitle
-            fill={color}
-            height={barHeight}
-            index={index}
-            key={'title'}
-            lineHeight={fontHeight}
-            x={0}
-            y={y}
-            width={titleMaxLen}
-          >
-            {title}
-          </BarChartElementTitle>,
+            <BarChartElementValue
+              fill={color}
+              height={barHeight}
+              index={index}
+              key={'value'}
+              lineHeight={fontHeight}
+              x={titleMaxLen + len + 1.5 * fontSize}
+              y={y}
+              units={units}
+              width={valueMaxLen}
+            >
+              {value}
+            </BarChartElementValue>,
 
-          <BarChartElementValue
-            fill={color}
-            height={barHeight}
-            index={index}
-            key={'value'}
-            lineHeight={fontHeight}
-            x={titleMaxLen + len + 1.5 * fontSize}
-            y={y}
-            units={units}
-            width={valueMaxLen}
-          >
-            {value}
-          </BarChartElementValue>,
-
-          <rect
-            fill={color}
-            height={barHeight / 2}
-            key={['bar', index]}
-            width={len}
-            x={titleMaxLen + fontSize}
-            y={y}
-          />,
-        ];
-      })}
-      {xAxis
-        ? Array.from({ length: Math.floor(maxValue / dx) }).map(
-            (_, index, { length }) => [
-              <line
-                key={['line', index]}
-                x1={titleMaxLen + fontSize + (barMaxLen * index) / length}
-                x2={titleMaxLen + fontSize + (barMaxLen * (index + 1)) / length}
-                y1={(elements.length * barHeight) / 2}
-                y2={(elements.length * barHeight) / 2}
-                stroke={'black'}
-                strokeWidth={'0.1em'}
-              />,
-              <text
-                fontWeight={'bold'}
-                key={['title', index]}
-                textAnchor={'middle'}
-                x={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                y={(elements.length * barHeight) / 2 + fontSize * lineHeight}
-              >
-                {(index + 1) * dx}
-                {units}
-              </text>,
-            ]
-          )
-        : null}
+            <rect
+              fill={color}
+              height={barHeight / 2}
+              key={['bar', index]}
+              width={len}
+              x={titleMaxLen + fontSize}
+              y={y}
+            />,
+          ];
+        })}
+        {xAxis
+          ? Array.from({ length: Math.floor(maxValue / dx) }).map(
+              (_, index, { length }) => [
+                <line
+                  key={['line', index]}
+                  x1={titleMaxLen + fontSize + (barMaxLen * index) / length}
+                  x2={
+                    titleMaxLen + fontSize + (barMaxLen * (index + 1)) / length
+                  }
+                  y1={(elements.length * barHeight) / 2}
+                  y2={(elements.length * barHeight) / 2}
+                  stroke={'black'}
+                  strokeWidth={'0.1em'}
+                />,
+                <text
+                  fontWeight={'bold'}
+                  key={['title', index]}
+                  textAnchor={'middle'}
+                  x={titleMaxLen + (barMaxLen * (index + 1)) / length}
+                  y={(elements.length * barHeight) / 2 + fontSize * lineHeight}
+                >
+                  {(index + 1) * dx}
+                  {units}
+                </text>,
+              ]
+            )
+          : null}
+      </svg>
     </View>
   );
 }
