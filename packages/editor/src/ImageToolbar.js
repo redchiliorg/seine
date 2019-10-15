@@ -13,6 +13,6 @@ type Props = ToolbarProps & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartToolbar({ children }: Props) {
+export default function ImageToolbar({ children }: Props) {
   return <Toolbar>{children}</Toolbar>;
 }

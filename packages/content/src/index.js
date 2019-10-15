@@ -7,3 +7,5 @@ export type { Props as GridProps } from './Grid';
 
 export { default as Image } from './Image';
 export type { Props as ImageProps } from './Image';
+
+export { default as Page } from './Page';

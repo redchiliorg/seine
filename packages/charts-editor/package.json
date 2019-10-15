@@ -1,6 +1,6 @@
 {
   "name": "@seine/charts-editor",
-  "version": "0.3.61",
+  "version": "0.3.63",
   "description": "Seine charts editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",

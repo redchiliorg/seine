@@ -13,33 +13,54 @@ import styled, { css } from 'styled-components';
 import type { Props as FabProps } from './BlockAddFab';
 import BlockAddFab from './BlockAddFab';
 
-const Container = Box;
+const Container = styled(Box)`
+  && {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    ${({ isSelected = false }: Props) =>
+      isSelected
+        ? css`
+            border: 1px dashed blue;
+            pointer-events: none;
+          `
+        : css`
+            border: 1px solid transparent;
+            pointer-events: all;
+            & > * {
+              pointer-events: none;
+              & > * {
+                pointer-events: all;
+              }
+            }
+          `}
+  }
+`;
 
 const Group = styled(Grid)`
   && {
-    ${({ theme, extended }) => css`
+    ${({ extended, theme }) => css`
       height: calc(100% + ${extended ? 2 * theme.spacing(5) : 0}px);
       left: 0;
       position: absolute;
-      pointer-events: none;
       top: -${extended ? theme.spacing(5) : 0}px;
-      z-index: 999;
     `}
   }
 `;
 
 const Item = styled(Grid)`
   && {
-    ${(props) => css`
+    ${({ direction }) => css`
       align-items: center;
       display: flex;
       opacity: 0;
       :hover {
         opacity: 1;
       }
-      pointer-events: all;
       transition: opacity 0.1s;
-      ${props.direction === 'column'
+      ${direction === 'column'
         ? css`
             width: 100%;
           `
@@ -59,39 +80,63 @@ type Props = FabProps & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BlockActions({ extended = false, ...fabProps }: Props) {
+export default function BlockActions({
+  dispatch,
+  extended,
+  id,
+  addButtonRenderMap,
+  ...containerProps
+}: Props) {
   return (
-    <Container extended={extended}>
-      <>
-        <Group
-          alignItems={'center'}
-          container
-          extended={extended}
-          justify={'space-between'}
-        >
-          <Item item>
-            <BlockAddFab {...fabProps} type={CREATE_LEFT_BLOCK} />
-          </Item>
-          <Item item>
-            <BlockAddFab {...fabProps} type={CREATE_RIGHT_BLOCK} />
-          </Item>
-        </Group>
+    <Container {...containerProps}>
+      <Group
+        alignItems={'center'}
+        container
+        extended={extended}
+        justify={'space-between'}
+      >
+        <Item item>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_LEFT_BLOCK}
+          />
+        </Item>
+        <Item item>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_RIGHT_BLOCK}
+          />
+        </Item>
+      </Group>
 
-        <Group
-          alignItems={'center'}
-          container
-          direction={'column'}
-          extended={extended}
-          justify={'space-between'}
-        >
-          <Item container item direction={'column'}>
-            <BlockAddFab {...fabProps} type={CREATE_TOP_BLOCK} />
-          </Item>
-          <Item container item direction={'column'}>
-            <BlockAddFab {...fabProps} type={CREATE_BOTTOM_BLOCK} />
-          </Item>
-        </Group>
-      </>
+      <Group
+        alignItems={'center'}
+        container
+        direction={'column'}
+        extended={extended}
+        justify={'space-between'}
+      >
+        <Item container item direction={'column'}>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_TOP_BLOCK}
+          />
+        </Item>
+        <Item container item direction={'column'}>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_BOTTOM_BLOCK}
+          />
+        </Item>
+      </Group>
     </Container>
   );
 }

@@ -7,11 +7,11 @@ import {
   defaultChartFontWeight,
   defaultChartLineHeight,
   defaultChartPalette,
+  defaultChartPaletteKey,
   defaultChartSize,
   defaultChartTitle,
-  defaultChartXAxis,
   defaultChartUnits,
-  defaultChartPaletteKey,
+  defaultChartXAxis,
 } from './constants';
 import type { ChartProps } from './types';
 import BarChartElementTitle from './BarChartElementTitle';
