@@ -2,7 +2,7 @@
 
 exports[`Storyshots Charts Bar Chart 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -292,7 +292,7 @@ exports[`Storyshots Charts Bar Chart 1`] = `
 
 exports[`Storyshots Charts Column Chart 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -543,7 +543,7 @@ exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -1031,7 +1031,7 @@ exports[`Storyshots Charts Editor Of Column Chart 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -1466,7 +1466,7 @@ exports[`Storyshots Charts Editor Of Line Chart 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -2042,7 +2042,7 @@ exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -2375,7 +2375,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -3680,7 +3680,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -4535,7 +4535,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -5280,7 +5280,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+      className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
     >
       <div
         className="sc-htpNat cwZeWu"
@@ -5763,7 +5763,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Charts Line Chart 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -6141,7 +6141,7 @@ exports[`Storyshots Charts Line Chart 1`] = `
 
 exports[`Storyshots Charts Pie Chart 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -6276,7 +6276,7 @@ exports[`Storyshots Charts Pie Chart 1`] = `
 
 exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -7383,7 +7383,7 @@ exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -8040,7 +8040,7 @@ exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -8587,7 +8587,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 And Dy 5 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -9206,7 +9206,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 
 
 exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Value 100 And Dy 18 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -9741,7 +9741,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Valu
 
 exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-bxivhb bqTdRv sc-ifAKCX gScobu"
+  className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
 >
   <div
     className="sc-htpNat cwZeWu"
@@ -10054,7 +10054,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bMKeKC"
+      className="sc-bxivhb iFTTBp"
       id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
       type="grid"
     >
@@ -11753,7 +11753,7 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bMKeKC"
+      className="sc-bxivhb iFTTBp"
       id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
       type="grid"
     >
@@ -12655,7 +12655,7 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bMKeKC"
+      className="sc-bxivhb iFTTBp"
       id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
       type="grid"
     >
@@ -13645,7 +13645,7 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bMKeKC"
+      className="sc-bxivhb iFTTBp"
       id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
       type="grid"
     >
@@ -14622,7 +14622,7 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
   >
     <div
-      className="sc-bxivhb bMKeKC"
+      className="sc-bxivhb iFTTBp"
       id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
       type="grid"
     >
