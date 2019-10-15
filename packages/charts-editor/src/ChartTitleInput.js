@@ -13,6 +13,7 @@ const Input = styled.input`
   && {
     border: none;
     font: inherit;
+    line-height: inherit;
   }
 `;
 

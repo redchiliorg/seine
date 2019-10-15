@@ -9,9 +9,13 @@ import { Editor } from '@seine/editor';
 
 export default { title: 'Charts' };
 
-export const BarChart = ({ actions, as: Component = Content }) => (
+export const BarChart = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -40,16 +44,21 @@ export const BarChart = ({ actions, as: Component = Content }) => (
         format: { kind: 'bar' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
-export const EditorOfBarChart = () => (
-  <BarChart as={Editor} actions={actions('onChange')} />
+export const EditorOfBarChart = (props) => (
+  <BarChart as={Editor} {...actions('onChange')} {...props} />
 );
 
-export const ColumnChart = ({ actions, as: Component = Content }) => (
+export const ColumnChart = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -72,16 +81,21 @@ export const ColumnChart = ({ actions, as: Component = Content }) => (
         format: { kind: 'column' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 export const EditorOfColumnChart = () => (
-  <ColumnChart as={Editor} actions={actions('onChange')} />
+  <ColumnChart as={Editor} {...actions('onChange')} />
 );
 
-export const TwoGroupsOfTwoColumns = ({ actions, as: Component = Content }) => (
+export const TwoGroupsOfTwoColumns = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -107,16 +121,21 @@ export const TwoGroupsOfTwoColumns = ({ actions, as: Component = Content }) => (
         format: { kind: 'column' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 export const EditorOfTwoGroupsOfTwoColumns = () => (
-  <TwoGroupsOfTwoColumns as={Editor} actions={actions('onChange')} />
+  <TwoGroupsOfTwoColumns as={Editor} {...actions('onChange')} />
 );
 
-export const SixGroupsOfSixColumns = ({ actions, as: Component = Content }) => (
+export const SixGroupsOfSixColumns = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -178,16 +197,21 @@ export const SixGroupsOfSixColumns = ({ actions, as: Component = Content }) => (
         format: { kind: 'column' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 export const EditorOfSixGroupsOfSixColumns = () => (
-  <SixGroupsOfSixColumns as={Editor} actions={actions('onChange')} />
+  <SixGroupsOfSixColumns as={Editor} {...actions('onChange')} />
 );
 
-export const SixGroupsOfTwoColumns = ({ actions, as: Component = Content }) => (
+export const SixGroupsOfTwoColumns = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -231,20 +255,22 @@ export const SixGroupsOfTwoColumns = ({ actions, as: Component = Content }) => (
         format: { kind: 'column' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 export const EditorOfSixGroupsOfTwoColumns = () => (
-  <SixGroupsOfTwoColumns as={Editor} actions={actions('onChange')} />
+  <SixGroupsOfTwoColumns as={Editor} {...actions('onChange')} />
 );
 
 export const TwoGroupsOfSixColumns = ({
-  actions,
   as: Component = Content,
+  children = [],
   format = {},
+  ...props
 }) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -278,6 +304,7 @@ export const TwoGroupsOfSixColumns = ({
         format: { ...format, kind: 'column' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
@@ -288,12 +315,16 @@ export const TwoGroupsOfSixColumnsMinValueMinus20MaxValue100AndDy18 = () => (
   <TwoGroupsOfSixColumns format={{ minValue: -10, maxValue: 160, dy: 18 }} />
 );
 export const EditorOfTwoGroupsOfSixColumns = () => (
-  <TwoGroupsOfSixColumns as={Editor} actions={actions('onChange')} />
+  <TwoGroupsOfSixColumns as={Editor} {...actions('onChange')} />
 );
 
-export const LineChart = ({ actions, as: Component = Content }) => (
+export const LineChart = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -335,17 +366,22 @@ export const LineChart = ({ actions, as: Component = Content }) => (
         },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 
 export const EditorOfLineChart = () => (
-  <LineChart as={Editor} actions={actions('onChange')} />
+  <LineChart as={Editor} {...actions('onChange')} />
 );
 
-export const PieChart = ({ actions, as: Component = Content }) => (
+export const PieChart = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
   <Component
-    {...actions}
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -370,10 +406,11 @@ export const PieChart = ({ actions, as: Component = Content }) => (
         format: { kind: 'pie' },
         parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       },
+      ...children,
     ]}
   </Component>
 );
 
 export const EditorOfPieChart = () => (
-  <PieChart as={Editor} actions={actions('onChange')} />
+  <PieChart as={Editor} {...actions('onChange')} />
 );

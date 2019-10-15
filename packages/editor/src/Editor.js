@@ -36,6 +36,8 @@ import BarChartAddButton from './BarChartAddButton';
 import ColumnChartAddButton from './ColumnChartAddButton';
 import LineChartAddButton from './LineChartAddButton';
 import DraftAddButton from './DraftAddButton';
+import { ImageEditor } from './ImageEditor';
+import ImageToolbar from './ImageToolbar';
 
 const defaultEditorChildren = [];
 
@@ -59,6 +61,7 @@ export const defaultEditorBlockRendererMap = {
   }: BlockEditor & Block) => (
     <>{defaultBlockRenderMap[blockTypes.PAGE](props)}</>
   ),
+  [blockTypes.IMAGE]: ImageEditor,
 };
 
 export const defaultAddButtonRenderMap = {
@@ -80,7 +83,7 @@ export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
   [blockTypes.GRID]: () => null,
-  [blockTypes.IMAGE]: () => null,
+  [blockTypes.IMAGE]: ImageToolbar,
   [blockTypes.PAGE]: ({ id, addButtonRenderMap, blocks, dispatch }) =>
     !blocks.length && (
       <Box width={'100%'} display={'flex'} justifyContent={'center'}>
