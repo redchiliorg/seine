@@ -23,7 +23,7 @@ const defaultOnUpload = (formData) =>
     reader.onerror = (error) => reject(error);
   });
 
-type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
+export type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
   dispatch: (BlocksAction) => any,
   onUpload?: (FormData) => Promise<{ file: string }>,
