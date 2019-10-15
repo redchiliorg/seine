@@ -529,7 +529,7 @@ exports[`Storyshots Charts Column Chart 1`] = `
 
 exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -540,7 +540,7 @@ exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -837,176 +837,20 @@ exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-146"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-170"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-171"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-172"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -1017,7 +861,7 @@ exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
 
 exports[`Storyshots Charts Editor Of Column Chart 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -1028,7 +872,7 @@ exports[`Storyshots Charts Editor Of Column Chart 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -1263,7 +1107,7 @@ exports[`Storyshots Charts Editor Of Column Chart 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-214 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-187 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -1272,176 +1116,20 @@ exports[`Storyshots Charts Editor Of Column Chart 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-318"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-342"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-343"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-344"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -1452,7 +1140,7 @@ exports[`Storyshots Charts Editor Of Column Chart 1`] = `
 
 exports[`Storyshots Charts Editor Of Line Chart 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -1463,7 +1151,7 @@ exports[`Storyshots Charts Editor Of Line Chart 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -1839,7 +1527,7 @@ exports[`Storyshots Charts Editor Of Line Chart 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1074 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-912 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -1848,176 +1536,20 @@ exports[`Storyshots Charts Editor Of Line Chart 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1178"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1202"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1203"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1204"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -2028,7 +1560,7 @@ exports[`Storyshots Charts Editor Of Line Chart 1`] = `
 
 exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -2039,7 +1571,7 @@ exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -2172,7 +1704,7 @@ exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1246 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1057 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -2181,176 +1713,20 @@ exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1350"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1374"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1375"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1376"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -2361,7 +1737,7 @@ exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
 
 exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -2372,7 +1748,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -3477,7 +2853,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-558 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-477 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -3486,176 +2862,20 @@ exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-662"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-686"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-687"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-688"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -3666,7 +2886,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -3677,7 +2897,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -4332,7 +3552,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-730 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-622 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -4341,176 +3561,20 @@ exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-834"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-858"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-859"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-860"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -4521,7 +3585,7 @@ exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -4532,7 +3596,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -5077,7 +4141,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-902 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-767 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -5086,176 +4150,20 @@ exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1006"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1030"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1031"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1032"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -5266,7 +4174,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -5277,7 +4185,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb jHLbtR sc-ifAKCX gScobu"
@@ -5574,7 +4482,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-386 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-332 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -5583,176 +4491,20 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-490"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-514"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-515"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-516"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -10040,7 +8792,7 @@ exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Editor Editor Of All Charts 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -10051,7 +8803,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb iFTTBp"
@@ -10429,7 +9181,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2192 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1826 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -10438,176 +9190,20 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2296"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2320"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2321"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2322"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -10828,7 +9424,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2323 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1930 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -10837,176 +9433,20 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2324"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2325"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2326"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2327"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -11138,7 +9578,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2328 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1931 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -11147,176 +9587,20 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2329"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2330"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2331"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2332"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -11550,7 +9834,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2333 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1932 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -11559,176 +9843,20 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2334"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2335"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2336"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2337"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -11739,7 +9867,7 @@ exports[`Storyshots Editor Editor Of All Charts 1`] = `
 
 exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -11750,7 +9878,7 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb iFTTBp"
@@ -11987,7 +10115,7 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1661 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1388 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -11996,176 +10124,20 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1765"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1789"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1790"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1791"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -12452,7 +10424,7 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1792 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1492 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -12461,176 +10433,20 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1793"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1794"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1795"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1796"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -12641,7 +10457,7 @@ exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
 
 exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -12652,7 +10468,7 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb iFTTBp"
@@ -12889,7 +10705,7 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2015 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1680 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -12898,176 +10714,20 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2119"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2143"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2144"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2145"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -13442,7 +11102,7 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2146 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1784 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -13451,176 +11111,20 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2147"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2148"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2149"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2150"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -13631,7 +11135,7 @@ exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
 
 exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -13642,7 +11146,7 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb iFTTBp"
@@ -14020,7 +11524,7 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
           </g>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1838 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1534 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -14029,176 +11533,20 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1942"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1966"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1967"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1968"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -14419,7 +11767,7 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1969 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1638 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -14428,176 +11776,20 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1970"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1971"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1972"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1973"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -14608,7 +11800,7 @@ exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
 
 exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -14619,7 +11811,7 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-bxivhb iFTTBp"
@@ -14754,7 +11946,7 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1484 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1242 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -14763,176 +11955,20 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1588"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1612"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1613"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1614"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -15109,7 +12145,7 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
           </text>
         </svg>
         <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1615 sc-gzVnrw fUYrqU"
+          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1346 sc-gzVnrw fUYrqU"
           isSelected={false}
           onClick={[Function]}
         >
@@ -15118,176 +12154,20 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1616"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1617"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
           <div
             className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
           >
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1618"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
             <div
               className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-            >
-              <div
-                className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1619"
-              >
-                <button
-                  className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <span
-                    className="@seine/ui-MuiFab-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="@seine/ui-MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -15298,7 +12178,7 @@ exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
 
 exports[`Storyshots Editor Initial Editor 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -15306,57 +12186,14 @@ exports[`Storyshots Editor Initial Editor 1`] = `
     <div
       className="@seine/ui-MuiToolbar-root @seine/ui-MuiToolbar-regular @seine/ui-MuiToolbar-gutters"
       onClick={[Function]}
-    >
-      <div
-        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1418"
-      >
-        <div
-          className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1419"
-        >
-          <button
-            className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={0}
-            type="button"
-          >
-            <span
-              className="@seine/ui-MuiFab-label"
-            >
-              <svg
-                aria-hidden="true"
-                className="@seine/ui-MuiSvgIcon-root"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
+    />
   </header>
 </div>
 `;
 
 exports[`Storyshots Image Editor Of Image Content 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -15367,190 +12204,34 @@ exports[`Storyshots Image Editor Of Image Content 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-jTzLTM ieSkpo"
       onClick={[Function]}
     >
       <div
-        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2379 sc-gzVnrw fUYrqU"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-1974 sc-gzVnrw fUYrqU"
       >
         <div
           className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2483"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2507"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
         <div
           className="@seine/ui-MuiGrid-root sc-htoDjs kBCxlL @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2508"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2509"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <img
@@ -15571,7 +12252,7 @@ exports[`Storyshots Image Image Content 1`] = `
 
 exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -15582,7 +12263,7 @@ exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-kAzzGY hxdGpS"
@@ -15771,7 +12452,7 @@ exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
         </div>
       </div>
       <div
-        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2723 sc-gzVnrw fUYrqU"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2264 sc-gzVnrw fUYrqU"
         isSelected={false}
         onClick={[Function]}
       >
@@ -15781,88 +12462,10 @@ exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2827"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2851"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
         <div
           className="@seine/ui-MuiGrid-root sc-htoDjs kAVUgW @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
@@ -15870,88 +12473,10 @@ exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2852"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2853"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
       </div>
     </div>
@@ -15961,7 +12486,7 @@ exports[`Storyshots Rich text Editor Of Multiline Content 1`] = `
 
 exports[`Storyshots Rich text Editor Of Single Line Content 1`] = `
 <div
-  className="sc-eNQAEJ cJXCUI"
+  className="sc-hMqMXs fGtopi"
 >
   <header
     className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation4 @seine/ui-MuiAppBar-root @seine/ui-MuiAppBar-positionRelative sc-VigVT ctEfnS @seine/ui-MuiAppBar-colorPrimary"
@@ -15972,7 +12497,7 @@ exports[`Storyshots Rich text Editor Of Single Line Content 1`] = `
     />
   </header>
   <div
-    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-hMqMXs hXXQyJ @seine/ui-MuiPaper-rounded"
+    className="@seine/ui-MuiPaper-root @seine/ui-MuiPaper-elevation1 sc-gZMcBi sc-kEYyzF kQxMhw @seine/ui-MuiPaper-rounded"
   >
     <div
       className="sc-kAzzGY hxdGpS"
@@ -16055,7 +12580,7 @@ exports[`Storyshots Rich text Editor Of Single Line Content 1`] = `
         </div>
       </div>
       <div
-        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2551 sc-gzVnrw fUYrqU"
+        className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2119 sc-gzVnrw fUYrqU"
         isSelected={false}
         onClick={[Function]}
       >
@@ -16065,88 +12590,10 @@ exports[`Storyshots Rich text Editor Of Single Line Content 1`] = `
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2655"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq egfbYQ @seine/ui-MuiGrid-item"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2679"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
         <div
           className="@seine/ui-MuiGrid-root sc-htoDjs kAVUgW @seine/ui-MuiGrid-container @seine/ui-MuiGrid-direction-xs-column @seine/ui-MuiGrid-align-items-xs-center @seine/ui-MuiGrid-justify-xs-space-between"
@@ -16154,88 +12601,10 @@ exports[`Storyshots Rich text Editor Of Single Line Content 1`] = `
         >
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2680"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
           <div
             className="@seine/ui-MuiGrid-root sc-dnqmqq cvxUAu @seine/ui-MuiGrid-container @seine/ui-MuiGrid-item @seine/ui-MuiGrid-direction-xs-column"
-          >
-            <div
-              className="@seine/ui-MuiBox-root @seine/ui-MuiBox-root-2681"
-            >
-              <button
-                className="@seine/ui-MuiButtonBase-root @seine/ui-MuiFab-root sc-bZQynM cKXNxI @seine/ui-MuiFab-sizeSmall"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="@seine/ui-MuiFab-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="@seine/ui-MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
+          />
         </div>
       </div>
     </div>
