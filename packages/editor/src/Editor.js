@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import type { ContentProps } from '@seine/content';
-import { Content, defaultBlockRenderMap } from '@seine/content';
+import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
   AddButtonProps,
   Block,
@@ -14,14 +14,12 @@ import type {
 } from '@seine/core';
 import {
   blockTypes,
-  CREATE_BLOCK,
   DESELECT_ALL_BLOCKS,
   initialBlocksState,
   reduceBlocks,
 } from '@seine/core';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import {
-  BlockAddFab,
   BlockDeleteButton,
   Paper,
   StylesProvider,
@@ -29,7 +27,6 @@ import {
 } from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import { Box } from '@material-ui/core';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -38,19 +35,17 @@ import LineChartAddButton from './LineChartAddButton';
 import DraftAddButton from './DraftAddButton';
 import { ImageEditor } from './ImageEditor';
 import ImageToolbar from './ImageToolbar';
+import PageToolbar from './PageToolbar';
 
 const defaultEditorChildren = [];
-
-const DefaultContainer = styled.div`
-  width: 75%;
-`;
 
 export const defaultEditorBlockRendererMap = {
   ...defaultBlockRenderMap,
   [blockTypes.CHART]: ChartEditor,
   [blockTypes.DRAFT]: DraftEditor,
-  [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) =>
-    defaultBlockRenderMap[blockTypes.GRID](props),
+  [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) => (
+    <Grid {...props} />
+  ),
   [blockTypes.PAGE]: ({
     id,
     addButtonRenderMap,
@@ -58,9 +53,7 @@ export const defaultEditorBlockRendererMap = {
     editor,
     selection,
     ...props
-  }: BlockEditor & Block) => (
-    <>{defaultBlockRenderMap[blockTypes.PAGE](props)}</>
-  ),
+  }: BlockEditor & Block) => <Page {...props} />,
   [blockTypes.IMAGE]: ImageEditor,
 };
 
@@ -82,20 +75,14 @@ export const defaultAddButtonRenderMap = {
 export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
   [blockTypes.DRAFT]: DraftToolbar,
-  [blockTypes.GRID]: () => null,
+  [blockTypes.GRID]: PageToolbar,
   [blockTypes.IMAGE]: ImageToolbar,
-  [blockTypes.PAGE]: ({ id, addButtonRenderMap, blocks, dispatch }) =>
-    !blocks.length && (
-      <Box width={'100%'} display={'flex'} justifyContent={'center'}>
-        <BlockAddFab
-          addButtonRenderMap={addButtonRenderMap}
-          dispatch={dispatch}
-          id={id}
-          type={CREATE_BLOCK}
-        />
-      </Box>
-    ),
+  [blockTypes.PAGE]: PageToolbar,
 };
+
+const DefaultContainer = styled.div`
+  width: 75%;
+`;
 
 const ContentPaper = styled(Paper)`
   && {

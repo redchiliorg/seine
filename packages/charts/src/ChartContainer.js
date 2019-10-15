@@ -6,4 +6,6 @@ export default styled.div`
   flex-wrap: wrap;
   height: 100%;
   align-items: flex-start;
+  position: relative;
+  width: 100%;
 `;

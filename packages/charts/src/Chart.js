@@ -8,6 +8,7 @@ import ColumnChart from './ColumnChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import type { ChartProps } from './types';
+import ChartContainer from './ChartContainer';
 
 type Config = {
   chartRenderMap: {
@@ -35,5 +36,9 @@ export default function Chart({
   chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
   ...chartProps
 }: Props) {
-  return <ExactChart {...chartProps} />;
+  return (
+    <ChartContainer>
+      <ExactChart {...chartProps} />
+    </ChartContainer>
+  );
 }

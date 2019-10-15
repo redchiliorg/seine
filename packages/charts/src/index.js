@@ -1,7 +1,9 @@
 // @flow
 export * from './constants';
 export * from './helpers';
+
 export { default as Chart, defaultChartRenderMap } from './Chart';
+export { default as ChartContainer } from './ChartContainer';
 export { default as ChartLegendItem } from './ChartLegendItem';
 export { default as ChartTitle } from './ChartTitle';
 export type { Props as ChartTitleProps } from './ChartTitle';

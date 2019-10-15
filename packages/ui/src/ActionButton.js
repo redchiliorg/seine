@@ -19,12 +19,14 @@ export default function ActionButton({
   color = 'default',
   size = 'small',
   variant = 'contained',
+  disableRipple = false,
   title,
   ...action
 }: Props) {
   return (
     <Button
       color={color}
+      disableRipple={disableRipple}
       fullWidth={fullWidth}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}
       size={size}

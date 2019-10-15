@@ -14,13 +14,14 @@ type Props = (DraftBody & DraftFormat & BlockEditor) & {
 const Container = styled.div`
   position: relative;
   height: 100%;
-  z-index: 1000;
+  cursor: text;
 
   .DraftEditor-root {
     height: 100%;
   }
   .public-DraftEditor-content {
     display: grid;
+    height: 100%;
     align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
   }
   ${({ isSelected }: Props) =>
@@ -82,18 +83,7 @@ export default function DraftEditor({
   }, [dispatch, editorState, readOnly]);
 
   return (
-    <Container
-      verticalAlignment={verticalAlignment}
-      {...useSelectableBlockProps({ id, selection }, dispatch)}
-    >
-      {!(selection.length === 1 && selection[0] === id) && (
-        <BlockActions
-          addButtonRenderMap={addButtonRenderMap}
-          dispatch={dispatch}
-          id={id}
-          extended
-        />
-      )}
+    <Container verticalAlignment={verticalAlignment}>
       <Editor
         editorKey={id}
         textAlignment={textAlignment}
@@ -108,6 +98,14 @@ export default function DraftEditor({
           [dispatch]
         )}
         readOnly={readOnly}
+      />
+
+      <BlockActions
+        addButtonRenderMap={addButtonRenderMap}
+        dispatch={dispatch}
+        id={id}
+        extended
+        {...useSelectableBlockProps({ id, selection }, dispatch)}
       />
     </Container>
   );

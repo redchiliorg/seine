@@ -3,7 +3,6 @@ import * as React from 'react';
 import {
   ChartLegendItem,
   ChartTitle,
-  ChartTitleProps,
   LineChartGroup,
   LineChartValue,
 } from '@seine/charts';
@@ -47,22 +46,9 @@ export default function LineChartEditor({
       case 'svg':
         return (
           <svg {...parent.props} key={parent.key}>
-            {React.Children.map(children, (child: ?React.Node) => {
+            {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
-                  case ChartTitle: {
-                    const { children, ...props }: ChartTitleProps = child.props;
-                    return (
-                      <ChartTitleInput
-                        key={child.key}
-                        dispatch={dispatch}
-                        {...props}
-                      >
-                        {children}
-                      </ChartTitleInput>
-                    );
-                  }
-
                   case ChartLegendItem:
                     return [
                       child,

@@ -46,7 +46,7 @@ export default function ColumnChartEditor({
       case 'svg':
         return (
           <svg {...parent.props}>
-            {React.Children.map(children, (child: ?React.Node) => {
+            {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
                   case ChartTitle: {

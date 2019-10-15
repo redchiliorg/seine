@@ -8,13 +8,9 @@ import {
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
 } from '@seine/core';
-import {
-  BlockActions,
-  BlockContainer,
-  useSelectableBlockProps,
-} from '@seine/ui';
+import { BlockActions, useSelectableBlockProps } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
-import { Chart } from '@seine/charts';
+import { Chart, ChartContainer, defaultChartRenderMap } from '@seine/charts';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
@@ -37,88 +33,71 @@ const defaultChartEditorRenderMap = {
 
 const defaultEditor = { selection: initialElementsState.selection };
 
-const ChartEditorContent = ({
-  kind = chartTypes.BAR,
-  addButtonRenderMap,
-  chartEditorRenderMap: {
-    [kind]: ExactChartEditor,
-  } = defaultChartEditorRenderMap,
-  dispatch,
-  dispatchElements,
-  editor,
-  selection,
-  ...chartProps
-}: Props) =>
-  selection.length === 1 && selection[0] === chartProps.id ? (
-    <ExactChartEditor
-      {...chartProps}
-      dispatch={dispatch}
-      dispatchElements={dispatchElements}
-      editor={editor}
-      kind={kind}
-      selection={selection}
-    />
-  ) : (
-    <>
-      <BlockActions
-        addButtonRenderMap={addButtonRenderMap}
-        dispatch={dispatch}
-        id={chartProps.id}
-      />
-      <Chart kind={kind} {...chartProps} />
-    </>
-  );
-
 /**
  * @description Chart editor component.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function ChartEditor({
+  kind = chartTypes.BAR,
   addButtonRenderMap,
+  chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
+  chartEditorRenderMap: {
+    [kind]: ExactChartEditor,
+  } = defaultChartEditorRenderMap,
   dispatch,
   editor = defaultEditor,
   selection,
   ...chartProps
 }: Props) {
+  const dispatchElements = React.useCallback(
+    (action: ElementsAction) => {
+      const { elements, selection } = reduceElements(
+        {
+          elements: chartProps.elements,
+          selection: editor.selection,
+        },
+        action
+      );
+
+      if (elements !== chartProps.elements) {
+        dispatch({
+          type: UPDATE_BLOCK_BODY,
+          body: { elements },
+        });
+      }
+
+      if (selection !== editor.selection) {
+        dispatch({
+          type: UPDATE_BLOCK_EDITOR,
+          editor: { selection },
+        });
+      }
+    },
+    [chartProps.elements, editor, dispatch]
+  );
+
   return (
-    <BlockContainer
-      {...useSelectableBlockProps({ id: chartProps.id, selection }, dispatch)}
-    >
-      <ChartEditorContent
-        {...chartProps}
+    <ChartContainer>
+      {selection.length === 1 && selection[0] === chartProps.id ? (
+        <ExactChartEditor
+          {...chartProps}
+          kind={kind}
+          dispatch={dispatch}
+          dispatchElements={dispatchElements}
+          editor={editor}
+          selection={selection}
+        />
+      ) : (
+        <ExactChart {...chartProps} />
+      )}
+
+      <BlockActions
         addButtonRenderMap={addButtonRenderMap}
-        id={chartProps.id}
         dispatch={dispatch}
-        dispatchElements={React.useCallback(
-          (action: ElementsAction) => {
-            const { elements, selection } = reduceElements(
-              {
-                elements: chartProps.elements,
-                selection: editor.selection,
-              },
-              action
-            );
-
-            if (elements !== chartProps.elements) {
-              dispatch({
-                type: UPDATE_BLOCK_BODY,
-                body: { elements },
-              });
-            }
-
-            if (selection !== editor.selection) {
-              dispatch({
-                type: UPDATE_BLOCK_EDITOR,
-                editor: { selection },
-              });
-            }
-          },
-          [chartProps.elements, editor, dispatch]
-        )}
-        editor={editor}
-        selection={selection}
+        id={chartProps.id}
+        {...useSelectableBlockProps({ id: chartProps.id, selection }, dispatch)}
       />
-    </BlockContainer>
+    </ChartContainer>
   );
 }
