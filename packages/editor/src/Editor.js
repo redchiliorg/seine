@@ -36,6 +36,7 @@ import DraftAddButton from './DraftAddButton';
 import { ImageEditor } from './ImageEditor';
 import ImageToolbar from './ImageToolbar';
 import PageToolbar from './PageToolbar';
+import ImageAddButton from './ImageAddButton';
 
 const defaultEditorChildren = [];
 
@@ -68,7 +69,7 @@ export const defaultAddButtonRenderMap = {
   ),
   [blockTypes.DRAFT]: DraftAddButton,
   [blockTypes.GRID]: () => null,
-  [blockTypes.IMAGE]: /* todo */ () => null,
+  [blockTypes.IMAGE]: ImageAddButton,
   [blockTypes.PAGE]: () => null,
 };
 

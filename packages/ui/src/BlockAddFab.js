@@ -39,18 +39,11 @@ export type Props = AddButtonProps & {
 export default function BlockAddFab({
   addButtonRenderMap,
   type,
-  dispatch,
   ...addButtonProps
 }: Props) {
   const [open, setOpen] = React.useState(false);
   const handleClose = React.useCallback((event) => {
     event.stopPropagation();
-    setOpen(false);
-  }, []);
-
-  const actionRef = React.useRef(null);
-  const dispatchAction = React.useCallback((action) => {
-    actionRef.current = action;
     setOpen(false);
   }, []);
 
@@ -74,13 +67,7 @@ export default function BlockAddFab({
           anchorEl={anchorEl.current}
           open={open}
           transitionDuration={0}
-          onExited={React.useCallback(() => {
-            const { current } = actionRef;
-            if (current) {
-              actionRef.current = null;
-              dispatch(current);
-            }
-          }, [dispatch])}
+          keepMounted
         >
           {React.useMemo(
             () =>
@@ -89,7 +76,6 @@ export default function BlockAddFab({
                 return (
                   <BlockAddButton
                     {...addButtonProps}
-                    dispatch={dispatchAction}
                     as={Button}
                     fullWidth
                     key={blockType}
@@ -98,7 +84,7 @@ export default function BlockAddFab({
                   />
                 );
               }),
-            [addButtonProps, addButtonRenderMap, dispatchAction, type]
+            [addButtonProps, addButtonRenderMap, type]
           )}
         </Popover>
       </Box>
