@@ -8,8 +8,8 @@ export type Props = (GridBody & GridFormat) & {
 };
 
 export const defaultGridColumns = 'repeat(auto-fit, minmax(300px, 1fr))';
-export const defaultGridColumnGap = 25;
-export const defaultGridRowGap = 25;
+export const defaultGridColumnGap = 50;
+export const defaultGridRowGap = 50;
 export const defaultGridRows = '';
 
 /**
@@ -28,7 +28,9 @@ export default styled.div`
   }: Props) => css`
     grid-template-columns: ${columns};
     grid-template-rows: ${rows};
-    row-gap: ${Number.isFinite(rowGap) ? `${rowGap}px` : rowGap};
-    column-gap: ${Number.isFinite(columnGap) ? `${columnGap}px` : columnGap};
+    grid-row-gap: ${Number.isFinite(rowGap) ? `${rowGap}px` : rowGap};
+    grid-column-gap: ${Number.isFinite(columnGap)
+      ? `${columnGap}px`
+      : columnGap};
   `}
 `;

@@ -81,12 +81,12 @@ export default function ChartEditor({
     <ChartContainer>
       {selection.length === 1 && selection[0] === chartProps.id ? (
         <ExactChartEditor
-          {...chartProps}
           kind={kind}
           dispatch={dispatch}
           dispatchElements={dispatchElements}
           editor={editor}
           selection={selection}
+          {...chartProps}
         />
       ) : (
         <ExactChart {...chartProps} />

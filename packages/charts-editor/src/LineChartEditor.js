@@ -56,7 +56,7 @@ export default function LineChartEditor({
                         {...child.props}
                         key={[child.key, 'input']}
                         id={child.key}
-                        dispatchElements={dispatchElements}
+                        dispatch={dispatchElements}
                       />,
                     ];
 
