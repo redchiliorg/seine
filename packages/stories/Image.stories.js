@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { Content } from '@seine/content';
+import { Editor } from '@seine/editor';
+import { actions } from '@storybook/addon-actions';
 
 export default { title: 'Image' };
 
-export const ImageContent = () => (
-  <Content
+export const ImageContent = ({ as: Component = Content, ...props }) => (
+  <Component
+    {...props}
     parent={{
       id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
       type: 'page',
@@ -26,5 +29,9 @@ export const ImageContent = () => (
         },
       },
     ]}
-  </Content>
+  </Component>
+);
+
+export const EditorOfImageContent = () => (
+  <ImageContent as={Editor} {...actions('onChange')} />
 );

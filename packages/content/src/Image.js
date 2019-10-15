@@ -2,7 +2,7 @@
 import * as React from 'react';
 import type { ImageBody, ImageFormat } from '@seine/core';
 
-export type Props = ImageBody & ImageFormat & HTMLImageElement;
+export type Props = ImageBody & ImageFormat & $Shape<HTMLImageElement>;
 
 /**
  * @description Image block default render component.
