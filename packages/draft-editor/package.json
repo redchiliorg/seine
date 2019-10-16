@@ -18,6 +18,9 @@
     "draft-js-buttons": "^2.0.2"
   },
   "peerDependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
     "draft-js": "^0.11.0",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"

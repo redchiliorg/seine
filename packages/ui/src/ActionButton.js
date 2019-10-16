@@ -26,6 +26,7 @@ export default function ActionButton({
   return (
     <Button
       color={color}
+      className={className}
       disableRipple={disableRipple}
       fullWidth={fullWidth}
       onClick={React.useCallback(() => dispatch(action), [dispatch, action])}

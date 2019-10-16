@@ -1,16 +1,15 @@
-const path = require('path');
-
 const { workspaces } = require('../package.json');
+const resolveWorkspaces = require('../scripts/resolve-workspaces');
 
-module.exports = async ({ config }) => {
-  workspaces.forEach((workspace) => {
-    const workSpacePath = path.resolve(workspace);
-    const packageJsonPath = path.join(workSpacePath, 'package.json');
-    const entryPath = path.join(workSpacePath, 'src', 'index.js');
-
-    const { name: moduleId } = require(packageJsonPath);
-
-    config.resolve.alias[moduleId] = require.resolve(entryPath);
-  });
-  return config;
-};
+module.exports = async ({ config }) => ({
+  ...config,
+  resolve: {
+    ...config.resolve,
+    alias: resolveWorkspaces(workspaces)
+      .filter((opts) => 'entry' in opts)
+      .reduce(
+        (acc, { entry, packageJson: { name } }) => ({ ...acc, [name]: entry }),
+        config.resolve.alias
+      ),
+  },
+});

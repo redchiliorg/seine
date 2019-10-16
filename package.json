@@ -28,6 +28,8 @@
     "dev:start": "start-storybook -p 9009 -s public"
   },
   "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.3.3",
     "draft-js": "^0.11.0",
     "gh-pages": "^2.1.1",
     "react": "^16.8.6",
@@ -36,9 +38,6 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
-    "@material-ui/core": "^4.3.3",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.3.3",
     "@storybook/addon-actions": "^5.2.0",
     "@storybook/addon-storyshots": "^5.2.0",
     "@storybook/addons": "^5.2.0",
@@ -47,8 +46,10 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.5",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-import": "^1.12.2",
     "babel-plugin-macros": "^2.6.1",
     "babel-plugin-named-asset-import": "^0.3.2",
+    "babel-plugin-transform-imports": "^2.0.0",
     "babel-preset-react-app": "^9.0.1",
     "draft-js": "^0.11.0",
     "eslint": "^6.3.0",
@@ -62,11 +63,12 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "flow-bin": "^0.105.2",
+    "glob": "^7.1.4",
+    "history": "^4.10.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-pnp-resolver": "^1.2.1",
     "jest-resolve": "^24.9.0",
-    "jss": "^10.0.0",
     "minimist": "^1.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
@@ -84,14 +86,19 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-visualizer": "^2.5.4"
   },
-  "workspaces": [
-    "packages/core",
-    "packages/ui",
-    "packages/draft",
-    "packages/charts",
-    "packages/content",
-    "packages/draft-editor",
-    "packages/charts-editor",
-    "packages/editor"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/core",
+      "packages/ui",
+      "packages/draft",
+      "packages/charts",
+      "packages/content",
+      "packages/draft-editor",
+      "packages/charts-editor",
+      "packages/editor"
+    ],
+    "nohoist": [
+      "packages/*/@material-ui/core/**"
+    ]
+  }
 }
