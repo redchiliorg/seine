@@ -7,7 +7,7 @@ import MuiFab from '@material-ui/core/Fab';
 import Popover from '@material-ui/core/Popover';
 import type { AddButtonProps, BlockType } from '@seine/core';
 import { blockTypes } from '@seine/core';
-import { Box } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
 const Button = styled(MuiButton)`

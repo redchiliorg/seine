@@ -19,7 +19,7 @@ module.exports = function parseWorkspaces(workspaces = defaultWorkspaces) {
       .reduce(
         (acc, pattern) => [
           ...acc,
-          ...glob(join(pattern, 'package.json'), globOptions),
+          ...glob(join(__dirname, '..', pattern, 'package.json'), globOptions),
         ],
         []
       )

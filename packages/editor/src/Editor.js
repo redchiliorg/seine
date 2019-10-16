@@ -1,8 +1,7 @@
 // @flow
 import * as React from 'react';
-import styled, { css, ThemeProvider } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ClickAwayListener, Paper } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
@@ -22,7 +21,7 @@ import {
 } from '@seine/core';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { BlockDeleteButton, useReducerEx } from '@seine/ui';
+import { BlockDeleteButton, useReducerEx, StylesProvider } from '@seine/ui';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -165,7 +164,7 @@ export default function Editor({
   );
 
   return (
-    <ThemeProvider theme={useTheme()}>
+    <StylesProvider>
       <ClickAwayListener
         onClickAway={React.useCallback(
           (event) =>
@@ -199,6 +198,6 @@ export default function Editor({
           )}
         </Container>
       </ClickAwayListener>
-    </ThemeProvider>
+    </StylesProvider>
   );
 }

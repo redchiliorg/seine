@@ -10,7 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Typography } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
 import ViewListIcon from '@material-ui/icons/ViewList';
 import BallotIcon from '@material-ui/icons/Ballot';
 import InfoIcon from '@material-ui/icons/Info';
@@ -18,7 +18,8 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import AddIcon from '@material-ui/icons/Add';
 import ImageIcon from '@material-ui/icons/Image';
 import { actions } from '@storybook/addon-actions';
-import { Editor } from '@seine/editor';
+
+import { Editor } from '../editor';
 
 const useStyles = makeStyles((theme) => ({
   root: {

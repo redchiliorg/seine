@@ -10,6 +10,10 @@ import flowEntry from 'rollup-plugin-flow-entry';
 import cleanup from 'rollup-plugin-cleanup';
 import visualize from 'rollup-plugin-visualizer';
 
+import { workspaces } from './package.json';
+
+const resolveWorkspaces = require('./scripts/resolve-workspaces');
+
 const { NODE_ENV = 'production' } = process.env;
 const { external, format, name } = minimist(process.argv.slice(2), {
   alias: commandAliases,
@@ -50,15 +54,6 @@ const config = {
       buildStart() {
         this.warn(`Building package ${packageName}@${packageVersion}`);
       },
-      resolveId(id) {
-        if (NODE_ENV === 'production' && id === 'react-is') {
-          const moduleDir = path.dirname(require.resolve(id));
-          return require.resolve(
-            path.join(moduleDir, 'cjs', 'react-is.production.min.js')
-          );
-        }
-        return null;
-      },
     },
     visualize({
       template: process.env.VISUALIZER_TEMPLATE,
@@ -69,7 +64,12 @@ const config = {
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        'react-is': ['ForwardRef'],
+        'prop-types': ['elementType'],
+      },
+    }),
     nodeResolve({
       preferBuiltins: true,
     }),
@@ -79,7 +79,11 @@ const config = {
   external: [
     'crypto',
     ...Object.keys(peerDependencies),
-    ...Object.keys(dependencies).filter((name) => name.startsWith('@seine/')),
+    ...resolveWorkspaces(workspaces).reduce(
+      (acc, { packageJson: { name } }) =>
+        name in dependencies ? [...acc, name] : acc,
+      []
+    ),
     ...(external ? external.split(',') : []),
   ],
 };

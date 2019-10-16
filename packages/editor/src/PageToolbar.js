@@ -2,7 +2,7 @@
 import * as React from 'react';
 import type { ImageBody, ImageFormat, ToolbarProps } from '@seine/core';
 import { BlockAddFab, Toolbar } from '@seine/ui';
-import { Box } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 import { CREATE_BLOCK } from '@seine/core';
 
 type Props = ToolbarProps & {
