@@ -4,12 +4,12 @@ import { ForeignInput } from '@seine/ui';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
   ChartTitle,
-  ChartTitleProps,
   PieChartSlice,
   PieChartTitle,
   PieChartValue,
 } from '@seine/charts';
 import type {
+  ChartTitleProps,
   PieChartSliceProps,
   PieChartTitleProps,
   PieChartValueProps,

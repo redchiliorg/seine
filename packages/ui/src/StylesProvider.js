@@ -1,15 +1,18 @@
 // @flow
 import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
 import {
   createGenerateClassName,
+  jssPreset,
   StylesProvider as MuiStylesProvider,
   useTheme,
 } from '@material-ui/core/styles';
-import { ThemeProvider } from 'styled-components';
 
 export const defaultGenerateClassName = createGenerateClassName({
   seed: '@seine/ui',
 });
+
+const defaultJss = jssPreset();
 
 type Props = React.ComponentProps<typeof MuiStylesProvider>;
 
@@ -21,15 +24,15 @@ type Props = React.ComponentProps<typeof MuiStylesProvider>;
 export default function StylesProvider({
   children,
   generateClassName = defaultGenerateClassName,
+  jss = defaultJss,
   ...stylesProviderProps
 }: Props) {
-  const theme = useTheme();
   return (
     <MuiStylesProvider
       {...stylesProviderProps}
       generateClassName={generateClassName}
     >
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={useTheme()}>{children}</ThemeProvider>
     </MuiStylesProvider>
   );
 }

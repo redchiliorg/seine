@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { Action } from '@seine/core';
-import MuiButton from '@material-ui/core/Button';
+import { Button as MuiButton } from '@material-ui/core';
 
 type Props = Action & React.ElementProps<HTMLButtonElement>;
 

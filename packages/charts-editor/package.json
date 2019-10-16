@@ -1,6 +1,6 @@
 {
   "name": "@seine/charts-editor",
-  "version": "0.3.64",
+  "version": "0.3.65",
   "description": "Seine charts editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -17,7 +17,7 @@
     "react-color": "^2.17.3"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.3.3",
+    "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
     "react": "^16.8.6",

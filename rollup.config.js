@@ -1,3 +1,4 @@
+import fs from 'fs';
 import path from 'path';
 
 import minimist from 'minimist';
@@ -15,7 +16,7 @@ import { workspaces } from './package.json';
 const resolveWorkspaces = require('./scripts/resolve-workspaces');
 
 const { NODE_ENV = 'production' } = process.env;
-const { external, format, name } = minimist(process.argv.slice(2), {
+const { format, external, name } = minimist(process.argv.slice(2), {
   alias: commandAliases,
   default: {
     external: false,
@@ -30,6 +31,8 @@ const {
   dependencies = {},
   peerDependencies = {},
 } = require(path.resolve('package.json'));
+
+const muiCorePath = path.dirname(require.resolve('@material-ui/core/esm'));
 
 const config = {
   input: path.join('src', `${name}.js`),
@@ -54,6 +57,22 @@ const config = {
       buildStart() {
         this.warn(`Building package ${packageName}@${packageVersion}`);
       },
+      resolveId(id, importer) {
+        if (importer && importer.startsWith(muiCorePath)) {
+          const importerPath = path.dirname(importer);
+          const modulePath = path.join(importerPath, id);
+          try {
+            if (fs.statSync(modulePath).isDirectory()) {
+              return {
+                id: `@material-ui/core/${path.basename(id)}`,
+                external: true,
+              };
+            }
+          } catch {}
+        }
+
+        return null;
+      },
     },
     visualize({
       template: process.env.VISUALIZER_TEMPLATE,
@@ -68,6 +87,7 @@ const config = {
       namedExports: {
         'react-is': ['ForwardRef'],
         'prop-types': ['elementType'],
+        'node_modules/@material-ui/core/Modal/index.js': ['ModalManager'],
       },
     }),
     nodeResolve({

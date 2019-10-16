@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import MuiButton from '@material-ui/core/Button';
+import { Button as MuiButton } from '@material-ui/core';
 
 type Action = { type: string, [string]: any };
 
