@@ -87,7 +87,6 @@ const config = {
       namedExports: {
         'react-is': ['ForwardRef'],
         'prop-types': ['elementType'],
-        'node_modules/@material-ui/core/Modal/index.js': ['ModalManager'],
       },
     }),
     nodeResolve({
