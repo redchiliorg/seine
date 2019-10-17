@@ -2,7 +2,7 @@ const { workspaces } = require('../package.json');
 const resolveWorkspaces = require('../scripts/resolve-workspaces');
 
 module.exports = async ({ config, mode }) =>
-  mode === 'development'
+  mode.toLowerCase() === 'development'
     ? {
         ...config,
         resolve: {
