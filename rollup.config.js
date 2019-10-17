@@ -72,10 +72,6 @@ const config = {
           } catch {}
         }
 
-        if (id.startsWith('@material-ui/core')) {
-          return { id, external: true };
-        }
-
         if (id === packageName) {
           this.error(`${packageName} tries to import from itself`);
         }
