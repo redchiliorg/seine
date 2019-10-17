@@ -1,11 +1,12 @@
 // @flow
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { jssPreset, useTheme } from '@material-ui/core/styles';
 import {
+  jssPreset,
+  useTheme,
   createGenerateClassName,
   StylesProvider as MuiStylesProvider,
-} from '@material-ui/core';
+} from '@material-ui/core/styles';
 
 export const defaultGenerateClassName = createGenerateClassName({
   seed: '@seine/ui',
