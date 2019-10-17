@@ -1,7 +1,5 @@
 // @flow
 import * as React from 'react';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
 import {
   CREATE_BOTTOM_BLOCK,
   CREATE_LEFT_BLOCK,
@@ -9,6 +7,7 @@ import {
   CREATE_TOP_BLOCK,
 } from '@seine/core';
 import styled, { css } from 'styled-components';
+import { Box, Grid } from '@material-ui/core';
 
 import type { Props as FabProps } from './BlockAddFab';
 import BlockAddFab from './BlockAddFab';

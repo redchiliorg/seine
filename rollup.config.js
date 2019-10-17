@@ -1,3 +1,4 @@
+import fs from 'fs';
 import path from 'path';
 
 import minimist from 'minimist';
@@ -10,8 +11,15 @@ import flowEntry from 'rollup-plugin-flow-entry';
 import cleanup from 'rollup-plugin-cleanup';
 import visualize from 'rollup-plugin-visualizer';
 
+import { workspaces } from './package.json';
+
+const resolveWorkspaces = require('./scripts/resolve-workspaces');
+const packages = resolveWorkspaces(workspaces);
+
+const muiCorePath = path.dirname(require.resolve('@material-ui/core'));
+
 const { NODE_ENV = 'production' } = process.env;
-const { external, format, name } = minimist(process.argv.slice(2), {
+const { format, external, name } = minimist(process.argv.slice(2), {
   alias: commandAliases,
   default: {
     external: false,
@@ -50,13 +58,24 @@ const config = {
       buildStart() {
         this.warn(`Building package ${packageName}@${packageVersion}`);
       },
-      resolveId(id) {
-        if (NODE_ENV === 'production' && id === 'react-is') {
-          const moduleDir = path.dirname(require.resolve(id));
-          return require.resolve(
-            path.join(moduleDir, 'cjs', 'react-is.production.min.js')
-          );
+      resolveId(id, importer) {
+        if (importer && importer.startsWith(muiCorePath)) {
+          const importerPath = path.dirname(importer);
+          const modulePath = path.join(importerPath, id);
+          try {
+            if (fs.statSync(modulePath).isDirectory()) {
+              return {
+                id: `@material-ui/core/${path.basename(id)}`,
+                external: true,
+              };
+            }
+          } catch {}
         }
+
+        if (id === packageName) {
+          this.error(`${packageName} tries to import from itself`);
+        }
+
         return null;
       },
     },
@@ -69,7 +88,12 @@ const config = {
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        'react-is': ['ForwardRef'],
+        'prop-types': ['elementType'],
+      },
+    }),
     nodeResolve({
       preferBuiltins: true,
     }),
@@ -79,7 +103,11 @@ const config = {
   external: [
     'crypto',
     ...Object.keys(peerDependencies),
-    ...Object.keys(dependencies).filter((name) => name.startsWith('@seine/')),
+    ...packages.reduce(
+      (acc, { packageJson: { name } }) =>
+        name in dependencies ? [...acc, name] : acc,
+      []
+    ),
     ...(external ? external.split(',') : []),
   ],
 };

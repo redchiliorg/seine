@@ -8,13 +8,13 @@ import {
 } from '@seine/charts';
 import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
 import { ForeignInput } from '@seine/ui';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
 } from '@seine/core';
+import { ClickAwayListener } from '@material-ui/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';

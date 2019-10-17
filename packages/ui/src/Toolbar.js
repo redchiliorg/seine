@@ -1,9 +1,11 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import MuiAppBar from '@material-ui/core/AppBar';
-import Divider from '@material-ui/core/Divider';
-import MuiToolbar from '@material-ui/core/Toolbar';
+import {
+  AppBar as MuiAppBar,
+  Divider,
+  Toolbar as MuiToolbar,
+} from '@material-ui/core';
 
 Toolbar.Group = ({ children }) => <>{children}</>;
 

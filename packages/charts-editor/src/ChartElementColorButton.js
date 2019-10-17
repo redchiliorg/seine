@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Button } from '@seine/ui';
+import { Button } from '@material-ui/core';
 import { SketchPicker } from 'react-color';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import {

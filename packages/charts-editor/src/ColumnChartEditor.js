@@ -1,20 +1,15 @@
 // @flow
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import type { ColumnChartGroupProps } from '@seine/charts';
-import {
-  ChartLegendItem,
-  ChartTitle,
-  ChartTitleProps,
-  ColumnChartGroup,
-} from '@seine/charts';
+import type { ChartTitleProps, ColumnChartGroupProps } from '@seine/charts';
+import { ChartLegendItem, ChartTitle, ColumnChartGroup } from '@seine/charts';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
 } from '@seine/core';
+import { ClickAwayListener } from '@material-ui/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';

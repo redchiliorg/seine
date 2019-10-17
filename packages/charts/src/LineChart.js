@@ -52,8 +52,8 @@ export default function LineChart({
 }: Props) {
   fontSize *= 2;
 
-  const height = 86;
-  const y = 7;
+  const height = 79;
+  const y = 0;
 
   const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,

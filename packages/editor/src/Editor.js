@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
+import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
@@ -18,15 +19,9 @@ import {
   initialBlocksState,
   reduceBlocks,
 } from '@seine/core';
-import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import {
-  BlockDeleteButton,
-  Paper,
-  StylesProvider,
-  useReducerEx,
-} from '@seine/ui';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
+import { BlockDeleteButton, useReducerEx, StylesProvider } from '@seine/ui';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';

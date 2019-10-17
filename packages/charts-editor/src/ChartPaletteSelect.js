@@ -6,10 +6,8 @@ import {
   defaultChartPaletteKey,
 } from '@seine/charts';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
-import FormControl from '@material-ui/core/FormControl';
-import MenuItem from '@material-ui/core/MenuItem';
-import MuiSelect from '@material-ui/core/Select';
 import styled, { css } from 'styled-components';
+import { FormControl, MenuItem, Select as MuiSelect } from '@material-ui/core';
 
 const Label = styled.span.attrs(({ role = 'option' }) => ({ role }))`
   font-weight: bold;

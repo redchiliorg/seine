@@ -2,19 +2,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import AddIcon from '@material-ui/icons/Add';
-import MuiButton from '@material-ui/core/Button';
-import MuiFab from '@material-ui/core/Fab';
-import Popover from '@material-ui/core/Popover';
+import {
+  Button,
+  Fab as MuiFab,
+  Popover,
+  Box,
+  ClickAwayListener,
+} from '@material-ui/core';
 import type { AddButtonProps, BlockType } from '@seine/core';
 import { blockTypes } from '@seine/core';
-import { Box } from '@material-ui/core';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-
-const Button = styled(MuiButton)`
-  && {
-    border-radius: 0;
-  }
-`;
 
 const Fab = styled(MuiFab)`
   && {

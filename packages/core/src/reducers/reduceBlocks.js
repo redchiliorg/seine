@@ -1,7 +1,7 @@
 // @flow
 import { equals } from 'ramda';
-import { createBlock } from '@seine/core';
 
+import { createBlock } from '../utils';
 import type { Block, BlockBody, BlockFormat, BlockId } from '../types';
 import { blockTypes } from '../types';
 
