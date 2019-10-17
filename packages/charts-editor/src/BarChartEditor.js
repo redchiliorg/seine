@@ -12,7 +12,7 @@ import {
   UPDATE_BLOCK_ELEMENT,
 } from '@seine/core';
 import { ForeignInput } from '@seine/ui';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import { ClickAwayListener } from '@material-ui/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';

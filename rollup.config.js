@@ -14,6 +14,9 @@ import visualize from 'rollup-plugin-visualizer';
 import { workspaces } from './package.json';
 
 const resolveWorkspaces = require('./scripts/resolve-workspaces');
+const packages = resolveWorkspaces(workspaces);
+
+const muiCorePath = path.dirname(require.resolve('@material-ui/core'));
 
 const { NODE_ENV = 'production' } = process.env;
 const { format, external, name } = minimist(process.argv.slice(2), {
@@ -31,8 +34,6 @@ const {
   dependencies = {},
   peerDependencies = {},
 } = require(path.resolve('package.json'));
-
-const muiCorePath = path.dirname(require.resolve('@material-ui/core/esm'));
 
 const config = {
   input: path.join('src', `${name}.js`),
@@ -71,6 +72,14 @@ const config = {
           } catch {}
         }
 
+        if (id.startsWith('@material-ui/core')) {
+          return { id, external: true };
+        }
+
+        if (id === packageName) {
+          this.error(`${packageName} tries to import from itself`);
+        }
+
         return null;
       },
     },
@@ -98,7 +107,7 @@ const config = {
   external: [
     'crypto',
     ...Object.keys(peerDependencies),
-    ...resolveWorkspaces(workspaces).reduce(
+    ...packages.reduce(
       (acc, { packageJson: { name } }) =>
         name in dependencies ? [...acc, name] : acc,
       []

@@ -3,11 +3,13 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { blockTypes, createBlock } from '@seine/core';
 import { ActionButton } from '@seine/ui';
-import Box from '@material-ui/core/Box';
-import { Button } from '@material-ui/core';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
+import {
+  Button,
+  Box,
+  CircularProgress,
+  Dialog,
+  DialogActions,
+} from '@material-ui/core';
 import type { Block, BlocksAction, BlocksCreateAction } from '@seine/core';
 
 const FileInput = styled.input.attrs(() => ({ type: 'file' }))`

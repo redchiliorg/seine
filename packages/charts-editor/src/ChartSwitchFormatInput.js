@@ -4,7 +4,7 @@ import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import * as React from 'react';
 import styled from 'styled-components';
 import { defaultChartFormat } from '@seine/charts';
-import Checkbox from '@material-ui/core/Checkbox';
+import { Checkbox } from '@material-ui/core';
 
 type Props = {
   dispatch: (BlocksAction) => any,
