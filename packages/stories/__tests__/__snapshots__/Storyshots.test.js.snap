@@ -2,7 +2,7 @@
 
 exports[`Storyshots Charts Bar Chart 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -296,7 +296,7 @@ exports[`Storyshots Charts Bar Chart 1`] = `
 
 exports[`Storyshots Charts Column Chart 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -549,7 +549,7 @@ exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `null`;
 
 exports[`Storyshots Charts Line Chart 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -927,7 +927,7 @@ exports[`Storyshots Charts Line Chart 1`] = `
 
 exports[`Storyshots Charts Pie Chart 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -1066,7 +1066,7 @@ exports[`Storyshots Charts Pie Chart 1`] = `
 
 exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -2173,7 +2173,7 @@ exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -2830,7 +2830,7 @@ exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -3377,7 +3377,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 And Dy 5 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -3996,7 +3996,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 
 
 exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Value 100 And Dy 18 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -4531,7 +4531,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Valu
 
 exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 jmwyPu"
+  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
@@ -4843,10 +4843,14 @@ exports[`Storyshots Editor Initial Editor 1`] = `null`;
 exports[`Storyshots Image Editor Of Image Content 1`] = `null`;
 
 exports[`Storyshots Image Image Content 1`] = `
-<img
-  align="middle"
-  src="https://foter.com/photos/394/dock-watering-natural.jpg"
-/>
+<div
+  className="Image__ImageContainer-pzp13f-0 jvVeoS"
+>
+  <img
+    align="middle"
+    src="https://foter.com/photos/394/dock-watering-natural.jpg"
+  />
+</div>
 `;
 
 exports[`Storyshots RichText Editor Of Multiline Content 1`] = `null`;
