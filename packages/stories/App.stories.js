@@ -18,8 +18,7 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import AddIcon from '@material-ui/icons/Add';
 import ImageIcon from '@material-ui/icons/Image';
 import { actions } from '@storybook/addon-actions';
-
-import { Editor } from '../editor';
+import { Editor } from '@seine/editor';
 
 const useStyles = makeStyles((theme) => ({
   root: {

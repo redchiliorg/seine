@@ -1,4 +1,3 @@
-import fs from 'fs';
 import path from 'path';
 
 import minimist from 'minimist';
@@ -10,19 +9,15 @@ import postcss from 'rollup-plugin-postcss';
 import flowEntry from 'rollup-plugin-flow-entry';
 import cleanup from 'rollup-plugin-cleanup';
 import visualize from 'rollup-plugin-visualizer';
+import camelCase from 'lodash/camelCase';
 
 import { workspaces } from './package.json';
-
-const resolveWorkspaces = require('./scripts/resolve-workspaces');
-const packages = resolveWorkspaces(workspaces);
-
-const muiCorePath = path.dirname(require.resolve('@material-ui/core'));
 
 const { NODE_ENV = 'production' } = process.env;
 const { format, external, name } = minimist(process.argv.slice(2), {
   alias: commandAliases,
   default: {
-    external: false,
+    external: '',
     format: 'esm',
     name: 'index',
   },
@@ -30,10 +25,21 @@ const { format, external, name } = minimist(process.argv.slice(2), {
 
 const {
   name: packageName,
-  version: packageVersion,
   dependencies = {},
   peerDependencies = {},
 } = require(path.resolve('package.json'));
+
+const workspaceModuleIds = [
+  ...require('./scripts/resolve-workspaces')(workspaces)
+    .map(({ packageJson: { name: id } }) => id)
+    .filter((id) => id in dependencies),
+];
+const peerModuleIds = Object.keys(peerDependencies);
+const externalModuleIds = [
+  ...peerModuleIds,
+  ...workspaceModuleIds,
+  ...external.split(','),
+].filter((id) => id.trim());
 
 const config = {
   input: path.join('src', `${name}.js`),
@@ -41,7 +47,7 @@ const config = {
     file: path.join('lib', format, `${name}.js`),
     format,
     ...(format === 'umd' && {
-      name,
+      name: camelCase(packageName),
       banner: `window.process = {env: {NODE_ENV: '${NODE_ENV}'}};`,
       globals: {
         react: 'React',
@@ -49,67 +55,41 @@ const config = {
         'draft-js': 'Draft',
         'styled-components': 'styled',
         crypto: 'crypto',
+        ...Object.keys(workspaceModuleIds).reduce(
+          (acc, name) => ({
+            ...acc,
+            [name]: camelCase(name),
+          }),
+          {}
+        ),
       },
     }),
+    sourcemap: true,
   },
   plugins: [
-    {
-      name: 'hooks',
-      buildStart() {
-        this.warn(`Building package ${packageName}@${packageVersion}`);
-      },
-      resolveId(id, importer) {
-        if (importer && importer.startsWith(muiCorePath)) {
-          const importerPath = path.dirname(importer);
-          const modulePath = path.join(importerPath, id);
-          try {
-            if (fs.statSync(modulePath).isDirectory()) {
-              return {
-                id: `@material-ui/core/${path.basename(id)}`,
-                external: true,
-              };
-            }
-          } catch {}
-        }
+    ...(format === 'esm'
+      ? [visualize({ template: process.env.VISUALIZER_TEMPLATE })]
+      : []),
 
-        if (id === packageName) {
-          this.error(`${packageName} tries to import from itself`);
-        }
+    ...(format === 'esm' || format === 'cjs' ? [flowEntry()] : []),
 
-        return null;
-      },
-    },
-    visualize({
-      template: process.env.VISUALIZER_TEMPLATE,
-    }),
-    flowEntry(),
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
-    commonjs({
-      namedExports: {
-        'react-is': ['ForwardRef'],
-        'prop-types': ['elementType'],
-      },
-    }),
+    commonjs(),
     nodeResolve({
+      browser: true,
       preferBuiltins: true,
     }),
     postcss({ modules: true }),
     cleanup(),
   ],
-  external: [
-    'crypto',
-    ...Object.keys(peerDependencies),
-    ...packages.reduce(
-      (acc, { packageJson: { name } }) =>
-        name in dependencies ? [...acc, name] : acc,
-      []
+  external: (id) =>
+    externalModuleIds.some(
+      (moduleId) => id === moduleId || id.startsWith(`${moduleId}/`)
     ),
-    ...(external ? external.split(',') : []),
-  ],
 };
 
 export default config;

@@ -2,7 +2,7 @@
 import type { BlockId, BlocksAction, ChartFormat } from '@seine/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { defaultChartFormat } from '@seine/charts';
 import { Checkbox } from '@material-ui/core';
 

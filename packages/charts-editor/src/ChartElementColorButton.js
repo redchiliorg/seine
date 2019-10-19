@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { Button } from '@material-ui/core';
 import { SketchPicker } from 'react-color';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';

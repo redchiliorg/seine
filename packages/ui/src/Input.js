@@ -1,5 +1,5 @@
 // @flow
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 
 export default styled.input.attrs(
   ({ className = 'mui-textfield', type = 'text', transparent }) => ({

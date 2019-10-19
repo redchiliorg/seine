@@ -14,4 +14,7 @@ module.exports = {
     'jsdoc/require-param-description': 0,
     'jsdoc/require-description': ['warn', { descriptionStyle: 'tag' }],
   },
+  settings: {
+    'import/ignore': ['styled-components/*'],
+  },
 };

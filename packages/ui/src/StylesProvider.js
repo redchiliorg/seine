@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/macro';
 import {
   jssPreset,
   useTheme,

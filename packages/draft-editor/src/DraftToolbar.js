@@ -19,7 +19,7 @@ import { Button as MuiButton } from '@material-ui/core';
 import type { DraftBody, DraftFormat, ToolbarProps } from '@seine/core';
 import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import theme from './DraftToolbar.module.css';
 import VerticalAlignTopButton from './VerticalAlignTopButton';
