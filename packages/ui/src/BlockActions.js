@@ -7,8 +7,8 @@ import {
   CREATE_TOP_BLOCK,
   SELECT_BLOCK,
 } from '@seine/core';
+import { Box, ClickAwayListener, Grid } from '@material-ui/core';
 import styled, { css } from 'styled-components/macro';
-import { Box, Grid } from '@material-ui/core';
 
 import type { Props as FabProps } from './BlockAddFab';
 import BlockAddFab from './BlockAddFab';
@@ -21,7 +21,6 @@ const Container = styled(Box)`
     width: 100%;
     z-index: 999;
     & > * > * {
-      pointer-events: all;
       opacity: 0;
     }
     ${({ isSelected = false }: Props) =>
@@ -38,6 +37,7 @@ const Container = styled(Box)`
             }
             &:hover > * > * {
               opacity: 1;
+              pointer-events: all;
             }
           `}
   }
@@ -88,70 +88,89 @@ export default function BlockActions({
   selection,
   ...containerProps
 }: Props) {
+  const containerRef = React.useRef(null);
   return (
-    <Container
-      {...containerProps}
-      isSelected={selection.includes(id)}
-      onClick={React.useCallback(
-        (event: SyntheticMouseEvent<>) => {
-          event.stopPropagation();
-          dispatch({
-            type: SELECT_BLOCK,
-            id,
-            ...(event.shiftKey ? { modifier: 'add' } : {}),
-          });
-        },
-        [dispatch, id]
+    <ClickAwayListener
+      onClickAway={React.useCallback(
+        (event) =>
+          event.target.parentElement.contains(containerRef.current) &&
+          selection.includes(id) &&
+          dispatch({ type: SELECT_BLOCK, modifier: 'sub', id }),
+        [dispatch, id, selection]
       )}
     >
-      <Group
-        alignItems={'center'}
-        container
-        extended={extended}
-        justify={'space-between'}
+      <Container
+        {...containerProps}
+        ref={containerRef}
+        isSelected={selection.includes(id)}
+        onClick={React.useCallback(
+          (event: SyntheticMouseEvent<>) => {
+            event.stopPropagation();
+            if (
+              !(
+                event.target instanceof HTMLButtonElement ||
+                event.target.parentElement instanceof HTMLButtonElement
+              )
+            ) {
+              dispatch({
+                type: SELECT_BLOCK,
+                id,
+                ...(event.shiftKey ? { modifier: 'add' } : {}),
+              });
+            }
+          },
+          [dispatch, id]
+        )}
       >
-        <Item item>
-          <BlockAddFab
-            addButtonRenderMap={addButtonRenderMap}
-            dispatch={dispatch}
-            id={id}
-            type={CREATE_LEFT_BLOCK}
-          />
-        </Item>
-        <Item item>
-          <BlockAddFab
-            addButtonRenderMap={addButtonRenderMap}
-            dispatch={dispatch}
-            id={id}
-            type={CREATE_RIGHT_BLOCK}
-          />
-        </Item>
-      </Group>
+        <Group
+          alignItems={'center'}
+          container
+          extended={extended}
+          justify={'space-between'}
+        >
+          <Item item>
+            <BlockAddFab
+              addButtonRenderMap={addButtonRenderMap}
+              dispatch={dispatch}
+              id={id}
+              type={CREATE_LEFT_BLOCK}
+            />
+          </Item>
+          <Item item>
+            <BlockAddFab
+              addButtonRenderMap={addButtonRenderMap}
+              dispatch={dispatch}
+              id={id}
+              type={CREATE_RIGHT_BLOCK}
+            />
+          </Item>
+        </Group>
 
-      <Group
-        alignItems={'center'}
-        container
-        direction={'column'}
-        extended={extended}
-        justify={'space-between'}
-      >
-        <Item container item direction={'column'}>
-          <BlockAddFab
-            addButtonRenderMap={addButtonRenderMap}
-            dispatch={dispatch}
-            id={id}
-            type={CREATE_TOP_BLOCK}
-          />
-        </Item>
-        <Item container item direction={'column'}>
-          <BlockAddFab
-            addButtonRenderMap={addButtonRenderMap}
-            dispatch={dispatch}
-            id={id}
-            type={CREATE_BOTTOM_BLOCK}
-          />
-        </Item>
-      </Group>
-    </Container>
+        <Group
+          alignItems={'center'}
+          container
+          direction={'column'}
+          extended={extended}
+          justify={'space-between'}
+        >
+          <Item container item direction={'column'}>
+            <BlockAddFab
+              addButtonRenderMap={addButtonRenderMap}
+              dispatch={dispatch}
+              id={id}
+              type={CREATE_TOP_BLOCK}
+            />
+          </Item>
+          <Item container item direction={'column'}>
+            <BlockAddFab
+              addButtonRenderMap={addButtonRenderMap}
+              dispatch={dispatch}
+              id={id}
+              type={CREATE_BOTTOM_BLOCK}
+            />
+          </Item>
+        </Group>
+      </Container>
+    </ClickAwayListener>
   );
 }

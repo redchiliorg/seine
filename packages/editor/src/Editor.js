@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { ClickAwayListener, Paper } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
@@ -13,15 +13,10 @@ import type {
   BlockType,
   ToolbarProps,
 } from '@seine/core';
-import {
-  blockTypes,
-  DESELECT_ALL_BLOCKS,
-  initialBlocksState,
-  reduceBlocks,
-} from '@seine/core';
+import { blockTypes, initialBlocksState, reduceBlocks } from '@seine/core';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { BlockDeleteButton, useReducerEx, StylesProvider } from '@seine/ui';
+import { BlockDeleteButton, StylesProvider, useReducerEx } from '@seine/ui';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -165,39 +160,28 @@ export default function Editor({
 
   return (
     <StylesProvider>
-      <ClickAwayListener
-        onClickAway={React.useCallback(
-          (event) =>
-            !(
-              event.target instanceof HTMLElement &&
-              event.target.getAttribute('role') === 'option'
-            ) && dispatch({ type: DESELECT_ALL_BLOCKS }),
-          [dispatch]
+      <Container>
+        <BlockToolbar
+          {...block}
+          blocks={blocks}
+          addButtonRenderMap={addButtonRenderMap}
+          dispatch={dispatch}
+          selection={selection}
+        >
+          <BlockDeleteButton dispatch={dispatch} selection={selection} />
+        </BlockToolbar>
+        {contentChildren.length > 0 && (
+          <ContentPaper>
+            <Content
+              {...contentProps}
+              parent={parent}
+              blockRenderMap={blockRenderMap}
+            >
+              {contentChildren}
+            </Content>
+          </ContentPaper>
         )}
-      >
-        <Container>
-          <BlockToolbar
-            {...block}
-            blocks={blocks}
-            addButtonRenderMap={addButtonRenderMap}
-            dispatch={dispatch}
-            selection={selection}
-          >
-            <BlockDeleteButton dispatch={dispatch} selection={selection} />
-          </BlockToolbar>
-          {contentChildren.length > 0 && (
-            <ContentPaper>
-              <Content
-                {...contentProps}
-                parent={parent}
-                blockRenderMap={blockRenderMap}
-              >
-                {contentChildren}
-              </Content>
-            </ContentPaper>
-          )}
-        </Container>
-      </ClickAwayListener>
+      </Container>
     </StylesProvider>
   );
 }
