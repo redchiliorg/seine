@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import type { GridBody, GridFormat } from '@seine/core';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 
 export type Props = (GridBody & GridFormat) & {
   children: React.ChildrenArray<React.Node>,

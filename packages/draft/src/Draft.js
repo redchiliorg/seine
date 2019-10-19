@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import clsx from 'clsx';
 import CompositeDecorator from 'draft-js/lib/CompositeDraftDecorator';
 import type { DraftDecorator } from 'draft-js/lib/DraftDecorator';

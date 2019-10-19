@@ -96,5 +96,10 @@
     "packages/draft-editor",
     "packages/charts-editor",
     "packages/editor"
-  ]
+  ],
+  "babelMacros": {
+    "styledComponents": {
+      "pure": true
+    }
+  }
 }

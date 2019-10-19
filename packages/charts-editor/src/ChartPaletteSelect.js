@@ -6,7 +6,7 @@ import {
   defaultChartPaletteKey,
 } from '@seine/charts';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { FormControl, MenuItem, Select as MuiSelect } from '@material-ui/core';
 
 const Label = styled.span.attrs(({ role = 'option' }) => ({ role }))`

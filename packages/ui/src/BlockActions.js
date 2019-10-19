@@ -6,7 +6,7 @@ import {
   CREATE_RIGHT_BLOCK,
   CREATE_TOP_BLOCK,
 } from '@seine/core';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { Box, Grid } from '@material-ui/core';
 
 import type { Props as FabProps } from './BlockAddFab';

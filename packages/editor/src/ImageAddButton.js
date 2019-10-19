@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { blockTypes, createBlock } from '@seine/core';
 import { ActionButton } from '@seine/ui';
 import {

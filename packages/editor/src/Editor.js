@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
