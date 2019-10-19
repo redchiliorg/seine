@@ -1,4 +1,5 @@
 const { dirname, join } = require('path');
+const { inspect } = require('util');
 
 const glob = require('glob');
 
@@ -9,7 +10,12 @@ const globOptions = {
   nodir: true,
 };
 
-module.exports = function parseWorkspaces(workspaces = defaultWorkspaces) {
+/**
+ * @description Parse and normalize package (yarn) workspaces.
+ * @param {string[]} workspaces
+ * @returns {{packages: string[], nohoist: string | string[]}[]}
+ */
+function parseWorkspaces(workspaces = defaultWorkspaces) {
   const { nohoist = [], packages = [] } = Array.isArray(workspaces)
     ? { packages: workspaces }
     : workspaces;
@@ -25,4 +31,11 @@ module.exports = function parseWorkspaces(workspaces = defaultWorkspaces) {
       )
       .map((packageJson) => dirname(packageJson)),
   };
-};
+}
+
+module.exports = parseWorkspaces;
+
+if (require.main === module) {
+  // eslint-disable-next-line no-console
+  console.log(inspect(parseWorkspaces(), false, null, true));
+}

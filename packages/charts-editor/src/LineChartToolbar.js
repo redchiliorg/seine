@@ -41,6 +41,10 @@ export default function LineChartToolbar({
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
   format = format || defaultChartFormat;
+  const elementsCount = React.useMemo(
+    () => new Set(body.elements.map(({ id }) => id)).size,
+    [body.elements]
+  );
   return (
     <Toolbar>
       <ChartGroupAddButton
@@ -71,6 +75,7 @@ export default function LineChartToolbar({
         <>
           <ChartElementRemoveByIdButton
             body={body}
+            disabled={elementsCount <= 1}
             dispatch={dispatch}
             editor={editor}
             format={format}

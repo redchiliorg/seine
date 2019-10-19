@@ -1,24 +1,28 @@
 import * as React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import ViewListIcon from '@material-ui/icons/ViewList';
-import BallotIcon from '@material-ui/icons/Ballot';
-import InfoIcon from '@material-ui/icons/Info';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import AddIcon from '@material-ui/icons/Add';
-import ImageIcon from '@material-ui/icons/Image';
+import {
+  AppBar,
+  CssBaseline,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  ListItemSecondaryAction,
+  Toolbar,
+  Typography,
+} from '@material-ui/core';
 import { actions } from '@storybook/addon-actions';
 import { Editor } from '@seine/editor';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+  BusinessCenter as BusinessCenterIcon,
+  Add as AddIcon,
+  Image as ImageIcon,
+  ViewList as ViewListIcon,
+  Ballot as BallotIcon,
+  Info as InfoIcon,
+} from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,9 +57,9 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 }));
 
-export default { title: 'In an application layout' };
+export default { title: 'App' };
 
-export const EditorInAdminLayout = () => {
+export const EditorInAdminAppLayout = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>

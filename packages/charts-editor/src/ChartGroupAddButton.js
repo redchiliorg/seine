@@ -29,10 +29,12 @@ export default function ChartGroupAddButton({
   dispatch,
   format,
   body,
+  ...buttonProps
 }) {
   const { length: groupsCount } = groupElements(body.elements);
   return (
     <ActionButton
+      {...buttonProps}
       id={id}
       title={'Add group'}
       dispatch={dispatch}

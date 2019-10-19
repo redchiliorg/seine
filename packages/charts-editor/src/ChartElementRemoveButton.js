@@ -24,9 +24,12 @@ export default function ChartElementRemoveButton({
   dispatch,
   editor,
   id,
+  ...buttonProps
 }: Props) {
   return (
     <CompositeActionButton
+      disabled={body.elements.length <= 2}
+      {...buttonProps}
       title={'Remove element'}
       dispatch={dispatch}
       actions={React.useMemo(

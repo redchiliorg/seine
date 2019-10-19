@@ -7,7 +7,7 @@ export const chartTypes = {
   LINE: 'line',
 };
 
-export type ChartType = $Keys<typeof chartTypes>;
+export type ChartType = $Values<typeof chartTypes>;
 
 export type ChartFormat = {
   dx: number,

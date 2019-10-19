@@ -32,11 +32,12 @@ export default function ChartElementAddButton({
   dispatch,
   format,
   id,
+  ...buttonProps
 }: Props) {
   return (
     <ActionButton
+      {...buttonProps}
       id={id}
-      title={'Add element'}
       dispatch={dispatch}
       type={UPDATE_BLOCK_BODY}
       body={React.useMemo(
@@ -45,7 +46,7 @@ export default function ChartElementAddButton({
             ...body.elements,
             ...createTitleIdentityBlockElements(
               groupElements(body.elements).map(([group, { length }]) => ({
-                group,
+                ...(group ? { group } : {}),
                 title: `Item #${length}`,
                 value: format.minValue || 0,
               }))

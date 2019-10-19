@@ -87,3 +87,6 @@ export const defaultChartFormat = {
 };
 
 export const defaultPieChartUnits = '%';
+
+export const columnChartMaxElements = 5;
+export const columnChartMaxGroups = 5;
