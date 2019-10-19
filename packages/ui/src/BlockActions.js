@@ -5,6 +5,7 @@ import {
   CREATE_LEFT_BLOCK,
   CREATE_RIGHT_BLOCK,
   CREATE_TOP_BLOCK,
+  SELECT_BLOCK,
 } from '@seine/core';
 import styled, { css } from 'styled-components/macro';
 import { Box, Grid } from '@material-ui/core';
@@ -19,6 +20,10 @@ const Container = styled(Box)`
     height: 100%;
     width: 100%;
     z-index: 999;
+    & > * > * {
+      pointer-events: all;
+      opacity: 0;
+    }
     ${({ isSelected = false }: Props) =>
       isSelected
         ? css`
@@ -30,9 +35,9 @@ const Container = styled(Box)`
             pointer-events: all;
             & > * {
               pointer-events: none;
-              & > * {
-                pointer-events: all;
-              }
+            }
+            &:hover > * > * {
+              opacity: 1;
             }
           `}
   }
@@ -54,10 +59,6 @@ const Item = styled(Grid)`
     ${({ direction }) => css`
       align-items: center;
       display: flex;
-      opacity: 0;
-      :hover {
-        opacity: 1;
-      }
       transition: opacity 0.1s;
       ${direction === 'column'
         ? css`
@@ -80,14 +81,29 @@ type Props = FabProps & {
  * @returns {React.Node}
  */
 export default function BlockActions({
+  addButtonRenderMap,
   dispatch,
   extended,
   id,
-  addButtonRenderMap,
+  selection,
   ...containerProps
 }: Props) {
   return (
-    <Container {...containerProps}>
+    <Container
+      {...containerProps}
+      isSelected={selection.includes(id)}
+      onClick={React.useCallback(
+        (event: SyntheticMouseEvent<>) => {
+          event.stopPropagation();
+          dispatch({
+            type: SELECT_BLOCK,
+            id,
+            ...(event.shiftKey ? { modifier: 'add' } : {}),
+          });
+        },
+        [dispatch, id]
+      )}
+    >
       <Group
         alignItems={'center'}
         container

@@ -7,8 +7,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import type { Action, BlockId, State } from '@seine/core';
-import { SELECT_BLOCK } from '@seine/core';
+import type { Action, State } from '@seine/core';
 
 const defaultDevToolsConfig = {};
 
@@ -57,33 +56,6 @@ export function useReducerEx<S: State, A: Action>(
       dispatch(action);
     }, []),
   ];
-}
-
-/**
- *
- * @description Use props for a container of selectable content block.
- * @param {{id: BlockId, selection: Array<BlockId>}} blocks
- * @param {Function} dispatch
- * @returns {{onClick: Function, id: BlockId, selection: BlockId[]}}
- */
-export function useSelectableBlockProps(
-  { id, selection }: { id: BlockId, selection: $ReadOnlyArray<BlockId> },
-  dispatch: (Action) => any
-) {
-  return {
-    isSelected: selection.includes(id),
-    onClick: useCallback(
-      (event: SyntheticMouseEvent<>) => {
-        event.stopPropagation();
-        dispatch({
-          type: SELECT_BLOCK,
-          id,
-          ...(event.shiftKey ? { modifier: 'add' } : {}),
-        });
-      },
-      [dispatch, id]
-    ),
-  };
 }
 
 /**

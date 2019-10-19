@@ -1,11 +1,7 @@
 // @flow
 import * as React from 'react';
-import {
-  BlockActions,
-  BlockContainer,
-  useSelectableBlockProps,
-} from '@seine/ui';
-import { Image } from '@seine/content';
+import { BlockActions } from '@seine/ui';
+import { Image, ImageContainer } from '@seine/content';
 import type { ChartProps } from '@seine/charts';
 import type { BlockEditor } from '@seine/core';
 
@@ -24,13 +20,14 @@ export function ImageEditor({
   ...imageProps
 }: Props) {
   return (
-    <BlockContainer {...useSelectableBlockProps({ id, selection }, dispatch)}>
-      <BlockActions
-        id={id}
-        dispatch={dispatch}
-        addButtonRenderMap={addButtonRenderMap}
-      />
+    <ImageContainer>
       <Image {...imageProps} />
-    </BlockContainer>
+      <BlockActions
+        addButtonRenderMap={addButtonRenderMap}
+        dispatch={dispatch}
+        id={id}
+        selection={selection}
+      />
+    </ImageContainer>
   );
 }

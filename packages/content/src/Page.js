@@ -11,7 +11,7 @@ type Props = {
 
 const ChartContainer = styled((props) => <Grid {...props} columns={'100%'} />)`
   & {
-    padding: 20%;
+    padding: 10%;
   }
 `;
 

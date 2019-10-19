@@ -8,9 +8,16 @@ import {
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
 } from '@seine/core';
-import { BlockActions, useSelectableBlockProps } from '@seine/ui';
+import { BlockActions } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
-import { Chart, ChartContainer, defaultChartRenderMap } from '@seine/charts';
+import {
+  BarChart,
+  ChartContainer,
+  ColumnChart,
+  defaultChartRenderMap,
+  LineChart,
+  PieChart,
+} from '@seine/charts';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
@@ -25,10 +32,12 @@ type Props = (ChartProps & BlockEditor) & {
 };
 
 const defaultChartEditorRenderMap = {
-  [chartTypes.PIE]: (props) => <Chart {...props} as={PieChartEditor} />,
-  [chartTypes.BAR]: (props) => <Chart {...props} as={BarChartEditor} />,
-  [chartTypes.COLUMN]: (props) => <Chart {...props} as={ColumnChartEditor} />,
-  [chartTypes.LINE]: (props) => <Chart {...props} as={LineChartEditor} />,
+  [chartTypes.PIE]: (props) => <PieChart {...props} as={PieChartEditor} />,
+  [chartTypes.BAR]: (props) => <BarChart {...props} as={BarChartEditor} />,
+  [chartTypes.COLUMN]: (props) => (
+    <ColumnChart {...props} as={ColumnChartEditor} />
+  ),
+  [chartTypes.LINE]: (props) => <LineChart {...props} as={LineChartEditor} />,
 };
 
 const defaultEditor = { selection: initialElementsState.selection };
@@ -79,9 +88,14 @@ export default function ChartEditor({
 
   return (
     <ChartContainer>
+      <BlockActions
+        addButtonRenderMap={addButtonRenderMap}
+        dispatch={dispatch}
+        id={chartProps.id}
+        selection={selection}
+      />
       {selection.length === 1 && selection[0] === chartProps.id ? (
         <ExactChartEditor
-          kind={kind}
           dispatch={dispatch}
           dispatchElements={dispatchElements}
           editor={editor}
@@ -91,13 +105,6 @@ export default function ChartEditor({
       ) : (
         <ExactChart {...chartProps} />
       )}
-
-      <BlockActions
-        addButtonRenderMap={addButtonRenderMap}
-        dispatch={dispatch}
-        id={chartProps.id}
-        {...useSelectableBlockProps({ id: chartProps.id, selection }, dispatch)}
-      />
     </ChartContainer>
   );
 }

@@ -3,7 +3,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
-import { BlockActions, useSelectableBlockProps } from '@seine/ui';
+import { BlockActions } from '@seine/ui';
 import { convertFromRaw, convertToRaw, Editor, EditorState } from 'draft-js';
 
 type Props = (DraftBody & DraftFormat & BlockEditor) & {
@@ -99,13 +99,12 @@ export default function DraftEditor({
         )}
         readOnly={readOnly}
       />
-
       <BlockActions
         addButtonRenderMap={addButtonRenderMap}
         dispatch={dispatch}
-        id={id}
         extended
-        {...useSelectableBlockProps({ id, selection }, dispatch)}
+        id={id}
+        selection={selection}
       />
     </Container>
   );
