@@ -77,7 +77,7 @@ export const defaultToolbarRenderMap = {
 };
 
 const DefaultContainer = styled.div`
-  width: 75%;
+  width: 100%;
 `;
 
 const ContentPaper = styled(Paper)`
