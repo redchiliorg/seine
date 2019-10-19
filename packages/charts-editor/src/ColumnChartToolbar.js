@@ -3,6 +3,8 @@ import * as React from 'react';
 import type { ChartBody, ChartFormat, ToolbarProps } from '@seine/core';
 import { Toolbar } from '@seine/ui';
 import {
+  columnChartMaxElements,
+  columnChartMaxGroups,
   defaultChartBody,
   defaultChartEditor,
   defaultChartFormat,
@@ -41,10 +43,19 @@ export default function ColumnChartToolbar({
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
   format = format || defaultChartFormat;
+  const elementsCount = React.useMemo(
+    () => new Set(body.elements.map(({ id }) => id)).size,
+    [body.elements]
+  );
+  const groupsCount = React.useMemo(
+    () => new Set(body.elements.map(({ group }) => group)).size,
+    [body.elements]
+  );
   return (
     <Toolbar>
       <ChartGroupAddButton
         body={body}
+        disabled={groupsCount >= columnChartMaxGroups}
         dispatch={dispatch}
         editor={editor}
         format={format}
@@ -67,6 +78,7 @@ export default function ColumnChartToolbar({
         <>
           <ChartElementRemoveByIdButton
             body={body}
+            disabled={elementsCount <= 1}
             dispatch={dispatch}
             editor={editor}
             format={format}
@@ -79,6 +91,7 @@ export default function ColumnChartToolbar({
       <ChartElementAddButton
         body={body}
         dispatch={dispatch}
+        disabled={elementsCount >= columnChartMaxElements}
         editor={editor}
         format={format}
         id={id}

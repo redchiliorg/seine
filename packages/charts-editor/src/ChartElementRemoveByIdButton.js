@@ -24,6 +24,7 @@ export default function ChartElementRemoveByIdButton({
   dispatch,
   editor,
   id,
+  ...buttonProps
 }: Props) {
   const element =
     editor.selection >= 0
@@ -31,6 +32,7 @@ export default function ChartElementRemoveByIdButton({
       : null;
   return (
     <CompositeActionButton
+      {...buttonProps}
       title={'Remove element'}
       dispatch={dispatch}
       actions={React.useMemo(

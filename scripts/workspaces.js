@@ -1,6 +1,6 @@
-const parseWorkspaces = require('./parse-workspaces');
+const { workspaces = [] } = require('../package.json');
 
-module.exports = parseWorkspaces();
+module.exports = workspaces;
 
 if (require.main === module) {
   // eslint-disable-next-line no-console

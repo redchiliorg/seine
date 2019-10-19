@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-const { packages: defaultWorkspaces } = require('./workspaces');
 const publishWorkspace = require('./publish-workspace');
+const parseWorkspaces = require('./parse-workspaces');
 
 /**
  * @description Publish (yarn) workspaces.
  * @param {string[]} workspaces
  * @returns {*}
  */
-function publish(workspaces = defaultWorkspaces) {
-  return workspaces.reduce(
+function publish(workspaces) {
+  return parseWorkspaces(workspaces).packages.reduce(
     (state, workspace) => ({
       workspace,
       child:
@@ -16,7 +16,7 @@ function publish(workspaces = defaultWorkspaces) {
           ? state.child.once('exit', (code) =>
               code
                 ? // eslint-disable-next-line no-console
-                  console.warn(`${workspace} failed with code ${code}`)
+                  console.warn(`${state.workspace} failed with code ${code}`)
                 : publishWorkspace(workspace)
             )
           : publishWorkspace(workspace),

@@ -26,15 +26,14 @@ type Props = {
 export default function ChartGroupRemoveButton({
   body,
   children = 'Rm group',
+  title = 'Remove element',
   dispatch,
   id,
+  ...buttonProps
 }: Props) {
   return (
     <ActionButton
-      id={id}
-      title={'Remove element'}
-      dispatch={dispatch}
-      type={UPDATE_BLOCK_BODY}
+      {...buttonProps}
       body={React.useMemo(
         () => ({
           elements: groupElements(body.elements)
@@ -43,6 +42,14 @@ export default function ChartGroupRemoveButton({
         }),
         [body.elements]
       )}
+      disabled={React.useMemo(
+        () => new Set(body.elements.map(({ group }) => group)).size <= 1,
+        [body.elements]
+      )}
+      dispatch={dispatch}
+      id={id}
+      title={title}
+      type={UPDATE_BLOCK_BODY}
       variant={'text'}
     >
       {children}
