@@ -54,6 +54,12 @@ export type CreateTopBlockAction = {
   block: $Shape<Block>,
 };
 
+export const DELETE_BLOCK = '@seine/core/deleteBlock';
+export type DeleteBlockAction = {
+  id: BlockId,
+  type: typeof DELETE_BLOCK,
+};
+
 export const DELETE_SELECTED_BLOCKS = '@seine/core/deleteSelectedBlocks';
 export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
@@ -228,13 +234,14 @@ export function reduceBlocks(
       }
     }
 
-    case DELETE_SELECTED_BLOCKS: {
-      if (state.selection.length === 0) {
+    case DELETE_SELECTED_BLOCKS:
+    case DELETE_BLOCK: {
+      const selection =
+        action.type === DELETE_BLOCK ? [action.id] : state.selection;
+      if (selection.length === 0) {
         return state;
       }
-      const blocks = state.blocks.filter(
-        ({ id }) => !state.selection.includes(id)
-      );
+      const blocks = state.blocks.filter(({ id }) => !selection.includes(id));
       const redundant = blocks.filter(
         ({ id, type }, _, blocks) =>
           type === blockTypes.GRID &&

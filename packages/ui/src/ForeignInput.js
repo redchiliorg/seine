@@ -57,6 +57,7 @@ export default function ForeignInput({
   height,
   lineHeight = null,
   transparent = false,
+  type = 'text',
   width = '100%',
   x,
   y,
@@ -79,6 +80,7 @@ export default function ForeignInput({
           transform={`scale(${xScale},${yScale})`}
           width={width / xScale}
           transparent={transparent}
+          type={type}
           {...inputProps}
         />
       </div>

@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Paper } from '@material-ui/core';
+import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
@@ -13,7 +13,12 @@ import type {
   BlockType,
   ToolbarProps,
 } from '@seine/core';
-import { blockTypes, initialBlocksState, reduceBlocks } from '@seine/core';
+import {
+  blockTypes,
+  DESELECT_ALL_BLOCKS,
+  initialBlocksState,
+  reduceBlocks,
+} from '@seine/core';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, StylesProvider, useReducerEx } from '@seine/ui';
@@ -177,15 +182,24 @@ export default function Editor({
           />
         </BlockToolbar>
         {contentChildren.length > 0 && (
-          <ContentPaper>
-            <Content
-              {...contentProps}
-              parent={parent}
-              blockRenderMap={blockRenderMap}
-            >
-              {contentChildren}
-            </Content>
-          </ContentPaper>
+          <ClickAwayListener
+            onClickAway={() =>
+              mode !== 'fullscreen' &&
+              dispatch({
+                type: DESELECT_ALL_BLOCKS,
+              })
+            }
+          >
+            <ContentPaper>
+              <Content
+                {...contentProps}
+                parent={parent}
+                blockRenderMap={blockRenderMap}
+              >
+                {contentChildren}
+              </Content>
+            </ContentPaper>
+          </ClickAwayListener>
         )}
       </Container>
     </StylesProvider>

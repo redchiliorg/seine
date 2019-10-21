@@ -4,10 +4,13 @@ import { AppBar, Box, Dialog, IconButton, Toolbar } from '@material-ui/core';
 import {
   Close as CloseIcon,
   Fullscreen as FullscreenIcon,
+  Remove as RemoveIcon,
 } from '@material-ui/icons';
 import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
 import {
+  blockTypes,
   chartTypes,
+  DELETE_BLOCK,
   DESELECT_ALL_BLOCKS,
   initialElementsState,
   reduceElements,
@@ -31,12 +34,14 @@ import {
   LineChart,
   PieChart,
 } from '@seine/charts';
+import { defaultAddButtonRenderMap } from '@seine/editor';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
 import ColumnChartEditor from './ColumnChartEditor';
 import LineChartEditor from './LineChartEditor';
 import type { ChartEditorProps } from './types';
+import ChartToolbar from './ChartToolbar';
 
 type Props = (ChartProps & BlockEditor) & {
   chartEditorRenderMap?: {
@@ -95,44 +100,17 @@ export default function ChartEditor({
       if (selection !== editor.selection) {
         dispatch({
           type: UPDATE_BLOCK_EDITOR,
-          editor: {
-            selection: editor.selection,
-          },
+          editor: { selection },
         });
       }
     },
-    [chartProps.elements, editor, dispatch]
+    [chartProps.elements, dispatch, editor.selection]
   );
+
+  const { elements, title, ...format } = chartProps;
 
   return (
     <ChartContainer>
-      <BlockActions
-        addButtonRenderMap={addButtonRenderMap}
-        dispatch={dispatch}
-        id={chartProps.id}
-        selection={selection}
-        editor={editor}
-      >
-        <BlockActionsGroup
-          alignItems={'center'}
-          container
-          justify={'space-around'}
-        >
-          <BlockActionsItem item>
-            <ActionButton
-              as={BlockFab}
-              dispatch={dispatch}
-              id={chartProps.id}
-              mode={'fullscreen'}
-              size={'small'}
-              type={SELECT_BLOCK}
-            >
-              <FullscreenIcon />
-            </ActionButton>
-          </BlockActionsItem>
-        </BlockActionsGroup>
-      </BlockActions>
-
       <Dialog
         fullScreen
         open={
@@ -155,6 +133,18 @@ export default function ChartEditor({
             </ActionButton>
           </Toolbar>
         </AppBar>
+        <ChartToolbar
+          addButtonRenderMap={defaultAddButtonRenderMap}
+          id={chartProps.id}
+          body={{ elements, title }}
+          format={{ ...format, kind }}
+          dispatch={dispatch}
+          editor={editor}
+          mode={mode}
+          parent_id={chartProps.parent_id}
+          selection={selection}
+          type={blockTypes.CHART}
+        />
         <Box padding={10}>
           <ExactChartEditor
             dispatch={dispatch}
@@ -166,6 +156,46 @@ export default function ChartEditor({
         </Box>
       </Dialog>
 
+      {mode !== 'fullscreen' && (
+        <BlockActions
+          addButtonRenderMap={addButtonRenderMap}
+          direction={'column'}
+          dispatch={dispatch}
+          editor={editor}
+          id={chartProps.id}
+          notSelectable
+          selection={selection}
+        >
+          <BlockActionsGroup
+            alignItems={'center'}
+            container
+            justify={'space-around'}
+          >
+            <BlockActionsItem item>
+              <ActionButton
+                as={BlockFab}
+                dispatch={dispatch}
+                id={chartProps.id}
+                mode={'fullscreen'}
+                size={'small'}
+                type={SELECT_BLOCK}
+              >
+                <FullscreenIcon />
+              </ActionButton>
+              &nbsp;
+              <ActionButton
+                as={BlockFab}
+                dispatch={dispatch}
+                id={chartProps.id}
+                size={'small'}
+                type={DELETE_BLOCK}
+              >
+                <RemoveIcon />
+              </ActionButton>
+            </BlockActionsItem>
+          </BlockActionsGroup>
+        </BlockActions>
+      )}
       <ExactChart {...chartProps} />
     </ChartContainer>
   );

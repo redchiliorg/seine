@@ -7,7 +7,7 @@ import {
   CREATE_TOP_BLOCK,
   SELECT_BLOCK,
 } from '@seine/core';
-import { Box, ClickAwayListener, Grid } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import styled, { css } from 'styled-components/macro';
 
 import type { Props as FabProps } from './BlockAddFab';
@@ -85,99 +85,89 @@ export default function BlockActions({
   addButtonRenderMap,
   children,
   dispatch,
+  editor,
   extended,
   id,
+  notSelectable = false,
   selection,
-  editor,
   ...containerProps
 }: Props) {
   const containerRef = React.useRef(null);
   return (
-    <ClickAwayListener
-      onClickAway={React.useCallback(
-        (event) =>
-          event.target.parentElement.contains(containerRef.current) &&
-          selection.includes(id) &&
-          dispatch({ type: SELECT_BLOCK, modifier: 'sub', id }),
-        [dispatch, id, selection]
+    <Container
+      {...containerProps}
+      ref={containerRef}
+      isSelected={!notSelectable && selection.includes(id)}
+      onClick={React.useCallback(
+        (event: SyntheticMouseEvent<>) => {
+          if (
+            !notSelectable &&
+            !(
+              !(event.target instanceof HTMLDivElement) &&
+              containerRef.current &&
+              containerRef.current.contains(event.target)
+            )
+          ) {
+            event.stopPropagation();
+            dispatch({
+              type: SELECT_BLOCK,
+              id,
+              ...(event.shiftKey ? { modifier: 'add' } : {}),
+            });
+          }
+        },
+        [dispatch, id, notSelectable]
       )}
     >
-      <Container
-        {...containerProps}
-        ref={containerRef}
-        isSelected={selection.includes(id)}
-        onClick={React.useCallback(
-          (event: SyntheticMouseEvent<>) => {
-            event.stopPropagation();
-            if (
-              !(
-                event.target instanceof HTMLButtonElement ||
-                event.target.parentElement instanceof HTMLButtonElement ||
-                event.target.parentElement.parentElement instanceof
-                  HTMLButtonElement
-              )
-            ) {
-              dispatch({
-                type: SELECT_BLOCK,
-                id,
-                ...(event.shiftKey ? { modifier: 'add' } : {}),
-              });
-            }
-          },
-          [dispatch, id]
-        )}
+      {children}
+      <BlockActionsGroup
+        alignItems={'center'}
+        container
+        extended={extended}
+        justify={'space-between'}
       >
-        {children}
+        <BlockActionsItem item>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_LEFT_BLOCK}
+          />
+        </BlockActionsItem>
+        <BlockActionsItem item>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_RIGHT_BLOCK}
+          />
+        </BlockActionsItem>
+      </BlockActionsGroup>
 
-        <BlockActionsGroup
-          alignItems={'center'}
-          container
-          extended={extended}
-          justify={'space-between'}
-        >
-          <BlockActionsItem item>
-            <BlockAddFab
-              addButtonRenderMap={addButtonRenderMap}
-              dispatch={dispatch}
-              id={id}
-              type={CREATE_LEFT_BLOCK}
-            />
-          </BlockActionsItem>
-          <BlockActionsItem item>
-            <BlockAddFab
-              addButtonRenderMap={addButtonRenderMap}
-              dispatch={dispatch}
-              id={id}
-              type={CREATE_RIGHT_BLOCK}
-            />
-          </BlockActionsItem>
-        </BlockActionsGroup>
-
-        <BlockActionsGroup
-          alignItems={'center'}
-          container
-          direction={'column'}
-          extended={extended}
-          justify={'space-between'}
-        >
-          <BlockActionsItem container item direction={'column'}>
-            <BlockAddFab
-              addButtonRenderMap={addButtonRenderMap}
-              dispatch={dispatch}
-              id={id}
-              type={CREATE_TOP_BLOCK}
-            />
-          </BlockActionsItem>
-          <BlockActionsItem container item direction={'column'}>
-            <BlockAddFab
-              addButtonRenderMap={addButtonRenderMap}
-              dispatch={dispatch}
-              id={id}
-              type={CREATE_BOTTOM_BLOCK}
-            />
-          </BlockActionsItem>
-        </BlockActionsGroup>
-      </Container>
-    </ClickAwayListener>
+      <BlockActionsGroup
+        alignItems={'center'}
+        container
+        direction={'column'}
+        extended={extended}
+        justify={'space-between'}
+      >
+        <BlockActionsItem container item direction={'column'}>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_TOP_BLOCK}
+          />
+        </BlockActionsItem>
+        <BlockActionsItem container item direction={'column'}>
+          <BlockAddFab
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            id={id}
+            type={CREATE_BOTTOM_BLOCK}
+          />
+        </BlockActionsItem>
+      </BlockActionsGroup>
+    </Container>
   );
 }
