@@ -72,6 +72,7 @@ export type BlockEditor = {
   },
   dispatch: (BlocksAction) => any,
   editor: { [string]: any },
+  mode: 'default' | 'fullscreen',
   selection: BlockId[],
 };
 

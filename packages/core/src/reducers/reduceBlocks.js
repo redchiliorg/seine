@@ -9,12 +9,14 @@ opaque type BlockExtension = {
   editor: { [string]: any },
 };
 export type BlocksState = {
-  selection: $ReadOnlyArray<BlockId>,
   blocks: $ReadOnlyArray<Block & BlockExtension>,
+  mode: 'default' | 'fullscreen',
+  selection: $ReadOnlyArray<BlockId>,
 };
 export const initialBlocksState: BlocksState = {
-  selection: [],
   blocks: [],
+  mode: 'default',
+  selection: [],
 };
 
 export const CREATE_BLOCK = '@seine/core/createBlock';
@@ -67,6 +69,7 @@ export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
+  mode?: 'default' | 'fullscreen',
 };
 
 export const UPDATE_BLOCK_BODY = '@seine/core/updateBlockBody';
@@ -221,7 +224,7 @@ export function reduceBlocks(
           };
 
         default:
-          return { ...state, selection: [action.id] };
+          return { ...state, mode: action.mode, selection: [action.id] };
       }
     }
 
@@ -239,7 +242,8 @@ export function reduceBlocks(
       );
       return {
         ...state,
-        selection: [],
+        mode: initialBlocksState.mode,
+        selection: initialBlocksState.selection,
         blocks: blocks
           .filter((block) => !redundant.includes(block))
           .map((block) => {
@@ -259,7 +263,8 @@ export function reduceBlocks(
       }
       return {
         ...state,
-        selection: [],
+        mode: initialBlocksState.mode,
+        selection: initialBlocksState.selection,
       };
     }
 

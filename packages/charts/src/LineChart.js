@@ -72,7 +72,7 @@ export default function LineChart({
       <ChartTitle>{title}</ChartTitle>
       <svg
         fontSize={fontSize}
-        height={'100%'}
+        height={'auto'}
         strokeWidth={0.5}
         viewBox={[
           0,

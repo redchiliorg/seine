@@ -119,7 +119,7 @@ export default function Editor({
     () => ({ ...initialBlocksState, blocks: children }),
     [children]
   );
-  const [{ blocks, selection }, dispatch] = useReducerEx<
+  const [{ blocks, mode, selection }, dispatch] = useReducerEx<
     BlocksState,
     BlocksAction
   >(reduceBlocks, initialBlocksState, init);
@@ -153,9 +153,10 @@ export default function Editor({
         ...block,
         addButtonRenderMap,
         dispatch,
+        mode,
         selection,
       })),
-    [addButtonRenderMap, blocks, dispatch, selection]
+    [addButtonRenderMap, blocks, dispatch, mode, selection]
   );
 
   return (
@@ -167,8 +168,13 @@ export default function Editor({
           addButtonRenderMap={addButtonRenderMap}
           dispatch={dispatch}
           selection={selection}
+          mode={mode}
         >
-          <BlockDeleteButton dispatch={dispatch} selection={selection} />
+          <BlockDeleteButton
+            dispatch={dispatch}
+            selection={selection}
+            model={mode}
+          />
         </BlockToolbar>
         {contentChildren.length > 0 && (
           <ContentPaper>

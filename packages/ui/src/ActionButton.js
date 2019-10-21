@@ -31,6 +31,7 @@ export default function ActionButton({
   group,
   id,
   index,
+  mode,
   modifier,
   type,
   ...buttonProps
@@ -63,12 +64,16 @@ export default function ActionButton({
               : // select block
               id && SELECT_BLOCK
               ? modifier
-                ? { id, modifier, type }
+                ? mode
+                  ? { id, mode, modifier, type }
+                  : { id, modifier, type }
+                : mode
+                ? { id, mode, type }
                 : { id, type }
               : // delete or deselect block
                 { type }
           ),
-        [block, body, dispatch, editor, format, id, modifier, type]
+        [block, body, dispatch, editor, format, id, mode, modifier, type]
       )}
     />
   );

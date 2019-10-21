@@ -43,7 +43,7 @@ const Container = styled(Box)`
   }
 `;
 
-const Group = styled(Grid)`
+export const BlockActionsGroup = styled(Grid)`
   && {
     ${({ extended, theme }) => css`
       height: calc(100% + ${extended ? 2 * theme.spacing(5) : 0}px);
@@ -54,7 +54,7 @@ const Group = styled(Grid)`
   }
 `;
 
-const Item = styled(Grid)`
+export const BlockActionsItem = styled(Grid)`
   && {
     ${({ direction }) => css`
       align-items: center;
@@ -72,6 +72,7 @@ const Item = styled(Grid)`
 `;
 
 type Props = FabProps & {
+  children?: React.Node,
   extended?: boolean,
 };
 
@@ -82,10 +83,12 @@ type Props = FabProps & {
  */
 export default function BlockActions({
   addButtonRenderMap,
+  children,
   dispatch,
   extended,
   id,
   selection,
+  editor,
   ...containerProps
 }: Props) {
   const containerRef = React.useRef(null);
@@ -109,7 +112,9 @@ export default function BlockActions({
             if (
               !(
                 event.target instanceof HTMLButtonElement ||
-                event.target.parentElement instanceof HTMLButtonElement
+                event.target.parentElement instanceof HTMLButtonElement ||
+                event.target.parentElement.parentElement instanceof
+                  HTMLButtonElement
               )
             ) {
               dispatch({
@@ -122,54 +127,56 @@ export default function BlockActions({
           [dispatch, id]
         )}
       >
-        <Group
+        {children}
+
+        <BlockActionsGroup
           alignItems={'center'}
           container
           extended={extended}
           justify={'space-between'}
         >
-          <Item item>
+          <BlockActionsItem item>
             <BlockAddFab
               addButtonRenderMap={addButtonRenderMap}
               dispatch={dispatch}
               id={id}
               type={CREATE_LEFT_BLOCK}
             />
-          </Item>
-          <Item item>
+          </BlockActionsItem>
+          <BlockActionsItem item>
             <BlockAddFab
               addButtonRenderMap={addButtonRenderMap}
               dispatch={dispatch}
               id={id}
               type={CREATE_RIGHT_BLOCK}
             />
-          </Item>
-        </Group>
+          </BlockActionsItem>
+        </BlockActionsGroup>
 
-        <Group
+        <BlockActionsGroup
           alignItems={'center'}
           container
           direction={'column'}
           extended={extended}
           justify={'space-between'}
         >
-          <Item container item direction={'column'}>
+          <BlockActionsItem container item direction={'column'}>
             <BlockAddFab
               addButtonRenderMap={addButtonRenderMap}
               dispatch={dispatch}
               id={id}
               type={CREATE_TOP_BLOCK}
             />
-          </Item>
-          <Item container item direction={'column'}>
+          </BlockActionsItem>
+          <BlockActionsItem container item direction={'column'}>
             <BlockAddFab
               addButtonRenderMap={addButtonRenderMap}
               dispatch={dispatch}
               id={id}
               type={CREATE_BOTTOM_BLOCK}
             />
-          </Item>
-        </Group>
+          </BlockActionsItem>
+        </BlockActionsGroup>
       </Container>
     </ClickAwayListener>
   );
