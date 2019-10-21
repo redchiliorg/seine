@@ -34,7 +34,6 @@ import {
   LineChart,
   PieChart,
 } from '@seine/charts';
-import { defaultAddButtonRenderMap } from '@seine/editor';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
@@ -134,7 +133,6 @@ export default function ChartEditor({
           </Toolbar>
         </AppBar>
         <ChartToolbar
-          addButtonRenderMap={defaultAddButtonRenderMap}
           id={chartProps.id}
           body={{ elements, title }}
           format={{ ...format, kind }}
