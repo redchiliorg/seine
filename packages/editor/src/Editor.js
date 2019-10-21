@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Paper } from '@material-ui/core';
+import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
 import type {
@@ -13,7 +13,12 @@ import type {
   BlockType,
   ToolbarProps,
 } from '@seine/core';
-import { blockTypes, initialBlocksState, reduceBlocks } from '@seine/core';
+import {
+  blockTypes,
+  DESELECT_ALL_BLOCKS,
+  initialBlocksState,
+  reduceBlocks,
+} from '@seine/core';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, StylesProvider, useReducerEx } from '@seine/ui';
@@ -119,7 +124,7 @@ export default function Editor({
     () => ({ ...initialBlocksState, blocks: children }),
     [children]
   );
-  const [{ blocks, selection }, dispatch] = useReducerEx<
+  const [{ blocks, mode, selection }, dispatch] = useReducerEx<
     BlocksState,
     BlocksAction
   >(reduceBlocks, initialBlocksState, init);
@@ -153,9 +158,10 @@ export default function Editor({
         ...block,
         addButtonRenderMap,
         dispatch,
+        mode,
         selection,
       })),
-    [addButtonRenderMap, blocks, dispatch, selection]
+    [addButtonRenderMap, blocks, dispatch, mode, selection]
   );
 
   return (
@@ -167,19 +173,33 @@ export default function Editor({
           addButtonRenderMap={addButtonRenderMap}
           dispatch={dispatch}
           selection={selection}
+          mode={mode}
         >
-          <BlockDeleteButton dispatch={dispatch} selection={selection} />
+          <BlockDeleteButton
+            dispatch={dispatch}
+            selection={selection}
+            model={mode}
+          />
         </BlockToolbar>
         {contentChildren.length > 0 && (
-          <ContentPaper>
-            <Content
-              {...contentProps}
-              parent={parent}
-              blockRenderMap={blockRenderMap}
-            >
-              {contentChildren}
-            </Content>
-          </ContentPaper>
+          <ClickAwayListener
+            onClickAway={() =>
+              mode !== 'fullscreen' &&
+              dispatch({
+                type: DESELECT_ALL_BLOCKS,
+              })
+            }
+          >
+            <ContentPaper>
+              <Content
+                {...contentProps}
+                parent={parent}
+                blockRenderMap={blockRenderMap}
+              >
+                {contentChildren}
+              </Content>
+            </ContentPaper>
+          </ClickAwayListener>
         )}
       </Container>
     </StylesProvider>

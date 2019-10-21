@@ -7,289 +7,286 @@ exports[`Storyshots Charts Bar Chart 1`] = `
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
-    <div
-      className="ChartContainer-sc-1lnti1a-0 creGaQ"
+    <h1
+      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
     >
-      <h1
-        className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      Chart title
+    </h1>
+    <svg
+      fontSize={2}
+      fontWeight={500}
+      height="auto"
+      preserveAspectRatio="xMidYMax meet"
+      viewBox="0 -7 100 66.25"
+      width="100%"
+    >
+      <text
+        fill="#71a2ff"
+        x={0}
+        y={3.5}
       >
-        Chart title
-      </h1>
-      <svg
-        fontSize={2}
-        fontWeight={500}
-        preserveAspectRatio="xMidYMax meet"
-        viewBox="0 -7 100 66.25"
-        width="100%"
+        WFLA
+      </text>
+      <text
+        fill="#71a2ff"
+        x={50.89041095890411}
+        y={3.5}
       >
-        <text
-          fill="#71a2ff"
-          x={0}
-          y={3.5}
-        >
-          WFLA
-        </text>
-        <text
-          fill="#71a2ff"
-          x={50.89041095890411}
-          y={3.5}
-        >
-          20.8
-          
-        </text>
-        <rect
-          fill="#71a2ff"
-          height={6}
-          width={39.89041095890411}
-          x={10}
-          y={0}
-        />
-        <text
-          fill="#c0d4e2"
-          x={0}
-          y={9.5}
-        >
-          Region A
-        </text>
-        <text
-          fill="#c0d4e2"
-          x={79.46575342465755}
-          y={9.5}
-        >
-          35.7
-          
-        </text>
-        <rect
-          fill="#c0d4e2"
-          height={6}
-          width={68.46575342465755}
-          x={10}
-          y={6}
-        />
-        <text
-          fill="#cbcbcb"
-          x={0}
-          y={15.5}
-        >
-          Region B
-        </text>
-        <text
-          fill="#cbcbcb"
-          x={41.301369863013704}
-          y={15.5}
-        >
-          15.8
-          
-        </text>
-        <rect
-          fill="#cbcbcb"
-          height={6}
-          width={30.3013698630137}
-          x={10}
-          y={12}
-        />
-        <text
-          fill="#e57878"
-          x={0}
-          y={21.5}
-        >
-          Region C
-        </text>
-        <text
-          fill="#e57878"
-          x={89.43835616438356}
-          y={21.5}
-        >
-          40.9
-          
-        </text>
-        <rect
-          fill="#e57878"
-          height={6}
-          width={78.43835616438356}
-          x={10}
-          y={18}
-        />
-        <text
-          fill="#8adb96"
-          x={0}
-          y={27.5}
-        >
-          Region D
-        </text>
-        <text
-          fill="#8adb96"
-          x={56.26027397260275}
-          y={27.5}
-        >
-          23.6
-          
-        </text>
-        <rect
-          fill="#8adb96"
-          height={6}
-          width={45.26027397260275}
-          x={10}
-          y={24}
-        />
-        <text
-          fill="#6895eb"
-          x={0}
-          y={33.5}
-        >
-          Region E
-        </text>
-        <text
-          fill="#6895eb"
-          x={44.753424657534254}
-          y={33.5}
-        >
-          17.6
-          
-        </text>
-        <rect
-          fill="#6895eb"
-          height={6}
-          width={33.753424657534254}
-          x={10}
-          y={30}
-        />
-        <text
-          fill="#b8c8d8"
-          x={0}
-          y={39.5}
-        >
-          Region F
-        </text>
-        <text
-          fill="#b8c8d8"
-          x={84.06849315068494}
-          y={39.5}
-        >
-          38.1
-          
-        </text>
-        <rect
-          fill="#b8c8d8"
-          height={6}
-          width={73.06849315068494}
-          x={10}
-          y={36}
-        />
-        <text
-          fill="#ebebeb"
-          x={0}
-          y={45.5}
-        >
-          Region G
-        </text>
-        <text
-          fill="#ebebeb"
-          x={95}
-          y={45.5}
-        >
-          43.8
-          
-        </text>
-        <rect
-          fill="#ebebeb"
-          height={6}
-          width={84}
-          x={10}
-          y={42}
-        />
-        <text
-          fill="#ff7171"
-          x={0}
-          y={51.5}
-        >
-          Region H
-        </text>
-        <text
-          fill="#ff7171"
-          x={42.45205479452055}
-          y={51.5}
-        >
-          16.4
-          
-        </text>
-        <rect
-          fill="#ff7171"
-          height={6}
-          width={31.45205479452055}
-          x={10}
-          y={48}
-        />
-        <line
-          stroke="black"
-          strokeWidth="0.1em"
-          x1={10}
-          x2={31}
-          y1={54}
-          y2={54}
-        />
-        <text
-          fontWeight="bold"
-          textAnchor="middle"
-          x={29}
-          y={57.5}
-        >
-          10
-          
-        </text>
-        <line
-          stroke="black"
-          strokeWidth="0.1em"
-          x1={31}
-          x2={52}
-          y1={54}
-          y2={54}
-        />
-        <text
-          fontWeight="bold"
-          textAnchor="middle"
-          x={50}
-          y={57.5}
-        >
-          20
-          
-        </text>
-        <line
-          stroke="black"
-          strokeWidth="0.1em"
-          x1={52}
-          x2={73}
-          y1={54}
-          y2={54}
-        />
-        <text
-          fontWeight="bold"
-          textAnchor="middle"
-          x={71}
-          y={57.5}
-        >
-          30
-          
-        </text>
-        <line
-          stroke="black"
-          strokeWidth="0.1em"
-          x1={73}
-          x2={94}
-          y1={54}
-          y2={54}
-        />
-        <text
-          fontWeight="bold"
-          textAnchor="middle"
-          x={92}
-          y={57.5}
-        >
-          40
-          
-        </text>
-      </svg>
-    </div>
+        20.8
+        
+      </text>
+      <rect
+        fill="#71a2ff"
+        height={6}
+        width={39.89041095890411}
+        x={10}
+        y={0}
+      />
+      <text
+        fill="#c0d4e2"
+        x={0}
+        y={9.5}
+      >
+        Region A
+      </text>
+      <text
+        fill="#c0d4e2"
+        x={79.46575342465755}
+        y={9.5}
+      >
+        35.7
+        
+      </text>
+      <rect
+        fill="#c0d4e2"
+        height={6}
+        width={68.46575342465755}
+        x={10}
+        y={6}
+      />
+      <text
+        fill="#cbcbcb"
+        x={0}
+        y={15.5}
+      >
+        Region B
+      </text>
+      <text
+        fill="#cbcbcb"
+        x={41.301369863013704}
+        y={15.5}
+      >
+        15.8
+        
+      </text>
+      <rect
+        fill="#cbcbcb"
+        height={6}
+        width={30.3013698630137}
+        x={10}
+        y={12}
+      />
+      <text
+        fill="#e57878"
+        x={0}
+        y={21.5}
+      >
+        Region C
+      </text>
+      <text
+        fill="#e57878"
+        x={89.43835616438356}
+        y={21.5}
+      >
+        40.9
+        
+      </text>
+      <rect
+        fill="#e57878"
+        height={6}
+        width={78.43835616438356}
+        x={10}
+        y={18}
+      />
+      <text
+        fill="#8adb96"
+        x={0}
+        y={27.5}
+      >
+        Region D
+      </text>
+      <text
+        fill="#8adb96"
+        x={56.26027397260275}
+        y={27.5}
+      >
+        23.6
+        
+      </text>
+      <rect
+        fill="#8adb96"
+        height={6}
+        width={45.26027397260275}
+        x={10}
+        y={24}
+      />
+      <text
+        fill="#6895eb"
+        x={0}
+        y={33.5}
+      >
+        Region E
+      </text>
+      <text
+        fill="#6895eb"
+        x={44.753424657534254}
+        y={33.5}
+      >
+        17.6
+        
+      </text>
+      <rect
+        fill="#6895eb"
+        height={6}
+        width={33.753424657534254}
+        x={10}
+        y={30}
+      />
+      <text
+        fill="#b8c8d8"
+        x={0}
+        y={39.5}
+      >
+        Region F
+      </text>
+      <text
+        fill="#b8c8d8"
+        x={84.06849315068494}
+        y={39.5}
+      >
+        38.1
+        
+      </text>
+      <rect
+        fill="#b8c8d8"
+        height={6}
+        width={73.06849315068494}
+        x={10}
+        y={36}
+      />
+      <text
+        fill="#ebebeb"
+        x={0}
+        y={45.5}
+      >
+        Region G
+      </text>
+      <text
+        fill="#ebebeb"
+        x={95}
+        y={45.5}
+      >
+        43.8
+        
+      </text>
+      <rect
+        fill="#ebebeb"
+        height={6}
+        width={84}
+        x={10}
+        y={42}
+      />
+      <text
+        fill="#ff7171"
+        x={0}
+        y={51.5}
+      >
+        Region H
+      </text>
+      <text
+        fill="#ff7171"
+        x={42.45205479452055}
+        y={51.5}
+      >
+        16.4
+        
+      </text>
+      <rect
+        fill="#ff7171"
+        height={6}
+        width={31.45205479452055}
+        x={10}
+        y={48}
+      />
+      <line
+        stroke="black"
+        strokeWidth="0.1em"
+        x1={10}
+        x2={31}
+        y1={54}
+        y2={54}
+      />
+      <text
+        fontWeight="bold"
+        textAnchor="middle"
+        x={29}
+        y={57.5}
+      >
+        10
+        
+      </text>
+      <line
+        stroke="black"
+        strokeWidth="0.1em"
+        x1={31}
+        x2={52}
+        y1={54}
+        y2={54}
+      />
+      <text
+        fontWeight="bold"
+        textAnchor="middle"
+        x={50}
+        y={57.5}
+      >
+        20
+        
+      </text>
+      <line
+        stroke="black"
+        strokeWidth="0.1em"
+        x1={52}
+        x2={73}
+        y1={54}
+        y2={54}
+      />
+      <text
+        fontWeight="bold"
+        textAnchor="middle"
+        x={71}
+        y={57.5}
+      >
+        30
+        
+      </text>
+      <line
+        stroke="black"
+        strokeWidth="0.1em"
+        x1={73}
+        x2={94}
+        y1={54}
+        y2={54}
+      />
+      <text
+        fontWeight="bold"
+        textAnchor="middle"
+        x={92}
+        y={57.5}
+      >
+        40
+        
+      </text>
+    </svg>
   </div>
 </div>
 `;
@@ -307,7 +304,7 @@ exports[`Storyshots Charts Column Chart 1`] = `
       Chart title
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 128 228.375"
       width="100%"
     >
@@ -531,21 +528,53 @@ exports[`Storyshots Charts Column Chart 1`] = `
 </div>
 `;
 
-exports[`Storyshots Charts Editor Of Bar Chart 1`] = `null`;
+exports[`Storyshots Charts Editor Of Bar Chart 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Column Chart 1`] = `null`;
+exports[`Storyshots Charts Editor Of Column Chart 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Line Chart 1`] = `null`;
+exports[`Storyshots Charts Editor Of Line Chart 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Pie Chart 1`] = `null`;
+exports[`Storyshots Charts Editor Of Pie Chart 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `null`;
+exports[`Storyshots Charts Editor Of Six Groups Of Six Columns 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `null`;
+exports[`Storyshots Charts Editor Of Six Groups Of Two Columns 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `null`;
+exports[`Storyshots Charts Editor Of Two Groups Of Six Columns 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `null`;
+exports[`Storyshots Charts Editor Of Two Groups Of Two Columns 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
 exports[`Storyshots Charts Line Chart 1`] = `
 <div
@@ -561,7 +590,7 @@ exports[`Storyshots Charts Line Chart 1`] = `
     </h1>
     <svg
       fontSize={4}
-      height="100%"
+      height="auto"
       strokeWidth={0.5}
       viewBox="0 -17.5 297 121"
       width="100%"
@@ -932,134 +961,132 @@ exports[`Storyshots Charts Pie Chart 1`] = `
   <div
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
-    <div
-      className="ChartContainer-sc-1lnti1a-0 creGaQ"
+    <h1
+      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
     >
-      <h1
-        className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      Chart title
+    </h1>
+    <svg
+      height="auto"
+      viewBox="0 -8.75 100 107"
+      width="100%"
+    >
+      <path
+        d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
+        fill="#71a2ff"
+      />
+      <text
+        fill="black"
+        fontSize={4}
+        textAnchor="middle"
+        x={9.210905525156399}
+        y={67.6510173615458}
       >
-        Chart title
-      </h1>
-      <svg
-        viewBox="0 -8.75 100 107"
+        12
+        %
+      </text>
+      <text
+        fill="black"
+        fontSize={3}
+        textAnchor="middle"
+        x={9.210905525156399}
+        y={71.1510173615458}
       >
-        <path
-          d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
-          fill="#71a2ff"
-        />
-        <text
-          fill="black"
-          fontSize={4}
-          textAnchor="middle"
-          x={9.210905525156399}
-          y={67.6510173615458}
-        >
-          12
-          %
-        </text>
-        <text
-          fill="black"
-          fontSize={3}
-          textAnchor="middle"
-          x={9.210905525156399}
-          y={71.1510173615458}
-        >
-          repairs
-        </text>
-        <path
-          d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
-          fill="#c0d4e2"
-        />
-        <text
-          fill="black"
-          fontSize={4}
-          textAnchor="middle"
-          x={7.320280636580307}
-          y={37.60039528714537}
-        >
-          10
-          %
-        </text>
-        <text
-          fill="black"
-          fontSize={3}
-          textAnchor="middle"
-          x={7.320280636580307}
-          y={41.10039528714537}
-        >
-          consulting
-        </text>
-        <path
-          d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
-          fill="#cbcbcb"
-        />
-        <text
-          fill="black"
-          fontSize={4}
-          textAnchor="middle"
-          x={20.608361541171025}
-          y={16.66173023864625}
-        >
-          8
-          %
-        </text>
-        <text
-          fill="black"
-          fontSize={3}
-          textAnchor="middle"
-          x={20.608361541171025}
-          y={20.16173023864625}
-        >
-          training
-        </text>
-        <path
-          d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
-          fill="#e57878"
-        />
-        <text
-          fill="white"
-          fontSize={4}
-          textAnchor="middle"
-          x={66.65844267276219}
-          y={49.47648734869786}
-        >
-          64
-          %
-        </text>
-        <text
-          fill="white"
-          fontSize={3}
-          textAnchor="middle"
-          x={66.65844267276219}
-          y={52.97648734869786}
-        >
-          product sales
-        </text>
-        <path
-          d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
-          fill="#8adb96"
-        />
-        <text
-          fill="black"
-          fontSize={4}
-          textAnchor="middle"
-          x={25.01851653990525}
-          y={86.75913663442492}
-        >
-          6
-          %
-        </text>
-        <text
-          fill="black"
-          fontSize={3}
-          textAnchor="middle"
-          x={25.01851653990525}
-          y={90.25913663442492}
-        >
-          others
-        </text>
-      </svg>
-    </div>
+        repairs
+      </text>
+      <path
+        d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
+        fill="#c0d4e2"
+      />
+      <text
+        fill="black"
+        fontSize={4}
+        textAnchor="middle"
+        x={7.320280636580307}
+        y={37.60039528714537}
+      >
+        10
+        %
+      </text>
+      <text
+        fill="black"
+        fontSize={3}
+        textAnchor="middle"
+        x={7.320280636580307}
+        y={41.10039528714537}
+      >
+        consulting
+      </text>
+      <path
+        d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
+        fill="#cbcbcb"
+      />
+      <text
+        fill="black"
+        fontSize={4}
+        textAnchor="middle"
+        x={20.608361541171025}
+        y={16.66173023864625}
+      >
+        8
+        %
+      </text>
+      <text
+        fill="black"
+        fontSize={3}
+        textAnchor="middle"
+        x={20.608361541171025}
+        y={20.16173023864625}
+      >
+        training
+      </text>
+      <path
+        d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
+        fill="#e57878"
+      />
+      <text
+        fill="white"
+        fontSize={4}
+        textAnchor="middle"
+        x={66.65844267276219}
+        y={49.47648734869786}
+      >
+        64
+        %
+      </text>
+      <text
+        fill="white"
+        fontSize={3}
+        textAnchor="middle"
+        x={66.65844267276219}
+        y={52.97648734869786}
+      >
+        product sales
+      </text>
+      <path
+        d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
+        fill="#8adb96"
+      />
+      <text
+        fill="black"
+        fontSize={4}
+        textAnchor="middle"
+        x={25.01851653990525}
+        y={86.75913663442492}
+      >
+        6
+        %
+      </text>
+      <text
+        fill="black"
+        fontSize={3}
+        textAnchor="middle"
+        x={25.01851653990525}
+        y={90.25913663442492}
+      >
+        others
+      </text>
+    </svg>
   </div>
 </div>
 `;
@@ -1077,7 +1104,7 @@ exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 474 228.375"
       width="100%"
     >
@@ -2184,7 +2211,7 @@ exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
       Column chart: 4 groups of 3 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 474 228.375"
       width="100%"
     >
@@ -2841,7 +2868,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 198 228.375"
       width="100%"
     >
@@ -3388,7 +3415,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 198 228.375"
       width="100%"
     >
@@ -4007,7 +4034,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Valu
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 198 228.375"
       width="100%"
     >
@@ -4542,7 +4569,7 @@ exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
       Column chart: 3 groups, 3 elements
     </h1>
     <svg
-      height="100%"
+      height="auto"
       viewBox="0 -12.25 198 228.375"
       width="100%"
     >
@@ -4828,19 +4855,47 @@ exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
 </div>
 `;
 
-exports[`Storyshots Editor Editor Of All Charts 1`] = `null`;
+exports[`Storyshots Editor Editor Of All Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `null`;
+exports[`Storyshots Editor Editor Of Column And Bar Sibling Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `null`;
+exports[`Storyshots Editor Editor Of Column And Line Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `null`;
+exports[`Storyshots Editor Editor Of Line And Bar Sibling Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `null`;
+exports[`Storyshots Editor Editor Of Pie And Bar Sibling Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Editor Initial Editor 1`] = `null`;
+exports[`Storyshots Editor Initial Editor 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots Image Editor Of Image Content 1`] = `null`;
+exports[`Storyshots Image Editor Of Image Content 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
 exports[`Storyshots Image Image Content 1`] = `
 <div
@@ -4853,9 +4908,17 @@ exports[`Storyshots Image Image Content 1`] = `
 </div>
 `;
 
-exports[`Storyshots RichText Editor Of Multiline Content 1`] = `null`;
+exports[`Storyshots RichText Editor Of Multiline Content 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
-exports[`Storyshots RichText Editor Of Single Line Content 1`] = `null`;
+exports[`Storyshots RichText Editor Of Single Line Content 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
 
 exports[`Storyshots RichText Multiline Content 1`] = `
 <div

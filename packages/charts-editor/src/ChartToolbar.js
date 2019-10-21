@@ -1,6 +1,12 @@
 // @flow
 import * as React from 'react';
-import type { ChartBody, ChartFormat, ToolbarProps } from '@seine/core';
+import type {
+  AddButtonProps,
+  BlockType,
+  ChartBody,
+  ChartFormat,
+  ToolbarProps,
+} from '@seine/core';
 import { chartTypes } from '@seine/core';
 import { Toolbar } from '@seine/ui';
 
@@ -9,7 +15,14 @@ import BarChartToolbar from './BarChartToolbar';
 import PieChartToolbar from './PieChartToolbar';
 import LineChartToolbar from './LineChartToolbar';
 
-type Props = ToolbarProps & {
+type Props = $Rest<
+  ToolbarProps,
+  {|
+    addButtonRenderMap: {
+      [BlockType]: React$Component<AddButtonProps>,
+    },
+  |}
+> & {
   body: ChartBody,
   format: ChartFormat,
 };

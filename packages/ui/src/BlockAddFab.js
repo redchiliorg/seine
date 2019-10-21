@@ -12,7 +12,7 @@ import {
 import type { AddButtonProps, BlockType } from '@seine/core';
 import { blockTypes } from '@seine/core';
 
-const Fab = styled(MuiFab)`
+export const BlockFab = styled(MuiFab)`
   && {
     opacity: 0.5;
     :hover {
@@ -48,7 +48,7 @@ export default function BlockAddFab({
   return (
     <ClickAwayListener onClickAway={handleClose}>
       <Box position={'relative'}>
-        <Fab
+        <BlockFab
           ref={anchorEl}
           size={'small'}
           onClick={(event) => {
@@ -58,7 +58,7 @@ export default function BlockAddFab({
           }}
         >
           <AddIcon />
-        </Fab>
+        </BlockFab>
         <Popover
           anchorEl={anchorEl.current}
           open={open}

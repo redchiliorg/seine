@@ -15,7 +15,6 @@ import PieChartTitle from './PieChartTitle';
 import PieChartValue from './PieChartValue';
 import PieChartSlice from './PieChartSlice';
 import ChartTitle from './ChartTitle';
-import ChartContainer from './ChartContainer';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -61,84 +60,84 @@ export default function PieChart({
   let endY = Math.sin(end);
 
   return (
-    <ChartContainer>
-      <View {...viewProps}>
-        <ChartTitle>{title}</ChartTitle>
-        <svg
-          viewBox={[
-            0,
-            -2.5 * lineHeight * fontSize,
-            size,
-            size + 2 * lineHeight * fontSize,
-          ].join(' ')}
-        >
-          {elements.map(({ title, value }, index) => {
-            const start = end;
-            const startX = endX;
-            const startY = endY;
-            const length = (2 * value * Math.PI) / sum;
+    <View {...viewProps}>
+      <ChartTitle>{title}</ChartTitle>
+      <svg
+        height={'auto'}
+        viewBox={[
+          0,
+          -2.5 * lineHeight * fontSize,
+          size,
+          size + 2 * lineHeight * fontSize,
+        ].join(' ')}
+        width={'100%'}
+      >
+        {elements.map(({ title, value }, index) => {
+          const start = end;
+          const startX = endX;
+          const startY = endY;
+          const length = (2 * value * Math.PI) / sum;
 
-            end = start + length;
-            endX = Math.cos(end);
-            endY = Math.sin(end);
+          end = start + length;
+          endX = Math.cos(end);
+          endY = Math.sin(end);
 
-            const textColor = value >= quarter ? 'white' : 'black';
-            const textX =
-              center +
-              (value >= quarter ? innerRadius : outerRadius) *
-                Math.cos(start + length / 2);
-            const textY =
-              center +
-              (value >= quarter ? innerRadius : outerRadius) *
-                Math.sin(start + length / 2);
+          const textColor = value >= quarter ? 'white' : 'black';
+          const textX =
+            center +
+            (value >= quarter ? innerRadius : outerRadius) *
+              Math.cos(start + length / 2);
+          const textY =
+            center +
+            (value >= quarter ? innerRadius : outerRadius) *
+              Math.sin(start + length / 2);
 
-            return [
-              <PieChartSlice
-                center={center}
-                fontSize={fontSize}
-                endX={endX}
-                endY={endY}
-                index={index}
-                key={'slice'}
-                length={length}
-                lineHeight={lineHeight}
-                palette={palette}
-                radius={radius}
-                start={start}
-                startX={startX}
-                startY={startY}
-                textX={textX}
-                textY={textY}
-              />,
+          return [
+            <PieChartSlice
+              center={center}
+              fontSize={fontSize}
+              endX={endX}
+              endY={endY}
+              index={index}
+              key={'slice'}
+              length={length}
+              lineHeight={lineHeight}
+              palette={palette}
+              radius={radius}
+              start={start}
+              startX={startX}
+              startY={startY}
+              textX={textX}
+              textY={textY}
+            />,
 
-              <PieChartValue
-                fill={textColor}
-                fontSize={2 * fontSize}
-                index={index}
-                key={'value'}
-                lineHeight={lineHeight}
-                units={units}
-                value={value}
-                width={2 * fontSize * String(value).length}
-                x={textX}
-                y={textY}
-              />,
+            <PieChartValue
+              fill={textColor}
+              fontSize={2 * fontSize}
+              index={index}
+              key={'value'}
+              lineHeight={lineHeight}
+              units={units}
+              value={value}
+              width={2 * fontSize * String(value).length}
+              x={textX}
+              y={textY}
+            />,
 
-              <PieChartTitle
-                fill={textColor}
-                fontSize={1.5 * fontSize}
-                index={index}
-                key={'title'}
-                lineHeight={lineHeight}
-                title={title}
-                width={1.5 * fontSize * title.length}
-                x={textX}
-                y={fontSize * lineHeight + textY}
-              />,
-            ];
-          })}
-        </svg>
-      </View>
-    </ChartContainer>
+            <PieChartTitle
+              fill={textColor}
+              fontSize={1.5 * fontSize}
+              index={index}
+              key={'title'}
+              lineHeight={lineHeight}
+              title={title}
+              width={1.5 * fontSize * title.length}
+              x={textX}
+              y={fontSize * lineHeight + textY}
+            />,
+          ];
+        })}
+      </svg>
+    </View>
   );
 }

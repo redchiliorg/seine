@@ -62,6 +62,7 @@ export default function ColumnChart({
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
       <svg
+        height={'auto'}
         viewBox={React.useMemo(
           () =>
             [
@@ -76,7 +77,6 @@ export default function ColumnChart({
             ].join(' '),
           [fontSize, groups.length, lineHeight, titles.length]
         )}
-        height={'100%'}
         width={'100%'}
       >
         {React.useMemo(

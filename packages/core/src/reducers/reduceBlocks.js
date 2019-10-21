@@ -9,12 +9,14 @@ opaque type BlockExtension = {
   editor: { [string]: any },
 };
 export type BlocksState = {
-  selection: $ReadOnlyArray<BlockId>,
   blocks: $ReadOnlyArray<Block & BlockExtension>,
+  mode: 'default' | 'fullscreen',
+  selection: $ReadOnlyArray<BlockId>,
 };
 export const initialBlocksState: BlocksState = {
-  selection: [],
   blocks: [],
+  mode: 'default',
+  selection: [],
 };
 
 export const CREATE_BLOCK = '@seine/core/createBlock';
@@ -52,6 +54,12 @@ export type CreateTopBlockAction = {
   block: $Shape<Block>,
 };
 
+export const DELETE_BLOCK = '@seine/core/deleteBlock';
+export type DeleteBlockAction = {
+  id: BlockId,
+  type: typeof DELETE_BLOCK,
+};
+
 export const DELETE_SELECTED_BLOCKS = '@seine/core/deleteSelectedBlocks';
 export type DeleteSelectedBlocksAction = {
   type: typeof DELETE_SELECTED_BLOCKS,
@@ -67,6 +75,7 @@ export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
+  mode?: 'default' | 'fullscreen',
 };
 
 export const UPDATE_BLOCK_BODY = '@seine/core/updateBlockBody';
@@ -221,17 +230,18 @@ export function reduceBlocks(
           };
 
         default:
-          return { ...state, selection: [action.id] };
+          return { ...state, mode: action.mode, selection: [action.id] };
       }
     }
 
-    case DELETE_SELECTED_BLOCKS: {
-      if (state.selection.length === 0) {
+    case DELETE_SELECTED_BLOCKS:
+    case DELETE_BLOCK: {
+      const selection =
+        action.type === DELETE_BLOCK ? [action.id] : state.selection;
+      if (selection.length === 0) {
         return state;
       }
-      const blocks = state.blocks.filter(
-        ({ id }) => !state.selection.includes(id)
-      );
+      const blocks = state.blocks.filter(({ id }) => !selection.includes(id));
       const redundant = blocks.filter(
         ({ id, type }, _, blocks) =>
           type === blockTypes.GRID &&
@@ -239,7 +249,8 @@ export function reduceBlocks(
       );
       return {
         ...state,
-        selection: [],
+        mode: initialBlocksState.mode,
+        selection: initialBlocksState.selection,
         blocks: blocks
           .filter((block) => !redundant.includes(block))
           .map((block) => {
@@ -259,7 +270,8 @@ export function reduceBlocks(
       }
       return {
         ...state,
-        selection: [],
+        mode: initialBlocksState.mode,
+        selection: initialBlocksState.selection,
       };
     }
 
