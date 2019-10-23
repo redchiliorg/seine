@@ -50,22 +50,21 @@ export default function PieChart({
 
   const [viewBox, setViewBox] = React.useState(`0 0 ${size} ${size}`);
 
-  const boundsRef = React.useRef({ minX: 0, minY: 0, maxX: size, maxY: size });
+  const bounds = React.useMemo(() => ({}), []);
+
   React.useLayoutEffect(() => {
-    const {
-      current: { minX, minY, maxX, maxY },
-    } = boundsRef;
-    setViewBox(`${minX} ${minY} ${maxX - minX} ${maxY - minY}`);
-  }, [elements]);
+    setViewBox(
+      `${bounds.minX} ${bounds.minY} ${bounds.maxX -
+        bounds.minX} ${bounds.maxY - bounds.minY}`
+    );
+  }, [bounds, elements]);
+
+  bounds.minX = bounds.minY = 0;
+  bounds.maxX = bounds.maxY = size;
 
   let end = (3 * Math.PI) / 4;
   let endX = Math.cos(end);
   let endY = Math.sin(end);
-
-  const { current: bounds } = boundsRef;
-
-  bounds.minX = bounds.minY = 0;
-  bounds.maxX = bounds.maxY = size;
 
   return (
     <View {...viewProps}>

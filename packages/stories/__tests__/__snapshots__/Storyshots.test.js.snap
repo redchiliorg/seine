@@ -8,7 +8,7 @@ exports[`Storyshots Charts Bar Chart 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Chart title
     </h1>
@@ -299,7 +299,7 @@ exports[`Storyshots Charts Column Chart 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Chart title
     </h1>
@@ -584,7 +584,7 @@ exports[`Storyshots Charts Line Chart 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Sales ($ millions)
     </h1>
@@ -962,25 +962,27 @@ exports[`Storyshots Charts Pie Chart 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Chart title
     </h1>
     <svg
       height="auto"
-      viewBox="0 -8.75 100 107"
+      overflow="visible"
+      preserveAspectRatio="xMinYMin meet"
+      viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
       width="100%"
     >
       <path
-        d="M 16.683114654475617 51.047025302604276 A 33.33333333333333 33.33333333333333 0 0 0 26.429773960448422 73.57022603955159 L 50 50 L 16.683114654475617 51.047025302604276"
+        d="M 0.02467198171341778 51.57053795390641 A 50 50 0 0 0 14.64466094067263 85.35533905932738 L 50 50 L 0.02467198171341778 51.57053795390641"
         fill="#71a2ff"
       />
       <text
         fill="black"
         fontSize={4}
         textAnchor="middle"
-        x={9.210905525156399}
-        y={67.6510173615458}
+        x={-6.085004902909958}
+        y={74.27014887212547}
       >
         12
         %
@@ -989,21 +991,21 @@ exports[`Storyshots Charts Pie Chart 1`] = `
         fill="black"
         fontSize={3}
         textAnchor="middle"
-        x={9.210905525156399}
-        y={71.1510173615458}
+        x={-6.085004902909958}
+        y={77.77014887212547}
       >
         repairs
       </text>
       <path
-        d="M 22.430647524181275 31.263887404928983 A 33.33333333333333 33.33333333333333 0 0 0 16.683114654475617 51.047025302604276 L 50 50 L 22.430647524181275 31.263887404928983"
+        d="M 8.645971286271909 21.89583110739347 A 50 50 0 0 0 0.02467198171341778 51.57053795390641 L 50 50 L 8.645971286271909 21.89583110739347"
         fill="#c0d4e2"
       />
       <text
         fill="black"
         fontSize={4}
         textAnchor="middle"
-        x={7.320280636580307}
-        y={37.60039528714537}
+        x={-8.68461412470208}
+        y={32.950543519824876}
       >
         10
         %
@@ -1012,21 +1014,21 @@ exports[`Storyshots Charts Pie Chart 1`] = `
         fill="black"
         fontSize={3}
         textAnchor="middle"
-        x={7.320280636580307}
-        y={41.10039528714537}
+        x={-8.68461412470208}
+        y={36.450543519824876}
       >
         consulting
       </text>
       <path
-        d="M 34.866983342015104 20.29978252705441 A 33.33333333333333 33.33333333333333 0 0 0 22.430647524181275 31.263887404928983 L 50 50 L 34.866983342015104 20.29978252705441"
+        d="M 27.300475013022655 5.449673790581613 A 50 50 0 0 0 8.645971286271909 21.89583110739347 L 50 50 L 27.300475013022655 5.449673790581613"
         fill="#cbcbcb"
       />
       <text
         fill="black"
         fontSize={4}
         textAnchor="middle"
-        x={20.608361541171025}
-        y={16.66173023864625}
+        x={9.586497119110156}
+        y={4.159879078138587}
       >
         8
         %
@@ -1035,13 +1037,13 @@ exports[`Storyshots Charts Pie Chart 1`] = `
         fill="black"
         fontSize={3}
         textAnchor="middle"
-        x={20.608361541171025}
-        y={20.16173023864625}
+        x={9.586497119110156}
+        y={7.659879078138587}
       >
         training
       </text>
       <path
-        d="M 36.76173697884062 80.59182085613268 A 33.33333333333333 33.33333333333333 0 1 0 34.866983342015104 20.29978252705441 L 50 50 L 36.76173697884062 80.59182085613268"
+        d="M 30.14260546826093 95.88773128419905 A 50 50 0 1 0 27.300475013022655 5.449673790581613 L 50 50 L 30.14260546826093 95.88773128419905"
         fill="#e57878"
       />
       <text
@@ -1064,15 +1066,15 @@ exports[`Storyshots Charts Pie Chart 1`] = `
         product sales
       </text>
       <path
-        d="M 26.429773960448408 73.57022603955157 A 33.33333333333333 33.33333333333333 0 0 0 36.76173697884062 80.59182085613268 L 50 50 L 26.429773960448408 73.57022603955157"
+        d="M 14.644660940672608 85.35533905932735 A 50 50 0 0 0 30.14260546826093 95.88773128419905 L 50 50 L 14.644660940672608 85.35533905932735"
         fill="#8adb96"
       />
       <text
         fill="black"
         fontSize={4}
         textAnchor="middle"
-        x={25.01851653990525}
-        y={86.75913663442492}
+        x={15.650460242369718}
+        y={100.54381287233429}
       >
         6
         %
@@ -1081,8 +1083,8 @@ exports[`Storyshots Charts Pie Chart 1`] = `
         fill="black"
         fontSize={3}
         textAnchor="middle"
-        x={25.01851653990525}
-        y={90.25913663442492}
+        x={15.650460242369718}
+        y={104.04381287233429}
       >
         others
       </text>
@@ -1099,7 +1101,7 @@ exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 3 groups of 5 elements
     </h1>
@@ -2206,7 +2208,7 @@ exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 4 groups of 3 elements
     </h1>
@@ -2863,7 +2865,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 3 groups of 5 elements
     </h1>
@@ -3410,7 +3412,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 3 groups of 5 elements
     </h1>
@@ -4029,7 +4031,7 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Valu
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 3 groups of 5 elements
     </h1>
@@ -4564,7 +4566,7 @@ exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
     className="ChartContainer-sc-1lnti1a-0 creGaQ"
   >
     <h1
-      className="ChartTitle__Title-sc-8rh5zq-0 gtnimY"
+      className="ChartTitle__Title-sc-8rh5zq-0 bDKDHC"
     >
       Column chart: 3 groups, 3 elements
     </h1>
