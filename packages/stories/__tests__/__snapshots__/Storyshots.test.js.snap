@@ -13,12 +13,11 @@ exports[`Storyshots Charts Bar Chart 1`] = `
       Chart title
     </h1>
     <svg
+      className="sc-bdVaJa gUIEuD"
       fontSize={2}
       fontWeight={500}
-      height="auto"
       preserveAspectRatio="xMidYMax meet"
       viewBox="0 -7 100 66.25"
-      width="100%"
     >
       <text
         fill="#71a2ff"
@@ -304,9 +303,8 @@ exports[`Storyshots Charts Column Chart 1`] = `
       Chart title
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 128 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -589,11 +587,10 @@ exports[`Storyshots Charts Line Chart 1`] = `
       Sales ($ millions)
     </h1>
     <svg
+      className="sc-bdVaJa gUIEuD"
       fontSize={4}
-      height="auto"
       strokeWidth={0.5}
       viewBox="0 -17.5 297 121"
-      width="100%"
     >
       <marker
         id="arrowUp"
@@ -967,11 +964,10 @@ exports[`Storyshots Charts Pie Chart 1`] = `
       Chart title
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       overflow="visible"
       preserveAspectRatio="xMinYMin meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
-      width="100%"
     >
       <path
         d="M 0.02467198171341778 51.57053795390641 A 50 50 0 0 0 14.64466094067263 85.35533905932738 L 50 50 L 0.02467198171341778 51.57053795390641"
@@ -1106,9 +1102,8 @@ exports[`Storyshots Charts Six Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 474 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -2213,9 +2208,8 @@ exports[`Storyshots Charts Six Groups Of Two Columns 1`] = `
       Column chart: 4 groups of 3 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 474 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -2870,9 +2864,8 @@ exports[`Storyshots Charts Two Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 198 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -3417,9 +3410,8 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value 20 Max Value 100 
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 198 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -4036,9 +4028,8 @@ exports[`Storyshots Charts Two Groups Of Six Columns Min Value Minus 20 Max Valu
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 198 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
@@ -4571,9 +4562,8 @@ exports[`Storyshots Charts Two Groups Of Two Columns 1`] = `
       Column chart: 3 groups, 3 elements
     </h1>
     <svg
-      height="auto"
+      className="sc-bdVaJa gUIEuD"
       viewBox="0 -12.25 198 228.375"
-      width="100%"
     >
       <rect
         fill="#71a2ff"
