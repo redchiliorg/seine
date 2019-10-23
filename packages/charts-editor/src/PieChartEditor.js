@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
 import {
+  ChartSvg,
   ChartTitle,
   PieChartSlice,
   PieChartTitle,
@@ -46,7 +47,7 @@ export default function PieChartEditor({
           </ChartTitle>
         );
 
-      case 'svg':
+      case ChartSvg:
         return (
           <svg {...parent.props} key={parent.key}>
             <pattern

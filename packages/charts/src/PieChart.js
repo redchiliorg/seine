@@ -14,6 +14,7 @@ import type { ChartProps } from './types';
 import PieChartTitle from './PieChartTitle';
 import PieChartValue from './PieChartValue';
 import PieChartSlice from './PieChartSlice';
+import ChartSvg from './ChartSvg';
 import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
@@ -69,12 +70,10 @@ export default function PieChart({
   return (
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
-      <svg
+      <ChartSvg
         overflow={'visible'}
         preserveAspectRatio={'xMinYMin meet'}
         viewBox={viewBox}
-        width={'100%'}
-        height={'auto'}
       >
         {elements.map(({ title, value }, index) => {
           const start = end;
@@ -158,7 +157,7 @@ export default function PieChart({
             />,
           ];
         })}
-      </svg>
+      </ChartSvg>
     </View>
   );
 }

@@ -2,6 +2,7 @@
 import * as React from 'react';
 import {
   ChartLegendItem,
+  ChartSvg,
   ChartTitle,
   LineChartGroup,
   LineChartValue,
@@ -43,7 +44,7 @@ export default function LineChartEditor({
           </ChartTitle>
         );
 
-      case 'svg':
+      case ChartSvg:
         return (
           <svg {...parent.props} key={parent.key}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {

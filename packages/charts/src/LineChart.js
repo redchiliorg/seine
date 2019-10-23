@@ -18,6 +18,7 @@ import ChartLegendItem from './ChartLegendItem';
 import LineChartGroup from './LineChartGroup';
 import LineChartValue from './LineChartValue';
 import ChartTitle from './ChartTitle';
+import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -70,9 +71,8 @@ export default function LineChart({
   return (
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
-      <svg
+      <ChartSvg
         fontSize={fontSize}
-        height={'auto'}
         strokeWidth={0.5}
         viewBox={[
           0,
@@ -80,7 +80,6 @@ export default function LineChart({
           297,
           100 + 3 * lineHeight * fontSize,
         ].join(' ')}
-        width={'100%'}
       >
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
@@ -226,7 +225,7 @@ export default function LineChart({
             }
           />,
         ])}
-      </svg>
+      </ChartSvg>
     </View>
   );
 }

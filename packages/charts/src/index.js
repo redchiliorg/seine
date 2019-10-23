@@ -33,4 +33,6 @@ export type { Props as PieChartSliceProps } from './PieChartSlice';
 export type { Props as PieChartTitleProps } from './PieChartTitle';
 export type { Props as PieChartValueProps } from './PieChartValue';
 
+export { default as ChartSvg } from './ChartSvg';
+
 export * from './types';

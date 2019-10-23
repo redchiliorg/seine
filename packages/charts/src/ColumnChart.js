@@ -18,6 +18,7 @@ import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
 import { ColumnChartYAxis } from './ColumnChartYAxis';
 import ChartTitle from './ChartTitle';
+import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -61,8 +62,7 @@ export default function ColumnChart({
   return (
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
-      <svg
-        height={'auto'}
+      <ChartSvg
         viewBox={React.useMemo(
           () =>
             [
@@ -77,7 +77,6 @@ export default function ColumnChart({
             ].join(' '),
           [fontSize, groups.length, lineHeight, titles.length]
         )}
-        width={'100%'}
       >
         {React.useMemo(
           () =>
@@ -139,7 +138,7 @@ export default function ColumnChart({
             }
           />
         ))}
-      </svg>
+      </ChartSvg>
     </View>
   );
 }
