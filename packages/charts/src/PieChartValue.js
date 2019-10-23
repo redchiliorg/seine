@@ -30,7 +30,7 @@ export default function PieChartValue({
       fill={fill}
       fontSize={fontSize}
       key={'value'}
-      textAnchor="middle"
+      textAnchor={'middle'}
       x={x}
       y={y}
     >

@@ -17,6 +17,7 @@ import type { ChartProps } from './types';
 import BarChartElementTitle from './BarChartElementTitle';
 import BarChartElementValue from './BarChartElementValue';
 import ChartTitle from './ChartTitle';
+import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -67,10 +68,9 @@ export default function BarChart({
   return (
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
-      <svg
+      <ChartSvg
         fontSize={fontSize}
         fontWeight={fontWeight}
-        height={'auto'}
         preserveAspectRatio={'xMidYMax meet'}
         viewBox={[
           0,
@@ -78,7 +78,6 @@ export default function BarChart({
           size,
           height + 3.5 * lineHeight * fontSize,
         ].join(' ')}
-        width={'100%'}
       >
         {elements.map(({ title, value }, index) => {
           const len = (barMaxLen * value) / maxValue;
@@ -150,7 +149,7 @@ export default function BarChart({
               ]
             )
           : null}
-      </svg>
+      </ChartSvg>
     </View>
   );
 }

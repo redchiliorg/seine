@@ -37,6 +37,7 @@ export default function LineChartToolbar({
   editor,
   format,
   id,
+  ...toolbarProps
 }: Props) {
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
@@ -46,7 +47,9 @@ export default function LineChartToolbar({
     [body.elements]
   );
   return (
-    <Toolbar>
+    <Toolbar {...toolbarProps}>
+      {children}
+
       <ChartGroupAddButton
         body={body}
         dispatch={dispatch}
@@ -176,10 +179,6 @@ export default function LineChartToolbar({
         id={id}
         name={'yAxis'}
       />
-
-      <Toolbar.Separator />
-
-      {children}
     </Toolbar>
   );
 }

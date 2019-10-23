@@ -14,6 +14,7 @@ import type { ChartProps } from './types';
 import PieChartTitle from './PieChartTitle';
 import PieChartValue from './PieChartValue';
 import PieChartSlice from './PieChartSlice';
+import ChartSvg from './ChartSvg';
 import ChartTitle from './ChartTitle';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
@@ -32,7 +33,6 @@ export default function PieChart({
   size = defaultChartSize,
   title = defaultChartTitle,
   units = defaultPieChartUnits,
-
   as: View = React.Fragment,
   id,
   parent_id,
@@ -45,15 +45,23 @@ export default function PieChart({
   );
 
   const [radius, outerRadius, innerRadius, center, quarter] = React.useMemo(
-    () => [
-      size / 2 - size / 6,
-      size / 2 - size / 6 + size / 9,
-      size / 6,
-      size / 2,
-      sum / 4,
-    ],
+    () => [size / 2, size / 2 + size / 9, size / 6, size / 2, sum / 4],
     [size, sum]
   );
+
+  const [viewBox, setViewBox] = React.useState(`0 0 ${size} ${size}`);
+
+  const bounds = React.useMemo(() => ({}), []);
+
+  React.useLayoutEffect(() => {
+    setViewBox(
+      `${bounds.minX} ${bounds.minY} ${bounds.maxX -
+        bounds.minX} ${bounds.maxY - bounds.minY}`
+    );
+  }, [bounds, elements]);
+
+  bounds.minX = bounds.minY = 0;
+  bounds.maxX = bounds.maxY = size;
 
   let end = (3 * Math.PI) / 4;
   let endX = Math.cos(end);
@@ -62,15 +70,10 @@ export default function PieChart({
   return (
     <View {...viewProps}>
       <ChartTitle>{title}</ChartTitle>
-      <svg
-        height={'auto'}
-        viewBox={[
-          0,
-          -2.5 * lineHeight * fontSize,
-          size,
-          size + 2 * lineHeight * fontSize,
-        ].join(' ')}
-        width={'100%'}
+      <ChartSvg
+        overflow={'visible'}
+        preserveAspectRatio={'xMinYMin meet'}
+        viewBox={viewBox}
       >
         {elements.map(({ title, value }, index) => {
           const start = end;
@@ -92,6 +95,23 @@ export default function PieChart({
             (value >= quarter ? innerRadius : outerRadius) *
               Math.sin(start + length / 2);
 
+          const titleWidth = fontSize * (2 + title.length);
+          const valueWidth = fontSize * (2 + String(value).length);
+          const textBoxWidth = Math.max(titleWidth, valueWidth);
+          const textBoxHeight = 1.5 * fontSize * lineHeight;
+
+          if (textX - textBoxWidth / 2 < bounds.minX) {
+            bounds.minX = textX - textBoxWidth / 2;
+          }
+          if (textX > bounds.maxX + textBoxWidth / 2) {
+            bounds.maxX = textX + textBoxWidth / 2;
+          }
+          if (textY - 2 * fontSize < bounds.minY) {
+            bounds.minY = textY - 2 * fontSize;
+          }
+          if (textY + textBoxHeight > bounds.maxY) {
+            bounds.maxY = textY + textBoxHeight;
+          }
           return [
             <PieChartSlice
               center={center}
@@ -119,7 +139,7 @@ export default function PieChart({
               lineHeight={lineHeight}
               units={units}
               value={value}
-              width={2 * fontSize * String(value).length}
+              width={valueWidth}
               x={textX}
               y={textY}
             />,
@@ -131,13 +151,13 @@ export default function PieChart({
               key={'title'}
               lineHeight={lineHeight}
               title={title}
-              width={1.5 * fontSize * title.length}
+              width={titleWidth}
               x={textX}
               y={fontSize * lineHeight + textY}
             />,
           ];
         })}
-      </svg>
+      </ChartSvg>
     </View>
   );
 }

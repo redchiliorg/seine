@@ -8,6 +8,7 @@ export type Props = {
 
 const Title = styled.h1`
   text-align: left;
+  line-height: 3;
   width: 100%;
 `;
 

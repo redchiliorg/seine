@@ -4,6 +4,7 @@ import type { BarChartTitleProps, BarChartValueProps } from '@seine/charts';
 import {
   BarChartElementTitle,
   BarChartElementValue,
+  ChartSvg,
   ChartTitle,
 } from '@seine/charts';
 import {
@@ -40,7 +41,7 @@ export default function BarChartEditor({
           </ChartTitle>
         );
 
-      case 'svg':
+      case ChartSvg:
         return (
           <svg {...parent.props} key={parent.key}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {

@@ -22,7 +22,7 @@ export default function PieChartTitle({ fill, fontSize, x, y, title }: Props) {
       fill={fill}
       fontSize={fontSize}
       key={'value'}
-      textAnchor="middle"
+      textAnchor={'middle'}
       x={x}
       y={y}
     >

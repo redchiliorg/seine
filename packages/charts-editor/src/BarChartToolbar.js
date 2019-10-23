@@ -32,12 +32,15 @@ export default function BarChartToolbar({
   editor,
   format,
   id,
+  ...toolbarProps
 }: Props) {
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
   format = format || defaultChartFormat;
   return (
-    <Toolbar>
+    <Toolbar {...toolbarProps}>
+      {children}
+
       {editor.selection > -1 && (
         <>
           <ChartElementRemoveButton
@@ -47,6 +50,7 @@ export default function BarChartToolbar({
             format={format}
             id={id}
           />
+
           <Toolbar.Separator />
         </>
       )}
@@ -99,10 +103,6 @@ export default function BarChartToolbar({
         id={id}
         name={'xAxis'}
       />
-
-      <Toolbar.Separator />
-
-      {children}
     </Toolbar>
   );
 }

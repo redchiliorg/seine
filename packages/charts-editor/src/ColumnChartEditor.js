@@ -2,7 +2,12 @@
 import * as React from 'react';
 import { ForeignInput } from '@seine/ui';
 import type { ChartTitleProps, ColumnChartGroupProps } from '@seine/charts';
-import { ChartLegendItem, ChartTitle, ColumnChartGroup } from '@seine/charts';
+import {
+  ChartLegendItem,
+  ChartSvg,
+  ChartTitle,
+  ColumnChartGroup,
+} from '@seine/charts';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
@@ -38,7 +43,7 @@ export default function ColumnChartEditor({
           </ChartTitle>
         );
 
-      case 'svg':
+      case ChartSvg:
         return (
           <svg {...parent.props}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {

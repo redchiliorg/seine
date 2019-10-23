@@ -31,6 +31,7 @@ const AppBar = styled(MuiAppBar)`
 
 type Props = {
   children: React.Node,
+  position?: 'fixed' | 'relative',
 };
 
 /**
@@ -38,12 +39,15 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function Toolbar(props: Props) {
+export default function Toolbar({
+  position = 'relative',
+  ...toolbarProps
+}: Props) {
   return (
-    <AppBar position={'relative'}>
+    <AppBar position={position}>
       <MuiToolbar
         onClick={React.useCallback((event) => event.stopPropagation(), [])}
-        {...props}
+        {...toolbarProps}
       />
     </AppBar>
   );
