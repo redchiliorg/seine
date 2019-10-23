@@ -39,6 +39,7 @@ export default function ColumnChartToolbar({
   body,
   dispatch,
   children,
+  ...toolbarProps
 }: Props) {
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
@@ -52,7 +53,9 @@ export default function ColumnChartToolbar({
     [body.elements]
   );
   return (
-    <Toolbar>
+    <Toolbar {...toolbarProps}>
+      {children}
+
       <ChartGroupAddButton
         body={body}
         disabled={groupsCount >= columnChartMaxGroups}
@@ -170,8 +173,6 @@ export default function ColumnChartToolbar({
       />
 
       <Toolbar.Separator />
-
-      {children}
     </Toolbar>
   );
 }

@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { AppBar, Box, Dialog, IconButton, Toolbar } from '@material-ui/core';
+import { Box, Dialog, IconButton } from '@material-ui/core';
 import {
   Close as CloseIcon,
   Fullscreen as FullscreenIcon,
@@ -24,6 +24,7 @@ import {
   BlockActionsGroup,
   BlockActionsItem,
   BlockFab,
+  Toolbar,
 } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
 import {
@@ -117,21 +118,8 @@ export default function ChartEditor({
           selection[0] === chartProps.id &&
           mode === 'fullscreen'
         }
+        scroll={'body'}
       >
-        <AppBar position={'relative'}>
-          <Toolbar>
-            <ActionButton
-              ariaLabel={'close'}
-              as={IconButton}
-              color={'inherit'}
-              dispatch={dispatch}
-              edge={'start'}
-              type={DESELECT_ALL_BLOCKS}
-            >
-              <CloseIcon />
-            </ActionButton>
-          </Toolbar>
-        </AppBar>
         <ChartToolbar
           id={chartProps.id}
           body={{ elements, title }}
@@ -142,8 +130,23 @@ export default function ChartEditor({
           parent_id={chartProps.parent_id}
           selection={selection}
           type={blockTypes.CHART}
-        />
-        <Box padding={10}>
+          position={'fixed'}
+        >
+          <ActionButton
+            ariaLabel={'close'}
+            as={IconButton}
+            color={'inherit'}
+            dispatch={dispatch}
+            edge={'start'}
+            type={DESELECT_ALL_BLOCKS}
+          >
+            <CloseIcon />
+          </ActionButton>
+
+          <Toolbar.Separator />
+        </ChartToolbar>
+
+        <Box marginTop={8}>
           <ExactChartEditor
             dispatch={dispatch}
             dispatchElements={dispatchElements}

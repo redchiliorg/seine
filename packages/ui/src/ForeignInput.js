@@ -26,25 +26,35 @@ const Input = styled.input`
     transparent,
     width,
   }) => css`
-    ${color &&
-      css`
-        color: ${color};
-      `};
-    ${transparent &&
-      css`
-        background: transparent;
-      `};
-    text-align: ${align};
-    border: 0;
-    display: block;
-    font-size: ${fontSize}px;
-    font-weight: ${fontWeight};
-    height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
-    position: relative;
-    transform: ${transform};
-    transform-origin: left top;
-    width: ${width ? width + 'px' : 'auto'};
+    && {
+      ${color &&
+        css`
+          color: ${color};
+        `};
+      ${transparent &&
+        css`
+          background: transparent;
+        `};
+      text-align: ${align};
+      border: 0;
+      display: block;
+      font-size: ${fontSize}px;
+      font-weight: ${fontWeight};
+      height: ${lineHeight ? lineHeight * fontSize + fontSize + 'px' : 'auto'};
+      position: relative;
+      transform: ${transform};
+      transform-origin: left top;
+      width: ${width ? width + 'px' : 'auto'};
+      ::-webkit-outer-spin-button,
+      ::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &[type='number'] {
+        -moz-appearance: textfield;
+      }
+    }
   `}
+  }
 `;
 
 /**

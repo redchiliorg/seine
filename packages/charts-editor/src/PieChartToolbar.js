@@ -31,12 +31,15 @@ export default function PieChartToolbar({
   editor,
   format,
   id,
+  ...toolbarProps
 }: Props) {
   body = body || defaultChartBody;
   editor = editor || defaultChartEditor;
   format = format || defaultChartFormat;
   return (
-    <Toolbar>
+    <Toolbar {...toolbarProps}>
+      {children}
+
       {editor.selection > -1 && (
         <>
           <ChartElementRemoveButton
@@ -48,9 +51,11 @@ export default function PieChartToolbar({
           >
             Remove slice
           </ChartElementRemoveButton>
+
           <Toolbar.Separator />
         </>
       )}
+
       <ChartElementAddButton
         body={body}
         dispatch={dispatch}
@@ -92,10 +97,6 @@ export default function PieChartToolbar({
         format={format}
         id={id}
       />
-
-      <Toolbar.Separator />
-
-      {children}
     </Toolbar>
   );
 }
