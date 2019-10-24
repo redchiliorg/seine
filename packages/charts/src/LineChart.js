@@ -11,6 +11,8 @@ import {
   defaultChartXAxis,
   defaultChartYAxis,
   defaultChartPaletteKey,
+  defaultChartVerticalAlignment,
+  defaultChartTextAlignment,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
@@ -39,7 +41,9 @@ export default function LineChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
+  textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
+  verticalAlignment = defaultChartVerticalAlignment,
   yAxis = defaultChartYAxis,
   xAxis = defaultChartXAxis,
 
@@ -70,10 +74,11 @@ export default function LineChart({
 
   return (
     <View {...viewProps}>
-      <ChartTitle>{title}</ChartTitle>
+      <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         fontSize={fontSize}
         strokeWidth={0.5}
+        verticalAlignment={verticalAlignment}
         viewBox={[
           0,
           -2.5 * lineHeight * fontSize,
@@ -191,6 +196,8 @@ export default function LineChart({
                   index={index}
                   key={['value', titleIndex, groupIndex]}
                   lineHeight={lineHeight}
+                  maxValue={maxValue}
+                  minValue={minValue}
                   units={units}
                   value={value}
                   width={3 * fontSize}

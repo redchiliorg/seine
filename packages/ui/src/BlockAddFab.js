@@ -1,25 +1,11 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components/macro';
 import AddIcon from '@material-ui/icons/Add';
-import {
-  Button,
-  Fab as MuiFab,
-  Popover,
-  Box,
-  ClickAwayListener,
-} from '@material-ui/core';
+import { Button, Popover, Box, ClickAwayListener } from '@material-ui/core';
 import type { AddButtonProps, BlockType } from '@seine/core';
 import { blockTypes } from '@seine/core';
 
-export const BlockFab = styled(MuiFab)`
-  && {
-    opacity: 0.5;
-    :hover {
-      opacity: inherit;
-    }
-  }
-`;
+import Fab from './Fab';
 
 export type Props = AddButtonProps & {
   addButtonRenderMap: {
@@ -34,8 +20,10 @@ export type Props = AddButtonProps & {
  */
 export default function BlockAddFab({
   addButtonRenderMap,
+  id,
+  dispatch,
   type,
-  ...addButtonProps
+  ...fabProps
 }: Props) {
   const [open, setOpen] = React.useState(false);
   const handleClose = React.useCallback((event) => {
@@ -48,17 +36,18 @@ export default function BlockAddFab({
   return (
     <ClickAwayListener onClickAway={handleClose}>
       <Box position={'relative'}>
-        <BlockFab
-          ref={anchorEl}
+        <Fab
           size={'small'}
+          {...fabProps}
           onClick={(event) => {
             setOpen(true);
             event.stopPropagation();
             event.preventDefault();
           }}
+          ref={anchorEl}
         >
           <AddIcon />
-        </BlockFab>
+        </Fab>
         <Popover
           anchorEl={anchorEl.current}
           open={open}
@@ -71,8 +60,9 @@ export default function BlockAddFab({
                 const BlockAddButton = addButtonRenderMap[blockType];
                 return (
                   <BlockAddButton
-                    {...addButtonProps}
                     as={Button}
+                    dispatch={dispatch}
+                    id={id}
                     fullWidth
                     key={blockType}
                     type={type}
@@ -80,7 +70,7 @@ export default function BlockAddFab({
                   />
                 );
               }),
-            [addButtonProps, addButtonRenderMap, type]
+            [addButtonRenderMap, dispatch, id, type]
           )}
         </Popover>
       </Box>

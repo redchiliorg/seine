@@ -7,7 +7,9 @@ import {
   defaultChartPalette,
   defaultChartPaletteKey,
   defaultChartSize,
+  defaultChartTextAlignment,
   defaultChartTitle,
+  defaultChartVerticalAlignment,
   defaultPieChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
@@ -30,8 +32,10 @@ export default function PieChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
+  textAlignment = defaultChartTextAlignment,
   size = defaultChartSize,
   title = defaultChartTitle,
+  verticalAlignment = defaultChartVerticalAlignment,
   units = defaultPieChartUnits,
   as: View = React.Fragment,
   id,
@@ -69,10 +73,11 @@ export default function PieChart({
 
   return (
     <View {...viewProps}>
-      <ChartTitle>{title}</ChartTitle>
+      <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         overflow={'visible'}
         preserveAspectRatio={'xMinYMin meet'}
+        verticalAlignment={verticalAlignment}
         viewBox={viewBox}
       >
         {elements.map(({ title, value }, index) => {

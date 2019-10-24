@@ -36,6 +36,7 @@ const defaultFormat = {};
  */
 export default function ChartToolbar({ children, ...toolbarProps }: Props) {
   const { kind, ...format } = toolbarProps.format || defaultFormat;
+
   return (
     !!format &&
     (kind === chartTypes.BAR ? (

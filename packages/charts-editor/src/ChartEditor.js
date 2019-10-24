@@ -1,10 +1,11 @@
 // @flow
 import * as React from 'react';
-import { Box, Dialog, IconButton } from '@material-ui/core';
+import { Box, Dialog, IconButton as MuiIconButton } from '@material-ui/core';
 import {
   Close as CloseIcon,
-  Fullscreen as FullscreenIcon,
-  Remove as RemoveIcon,
+  Edit as EditIcon,
+  Delete as DeleteIcon,
+  FormatLineSpacing as FormatLineSpacingIcon,
 } from '@material-ui/icons';
 import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
 import {
@@ -17,13 +18,14 @@ import {
   SELECT_BLOCK,
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
+  UPDATE_BLOCK_FORMAT,
 } from '@seine/core';
 import {
   ActionButton,
   BlockActions,
   BlockActionsGroup,
   BlockActionsItem,
-  BlockFab,
+  Fab,
   Toolbar,
 } from '@seine/ui';
 import type { ChartProps } from '@seine/charts';
@@ -32,9 +34,12 @@ import {
   ChartContainer,
   ColumnChart,
   defaultChartRenderMap,
+  defaultChartTextAlignment,
+  defaultChartVerticalAlignment,
   LineChart,
   PieChart,
 } from '@seine/charts';
+import styled from 'styled-components';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';
@@ -42,6 +47,7 @@ import ColumnChartEditor from './ColumnChartEditor';
 import LineChartEditor from './LineChartEditor';
 import type { ChartEditorProps } from './types';
 import ChartToolbar from './ChartToolbar';
+import ChartTextAlignmentButton from './ChartTextAlignmentButton';
 
 type Props = (ChartProps & BlockEditor) & {
   chartEditorRenderMap?: {
@@ -62,6 +68,10 @@ const defaultEditor = {
   selection: initialElementsState.selection,
 };
 
+const IconButton = styled(MuiIconButton)`
+  opacity: ${({ selected = true }) => (selected ? 1.0 : 0.5)};
+`;
+
 /**
  * @description Chart editor component.
  * @param {Props} props
@@ -78,6 +88,8 @@ export default function ChartEditor({
   editor = defaultEditor,
   mode,
   selection,
+  verticalAlignment = defaultChartVerticalAlignment,
+  textAlignment = defaultChartTextAlignment,
   ...chartProps
 }: Props) {
   const dispatchElements = React.useCallback(
@@ -144,6 +156,30 @@ export default function ChartEditor({
           </ActionButton>
 
           <Toolbar.Separator />
+
+          <ChartTextAlignmentButton
+            as={IconButton}
+            dispatch={dispatch}
+            selected={textAlignment === 'left'}
+            value={'left'}
+            title={'Align title to left'}
+          />
+          <ChartTextAlignmentButton
+            as={IconButton}
+            dispatch={dispatch}
+            selected={textAlignment === 'center'}
+            value={'center'}
+            title={'Align title to center'}
+          />
+          <ChartTextAlignmentButton
+            as={IconButton}
+            selected={textAlignment === 'right'}
+            dispatch={dispatch}
+            value={'right'}
+            title={'Align title to right'}
+          />
+
+          <Toolbar.Separator />
         </ChartToolbar>
 
         <Box marginTop={8}>
@@ -152,11 +188,17 @@ export default function ChartEditor({
             dispatchElements={dispatchElements}
             editor={editor}
             selection={selection}
+            textAlignment={textAlignment}
             {...chartProps}
+            verticalAlignment={'start'}
           />
         </Box>
       </Dialog>
-
+      <ExactChart
+        textAlignment={textAlignment}
+        verticalAlignment={verticalAlignment}
+        {...chartProps}
+      />
       {mode !== 'fullscreen' && (
         <BlockActions
           addButtonRenderMap={addButtonRenderMap}
@@ -174,30 +216,53 @@ export default function ChartEditor({
           >
             <BlockActionsItem item>
               <ActionButton
-                as={BlockFab}
+                as={Fab}
                 dispatch={dispatch}
                 id={chartProps.id}
                 mode={'fullscreen'}
                 size={'small'}
+                title={'Edit content'}
                 type={SELECT_BLOCK}
+                color={'primary'}
               >
-                <FullscreenIcon />
+                <EditIcon />
               </ActionButton>
               &nbsp;
               <ActionButton
-                as={BlockFab}
+                as={Fab}
+                color={'default'}
+                dispatch={dispatch}
+                id={chartProps.id}
+                size={'small'}
+                format={{
+                  verticalAlignment:
+                    verticalAlignment === 'start'
+                      ? 'center'
+                      : verticalAlignment === 'center'
+                      ? 'end'
+                      : 'start',
+                }}
+                title={'Align vertically'}
+                type={UPDATE_BLOCK_FORMAT}
+              >
+                <FormatLineSpacingIcon />
+              </ActionButton>
+              &nbsp;
+              <ActionButton
+                as={Fab}
+                color={'secondary'}
                 dispatch={dispatch}
                 id={chartProps.id}
                 size={'small'}
                 type={DELETE_BLOCK}
+                title={'Delete block'}
               >
-                <RemoveIcon />
+                <DeleteIcon />
               </ActionButton>
             </BlockActionsItem>
           </BlockActionsGroup>
         </BlockActions>
       )}
-      <ExactChart {...chartProps} />
     </ChartContainer>
   );
 }

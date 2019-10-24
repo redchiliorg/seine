@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
-import type { BlockEditor, DraftBody, DraftFormat } from '@seine/core';
+import type { BlockEditor, RichTextBody, RichTextFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
 import { BlockActions } from '@seine/ui';
 import { convertFromRaw, convertToRaw, Editor, EditorState } from 'draft-js';
 
-type Props = (DraftBody & DraftFormat & BlockEditor) & {
+type Props = (RichTextBody & RichTextFormat & BlockEditor) & {
   id: string,
   dispatch: Function,
 };

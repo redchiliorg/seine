@@ -38,7 +38,7 @@ const defaultEditorChildren = [];
 export const defaultEditorBlockRendererMap = {
   ...defaultBlockRenderMap,
   [blockTypes.CHART]: ChartEditor,
-  [blockTypes.DRAFT]: DraftEditor,
+  [blockTypes.RichText]: DraftEditor,
   [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) => (
     <Grid {...props} />
   ),
@@ -62,7 +62,7 @@ export const defaultAddButtonRenderMap = {
       <LineChartAddButton {...props} />
     </>
   ),
-  [blockTypes.DRAFT]: DraftAddButton,
+  [blockTypes.RichText]: DraftAddButton,
   [blockTypes.GRID]: () => null,
   [blockTypes.IMAGE]: ImageAddButton,
   [blockTypes.PAGE]: () => null,
@@ -70,7 +70,7 @@ export const defaultAddButtonRenderMap = {
 
 export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
-  [blockTypes.DRAFT]: DraftToolbar,
+  [blockTypes.RichText]: DraftToolbar,
   [blockTypes.GRID]: PageToolbar,
   [blockTypes.IMAGE]: ImageToolbar,
   [blockTypes.PAGE]: PageToolbar,
@@ -83,10 +83,10 @@ const DefaultContainer = styled.div`
 const ContentPaper = styled(Paper)`
   && {
     ${({ theme }) => css`
-      max-height: ${10 * theme.spacing(6)}px;
+      max-height: ${20 * theme.spacing(6)}px;
       min-height: ${2 * theme.spacing(6)}px;
-      padding-bottom: ${theme.spacing(6)}px;
-      padding-top: ${theme.spacing(6)}px;
+      padding: ${theme.spacing(6)}px;
+      margin-bottom: ${theme.spacing(6)}px;
       overflow: hidden auto;
     `}
   }

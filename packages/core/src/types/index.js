@@ -3,8 +3,8 @@ import type { BlocksAction, BlocksCreateAction } from '../reducers';
 
 import type { ChartBody, ChartElement, ChartFormat } from './charts';
 import * as Charts from './charts';
-import type { DraftBody, DraftFormat } from './draft';
-import * as Draft from './draft';
+import type { RichTextBody, RichTextFormat } from './richtext';
+import * as Draft from './richtext';
 import type { GridBody, GridFormat } from './grid';
 import * as Grid from './grid';
 import type { ImageBody, ImageFormat } from './image';
@@ -13,7 +13,7 @@ import type { PageBody, PageFormat } from './page';
 import * as Page from './page';
 
 export * from './charts';
-export * from './draft';
+export * from './richtext';
 export * from './grid';
 export * from './image';
 export * from './page';
@@ -36,7 +36,7 @@ export type BlockType = $Values<typeof blockTypes>;
 export type BlockBody =
   | null
   | ChartBody
-  | DraftBody
+  | RichTextBody
   | GridBody
   | ImageBody
   | PageBody;
@@ -44,7 +44,7 @@ export type BlockBody =
 export type BlockFormat =
   | null
   | ChartFormat
-  | DraftFormat
+  | RichTextFormat
   | GridFormat
   | ImageFormat
   | PageFormat;

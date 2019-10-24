@@ -73,15 +73,19 @@ export const chartPaletteKeyValues = {
   mcKinseyDeep: chartPaletteMcKinseyDeep,
   mcKinseyLight: chartPaletteMcKinseyLight,
 };
-export const defaultChartPaletteKey = 'default';
 
+export const defaultChartPaletteKey = 'default';
 export const defaultChartBody = {
   elements: [],
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
+export const defaultChartTextAlignment = 'left';
+export const defaultChartVerticalAlignment = 'center';
 export const defaultChartFormat = {
   palette: defaultChartPalette,
   paletteKey: defaultChartPaletteKey,
+  textAlignment: defaultChartTextAlignment,
+  verticalAlignment: defaultChartVerticalAlignment,
   xAxis: defaultChartXAxis,
   yAxis: defaultChartYAxis,
 };

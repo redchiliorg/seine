@@ -6,6 +6,8 @@ export type Props = {
   height: number,
   index: number,
   lineHeight: number,
+  maxValue: number,
+  minValue: number,
   units: string,
   value: number,
   width: number,

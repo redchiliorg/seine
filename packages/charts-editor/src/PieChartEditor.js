@@ -42,6 +42,7 @@ export default function PieChartEditor({
           <ChartTitle {...parent.props} key={parent.key}>
             <ChartTitleInput
               dispatch={dispatch}
+              textAlignment={parent.props.textAlignment}
               value={parent.props.children}
             />
           </ChartTitle>
@@ -49,7 +50,7 @@ export default function PieChartEditor({
 
       case ChartSvg:
         return (
-          <svg {...parent.props} key={parent.key}>
+          <ChartSvg {...parent.props} key={parent.key}>
             <pattern
               id="selected-slice"
               viewBox={'0 0 3 2'}
@@ -67,6 +68,7 @@ export default function PieChartEditor({
                       <ChartTitleInput
                         key={child.key}
                         dispatch={dispatch}
+                        textAlignment={parent.props.textAlignment}
                         {...props}
                       >
                         {children}
@@ -193,7 +195,7 @@ export default function PieChartEditor({
                 }
               }
             })}
-          </svg>
+          </ChartSvg>
         );
 
       default:

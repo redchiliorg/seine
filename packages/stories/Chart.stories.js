@@ -7,7 +7,7 @@ import {
 import { Content } from '@seine/content';
 import { Editor } from '@seine/editor';
 
-export default { title: 'Charts' };
+export default { title: 'Single.Chart' };
 
 export const BarChart = ({
   as: Component = Content,
