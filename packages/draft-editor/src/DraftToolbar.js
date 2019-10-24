@@ -16,7 +16,7 @@ import {
 import clsx from 'clsx';
 import { Toolbar } from '@seine/ui';
 import { Button as MuiButton } from '@material-ui/core';
-import type { DraftBody, DraftFormat, ToolbarProps } from '@seine/core';
+import type { RichTextBody, RichTextFormat, ToolbarProps } from '@seine/core';
 import { UPDATE_BLOCK_EDITOR, UPDATE_BLOCK_FORMAT } from '@seine/core';
 import { defaultDraftFormat } from '@seine/draft';
 import styled from 'styled-components/macro';
@@ -28,8 +28,8 @@ import VerticalAlignBottomButton from './VerticalAlignBottomButton';
 import { defaultDraftEditor } from './DraftEditor';
 
 type Props = ToolbarProps & {
-  body: DraftBody,
-  format: DraftFormat,
+  body: RichTextBody,
+  format: RichTextFormat,
 };
 
 const Button = styled(MuiButton)``;

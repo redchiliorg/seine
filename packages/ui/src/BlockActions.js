@@ -45,6 +45,11 @@ const Container = styled(Box)`
 
 export const BlockActionsGroup = styled(Grid)`
   && {
+    opacity: 0.25;
+    &:hover {
+      opacity: 1;
+    }
+    transition: all 0.1s;
     ${({ extended, theme }) => css`
       height: calc(100% + ${extended ? 2 * theme.spacing(5) : 0}px);
       left: 0;
@@ -56,10 +61,10 @@ export const BlockActionsGroup = styled(Grid)`
 
 export const BlockActionsItem = styled(Grid)`
   && {
+    align-items: center;
+    display: flex;
+    transition: opacity 0.1s;
     ${({ direction }) => css`
-      align-items: center;
-      display: flex;
-      transition: opacity 0.1s;
       ${direction === 'column'
         ? css`
             width: 100%;
@@ -71,7 +76,7 @@ export const BlockActionsItem = styled(Grid)`
   }
 `;
 
-type Props = FabProps & {
+type Props = (FabProps & typeof ClientRect) & {
   children?: React.Node,
   extended?: boolean,
 };
@@ -131,6 +136,7 @@ export default function BlockActions({
             addButtonRenderMap={addButtonRenderMap}
             dispatch={dispatch}
             id={id}
+            title={'Add block before...'}
             type={CREATE_LEFT_BLOCK}
           />
         </BlockActionsItem>
@@ -139,6 +145,7 @@ export default function BlockActions({
             addButtonRenderMap={addButtonRenderMap}
             dispatch={dispatch}
             id={id}
+            title={'Add block after...'}
             type={CREATE_RIGHT_BLOCK}
           />
         </BlockActionsItem>
@@ -156,6 +163,7 @@ export default function BlockActions({
             addButtonRenderMap={addButtonRenderMap}
             dispatch={dispatch}
             id={id}
+            title={'Add row before...'}
             type={CREATE_TOP_BLOCK}
           />
         </BlockActionsItem>
@@ -164,6 +172,7 @@ export default function BlockActions({
             addButtonRenderMap={addButtonRenderMap}
             dispatch={dispatch}
             id={id}
+            title={'Add row after...'}
             type={CREATE_BOTTOM_BLOCK}
           />
         </BlockActionsItem>

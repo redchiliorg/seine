@@ -9,8 +9,10 @@ import {
   defaultChartPalette,
   defaultChartPaletteKey,
   defaultChartSize,
+  defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
+  defaultChartVerticalAlignment,
   defaultChartXAxis,
 } from './constants';
 import type { ChartProps } from './types';
@@ -36,8 +38,10 @@ export default function BarChart({
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   size = defaultChartSize,
+  textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
+  verticalAlignment = defaultChartVerticalAlignment,
   xAxis = defaultChartXAxis,
 
   as: View = React.Fragment,
@@ -67,11 +71,11 @@ export default function BarChart({
 
   return (
     <View {...viewProps}>
-      <ChartTitle>{title}</ChartTitle>
+      <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         fontSize={fontSize}
         fontWeight={fontWeight}
-        preserveAspectRatio={'xMidYMax meet'}
+        verticalAlignment={verticalAlignment}
         viewBox={[
           0,
           -2 * lineHeight * fontSize,

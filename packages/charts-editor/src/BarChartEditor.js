@@ -36,6 +36,7 @@ export default function BarChartEditor({
           <ChartTitle {...parent.props} key={parent.key}>
             <ChartTitleInput
               dispatch={dispatch}
+              textAlignment={parent.props.textAlignment}
               value={parent.props.children}
             />
           </ChartTitle>
@@ -43,7 +44,7 @@ export default function BarChartEditor({
 
       case ChartSvg:
         return (
-          <svg {...parent.props} key={parent.key}>
+          <ChartSvg {...parent.props} key={parent.key}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
@@ -153,7 +154,7 @@ export default function BarChartEditor({
                 }
               }
             })}
-          </svg>
+          </ChartSvg>
         );
 
       default:

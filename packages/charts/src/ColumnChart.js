@@ -8,8 +8,10 @@ import {
   defaultChartMinValue,
   defaultChartPalette,
   defaultChartPaletteKey,
+  defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
+  defaultChartVerticalAlignment,
   defaultChartYAxis,
 } from './constants';
 import type { ChartProps } from './types';
@@ -39,8 +41,10 @@ export default function ColumnChart({
   lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
+  textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
+  verticalAlignment = defaultChartVerticalAlignment,
   yAxis = defaultChartYAxis,
 
   as: View = React.Fragment,
@@ -61,21 +65,22 @@ export default function ColumnChart({
 
   return (
     <View {...viewProps}>
-      <ChartTitle>{title}</ChartTitle>
+      <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
+        verticalAlignment={verticalAlignment}
         viewBox={React.useMemo(
           () =>
             [
               0,
-              -3.5 * lineHeight * fontSize,
+              0,
               groups.length > 2
                 ? 79 * groups.length
                 : groups.length === 2
                 ? 99 * groups.length
                 : 128,
-              (titles.length ? 210 : 140) + 1.5 * 3.5 * lineHeight * fontSize,
+              titles.length ? 210 : 140,
             ].join(' '),
-          [fontSize, groups.length, lineHeight, titles.length]
+          [groups.length, titles.length]
         )}
       >
         {React.useMemo(

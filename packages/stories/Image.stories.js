@@ -3,7 +3,7 @@ import { Content } from '@seine/content';
 import { Editor } from '@seine/editor';
 import { actions } from '@storybook/addon-actions';
 
-export default { title: 'Image' };
+export default { title: 'Single.Image' };
 
 export const ImageContent = ({ as: Component = Content, ...props }) => (
   <Component

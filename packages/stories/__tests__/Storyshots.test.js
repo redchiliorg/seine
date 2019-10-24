@@ -5,5 +5,5 @@ jest.mock('@material-ui/core');
 core.Popover = jest.fn().mockReturnValue(null);
 
 initStoryshots({
-  storyKindRegex: /^(Charts|Editor|Image|RichText)$/,
+  storyKindRegex: /^(?!App).+/,
 });

@@ -1,11 +1,11 @@
 // @flow
 import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 
-export type DraftBody = RawDraftContentState;
+export type RichTextBody = RawDraftContentState;
 
-export type DraftFormat = {
+export type RichTextFormat = {
   textAlignment: 'left' | 'center' | 'right',
   verticalAlignment: 'start' | 'center' | 'end',
 };
 
-export const DRAFT = 'draft';
+export const RichText = 'draft';

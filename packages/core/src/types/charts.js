@@ -1,4 +1,6 @@
 // @flow
+import type { RichTextFormat } from './richtext';
+
 export const CHART = 'chart';
 export const chartTypes = {
   BAR: 'bar',
@@ -9,7 +11,7 @@ export const chartTypes = {
 
 export type ChartType = $Values<typeof chartTypes>;
 
-export type ChartFormat = {
+export type ChartFormat = RichTextFormat & {
   dx: number,
   dy: number,
   kind: ChartType,

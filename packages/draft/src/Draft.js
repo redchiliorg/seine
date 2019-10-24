@@ -9,12 +9,12 @@ import defaultBlockRenderMap from 'draft-js/lib/DefaultDraftBlockRenderMap';
 import defaultDraftInlineStyle from 'draft-js/lib/DefaultDraftInlineStyle';
 import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
 import type { DraftEditorProps } from 'draft-js/lib/DraftEditorProps';
-import type { DraftBody, DraftFormat } from '@seine/core';
+import type { RichTextBody, RichTextFormat } from '@seine/core';
 
 import { imageDecorator } from './decorators';
 import { toDraftEditor } from './helpers';
 
-export type Props = (DraftBody & DraftFormat) & {
+export type Props = (RichTextBody & RichTextFormat) & {
   decorators?: DraftDecorator[],
   className: string,
 };
@@ -22,9 +22,9 @@ export type Props = (DraftBody & DraftFormat) & {
 export default styled(Draft)`
   display: flex;
   height: 100%;
-  align-items: ${({ verticalAlignment = 'start' }: DraftFormat) =>
+  align-items: ${({ verticalAlignment = 'start' }: RichTextFormat) =>
     verticalAlignment};
-  justify-content: ${({ textAlignment = 'left' }: DraftFormat) =>
+  justify-content: ${({ textAlignment = 'left' }: RichTextFormat) =>
     textAlignment};
 `;
 
@@ -34,7 +34,7 @@ export const defaultDraftBody = {
   blocks: defaultDraftBlocks,
   entityMap: defaultDraftEntityMap,
 };
-export const defaultDraftFormat: DraftFormat = {
+export const defaultDraftFormat: RichTextFormat = {
   textAlignment: 'left',
   verticalAlignment: 'start',
 };

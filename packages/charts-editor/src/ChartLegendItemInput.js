@@ -32,7 +32,7 @@ export default function ChartLegendItemInput({
         })
       }
       value={title}
-      width={width - 2 * (size + fontSize * lineHeight)}
+      width={width + 2 * fontSize}
       x={x + size + fontSize * lineHeight}
       y={y}
     />

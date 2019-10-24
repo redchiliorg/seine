@@ -38,6 +38,7 @@ export default function ColumnChartEditor({
           <ChartTitle {...parent.props} key={parent.key}>
             <ChartTitleInput
               dispatch={dispatch}
+              textAlignment={parent.props.textAlignment}
               value={parent.props.children}
             />
           </ChartTitle>
@@ -45,7 +46,7 @@ export default function ColumnChartEditor({
 
       case ChartSvg:
         return (
-          <svg {...parent.props}>
+          <ChartSvg {...parent.props}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
@@ -55,6 +56,7 @@ export default function ColumnChartEditor({
                       <ChartTitleInput
                         key={child.key}
                         dispatch={dispatch}
+                        textAlignment={parent.props.textAlignment}
                         {...props}
                       >
                         {children}
@@ -184,7 +186,7 @@ export default function ColumnChartEditor({
                 }
               }
             })}
-          </svg>
+          </ChartSvg>
         );
 
       default:

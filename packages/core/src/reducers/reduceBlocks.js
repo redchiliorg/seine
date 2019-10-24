@@ -278,8 +278,9 @@ export function reduceBlocks(
     case UPDATE_BLOCK_BODY:
     case UPDATE_BLOCK_EDITOR:
     case UPDATE_BLOCK_FORMAT: {
-      const index = state.blocks.findIndex(({ id }) =>
-        state.selection.includes(id)
+      const index = state.blocks.findIndex(
+        ({ id }) =>
+          ('id' in action && action.id === id) || state.selection.includes(id)
       );
 
       if (index === -1) {

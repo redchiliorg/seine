@@ -17,7 +17,7 @@ export type Props = {
 
 export const defaultBlockRenderMap = {
   [blockTypes.CHART]: Chart,
-  [blockTypes.DRAFT]: Draft,
+  [blockTypes.RichText]: Draft,
   [blockTypes.GRID]: Grid,
   [blockTypes.IMAGE]: Image,
   [blockTypes.PAGE]: Page,

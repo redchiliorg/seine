@@ -23,7 +23,7 @@ export default function DraftAddButton({
 }: Props) {
   return (
     <ActionButton
-      block={createBlock(blockTypes.DRAFT, toRawContent('Rich text'), {
+      block={createBlock(blockTypes.RichText, toRawContent('Rich text'), {
         verticalAlignment: 'center',
       })}
       title={title}

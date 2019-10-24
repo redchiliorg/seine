@@ -56,11 +56,17 @@ export default function ActionButton({
                 : { block, type }
               : // update block
               body && UPDATE_BLOCK_BODY
-              ? { body, type }
+              ? id
+                ? { id, body, type }
+                : { body, type }
               : format && UPDATE_BLOCK_FORMAT
-              ? { format, type }
+              ? id
+                ? { id, format, type }
+                : { format, type }
               : editor && UPDATE_BLOCK_EDITOR
-              ? { editor, type }
+              ? id
+                ? { id, editor, type }
+                : { editor, type }
               : // select block
               id && SELECT_BLOCK
               ? modifier

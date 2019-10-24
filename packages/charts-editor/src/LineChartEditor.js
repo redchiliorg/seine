@@ -39,6 +39,7 @@ export default function LineChartEditor({
           <ChartTitle {...parent.props} key={parent.key}>
             <ChartTitleInput
               dispatch={dispatch}
+              textAlignment={parent.props.textAlignment}
               value={parent.props.children}
             />
           </ChartTitle>
@@ -46,7 +47,7 @@ export default function LineChartEditor({
 
       case ChartSvg:
         return (
-          <svg {...parent.props} key={parent.key}>
+          <ChartSvg {...parent.props} key={parent.key}>
             {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
@@ -103,6 +104,8 @@ export default function LineChartEditor({
                       height,
                       index,
                       lineHeight,
+                      maxValue,
+                      minValue,
                       value,
                       width,
                       x,
@@ -118,13 +121,20 @@ export default function LineChartEditor({
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
-                            body: { value: +currentTarget.value },
+                            body: {
+                              value: Math.max(
+                                minValue,
+                                Math.min(maxValue, +currentTarget.value)
+                              ),
+                            },
                             index,
                           })
                         }
                         transparent
                         value={value}
                         type={'number'}
+                        max={maxValue}
+                        min={minValue}
                         width={width}
                         x={x}
                         y={y - fontSize * lineHeight}
@@ -183,7 +193,7 @@ export default function LineChartEditor({
                 }
               }
             })}
-          </svg>
+          </ChartSvg>
         );
 
       default:
