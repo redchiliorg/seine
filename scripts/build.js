@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 const resolveWorkspaces = require('./resolve-workspaces');
-const publishWorkspace = require('./publish-workspace');
+const buildWorkspace = require('./build-workspace');
 
 /**
  * @description Publish (yarn) workspaces.
  * @param {string[]} workspaces
  * @returns {*}
  */
-function publish(workspaces) {
+function build(workspaces) {
   return resolveWorkspaces(workspaces)
     .filter((workspace) => 'entry' in workspace)
     .reduce(
@@ -19,19 +19,19 @@ function publish(workspaces) {
                 code
                   ? // eslint-disable-next-line no-console
                     console.warn(`${state.context} failed with code ${code}`)
-                  : publishWorkspace(context)
+                  : buildWorkspace(context)
               )
-            : publishWorkspace(context),
+            : buildWorkspace(context),
       }),
       null
     );
 }
 
-module.exports = publish;
+module.exports = build;
 
 if (require.main === module) {
   try {
-    publish();
+    build();
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error(error);

@@ -16,9 +16,9 @@
     "start": "serve",
     "build": "build-storybook -o dist",
     "release": "run-s release:*",
-    "release:build": "run-p release:build:*",
-    "release:build:cjs": "yarn workspaces run rollup --environment NODE_ENV:production -f cjs -c ../../rollup.config.js",
-    "release:build:esm": "yarn workspaces run rollup --environment NODE_ENV:production,VISUALIZER_TEMPLATE:treemap -f esm -c ../../rollup.config.js",
+    "release:build": "run-s release:build:*",
+    "release:build:cjs": "node scripts/build.js --format=cjs",
+    "release:build:esm": "node scripts/build.js -format=esm",
     "release:publish": "node scripts/publish.js",
     "test": "run-s test:*",
     "test:build": "run-s release:build",
@@ -48,10 +48,8 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-import": "^1.12.2",
     "babel-plugin-macros": "^2.6.1",
     "babel-plugin-named-asset-import": "^0.3.2",
-    "babel-plugin-transform-imports": "^2.0.0",
     "babel-preset-react-app": "^9.0.1",
     "draft-js": "^0.11.0",
     "eslint": "^6.3.0",
@@ -96,7 +94,8 @@
     "packages/content",
     "packages/draft-editor",
     "packages/charts-editor",
-    "packages/editor"
+    "packages/editor",
+    "packages/helpers/*"
   ],
   "babelMacros": {
     "styledComponents": {

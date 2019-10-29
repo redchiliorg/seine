@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 const { spawn } = require('child_process');
 
-const allOptions = require('./publish-options');
+const allOptions = require('./build-options');
 
 const lastDefaultOption = allOptions[allOptions.length - 1];
 const defaultWorkspace =
@@ -11,23 +11,23 @@ const defaultWorkspace =
 const defaultOptions = defaultWorkspace ? allOptions.slice(0, -1) : allOptions;
 
 /**
- * @description Publish (yarn) workspace.
+ * @description Build (yarn) workspace.
  * @param {?string} workspace
  * @param {?Array<string>} options
  * @returns {*}
  */
-function publishWorkspace(
+function buildWorkspace(
   workspace = defaultWorkspace,
   options = defaultOptions
 ) {
-  return spawn('yarn', options, {
+  return spawn('rollup', options, {
     cwd: workspace && resolve(workspace),
     stdio: 'inherit',
   });
 }
 
-module.exports = publishWorkspace;
+module.exports = buildWorkspace;
 
 if (require.main === module) {
-  publishWorkspace();
+  buildWorkspace();
 }
