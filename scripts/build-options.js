@@ -1,8 +1,6 @@
 module.exports = [
-  'publish',
-  '--non-interactive',
-  '--patch',
-  '--access=public',
+  '--environment=NODE_ENV:production',
+  '--config=../../rollup.config.js',
   ...process.argv.slice(2),
 ];
 

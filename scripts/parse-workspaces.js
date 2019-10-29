@@ -13,7 +13,7 @@ const globOptions = {
 /**
  * @description Parse and normalize package (yarn) workspaces.
  * @param {string[]} workspaces
- * @returns {{packages: string[], nohoist: string | string[]}[]}
+ * @returns {{packages: string[], nohoist: string | string[]}}
  */
 function parseWorkspaces(workspaces = defaultWorkspaces) {
   const { nohoist = [], packages = [] } = Array.isArray(workspaces)

@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 
 import minimist from 'minimist';
 import { commandAliases } from 'rollup/dist/shared';
@@ -14,7 +15,14 @@ import camelCase from 'lodash/camelCase';
 import { workspaces } from './package.json';
 
 const { NODE_ENV = 'production' } = process.env;
-const { format, external, name } = minimist(process.argv.slice(2), {
+const {
+  external,
+  format,
+  name,
+  input = path.join('src', `${name}.js`),
+  defaultOutputFile = path.join('lib', format, `${name}.js`),
+  file = defaultOutputFile,
+} = minimist(process.argv.slice(2), {
   alias: commandAliases,
   default: {
     external: '',
@@ -42,9 +50,9 @@ const externalModuleIds = [
 ].filter((id) => id.trim());
 
 const config = {
-  input: path.join('src', `${name}.js`),
+  input,
   output: {
-    file: path.join('lib', format, `${name}.js`),
+    file,
     format,
     ...(format === 'umd' && {
       name: camelCase(packageName),
@@ -64,7 +72,7 @@ const config = {
         ),
       },
     }),
-    sourcemap: true,
+    sourcemap: !!file,
   },
   plugins: [
     ...(format === 'esm'
@@ -91,5 +99,25 @@ const config = {
       (moduleId) => id === moduleId || id.startsWith(`${moduleId}/`)
     ),
 };
+
+try {
+  const defaultOutputDir = path.dirname(defaultOutputFile);
+  const subDirs = [defaultOutputDir];
+
+  for (const dirEntry of fs.readdirSync(defaultOutputDir, {
+    withFileTypes: true,
+  })) {
+    const entryPath = path.resolve(defaultOutputDir, dirEntry.name);
+    if (dirEntry.isFile()) {
+      fs.unlinkSync(entryPath);
+    } else if (dirEntry.isDirectory()) {
+      subDirs.push(entryPath);
+    }
+  }
+
+  for (const entryPath of subDirs.sort().reverse()) {
+    fs.rmdirSync(entryPath);
+  }
+} catch (err) {}
 
 export default config;
