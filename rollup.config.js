@@ -82,15 +82,11 @@ const config = {
     ...(format === 'esm' || format === 'cjs' ? [flowEntry()] : []),
 
     babel({
-      exclude: 'node_modules/**',
       runtimeHelpers: true,
       rootMode: 'upward',
     }),
+    nodeResolve({ browser: true }),
     commonjs(),
-    nodeResolve({
-      browser: true,
-      preferBuiltins: true,
-    }),
     postcss({ modules: true }),
     cleanup(),
   ],

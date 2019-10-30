@@ -76,6 +76,7 @@ export default function PieChart({
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         overflow={'visible'}
+        maxWidth={800}
         preserveAspectRatio={'xMinYMin meet'}
         verticalAlignment={verticalAlignment}
         viewBox={viewBox}

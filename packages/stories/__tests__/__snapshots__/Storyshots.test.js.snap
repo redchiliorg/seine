@@ -7,7 +7,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
   type="grid"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -15,7 +15,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       Sales ($ millions)
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={4}
       preserveAspectRatio="xMidYMid meet"
       strokeWidth={0.5}
@@ -378,7 +378,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -386,7 +386,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -595,7 +595,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -603,7 +603,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa dCDSUv"
       overflow="visible"
       preserveAspectRatio="xMidYMid meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -726,7 +726,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -734,7 +734,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 128 210"
     >
@@ -965,7 +965,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
   type="grid"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -973,7 +973,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 128 210"
     >
@@ -1195,7 +1195,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -1203,7 +1203,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -1487,7 +1487,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
   type="grid"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -1495,7 +1495,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 128 210"
     >
@@ -1717,7 +1717,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -1725,7 +1725,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       Sales ($ millions)
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={4}
       preserveAspectRatio="xMidYMid meet"
       strokeWidth={0.5}
@@ -2097,7 +2097,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
   type="grid"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -2105,7 +2105,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       Sales ($ millions)
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={4}
       preserveAspectRatio="xMidYMid meet"
       strokeWidth={0.5}
@@ -2468,7 +2468,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -2476,7 +2476,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -2694,7 +2694,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
   type="grid"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -2702,7 +2702,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa dCDSUv"
       overflow="visible"
       preserveAspectRatio="xMidYMid meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -2825,7 +2825,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     </svg>
   </div>
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -2833,7 +2833,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -3043,7 +3043,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -3051,7 +3051,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -3333,7 +3333,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -3341,7 +3341,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 128 210"
     >
@@ -3618,7 +3618,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -3626,7 +3626,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
       Sales ($ millions)
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       fontSize={4}
       preserveAspectRatio="xMidYMid meet"
       strokeWidth={0.5}
@@ -3996,7 +3996,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -4004,7 +4004,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
       Chart title
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa dCDSUv"
       overflow="visible"
       preserveAspectRatio="xMidYMid meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -4134,7 +4134,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -4142,7 +4142,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 474 210"
     >
@@ -5241,7 +5241,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -5249,7 +5249,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       Column chart: 4 groups of 3 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 474 210"
     >
@@ -5898,7 +5898,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -5906,7 +5906,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -6445,7 +6445,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -6453,7 +6453,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -7064,7 +7064,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -7072,7 +7072,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       Column chart: 3 groups of 5 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -7599,7 +7599,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer-sc-1lnti1a-0 IVQIJ"
+    className="ChartContainer-sc-1lnti1a-0 dkILOc"
   >
     <h1
       className="ChartTitle-sc-8rh5zq-0 dwDzsV"
@@ -7607,7 +7607,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       Column chart: 3 groups, 3 elements
     </h1>
     <svg
-      className="sc-bdVaJa fHgTKa"
+      className="sc-bdVaJa drloRZ"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >

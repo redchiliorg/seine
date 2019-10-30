@@ -6,6 +6,7 @@ export default styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: space-around;
   position: relative;
   width: 100%;
 `;
