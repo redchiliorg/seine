@@ -8,4 +8,4 @@ export type RichTextFormat = {
   verticalAlignment: 'start' | 'center' | 'end',
 };
 
-export const RichText = 'draft';
+export const RICH_TEXT = 'draft';

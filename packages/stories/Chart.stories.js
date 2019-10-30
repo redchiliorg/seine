@@ -17,7 +17,7 @@ export const BarChart = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -42,7 +42,7 @@ export const BarChart = ({
           ]),
         },
         format: { kind: 'bar' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -60,7 +60,7 @@ export const ColumnChart = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -79,7 +79,7 @@ export const ColumnChart = ({
           ]),
         },
         format: { kind: 'column' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -97,7 +97,7 @@ export const TwoGroupsOfTwoColumns = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -119,7 +119,7 @@ export const TwoGroupsOfTwoColumns = ({
           title: 'Column chart: 3 groups, 3 elements',
         },
         format: { kind: 'column' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -137,7 +137,7 @@ export const SixGroupsOfSixColumns = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -195,7 +195,7 @@ export const SixGroupsOfSixColumns = ({
           title: 'Column chart: 3 groups of 5 elements',
         },
         format: { kind: 'column' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -213,7 +213,7 @@ export const SixGroupsOfTwoColumns = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -253,7 +253,7 @@ export const SixGroupsOfTwoColumns = ({
           title: 'Column chart: 4 groups of 3 elements',
         },
         format: { kind: 'column' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -272,7 +272,7 @@ export const TwoGroupsOfSixColumns = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -302,7 +302,7 @@ export const TwoGroupsOfSixColumns = ({
           title: 'Column chart: 3 groups of 5 elements',
         },
         format: { ...format, kind: 'column' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -326,7 +326,7 @@ export const LineChart = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -364,7 +364,7 @@ export const LineChart = ({
           kind: 'line',
           maxValue: 400,
         },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}
@@ -383,7 +383,7 @@ export const PieChart = ({
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -404,7 +404,7 @@ export const PieChart = ({
           ]),
         },
         format: { kind: 'pie' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       ...children,
     ]}

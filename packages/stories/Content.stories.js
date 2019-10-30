@@ -15,7 +15,7 @@ export const InitialContent = ({
 }) => (
   <Container
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -36,7 +36,7 @@ export const ContentOfPieAndBarSiblingCharts = (props) => (
         type: 'grid',
         body: null,
         format: null,
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       {
         id: '63d30846-a1dc-4c50-a32a-21ca99c38bce',
@@ -79,7 +79,7 @@ export const ContentOfColumnAndBarSiblingCharts = (props) => (
         type: 'grid',
         body: null,
         format: null,
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       {
         id: '78f5d055-8a9f-48cc-bead-f6c9e8451ced',
@@ -125,7 +125,7 @@ export const ContentOfLineAndBarSiblingCharts = (props) => (
         type: 'grid',
         body: null,
         format: null,
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927--line',
@@ -187,7 +187,7 @@ export const ContentOfColumnAndLineCharts = (props) => (
         type: 'grid',
         body: null,
         format: null,
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       {
         id: '78f5d055-8a9f-48cc-bead-f6c9e8451ced',
@@ -246,7 +246,7 @@ export const ContentOfAllCharts = (props) => (
         type: 'grid',
         body: null,
         format: null,
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927--line',
