@@ -55,12 +55,15 @@ import SketchPicker from 'react-color/lib/SketchPicker';
 export default () => <SketchPicker />;
 ```
 
-but causes increasing of import specifier declarations.
+increasing amount of import specifier declarations needed for each
+imported identifier.
 
 ### Babel transform plugins
 
-In case babel-plugin-macros is not an option,
+In case 
+[babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros)
+is not an option,
 you can use babel plugins that helps to transform import specifiers in
-common:
+common way:
 [babel-plugin-transform-imports](https://bitbucket.org/amctheatres/babel-transform-imports),
 [babel-plugin-imports](https://bitbucket.org/amctheatres/babel-transform-imports)
