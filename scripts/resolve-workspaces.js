@@ -18,11 +18,15 @@ function resolveWorkspaces(workspaces) {
       return { context, packageJson };
     }
 
-    return {
-      context,
-      entry: require.resolve(join(context, 'src', 'index.js')),
-      packageJson,
-    };
+    try {
+      return {
+        context,
+        entry: require.resolve(join(context, 'src', 'index.js')),
+        packageJson,
+      };
+    } catch (err) {
+      return { context, packageJson };
+    }
   });
 }
 

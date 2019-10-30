@@ -9,7 +9,7 @@ const publishWorkspace = require('./publish-workspace');
  */
 function publish(workspaces) {
   return resolveWorkspaces(workspaces)
-    .filter((workspace) => 'entry' in workspace)
+    .filter((workspace) => !workspace.packageJson.private)
     .reduce(
       (state, { context }) => ({
         context,

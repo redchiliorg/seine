@@ -1,7 +1,12 @@
 {
   "name": "react-color.macro",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A macro for babel-plugin-macros that optimizes size of a bundle with react-color named imports.",
+  "keywords": [
+    "babel-plugin-macros",
+    "react-color"
+  ],
+  "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
