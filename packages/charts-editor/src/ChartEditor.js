@@ -182,7 +182,7 @@ export default function ChartEditor({
           <Toolbar.Separator />
         </ChartToolbar>
 
-        <Box marginTop={8}>
+        <ChartContainer as={Box} marginTop={8}>
           <ExactChartEditor
             dispatch={dispatch}
             dispatchElements={dispatchElements}
@@ -192,7 +192,7 @@ export default function ChartEditor({
             {...chartProps}
             verticalAlignment={'start'}
           />
-        </Box>
+        </ChartContainer>
       </Dialog>
       <ExactChart
         textAlignment={textAlignment}
