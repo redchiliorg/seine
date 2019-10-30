@@ -50,7 +50,7 @@ The same effect can be achieved by importing default component from
 a module in `lib/*`:
 
 ```js
-import SketchPicker from 'react-color/lib/SketchPicker';
+import SketchPicker from 'react-color/lib/Sketch';
 
 export default () => <SketchPicker />;
 ```
