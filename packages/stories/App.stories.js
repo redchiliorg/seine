@@ -11,10 +11,10 @@ import {
   ListItemSecondaryAction,
   Toolbar,
   Typography,
+  makeStyles,
 } from '@material-ui/core';
 import { actions } from '@storybook/addon-actions';
 import { Editor } from '@seine/editor';
-import { makeStyles } from '@material-ui/core/styles';
 import {
   BusinessCenter as BusinessCenterIcon,
   Add as AddIcon,

@@ -3,8 +3,8 @@ import type { BlocksAction, BlocksCreateAction } from '../reducers';
 
 import type { ChartBody, ChartElement, ChartFormat } from './charts';
 import * as Charts from './charts';
-import type { RichTextBody, RichTextFormat } from './richtext';
-import * as Draft from './richtext';
+import type { RichTextBody, RichTextFormat } from './richText';
+import * as RichText from './richText';
 import type { GridBody, GridFormat } from './grid';
 import * as Grid from './grid';
 import type { ImageBody, ImageFormat } from './image';
@@ -13,7 +13,7 @@ import type { PageBody, PageFormat } from './page';
 import * as Page from './page';
 
 export * from './charts';
-export * from './richtext';
+export * from './richText';
 export * from './grid';
 export * from './image';
 export * from './page';
@@ -23,7 +23,7 @@ const { chartTypes, ...Chart }: { ...*, CHART: * } = Charts;
 
 export const blockTypes = {
   ...Chart,
-  ...Draft,
+  ...RichText,
   ...Grid,
   ...Image,
   ...Page,

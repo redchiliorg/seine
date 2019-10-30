@@ -1,23 +1,27 @@
 // @flow
 import * as React from 'react';
-import { blockTypes } from '@seine/core';
 import type { Block } from '@seine/core';
+import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
+import { ThemeProvider } from 'styled-components/macro';
+import type { Theme } from '@material-ui/core';
 
 import Grid from './Grid';
 import Image from './Image';
 import Page from './Page';
+import defaultTheme from './defaultTheme';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
-  parent: Block,
   children: $ReadOnlyArray<Block>,
+  parent: Block,
+  theme?: $Shape<Theme>,
 };
 
 export const defaultBlockRenderMap = {
   [blockTypes.CHART]: Chart,
-  [blockTypes.RichText]: Draft,
+  [blockTypes.RICH_TEXT]: Draft,
   [blockTypes.GRID]: Grid,
   [blockTypes.IMAGE]: Image,
   [blockTypes.PAGE]: Page,
@@ -30,12 +34,25 @@ export const defaultBlockRenderMap = {
  */
 function Content({
   blockRenderMap = defaultBlockRenderMap,
-  parent,
   children,
-  as: Container = parent.parent_id
-    ? React.Fragment
-    : blockRenderMap[parent.type],
+  parent,
+  theme = defaultTheme,
+  as: DefaultContainer = blockRenderMap[parent.type],
 }: Props): React.Node {
+  const Container = React.useCallback(
+    ({ children }) =>
+      parent.parent_id ? (
+        children
+      ) : parent.id ? (
+        <DefaultContainer>{children}</DefaultContainer>
+      ) : (
+        <ThemeProvider theme={theme}>
+          <DefaultContainer>{children}</DefaultContainer>
+        </ThemeProvider>
+      ),
+    [parent.id, parent.parent_id, theme]
+  );
+
   return (
     <Container>
       {children

@@ -9,3 +9,6 @@ export { default as Image, ImageContainer } from './Image';
 export type { Props as ImageProps } from './Image';
 
 export { default as Page } from './Page';
+
+export { default as createContentTheme } from './createContentTheme';
+export { default as defaultTheme } from './defaultTheme';
