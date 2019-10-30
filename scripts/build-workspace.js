@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+const { resolve, relative } = require('path');
 const { spawn } = require('child_process');
 
 const allOptions = require('./build-options');
@@ -20,8 +20,11 @@ function buildWorkspace(
   workspace = defaultWorkspace,
   options = defaultOptions
 ) {
-  return spawn('rollup', options, {
-    cwd: workspace && resolve(workspace),
+  const cwd = workspace && resolve(workspace);
+  const config = relative(cwd, require.resolve('../rollup.config.js'));
+
+  return spawn('rollup', [...options, `--config=${config}`], {
+    cwd,
     stdio: 'inherit',
   });
 }
