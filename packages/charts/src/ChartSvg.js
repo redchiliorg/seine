@@ -7,7 +7,6 @@ export default styled.svg.attrs(({ verticalAlignment: align }) => ({
   } meet`,
 }))`
   ${({ maxWidth }) =>
-    maxWidth &&
     css`
       max-width: ${maxWidth}px;
     `};

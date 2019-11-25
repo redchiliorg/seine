@@ -31,6 +31,7 @@
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
+    "@material-ui/utils": "^4.5.2",
     "draft-js": "^0.11.0",
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
@@ -87,14 +88,7 @@
     "rollup-plugin-visualizer": "^2.5.4"
   },
   "workspaces": [
-    "packages/core",
-    "packages/ui",
-    "packages/draft",
-    "packages/charts",
-    "packages/content",
-    "packages/draft-editor",
-    "packages/charts-editor",
-    "packages/editor",
+    "packages/*",
     "packages/helpers/*"
   ],
   "babelMacros": {

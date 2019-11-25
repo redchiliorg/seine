@@ -1,5 +1,5 @@
 // @flow
-import type { RichTextFormat } from './richtext';
+import type { RichTextFormat } from './richText';
 
 export const CHART = 'chart';
 export const chartTypes = {

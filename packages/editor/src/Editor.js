@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components/macro';
+import styled, { css, ThemeProvider } from 'styled-components/macro';
 import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
@@ -21,7 +21,7 @@ import {
 } from '@seine/core';
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
-import { BlockDeleteButton, StylesProvider, useReducerEx } from '@seine/ui';
+import { BlockDeleteButton, useReducerEx } from '@seine/ui';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -32,13 +32,14 @@ import { ImageEditor } from './ImageEditor';
 import ImageToolbar from './ImageToolbar';
 import PageToolbar from './PageToolbar';
 import ImageAddButton from './ImageAddButton';
+import defaultTheme from './defaultTheme';
 
 const defaultEditorChildren = [];
 
 export const defaultEditorBlockRendererMap = {
   ...defaultBlockRenderMap,
   [blockTypes.CHART]: ChartEditor,
-  [blockTypes.RichText]: DraftEditor,
+  [blockTypes.RICH_TEXT]: DraftEditor,
   [blockTypes.GRID]: ({ dispatch, editor, selection, ...props }) => (
     <Grid {...props} />
   ),
@@ -62,7 +63,7 @@ export const defaultAddButtonRenderMap = {
       <LineChartAddButton {...props} />
     </>
   ),
-  [blockTypes.RichText]: DraftAddButton,
+  [blockTypes.RICH_TEXT]: DraftAddButton,
   [blockTypes.GRID]: () => null,
   [blockTypes.IMAGE]: ImageAddButton,
   [blockTypes.PAGE]: () => null,
@@ -70,7 +71,7 @@ export const defaultAddButtonRenderMap = {
 
 export const defaultToolbarRenderMap = {
   [blockTypes.CHART]: ChartToolbar,
-  [blockTypes.RichText]: DraftToolbar,
+  [blockTypes.RICH_TEXT]: DraftToolbar,
   [blockTypes.GRID]: PageToolbar,
   [blockTypes.IMAGE]: ImageToolbar,
   [blockTypes.PAGE]: PageToolbar,
@@ -118,6 +119,7 @@ export default function Editor({
   onChange,
   parent,
   toolbarRenderMap = defaultToolbarRenderMap,
+  theme = defaultTheme,
   ...contentProps
 }: Props) {
   const init = React.useCallback(
@@ -165,7 +167,7 @@ export default function Editor({
   );
 
   return (
-    <StylesProvider>
+    <ThemeProvider theme={theme}>
       <Container>
         <BlockToolbar
           {...block}
@@ -181,27 +183,27 @@ export default function Editor({
             model={mode}
           />
         </BlockToolbar>
-        {contentChildren.length > 0 && (
-          <ClickAwayListener
-            onClickAway={() =>
-              mode !== 'fullscreen' &&
+        <ClickAwayListener
+          onClickAway={() =>
+            contentChildren.length > 0 &&
+            (mode !== 'fullscreen' &&
               dispatch({
                 type: DESELECT_ALL_BLOCKS,
-              })
-            }
-          >
-            <ContentPaper>
-              <Content
-                {...contentProps}
-                parent={parent}
-                blockRenderMap={blockRenderMap}
-              >
-                {contentChildren}
-              </Content>
-            </ContentPaper>
-          </ClickAwayListener>
-        )}
+              }))
+          }
+        >
+          <ContentPaper>
+            <Content
+              {...contentProps}
+              parent={parent}
+              blockRenderMap={blockRenderMap}
+              theme={theme}
+            >
+              {contentChildren}
+            </Content>
+          </ContentPaper>
+        </ClickAwayListener>
       </Container>
-    </StylesProvider>
+    </ThemeProvider>
   );
 }

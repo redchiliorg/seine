@@ -2,9 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*/macro": ["./node_modules/*"],
-      "@seine/*": ["./packages/*/src"],
-      "*": ["./packages/helpers/*"]
+      "*/macro": ["node_modules/*"],
+      "@seine/*": ["packages/*/src"],
+      "*": ["packages/helpers/*"]
     }
   },
   "exclude": ["node_modules", "lib"]
