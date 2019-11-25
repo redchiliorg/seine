@@ -1,11 +1,11 @@
 // @flow
 import * as React from 'react';
-import { blockTypes } from '@seine/core';
 import type { Block } from '@seine/core';
+import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 import { ThemeProvider } from 'styled-components/macro';
-import { Theme } from '@material-ui/core';
+import type { Theme } from '@material-ui/core';
 
 import Grid from './Grid';
 import Image from './Image';
