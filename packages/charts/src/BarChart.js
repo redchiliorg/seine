@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 import {
   defaultChartDx,
@@ -108,7 +109,7 @@ export default function BarChart({
               index={index}
               key={'value'}
               lineHeight={fontHeight}
-              x={titleMaxLen + len + 1.5 * fontSize}
+              x={titleMaxLen + len + 4}
               y={y}
               units={units}
               width={valueMaxLen}
@@ -140,16 +141,16 @@ export default function BarChart({
                   stroke={'black'}
                   strokeWidth={'0.1em'}
                 />,
-                <text
-                  fontWeight={'bold'}
+                <SvgTypography
                   key={['title', index]}
                   textAnchor={'middle'}
                   x={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                  y={(elements.length * barHeight) / 2 + fontSize * lineHeight}
+                  y={(elements.length * barHeight) / 2 + 0.5}
+                  variant={'h5'}
                 >
                   {(index + 1) * dx}
                   {units}
-                </text>,
+                </SvgTypography>,
               ]
             )
           : null}

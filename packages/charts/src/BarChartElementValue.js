@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 export type Props = {
   children: string,
@@ -27,9 +28,9 @@ export default function BarChartElementValue({
   y,
 }: Props) {
   return (
-    <text x={x} y={y + lineHeight} fill={fill}>
+    <SvgTypography x={x} y={y + lineHeight / 2} fill={fill} variant={'h6'}>
       {children}
       {units}
-    </text>
+    </SvgTypography>
   );
 }

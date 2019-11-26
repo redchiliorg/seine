@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 export type Props = {
   fontSize: number,
@@ -25,7 +26,7 @@ export default function LineChartGroup({
   y,
 }: Props) {
   return (
-    <text
+    <SvgTypography
       fontSize={fontSize}
       fontWeight={fontWeight}
       textAnchor={'middle'}
@@ -33,6 +34,6 @@ export default function LineChartGroup({
       y={y}
     >
       {group}
-    </text>
+    </SvgTypography>
   );
 }

@@ -12,6 +12,3 @@ export { default as Page } from './Page';
 
 export { default as createContentTheme } from './createContentTheme';
 export { default as defaultTheme } from './defaultTheme';
-
-export { default as SvgText } from './SvgText';
-export { default as Text } from './Text';

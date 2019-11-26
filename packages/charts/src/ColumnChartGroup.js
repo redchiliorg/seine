@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 import type { BlockElement } from '@seine/core';
 
 export type Props = {
@@ -34,7 +35,6 @@ export default function ColumnChartGroup({
   palette,
   size,
   units,
-  width,
   x,
   y,
 }: Props) {
@@ -55,7 +55,7 @@ export default function ColumnChartGroup({
           x={x + size * index}
           y={dy + y - rectHeight}
         />,
-        <text
+        <SvgTypography
           fill={fill}
           fontSize={fontSize}
           key={['value', index]}
@@ -63,18 +63,16 @@ export default function ColumnChartGroup({
           x={x + size * index}
           y={Math.min(dy + y - rectHeight, y) - (fontSize * lineHeight) / 2}
         >
-          <tspan dx={width / 2}>
-            {value < minValue
-              ? `< ${minValue}`
-              : value > maxValue
-              ? `> ${maxValue}`
-              : value}
-            {units}
-          </tspan>
-        </text>,
+          {value < minValue
+            ? `< ${minValue}`
+            : value > maxValue
+            ? `> ${maxValue}`
+            : value}
+          {units}
+        </SvgTypography>,
       ];
     }, []),
-    <text
+    <SvgTypography
       key={'text'}
       fontSize={1.5 * fontSize}
       textAnchor={'middle'}
@@ -82,6 +80,6 @@ export default function ColumnChartGroup({
       y={y + 1.5 * fontSize * lineHeight}
     >
       {group}
-    </text>,
+    </SvgTypography>,
   ];
 }

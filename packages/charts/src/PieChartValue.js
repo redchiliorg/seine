@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 export type Props = {
   fill: string,
@@ -26,16 +27,17 @@ export default function PieChartValue({
   y,
 }: Props) {
   return (
-    <text
+    <SvgTypography
       fill={fill}
       fontSize={fontSize}
       key={'value'}
       textAnchor={'middle'}
+      variant={'h4'}
       x={x}
       y={y}
     >
       {value}
       {units}
-    </text>
+    </SvgTypography>
   );
 }
