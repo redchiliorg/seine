@@ -4,20 +4,29 @@ import styled, { css } from 'styled-components/macro';
 
 import Text from './Text';
 
-const Offscreen = styled.canvas`
-  position: absolute;
-  ${({
+const Offscreen = styled.canvas.attrs(
+  ({
     variant = 'body1',
     theme: {
       typography: {
         [variant]: { fontSize, lineHeight },
       },
     },
-  }) => css`
+  }) => ({
+    fontSize,
+    lineHeight,
+  })
+)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  ${({ fontSize, lineHeight }) => css`
     font-size: ${fontSize};
     line-height: ${lineHeight};
   `}
 `;
+
+const initialSvgTextSize = { width: 0, height: 0 };
 
 type Props = {
   children: string,
@@ -28,34 +37,80 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function SvgText({ children, variant = 'body1', x, y }: Props) {
-  const [width, setWidth] = React.useState(0);
-  const offscreenRef = React.useCallback(
-    (offscreen: HTMLCanvasElement) => {
-      const context = offscreen && offscreen.getContext('2d');
-      if (context) {
-        const { fontWeight, fontSize, fontFamily } = getComputedStyle(
-          offscreen
-        );
-        context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        setWidth(context.measureText(children).width);
-      }
-    },
-    [children]
-  );
+export default function SvgText({
+  as: Content = 'p',
+  children,
+  variant = 'body1',
+  x,
+  y,
+}: Props) {
+  // use svg and html boxes of foreign object to determine text transform
+  const foreignRef = React.useRef(null);
+  const [transform, setTransform] = React.useState(null);
+  const updateTransform = React.useCallback(() => {
+    const { current: foreign } = foreignRef;
+    if (foreign) {
+      const svgBox = foreign.getBBox();
+      const htmlBox = foreign.getBoundingClientRect();
+      setTransform(
+        `scale(${[
+          svgBox.width / htmlBox.width,
+          svgBox.height / htmlBox.height,
+        ]})`
+      );
+    } else {
+      setTransform(null);
+    }
+  }, []);
+
+  // use text transform update handler on global resize event
+  React.useEffect(() => {
+    window.addEventListener('resize', updateTransform);
+    return () => {
+      window.removeEventListener('resize', updateTransform);
+    };
+  }, [updateTransform]);
+
+  // use measured text size
+  const [size, setSize] = React.useState(initialSvgTextSize);
+  const offscreenRef = React.useRef(null);
+  const updateSize = React.useCallback(() => {
+    const { current: offscreen } = offscreenRef;
+    if (offscreen) {
+      const { fontWeight, fontSize, fontFamily, lineHeight } = getComputedStyle(
+        offscreen
+      );
+      const context = offscreen.getContext('2d');
+      context.font = `${fontWeight} ${fontSize} ${fontFamily}`;
+      setSize({
+        width: context.measureText(children).width,
+        height: parseFloat(lineHeight),
+      });
+    }
+  }, [children]);
+
+  // use text size update handler on global (font) load event
+  React.useEffect(() => {
+    updateSize();
+    window.addEventListener('load', updateSize);
+    return () => {
+      window.removeEventListener('load', updateSize);
+    };
+  }, [updateSize]);
 
   return (
-    <foreignObject x={x} y={y} width={width} height={'100%'}>
-      <Offscreen
-        xmlns="http://www.w3.org/1999/xhtml"
-        ref={offscreenRef}
-        variant={variant}
-      />
-      <Text
-        xmlns="http://www.w3.org/1999/xhtml"
-        variant={variant}
-        width={width}
-      >
+    <foreignObject
+      ref={(foreign) => {
+        foreignRef.current = foreign;
+        updateTransform();
+      }}
+      height={'100%'}
+      width={'100%'}
+      x={x}
+      y={y}
+    >
+      <Offscreen ref={offscreenRef} variant={variant} />
+      <Text as={Content} variant={variant} {...size} transform={transform}>
         {children}
       </Text>
     </foreignObject>

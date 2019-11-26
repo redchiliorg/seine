@@ -4,10 +4,13 @@ import { ThemeProvider } from 'styled-components';
 
 export default { title: 'Single.SvgText' };
 
-export const HTMLTextInSVG = ({ children = 'HTML text in SVG' }) => (
+export const HTMLTextInSVG = ({ children = 'html document text' }) => (
   <ThemeProvider theme={defaultTheme}>
-    <Text>{children}</Text>
-    <svg viewBox={'0 0 100 100'} height={'50%'} width={'100%'}>
+    <Text width={'100%'}>{children}</Text>
+    <div style={{ width: '100%', fontWeight: 600 }}>
+      should be rendered exactly as
+    </div>
+    <svg height={'100%'} width={'100%'}>
       <SvgText x={0} y={0}>
         {children}
       </SvgText>

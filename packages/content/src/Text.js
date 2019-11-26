@@ -8,12 +8,20 @@ const Text = styled.p`
         [variant]: { fontSize, lineHeight },
       },
     },
+    transform = '',
     width,
   }) => css`
     font-size: ${fontSize};
     line-height: ${lineHeight};
-    height: ${parseFloat(fontSize) * lineHeight}rem;
-    width: ${width};
+    overflow: hidden;
+    transform: ${transform};
+    transform-origin: left top;
+    white-space: pre;
+    width: ${+width
+      ? width + 'px'
+      : typeof width === 'string'
+      ? width
+      : 'auto'};
   `}
 `;
 
