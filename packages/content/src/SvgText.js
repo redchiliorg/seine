@@ -71,7 +71,7 @@ export default function SvgText({
     };
   }, [updateTransform]);
 
-  // use measured text size
+  // use text size measured by an offscreen canvas context
   const [size, setSize] = React.useState(initialSvgTextSize);
   const offscreenRef = React.useRef(null);
   const updateSize = React.useCallback(() => {
@@ -100,10 +100,13 @@ export default function SvgText({
 
   return (
     <foreignObject
-      ref={(foreign) => {
-        foreignRef.current = foreign;
-        updateTransform();
-      }}
+      ref={React.useCallback(
+        (foreign) => {
+          foreignRef.current = foreign;
+          updateTransform();
+        },
+        [updateTransform]
+      )}
       height={'100%'}
       width={'100%'}
       x={x}
