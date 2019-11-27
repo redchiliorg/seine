@@ -61,12 +61,7 @@ const StyledTypography = styled(Typography).attrs(
     textAnchor,
     xScale,
     yScale,
-  }: SvgTypographyProps & {
-    xScale: number,
-    yScale: number,
-    height: number,
-    width: number,
-  }) => css`
+  }: SvgTypographyProps & BoxProps) => css`
     display: flex;
     ${textAnchor === 'start' &&
       css`
