@@ -28,14 +28,70 @@ const Offscreen = styled.canvas.attrs(
   `}
 `;
 
+type TypographyProps = {
+  fill?: string,
+  textAnchor?: 'start' | 'middle' | 'end',
+  verticalAlign?: 'top' | 'middle' | 'bottom',
+};
+
+type BoxProps = {
+  xScale: number,
+  yScale: number,
+  height: number,
+  width: number,
+};
+
 const StyledTypography = styled(Typography).attrs(
-  ({ fill, height, width }) => ({
+  ({
+    fill,
+    height,
+    textAnchor = 'start',
+    verticalAlign = 'bottom',
+    width,
+  }: TypographyProps & BoxProps) => ({
     color: fill,
     height: typeof height === 'number' ? 2 * height : height,
     width: typeof width === 'number' ? 2 * width : width,
+    textAnchor,
+    verticalAlign,
   })
 )`
-  ${({ xScale, yScale }) => css`
+  ${({
+    textAnchor,
+    verticalAlign,
+    xScale,
+    yScale,
+  }: TypographyProps & {
+    xScale: number,
+    yScale: number,
+    height: number,
+    width: number,
+  }) => css`
+    display: flex;
+    ${textAnchor === 'start' &&
+      css`
+        justify-content: start;
+      `}
+    ${textAnchor === 'middle' &&
+      css`
+        justify-content: center;
+      `}
+    ${textAnchor === 'end' &&
+      css`
+        justify-content: end;
+      `}
+    ${verticalAlign === 'top' &&
+      css`
+        align-items: start;
+      `}
+    ${verticalAlign === 'center' &&
+      css`
+        align-items: center;
+      `}
+    ${verticalAlign === 'bottom' &&
+      css`
+        align-items: end;
+      `}
     transform: scale(${xScale}, ${yScale});
     transform-origin: 1px top;
   `}
@@ -49,7 +105,7 @@ type Props = {
   variant?: ThemeStyle,
   x?: number,
   y?: number,
-};
+} & TypographyProps;
 
 /**
  * @description Svg foreign text styled according to root html document.

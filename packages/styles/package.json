@@ -1,7 +1,7 @@
 {
-  "name": "@seine/content",
+  "name": "@seine/styles",
   "version": "0.3.89",
-  "description": "Seine content renderer.",
+  "description": "Seine styles library.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -10,14 +10,11 @@
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
-  "dependencies": {
-    "@seine/charts": "^0.3.0",
-    "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0",
-    "@seine/styles": "^0.3.0"
-  },
   "peerDependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/utils": "^4.2.1",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }

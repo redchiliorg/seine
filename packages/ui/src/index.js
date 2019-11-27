@@ -21,6 +21,3 @@ export { default as Input } from './Input';
 export { default as Label } from './Label';
 
 export { default as Fab } from './Fab';
-
-export { default as SvgTypography } from './SvgTypography';
-export { default as Typography } from './Typography';
