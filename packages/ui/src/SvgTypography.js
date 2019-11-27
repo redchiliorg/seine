@@ -28,10 +28,23 @@ const Offscreen = styled.canvas.attrs(
   `}
 `;
 
+const StyledTypography = styled(Typography).attrs(
+  ({ fill, height, width }) => ({
+    color: fill,
+    height: typeof height === 'number' ? 2 * height : height,
+    width: typeof width === 'number' ? 2 * width : width,
+  })
+)`
+  ${({ xScale, yScale }) => css`
+    transform: scale(${xScale}, ${yScale});
+    transform-origin: 1px top;
+  `}
+`;
+
 const initialSvgTextSize = { width: 0, height: 0 };
+const initialSvgTextScale = { xScale: 1, yScale: 1 };
 
 type Props = {
-  as?: 'p' | 'div' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   children: string,
   variant?: ThemeStyle,
   x?: number,
@@ -44,33 +57,30 @@ type Props = {
  * @returns {React.Node}
  */
 export default function SvgTypography({
-  as: Content = 'p',
   children,
-  fill,
   variant = 'body1',
   x = 0,
   y = 0,
+  width,
   ...typography
 }: Props) {
   children = React.Children.toArray(children).join(' ');
 
   // use svg and html boxes of foreign object to determine text transform
   const foreignRef = React.useRef(null);
-  const [transform, setTransform] = React.useState(null);
+  const [scale, setScale] = React.useState(initialSvgTextScale);
   const updateTransform = useAutoCallback(() => {
     const { current: foreign } = foreignRef;
-    if (foreign) {
-      const svgBox = foreign.getBBox();
-      const htmlBox = foreign.getBoundingClientRect();
-      setTransform(
-        `scale(${[
-          svgBox.width / htmlBox.width,
-          svgBox.height / htmlBox.height,
-        ]})`
-      );
-    } else {
-      setTransform(null);
-    }
+    const svgBox = foreign && foreign.getBBox();
+    const htmlBox = foreign && foreign.getBoundingClientRect();
+    setScale(
+      svgBox && htmlBox
+        ? {
+            xScale: svgBox.width / htmlBox.width,
+            yScale: svgBox.height / htmlBox.height,
+          }
+        : initialSvgTextScale
+    );
   });
 
   // use text transform update handler on global resize event
@@ -82,7 +92,9 @@ export default function SvgTypography({
   });
 
   // use text size measured by an offscreen canvas context
-  const [size, setSize] = React.useState(initialSvgTextSize);
+  const [size, setSize] = React.useState(
+    width ? { ...initialSvgTextSize, width } : initialSvgTextSize
+  );
   const offscreenRef = React.useRef(null);
   const updateSize = useAutoCallback(() => {
     const { current: offscreen } = offscreenRef;
@@ -92,8 +104,9 @@ export default function SvgTypography({
       );
       const context = offscreen.getContext('2d');
       context.font = `${fontWeight} ${fontSize} ${fontFamily}`;
+      const textMetrics = context.measureText(children);
       setSize({
-        width: context.measureText(children).width,
+        width: width ? Math.min(textMetrics.width, width) : textMetrics.width,
         height: parseFloat(lineHeight),
       });
     }
@@ -120,16 +133,9 @@ export default function SvgTypography({
       y={y}
     >
       <Offscreen ref={offscreenRef} variant={variant} />
-      <Typography
-        as={Content}
-        color={fill}
-        variant={variant}
-        {...typography}
-        {...size}
-        transform={transform}
-      >
+      <StyledTypography variant={variant} {...typography} {...size} {...scale}>
         {children}
-      </Typography>
+      </StyledTypography>
     </foreignObject>
   );
 }
