@@ -66,6 +66,7 @@
     "flow-bin": "^0.109.0",
     "glob": "^7.1.4",
     "history": "^4.10.1",
+    "hooks.macro": "^1.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-pnp-resolver": "^1.2.1",

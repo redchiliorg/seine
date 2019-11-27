@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components/macro';
 import type { BlockEditor, RichTextBody, RichTextFormat } from '@seine/core';
 import { UPDATE_BLOCK_BODY, UPDATE_BLOCK_EDITOR } from '@seine/core';
 import { BlockActions } from '@seine/ui';
+import { DraftStyle } from '@seine/draft';
 import { convertFromRaw, convertToRaw, Editor, EditorState } from 'draft-js';
 
 type Props = (RichTextBody & RichTextFormat & BlockEditor) & {
@@ -83,29 +84,32 @@ export default function DraftEditor({
   }, [dispatch, editorState, readOnly]);
 
   return (
-    <Container verticalAlignment={verticalAlignment}>
-      <Editor
-        editorKey={id}
-        textAlignment={textAlignment}
-        editorState={editorState}
-        ref={editorRef}
-        onChange={React.useCallback(
-          (state) =>
-            dispatch({
-              type: UPDATE_BLOCK_EDITOR,
-              editor: { state },
-            }),
-          [dispatch]
-        )}
-        readOnly={readOnly}
-      />
-      <BlockActions
-        addButtonRenderMap={addButtonRenderMap}
-        dispatch={dispatch}
-        extended
-        id={id}
-        selection={selection}
-      />
-    </Container>
+    <>
+      <DraftStyle />
+      <Container verticalAlignment={verticalAlignment}>
+        <Editor
+          editorKey={id}
+          textAlignment={textAlignment}
+          editorState={editorState}
+          ref={editorRef}
+          onChange={React.useCallback(
+            (state) =>
+              dispatch({
+                type: UPDATE_BLOCK_EDITOR,
+                editor: { state },
+              }),
+            [dispatch]
+          )}
+          readOnly={readOnly}
+        />
+        <BlockActions
+          addButtonRenderMap={addButtonRenderMap}
+          dispatch={dispatch}
+          extended
+          id={id}
+          selection={selection}
+        />
+      </Container>
+    </>
   );
 }

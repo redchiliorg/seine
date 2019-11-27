@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 import {
   defaultChartDy,
@@ -123,16 +124,16 @@ export default function LineChart({
               />
             ) : null,
             yAxis && index > 0 ? (
-              <text
+              <SvgTypography
                 fontWeight={'bold'}
                 key={['title', index]}
                 textAnchor={'end'}
-                x={x - fontSize}
-                y={y + height - (index * height) / length + fontSize / 2}
+                x={x - 3 * fontSize}
+                y={y + height - (index * height) / length}
               >
                 {minValue + index * dy}
                 {units}
-              </text>
+              </SvgTypography>
             ) : null,
           ]
         )}
@@ -201,7 +202,11 @@ export default function LineChart({
                   units={units}
                   value={value}
                   width={3 * fontSize}
-                  x={x + (groupIndex * graphWidth) / (groups.length - 1)}
+                  x={
+                    x +
+                    (groupIndex * graphWidth) / (groups.length - 1) +
+                    fontSize / 2
+                  }
                   y={
                     y +
                     height -
@@ -210,7 +215,7 @@ export default function LineChart({
                       .map(({ value }) => value)[0] || 0) *
                       height) /
                       (maxValue - minValue) -
-                    fontSize
+                    2 * fontSize
                   }
                 />
               ))

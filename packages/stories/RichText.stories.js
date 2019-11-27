@@ -9,7 +9,7 @@ export const SingleLineContent = ({ as: Component = Content, ...props }) => (
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -23,7 +23,61 @@ export const SingleLineContent = ({ as: Component = Content, ...props }) => (
         body: {
           blocks: [
             {
-              key: '3ofq1',
+              key: 'h1',
+              text: 'Header one',
+              type: 'header-one',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'h2',
+              text: 'Header two',
+              type: 'header-two',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'h3',
+              text: 'Header three',
+              type: 'header-three',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'h4',
+              text: 'Header four',
+              type: 'header-four',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'h5',
+              text: 'Header five',
+              type: 'header-five',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'h6',
+              text: 'Header six',
+              type: 'header-six',
+              depth: 0,
+              inlineStyleRanges: [],
+              entityRanges: [],
+              data: {},
+            },
+            {
+              key: 'unstyled',
               text:
                 'This block is draft.js content. Click here to edit the text.',
               type: 'unstyled',
@@ -36,7 +90,7 @@ export const SingleLineContent = ({ as: Component = Content, ...props }) => (
           entityMap: {},
         },
         format: { verticalAlignment: 'center' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
     ]}
   </Component>
@@ -49,7 +103,7 @@ export const MultilineContent = ({ as: Component = Content, ...props }) => (
   <Component
     {...props}
     parent={{
-      id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+      id: null,
       type: 'page',
       body: null,
       format: null,
@@ -123,7 +177,7 @@ export const MultilineContent = ({ as: Component = Content, ...props }) => (
           entityMap: {},
         },
         format: { verticalAlignment: 'center' },
-        parent_id: 'bee1c449-5515-4b12-9779-cfa11f1f62d9',
+        parent_id: null,
       },
     ]}
   </Component>

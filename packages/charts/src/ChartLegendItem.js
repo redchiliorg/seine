@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/ui';
 
 export type Props = {
   fill: string,
@@ -30,9 +31,12 @@ export default function ChartLegendItem({
   return (
     <g fontSize={fontSize} width={width}>
       <rect fill={fill} height={size} width={size} x={x} y={y} />
-      <text x={x + size + fontSize * lineHeight} y={y + fontSize * lineHeight}>
+      <SvgTypography
+        x={x + size + fontSize * lineHeight}
+        y={y + (fontSize * lineHeight) / 2}
+      >
         {title}
-      </text>
+      </SvgTypography>
     </g>
   );
 }
