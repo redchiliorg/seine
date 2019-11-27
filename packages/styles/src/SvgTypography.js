@@ -28,10 +28,10 @@ const Offscreen = styled.canvas.attrs(
   `}
 `;
 
-type TypographyProps = {
+type SvgTypographyProps = {
   fill?: string,
   textAnchor?: 'start' | 'middle' | 'end',
-  verticalAlign?: 'top' | 'middle' | 'bottom',
+  dominantBaseline?: 'middle' | 'baseline' | 'hanging',
 };
 
 type BoxProps = {
@@ -46,22 +46,22 @@ const StyledTypography = styled(Typography).attrs(
     fill,
     height,
     textAnchor = 'start',
-    verticalAlign = 'bottom',
+    dominantBaseline = 'baseline',
     width,
-  }: TypographyProps & BoxProps) => ({
+  }: SvgTypographyProps & BoxProps) => ({
     color: fill,
     height: typeof height === 'number' ? 2 * height : height,
     width: typeof width === 'number' ? 2 * width : width,
     textAnchor,
-    verticalAlign,
+    dominantBaseline,
   })
 )`
   ${({
+    dominantBaseline,
     textAnchor,
-    verticalAlign,
     xScale,
     yScale,
-  }: TypographyProps & {
+  }: SvgTypographyProps & {
     xScale: number,
     yScale: number,
     height: number,
@@ -80,15 +80,15 @@ const StyledTypography = styled(Typography).attrs(
       css`
         justify-content: end;
       `}
-    ${verticalAlign === 'top' &&
+    ${dominantBaseline === 'baseline' &&
       css`
         align-items: start;
       `}
-    ${verticalAlign === 'center' &&
+    ${dominantBaseline === 'middle' &&
       css`
         align-items: center;
       `}
-    ${verticalAlign === 'bottom' &&
+    ${dominantBaseline === 'hanging' &&
       css`
         align-items: end;
       `}
@@ -105,7 +105,7 @@ type Props = {
   variant?: ThemeStyle,
   x?: number,
   y?: number,
-} & TypographyProps;
+} & SvgTypographyProps;
 
 /**
  * @description Svg foreign text styled according to root html document.
@@ -149,7 +149,11 @@ export default function SvgTypography({
 
   // use text size measured by an offscreen canvas context
   const [size, setSize] = React.useState(
-    width ? { ...initialSvgTextSize, width } : initialSvgTextSize
+    width
+      ? { width }
+      : width
+      ? { ...initialSvgTextSize, width }
+      : initialSvgTextSize
   );
   const offscreenRef = React.useRef(null);
   const updateSize = useAutoCallback(() => {
@@ -186,7 +190,7 @@ export default function SvgTypography({
       height={'100%'}
       width={'100%'}
       x={x}
-      y={y}
+      y={y - size.height * scale.yScale}
     >
       <Offscreen ref={offscreenRef} variant={variant} />
       <StyledTypography variant={variant} {...typography} {...size} {...scale}>
