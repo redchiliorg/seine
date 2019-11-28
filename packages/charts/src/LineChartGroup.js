@@ -18,18 +18,13 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function LineChartGroup({
-  fontSize,
-  fontWeight,
-  group,
-  x,
-  y,
-}: Props) {
+export default function LineChartGroup({ group, x, y }: Props) {
   return (
     <SvgTypography
-      fontSize={fontSize}
-      fontWeight={fontWeight}
+      dominantBaseline={'hanging'}
+      fontWeight={'bold'}
       textAnchor={'middle'}
+      variant={'h5'}
       x={x}
       y={y}
     >

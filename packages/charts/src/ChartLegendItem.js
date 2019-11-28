@@ -21,7 +21,6 @@ export type Props = {
 export default function ChartLegendItem({
   fill,
   fontSize,
-  lineHeight,
   size,
   title,
   width,
@@ -31,10 +30,8 @@ export default function ChartLegendItem({
   return (
     <g fontSize={fontSize} width={width}>
       <rect fill={fill} height={size} width={size} x={x} y={y} />
-      <SvgTypography
-        x={x + size + fontSize * lineHeight}
-        y={y + (fontSize * lineHeight) / 2}
-      >
+      <SvgTypography dominantBaseline={'middle'} x={x + size} y={y + size / 2}>
+        {'  '}
         {title}
       </SvgTypography>
     </g>

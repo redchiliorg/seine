@@ -95,7 +95,6 @@ export default function LineChart({
             stroke="#000000"
           />
         </marker>
-
         {xAxis
           ? groups.map(([group], index) => (
               <LineChartGroup
@@ -107,11 +106,10 @@ export default function LineChart({
                 lineHeight={lineHeight}
                 width={8 * fontSize}
                 x={x + (index * graphWidth) / (groups.length - 1)}
-                y={y + height + fontSize * lineHeight}
+                y={y + height}
               />
             ))
           : null}
-
         {Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
           (_, index, { length }) => [
             (xAxis && index === 0) || (yAxis && index > 0) ? (
@@ -125,19 +123,20 @@ export default function LineChart({
             ) : null,
             yAxis && index > 0 ? (
               <SvgTypography
+                dominantBaseline={'middle'}
                 fontWeight={'bold'}
                 key={['title', index]}
                 textAnchor={'end'}
-                x={x - 3 * fontSize}
+                x={x}
                 y={y + height - (index * height) / length}
               >
                 {minValue + index * dy}
                 {units}
+                {'  '}
               </SvgTypography>
             ) : null,
           ]
         )}
-
         {yAxis ? (
           <path
             d={`m${x} ${y}v${height}`}
@@ -147,7 +146,6 @@ export default function LineChart({
             stroke="#000000"
           />
         ) : null}
-
         {titles.map(({ id, title }, titleIndex) => [
           <marker
             key={['point', titleIndex]}
@@ -195,6 +193,13 @@ export default function LineChart({
                   fontSize={fontSize}
                   height={2 * fontSize * lineHeight}
                   index={index}
+                  textAnchor={
+                    groupIndex === groups.length - 1
+                      ? 'end'
+                      : groupIndex > 0
+                      ? 'middle'
+                      : 'start'
+                  }
                   key={['value', titleIndex, groupIndex]}
                   lineHeight={lineHeight}
                   maxValue={maxValue}
@@ -202,11 +207,7 @@ export default function LineChart({
                   units={units}
                   value={value}
                   width={3 * fontSize}
-                  x={
-                    x +
-                    (groupIndex * graphWidth) / (groups.length - 1) +
-                    fontSize / 2
-                  }
+                  x={x + (groupIndex * graphWidth) / (groups.length - 1)}
                   y={
                     y +
                     height -
@@ -215,7 +216,7 @@ export default function LineChart({
                       .map(({ value }) => value)[0] || 0) *
                       height) /
                       (maxValue - minValue) -
-                    2 * fontSize
+                    1
                   }
                 />
               ))

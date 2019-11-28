@@ -6,6 +6,7 @@ export type Props = {
   fontSize: number,
   height: number,
   index: number,
+  textAnchor: 'start' | 'middle' | 'end',
   lineHeight: number,
   maxValue: number,
   minValue: number,
@@ -22,14 +23,14 @@ export type Props = {
  * @returns {React.Node}
  */
 export default function LineChartValue({
-  fontSize,
+  textAnchor,
   units,
   value,
   x,
   y,
 }: Props) {
   return (
-    <SvgTypography fontSize={fontSize} x={x} y={y}>
+    <SvgTypography x={x} y={y} textAnchor={textAnchor}>
       {value}
       {units}
     </SvgTypography>

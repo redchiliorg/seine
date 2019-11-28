@@ -63,7 +63,7 @@ const StyledTypography = styled(Typography).attrs(
     yScale,
   }: SvgTypographyProps & BoxProps) => css`
     display: flex;
-    ${textAnchor === 'start' &&
+    ${textAnchor === 'end' &&
       css`
         justify-content: start;
       `}
@@ -71,7 +71,7 @@ const StyledTypography = styled(Typography).attrs(
       css`
         justify-content: center;
       `}
-    ${textAnchor === 'end' &&
+    ${textAnchor === 'start' &&
       css`
         justify-content: end;
       `}
