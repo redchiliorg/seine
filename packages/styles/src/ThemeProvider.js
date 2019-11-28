@@ -1,10 +1,11 @@
 // @flow
 import * as React from 'react';
-import { defaultTheme } from '@seine/styles';
 import {
   ThemeContext,
   ThemeProvider as StyledThemeProvider,
 } from 'styled-components/macro';
+
+import defaultTheme from './defaultTheme';
 
 type Props = {
   children: React.Node,
