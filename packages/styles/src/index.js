@@ -1,6 +1,7 @@
 // @flow
-export { default as createContentTheme } from './createContentTheme';
-export { default as defaultContentTheme } from './defaultContentTheme';
+export { default as createTheme } from './createTheme';
+export { default as defaultTheme } from './defaultTheme';
+export { default as ThemeProvider } from './ThemeProvider';
 
 export { default as SvgTypography } from './SvgTypography';
 export { default as Typography } from './Typography';

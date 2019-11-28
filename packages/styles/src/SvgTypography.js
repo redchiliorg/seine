@@ -87,8 +87,12 @@ const StyledTypography = styled(Typography).attrs(
       css`
         align-items: end;
       `}
+    
     transform: scale(${xScale}, ${yScale});
     transform-origin: 1px top;
+    
+    text-overflow: ellipsis;
+    white-space: pre;
   `}
 `;
 
@@ -184,7 +188,7 @@ export default function SvgTypography({
       })}
       height={'100%'}
       width={'100%'}
-      x={x}
+      x={x - size.width * scale.xScale}
       y={y - size.height * scale.yScale}
     >
       <Offscreen ref={offscreenRef} variant={variant} />

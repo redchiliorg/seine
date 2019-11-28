@@ -159,7 +159,7 @@ export default function PieChart({
               title={title}
               width={titleWidth}
               x={textX}
-              y={fontSize * lineHeight + textY}
+              y={textY}
             />,
           ];
         })}

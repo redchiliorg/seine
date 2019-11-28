@@ -18,24 +18,9 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartValue({
-  fill,
-  fontSize,
-  units,
-  value,
-  x,
-  y,
-}: Props) {
+export default function PieChartValue({ fill, units, value, x, y }: Props) {
   return (
-    <SvgTypography
-      fill={fill}
-      fontSize={fontSize}
-      key={'value'}
-      textAnchor={'middle'}
-      variant={'h4'}
-      x={x}
-      y={y}
-    >
+    <SvgTypography fill={fill} textAnchor={'middle'} variant={'h4'} x={x} y={y}>
       {value}
       {units}
     </SvgTypography>

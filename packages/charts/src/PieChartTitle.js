@@ -17,16 +17,15 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartTitle({ fill, fontSize, x, y, title }: Props) {
+export default function PieChartTitle({ fill, x, y, title }: Props) {
   return (
     <SvgTypography
+      dominantBaseline={'hanging'}
       fill={fill}
-      fontSize={fontSize}
-      key={'value'}
       textAnchor={'middle'}
+      variant={'h5'}
       x={x}
       y={y}
-      variant={'h5'}
     >
       {title}
     </SvgTypography>
