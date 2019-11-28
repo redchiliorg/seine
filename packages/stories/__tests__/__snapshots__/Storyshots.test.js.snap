@@ -18,7 +18,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         Sales ($ millions)
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={4}
         preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.5}
@@ -762,7 +762,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMid meet"
@@ -771,20 +771,20 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={3.5}
+          x={4}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyaaYw"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             WFLA
@@ -793,17 +793,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={54.71882640586797}
-          y={3.5}
+          x={50.71882640586797}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gjKWgU"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
             textAnchor="start"
@@ -816,26 +816,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#71a2ff"
           height={6}
           width={42.71882640586797}
-          x={10}
+          x={8}
           y={0}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={9.5}
+          x={4}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ermDJw"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region A
@@ -844,17 +844,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={85.32029339853301}
-          y={9.5}
+          x={81.32029339853301}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gHrVmQ"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
             textAnchor="start"
@@ -867,26 +867,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#c0d4e2"
           height={6}
           width={73.32029339853301}
-          x={10}
+          x={8}
           y={6}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={15.5}
+          x={4}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 etEKtb"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region B
@@ -895,17 +895,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={44.44987775061125}
-          y={15.5}
+          x={40.44987775061125}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eSYDiu"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
             textAnchor="start"
@@ -918,26 +918,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#cbcbcb"
           height={6}
           width={32.44987775061125}
-          x={10}
+          x={8}
           y={12}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={21.5}
+          x={4}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gEotGo"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region C
@@ -946,17 +946,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={96}
-          y={21.5}
+          x={92}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gxpBTC"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
             textAnchor="start"
@@ -969,26 +969,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#e57878"
           height={6}
           width={84}
-          x={10}
+          x={8}
           y={18}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={27.5}
+          x={4}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyFXET"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region D
@@ -997,17 +997,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={60.46943765281174}
-          y={27.5}
+          x={56.46943765281174}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fePUFk"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
             textAnchor="start"
@@ -1020,26 +1020,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#8adb96"
           height={6}
           width={48.46943765281174}
-          x={10}
+          x={8}
           y={24}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={33.5}
+          x={4}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kYenCY"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region E
@@ -1048,17 +1048,17 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={48.146699266503674}
-          y={33.5}
+          x={44.146699266503674}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 laKyNu"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
             textAnchor="start"
@@ -1071,14 +1071,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           fill="#6895eb"
           height={6}
           width={36.146699266503674}
-          x={10}
+          x={8}
           y={30}
         />
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={10}
-          x2={31}
+          x1={8}
+          x2={29}
           y1={36}
           y2={36}
         />
@@ -1086,15 +1086,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={29}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1105,8 +1105,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={31}
-          x2={52}
+          x1={29}
+          x2={50}
           y1={36}
           y2={36}
         />
@@ -1114,15 +1114,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={50}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1133,8 +1133,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={52}
-          x2={73}
+          x1={50}
+          x2={71}
           y1={36}
           y2={36}
         />
@@ -1142,15 +1142,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={71}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1161,8 +1161,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={73}
-          x2={94}
+          x1={71}
+          x2={92}
           y1={36}
           y2={36}
         />
@@ -1170,15 +1170,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={92}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1197,7 +1197,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gMPwaf"
+        className="sc-bwzfXH dKfpJo"
         overflow="visible"
         preserveAspectRatio="xMidYMid meet"
         viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -1453,7 +1453,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 128 210"
       >
@@ -1857,7 +1857,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 128 210"
       >
@@ -2248,7 +2248,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMid meet"
@@ -2257,20 +2257,20 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={3.5}
+          x={4}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyaaYw"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             WFLA
@@ -2279,17 +2279,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={51.89041095890411}
-          y={3.5}
+          x={47.89041095890411}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gjKWgU"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
             textAnchor="start"
@@ -2302,26 +2302,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#71a2ff"
           height={6}
           width={39.89041095890411}
-          x={10}
+          x={8}
           y={0}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={9.5}
+          x={4}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ermDJw"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region A
@@ -2330,17 +2330,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={80.46575342465755}
-          y={9.5}
+          x={76.46575342465755}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gHrVmQ"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
             textAnchor="start"
@@ -2353,26 +2353,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#c0d4e2"
           height={6}
           width={68.46575342465755}
-          x={10}
+          x={8}
           y={6}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={15.5}
+          x={4}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 etEKtb"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region B
@@ -2381,17 +2381,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={42.301369863013704}
-          y={15.5}
+          x={38.301369863013704}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eSYDiu"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
             textAnchor="start"
@@ -2404,26 +2404,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#cbcbcb"
           height={6}
           width={30.3013698630137}
-          x={10}
+          x={8}
           y={12}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={21.5}
+          x={4}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gEotGo"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region C
@@ -2432,17 +2432,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={90.43835616438356}
-          y={21.5}
+          x={86.43835616438356}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gxpBTC"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
             textAnchor="start"
@@ -2455,26 +2455,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#e57878"
           height={6}
           width={78.43835616438356}
-          x={10}
+          x={8}
           y={18}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={27.5}
+          x={4}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyFXET"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region D
@@ -2483,17 +2483,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={57.26027397260275}
-          y={27.5}
+          x={53.26027397260275}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fePUFk"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
             textAnchor="start"
@@ -2506,26 +2506,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#8adb96"
           height={6}
           width={45.26027397260275}
-          x={10}
+          x={8}
           y={24}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={33.5}
+          x={4}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kYenCY"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region E
@@ -2534,17 +2534,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={45.753424657534254}
-          y={33.5}
+          x={41.753424657534254}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 laKyNu"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
             textAnchor="start"
@@ -2557,26 +2557,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#6895eb"
           height={6}
           width={33.753424657534254}
-          x={10}
+          x={8}
           y={30}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={39.5}
+          x={4}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 guedQg"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hJCyYP"
             color="#b8c8d8"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#b8c8d8"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region F
@@ -2585,17 +2585,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={85.06849315068494}
-          y={39.5}
+          x={81.06849315068494}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 guedQg"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hjIhKi"
             color="#b8c8d8"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#b8c8d8"
             height={0}
             textAnchor="start"
@@ -2608,26 +2608,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#b8c8d8"
           height={6}
           width={73.06849315068494}
-          x={10}
+          x={8}
           y={36}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={45.5}
+          x={4}
+          y={45}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hRLkAS"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eOZWqs"
             color="#ebebeb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#ebebeb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region G
@@ -2636,17 +2636,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={96}
-          y={45.5}
+          x={92}
+          y={45}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hRLkAS"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hSRUDN"
             color="#ebebeb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#ebebeb"
             height={0}
             textAnchor="start"
@@ -2659,26 +2659,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#ebebeb"
           height={6}
           width={84}
-          x={10}
+          x={8}
           y={42}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={51.5}
+          x={4}
+          y={51}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAdzND"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAkPuD"
             color="#ff7171"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#ff7171"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region H
@@ -2687,17 +2687,17 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={43.45205479452055}
-          y={51.5}
+          x={39.45205479452055}
+          y={51}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAdzND"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bcYCcN"
             color="#ff7171"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#ff7171"
             height={0}
             textAnchor="start"
@@ -2710,14 +2710,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           fill="#ff7171"
           height={6}
           width={31.45205479452055}
-          x={10}
+          x={8}
           y={48}
         />
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={10}
-          x2={31}
+          x1={8}
+          x2={29}
           y1={54}
           y2={54}
         />
@@ -2725,15 +2725,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={29}
-          y={54}
+          y={57}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -2744,8 +2744,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={31}
-          x2={52}
+          x1={29}
+          x2={50}
           y1={54}
           y2={54}
         />
@@ -2753,15 +2753,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={50}
-          y={54}
+          y={57}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -2772,8 +2772,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={52}
-          x2={73}
+          x1={50}
+          x2={71}
           y1={54}
           y2={54}
         />
@@ -2781,15 +2781,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={71}
-          y={54}
+          y={57}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -2800,8 +2800,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={73}
-          x2={94}
+          x1={71}
+          x2={92}
           y1={54}
           y2={54}
         />
@@ -2809,15 +2809,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={92}
-          y={54}
+          y={57}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -2849,7 +2849,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 128 210"
       >
@@ -3240,7 +3240,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         Sales ($ millions)
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={4}
         preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.5}
@@ -3997,7 +3997,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         Sales ($ millions)
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={4}
         preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.5}
@@ -4741,7 +4741,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMid meet"
@@ -4750,20 +4750,20 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={3.5}
+          x={4}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyaaYw"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             WFLA
@@ -4772,17 +4772,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={54.71882640586797}
-          y={3.5}
+          x={50.71882640586797}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gjKWgU"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
             textAnchor="start"
@@ -4795,26 +4795,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#71a2ff"
           height={6}
           width={42.71882640586797}
-          x={10}
+          x={8}
           y={0}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={9.5}
+          x={4}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ermDJw"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region A
@@ -4823,17 +4823,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={85.32029339853301}
-          y={9.5}
+          x={81.32029339853301}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gHrVmQ"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
             textAnchor="start"
@@ -4846,26 +4846,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#c0d4e2"
           height={6}
           width={73.32029339853301}
-          x={10}
+          x={8}
           y={6}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={15.5}
+          x={4}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 etEKtb"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region B
@@ -4874,17 +4874,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={44.44987775061125}
-          y={15.5}
+          x={40.44987775061125}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eSYDiu"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
             textAnchor="start"
@@ -4897,26 +4897,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#cbcbcb"
           height={6}
           width={32.44987775061125}
-          x={10}
+          x={8}
           y={12}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={21.5}
+          x={4}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gEotGo"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region C
@@ -4925,17 +4925,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={96}
-          y={21.5}
+          x={92}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gxpBTC"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
             textAnchor="start"
@@ -4948,26 +4948,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#e57878"
           height={6}
           width={84}
-          x={10}
+          x={8}
           y={18}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={27.5}
+          x={4}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyFXET"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region D
@@ -4976,17 +4976,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={60.46943765281174}
-          y={27.5}
+          x={56.46943765281174}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fePUFk"
             color="#8adb96"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#8adb96"
             height={0}
             textAnchor="start"
@@ -4999,26 +4999,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#8adb96"
           height={6}
           width={48.46943765281174}
-          x={10}
+          x={8}
           y={24}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={33.5}
+          x={4}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kYenCY"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region E
@@ -5027,17 +5027,17 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <foreignObject
           height="100%"
           width="100%"
-          x={48.146699266503674}
-          y={33.5}
+          x={44.146699266503674}
+          y={33}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 laKyNu"
             color="#6895eb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#6895eb"
             height={0}
             textAnchor="start"
@@ -5050,14 +5050,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           fill="#6895eb"
           height={6}
           width={36.146699266503674}
-          x={10}
+          x={8}
           y={30}
         />
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={10}
-          x2={31}
+          x1={8}
+          x2={29}
           y1={36}
           y2={36}
         />
@@ -5065,15 +5065,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={29}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5084,8 +5084,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={31}
-          x2={52}
+          x1={29}
+          x2={50}
           y1={36}
           y2={36}
         />
@@ -5093,15 +5093,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={50}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5112,8 +5112,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={52}
-          x2={73}
+          x1={50}
+          x2={71}
           y1={36}
           y2={36}
         />
@@ -5121,15 +5121,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={71}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5140,8 +5140,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={73}
-          x2={94}
+          x1={71}
+          x2={92}
           y1={36}
           y2={36}
         />
@@ -5149,15 +5149,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={92}
-          y={36}
+          y={39}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5189,7 +5189,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gMPwaf"
+        className="sc-bwzfXH dKfpJo"
         overflow="visible"
         preserveAspectRatio="xMidYMid meet"
         viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -5445,7 +5445,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         Chart title
       </h3>
       <svg
-        className="sc-bwzfXH gLYZDv"
+        className="sc-bwzfXH dqmEFB"
         fontSize={2}
         fontWeight={500}
         preserveAspectRatio="xMidYMid meet"
@@ -5454,20 +5454,20 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={3.5}
+          x={4}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyaaYw"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             WFLA
@@ -5476,17 +5476,17 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <foreignObject
           height="100%"
           width="100%"
-          x={54.71882640586797}
-          y={3.5}
+          x={50.71882640586797}
+          y={3}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gjKWgU"
             color="#71a2ff"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#71a2ff"
             height={0}
             textAnchor="start"
@@ -5499,26 +5499,26 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           fill="#71a2ff"
           height={6}
           width={42.71882640586797}
-          x={10}
+          x={8}
           y={0}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={9.5}
+          x={4}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ermDJw"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region A
@@ -5527,17 +5527,17 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <foreignObject
           height="100%"
           width="100%"
-          x={85.32029339853301}
-          y={9.5}
+          x={81.32029339853301}
+          y={9}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gHrVmQ"
             color="#c0d4e2"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#c0d4e2"
             height={0}
             textAnchor="start"
@@ -5550,26 +5550,26 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           fill="#c0d4e2"
           height={6}
           width={73.32029339853301}
-          x={10}
+          x={8}
           y={6}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={15.5}
+          x={4}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 etEKtb"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region B
@@ -5578,17 +5578,17 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <foreignObject
           height="100%"
           width="100%"
-          x={44.44987775061125}
-          y={15.5}
+          x={40.44987775061125}
+          y={15}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eSYDiu"
             color="#cbcbcb"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#cbcbcb"
             height={0}
             textAnchor="start"
@@ -5601,26 +5601,26 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           fill="#cbcbcb"
           height={6}
           width={32.44987775061125}
-          x={10}
+          x={8}
           y={12}
         />
         <foreignObject
           height="100%"
           width="100%"
-          x={0}
-          y={21.5}
+          x={4}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gEotGo"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
-            textAnchor="start"
+            textAnchor="end"
             width={0}
           >
             Region C
@@ -5629,17 +5629,17 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <foreignObject
           height="100%"
           width="100%"
-          x={96}
-          y={21.5}
+          x={92}
+          y={21}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gxpBTC"
             color="#e57878"
-            dominantBaseline="baseline"
+            dominantBaseline="middle"
             fill="#e57878"
             height={0}
             textAnchor="start"
@@ -5652,14 +5652,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           fill="#e57878"
           height={6}
           width={84}
-          x={10}
+          x={8}
           y={18}
         />
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={10}
-          x2={31}
+          x1={8}
+          x2={29}
           y1={24}
           y2={24}
         />
@@ -5667,15 +5667,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={29}
-          y={24}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5686,8 +5686,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={31}
-          x2={52}
+          x1={29}
+          x2={50}
           y1={24}
           y2={24}
         />
@@ -5695,15 +5695,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={50}
-          y={24}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5714,8 +5714,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={52}
-          x2={73}
+          x1={50}
+          x2={71}
           y1={24}
           y2={24}
         />
@@ -5723,15 +5723,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={71}
-          y={24}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5742,8 +5742,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         <line
           stroke="black"
           strokeWidth="0.1em"
-          x1={73}
-          x2={94}
+          x1={71}
+          x2={92}
           y1={24}
           y2={24}
         />
@@ -5751,15 +5751,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={92}
-          y={24}
+          y={27}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
             fontSize="1.4rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-            dominantBaseline="hanging"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+            dominantBaseline="middle"
             height={0}
             textAnchor="middle"
             width={0}
@@ -5824,7 +5824,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       Chart title
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       fontSize={2}
       fontWeight={500}
       preserveAspectRatio="xMidYMid meet"
@@ -5833,20 +5833,20 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={3.5}
+        x={4}
+        y={3}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyaaYw"
           color="#71a2ff"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#71a2ff"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           WFLA
@@ -5855,17 +5855,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={51.89041095890411}
-        y={3.5}
+        x={47.89041095890411}
+        y={3}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 IvaUc"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gjKWgU"
           color="#71a2ff"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#71a2ff"
           height={0}
           textAnchor="start"
@@ -5878,26 +5878,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#71a2ff"
         height={6}
         width={39.89041095890411}
-        x={10}
+        x={8}
         y={0}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={9.5}
+        x={4}
+        y={9}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ermDJw"
           color="#c0d4e2"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#c0d4e2"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region A
@@ -5906,17 +5906,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={80.46575342465755}
-        y={9.5}
+        x={76.46575342465755}
+        y={9}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bXFIeb"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gHrVmQ"
           color="#c0d4e2"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#c0d4e2"
           height={0}
           textAnchor="start"
@@ -5929,26 +5929,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#c0d4e2"
         height={6}
         width={68.46575342465755}
-        x={10}
+        x={8}
         y={6}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={15.5}
+        x={4}
+        y={15}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 etEKtb"
           color="#cbcbcb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#cbcbcb"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region B
@@ -5957,17 +5957,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={42.301369863013704}
-        y={15.5}
+        x={38.301369863013704}
+        y={15}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kfPaLG"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eSYDiu"
           color="#cbcbcb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#cbcbcb"
           height={0}
           textAnchor="start"
@@ -5980,26 +5980,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#cbcbcb"
         height={6}
         width={30.3013698630137}
-        x={10}
+        x={8}
         y={12}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={21.5}
+        x={4}
+        y={21}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gEotGo"
           color="#e57878"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#e57878"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region C
@@ -6008,17 +6008,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={90.43835616438356}
-        y={21.5}
+        x={86.43835616438356}
+        y={21}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 itXzxx"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gxpBTC"
           color="#e57878"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#e57878"
           height={0}
           textAnchor="start"
@@ -6031,26 +6031,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#e57878"
         height={6}
         width={78.43835616438356}
-        x={10}
+        x={8}
         y={18}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={27.5}
+        x={4}
+        y={27}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 iyFXET"
           color="#8adb96"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#8adb96"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region D
@@ -6059,17 +6059,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={57.26027397260275}
-        y={27.5}
+        x={53.26027397260275}
+        y={27}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 ghEXng"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fePUFk"
           color="#8adb96"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#8adb96"
           height={0}
           textAnchor="start"
@@ -6082,26 +6082,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#8adb96"
         height={6}
         width={45.26027397260275}
-        x={10}
+        x={8}
         y={24}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={33.5}
+        x={4}
+        y={33}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kYenCY"
           color="#6895eb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#6895eb"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region E
@@ -6110,17 +6110,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={45.753424657534254}
-        y={33.5}
+        x={41.753424657534254}
+        y={33}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eViINh"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 laKyNu"
           color="#6895eb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#6895eb"
           height={0}
           textAnchor="start"
@@ -6133,26 +6133,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#6895eb"
         height={6}
         width={33.753424657534254}
-        x={10}
+        x={8}
         y={30}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={39.5}
+        x={4}
+        y={39}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 guedQg"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hJCyYP"
           color="#b8c8d8"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#b8c8d8"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region F
@@ -6161,17 +6161,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={85.06849315068494}
-        y={39.5}
+        x={81.06849315068494}
+        y={39}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 guedQg"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hjIhKi"
           color="#b8c8d8"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#b8c8d8"
           height={0}
           textAnchor="start"
@@ -6184,26 +6184,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#b8c8d8"
         height={6}
         width={73.06849315068494}
-        x={10}
+        x={8}
         y={36}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={45.5}
+        x={4}
+        y={45}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hRLkAS"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eOZWqs"
           color="#ebebeb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#ebebeb"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region G
@@ -6212,17 +6212,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={96}
-        y={45.5}
+        x={92}
+        y={45}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hRLkAS"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 hSRUDN"
           color="#ebebeb"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#ebebeb"
           height={0}
           textAnchor="start"
@@ -6235,26 +6235,26 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#ebebeb"
         height={6}
         width={84}
-        x={10}
+        x={8}
         y={42}
       />
       <foreignObject
         height="100%"
         width="100%"
-        x={0}
-        y={51.5}
+        x={4}
+        y={51}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAdzND"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAkPuD"
           color="#ff7171"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#ff7171"
           height={0}
-          textAnchor="start"
+          textAnchor="end"
           width={0}
         >
           Region H
@@ -6263,17 +6263,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={43.45205479452055}
-        y={51.5}
+        x={39.45205479452055}
+        y={51}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kAdzND"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 bcYCcN"
           color="#ff7171"
-          dominantBaseline="baseline"
+          dominantBaseline="middle"
           fill="#ff7171"
           height={0}
           textAnchor="start"
@@ -6286,14 +6286,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         fill="#ff7171"
         height={6}
         width={31.45205479452055}
-        x={10}
+        x={8}
         y={48}
       />
       <line
         stroke="black"
         strokeWidth="0.1em"
-        x1={10}
-        x2={31}
+        x1={8}
+        x2={29}
         y1={54}
         y2={54}
       />
@@ -6301,15 +6301,15 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={29}
-        y={54}
+        y={57}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
           fontSize="1.4rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-          dominantBaseline="hanging"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+          dominantBaseline="middle"
           height={0}
           textAnchor="middle"
           width={0}
@@ -6320,8 +6320,8 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <line
         stroke="black"
         strokeWidth="0.1em"
-        x1={31}
-        x2={52}
+        x1={29}
+        x2={50}
         y1={54}
         y2={54}
       />
@@ -6329,15 +6329,15 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={50}
-        y={54}
+        y={57}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
           fontSize="1.4rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-          dominantBaseline="hanging"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+          dominantBaseline="middle"
           height={0}
           textAnchor="middle"
           width={0}
@@ -6348,8 +6348,8 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <line
         stroke="black"
         strokeWidth="0.1em"
-        x1={52}
-        x2={73}
+        x1={50}
+        x2={71}
         y1={54}
         y2={54}
       />
@@ -6357,15 +6357,15 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={71}
-        y={54}
+        y={57}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
           fontSize="1.4rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-          dominantBaseline="hanging"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+          dominantBaseline="middle"
           height={0}
           textAnchor="middle"
           width={0}
@@ -6376,8 +6376,8 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       <line
         stroke="black"
         strokeWidth="0.1em"
-        x1={73}
-        x2={94}
+        x1={71}
+        x2={92}
         y1={54}
         y2={54}
       />
@@ -6385,15 +6385,15 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={92}
-        y={54}
+        y={57}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 dMEhuW"
           fontSize="1.4rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 jHmzFf"
-          dominantBaseline="hanging"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fkdCkK"
+          dominantBaseline="middle"
           height={0}
           textAnchor="middle"
           width={0}
@@ -6419,7 +6419,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       Chart title
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 128 210"
     >
@@ -6865,7 +6865,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
       Sales ($ millions)
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       fontSize={4}
       preserveAspectRatio="xMidYMid meet"
       strokeWidth={0.5}
@@ -7616,7 +7616,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
       Chart title
     </h3>
     <svg
-      className="sc-bwzfXH gMPwaf"
+      className="sc-bwzfXH dKfpJo"
       overflow="visible"
       preserveAspectRatio="xMidYMid meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
@@ -7879,7 +7879,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 474 210"
     >
@@ -9593,7 +9593,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       Column chart: 4 groups of 3 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 474 210"
     >
@@ -10653,7 +10653,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       Column chart: 3 groups of 5 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -11539,7 +11539,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       Column chart: 3 groups of 5 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -12563,7 +12563,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       Column chart: 3 groups of 5 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
@@ -13426,7 +13426,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       Column chart: 3 groups, 3 elements
     </h3>
     <svg
-      className="sc-bwzfXH gLYZDv"
+      className="sc-bwzfXH dqmEFB"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 198 210"
     >
