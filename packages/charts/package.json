@@ -1,6 +1,6 @@
 {
   "name": "@seine/charts",
-  "version": "0.3.89",
+  "version": "0.3.90",
   "description": "Seine charts renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "@seine/core": "^0.3.0",
-    "@seine/ui": "^0.3.0",
+    "@seine/styles": "^0.3.0",
     "ramda": "^0.26.1"
   },
   "peerDependencies": {

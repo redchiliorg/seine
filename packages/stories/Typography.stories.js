@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { defaultTheme } from '@seine/content';
-import { SvgTypography, Typography } from '@seine/ui';
+import { defaultContentTheme, SvgTypography, Typography } from '@seine/styles';
 import { ThemeProvider } from 'styled-components';
 
 export default { title: 'Single.SvgText' };
@@ -10,7 +9,7 @@ export const HTMLTextInSVG = ({
   width = '100%',
   ...typographyProps
 }) => (
-  <ThemeProvider theme={defaultTheme}>
+  <ThemeProvider theme={defaultContentTheme}>
     <div>
       <Typography {...typographyProps} width={width}>
         {children}

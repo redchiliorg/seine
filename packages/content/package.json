@@ -1,6 +1,6 @@
 {
   "name": "@seine/content",
-  "version": "0.3.89",
+  "version": "0.3.90",
   "description": "Seine content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -13,12 +13,10 @@
   "dependencies": {
     "@seine/charts": "^0.3.0",
     "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0"
+    "@seine/draft": "^0.3.0",
+    "@seine/styles": "^0.3.0"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/styles": "^4.2.1",
-    "@material-ui/utils": "^4.2.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   }

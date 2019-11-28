@@ -6,11 +6,11 @@ import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 import { ThemeProvider } from 'styled-components/macro';
 import type { Theme } from '@material-ui/core';
+import { defaultContentTheme } from '@seine/styles';
 
 import Grid from './Grid';
 import Image from './Image';
 import Page from './Page';
-import defaultTheme from './defaultTheme';
 
 export type Props = {
   blockRenderMap?: { [string]: ({ [string]: any }) => React.Node },
@@ -36,7 +36,7 @@ function Content({
   blockRenderMap = defaultBlockRenderMap,
   children,
   parent,
-  theme = defaultTheme,
+  theme = defaultContentTheme,
   as: DefaultContainer = blockRenderMap[parent.type],
 }: Props): React.Node {
   const Container = React.useCallback(

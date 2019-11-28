@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgTypography } from '@seine/ui';
+import { SvgTypography } from '@seine/styles';
 
 // eslint-disable-next-line
 export function ColumnChartYAxis({

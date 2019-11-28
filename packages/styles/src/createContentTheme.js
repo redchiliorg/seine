@@ -1,6 +1,7 @@
+// @flow
 import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
-import createTypography from '@material-ui/core/styles/createTypography';
 
+import createTypography from './createTypography';
 import {
   defaultBreakpoints,
   defaultPalette,
