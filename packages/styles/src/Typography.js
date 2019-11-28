@@ -16,6 +16,7 @@ const Typography = styled.p`
   }) => css`
     font-size: ${fontSize};
     line-height: ${lineHeight};
+    margin: 0;
     overflow: ${overflow};
     text-overflow: ellipsis;
     white-space: pre;
