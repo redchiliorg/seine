@@ -18,21 +18,15 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function BarChartElementTitle({
-  children,
-  fill,
-  height,
-  lineHeight,
-  x,
-  y,
-}: Props) {
+export default function BarChartElementTitle({ children, fill, x, y }: Props) {
   return (
     <SvgTypography
-      x={x}
-      y={y + lineHeight}
-      height={height}
+      dominantBaseline={'middle'}
       fill={fill}
+      textAnchor={'end'}
       variant={'h6'}
+      x={x}
+      y={y}
     >
       {children}
     </SvgTypography>

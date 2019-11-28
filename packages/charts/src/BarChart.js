@@ -96,8 +96,8 @@ export default function BarChart({
               index={index}
               key={'title'}
               lineHeight={fontHeight}
-              x={0}
-              y={y}
+              x={titleMaxLen / 2}
+              y={y + barHeight / 4}
               width={titleMaxLen}
             >
               {title}
@@ -109,8 +109,8 @@ export default function BarChart({
               index={index}
               key={'value'}
               lineHeight={fontHeight}
-              x={titleMaxLen + len + 4}
-              y={y}
+              x={titleMaxLen + len}
+              y={y + barHeight / 4}
               units={units}
               width={valueMaxLen}
             >
@@ -122,7 +122,7 @@ export default function BarChart({
               height={barHeight / 2}
               key={['bar', index]}
               width={len}
-              x={titleMaxLen + fontSize}
+              x={titleMaxLen}
               y={y}
             />,
           ];
@@ -132,10 +132,8 @@ export default function BarChart({
               (_, index, { length }) => [
                 <line
                   key={['line', index]}
-                  x1={titleMaxLen + fontSize + (barMaxLen * index) / length}
-                  x2={
-                    titleMaxLen + fontSize + (barMaxLen * (index + 1)) / length
-                  }
+                  x1={titleMaxLen + (barMaxLen * index) / length}
+                  x2={titleMaxLen + (barMaxLen * (index + 1)) / length}
                   y1={(elements.length * barHeight) / 2}
                   y2={(elements.length * barHeight) / 2}
                   stroke={'black'}
@@ -143,10 +141,10 @@ export default function BarChart({
                 />,
                 <SvgTypography
                   key={['title', index]}
-                  dominantBaseline={'hanging'}
+                  dominantBaseline={'middle'}
                   textAnchor={'middle'}
                   x={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                  y={(elements.length * barHeight) / 2}
+                  y={(elements.length * barHeight) / 2 + barHeight / 4}
                   variant={'h5'}
                 >
                   {(index + 1) * dx}
