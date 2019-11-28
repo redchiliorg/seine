@@ -22,19 +22,17 @@ export type Props = {
 export default function BarChartElementValue({
   children,
   fill,
-  height,
-  lineHeight,
   units,
   x,
   y,
 }: Props) {
   return (
     <SvgTypography
-      x={x}
-      y={y + lineHeight}
-      height={height}
+      dominantBaseline={'middle'}
       fill={fill}
       variant={'h6'}
+      x={x}
+      y={y}
     >
       {children}
       {units}
