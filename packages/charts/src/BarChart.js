@@ -128,7 +128,7 @@ export default function BarChart({
           ];
         })}
         {xAxis
-          ? Array.from({ length: Math.floor(maxValue / dx) }).map(
+          ? Array.from({ length: Math.round(maxValue / dx) }).map(
               (_, index, { length }) => [
                 <line
                   key={['line', index]}
@@ -147,7 +147,7 @@ export default function BarChart({
                   y={(elements.length * barHeight) / 2 + barHeight / 4}
                   variant={'h5'}
                 >
-                  {(index + 1) * dx}
+                  {Math.min((index + 1) * dx, maxValue)}
                   {units}
                 </SvgTypography>,
               ]
