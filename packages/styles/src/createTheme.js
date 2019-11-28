@@ -14,7 +14,7 @@ import {
  * @param {{breakpoints?: object, palette?: object, typography?: object}} options
  * @returns {{breakpoints: object, palette: object, typography?: object}}
  */
-export default function createContentTheme({
+export default function createTheme({
   breakpoints: {
     keys = defaultBreakpoints.keys,
     values = defaultBreakpoints.values,

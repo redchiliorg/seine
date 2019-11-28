@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css, ThemeProvider } from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { ClickAwayListener, Paper } from '@material-ui/core';
 import type { ContentProps } from '@seine/content';
 import { Content, defaultBlockRenderMap, Grid, Page } from '@seine/content';
@@ -22,6 +22,7 @@ import {
 import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, useReducerEx } from '@seine/ui';
+import { ThemeProvider } from '@seine/styles';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -119,7 +120,6 @@ export default function Editor({
   onChange,
   parent,
   toolbarRenderMap = defaultToolbarRenderMap,
-  theme = defaultTheme,
   ...contentProps
 }: Props) {
   const init = React.useCallback(
@@ -167,7 +167,7 @@ export default function Editor({
   );
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <Container>
         <BlockToolbar
           {...block}
@@ -197,7 +197,6 @@ export default function Editor({
               {...contentProps}
               parent={parent}
               blockRenderMap={blockRenderMap}
-              theme={theme}
             >
               {contentChildren}
             </Content>

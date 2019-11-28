@@ -4,9 +4,8 @@ import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
-import { ThemeProvider } from 'styled-components/macro';
 import type { Theme } from '@material-ui/core';
-import { defaultContentTheme } from '@seine/styles';
+import { ThemeProvider } from '@seine/styles';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -36,43 +35,30 @@ function Content({
   blockRenderMap = defaultBlockRenderMap,
   children,
   parent,
-  theme = defaultContentTheme,
-  as: DefaultContainer = blockRenderMap[parent.type],
+  as: Container = blockRenderMap[parent.type],
 }: Props): React.Node {
-  const Container = React.useCallback(
-    ({ children }) =>
-      parent.parent_id ? (
-        children
-      ) : parent.id ? (
-        <DefaultContainer>{children}</DefaultContainer>
-      ) : (
-        <ThemeProvider theme={theme}>
-          <DefaultContainer>{children}</DefaultContainer>
-        </ThemeProvider>
-      ),
-    [parent.id, parent.parent_id, theme]
-  );
-
   return (
-    <Container>
-      {children
-        .filter((block: Block) => block['parent_id'] === parent.id)
-        .map(({ body, format, ...block }: Block) => {
-          const ContentBlock = blockRenderMap[block.type];
-          return (
-            <ContentBlock
-              key={block.id}
-              {...(format ? format : {})}
-              {...(body ? body : {})}
-              {...block}
-            >
-              <Content parent={block} blockRenderMap={blockRenderMap}>
-                {children.filter((content) => content.id !== block.id)}
-              </Content>
-            </ContentBlock>
-          );
-        })}
-    </Container>
+    <ThemeProvider>
+      <Container>
+        {children
+          .filter((block: Block) => block['parent_id'] === parent.id)
+          .map(({ body, format, ...block }: Block) => {
+            const ContentBlock = blockRenderMap[block.type];
+            return (
+              <ContentBlock
+                key={block.id}
+                {...(format ? format : {})}
+                {...(body ? body : {})}
+                {...block}
+              >
+                <Content parent={block} blockRenderMap={blockRenderMap}>
+                  {children.filter((content) => content.id !== block.id)}
+                </Content>
+              </ContentBlock>
+            );
+          })}
+      </Container>
+    </ThemeProvider>
   );
 }
 
