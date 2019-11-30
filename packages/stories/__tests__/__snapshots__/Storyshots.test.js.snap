@@ -1459,7 +1459,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       >
         <rect
           fill="#71a2ff"
-          fontSize={3}
           height={66.43460964694182}
           width={10}
           x={46}
@@ -1468,7 +1467,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={46}
+          x={51}
           y={40.94039035305818}
         >
           <canvas
@@ -1480,7 +1479,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             color="#71a2ff"
             dominantBaseline="baseline"
             fill="#71a2ff"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1490,7 +1488,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </foreignObject>
         <rect
           fill="#c0d4e2"
-          fontSize={3}
           height={80}
           width={10}
           x={56}
@@ -1499,7 +1496,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={56}
+          x={61}
           y={27.375}
         >
           <canvas
@@ -1511,7 +1508,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             color="#c0d4e2"
             dominantBaseline="baseline"
             fill="#c0d4e2"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1521,7 +1517,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </foreignObject>
         <rect
           fill="#cbcbcb"
-          fontSize={3}
           height={17.238521465274324}
           width={10}
           x={66}
@@ -1530,7 +1525,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={66}
+          x={71}
           y={90.13647853472568}
         >
           <canvas
@@ -1542,7 +1537,6 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             color="#cbcbcb"
             dominantBaseline="baseline"
             fill="#cbcbcb"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1554,16 +1548,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={61}
-          y={117.875}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-            dominantBaseline="baseline"
-            fontSize={4.5}
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+            dominantBaseline="hanging"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1579,21 +1572,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={107}
+          x={23}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             0 
@@ -1602,21 +1592,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={94.14285714285714}
+          x={23}
+          y={97.14285714285714}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             10 
@@ -1625,21 +1612,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={81.28571428571428}
+          x={23}
+          y={84.28571428571428}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             20 
@@ -1648,21 +1632,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={68.42857142857143}
+          x={23}
+          y={71.42857142857143}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             30 
@@ -1671,21 +1652,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={55.57142857142857}
+          x={23}
+          y={58.57142857142857}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             40 
@@ -1694,21 +1672,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={42.71428571428571}
+          x={23}
+          y={45.71428571428571}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             50 
@@ -1717,21 +1692,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={29.85714285714286}
+          x={23}
+          y={32.85714285714286}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             60 
@@ -1863,7 +1835,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       >
         <rect
           fill="#71a2ff"
-          fontSize={3}
           height={66.43460964694182}
           width={10}
           x={46}
@@ -1872,7 +1843,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={46}
+          x={51}
           y={40.94039035305818}
         >
           <canvas
@@ -1884,7 +1855,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             color="#71a2ff"
             dominantBaseline="baseline"
             fill="#71a2ff"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1894,7 +1864,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </foreignObject>
         <rect
           fill="#c0d4e2"
-          fontSize={3}
           height={80}
           width={10}
           x={56}
@@ -1903,7 +1872,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={56}
+          x={61}
           y={27.375}
         >
           <canvas
@@ -1915,7 +1884,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             color="#c0d4e2"
             dominantBaseline="baseline"
             fill="#c0d4e2"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1925,7 +1893,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </foreignObject>
         <rect
           fill="#cbcbcb"
-          fontSize={3}
           height={17.238521465274324}
           width={10}
           x={66}
@@ -1934,7 +1901,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={66}
+          x={71}
           y={90.13647853472568}
         >
           <canvas
@@ -1946,7 +1913,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             color="#cbcbcb"
             dominantBaseline="baseline"
             fill="#cbcbcb"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -1958,16 +1924,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={61}
-          y={117.875}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-            dominantBaseline="baseline"
-            fontSize={4.5}
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+            dominantBaseline="hanging"
             height={0}
             textAnchor="middle"
             width={0}
@@ -1983,21 +1948,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={107}
+          x={23}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             0 
@@ -2006,21 +1968,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={94.14285714285714}
+          x={23}
+          y={97.14285714285714}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             10 
@@ -2029,21 +1988,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={81.28571428571428}
+          x={23}
+          y={84.28571428571428}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             20 
@@ -2052,21 +2008,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={68.42857142857143}
+          x={23}
+          y={71.42857142857143}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             30 
@@ -2075,21 +2028,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={55.57142857142857}
+          x={23}
+          y={58.57142857142857}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             40 
@@ -2098,21 +2048,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={42.71428571428571}
+          x={23}
+          y={45.71428571428571}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             50 
@@ -2121,21 +2068,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={29.85714285714286}
+          x={23}
+          y={32.85714285714286}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             60 
@@ -2855,7 +2799,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       >
         <rect
           fill="#71a2ff"
-          fontSize={3}
           height={66.43460964694182}
           width={10}
           x={46}
@@ -2864,7 +2807,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={46}
+          x={51}
           y={40.94039035305818}
         >
           <canvas
@@ -2876,7 +2819,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             color="#71a2ff"
             dominantBaseline="baseline"
             fill="#71a2ff"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -2886,7 +2828,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </foreignObject>
         <rect
           fill="#c0d4e2"
-          fontSize={3}
           height={80}
           width={10}
           x={56}
@@ -2895,7 +2836,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={56}
+          x={61}
           y={27.375}
         >
           <canvas
@@ -2907,7 +2848,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             color="#c0d4e2"
             dominantBaseline="baseline"
             fill="#c0d4e2"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -2917,7 +2857,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </foreignObject>
         <rect
           fill="#cbcbcb"
-          fontSize={3}
           height={17.238521465274324}
           width={10}
           x={66}
@@ -2926,7 +2865,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={66}
+          x={71}
           y={90.13647853472568}
         >
           <canvas
@@ -2938,7 +2877,6 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             color="#cbcbcb"
             dominantBaseline="baseline"
             fill="#cbcbcb"
-            fontSize={3}
             height={0}
             textAnchor="middle"
             width={0}
@@ -2950,16 +2888,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={61}
-          y={117.875}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-            dominantBaseline="baseline"
-            fontSize={4.5}
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+            dominantBaseline="hanging"
             height={0}
             textAnchor="middle"
             width={0}
@@ -2975,21 +2912,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={107}
+          x={23}
+          y={110}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             0 
@@ -2998,21 +2932,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={94.14285714285714}
+          x={23}
+          y={97.14285714285714}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             10 
@@ -3021,21 +2952,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={81.28571428571428}
+          x={23}
+          y={84.28571428571428}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             20 
@@ -3044,21 +2972,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={68.42857142857143}
+          x={23}
+          y={71.42857142857143}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             30 
@@ -3067,21 +2992,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={55.57142857142857}
+          x={23}
+          y={58.57142857142857}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             40 
@@ -3090,21 +3012,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={42.71428571428571}
+          x={23}
+          y={45.71428571428571}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             50 
@@ -3113,21 +3032,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         <foreignObject
           height="100%"
           width="100%"
-          x={24}
-          y={29.85714285714286}
+          x={23}
+          y={32.85714285714286}
         >
           <canvas
             className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
             fontSize="1rem"
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-            color="#000000"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
             dominantBaseline="baseline"
-            fill="#000000"
-            fontSize={3}
             height={0}
-            textAnchor="middle"
+            textAnchor="end"
             width={0}
           >
             60 
@@ -6425,7 +6341,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={66.43460964694182}
         width={10}
         x={46}
@@ -6434,7 +6349,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={40.94039035305818}
       >
         <canvas
@@ -6446,7 +6361,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -6456,7 +6370,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={56}
@@ -6465,7 +6378,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={27.375}
       >
         <canvas
@@ -6477,7 +6390,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -6487,7 +6399,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={17.238521465274324}
         width={10}
         x={66}
@@ -6496,7 +6407,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={90.13647853472568}
       >
         <canvas
@@ -6508,7 +6419,6 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -6520,16 +6430,15 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
         height="100%"
         width="100%"
         x={61}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -6545,21 +6454,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           0 
@@ -6568,21 +6474,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={94.14285714285714}
+        x={23}
+        y={97.14285714285714}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           10 
@@ -6591,21 +6494,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={81.28571428571428}
+        x={23}
+        y={84.28571428571428}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -6614,21 +6514,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={68.42857142857143}
+        x={23}
+        y={71.42857142857143}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -6637,21 +6534,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={55.57142857142857}
+        x={23}
+        y={58.57142857142857}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -6660,21 +6554,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={42.71428571428571}
+        x={23}
+        y={45.71428571428571}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -6683,21 +6574,18 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={29.85714285714286}
+        x={23}
+        y={32.85714285714286}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -7885,7 +7773,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={39.992017561364996}
         width={10}
         x={46}
@@ -7894,7 +7781,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={67.382982438635}
       >
         <canvas
@@ -7906,7 +7793,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -7916,7 +7802,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={48.15805228497305}
         width={10}
         x={56}
@@ -7925,7 +7810,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={59.21694771502695}
       >
         <canvas
@@ -7937,7 +7822,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -7947,7 +7831,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={10.37717022550389}
         width={10}
         x={66}
@@ -7956,7 +7839,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={96.99782977449611}
       >
         <canvas
@@ -7968,7 +7851,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -7978,7 +7860,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={18.359608860506885}
         width={10}
         x={76}
@@ -7987,7 +7868,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={76}
+        x={81}
         y={89.01539113949312}
       >
         <canvas
@@ -7999,7 +7880,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8009,7 +7889,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={26.342047495509878}
         width={10}
         x={86}
@@ -8018,7 +7897,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={86}
+        x={91}
         y={81.03295250449013}
       >
         <canvas
@@ -8030,7 +7909,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8040,7 +7918,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={40.710437038515266}
         width={10}
         x={96}
@@ -8049,7 +7926,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={96}
+        x={101}
         y={66.66456296148473}
       >
         <canvas
@@ -8061,7 +7938,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8073,16 +7949,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={76}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -8092,7 +7967,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={71.84194771502695}
         width={10}
         x={112}
@@ -8101,7 +7975,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={35.53305228497305}
       >
         <canvas
@@ -8113,7 +7987,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8123,7 +7996,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={122}
@@ -8132,7 +8004,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={27.375}
       >
         <canvas
@@ -8144,7 +8016,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8154,7 +8025,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={132}
@@ -8163,7 +8033,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={132}
+        x={137}
         y={96.19958591099581}
       >
         <canvas
@@ -8175,7 +8045,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8185,7 +8054,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={8.15805228497306}
         width={10}
         x={142}
@@ -8194,7 +8062,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={142}
+        x={147}
         y={99.21694771502695}
       >
         <canvas
@@ -8206,7 +8074,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8216,7 +8083,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={152}
@@ -8225,7 +8091,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={152}
+        x={157}
         y={96.19958591099581}
       >
         <canvas
@@ -8237,7 +8103,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8247,7 +8112,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={21.55258431450808}
         width={10}
         x={162}
@@ -8256,7 +8120,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={162}
+        x={167}
         y={85.82241568549192}
       >
         <canvas
@@ -8268,7 +8132,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8280,16 +8143,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={142}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -8299,7 +8161,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={52.684094991019755}
         width={10}
         x={178}
@@ -8308,7 +8169,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={178}
+        x={183}
         y={54.690905008980245}
       >
         <canvas
@@ -8320,7 +8181,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8330,7 +8190,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={23.14907204150868}
         width={10}
         x={188}
@@ -8339,7 +8198,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={188}
+        x={193}
         y={84.22592795849133}
       >
         <canvas
@@ -8351,7 +8210,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8361,7 +8219,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={15.166633406505687}
         width={10}
         x={198}
@@ -8370,7 +8227,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={198}
+        x={203}
         y={92.20836659349432}
       >
         <canvas
@@ -8382,7 +8239,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8392,7 +8248,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={39.91219317501497}
         width={10}
         x={208}
@@ -8401,7 +8256,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={208}
+        x={213}
         y={67.46280682498502}
       >
         <canvas
@@ -8413,7 +8268,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8423,7 +8277,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={76.19237677110357}
         width={10}
         x={218}
@@ -8432,7 +8285,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={218}
+        x={223}
         y={31.182623228896432}
       >
         <canvas
@@ -8444,7 +8297,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8454,7 +8306,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={79.82438635002994}
         width={10}
         x={228}
@@ -8463,7 +8314,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={228}
+        x={233}
         y={27.55061364997006}
       >
         <canvas
@@ -8475,7 +8326,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8487,16 +8337,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={208}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -8506,7 +8355,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={39.992017561364996}
         width={10}
         x={244}
@@ -8515,7 +8363,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={244}
+        x={249}
         y={67.382982438635}
       >
         <canvas
@@ -8527,7 +8375,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8537,7 +8384,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={48.15805228497305}
         width={10}
         x={254}
@@ -8546,7 +8392,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={254}
+        x={259}
         y={59.21694771502695}
       >
         <canvas
@@ -8558,7 +8404,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8568,7 +8413,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={10.37717022550389}
         width={10}
         x={264}
@@ -8577,7 +8421,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={264}
+        x={269}
         y={96.99782977449611}
       >
         <canvas
@@ -8589,7 +8433,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8599,7 +8442,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={18.359608860506885}
         width={10}
         x={274}
@@ -8608,7 +8450,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={274}
+        x={279}
         y={89.01539113949312}
       >
         <canvas
@@ -8620,7 +8462,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8630,7 +8471,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={26.342047495509878}
         width={10}
         x={284}
@@ -8639,7 +8479,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={284}
+        x={289}
         y={81.03295250449013}
       >
         <canvas
@@ -8651,7 +8491,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8661,7 +8500,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={57.8726801037717}
         width={10}
         x={294}
@@ -8670,7 +8508,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={294}
+        x={299}
         y={49.5023198962283}
       >
         <canvas
@@ -8682,7 +8520,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8694,16 +8531,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={274}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -8713,7 +8549,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={71.84194771502695}
         width={10}
         x={310}
@@ -8722,7 +8557,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={310}
+        x={315}
         y={35.53305228497305}
       >
         <canvas
@@ -8734,7 +8569,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8744,7 +8578,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={320}
@@ -8753,7 +8586,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={320}
+        x={325}
         y={27.375}
       >
         <canvas
@@ -8765,7 +8598,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8775,7 +8607,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={330}
@@ -8784,7 +8615,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={330}
+        x={335}
         y={96.19958591099581}
       >
         <canvas
@@ -8796,7 +8627,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8806,7 +8636,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={8.15805228497306}
         width={10}
         x={340}
@@ -8815,7 +8644,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={340}
+        x={345}
         y={99.21694771502695}
       >
         <canvas
@@ -8827,7 +8656,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8837,7 +8665,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={350}
@@ -8846,7 +8673,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={350}
+        x={355}
         y={96.19958591099581}
       >
         <canvas
@@ -8858,7 +8685,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8868,7 +8694,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={24.945120734384354}
         width={10}
         x={360}
@@ -8877,7 +8702,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={360}
+        x={365}
         y={82.42987926561565}
       >
         <canvas
@@ -8889,7 +8714,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8901,16 +8725,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={340}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -8920,7 +8743,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={52.684094991019755}
         width={10}
         x={376}
@@ -8929,7 +8751,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={376}
+        x={381}
         y={54.690905008980245}
       >
         <canvas
@@ -8941,7 +8763,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8951,7 +8772,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={23.14907204150868}
         width={10}
         x={386}
@@ -8960,7 +8780,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={386}
+        x={391}
         y={84.22592795849133}
       >
         <canvas
@@ -8972,7 +8792,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -8982,7 +8801,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={15.166633406505687}
         width={10}
         x={396}
@@ -8991,7 +8809,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={396}
+        x={401}
         y={92.20836659349432}
       >
         <canvas
@@ -9003,7 +8821,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9013,7 +8830,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={39.91219317501497}
         width={10}
         x={406}
@@ -9022,7 +8838,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={406}
+        x={411}
         y={67.46280682498502}
       >
         <canvas
@@ -9034,7 +8850,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9044,7 +8859,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={76.19237677110357}
         width={10}
         x={416}
@@ -9053,7 +8867,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={416}
+        x={421}
         y={31.182623228896432}
       >
         <canvas
@@ -9065,7 +8879,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9075,7 +8888,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={3.9912193175014967}
         width={10}
         x={426}
@@ -9084,7 +8896,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={426}
+        x={431}
         y={103.3837806824985}
       >
         <canvas
@@ -9096,7 +8908,6 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9108,16 +8919,15 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={406}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -9133,21 +8943,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           0 
@@ -9156,21 +8963,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={98.81818181818181}
+        x={23}
+        y={101.81818181818181}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           10 
@@ -9179,21 +8983,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={90.63636363636364}
+        x={23}
+        y={93.63636363636364}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -9202,21 +9003,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={82.45454545454545}
+        x={23}
+        y={85.45454545454545}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -9225,21 +9023,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={74.27272727272728}
+        x={23}
+        y={77.27272727272728}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -9248,21 +9043,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={66.0909090909091}
+        x={23}
+        y={69.0909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -9271,21 +9063,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={57.90909090909091}
+        x={23}
+        y={60.90909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -9294,21 +9083,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={49.72727272727273}
+        x={23}
+        y={52.72727272727273}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           70 
@@ -9317,21 +9103,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={41.54545454545455}
+        x={23}
+        y={44.54545454545455}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -9340,21 +9123,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={33.36363636363636}
+        x={23}
+        y={36.36363636363636}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           90 
@@ -9363,21 +9143,18 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={25.181818181818187}
+        x={23}
+        y={28.181818181818187}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           100 
@@ -9599,7 +9376,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={39.992017561364996}
         width={10}
         x={46}
@@ -9608,7 +9384,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={67.382982438635}
       >
         <canvas
@@ -9620,7 +9396,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9630,7 +9405,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={48.15805228497305}
         width={10}
         x={56}
@@ -9639,7 +9413,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={59.21694771502695}
       >
         <canvas
@@ -9651,7 +9425,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9661,7 +9434,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={10.37717022550389}
         width={10}
         x={66}
@@ -9670,7 +9442,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={96.99782977449611}
       >
         <canvas
@@ -9682,7 +9454,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9694,16 +9465,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={61}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -9713,7 +9483,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={71.84194771502695}
         width={10}
         x={112}
@@ -9722,7 +9491,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={35.53305228497305}
       >
         <canvas
@@ -9734,7 +9503,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9744,7 +9512,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={122}
@@ -9753,7 +9520,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={27.375}
       >
         <canvas
@@ -9765,7 +9532,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9775,7 +9541,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={132}
@@ -9784,7 +9549,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={132}
+        x={137}
         y={96.19958591099581}
       >
         <canvas
@@ -9796,7 +9561,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9808,16 +9572,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={127}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -9827,7 +9590,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={52.684094991019755}
         width={10}
         x={178}
@@ -9836,7 +9598,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={178}
+        x={183}
         y={54.690905008980245}
       >
         <canvas
@@ -9848,7 +9610,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9858,7 +9619,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={23.14907204150868}
         width={10}
         x={188}
@@ -9867,7 +9627,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={188}
+        x={193}
         y={84.22592795849133}
       >
         <canvas
@@ -9879,7 +9639,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9889,7 +9648,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={15.166633406505687}
         width={10}
         x={198}
@@ -9898,7 +9656,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={198}
+        x={203}
         y={92.20836659349432}
       >
         <canvas
@@ -9910,7 +9668,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9922,16 +9679,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={193}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -9941,7 +9697,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={24.02714029135901}
         width={10}
         x={244}
@@ -9950,7 +9705,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={244}
+        x={249}
         y={83.34785970864098}
       >
         <canvas
@@ -9962,7 +9717,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -9972,7 +9726,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={6.649371382957494}
         width={10}
         x={254}
@@ -9981,7 +9734,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={254}
+        x={259}
         y={100.7256286170425}
       >
         <canvas
@@ -9993,7 +9746,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10003,7 +9755,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={79.82438635002994}
         width={10}
         x={264}
@@ -10012,7 +9763,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={264}
+        x={269}
         y={27.55061364997006}
       >
         <canvas
@@ -10024,7 +9775,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10036,16 +9786,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={259}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -10055,7 +9804,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={31.929754540011974}
         width={10}
         x={310}
@@ -10064,7 +9812,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={310}
+        x={315}
         y={75.44524545998803}
       >
         <canvas
@@ -10076,7 +9824,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10086,7 +9833,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={72.01756136499701}
         width={10}
         x={320}
@@ -10095,7 +9841,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={320}
+        x={325}
         y={35.35743863500299}
       >
         <canvas
@@ -10107,7 +9853,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10117,7 +9862,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={64.65775294352424}
         width={10}
         x={330}
@@ -10126,7 +9870,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={330}
+        x={335}
         y={42.717247056475756}
       >
         <canvas
@@ -10138,7 +9882,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10150,16 +9893,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={325}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -10169,7 +9911,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={79.92815805228497}
         width={10}
         x={376}
@@ -10178,7 +9919,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={376}
+        x={381}
         y={27.44684194771503}
       >
         <canvas
@@ -10190,7 +9931,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10200,7 +9940,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={58.27180203552185}
         width={10}
         x={386}
@@ -10209,7 +9948,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={386}
+        x={391}
         y={49.10319796447815}
       >
         <canvas
@@ -10221,7 +9960,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10231,7 +9969,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={27.140291359010178}
         width={10}
         x={396}
@@ -10240,7 +9977,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={396}
+        x={401}
         y={80.23470864098982}
       >
         <canvas
@@ -10252,7 +9989,6 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10264,16 +10000,15 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={391}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -10289,21 +10024,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           0 
@@ -10312,21 +10044,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={98.81818181818181}
+        x={23}
+        y={101.81818181818181}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           10 
@@ -10335,21 +10064,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={90.63636363636364}
+        x={23}
+        y={93.63636363636364}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -10358,21 +10084,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={82.45454545454545}
+        x={23}
+        y={85.45454545454545}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -10381,21 +10104,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={74.27272727272728}
+        x={23}
+        y={77.27272727272728}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -10404,21 +10124,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={66.0909090909091}
+        x={23}
+        y={69.0909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -10427,21 +10144,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={57.90909090909091}
+        x={23}
+        y={60.90909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -10450,21 +10164,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={49.72727272727273}
+        x={23}
+        y={52.72727272727273}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           70 
@@ -10473,21 +10184,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={41.54545454545455}
+        x={23}
+        y={44.54545454545455}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -10496,21 +10204,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={33.36363636363636}
+        x={23}
+        y={36.36363636363636}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           90 
@@ -10519,21 +10224,18 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={25.181818181818187}
+        x={23}
+        y={28.181818181818187}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           100 
@@ -10659,7 +10361,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={39.992017561364996}
         width={10}
         x={46}
@@ -10668,7 +10369,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={67.382982438635}
       >
         <canvas
@@ -10680,7 +10381,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10690,7 +10390,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={48.15805228497305}
         width={10}
         x={56}
@@ -10699,7 +10398,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={59.21694771502695}
       >
         <canvas
@@ -10711,7 +10410,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10721,7 +10419,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={10.37717022550389}
         width={10}
         x={66}
@@ -10730,7 +10427,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={96.99782977449611}
       >
         <canvas
@@ -10742,7 +10439,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10752,7 +10448,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={18.359608860506885}
         width={10}
         x={76}
@@ -10761,7 +10456,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={76}
+        x={81}
         y={89.01539113949312}
       >
         <canvas
@@ -10773,7 +10468,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10783,7 +10477,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={26.342047495509878}
         width={10}
         x={86}
@@ -10792,7 +10485,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={86}
+        x={91}
         y={81.03295250449013}
       >
         <canvas
@@ -10804,7 +10497,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10814,7 +10506,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={40.710437038515266}
         width={10}
         x={96}
@@ -10823,7 +10514,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={96}
+        x={101}
         y={66.66456296148473}
       >
         <canvas
@@ -10835,7 +10526,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10847,16 +10537,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={76}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -10866,7 +10555,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={71.84194771502695}
         width={10}
         x={112}
@@ -10875,7 +10563,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={35.53305228497305}
       >
         <canvas
@@ -10887,7 +10575,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10897,7 +10584,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={122}
@@ -10906,7 +10592,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={27.375}
       >
         <canvas
@@ -10918,7 +10604,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10928,7 +10613,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={132}
@@ -10937,7 +10621,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={132}
+        x={137}
         y={96.19958591099581}
       >
         <canvas
@@ -10949,7 +10633,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10959,7 +10642,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={8.15805228497306}
         width={10}
         x={142}
@@ -10968,7 +10650,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={142}
+        x={147}
         y={99.21694771502695}
       >
         <canvas
@@ -10980,7 +10662,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -10990,7 +10671,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={11.17541408900419}
         width={10}
         x={152}
@@ -10999,7 +10679,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={152}
+        x={157}
         y={96.19958591099581}
       >
         <canvas
@@ -11011,7 +10691,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11021,7 +10700,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={24.945120734384354}
         width={10}
         x={162}
@@ -11030,7 +10708,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={162}
+        x={167}
         y={82.42987926561565}
       >
         <canvas
@@ -11042,7 +10720,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11054,16 +10731,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
         height="100%"
         width="100%"
         x={142}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -11079,21 +10755,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           0 
@@ -11102,21 +10775,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={98.81818181818181}
+        x={23}
+        y={101.81818181818181}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           10 
@@ -11125,21 +10795,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={90.63636363636364}
+        x={23}
+        y={93.63636363636364}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -11148,21 +10815,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={82.45454545454545}
+        x={23}
+        y={85.45454545454545}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -11171,21 +10835,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={74.27272727272728}
+        x={23}
+        y={77.27272727272728}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -11194,21 +10855,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={66.0909090909091}
+        x={23}
+        y={69.0909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -11217,21 +10875,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={57.90909090909091}
+        x={23}
+        y={60.90909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -11240,21 +10895,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={49.72727272727273}
+        x={23}
+        y={52.72727272727273}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           70 
@@ -11263,21 +10915,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={41.54545454545455}
+        x={23}
+        y={44.54545454545455}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -11286,21 +10935,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={33.36363636363636}
+        x={23}
+        y={36.36363636363636}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           90 
@@ -11309,21 +10955,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={25.181818181818187}
+        x={23}
+        y={28.181818181818187}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           100 
@@ -11545,7 +11188,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={30.1}
         width={10}
         x={46}
@@ -11554,7 +11196,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={77.275}
       >
         <canvas
@@ -11566,7 +11208,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11576,7 +11217,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={40.33}
         width={10}
         x={56}
@@ -11585,7 +11225,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={67.045}
       >
         <canvas
@@ -11597,7 +11237,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11607,7 +11246,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={-7}
         width={10}
         x={66}
@@ -11616,7 +11254,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={107.375}
       >
         <canvas
@@ -11628,17 +11266,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
         >
-          &lt; 20 
+          13 
         </p>
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={3}
         width={10}
         x={76}
@@ -11647,7 +11283,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={76}
+        x={81}
         y={104.375}
       >
         <canvas
@@ -11659,7 +11295,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11669,7 +11304,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={13}
         width={10}
         x={86}
@@ -11678,7 +11312,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={86}
+        x={91}
         y={94.375}
       >
         <canvas
@@ -11690,7 +11324,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11700,7 +11333,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={31}
         width={10}
         x={96}
@@ -11709,7 +11341,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={96}
+        x={101}
         y={76.375}
       >
         <canvas
@@ -11721,7 +11353,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11733,16 +11364,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
         height="100%"
         width="100%"
         x={76}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -11752,7 +11382,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={70}
         width={10}
         x={112}
@@ -11761,7 +11390,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={37.375}
       >
         <canvas
@@ -11773,7 +11402,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11783,7 +11411,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80.22}
         width={10}
         x={122}
@@ -11792,7 +11419,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={27.155}
       >
         <canvas
@@ -11804,17 +11431,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
         >
-          &gt; 100 
+          100.22 
         </p>
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={-6}
         width={10}
         x={132}
@@ -11823,7 +11448,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={132}
+        x={137}
         y={107.375}
       >
         <canvas
@@ -11835,17 +11460,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
         >
-          &lt; 20 
+          14 
         </p>
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={-9.78}
         width={10}
         x={142}
@@ -11854,7 +11477,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={142}
+        x={147}
         y={107.375}
       >
         <canvas
@@ -11866,17 +11489,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
         >
-          &lt; 20 
+          10.22 
         </p>
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={-6}
         width={10}
         x={152}
@@ -11885,7 +11506,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={152}
+        x={157}
         y={107.375}
       >
         <canvas
@@ -11897,17 +11518,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
         >
-          &lt; 20 
+          14 
         </p>
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={11.25}
         width={10}
         x={162}
@@ -11916,7 +11535,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={162}
+        x={167}
         y={96.125}
       >
         <canvas
@@ -11928,7 +11547,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -11940,16 +11558,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
         height="100%"
         width="100%"
         x={142}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -11965,21 +11582,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -11988,21 +11602,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={101.70588235294117}
+        x={23}
+        y={104.70588235294117}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           25 
@@ -12011,21 +11622,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={96.41176470588235}
+        x={23}
+        y={99.41176470588235}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -12034,21 +11642,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={91.11764705882354}
+        x={23}
+        y={94.11764705882354}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           35 
@@ -12057,21 +11662,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={85.82352941176471}
+        x={23}
+        y={88.82352941176471}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -12080,21 +11682,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={80.52941176470588}
+        x={23}
+        y={83.52941176470588}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           45 
@@ -12103,21 +11702,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={75.23529411764706}
+        x={23}
+        y={78.23529411764706}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -12126,21 +11722,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={69.94117647058823}
+        x={23}
+        y={72.94117647058823}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           55 
@@ -12149,21 +11742,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={64.64705882352942}
+        x={23}
+        y={67.64705882352942}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -12172,21 +11762,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={59.35294117647059}
+        x={23}
+        y={62.35294117647059}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           65 
@@ -12195,21 +11782,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={54.05882352941177}
+        x={23}
+        y={57.05882352941177}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           70 
@@ -12218,21 +11802,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={48.76470588235294}
+        x={23}
+        y={51.76470588235294}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           75 
@@ -12241,21 +11822,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={43.470588235294116}
+        x={23}
+        y={46.470588235294116}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -12264,21 +11842,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={38.17647058823529}
+        x={23}
+        y={41.17647058823529}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           85 
@@ -12287,21 +11862,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={32.882352941176464}
+        x={23}
+        y={35.882352941176464}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           90 
@@ -12310,21 +11882,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={27.588235294117652}
+        x={23}
+        y={30.588235294117652}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           95 
@@ -12333,21 +11902,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={22.294117647058826}
+        x={23}
+        y={25.294117647058826}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           100 
@@ -12569,7 +12135,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={28.282352941176473}
         width={10}
         x={46}
@@ -12578,7 +12143,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={79.09264705882353}
       >
         <canvas
@@ -12590,7 +12155,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12600,7 +12164,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={33.09647058823529}
         width={10}
         x={56}
@@ -12609,7 +12172,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={74.27852941176471}
       >
         <canvas
@@ -12621,7 +12184,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12631,7 +12193,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={10.823529411764707}
         width={10}
         x={66}
@@ -12640,7 +12201,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={66}
+        x={71}
         y={96.5514705882353}
       >
         <canvas
@@ -12652,7 +12213,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12662,7 +12222,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={15.529411764705884}
         width={10}
         x={76}
@@ -12671,7 +12230,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={76}
+        x={81}
         y={91.84558823529412}
       >
         <canvas
@@ -12683,7 +12242,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12693,7 +12251,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={20.235294117647058}
         width={10}
         x={86}
@@ -12702,7 +12259,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={86}
+        x={91}
         y={87.13970588235294}
       >
         <canvas
@@ -12714,7 +12271,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12724,7 +12280,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={28.705882352941178}
         width={10}
         x={96}
@@ -12733,7 +12288,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={96}
+        x={101}
         y={78.66911764705883}
       >
         <canvas
@@ -12745,7 +12300,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12757,16 +12311,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
         height="100%"
         width="100%"
         x={76}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -12776,7 +12329,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={47.05882352941176}
         width={10}
         x={112}
@@ -12785,7 +12337,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={60.31617647058824}
       >
         <canvas
@@ -12797,7 +12349,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12807,7 +12358,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={51.868235294117646}
         width={10}
         x={122}
@@ -12816,7 +12366,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={55.506764705882354}
       >
         <canvas
@@ -12828,7 +12378,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12838,7 +12387,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#cbcbcb"
-        fontSize={3}
         height={11.294117647058822}
         width={10}
         x={132}
@@ -12847,7 +12395,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={132}
+        x={137}
         y={96.08088235294117}
       >
         <canvas
@@ -12859,7 +12407,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#cbcbcb"
           dominantBaseline="baseline"
           fill="#cbcbcb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12869,7 +12416,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#e57878"
-        fontSize={3}
         height={9.51529411764706}
         width={10}
         x={142}
@@ -12878,7 +12424,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={142}
+        x={147}
         y={97.85970588235294}
       >
         <canvas
@@ -12890,7 +12436,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#e57878"
           dominantBaseline="baseline"
           fill="#e57878"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12900,7 +12445,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#8adb96"
-        fontSize={3}
         height={11.294117647058822}
         width={10}
         x={152}
@@ -12909,7 +12453,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={152}
+        x={157}
         y={96.08088235294117}
       >
         <canvas
@@ -12921,7 +12465,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#8adb96"
           dominantBaseline="baseline"
           fill="#8adb96"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12931,7 +12474,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       </foreignObject>
       <rect
         fill="#6895eb"
-        fontSize={3}
         height={19.41176470588235}
         width={10}
         x={162}
@@ -12940,7 +12482,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={162}
+        x={167}
         y={87.96323529411765}
       >
         <canvas
@@ -12952,7 +12494,6 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           color="#6895eb"
           dominantBaseline="baseline"
           fill="#6895eb"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -12964,16 +12505,15 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
         height="100%"
         width="100%"
         x={142}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -12989,21 +12529,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           -10 
@@ -13012,21 +12549,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={98}
+        x={23}
+        y={101}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           8 
@@ -13035,21 +12569,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={89}
+        x={23}
+        y={92}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           26 
@@ -13058,21 +12589,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={80}
+        x={23}
+        y={83}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           44 
@@ -13081,21 +12609,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={71}
+        x={23}
+        y={74}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           62 
@@ -13104,21 +12629,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={62}
+        x={23}
+        y={65}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -13127,21 +12649,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={53}
+        x={23}
+        y={56}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           98 
@@ -13150,21 +12669,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={44}
+        x={23}
+        y={47}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           116 
@@ -13173,21 +12689,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={35}
+        x={23}
+        y={38}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           134 
@@ -13196,21 +12709,18 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={26}
+        x={23}
+        y={29}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           152 
@@ -13432,7 +12942,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
     >
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={39.992017561364996}
         width={10}
         x={46}
@@ -13441,7 +12950,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={46}
+        x={51}
         y={67.382982438635}
       >
         <canvas
@@ -13453,7 +12962,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -13463,7 +12971,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={48.15805228497305}
         width={10}
         x={56}
@@ -13472,7 +12979,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={56}
+        x={61}
         y={59.21694771502695}
       >
         <canvas
@@ -13484,7 +12991,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -13496,16 +13002,15 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={56}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -13515,7 +13020,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#71a2ff"
-        fontSize={3}
         height={71.84194771502695}
         width={10}
         x={112}
@@ -13524,7 +13028,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={112}
+        x={117}
         y={35.53305228497305}
       >
         <canvas
@@ -13536,7 +13040,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
           color="#71a2ff"
           dominantBaseline="baseline"
           fill="#71a2ff"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -13546,7 +13049,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       </foreignObject>
       <rect
         fill="#c0d4e2"
-        fontSize={3}
         height={80}
         width={10}
         x={122}
@@ -13555,7 +13057,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={122}
+        x={127}
         y={27.375}
       >
         <canvas
@@ -13567,7 +13069,6 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
           color="#c0d4e2"
           dominantBaseline="baseline"
           fill="#c0d4e2"
-          fontSize={3}
           height={0}
           textAnchor="middle"
           width={0}
@@ -13579,16 +13080,15 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
         height="100%"
         width="100%"
         x={122}
-        y={117.875}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 kmliEl"
-          dominantBaseline="baseline"
-          fontSize={4.5}
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 chIzfI"
+          dominantBaseline="hanging"
           height={0}
           textAnchor="middle"
           width={0}
@@ -13604,21 +13104,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={107}
+        x={23}
+        y={110}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           0 
@@ -13627,21 +13124,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={98.81818181818181}
+        x={23}
+        y={101.81818181818181}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           10 
@@ -13650,21 +13144,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={90.63636363636364}
+        x={23}
+        y={93.63636363636364}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           20 
@@ -13673,21 +13164,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={82.45454545454545}
+        x={23}
+        y={85.45454545454545}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           30 
@@ -13696,21 +13184,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={74.27272727272728}
+        x={23}
+        y={77.27272727272728}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           40 
@@ -13719,21 +13204,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={66.0909090909091}
+        x={23}
+        y={69.0909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           50 
@@ -13742,21 +13224,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={57.90909090909091}
+        x={23}
+        y={60.90909090909091}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           60 
@@ -13765,21 +13244,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={49.72727272727273}
+        x={23}
+        y={52.72727272727273}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           70 
@@ -13788,21 +13264,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={41.54545454545455}
+        x={23}
+        y={44.54545454545455}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           80 
@@ -13811,21 +13284,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={33.36363636363636}
+        x={23}
+        y={36.36363636363636}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           90 
@@ -13834,21 +13304,18 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       <foreignObject
         height="100%"
         width="100%"
-        x={24}
-        y={25.181818181818187}
+        x={23}
+        y={28.181818181818187}
       >
         <canvas
           className="SvgTypography__Offscreen-jh05vp-0 jqpnJj"
           fontSize="1rem"
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 gmOuwd"
-          color="#000000"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 djZdkP"
           dominantBaseline="baseline"
-          fill="#000000"
-          fontSize={3}
           height={0}
-          textAnchor="middle"
+          textAnchor="end"
           width={0}
         >
           100 
