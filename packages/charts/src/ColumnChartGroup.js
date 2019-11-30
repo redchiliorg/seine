@@ -48,7 +48,6 @@ export default function ColumnChartGroup({
         ...acc,
         <rect
           fill={fill}
-          fontSize={fontSize}
           height={rectHeight - dy}
           key={['bar', index]}
           width={size}
@@ -57,27 +56,22 @@ export default function ColumnChartGroup({
         />,
         <SvgTypography
           fill={fill}
-          fontSize={fontSize}
           key={['value', index]}
-          textAnchor="middle"
-          x={x + size * index}
+          textAnchor={'middle'}
+          x={x + size * index + size / 2}
           y={Math.min(dy + y - rectHeight, y) - (fontSize * lineHeight) / 2}
         >
-          {value < minValue
-            ? `< ${minValue}`
-            : value > maxValue
-            ? `> ${maxValue}`
-            : value}
+          {value}
           {units}
         </SvgTypography>,
       ];
     }, []),
     <SvgTypography
       key={'text'}
-      fontSize={1.5 * fontSize}
       textAnchor={'middle'}
+      dominantBaseline={'hanging'}
       x={x + (size * elements.length) / 2}
-      y={y + 1.5 * fontSize * lineHeight}
+      y={y}
     >
       {group}
     </SvgTypography>,
