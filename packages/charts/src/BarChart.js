@@ -141,11 +141,10 @@ export default function BarChart({
                 />,
                 <SvgTypography
                   key={['title', index]}
-                  dominantBaseline={'middle'}
+                  dominantBaseline={'hanging'}
                   textAnchor={'middle'}
                   x={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                  y={(elements.length * barHeight) / 2 + barHeight / 4}
-                  variant={'h5'}
+                  y={(elements.length * barHeight) / 2 + barHeight / 16}
                 >
                   {Math.min((index + 1) * dx, maxValue)}
                   {units}

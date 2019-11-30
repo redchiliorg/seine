@@ -65,7 +65,7 @@ const StyledTypography = styled(Typography).attrs(
     display: flex;
     ${textAnchor === 'end' &&
       css`
-        justify-content: start;
+        justify-content: flex-start;
       `}
     ${textAnchor === 'middle' &&
       css`
@@ -73,11 +73,11 @@ const StyledTypography = styled(Typography).attrs(
       `}
     ${textAnchor === 'start' &&
       css`
-        justify-content: end;
+        justify-content: flex-end;
       `}
     ${dominantBaseline === 'baseline' &&
       css`
-        align-items: start;
+        align-items: flex-start;
       `}
     ${dominantBaseline === 'middle' &&
       css`
@@ -85,7 +85,7 @@ const StyledTypography = styled(Typography).attrs(
       `}
     ${dominantBaseline === 'hanging' &&
       css`
-        align-items: end;
+        align-items: flex-end;
       `}
     
     transform: scale(${xScale}, ${yScale});

@@ -24,7 +24,7 @@ export default function BarChartElementTitle({ children, fill, x, y }: Props) {
       dominantBaseline={'middle'}
       fill={fill}
       textAnchor={'end'}
-      variant={'h6'}
+      variant={'body2'}
       x={x}
       y={y}
     >

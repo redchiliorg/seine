@@ -30,7 +30,7 @@ export default function BarChartElementValue({
     <SvgTypography
       dominantBaseline={'middle'}
       fill={fill}
-      variant={'h6'}
+      variant={'body2'}
       x={x}
       y={y}
     >

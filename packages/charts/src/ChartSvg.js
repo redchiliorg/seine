@@ -12,6 +12,7 @@ export default styled.svg.attrs(({ verticalAlignment: align }) => ({
     `};
   height: 100%;
   width: 100%;
-
-  overflow: visible;
+  && {
+    overflow: visible;
+  }
 `;
