@@ -190,8 +190,6 @@ export default function LineChart({
               .filter((element) => element.id === id)
               .map(({ index, value }) => (
                 <LineChartValue
-                  fontSize={fontSize}
-                  height={2 * fontSize * lineHeight}
                   index={index}
                   textAnchor={
                     groupIndex === groups.length - 1
@@ -201,12 +199,10 @@ export default function LineChart({
                       : 'start'
                   }
                   key={['value', titleIndex, groupIndex]}
-                  lineHeight={lineHeight}
                   maxValue={maxValue}
                   minValue={minValue}
                   units={units}
                   value={value}
-                  width={3 * fontSize}
                   x={x + (groupIndex * graphWidth) / (groups.length - 1)}
                   y={
                     y +
@@ -224,9 +220,7 @@ export default function LineChart({
 
           <ChartLegendItem
             fill={palette[titleIndex % palette.length]}
-            fontSize={fontSize}
             key={id}
-            lineHeight={lineHeight}
             size={10}
             title={title}
             width={legendWidth}

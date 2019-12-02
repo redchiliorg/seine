@@ -6,10 +6,8 @@ export type Props = {
   children: string,
   fill: string,
   height: number,
-  lineHeight: number,
   index: number,
   units: string,
-  width: number,
   x: number,
   y: number,
 };

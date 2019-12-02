@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
 import {
   ChartLegendItem,
   ChartSvg,
@@ -7,8 +8,6 @@ import {
   LineChartGroup,
   LineChartValue,
 } from '@seine/charts';
-import type { LineChartGroupProps, LineChartValueProps } from '@seine/charts';
-import { ForeignInput } from '@seine/ui';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
@@ -20,6 +19,7 @@ import { ClickAwayListener } from '@material-ui/core';
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
 import ChartTitleInput from './ChartTitleInput';
+import ChartInput from './ChartInput';
 
 /**
  * @description Editor of line chart
@@ -52,36 +52,22 @@ export default function LineChartEditor({
               if (React.isValidElement(child)) {
                 switch (child.type) {
                   case ChartLegendItem:
-                    return [
-                      child,
+                    return (
                       <ChartLegendItemInput
                         {...child.props}
                         key={[child.key, 'input']}
                         id={child.key}
                         dispatch={dispatchElements}
-                      />,
-                    ];
+                      />
+                    );
 
                   case LineChartGroup: {
-                    const {
-                      fontSize,
-                      fontWeight,
-                      group,
-                      height,
-                      lineHeight,
-                      width,
-                      x,
-                      y,
-                    }: LineChartGroupProps = child.props;
-                    return [
-                      child,
-                      <ForeignInput
-                        align={'center'}
-                        fontSize={0.9 * fontSize}
-                        fontWeight={fontWeight}
-                        height={height}
-                        key={[child.key, 'input']}
-                        lineHeight={lineHeight}
+                    const { group, x, y }: LineChartGroupProps = child.props;
+                    return (
+                      <ChartInput
+                        dominantBaseline={'hanging'}
+                        fontWeight={'bold'}
+                        key={child.key}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
@@ -89,35 +75,27 @@ export default function LineChartEditor({
                             group,
                           })
                         }
+                        textAnchor={'middle'}
                         value={group}
-                        width={width}
-                        x={x - width / 2}
-                        y={y - fontSize * lineHeight}
-                      />,
-                    ];
+                        variant={'h5'}
+                        x={x}
+                        y={y}
+                      />
+                    );
                   }
 
                   case LineChartValue: {
                     const {
-                      fontSize,
-                      fontWeight,
-                      height,
                       index,
-                      lineHeight,
                       maxValue,
                       minValue,
                       value,
-                      width,
                       x,
                       y,
                     }: LineChartValueProps = child.props;
                     return (
-                      <ForeignInput
-                        fontSize={fontSize}
-                        fontWeight={fontWeight}
-                        height={height}
-                        key={[child.key, 'input']}
-                        lineHeight={lineHeight}
+                      <ChartInput
+                        key={child.key}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
@@ -130,14 +108,12 @@ export default function LineChartEditor({
                             index,
                           })
                         }
-                        transparent
                         value={value}
                         type={'number'}
                         max={maxValue}
                         min={minValue}
-                        width={width}
                         x={x}
-                        y={y - fontSize * lineHeight}
+                        y={y}
                       />
                     );
                   }

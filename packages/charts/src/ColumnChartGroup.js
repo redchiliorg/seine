@@ -26,10 +26,8 @@ export type Props = {
  */
 export default function ColumnChartGroup({
   elements,
-  fontSize,
   group,
   height,
-  lineHeight,
   minValue,
   maxValue,
   palette,
@@ -59,7 +57,7 @@ export default function ColumnChartGroup({
           key={['value', index]}
           textAnchor={'middle'}
           x={x + size * index + size / 2}
-          y={Math.min(dy + y - rectHeight, y) - (fontSize * lineHeight) / 2}
+          y={Math.min(dy + y - rectHeight, y)}
         >
           {value}
           {units}

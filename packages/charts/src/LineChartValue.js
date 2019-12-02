@@ -3,16 +3,12 @@ import * as React from 'react';
 import { SvgTypography } from '@seine/styles';
 
 export type Props = {
-  fontSize: number,
-  height: number,
   index: number,
   textAnchor: 'start' | 'middle' | 'end',
-  lineHeight: number,
   maxValue: number,
   minValue: number,
   units: string,
   value: number,
-  width: number,
   x: number,
   y: number,
 };

@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
-import type { ChartTitleProps, ColumnChartGroupProps } from '@seine/charts';
+import type { ColumnChartGroupProps } from '@seine/charts';
 import {
   ChartLegendItem,
   ChartSvg,
@@ -19,6 +18,7 @@ import { ClickAwayListener } from '@material-ui/core';
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
 import ChartTitleInput from './ChartTitleInput';
+import ChartInput from './ChartInput';
 
 /**
  * @description Editor of column chart
@@ -50,30 +50,16 @@ export default function ColumnChartEditor({
             {React.Children.map(parent.props.children, (child: ?React.Node) => {
               if (React.isValidElement(child)) {
                 switch (child.type) {
-                  case ChartTitle: {
-                    const { children, ...props }: ChartTitleProps = child.props;
+                  case ChartLegendItem: {
                     return (
-                      <ChartTitleInput
-                        key={child.key}
-                        dispatch={dispatch}
-                        textAlignment={parent.props.textAlignment}
-                        {...props}
-                      >
-                        {children}
-                      </ChartTitleInput>
-                    );
-                  }
-
-                  case ChartLegendItem:
-                    return [
-                      child,
                       <ChartLegendItemInput
                         {...child.props}
                         key={[child.key, 'input']}
                         id={child.key}
                         dispatch={dispatchElements}
-                      />,
-                    ];
+                      />
+                    );
+                  }
 
                   case ColumnChartGroup:
                     const {
@@ -81,7 +67,6 @@ export default function ColumnChartEditor({
                       fontSize,
                       group,
                       height,
-                      lineHeight,
                       maxValue,
                       minValue,
                       palette,
@@ -89,16 +74,11 @@ export default function ColumnChartEditor({
                       x,
                       y,
                     }: ColumnChartGroupProps = child.props;
-                    const groupFontSize = fontSize * 1.3;
 
                     return [
-                      child,
-                      <ForeignInput
-                        align={'center'}
-                        fontSize={groupFontSize}
-                        height={size}
+                      <ChartInput
+                        dominantBaseline={'hanging'}
                         key={[child.key, 'input']}
-                        lineHeight={lineHeight}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
@@ -106,33 +86,36 @@ export default function ColumnChartEditor({
                             group,
                           })
                         }
+                        textAnchor={'middle'}
                         value={group}
-                        width={size * elements.length}
-                        x={x}
-                        y={y + (fontSize * lineHeight) / 4}
+                        x={x + (size * elements.length) / 2}
+                        y={y}
                       />,
 
-                      ...elements.map(({ index, value }, order) => (
-                        <ForeignInput
-                          color={palette[order % palette.length]}
-                          fontSize={0.9 * fontSize}
-                          height={size}
-                          key={[child.key, 'input', order]}
-                          lineHeight={lineHeight}
-                          onChange={({ currentTarget }) =>
-                            dispatchElements({
-                              type: UPDATE_BLOCK_ELEMENT,
-                              body: { value: +currentTarget.value },
-                              index,
-                            })
-                          }
-                          type={'number'}
-                          value={+value}
-                          width={size}
-                          x={x + size * order}
-                          y={y + (fontSize * lineHeight) / 4 + size}
-                        />
-                      )),
+                      ...elements.map(({ value, index }, order) => {
+                        const rectHeight =
+                          (height * value) / (maxValue - minValue);
+                        const dy = (height * minValue) / (maxValue - minValue);
+                        const fill = palette[order % palette.length];
+                        return (
+                          <ChartInput
+                            fill={fill}
+                            key={[child.key, 'input', index]}
+                            onChange={({ currentTarget }) =>
+                              dispatchElements({
+                                type: UPDATE_BLOCK_ELEMENT,
+                                body: { value: +currentTarget.value },
+                                index,
+                              })
+                            }
+                            textAnchor={'middle'}
+                            type={'number'}
+                            value={+value}
+                            x={x + size * order + size / 2}
+                            y={dy + y - rectHeight}
+                          />
+                        );
+                      }),
 
                       ...elements.map(({ value }, index) => {
                         const rectHeight =
@@ -141,7 +124,7 @@ export default function ColumnChartEditor({
                         const fill = palette[index % palette.length];
                         return (
                           <ClickAwayListener
-                            key={['bar', 'selection', index]}
+                            key={[child.key, 'selection', index]}
                             onClickAway={(event) =>
                               !(
                                 editor.selection === index ||

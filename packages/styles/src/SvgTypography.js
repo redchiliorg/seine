@@ -14,17 +14,25 @@ const Offscreen = styled.canvas.attrs(
         [variant]: { fontSize, lineHeight },
       },
     },
+    height = '100%',
+    width = '100%',
   }) => ({
     fontSize,
+    height,
     lineHeight,
+    width,
   })
 )`
   position: absolute;
-  height: 100%;
-  width: 100%;
+
   ${({ fontSize, lineHeight }) => css`
     font-size: ${fontSize};
     line-height: ${lineHeight};
+  `}
+
+  ${({ height = '100%', width = '100%' }) => css`
+    height: ${height};
+    width: ${width};
   `}
 `;
 
@@ -99,12 +107,22 @@ const StyledTypography = styled(Typography).attrs(
 const initialSvgTextSize = { width: 0, height: 0 };
 const initialSvgTextScale = { xScale: 1, yScale: 1 };
 
-type Props = {
-  children: string,
+export type Props = {
+  children?: string,
   variant?: ThemeStyle,
   x?: number,
   y?: number,
 } & SvgTypographyProps;
+
+const ForeignObject = styled('foreignObject')`
+  && {
+    pointer-events: none;
+  }
+  p,
+  input {
+    pointer-events: all;
+  }
+`;
 
 /**
  * @description Svg foreign text styled according to root html document.
@@ -119,8 +137,19 @@ export default function SvgTypography({
   width,
   ...typography
 }: Props) {
-  children = React.Children.toArray(children).join(' ');
-
+  const text = React.Children.toArray(children)
+    .map(
+      (child) =>
+        `${
+          typeof child === 'string' || typeof child === 'number'
+            ? child
+            : child && child.props && 'value' in child.props
+            ? child.props.value
+            : ''
+        }`
+    )
+    .filter((child) => child)
+    .join(' ');
   // use svg and html boxes of foreign object to determine text transform
   const foreignRef = React.useRef(null);
   const [scale, setScale] = React.useState(initialSvgTextScale);
@@ -163,7 +192,7 @@ export default function SvgTypography({
       );
       const context = offscreen.getContext('2d');
       context.font = `${fontWeight} ${fontSize} ${fontFamily}`;
-      const textMetrics = context.measureText(children);
+      const textMetrics = context.measureText(text);
       setSize({
         width: width ? Math.min(textMetrics.width, width) : textMetrics.width,
         height: parseFloat(lineHeight),
@@ -181,7 +210,7 @@ export default function SvgTypography({
   });
 
   return (
-    <foreignObject
+    <ForeignObject
       ref={useAutoCallback((foreign) => {
         foreignRef.current = foreign;
         updateTransform();
@@ -191,10 +220,10 @@ export default function SvgTypography({
       x={x - size.width * scale.xScale}
       y={y - size.height * scale.yScale}
     >
-      <Offscreen ref={offscreenRef} variant={variant} />
+      <Offscreen ref={offscreenRef} variant={variant} {...size} />
       <StyledTypography variant={variant} {...typography} {...size} {...scale}>
         {children}
       </StyledTypography>
-    </foreignObject>
+    </ForeignObject>
   );
 }

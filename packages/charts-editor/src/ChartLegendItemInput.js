@@ -1,8 +1,9 @@
 // @flow
 import * as React from 'react';
 import type { ColumnChartLegendProps } from '@seine/charts';
-import { ForeignInput } from '@seine/ui';
 import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
+
+import ChartInput from './ChartInput';
 
 /**
  * @description Input to edit a title of chart legend item
@@ -10,9 +11,8 @@ import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
  */
 export default function ChartLegendItemInput({
   dispatch,
-  fontSize,
+  fill,
   id,
-  lineHeight,
   size,
   title,
   width,
@@ -20,21 +20,21 @@ export default function ChartLegendItemInput({
   y,
 }: ColumnChartLegendProps & *) {
   return (
-    <ForeignInput
-      fontSize={fontSize}
-      height={size}
-      lineHeight={lineHeight}
-      onChange={({ currentTarget }) =>
-        dispatch({
-          type: UPDATE_BLOCK_ELEMENT_BY_ID,
-          body: { title: currentTarget.value },
-          id,
-        })
-      }
-      value={title}
-      width={width + 2 * fontSize}
-      x={x + size + fontSize * lineHeight}
-      y={y}
-    />
+    <g width={width}>
+      <rect fill={fill} height={size} width={size} x={x} y={y} />
+      <ChartInput
+        dominantBaseline={'middle'}
+        onChange={({ currentTarget }) =>
+          dispatch({
+            type: UPDATE_BLOCK_ELEMENT_BY_ID,
+            body: { title: currentTarget.value },
+            id,
+          })
+        }
+        value={title}
+        x={x + size}
+        y={y + size / 2}
+      />
+    </g>
   );
 }

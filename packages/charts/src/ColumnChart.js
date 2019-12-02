@@ -83,29 +83,6 @@ export default function ColumnChart({
           [groups.length, titles.length]
         )}
       >
-        {React.useMemo(
-          () =>
-            groups.map(([group, elements], index) => (
-              <ColumnChartGroup
-                key={index}
-                barGroupWidth={barGroupWidth}
-                elements={elements}
-                fontSize={1.5 * fontSize}
-                group={group}
-                height={80}
-                lineHeight={lineHeight}
-                minValue={minValue}
-                maxValue={maxValue}
-                palette={palette}
-                size={10}
-                units={units}
-                width={10}
-                x={xPadding * 2 + index * barGroupWidth}
-                y={110}
-              />
-            )),
-          [fontSize, groups, lineHeight, maxValue, minValue, palette, units]
-        )}
         <path
           d={`m${xPadding + 20} ${110}h${barGroupWidth * groups.length -
             (groups.length > 1 ? 10 * (6 - titles.length) : 0)}`}
@@ -126,21 +103,38 @@ export default function ColumnChart({
             y={20}
           />
         ) : null}
+        {groups.map(
+          ([group, elements], index) => (
+            <ColumnChartGroup
+              key={index}
+              barGroupWidth={barGroupWidth}
+              elements={elements}
+              fontSize={1.5 * fontSize}
+              group={group}
+              height={80}
+              lineHeight={lineHeight}
+              minValue={minValue}
+              maxValue={maxValue}
+              palette={palette}
+              size={10}
+              units={units}
+              width={10}
+              x={xPadding * 2 + index * barGroupWidth}
+              y={110}
+            />
+          ),
+          [fontSize, groups, lineHeight, maxValue, minValue, palette, units]
+        )}
 
         {titles.map(({ id, title }, index) => (
           <ChartLegendItem
             key={id}
             fill={palette[index % palette.length]}
-            fontSize={1.5 * fontSize}
-            lineHeight={lineHeight}
             size={10}
             title={title}
             width={80}
             x={xPadding + 10 + 13 + barGroupWidth * (index % groups.length)}
-            y={
-              141 +
-              (10 + fontSize * lineHeight) * parseInt(index / groups.length)
-            }
+            y={141 + 10 * parseInt(index / groups.length)}
           />
         ))}
       </ChartSvg>

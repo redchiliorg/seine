@@ -139,25 +139,19 @@ export default function PieChart({
 
             <PieChartValue
               fill={textColor}
-              fontSize={2 * fontSize}
               index={index}
               key={'value'}
-              lineHeight={lineHeight}
               units={units}
               value={value}
-              width={valueWidth}
               x={textX}
               y={textY}
             />,
 
             <PieChartTitle
               fill={textColor}
-              fontSize={1.5 * fontSize}
               index={index}
               key={'title'}
-              lineHeight={lineHeight}
               title={title}
-              width={titleWidth}
               x={textX}
               y={textY}
             />,

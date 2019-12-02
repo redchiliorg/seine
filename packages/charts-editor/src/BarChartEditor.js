@@ -12,11 +12,11 @@ import {
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
 } from '@seine/core';
-import { ForeignInput } from '@seine/ui';
 import { ClickAwayListener } from '@material-ui/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
+import ChartInput from './ChartInput';
 
 /**
  * @description Editor of bar chart
@@ -52,53 +52,45 @@ export default function BarChartEditor({
                     const {
                       children: value,
                       fill,
-                      height,
                       index,
-                      lineHeight,
-                      width,
                       x,
                       y,
                     }: BarChartValueProps = child.props;
 
                     return (
-                      <ForeignInput
-                        color={fill}
-                        fontSize={0.9 * parent.props.fontSize}
-                        height={height / 3}
-                        key={child.key}
+                      <ChartInput
+                        dominantBaseline={'middle'}
+                        fill={fill}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
-                            body: { value: currentTarget.value },
+                            body: { value: +currentTarget.value },
                             index,
                           })
                         }
+                        key={child.key}
                         type={'number'}
                         value={value}
-                        width={width + parent.props.fontSize}
+                        variant={'body2'}
                         x={x}
-                        y={y + (parent.props.fontSize * lineHeight) / 3}
+                        y={y}
                       />
                     );
                   }
 
                   case BarChartElementTitle: {
                     const {
-                      children: title,
+                      children: value,
                       fill,
-                      height,
                       index,
-                      lineHeight,
-                      width,
                       x,
                       y,
                     }: BarChartTitleProps = child.props;
 
                     return (
-                      <ForeignInput
-                        color={fill}
-                        fontSize={0.9 * parent.props.fontSize}
-                        height={height / 3}
+                      <ChartInput
+                        dominantBaseline={'middle'}
+                        fill={fill}
                         key={child.key}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
@@ -107,10 +99,11 @@ export default function BarChartEditor({
                             index,
                           })
                         }
-                        value={title}
-                        width={width + 2 * parent.props.fontSize}
+                        textAnchor={'end'}
+                        value={value}
+                        variant={'body2'}
                         x={x}
-                        y={y + (parent.props.fontSize * lineHeight) / 3}
+                        y={y}
                       />
                     );
                   }

@@ -108,11 +108,9 @@ export default function BarChart({
               height={barHeight}
               index={index}
               key={'value'}
-              lineHeight={fontHeight}
               x={titleMaxLen + len}
               y={y + barHeight / 4}
               units={units}
-              width={valueMaxLen}
             >
               {value}
             </BarChartElementValue>,

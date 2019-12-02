@@ -4,9 +4,7 @@ import { SvgTypography } from '@seine/styles';
 
 export type Props = {
   fill: string,
-  fontSize: number,
   index: number,
-  lineHeight: number,
   title: string,
   x: number,
   y: number,

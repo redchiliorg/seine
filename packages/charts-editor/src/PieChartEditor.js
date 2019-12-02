@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import { ForeignInput } from '@seine/ui';
 import {
   ChartSvg,
   ChartTitle,
@@ -23,6 +22,7 @@ import { ClickAwayListener } from '@material-ui/core';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
+import ChartInput from './ChartInput';
 
 /**
  * @description Editor of pie chart
@@ -78,26 +78,18 @@ export default function PieChartEditor({
 
                   case PieChartTitle: {
                     let {
-                      fill,
-                      fontSize,
-                      index,
-                      lineHeight,
-                      width,
                       title,
+                      fill,
+                      index,
                       x,
                       y,
                     }: PieChartTitleProps = child.props;
-                    fontSize = 0.85 * fontSize;
 
                     return (
-                      <ForeignInput
-                        transparent
-                        align={'center'}
-                        color={fill}
-                        fontSize={fontSize}
-                        height={2 * fontSize * lineHeight}
+                      <ChartInput
+                        dominantBaseline={'hanging'}
+                        fill={fill}
                         key={child.key}
-                        lineHeight={lineHeight}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
@@ -105,10 +97,11 @@ export default function PieChartEditor({
                             index,
                           })
                         }
+                        textAnchor={'middle'}
                         value={title}
-                        width={width}
-                        x={x - width / 2}
-                        y={y - fontSize * lineHeight}
+                        variant={'h5'}
+                        x={x}
+                        y={y}
                       />
                     );
                   }
@@ -116,25 +109,16 @@ export default function PieChartEditor({
                   case PieChartValue: {
                     let {
                       fill,
-                      fontSize,
                       index,
-                      lineHeight,
-                      width,
                       value,
                       x,
                       y,
                     }: PieChartValueProps = child.props;
-                    fontSize = 0.85 * fontSize;
 
                     return (
-                      <ForeignInput
-                        transparent
-                        align={'center'}
-                        color={fill}
-                        fontSize={fontSize}
-                        height={2 * fontSize * lineHeight}
+                      <ChartInput
+                        fill={fill}
                         key={child.key}
-                        lineHeight={lineHeight}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
@@ -142,11 +126,12 @@ export default function PieChartEditor({
                             index,
                           })
                         }
+                        textAnchor={'middle'}
                         type={'number'}
                         value={value}
-                        width={width}
-                        x={x - width / 2}
-                        y={y - fontSize * lineHeight}
+                        variant={'h4'}
+                        x={x}
+                        y={y}
                       />
                     );
                   }
