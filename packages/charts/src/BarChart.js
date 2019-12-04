@@ -17,8 +17,6 @@ import {
   defaultChartXAxis,
 } from './constants';
 import type { ChartProps } from './types';
-import BarChartElementTitle from './BarChartElementTitle';
-import BarChartElementValue from './BarChartElementValue';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
 
@@ -51,7 +49,7 @@ export default function BarChart({
   type,
   ...viewProps
 }: Props) {
-  const { barHeight, fontHeight, fontWidth } = React.useMemo(() => {
+  const { barHeight, fontWidth } = React.useMemo(() => {
     return {
       barHeight: fontSize * 6,
       fontHeight: fontSize * lineHeight,
@@ -90,30 +88,29 @@ export default function BarChart({
           const y = (index * barHeight) / 2;
 
           return [
-            <BarChartElementTitle
+            <SvgTypography
+              dominantBaseline={'middle'}
               fill={color}
-              height={barHeight}
               index={index}
               key={'title'}
-              lineHeight={fontHeight}
-              x={titleMaxLen / 2}
+              x={0}
               y={y + barHeight / 4}
-              width={titleMaxLen}
             >
               {title}
-            </BarChartElementTitle>,
+            </SvgTypography>,
 
-            <BarChartElementValue
+            <SvgTypography
+              dominantBaseline={'middle'}
               fill={color}
-              height={barHeight}
               index={index}
               key={'value'}
-              x={titleMaxLen + len}
+              textAnchor={'end'}
+              x={titleMaxLen + len + valueMaxLen}
               y={y + barHeight / 4}
-              units={units}
             >
               {value}
-            </BarChartElementValue>,
+              {units}
+            </SvgTypography>,
 
             <rect
               fill={color}

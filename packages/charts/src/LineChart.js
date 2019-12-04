@@ -18,8 +18,6 @@ import {
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
-import LineChartGroup from './LineChartGroup';
-import LineChartValue from './LineChartValue';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
 
@@ -68,7 +66,7 @@ export default function LineChart({
     dy
   );
 
-  const x = fontSize * `${maxValue}`.length;
+  const x = fontSize * (`${maxValue}`.length + 1);
   const legendWidth =
     (1 + Math.max(...titles.map(({ title: { length } }) => length))) * fontSize;
   const graphWidth = 297 - legendWidth - 10 - x;
@@ -97,17 +95,16 @@ export default function LineChart({
         </marker>
         {xAxis
           ? groups.map(([group], index) => (
-              <LineChartGroup
-                fontSize={fontSize}
+              <SvgTypography
+                dominantBaseline={'hanging'}
                 fontWeight={'bold'}
-                group={group}
-                height={fontSize * lineHeight}
-                key={index}
-                lineHeight={lineHeight}
-                width={8 * fontSize}
+                key={['group', index]}
+                textAnchor={'middle'}
                 x={x + (index * graphWidth) / (groups.length - 1)}
                 y={y + height}
-              />
+              >
+                {group}
+              </SvgTypography>
             ))
           : null}
         {Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
@@ -189,8 +186,9 @@ export default function LineChart({
             elements
               .filter((element) => element.id === id)
               .map(({ index, value }) => (
-                <LineChartValue
+                <SvgTypography
                   index={index}
+                  key={['value', titleIndex, groupIndex]}
                   textAnchor={
                     groupIndex === groups.length - 1
                       ? 'end'
@@ -198,11 +196,6 @@ export default function LineChart({
                       ? 'middle'
                       : 'start'
                   }
-                  key={['value', titleIndex, groupIndex]}
-                  maxValue={maxValue}
-                  minValue={minValue}
-                  units={units}
-                  value={value}
                   x={x + (groupIndex * graphWidth) / (groups.length - 1)}
                   y={
                     y +
@@ -214,7 +207,10 @@ export default function LineChart({
                       (maxValue - minValue) -
                     1
                   }
-                />
+                >
+                  {value}
+                  {units}
+                </SvgTypography>
               ))
           ),
 

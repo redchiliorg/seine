@@ -50,56 +50,13 @@ type BoxProps = {
 };
 
 const StyledTypography = styled(Typography).attrs(
-  ({
-    fill,
-    height,
-    textAnchor = 'start',
-    dominantBaseline = 'baseline',
-    width,
-  }: SvgTypographyProps & BoxProps) => ({
-    color: fill,
-    height: typeof height === 'number' ? 2 * height : height,
-    width: typeof width === 'number' ? 2 * width : width,
-    textAnchor,
-    dominantBaseline,
-  })
+  ({ fill }: SvgTypographyProps & BoxProps) => ({ color: fill })
 )`
-  ${({
-    dominantBaseline,
-    textAnchor,
-    xScale,
-    yScale,
-  }: SvgTypographyProps & BoxProps) => css`
-    display: flex;
-    ${textAnchor === 'end' &&
-      css`
-        justify-content: flex-start;
-      `}
-    ${textAnchor === 'middle' &&
-      css`
-        justify-content: center;
-      `}
-    ${textAnchor === 'start' &&
-      css`
-        justify-content: flex-end;
-      `}
-    ${dominantBaseline === 'baseline' &&
-      css`
-        align-items: flex-start;
-      `}
-    ${dominantBaseline === 'middle' &&
-      css`
-        align-items: center;
-      `}
-    ${dominantBaseline === 'hanging' &&
-      css`
-        align-items: flex-end;
-      `}
-    
+  ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
     transform-origin: 1px top;
-    
-    text-overflow: ellipsis;
+
+    overflow: visible;
     white-space: pre;
   `}
 `;
@@ -131,10 +88,12 @@ const ForeignObject = styled('foreignObject')`
  */
 export default function SvgTypography({
   children,
+  dominantBaseline = 'baseline',
   variant = 'body1',
   x = 0,
   y = 0,
   width,
+  textAnchor = 'start',
   ...typography
 }: Props) {
   const text = React.Children.toArray(children)
@@ -217,8 +176,19 @@ export default function SvgTypography({
       })}
       height={'100%'}
       width={'100%'}
-      x={x - size.width * scale.xScale}
-      y={y - size.height * scale.yScale}
+      x={
+        x -
+        (textAnchor === 'start'
+          ? 0
+          : (size.width * scale.xScale) / (textAnchor === 'end' ? 1 : 2))
+      }
+      y={
+        y -
+        (dominantBaseline === 'hanging'
+          ? 0
+          : (size.height * scale.yScale) /
+            (dominantBaseline === 'baseline' ? 1 : 2))
+      }
     >
       <Offscreen ref={offscreenRef} variant={variant} {...size} />
       <StyledTypography variant={variant} {...typography} {...size} {...scale}>

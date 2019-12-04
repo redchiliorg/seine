@@ -87,7 +87,7 @@ export default function ColumnChartEditor({
                           })
                         }
                         textAnchor={'middle'}
-                        value={group}
+                        children={group}
                         x={x + (size * elements.length) / 2}
                         y={y}
                       />,
@@ -110,7 +110,7 @@ export default function ColumnChartEditor({
                             }
                             textAnchor={'middle'}
                             type={'number'}
-                            value={+value}
+                            children={+value}
                             x={x + size * order + size / 2}
                             y={dy + y - rectHeight}
                           />

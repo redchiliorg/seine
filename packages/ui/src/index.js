@@ -16,7 +16,6 @@ export { default as CompositeActionButton } from './CompositeActionButton';
 
 export { default as BlockContainer } from './BlockContainer';
 export { default as BlockDeleteButton } from './BlockDeleteButton';
-export { default as ForeignInput } from './ForeignInput';
 export { default as Input } from './Input';
 export { default as Label } from './Label';
 
