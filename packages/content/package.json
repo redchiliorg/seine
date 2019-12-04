@@ -1,6 +1,6 @@
 {
   "name": "@seine/content",
-  "version": "0.3.103",
+  "version": "0.3.104",
   "description": "Seine content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
