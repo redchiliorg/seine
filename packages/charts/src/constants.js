@@ -80,7 +80,7 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
-export const defaultChartVerticalAlignment = 'center';
+export const defaultChartVerticalAlignment = 'end';
 export const defaultChartFormat = {
   palette: defaultChartPalette,
   paletteKey: defaultChartPaletteKey,

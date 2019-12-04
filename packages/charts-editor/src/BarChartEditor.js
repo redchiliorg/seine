@@ -118,8 +118,9 @@ export default function BarChartEditor({
           </ChartSvg>
         );
 
-      default:
+      default: {
         return parent;
+      }
     }
   });
 }
