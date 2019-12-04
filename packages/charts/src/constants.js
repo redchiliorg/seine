@@ -94,3 +94,6 @@ export const defaultPieChartUnits = '%';
 
 export const columnChartMaxElements = 5;
 export const columnChartMaxGroups = 5;
+
+export const VIEWPORT_WIDTH = 297;
+export const VIEWPORT_HEIGHT = 210;

@@ -56,9 +56,9 @@ const StyledTypography = styled(Typography).attrs(
 )`
   ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
-    transform-origin: 1px top;
+    transform-origin: left top;
 
-    overflow: visible;
+    overflow: hidden;
     white-space: pre;
   `}
 `;
