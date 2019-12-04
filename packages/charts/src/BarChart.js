@@ -23,31 +23,7 @@ import {
 import type { ChartProps } from './types';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
-
-const XAxis = ({ barWidth, dx, x, y, maxValue, units }) =>
-  Array.from({ length: Math.round(maxValue / dx) }).map(
-    (_, index, { length }) => [
-      <line
-        key={['line', index]}
-        x1={x + (barWidth * index) / length}
-        x2={x + (barWidth * (index + 1)) / length}
-        y1={y}
-        y2={y}
-        stroke={'black'}
-      />,
-      index > 0 && (
-        <SvgTypography
-          key={['title', index]}
-          dominantBaseline={'hanging'}
-          x={x + (barWidth * index) / length}
-          y={y}
-        >
-          {parseInt((index * maxValue) / length)}
-          {units}
-        </SvgTypography>
-      ),
-    ]
-  );
+import ChartAxis from './ChartAxis';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -92,7 +68,7 @@ export default function BarChart({
   const valueMetrics = useTextMetrics(
     `**${elements.reduce(
       (found, { value }) =>
-        `${value}`.length > found.length ? `${value}` : found,
+        `${value}`.length > found.length ? `${value} ` : found,
       ''
     )}`,
     canvas
@@ -121,7 +97,10 @@ export default function BarChart({
         {elements.map(({ title, value }, index) => {
           const width = (barWidth * value) / maxValue;
           const color = palette[index % palette.length];
-          const y = barHeight * index;
+          const y =
+            VIEWPORT_HEIGHT -
+            barHeight * (elements.length - index) -
+            valueHeight;
 
           return [
             <SvgTypography
@@ -159,15 +138,14 @@ export default function BarChart({
             </SvgTypography>,
           ];
         })}
-        {xAxis && maxValueWidth ? (
-          <XAxis
-            barHeight={barHeight}
-            barWidth={barWidth}
-            dx={Math.max(dx, maxValueWidth)}
-            maxValue={maxValue}
-            valueHeight={valueHeight}
+        {xAxis ? (
+          <ChartAxis
+            length={barWidth}
+            max={maxValue}
+            step={maxValueWidth ? Math.max(dx, maxValueWidth) : dx}
+            units={units}
             x={titleWidth}
-            y={barHeight * elements.length}
+            y={VIEWPORT_HEIGHT - valueHeight}
           />
         ) : null}
         <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
