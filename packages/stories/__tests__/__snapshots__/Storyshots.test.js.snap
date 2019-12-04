@@ -19,9 +19,9 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
-        viewBox="0 0 297 79"
+        viewBox="0 0 297 210"
       >
         <marker
           id="arrowUp"
@@ -40,7 +40,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={79}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -49,7 +49,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -60,8 +60,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={79}
+          x={54.4}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -70,7 +70,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -81,8 +81,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={79}
+          x={108.8}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -91,7 +91,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -102,8 +102,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={79}
+          x={163.2}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -112,7 +112,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -123,8 +123,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={79}
+          x={217.6}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -133,7 +133,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -144,8 +144,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={79}
+          x={272}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -154,7 +154,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -162,19 +162,65 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           </p>
         </foreignObject>
         <path
-          d="m0  79 277 0"
+          d="m0  210 272 0"
           stroke="black"
         />
         <path
-          d="m0  71.1 277 0"
+          d="m0  199.5 272 0"
           stroke="#f0f0f0"
+        />
+        <path
+          d="m0  189 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  178.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  168 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  157.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  147 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  136.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  126 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  115.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={210}
+          y2={199.5}
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={199.5}
+          y2={189}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={71.1}
+          y={199.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -183,25 +229,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            40
-              
+            40 
           </p>
         </foreignObject>
-        <path
-          d="m0  63.2 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={189}
+          y2={178.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={63.2}
+          y={189}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -210,25 +257,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            80
-              
+            80 
           </p>
         </foreignObject>
-        <path
-          d="m0  55.3 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={178.5}
+          y2={168}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={55.3}
+          y={178.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -237,25 +285,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            120
-              
+            120 
           </p>
         </foreignObject>
-        <path
-          d="m0  47.4 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={168}
+          y2={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={47.4}
+          y={168}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -264,25 +313,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            160
-              
+            160 
           </p>
         </foreignObject>
-        <path
-          d="m0  39.5 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={157.5}
+          y2={147}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={39.5}
+          y={157.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -291,25 +341,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            200
-              
+            200 
           </p>
         </foreignObject>
-        <path
-          d="m0  31.6 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={147}
+          y2={136.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={31.6}
+          y={147}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -318,25 +369,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            240
-              
+            240 
           </p>
         </foreignObject>
-        <path
-          d="m0  23.700000000000003 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={136.5}
+          y2={126}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={23.700000000000003}
+          y={136.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -345,25 +397,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            280
-              
+            280 
           </p>
         </foreignObject>
-        <path
-          d="m0  15.799999999999997 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={126}
+          y2={115.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={15.799999999999997}
+          y={126}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -372,25 +425,26 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            320
-              
+            320 
           </p>
         </foreignObject>
-        <path
-          d="m0  7.900000000000006 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={115.5}
+          y2={105}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={7.900000000000006}
+          y={115.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -399,17 +453,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            360
-              
+            360 
           </p>
         </foreignObject>
         <path
-          d="m0 0v79"
+          d="m0 105v105"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -432,7 +484,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           />
         </marker>
         <path
-          d="M 0 44.4375 55.4 38.71 110.8 33.3775 166.2 32.1925 221.6 23.700000000000003 277 12.0475"
+          d="M 0 164.0625 54.4 156.45 108.8 149.3625 163.2 147.7875 217.6 136.5 272 121.0125"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -444,7 +496,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={43.4375}
+          y={163.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -453,7 +505,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -464,8 +516,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={37.71}
+          x={54.4}
+          y={155.45}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -474,7 +526,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -485,8 +537,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={32.3775}
+          x={108.8}
+          y={148.3625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -495,7 +547,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -506,8 +558,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={31.192500000000003}
+          x={163.2}
+          y={146.7875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -516,7 +568,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -527,8 +579,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={22.700000000000003}
+          x={217.6}
+          y={135.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -537,7 +589,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -548,8 +600,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={11.0475}
+          x={272}
+          y={120.0125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -558,7 +610,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -572,15 +624,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             fill="#71a2ff"
             height={10}
             width={10}
-            x={287}
-            y={3}
+            x={280}
+            y={108}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={8}
+            x={290}
+            y={113}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -616,7 +668,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           />
         </marker>
         <path
-          d="M 0 66.1625 55.4 65.57 110.8 64.5825 166.2 64.1875 221.6 63.3975 277 61.225"
+          d="M 0 192.9375 54.4 192.15 108.8 190.8375 163.2 190.3125 217.6 189.2625 272 186.375"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -628,7 +680,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={65.1625}
+          y={191.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -637,7 +689,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -648,8 +700,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={64.57}
+          x={54.4}
+          y={191.15}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -658,7 +710,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -669,8 +721,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={63.582499999999996}
+          x={108.8}
+          y={189.8375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -679,7 +731,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -690,8 +742,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={63.1875}
+          x={163.2}
+          y={189.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -700,7 +752,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -711,8 +763,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={62.3975}
+          x={217.6}
+          y={188.2625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -721,7 +773,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -732,8 +784,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={60.225}
+          x={272}
+          y={185.375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -742,7 +794,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -756,15 +808,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             fill="#c0d4e2"
             height={10}
             width={10}
-            x={287}
-            y={20}
+            x={280}
+            y={119}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={25}
+            x={290}
+            y={124}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -788,8 +840,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           width="100%"
         >
           <canvas
-            className="SvgTypography__Canvas-jh05vp-0 jeHtDC"
-            fontSize="1.4rem"
+            className="SvgTypography__Canvas-jh05vp-0 bKTKxa"
+            fontSize="1rem"
             height="100%"
             width="100%"
           />
@@ -806,7 +858,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
         viewBox="0 0 297 210"
       >
@@ -815,7 +867,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={6.5625}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -838,14 +890,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={151.04156479217605}
           x={0}
-          y={0}
+          y={131.25}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={151.04156479217605}
-          y={6.5625}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -869,7 +921,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={19.6875}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -892,14 +944,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={259.239608801956}
           x={0}
-          y={13.125}
+          y={144.375}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={259.239608801956}
-          y={19.6875}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -923,7 +975,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={32.8125}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -946,14 +998,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={114.73349633251836}
           x={0}
-          y={26.25}
+          y={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={114.73349633251836}
-          y={32.8125}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -977,7 +1029,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={45.9375}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1000,14 +1052,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={297}
           x={0}
-          y={39.375}
+          y={170.625}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={297}
-          y={45.9375}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1031,7 +1083,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={59.0625}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1054,14 +1106,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={171.37408312958436}
           x={0}
-          y={52.5}
+          y={183.75}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={171.37408312958436}
-          y={59.0625}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1085,7 +1137,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={72.1875}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1108,14 +1160,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height={13.125}
           width={127.80440097799513}
           x={0}
-          y={65.625}
+          y={196.875}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={127.80440097799513}
-          y={72.1875}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -1131,6 +1183,100 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             width={0}
           >
             17.6
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={0}
+          x2={74.25}
+          y1={210}
+          y2={210}
+        />
+        <line
+          stroke="black"
+          x1={74.25}
+          x2={148.5}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={74.25}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            10 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={148.5}
+          x2={222.75}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={148.5}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            20 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={222.75}
+          x2={297}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={222.75}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            30 
             
           </p>
         </foreignObject>
@@ -1159,7 +1305,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       <svg
         className="sc-bwzfXH gMPwaf"
         overflow="visible"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
       >
         <path
@@ -1429,7 +1575,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         viewBox="0 0 128 210"
       >
         <path
@@ -1827,7 +1973,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         viewBox="0 0 128 210"
       >
         <path
@@ -2212,7 +2358,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
         viewBox="0 0 297 210"
       >
@@ -2221,7 +2367,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={6.5625}
+          y={98.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2244,14 +2390,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={141.041095890411}
           x={0}
-          y={0}
+          y={91.875}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={141.041095890411}
-          y={6.5625}
+          y={98.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2275,7 +2421,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={19.6875}
+          y={111.5625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2298,14 +2444,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={242.07534246575347}
           x={0}
-          y={13.125}
+          y={105}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={242.07534246575347}
-          y={19.6875}
+          y={111.5625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2329,7 +2475,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={32.8125}
+          y={124.6875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2352,14 +2498,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={107.13698630136987}
           x={0}
-          y={26.25}
+          y={118.125}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={107.13698630136987}
-          y={32.8125}
+          y={124.6875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2383,7 +2529,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={45.9375}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2406,14 +2552,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={277.33561643835617}
           x={0}
-          y={39.375}
+          y={131.25}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={277.33561643835617}
-          y={45.9375}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2437,7 +2583,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={59.0625}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2460,14 +2606,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={160.027397260274}
           x={0}
-          y={52.5}
+          y={144.375}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={160.027397260274}
-          y={59.0625}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2491,7 +2637,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={72.1875}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2514,14 +2660,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={119.34246575342468}
           x={0}
-          y={65.625}
+          y={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={119.34246575342468}
-          y={72.1875}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2545,7 +2691,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={85.3125}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2568,14 +2714,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={258.3493150684932}
           x={0}
-          y={78.75}
+          y={170.625}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={258.3493150684932}
-          y={85.3125}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2599,7 +2745,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={98.4375}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2622,14 +2768,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={297}
           x={0}
-          y={91.875}
+          y={183.75}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={297}
-          y={98.4375}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2653,7 +2799,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height="100%"
           width="100%"
           x={0}
-          y={111.5625}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2676,14 +2822,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           height={13.125}
           width={111.20547945205479}
           x={0}
-          y={105}
+          y={196.875}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={111.20547945205479}
-          y={111.5625}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -2699,6 +2845,100 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             width={0}
           >
             16.4
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={0}
+          x2={74.25}
+          y1={210}
+          y2={210}
+        />
+        <line
+          stroke="black"
+          x1={74.25}
+          x2={148.5}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={74.25}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            10 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={148.5}
+          x2={222.75}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={148.5}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            21 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={222.75}
+          x2={297}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={222.75}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            32 
             
           </p>
         </foreignObject>
@@ -2739,7 +2979,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         viewBox="0 0 128 210"
       >
         <path
@@ -3124,9 +3364,9 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
-        viewBox="0 0 297 79"
+        viewBox="0 0 297 210"
       >
         <marker
           id="arrowUp"
@@ -3145,7 +3385,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={79}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3154,7 +3394,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3165,8 +3405,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={79}
+          x={54.4}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3175,7 +3415,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3186,8 +3426,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={79}
+          x={108.8}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3196,7 +3436,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3207,8 +3447,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={79}
+          x={163.2}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3217,7 +3457,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3228,8 +3468,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={79}
+          x={217.6}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3238,7 +3478,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3249,8 +3489,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={79}
+          x={272}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3259,7 +3499,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3267,19 +3507,65 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           </p>
         </foreignObject>
         <path
-          d="m0  79 277 0"
+          d="m0  210 272 0"
           stroke="black"
         />
         <path
-          d="m0  71.1 277 0"
+          d="m0  199.5 272 0"
           stroke="#f0f0f0"
+        />
+        <path
+          d="m0  189 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  178.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  168 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  157.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  147 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  136.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  126 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  115.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={210}
+          y2={199.5}
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={199.5}
+          y2={189}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={71.1}
+          y={199.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3288,25 +3574,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            40
-              
+            40 
           </p>
         </foreignObject>
-        <path
-          d="m0  63.2 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={189}
+          y2={178.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={63.2}
+          y={189}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3315,25 +3602,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            80
-              
+            80 
           </p>
         </foreignObject>
-        <path
-          d="m0  55.3 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={178.5}
+          y2={168}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={55.3}
+          y={178.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3342,25 +3630,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            120
-              
+            120 
           </p>
         </foreignObject>
-        <path
-          d="m0  47.4 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={168}
+          y2={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={47.4}
+          y={168}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3369,25 +3658,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            160
-              
+            160 
           </p>
         </foreignObject>
-        <path
-          d="m0  39.5 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={157.5}
+          y2={147}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={39.5}
+          y={157.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3396,25 +3686,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            200
-              
+            200 
           </p>
         </foreignObject>
-        <path
-          d="m0  31.6 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={147}
+          y2={136.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={31.6}
+          y={147}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3423,25 +3714,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            240
-              
+            240 
           </p>
         </foreignObject>
-        <path
-          d="m0  23.700000000000003 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={136.5}
+          y2={126}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={23.700000000000003}
+          y={136.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3450,25 +3742,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            280
-              
+            280 
           </p>
         </foreignObject>
-        <path
-          d="m0  15.799999999999997 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={126}
+          y2={115.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={15.799999999999997}
+          y={126}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3477,25 +3770,26 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            320
-              
+            320 
           </p>
         </foreignObject>
-        <path
-          d="m0  7.900000000000006 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={115.5}
+          y2={105}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={7.900000000000006}
+          y={115.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3504,17 +3798,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            360
-              
+            360 
           </p>
         </foreignObject>
         <path
-          d="m0 0v79"
+          d="m0 105v105"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -3537,7 +3829,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           />
         </marker>
         <path
-          d="M 0 44.4375 55.4 38.71 110.8 33.3775 166.2 32.1925 221.6 23.700000000000003 277 12.0475"
+          d="M 0 164.0625 54.4 156.45 108.8 149.3625 163.2 147.7875 217.6 136.5 272 121.0125"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -3549,7 +3841,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={43.4375}
+          y={163.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3558,7 +3850,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3569,8 +3861,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={37.71}
+          x={54.4}
+          y={155.45}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3579,7 +3871,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3590,8 +3882,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={32.3775}
+          x={108.8}
+          y={148.3625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3600,7 +3892,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3611,8 +3903,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={31.192500000000003}
+          x={163.2}
+          y={146.7875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3621,7 +3913,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3632,8 +3924,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={22.700000000000003}
+          x={217.6}
+          y={135.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3642,7 +3934,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3653,8 +3945,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={11.0475}
+          x={272}
+          y={120.0125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3663,7 +3955,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3677,15 +3969,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             fill="#71a2ff"
             height={10}
             width={10}
-            x={287}
-            y={3}
+            x={280}
+            y={108}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={8}
+            x={290}
+            y={113}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3721,7 +4013,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           />
         </marker>
         <path
-          d="M 0 66.1625 55.4 65.57 110.8 64.5825 166.2 64.1875 221.6 63.3975 277 61.225"
+          d="M 0 192.9375 54.4 192.15 108.8 190.8375 163.2 190.3125 217.6 189.2625 272 186.375"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -3733,7 +4025,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={0}
-          y={65.1625}
+          y={191.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3742,7 +4034,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3753,8 +4045,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={64.57}
+          x={54.4}
+          y={191.15}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3763,7 +4055,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3774,8 +4066,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={63.582499999999996}
+          x={108.8}
+          y={189.8375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3784,7 +4076,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3795,8 +4087,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={63.1875}
+          x={163.2}
+          y={189.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3805,7 +4097,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3816,8 +4108,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={62.3975}
+          x={217.6}
+          y={188.2625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3826,7 +4118,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3837,8 +4129,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={60.225}
+          x={272}
+          y={185.375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3847,7 +4139,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3861,15 +4153,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             fill="#c0d4e2"
             height={10}
             width={10}
-            x={287}
-            y={20}
+            x={280}
+            y={119}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={25}
+            x={290}
+            y={124}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3893,8 +4185,8 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           width="100%"
         >
           <canvas
-            className="SvgTypography__Canvas-jh05vp-0 jeHtDC"
-            fontSize="1.4rem"
+            className="SvgTypography__Canvas-jh05vp-0 bKTKxa"
+            fontSize="1rem"
             height="100%"
             width="100%"
           />
@@ -3924,9 +4216,9 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
-        viewBox="0 0 297 79"
+        viewBox="0 0 297 210"
       >
         <marker
           id="arrowUp"
@@ -3945,7 +4237,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={79}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3954,7 +4246,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3965,8 +4257,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={79}
+          x={54.4}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3975,7 +4267,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -3986,8 +4278,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={79}
+          x={108.8}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -3996,7 +4288,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4007,8 +4299,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={79}
+          x={163.2}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4017,7 +4309,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4028,8 +4320,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={79}
+          x={217.6}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4038,7 +4330,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4049,8 +4341,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={79}
+          x={272}
+          y={210}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4059,7 +4351,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4067,19 +4359,65 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           </p>
         </foreignObject>
         <path
-          d="m0  79 277 0"
+          d="m0  210 272 0"
           stroke="black"
         />
         <path
-          d="m0  71.1 277 0"
+          d="m0  199.5 272 0"
           stroke="#f0f0f0"
+        />
+        <path
+          d="m0  189 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  178.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  168 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  157.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  147 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  136.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  126 272 0"
+          stroke="#f0f0f0"
+        />
+        <path
+          d="m0  115.5 272 0"
+          stroke="#f0f0f0"
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={210}
+          y2={199.5}
+        />
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={199.5}
+          y2={189}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={71.1}
+          y={199.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4088,25 +4426,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            40
-              
+            40 
           </p>
         </foreignObject>
-        <path
-          d="m0  63.2 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={189}
+          y2={178.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={63.2}
+          y={189}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4115,25 +4454,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            80
-              
+            80 
           </p>
         </foreignObject>
-        <path
-          d="m0  55.3 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={178.5}
+          y2={168}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={55.3}
+          y={178.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4142,25 +4482,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            120
-              
+            120 
           </p>
         </foreignObject>
-        <path
-          d="m0  47.4 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={168}
+          y2={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={47.4}
+          y={168}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4169,25 +4510,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            160
-              
+            160 
           </p>
         </foreignObject>
-        <path
-          d="m0  39.5 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={157.5}
+          y2={147}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={39.5}
+          y={157.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4196,25 +4538,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            200
-              
+            200 
           </p>
         </foreignObject>
-        <path
-          d="m0  31.6 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={147}
+          y2={136.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={31.6}
+          y={147}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4223,25 +4566,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            240
-              
+            240 
           </p>
         </foreignObject>
-        <path
-          d="m0  23.700000000000003 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={136.5}
+          y2={126}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={23.700000000000003}
+          y={136.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4250,25 +4594,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            280
-              
+            280 
           </p>
         </foreignObject>
-        <path
-          d="m0  15.799999999999997 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={126}
+          y2={115.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={15.799999999999997}
+          y={126}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4277,25 +4622,26 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            320
-              
+            320 
           </p>
         </foreignObject>
-        <path
-          d="m0  7.900000000000006 277 0"
-          stroke="#f0f0f0"
+        <line
+          stroke="black"
+          x1={0}
+          x2={0}
+          y1={115.5}
+          y2={105}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={0}
-          y={7.900000000000006}
+          y={115.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4304,17 +4650,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-            fontWeight="bold"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
-            360
-              
+            360 
           </p>
         </foreignObject>
         <path
-          d="m0 0v79"
+          d="m0 105v105"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -4337,7 +4681,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           />
         </marker>
         <path
-          d="M 0 44.4375 55.4 38.71 110.8 33.3775 166.2 32.1925 221.6 23.700000000000003 277 12.0475"
+          d="M 0 164.0625 54.4 156.45 108.8 149.3625 163.2 147.7875 217.6 136.5 272 121.0125"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -4349,7 +4693,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={43.4375}
+          y={163.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4358,7 +4702,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4369,8 +4713,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={37.71}
+          x={54.4}
+          y={155.45}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4379,7 +4723,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4390,8 +4734,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={32.3775}
+          x={108.8}
+          y={148.3625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4400,7 +4744,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4411,8 +4755,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={31.192500000000003}
+          x={163.2}
+          y={146.7875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4421,7 +4765,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4432,8 +4776,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={22.700000000000003}
+          x={217.6}
+          y={135.5}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4442,7 +4786,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4453,8 +4797,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={11.0475}
+          x={272}
+          y={120.0125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4463,7 +4807,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4477,15 +4821,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             fill="#71a2ff"
             height={10}
             width={10}
-            x={287}
-            y={3}
+            x={280}
+            y={108}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={8}
+            x={290}
+            y={113}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4521,7 +4865,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           />
         </marker>
         <path
-          d="M 0 66.1625 55.4 65.57 110.8 64.5825 166.2 64.1875 221.6 63.3975 277 61.225"
+          d="M 0 192.9375 54.4 192.15 108.8 190.8375 163.2 190.3125 217.6 189.2625 272 186.375"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -4533,7 +4877,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={65.1625}
+          y={191.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4542,7 +4886,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4553,8 +4897,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={55.4}
-          y={64.57}
+          x={54.4}
+          y={191.15}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4563,7 +4907,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4574,8 +4918,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={110.8}
-          y={63.582499999999996}
+          x={108.8}
+          y={189.8375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4584,7 +4928,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4595,8 +4939,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={166.2}
-          y={63.1875}
+          x={163.2}
+          y={189.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4605,7 +4949,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4616,8 +4960,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={221.6}
-          y={62.3975}
+          x={217.6}
+          y={188.2625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4626,7 +4970,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4637,8 +4981,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={277}
-          y={60.225}
+          x={272}
+          y={185.375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4647,7 +4991,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           />
           <p
-            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
             height={0}
             width={0}
           >
@@ -4661,15 +5005,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             fill="#c0d4e2"
             height={10}
             width={10}
-            x={287}
-            y={20}
+            x={280}
+            y={119}
           />
           <foreignObject
             className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
             height="100%"
             width="100%"
-            x={297}
-            y={25}
+            x={290}
+            y={124}
           >
             <canvas
               className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4693,8 +5037,8 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           width="100%"
         >
           <canvas
-            className="SvgTypography__Canvas-jh05vp-0 jeHtDC"
-            fontSize="1.4rem"
+            className="SvgTypography__Canvas-jh05vp-0 bKTKxa"
+            fontSize="1rem"
             height="100%"
             width="100%"
           />
@@ -4711,7 +5055,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
         viewBox="0 0 297 210"
       >
@@ -4720,7 +5064,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={6.5625}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4743,14 +5087,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={151.04156479217605}
           x={0}
-          y={0}
+          y={131.25}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={151.04156479217605}
-          y={6.5625}
+          y={137.8125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4774,7 +5118,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={19.6875}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4797,14 +5141,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={259.239608801956}
           x={0}
-          y={13.125}
+          y={144.375}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={259.239608801956}
-          y={19.6875}
+          y={150.9375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4828,7 +5172,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={32.8125}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4851,14 +5195,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={114.73349633251836}
           x={0}
-          y={26.25}
+          y={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={114.73349633251836}
-          y={32.8125}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4882,7 +5226,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={45.9375}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4905,14 +5249,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={297}
           x={0}
-          y={39.375}
+          y={170.625}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={297}
-          y={45.9375}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4936,7 +5280,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={59.0625}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4959,14 +5303,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={171.37408312958436}
           x={0}
-          y={52.5}
+          y={183.75}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={171.37408312958436}
-          y={59.0625}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -4990,7 +5334,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0}
-          y={72.1875}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5013,14 +5357,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height={13.125}
           width={127.80440097799513}
           x={0}
-          y={65.625}
+          y={196.875}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={127.80440097799513}
-          y={72.1875}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5036,6 +5380,100 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             width={0}
           >
             17.6
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={0}
+          x2={74.25}
+          y1={210}
+          y2={210}
+        />
+        <line
+          stroke="black"
+          x1={74.25}
+          x2={148.5}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={74.25}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            10 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={148.5}
+          x2={222.75}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={148.5}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            20 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={222.75}
+          x2={297}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={222.75}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            30 
             
           </p>
         </foreignObject>
@@ -5077,7 +5515,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       <svg
         className="sc-bwzfXH gMPwaf"
         overflow="visible"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
       >
         <path
@@ -5347,7 +5785,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       </h3>
       <svg
         className="sc-bwzfXH iVOfMH"
-        preserveAspectRatio="xMidYMax meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={2}
         viewBox="0 0 297 210"
       >
@@ -5356,7 +5794,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={0}
-          y={6.5625}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5379,14 +5817,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height={13.125}
           width={151.04156479217605}
           x={0}
-          y={0}
+          y={157.5}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={151.04156479217605}
-          y={6.5625}
+          y={164.0625}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5410,7 +5848,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={0}
-          y={19.6875}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5433,14 +5871,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height={13.125}
           width={259.239608801956}
           x={0}
-          y={13.125}
+          y={170.625}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={259.239608801956}
-          y={19.6875}
+          y={177.1875}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5464,7 +5902,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={0}
-          y={32.8125}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5487,14 +5925,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height={13.125}
           width={114.73349633251836}
           x={0}
-          y={26.25}
+          y={183.75}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={114.73349633251836}
-          y={32.8125}
+          y={190.3125}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5518,7 +5956,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height="100%"
           width="100%"
           x={0}
-          y={45.9375}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5541,14 +5979,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           height={13.125}
           width={297}
           x={0}
-          y={39.375}
+          y={196.875}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
           x={297}
-          y={45.9375}
+          y={203.4375}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5564,6 +6002,100 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             width={0}
           >
             40.9
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={0}
+          x2={74.25}
+          y1={210}
+          y2={210}
+        />
+        <line
+          stroke="black"
+          x1={74.25}
+          x2={148.5}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={74.25}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            10 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={148.5}
+          x2={222.75}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={148.5}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            20 
+            
+          </p>
+        </foreignObject>
+        <line
+          stroke="black"
+          x1={222.75}
+          x2={297}
+          y1={210}
+          y2={210}
+        />
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={222.75}
+          y={210}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+            height={0}
+            width={0}
+          >
+            30 
             
           </p>
         </foreignObject>
@@ -5637,7 +6169,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       strokeWidth={2}
       viewBox="0 0 297 210"
     >
@@ -5646,7 +6178,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={6.5625}
+        y={98.4375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5669,14 +6201,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={141.041095890411}
         x={0}
-        y={0}
+        y={91.875}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={141.041095890411}
-        y={6.5625}
+        y={98.4375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5700,7 +6232,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={19.6875}
+        y={111.5625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5723,14 +6255,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={242.07534246575347}
         x={0}
-        y={13.125}
+        y={105}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={242.07534246575347}
-        y={19.6875}
+        y={111.5625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5754,7 +6286,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={32.8125}
+        y={124.6875}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5777,14 +6309,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={107.13698630136987}
         x={0}
-        y={26.25}
+        y={118.125}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={107.13698630136987}
-        y={32.8125}
+        y={124.6875}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5808,7 +6340,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={45.9375}
+        y={137.8125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5831,14 +6363,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={277.33561643835617}
         x={0}
-        y={39.375}
+        y={131.25}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={277.33561643835617}
-        y={45.9375}
+        y={137.8125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5862,7 +6394,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={59.0625}
+        y={150.9375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5885,14 +6417,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={160.027397260274}
         x={0}
-        y={52.5}
+        y={144.375}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={160.027397260274}
-        y={59.0625}
+        y={150.9375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5916,7 +6448,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={72.1875}
+        y={164.0625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5939,14 +6471,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={119.34246575342468}
         x={0}
-        y={65.625}
+        y={157.5}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={119.34246575342468}
-        y={72.1875}
+        y={164.0625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5970,7 +6502,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={85.3125}
+        y={177.1875}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -5993,14 +6525,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={258.3493150684932}
         x={0}
-        y={78.75}
+        y={170.625}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={258.3493150684932}
-        y={85.3125}
+        y={177.1875}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6024,7 +6556,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={98.4375}
+        y={190.3125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6047,14 +6579,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={297}
         x={0}
-        y={91.875}
+        y={183.75}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={297}
-        y={98.4375}
+        y={190.3125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6078,7 +6610,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={111.5625}
+        y={203.4375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6101,14 +6633,14 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         height={13.125}
         width={111.20547945205479}
         x={0}
-        y={105}
+        y={196.875}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={111.20547945205479}
-        y={111.5625}
+        y={203.4375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6124,6 +6656,100 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           width={0}
         >
           16.4
+          
+        </p>
+      </foreignObject>
+      <line
+        stroke="black"
+        x1={0}
+        x2={74.25}
+        y1={210}
+        y2={210}
+      />
+      <line
+        stroke="black"
+        x1={74.25}
+        x2={148.5}
+        y1={210}
+        y2={210}
+      />
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={74.25}
+        y={210}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+          height={0}
+          width={0}
+        >
+          10 
+          
+        </p>
+      </foreignObject>
+      <line
+        stroke="black"
+        x1={148.5}
+        x2={222.75}
+        y1={210}
+        y2={210}
+      />
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={148.5}
+        y={210}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+          height={0}
+          width={0}
+        >
+          21 
+          
+        </p>
+      </foreignObject>
+      <line
+        stroke="black"
+        x1={222.75}
+        x2={297}
+        y1={210}
+        y2={210}
+      />
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={222.75}
+        y={210}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
+          height={0}
+          width={0}
+        >
+          32 
           
         </p>
       </foreignObject>
@@ -6158,7 +6784,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 128 210"
     >
       <path
@@ -6598,9 +7224,9 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       strokeWidth={2}
-      viewBox="0 0 297 79"
+      viewBox="0 0 297 210"
     >
       <marker
         id="arrowUp"
@@ -6619,7 +7245,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={79}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6628,7 +7254,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6639,8 +7265,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={55.4}
-        y={79}
+        x={54.4}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6649,7 +7275,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6660,8 +7286,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={110.8}
-        y={79}
+        x={108.8}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6670,7 +7296,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6681,8 +7307,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={166.2}
-        y={79}
+        x={163.2}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6691,7 +7317,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6702,8 +7328,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={221.6}
-        y={79}
+        x={217.6}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6712,7 +7338,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6723,8 +7349,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={277}
-        y={79}
+        x={272}
+        y={210}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6733,7 +7359,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -6741,19 +7367,65 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         </p>
       </foreignObject>
       <path
-        d="m0  79 277 0"
+        d="m0  210 272 0"
         stroke="black"
       />
       <path
-        d="m0  71.1 277 0"
+        d="m0  199.5 272 0"
         stroke="#f0f0f0"
+      />
+      <path
+        d="m0  189 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  178.5 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  168 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  157.5 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  147 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  136.5 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  126 272 0"
+        stroke="#f0f0f0"
+      />
+      <path
+        d="m0  115.5 272 0"
+        stroke="#f0f0f0"
+      />
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={210}
+        y2={199.5}
+      />
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={199.5}
+        y2={189}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={71.1}
+        y={199.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6762,25 +7434,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          40
-            
+          40 
         </p>
       </foreignObject>
-      <path
-        d="m0  63.2 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={189}
+        y2={178.5}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={63.2}
+        y={189}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6789,25 +7462,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          80
-            
+          80 
         </p>
       </foreignObject>
-      <path
-        d="m0  55.3 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={178.5}
+        y2={168}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={55.3}
+        y={178.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6816,25 +7490,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          120
-            
+          120 
         </p>
       </foreignObject>
-      <path
-        d="m0  47.4 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={168}
+        y2={157.5}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={47.4}
+        y={168}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6843,25 +7518,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          160
-            
+          160 
         </p>
       </foreignObject>
-      <path
-        d="m0  39.5 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={157.5}
+        y2={147}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={39.5}
+        y={157.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6870,25 +7546,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          200
-            
+          200 
         </p>
       </foreignObject>
-      <path
-        d="m0  31.6 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={147}
+        y2={136.5}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={31.6}
+        y={147}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6897,25 +7574,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          240
-            
+          240 
         </p>
       </foreignObject>
-      <path
-        d="m0  23.700000000000003 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={136.5}
+        y2={126}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={23.700000000000003}
+        y={136.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6924,25 +7602,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          280
-            
+          280 
         </p>
       </foreignObject>
-      <path
-        d="m0  15.799999999999997 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={126}
+        y2={115.5}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={15.799999999999997}
+        y={126}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6951,25 +7630,26 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          320
-            
+          320 
         </p>
       </foreignObject>
-      <path
-        d="m0  7.900000000000006 277 0"
-        stroke="#f0f0f0"
+      <line
+        stroke="black"
+        x1={0}
+        x2={0}
+        y1={115.5}
+        y2={105}
       />
       <foreignObject
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
         x={0}
-        y={7.900000000000006}
+        y={115.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -6978,17 +7658,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 fIDioK LineChart__LineChartText-v9y3mz-0 ijRuOm"
-          fontWeight="bold"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
-          360
-            
+          360 
         </p>
       </foreignObject>
       <path
-        d="m0 0v79"
+        d="m0 105v105"
         fill="none"
         markerStart="url(#arrowUp)"
         stroke="#000000"
@@ -7011,7 +7689,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         />
       </marker>
       <path
-        d="M 0 44.4375 55.4 38.71 110.8 33.3775 166.2 32.1925 221.6 23.700000000000003 277 12.0475"
+        d="M 0 164.0625 54.4 156.45 108.8 149.3625 163.2 147.7875 217.6 136.5 272 121.0125"
         fill="none"
         markerEnd="url(#point,0)"
         markerMid="url(#point,0)"
@@ -7023,7 +7701,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={43.4375}
+        y={163.0625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7032,7 +7710,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7043,8 +7721,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={55.4}
-        y={37.71}
+        x={54.4}
+        y={155.45}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7053,7 +7731,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7064,8 +7742,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={110.8}
-        y={32.3775}
+        x={108.8}
+        y={148.3625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7074,7 +7752,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7085,8 +7763,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={166.2}
-        y={31.192500000000003}
+        x={163.2}
+        y={146.7875}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7095,7 +7773,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7106,8 +7784,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={221.6}
-        y={22.700000000000003}
+        x={217.6}
+        y={135.5}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7116,7 +7794,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7127,8 +7805,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={277}
-        y={11.0475}
+        x={272}
+        y={120.0125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7137,7 +7815,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7151,15 +7829,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           fill="#71a2ff"
           height={10}
           width={10}
-          x={287}
-          y={3}
+          x={280}
+          y={108}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={297}
-          y={8}
+          x={290}
+          y={113}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7195,7 +7873,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         />
       </marker>
       <path
-        d="M 0 66.1625 55.4 65.57 110.8 64.5825 166.2 64.1875 221.6 63.3975 277 61.225"
+        d="M 0 192.9375 54.4 192.15 108.8 190.8375 163.2 190.3125 217.6 189.2625 272 186.375"
         fill="none"
         markerEnd="url(#point,1)"
         markerMid="url(#point,1)"
@@ -7207,7 +7885,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={0}
-        y={65.1625}
+        y={191.9375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7216,7 +7894,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7227,8 +7905,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={55.4}
-        y={64.57}
+        x={54.4}
+        y={191.15}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7237,7 +7915,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7248,8 +7926,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={110.8}
-        y={63.582499999999996}
+        x={108.8}
+        y={189.8375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7258,7 +7936,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7269,8 +7947,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={166.2}
-        y={63.1875}
+        x={163.2}
+        y={189.3125}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7279,7 +7957,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7290,8 +7968,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={221.6}
-        y={62.3975}
+        x={217.6}
+        y={188.2625}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7300,7 +7978,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7311,8 +7989,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
         height="100%"
         width="100%"
-        x={277}
-        y={60.225}
+        x={272}
+        y={185.375}
       >
         <canvas
           className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7321,7 +7999,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           width={0}
         />
         <p
-          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN LineChart__LineChartText-v9y3mz-0 ijRuOm"
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 eqSFcN"
           height={0}
           width={0}
         >
@@ -7335,15 +8013,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           fill="#c0d4e2"
           height={10}
           width={10}
-          x={287}
-          y={20}
+          x={280}
+          y={119}
         />
         <foreignObject
           className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
           height="100%"
           width="100%"
-          x={297}
-          y={25}
+          x={290}
+          y={124}
         >
           <canvas
             className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
@@ -7367,8 +8045,8 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         width="100%"
       >
         <canvas
-          className="SvgTypography__Canvas-jh05vp-0 jeHtDC"
-          fontSize="1.4rem"
+          className="SvgTypography__Canvas-jh05vp-0 bKTKxa"
+          fontSize="1rem"
           height="100%"
           width="100%"
         />
@@ -7393,7 +8071,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
     <svg
       className="sc-bwzfXH gMPwaf"
       overflow="visible"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="-20.68461412470208 0 120.68461412470208 105.79381287233429"
     >
       <path
@@ -7670,7 +8348,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 474 210"
     >
       <path
@@ -9379,7 +10057,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 474 210"
     >
       <path
@@ -10431,7 +11109,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 198 210"
     >
       <path
@@ -11312,7 +11990,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 198 210"
     >
       <path
@@ -12325,7 +13003,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 198 210"
     >
       <path
@@ -13184,7 +13862,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
     </h3>
     <svg
       className="sc-bwzfXH iVOfMH"
-      preserveAspectRatio="xMidYMax meet"
+      preserveAspectRatio="xMidYMin meet"
       viewBox="0 0 198 210"
     >
       <path

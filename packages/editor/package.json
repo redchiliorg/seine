@@ -1,6 +1,6 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.102",
+  "version": "0.3.103",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,6 +11,7 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
+    "@seine/charts": "^0.3.0",
     "@seine/charts-editor": "^0.3.0",
     "@seine/content": "^0.3.0",
     "@seine/core": "^0.3.0",
