@@ -1,26 +1,29 @@
 // @flow
 import * as React from 'react';
-import { SvgTypography } from '@seine/styles';
+import {
+  Canvas,
+  ForeignObject,
+  SvgTypography,
+  useSvgScale,
+  useTextMetrics,
+} from '@seine/styles';
 
 import {
   defaultChartDx,
-  defaultChartFontSize,
-  defaultChartFontWeight,
-  defaultChartLineHeight,
   defaultChartPalette,
   defaultChartPaletteKey,
-  defaultChartSize,
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
   defaultChartVerticalAlignment,
   defaultChartXAxis,
+  VIEWPORT_HEIGHT,
+  VIEWPORT_WIDTH,
 } from './constants';
 import type { ChartProps } from './types';
-import BarChartElementTitle from './BarChartElementTitle';
-import BarChartElementValue from './BarChartElementValue';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
+import ChartAxis from './ChartAxis';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -33,12 +36,8 @@ export default function BarChart({
   elements,
 
   dx = defaultChartDx,
-  fontWeight = defaultChartFontWeight,
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
-  size = defaultChartSize,
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
@@ -51,105 +50,107 @@ export default function BarChart({
   type,
   ...viewProps
 }: Props) {
-  const { barHeight, fontHeight, fontWidth } = React.useMemo(() => {
-    return {
-      barHeight: fontSize * 6,
-      fontHeight: fontSize * lineHeight,
-      fontWidth: fontSize / 2,
-      textPadding: fontSize,
-    };
-  }, [fontSize, lineHeight]);
+  const [{ xScale, yScale }, svgRef] = useSvgScale();
 
-  const titleMaxLen =
-    Math.max(...elements.map(({ title }) => title.length)) * fontWidth;
-  const valueMaxLen =
-    Math.max(...elements.map(({ value }) => `${value}`.length)) * fontWidth;
+  const canvasRef = React.useRef(null);
+  const { current: canvas } = canvasRef;
 
-  const barMaxLen = size - (titleMaxLen + valueMaxLen + fontSize * 2);
-  const maxValue = Math.max(...elements.map(({ value }) => value));
+  const titleMetrics = useTextMetrics(
+    `${elements.reduce(
+      (found, { title }) =>
+        `${title}`.length > found.length ? `${title}` : found,
+      ''
+    )}**`,
+    canvas
+  );
+  const titleWidth = titleMetrics.width * xScale;
 
-  const height = (elements.length * barHeight) / 2;
+  const valueMetrics = useTextMetrics(
+    `**${elements.reduce(
+      (found, { value }) =>
+        `${value}`.length > found.length ? `${value} ` : found,
+      ''
+    )}`,
+    canvas
+  );
+  const valueWidth = valueMetrics.width * xScale;
+  const valueHeight = valueMetrics.height * yScale;
+
+  const barHeight = Math.min(
+    (VIEWPORT_HEIGHT - valueHeight) / elements.length,
+    VIEWPORT_HEIGHT / 16
+  );
+  const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
+
+  const maxValue = Math.max(...elements.map(({ value }) => +value));
+  const maxValueMetrics = useTextMetrics(`*${parseInt(maxValue)}*`, canvas);
+  const maxValueWidth = maxValueMetrics.width * xScale;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        fontSize={fontSize}
-        fontWeight={fontWeight}
+        strokeWidth={2 * yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={[
-          0,
-          -2 * lineHeight * fontSize,
-          size,
-          height + 3.5 * lineHeight * fontSize,
-        ].join(' ')}
+        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         {elements.map(({ title, value }, index) => {
-          const len = (barMaxLen * value) / maxValue;
+          const width = (barWidth * value) / maxValue;
           const color = palette[index % palette.length];
-          const y = (index * barHeight) / 2;
+          const y =
+            VIEWPORT_HEIGHT -
+            barHeight * (elements.length - index) -
+            valueHeight;
 
           return [
-            <BarChartElementTitle
+            <SvgTypography
+              dominantBaseline={'middle'}
               fill={color}
-              height={barHeight}
               index={index}
               key={'title'}
-              lineHeight={fontHeight}
-              x={titleMaxLen / 2}
-              y={y + barHeight / 4}
-              width={titleMaxLen}
+              x={0}
+              y={y + barHeight / 2}
             >
               {title}
-            </BarChartElementTitle>,
-
-            <BarChartElementValue
-              fill={color}
-              height={barHeight}
-              index={index}
-              key={'value'}
-              x={titleMaxLen + len}
-              y={y + barHeight / 4}
-              units={units}
-            >
-              {value}
-            </BarChartElementValue>,
+            </SvgTypography>,
 
             <rect
               fill={color}
-              height={barHeight / 2}
+              height={barHeight}
               key={['bar', index]}
-              width={len}
-              x={titleMaxLen}
+              width={width}
+              x={titleWidth}
               y={y}
             />,
+
+            <SvgTypography
+              dominantBaseline={'middle'}
+              textAnchor={'end'}
+              fill={color}
+              index={index}
+              key={'value'}
+              variant={'h6'}
+              x={titleWidth + width + valueWidth}
+              y={y + barHeight / 2}
+            >
+              {value}
+              {units}
+            </SvgTypography>,
           ];
         })}
-        {xAxis
-          ? Array.from({ length: Math.round(maxValue / dx) }).map(
-              (_, index, { length }) => [
-                <line
-                  key={['line', index]}
-                  x1={titleMaxLen + (barMaxLen * index) / length}
-                  x2={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                  y1={(elements.length * barHeight) / 2}
-                  y2={(elements.length * barHeight) / 2}
-                  stroke={'black'}
-                  strokeWidth={'0.1em'}
-                />,
-                <SvgTypography
-                  key={['title', index]}
-                  dominantBaseline={'hanging'}
-                  textAnchor={'middle'}
-                  x={titleMaxLen + (barMaxLen * (index + 1)) / length}
-                  y={(elements.length * barHeight) / 2 + barHeight / 16}
-                >
-                  {Math.min((index + 1) * dx, maxValue)}
-                  {units}
-                </SvgTypography>,
-              ]
-            )
-          : null}
+        {xAxis ? (
+          <ChartAxis
+            length={barWidth}
+            max={maxValue}
+            step={maxValueWidth ? Math.max(dx, maxValueWidth) : dx}
+            units={units}
+            x={titleWidth}
+            y={VIEWPORT_HEIGHT - valueHeight}
+          />
+        ) : null}
+        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
+          <Canvas ref={canvasRef} />
+        </ForeignObject>
       </ChartSvg>
     </View>
   );

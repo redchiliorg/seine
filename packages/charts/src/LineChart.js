@@ -1,27 +1,34 @@
 // @flow
 import * as React from 'react';
-import { SvgTypography } from '@seine/styles';
+import {
+  Canvas,
+  ForeignObject,
+  SvgTypography,
+  useSvgScale,
+  useTextMetrics,
+} from '@seine/styles';
 
 import {
   defaultChartDy,
   defaultChartFontSize,
   defaultChartLineHeight,
-  defaultChartPalette,
-  defaultChartTitle,
   defaultChartMinValue,
+  defaultChartPalette,
+  defaultChartPaletteKey,
+  defaultChartTextAlignment,
+  defaultChartTitle,
+  defaultChartVerticalAlignment,
   defaultChartXAxis,
   defaultChartYAxis,
-  defaultChartPaletteKey,
-  defaultChartVerticalAlignment,
-  defaultChartTextAlignment,
+  VIEWPORT_HEIGHT,
+  VIEWPORT_WIDTH,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
-import LineChartGroup from './LineChartGroup';
-import LineChartValue from './LineChartValue';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
+import ChartAxis from './ChartAxis';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -56,11 +63,6 @@ export default function LineChart({
   units,
   ...viewProps
 }: Props) {
-  fontSize *= 2;
-
-  const height = 79;
-  const y = 0;
-
   const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,
     initialMinValue,
@@ -68,24 +70,56 @@ export default function LineChart({
     dy
   );
 
-  const x = fontSize * `${maxValue}`.length;
-  const legendWidth =
-    (1 + Math.max(...titles.map(({ title: { length } }) => length))) * fontSize;
-  const graphWidth = 297 - legendWidth - 10 - x;
+  const [{ xScale, yScale }, svgRef] = useSvgScale();
+
+  const canvasRef = React.useRef(null);
+  const { current: canvas } = canvasRef;
+
+  const groupMetrics = useTextMetrics(
+    `${groups.reduce(
+      (found, { title }) =>
+        `${title}`.length > found.length ? `${title}` : found,
+      ''
+    )}`,
+    canvas
+  );
+  const groupWidth = groupMetrics.width * xScale;
+  const height = VIEWPORT_HEIGHT / 2 - groupMetrics.height * yScale;
+
+  const titleMetrics = useTextMetrics(
+    `${titles.reduce(
+      (found, { title }) =>
+        `${title}`.length > found.length ? `${title}` : found,
+      ''
+    )}`,
+    canvas
+  );
+  const legendWidth = 10 + titleMetrics.width * xScale;
+
+  const valueMetrics = useTextMetrics(
+    `${elements.reduce(
+      (found, { value }) =>
+        `${value}`.length > found.length ? `${value}` : found,
+      ''
+    )} `,
+    canvas
+  );
+  const x = valueMetrics.width * xScale;
+  const y = VIEWPORT_HEIGHT / 2;
+
+  const valueHeight = valueMetrics.height * yScale;
+
+  const graphWidth = VIEWPORT_WIDTH - legendWidth - 15 - x;
+
+  const maxGroupsCount = parseInt(graphWidth / groupWidth);
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        fontSize={fontSize}
-        strokeWidth={0.5}
+        strokeWidth={2 * yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={[
-          0,
-          -2.5 * lineHeight * fontSize,
-          297,
-          100 + 3 * lineHeight * fontSize,
-        ].join(' ')}
+        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
@@ -96,47 +130,52 @@ export default function LineChart({
           />
         </marker>
         {xAxis
-          ? groups.map(([group], index) => (
-              <LineChartGroup
-                fontSize={fontSize}
-                fontWeight={'bold'}
-                group={group}
-                height={fontSize * lineHeight}
-                key={index}
-                lineHeight={lineHeight}
-                width={8 * fontSize}
-                x={x + (index * graphWidth) / (groups.length - 1)}
+          ? (maxGroupsCount < groups.length
+              ? [
+                  ...groups.slice(0, parseInt(maxGroupsCount / 2)),
+                  ...(maxGroupsCount % 2
+                    ? []
+                    : [groups[parseInt(maxGroupsCount / 2)]]),
+                  ...groups.slice(-parseInt(maxGroupsCount / 2)),
+                ]
+              : groups
+            ).map(([group], index, { length }) => (
+              <SvgTypography
+                key={['group', index]}
+                dominantBaseline={'hanging'}
+                textAnchor={'middle'}
+                x={x + (index * graphWidth) / (length - 1)}
                 y={y + height}
-              />
+              >
+                {group}
+              </SvgTypography>
             ))
           : null}
-        {Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
-          (_, index, { length }) => [
-            (xAxis && index === 0) || (yAxis && index > 0) ? (
-              <path
-                d={`m${x}  ${y +
-                  height -
-                  (index * height) / length} ${graphWidth} 0`}
-                key={['grid', index]}
-                stroke={index > 0 ? '#f0f0f0' : '#505050'}
-              />
-            ) : null,
-            yAxis && index > 0 ? (
-              <SvgTypography
-                dominantBaseline={'middle'}
-                fontWeight={'bold'}
-                key={['title', index]}
-                textAnchor={'end'}
-                x={x}
-                y={y + height - (index * height) / length}
-              >
-                {minValue + index * dy}
-                {units}
-                {'  '}
-              </SvgTypography>
-            ) : null,
-          ]
-        )}
+        {xAxis || yAxis
+          ? Array.from({ length: Math.floor((maxValue - minValue) / dy) }).map(
+              (_, index, { length }) =>
+                !!((xAxis && index === 0) || (yAxis && index > 0)) && (
+                  <path
+                    d={`m${x}  ${y +
+                      height -
+                      (index * height) / length} ${graphWidth} 0`}
+                    key={['grid', index]}
+                    stroke={index > 0 ? '#f0f0f0' : 'black'}
+                  />
+                )
+            )
+          : null}
+        {yAxis ? (
+          <ChartAxis
+            direction={'up'}
+            length={height}
+            max={maxValue}
+            min={minValue}
+            step={Math.max(dy, valueHeight)}
+            x={x}
+            y={y + height}
+          />
+        ) : null}
         {yAxis ? (
           <path
             d={`m${x} ${y}v${height}`}
@@ -189,8 +228,9 @@ export default function LineChart({
             elements
               .filter((element) => element.id === id)
               .map(({ index, value }) => (
-                <LineChartValue
+                <SvgTypography
                   index={index}
+                  key={['value', titleIndex, groupIndex]}
                   textAnchor={
                     groupIndex === groups.length - 1
                       ? 'end'
@@ -198,11 +238,6 @@ export default function LineChart({
                       ? 'middle'
                       : 'start'
                   }
-                  key={['value', titleIndex, groupIndex]}
-                  maxValue={maxValue}
-                  minValue={minValue}
-                  units={units}
-                  value={value}
                   x={x + (groupIndex * graphWidth) / (groups.length - 1)}
                   y={
                     y +
@@ -214,7 +249,10 @@ export default function LineChart({
                       (maxValue - minValue) -
                     1
                   }
-                />
+                >
+                  {value}
+                  {units}
+                </SvgTypography>
               ))
           ),
 
@@ -224,14 +262,13 @@ export default function LineChart({
             size={10}
             title={title}
             width={legendWidth}
-            x={297 - legendWidth}
-            y={
-              y +
-              (fontSize * lineHeight) / 2 +
-              (10 + fontSize * lineHeight) * titleIndex
-            }
+            x={x + graphWidth + 8}
+            y={y + titleMetrics.height * yScale + 3 * yScale + 11 * titleIndex}
           />,
         ])}
+        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
+          <Canvas ref={canvasRef} />
+        </ForeignObject>
       </ChartSvg>
     </View>
   );

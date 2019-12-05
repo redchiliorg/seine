@@ -1,24 +1,14 @@
 // @flow
 import * as React from 'react';
-import {
-  ChartSvg,
-  ChartTitle,
-  PieChartSlice,
-  PieChartTitle,
-  PieChartValue,
-} from '@seine/charts';
-import type {
-  ChartTitleProps,
-  PieChartSliceProps,
-  PieChartTitleProps,
-  PieChartValueProps,
-} from '@seine/charts';
+import { ChartSvg, ChartTitle } from '@seine/charts';
+import type { ChartTitleProps } from '@seine/charts';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
 } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
+import { SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
@@ -76,68 +66,29 @@ export default function PieChartEditor({
                     );
                   }
 
-                  case PieChartTitle: {
-                    let {
-                      title,
-                      fill,
-                      index,
-                      x,
-                      y,
-                    }: PieChartTitleProps = child.props;
-
+                  case SvgTypography: {
                     return (
                       <ChartInput
-                        dominantBaseline={'hanging'}
-                        fill={fill}
                         key={child.key}
+                        {...child.props}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
                             type: UPDATE_BLOCK_ELEMENT,
-                            body: { title: currentTarget.value },
-                            index,
+                            body:
+                              child.key === 'value'
+                                ? { value: +currentTarget.value }
+                                : { title: currentTarget.value },
+                            index: child.props.index,
                           })
                         }
-                        textAnchor={'middle'}
-                        value={title}
-                        variant={'h5'}
-                        x={x}
-                        y={y}
+                        type={child.key === 'value' ? 'number' : 'text'}
+                        value={child.props.children}
                       />
                     );
                   }
 
-                  case PieChartValue: {
-                    let {
-                      fill,
-                      index,
-                      value,
-                      x,
-                      y,
-                    }: PieChartValueProps = child.props;
-
-                    return (
-                      <ChartInput
-                        fill={fill}
-                        key={child.key}
-                        onChange={({ currentTarget }) =>
-                          dispatchElements({
-                            type: UPDATE_BLOCK_ELEMENT,
-                            body: { value: +currentTarget.value },
-                            index,
-                          })
-                        }
-                        textAnchor={'middle'}
-                        type={'number'}
-                        value={value}
-                        variant={'h4'}
-                        x={x}
-                        y={y}
-                      />
-                    );
-                  }
-
-                  case PieChartSlice: {
-                    const { index }: PieChartSliceProps = child.props;
+                  case 'path': {
+                    const index = +child.key.split(',')[1];
                     return index === editor.selection ? (
                       [
                         <ClickAwayListener
@@ -152,9 +103,9 @@ export default function PieChartEditor({
                         >
                           <g>
                             {child}
-                            <PieChartSlice
+                            <path
                               {...child.props}
-                              palette={['url(#selected-slice)']}
+                              fill={['url(#selected-slice)']}
                             />
                           </g>
                         </ClickAwayListener>,

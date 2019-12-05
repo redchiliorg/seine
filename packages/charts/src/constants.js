@@ -80,7 +80,7 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
-export const defaultChartVerticalAlignment = 'center';
+export const defaultChartVerticalAlignment = 'start';
 export const defaultChartFormat = {
   palette: defaultChartPalette,
   paletteKey: defaultChartPaletteKey,
@@ -94,3 +94,6 @@ export const defaultPieChartUnits = '%';
 
 export const columnChartMaxElements = 5;
 export const columnChartMaxGroups = 5;
+
+export const VIEWPORT_WIDTH = 297;
+export const VIEWPORT_HEIGHT = 210;

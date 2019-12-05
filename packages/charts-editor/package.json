@@ -1,6 +1,6 @@
 {
   "name": "@seine/charts-editor",
-  "version": "0.3.100",
+  "version": "0.3.105",
   "description": "Seine charts editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@seine/charts": "^0.3.0",
     "@seine/core": "^0.3.0",
+    "@seine/styles": "^0.3.0",
     "@seine/ui": "^0.3.0",
     "react-color": "^2.17.3"
   },

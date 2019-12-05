@@ -7,12 +7,10 @@ export default styled.svg.attrs(({ verticalAlignment: align }) => ({
   } meet`,
 }))`
   ${({ maxWidth }) =>
+    maxWidth &&
     css`
       max-width: ${maxWidth}px;
     `};
   height: 100%;
   width: 100%;
-  && {
-    overflow: visible;
-  }
 `;

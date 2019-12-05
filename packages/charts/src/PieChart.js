@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SvgTypography } from '@seine/styles';
 
 import {
   defaultChartFontSize,
@@ -13,9 +14,6 @@ import {
   defaultPieChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
-import PieChartTitle from './PieChartTitle';
-import PieChartValue from './PieChartValue';
-import PieChartSlice from './PieChartSlice';
 import ChartSvg from './ChartSvg';
 import ChartTitle from './ChartTitle';
 
@@ -119,42 +117,43 @@ export default function PieChart({
             bounds.maxY = textY + textBoxHeight;
           }
           return [
-            <PieChartSlice
-              center={center}
-              fontSize={fontSize}
-              endX={endX}
-              endY={endY}
-              index={index}
-              key={'slice'}
-              length={length}
-              lineHeight={lineHeight}
-              palette={palette}
-              radius={radius}
-              start={start}
-              startX={startX}
-              startY={startY}
-              textX={textX}
-              textY={textY}
+            <path
+              d={[
+                `M ${center + radius * endX} ${center + radius * endY}`,
+                `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
+                  radius * startX} ${center + radius * startY}`,
+                `L ${center} ${center}`,
+                `L ${center + radius * endX} ${center + radius * endY}`,
+              ].join(' ')}
+              fill={palette[index % palette.length]}
+              key={['slice', index]}
             />,
 
-            <PieChartValue
+            <SvgTypography
               fill={textColor}
               index={index}
               key={'value'}
-              units={units}
-              value={value}
+              textAnchor={'middle'}
+              variant={'h4'}
               x={textX}
               y={textY}
-            />,
+            >
+              {value}
+              {units}
+            </SvgTypography>,
 
-            <PieChartTitle
+            <SvgTypography
+              dominantBaseline={'hanging'}
               fill={textColor}
               index={index}
               key={'title'}
-              title={title}
+              textAnchor={'middle'}
+              variant={'h5'}
               x={textX}
               y={textY}
-            />,
+            >
+              {title}
+            </SvgTypography>,
           ];
         })}
       </ChartSvg>

@@ -31,7 +31,7 @@ export default function ChartLegendItemInput({
             id,
           })
         }
-        value={title}
+        children={title}
         x={x + size}
         y={y + size / 2}
       />
