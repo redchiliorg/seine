@@ -58,13 +58,13 @@ export default function ChartElementColorButton({
           color={color}
           presetColors={chartPaletteKeyValues[paletteKey]}
           onChange={React.useCallback(
-            ({ hex }) =>
+            ({ rgb: { r, g, b, a = 1 } }) =>
               dispatch({
                 type: UPDATE_BLOCK_FORMAT,
                 format: {
                   palette: [
                     ...palette.slice(0, colorIndex),
-                    hex,
+                    `rgba(${r},${g},${b},${a})`,
                     ...palette.slice(colorIndex + 1),
                   ],
                 },
