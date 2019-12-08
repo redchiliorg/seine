@@ -3,9 +3,6 @@ import { initialElementsState } from '@seine/core';
 export const defaultChartDy = 10;
 export const defaultChartDx = 10;
 export const defaultChartTitle = 'Chart title';
-export const defaultChartFontSize = 2;
-export const defaultChartFontWeight = 500;
-export const defaultChartLineHeight = 1.75;
 export const defaultChartPalette = [
   '#71a2ff',
   '#c0d4e2',

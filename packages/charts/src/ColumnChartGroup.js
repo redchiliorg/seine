@@ -5,10 +5,8 @@ import type { BlockElement } from '@seine/core';
 
 export type Props = {
   elements: BlockElement[],
-  fontSize: number,
   group: string,
   height: number,
-  lineHeight: number,
   minValue: number,
   maxValue: number,
   palette: string[],
@@ -64,6 +62,11 @@ export default function ColumnChartGroup({
         </SvgTypography>,
       ];
     }, []),
+    <path
+      key={'path'}
+      d={`m${x - size} ${y}h${size * elements.length + 2 * size}`}
+      stroke={'black'}
+    />,
     <SvgTypography
       key={'text'}
       textAnchor={'middle'}

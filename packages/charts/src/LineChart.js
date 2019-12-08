@@ -10,8 +10,6 @@ import {
 
 import {
   defaultChartDy,
-  defaultChartFontSize,
-  defaultChartLineHeight,
   defaultChartMinValue,
   defaultChartPalette,
   defaultChartPaletteKey,
@@ -45,8 +43,6 @@ export default function LineChart({
   minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,

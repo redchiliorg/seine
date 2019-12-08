@@ -3,8 +3,6 @@ import * as React from 'react';
 import { SvgTypography } from '@seine/styles';
 
 import {
-  defaultChartFontSize,
-  defaultChartLineHeight,
   defaultChartPalette,
   defaultChartPaletteKey,
   defaultChartSize,
@@ -26,8 +24,6 @@ type Props = $Rest<ChartProps, {| kind: string |}>;
  */
 export default function PieChart({
   elements,
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
@@ -99,10 +95,10 @@ export default function PieChart({
             (value >= quarter ? innerRadius : outerRadius) *
               Math.sin(start + length / 2);
 
-          const titleWidth = fontSize * (2 + title.length);
-          const valueWidth = fontSize * (2 + String(value).length);
+          const titleWidth = 2 * (2 + title.length);
+          const valueWidth = 2 * (2 + String(value).length);
           const textBoxWidth = Math.max(titleWidth, valueWidth);
-          const textBoxHeight = 1.5 * fontSize * lineHeight;
+          const textBoxHeight = 1.5 * 2 * 1.75;
 
           if (textX - textBoxWidth / 2 < bounds.minX) {
             bounds.minX = textX - textBoxWidth / 2;
@@ -110,8 +106,8 @@ export default function PieChart({
           if (textX > bounds.maxX + textBoxWidth / 2) {
             bounds.maxX = textX + textBoxWidth / 2;
           }
-          if (textY - 2 * fontSize < bounds.minY) {
-            bounds.minY = textY - 2 * fontSize;
+          if (textY - 2 * 2 < bounds.minY) {
+            bounds.minY = textY - 2 * 2;
           }
           if (textY + textBoxHeight > bounds.maxY) {
             bounds.maxY = textY + textBoxHeight;
