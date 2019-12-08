@@ -1,10 +1,14 @@
 // @flow
 import * as React from 'react';
+import {
+  Canvas,
+  ForeignObject,
+  useSvgScale,
+  useTextMetrics,
+} from '@seine/styles';
 
 import {
   defaultChartDy,
-  defaultChartFontSize,
-  defaultChartLineHeight,
   defaultChartMinValue,
   defaultChartPalette,
   defaultChartPaletteKey,
@@ -13,14 +17,16 @@ import {
   defaultChartUnits,
   defaultChartVerticalAlignment,
   defaultChartYAxis,
+  VIEWPORT_HEIGHT,
+  VIEWPORT_WIDTH,
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
-import { ColumnChartYAxis } from './ColumnChartYAxis';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
+import ChartAxis from './ChartAxis';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -37,8 +43,6 @@ export default function ColumnChart({
   minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
-  fontSize = defaultChartFontSize,
-  lineHeight = defaultChartLineHeight,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
@@ -54,7 +58,6 @@ export default function ColumnChart({
   type,
   ...viewProps
 }: Props) {
-  const barGroupWidth = 66;
   const xPadding = 23;
   const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,
@@ -63,68 +66,82 @@ export default function ColumnChart({
     dy
   );
 
+  const canvasRef = React.useRef(null);
+  const { current: canvas } = canvasRef;
+
+  const [{ xScale, yScale }, svgRef] = useSvgScale();
+
+  const valueMetrics = useTextMetrics(
+    `${elements.reduce(
+      (found, { value }) =>
+        `${value}`.length > found.length ? `${value}` : found,
+      ''
+    )} `,
+    canvas
+  );
+  const valueHeight = valueMetrics.height * yScale;
+  const valueWidth = valueMetrics.width * xScale;
+
+  const titleMetrics = useTextMetrics(
+    `${elements.reduce(
+      (found, { title }) =>
+        `${title}`.length > found.length ? `${title}` : found,
+      ''
+    )}**`,
+    canvas
+  );
+  const titleWidth = titleMetrics.width * xScale;
+
+  const graphHeight = VIEWPORT_HEIGHT - valueHeight;
+  const legendHeight = 10 * groups.length;
+
+  const barGroupWidth =
+    (VIEWPORT_WIDTH - xPadding * groups.length) / groups.length;
+
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
+        strokeWidth={2 * yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={React.useMemo(
-          () =>
-            [
-              0,
-              0,
-              groups.length > 2
-                ? 79 * groups.length
-                : groups.length === 2
-                ? 99 * groups.length
-                : 128,
-              titles.length ? 210 : 140,
-            ].join(' '),
-          [groups.length, titles.length]
-        )}
+        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT +
+          2 * valueHeight +
+          legendHeight}`}
       >
-        <path
-          d={`m${xPadding + 20} ${110}h${barGroupWidth * groups.length -
-            (groups.length > 1 ? 10 * (6 - titles.length) : 0)}`}
-          stroke={'#000'}
-          strokeWidth={0.1}
-        />
-
         {yAxis ? (
-          <ColumnChartYAxis
-            dy={dy}
-            fontSize={1.5 * fontSize}
-            height={90}
-            maxValue={maxValue}
-            minValue={minValue}
-            title={title}
+          <ChartAxis
+            direction={'up'}
+            length={graphHeight - 6 * valueHeight}
+            max={maxValue}
+            min={minValue}
+            noLine
+            step={dy}
             units={units}
-            x={xPadding}
-            y={20}
+            x={valueWidth}
+            y={graphHeight}
           />
         ) : null}
-        {groups.map(
-          ([group, elements], index) => (
-            <ColumnChartGroup
-              key={index}
-              barGroupWidth={barGroupWidth}
-              elements={elements}
-              fontSize={1.5 * fontSize}
-              group={group}
-              height={80}
-              lineHeight={lineHeight}
-              minValue={minValue}
-              maxValue={maxValue}
-              palette={palette}
-              size={10}
-              units={units}
-              width={10}
-              x={xPadding * 2 + index * barGroupWidth}
-              y={110}
-            />
-          ),
-          [fontSize, groups, lineHeight, maxValue, minValue, palette, units]
-        )}
+        {groups.map(([group, elements], index) => (
+          <ColumnChartGroup
+            key={index}
+            barGroupWidth={barGroupWidth}
+            elements={elements}
+            group={group}
+            height={graphHeight - 6 * valueHeight}
+            minValue={minValue}
+            maxValue={maxValue}
+            palette={palette}
+            size={10}
+            units={units}
+            width={10}
+            x={
+              valueWidth +
+              index * (barGroupWidth + xPadding / 2) +
+              barGroupWidth / 2
+            }
+            y={graphHeight}
+          />
+        ))}
 
         {titles.map(({ id, title }, index) => (
           <ChartLegendItem
@@ -132,11 +149,18 @@ export default function ColumnChart({
             fill={palette[index % palette.length]}
             size={10}
             title={title}
-            width={80}
-            x={xPadding + 10 + 13 + barGroupWidth * (index % groups.length)}
-            y={141 + 10 * parseInt(index / groups.length)}
+            width={11 + titleWidth}
+            x={valueWidth + (14 + titleWidth) * (index % groups.length)}
+            y={
+              graphHeight +
+              2 * valueHeight +
+              11 * parseInt(index / groups.length)
+            }
           />
         ))}
+        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
+          <Canvas ref={canvasRef} />
+        </ForeignObject>
       </ChartSvg>
     </View>
   );

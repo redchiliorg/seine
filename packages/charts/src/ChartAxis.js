@@ -5,6 +5,7 @@ import * as React from 'react';
 type Props = {
   direction?: 'up' | 'right',
   length: number,
+  noLine?: boolean,
   max: number,
   min?: number,
   step: number,
@@ -21,6 +22,7 @@ type Props = {
 export default function ChartAxis({
   direction = 'right',
   length,
+  noLine = false,
   max,
   min = 0,
   step,
@@ -32,14 +34,16 @@ export default function ChartAxis({
   const offset = length / count;
 
   return Array.from({ length: count }).map((_, index) => [
-    <line
-      key={'line'}
-      x1={x + (direction === 'right' && offset * index)}
-      x2={x + (direction === 'right' && offset * (index + 1))}
-      y1={y - (direction === 'up' && offset * index)}
-      y2={y - (direction === 'up' && offset * (index + 1))}
-      stroke={'black'}
-    />,
+    !noLine && (
+      <line
+        key={'line'}
+        x1={x + (direction === 'right' && offset * index)}
+        x2={x + (direction === 'right' && offset * (index + 1))}
+        y1={y - (direction === 'up' && offset * index)}
+        y2={y - (direction === 'up' && offset * (index + 1))}
+        stroke={'black'}
+      />
+    ),
     index > 0 && (
       <SvgTypography
         key={'value'}
