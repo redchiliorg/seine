@@ -53,7 +53,7 @@ export default function ChartAxis({
         x={x + (direction === 'right' && offset * index)}
         y={y - (direction === 'up' && offset * index)}
       >
-        {`${parseInt(min + (index * (max - min)) / count)} `}
+        {`${parseInt(min + (index * (max - min)) / count)}   `}
         {units}
       </SvgTypography>
     ),
