@@ -100,7 +100,7 @@ export default function LineChart({
     )} `,
     canvas
   );
-  const x = valueMetrics.width * xScale;
+  const x = 3 * valueMetrics.width * xScale;
   const y = VIEWPORT_HEIGHT / 2;
 
   const valueHeight = valueMetrics.height * yScale;
@@ -174,7 +174,7 @@ export default function LineChart({
         ) : null}
         {yAxis ? (
           <path
-            d={`m${x} ${y}v${height}`}
+            d={`m${x} ${y}v${height * yScale}`}
             fill="none"
             key="y-axis"
             markerStart="url(#arrowUp)"
@@ -234,7 +234,11 @@ export default function LineChart({
                       ? 'middle'
                       : 'start'
                   }
-                  x={x + (groupIndex * graphWidth) / (groups.length - 1)}
+                  x={
+                    x +
+                    (groupIndex === 0 && (valueMetrics.width * xScale) / 4) +
+                    (groupIndex * graphWidth) / (groups.length - 1)
+                  }
                   y={
                     y +
                     height -
