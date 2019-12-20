@@ -1689,6 +1689,28 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             
           </p>
         </foreignObject>
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+            height={0}
+            width={0}
+          >
+            60   
+            
+          </p>
+        </foreignObject>
         <rect
           fill="#71a2ff"
           height={174.39085032322228}
@@ -2052,6 +2074,28 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             width={0}
           >
             50   
+            
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+            height={0}
+            width={0}
+          >
+            60   
             
           </p>
         </foreignObject>
@@ -3026,6 +3070,28 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             width={0}
           >
             50   
+            
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+            height={0}
+            width={0}
+          >
+            60   
             
           </p>
         </foreignObject>
@@ -6242,6 +6308,28 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             
           </p>
         </foreignObject>
+        <foreignObject
+          className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+          height="100%"
+          width="100%"
+          x={0}
+          y={0}
+        >
+          <canvas
+            className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+            fontSize="1rem"
+            height={0}
+            width={0}
+          />
+          <p
+            className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+            height={0}
+            width={0}
+          >
+            100   
+            
+          </p>
+        </foreignObject>
         <rect
           fill="#71a2ff"
           height={104.97904609858311}
@@ -8456,6 +8544,28 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
           
         </p>
       </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          60   
+          
+        </p>
+      </foreignObject>
       <rect
         fill="#71a2ff"
         height={174.39085032322228}
@@ -10073,6 +10183,28 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
           width={0}
         >
           90   
+          
+        </p>
+      </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          100   
           
         </p>
       </foreignObject>
@@ -11773,6 +11905,28 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
           
         </p>
       </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          100   
+          
+        </p>
+      </foreignObject>
       <rect
         fill="#71a2ff"
         height={104.97904609858311}
@@ -12813,6 +12967,28 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
           
         </p>
       </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          100   
+          
+        </p>
+      </foreignObject>
       <rect
         fill="#71a2ff"
         height={104.97904609858311}
@@ -13798,6 +13974,28 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
           
         </p>
       </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          100   
+          
+        </p>
+      </foreignObject>
       <rect
         fill="#71a2ff"
         height={79.01249999999999}
@@ -14626,6 +14824,28 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
           width={0}
         >
           141   
+          
+        </p>
+      </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          160   
           
         </p>
       </foreignObject>
@@ -15479,6 +15699,28 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
           width={0}
         >
           90   
+          
+        </p>
+      </foreignObject>
+      <foreignObject
+        className="SvgTypography__ForeignObject-jh05vp-2 fEZKhS"
+        height="100%"
+        width="100%"
+        x={0}
+        y={0}
+      >
+        <canvas
+          className="SvgTypography__Canvas-jh05vp-0 fDqUSz"
+          fontSize="1rem"
+          height={0}
+          width={0}
+        />
+        <p
+          className="sc-bdVaJa SvgTypography__StyledTypography-jh05vp-1 cClIHA"
+          height={0}
+          width={0}
+        >
+          100   
           
         </p>
       </foreignObject>
