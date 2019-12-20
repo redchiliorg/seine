@@ -98,6 +98,8 @@ export default function ColumnChart({
   const barGroupWidth =
     (VIEWPORT_WIDTH - xPadding * groups.length) / groups.length;
 
+  const x = valueWidth;
+
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
@@ -111,13 +113,14 @@ export default function ColumnChart({
         {yAxis ? (
           <ChartAxis
             direction={'up'}
+            finite
             length={graphHeight - 6 * valueHeight}
             max={maxValue}
             min={minValue}
             noLine
             step={dy}
             units={units}
-            x={valueWidth}
+            x={x}
             y={graphHeight}
           />
         ) : null}
@@ -134,11 +137,7 @@ export default function ColumnChart({
             size={10}
             units={units}
             width={10}
-            x={
-              valueWidth +
-              index * (barGroupWidth + xPadding / 2) +
-              barGroupWidth / 2
-            }
+            x={x + index * (barGroupWidth + xPadding / 2) + barGroupWidth / 2}
             y={graphHeight}
           />
         ))}
@@ -150,7 +149,7 @@ export default function ColumnChart({
             size={10}
             title={title}
             width={11 + titleWidth}
-            x={valueWidth + (14 + titleWidth) * (index % groups.length)}
+            x={x + (14 + titleWidth) * (index % groups.length)}
             y={
               graphHeight +
               2 * valueHeight +

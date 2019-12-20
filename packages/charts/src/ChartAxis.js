@@ -23,6 +23,7 @@ export default function ChartAxis({
   direction = 'right',
   length,
   noLine = false,
+  finite = false,
   max,
   min = 0,
   step,
@@ -30,10 +31,10 @@ export default function ChartAxis({
   x,
   y,
 }: Props) {
-  const count = Math.round((max - min) / step);
+  const count = Math.floor((max - min) / step);
   const offset = length / count;
 
-  return Array.from({ length: count }).map((_, index) => [
+  return Array.from({ length: count + !!finite }).map((_, index) => [
     !noLine && (
       <line
         key={'line'}
