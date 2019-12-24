@@ -23,7 +23,7 @@ export default function useSvgScale(
     const htmlBox = foreign && foreign.getBoundingClientRect();
     const windowBox = window.document.body.getBoundingClientRect();
     const isMobile =
-      windowBox && (windowBox.width < defaultBreakpoints.values.md) + 1;
+      windowBox && windowBox.width < defaultBreakpoints.values.md;
     setScale(
       svgBox && htmlBox
         ? {
