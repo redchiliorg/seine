@@ -1,6 +1,7 @@
 // @flow
 import { SvgTypography } from '@seine/styles';
 import * as React from 'react';
+import styled, { css } from 'styled-components';
 
 type Props = {
   direction?: 'up' | 'right',
@@ -13,6 +14,14 @@ type Props = {
   x: number,
   y: number,
 };
+
+const ChartAxisValue = styled(SvgTypography)`
+  ${({ theme: { breakpoints } }) => css`
+    ${breakpoints.down('md')} {
+      font-size: 0.65rem;
+    }
+  `}
+`;
 
 /**
  * @description Chart range axis based on (min, max, step)
@@ -46,7 +55,7 @@ export default function ChartAxis({
       />
     ),
     index > 0 && (
-      <SvgTypography
+      <ChartAxisValue
         key={'value'}
         {...(direction === 'right' && { dominantBaseline: 'hanging' })}
         {...(direction === 'up' && { dominantBaseline: 'middle' })}
@@ -56,7 +65,7 @@ export default function ChartAxis({
       >
         {`${parseInt(min + (index * (max - min)) / count)}   `}
         {units}
-      </SvgTypography>
+      </ChartAxisValue>
     ),
   ]);
 }
