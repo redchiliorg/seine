@@ -2,6 +2,8 @@
 import * as React from 'react';
 import { useAutoCallback, useAutoEffect } from 'hooks.macro';
 
+import { defaultBreakpoints } from './constants';
+
 const defaultScale = { xScale: 1, yScale: 1 };
 
 /**
@@ -19,11 +21,14 @@ export default function useSvgScale(
     const { current: foreign } = svgRef;
     const svgBox = foreign && foreign.getBBox();
     const htmlBox = foreign && foreign.getBoundingClientRect();
+    const windowBox = window.document.body.getBoundingClientRect();
+    const isMobile =
+      windowBox && windowBox.width < defaultBreakpoints.values.md;
     setScale(
       svgBox && htmlBox
         ? {
-            xScale: svgBox.width / htmlBox.width,
-            yScale: svgBox.height / htmlBox.height,
+            xScale: ((isMobile + 1) * svgBox.width) / htmlBox.width,
+            yScale: ((isMobile + 1) * svgBox.height) / htmlBox.height,
           }
         : initialScale
     );
