@@ -27,6 +27,7 @@ import ColumnChartGroup from './ColumnChartGroup';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
 import ChartAxis from './ChartAxis';
+import ColumnChartValue from './ColumnChartValue';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -112,6 +113,7 @@ export default function ColumnChart({
       >
         {yAxis ? (
           <ChartAxis
+            axisValueAs={ColumnChartValue}
             direction={'up'}
             finite
             length={graphHeight - 6 * valueHeight}

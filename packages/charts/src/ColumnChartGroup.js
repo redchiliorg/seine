@@ -2,7 +2,8 @@
 import * as React from 'react';
 import { SvgTypography } from '@seine/styles';
 import type { BlockElement } from '@seine/core';
-import styled, { css } from 'styled-components/macro';
+
+import ColumnChartValue from './ColumnChartValue';
 
 export type Props = {
   elements: BlockElement[],
@@ -17,14 +18,6 @@ export type Props = {
   x: number,
   y: number,
 };
-
-const ColumnChartValue = styled(SvgTypography)`
-  ${({ theme: { breakpoints } }) => css`
-    ${breakpoints.down('md')} {
-      font-size: 0.65rem;
-    }
-  `}
-`;
 
 /**
  * @description Group of column chart.
