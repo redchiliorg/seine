@@ -91,7 +91,7 @@ export default function ColumnChart({
   type,
   ...viewProps
 }: Props) {
-  const [maxValue, minValue, groups] = useGroupedElements(
+  const [maxValue, minValue, , groups] = useGroupedElements(
     elements,
     initialMinValue,
     initialMaxValue,

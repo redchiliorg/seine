@@ -52,7 +52,9 @@ type BoxProps = {
 };
 
 const StyledTypography = styled(Typography).attrs(
-  ({ fill }: SvgTypographyProps & BoxProps) => ({ color: fill })
+  ({ fill }: SvgTypographyProps & BoxProps) => ({
+    color: fill,
+  })
 )`
   ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
@@ -109,6 +111,11 @@ export default function SvgTypography({
               ? child
               : child && child.props && 'value' in child.props
               ? child.props.value
+              : child &&
+                child.props.children &&
+                (typeof child.props.children === 'string' ||
+                  typeof child.props.children == 'number')
+              ? child.props.children
               : ''
           }`
       )

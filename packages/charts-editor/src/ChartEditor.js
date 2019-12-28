@@ -39,7 +39,7 @@ import {
   LineChart,
   PieChart,
 } from '@seine/charts';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import PieChartEditor from './PieChartEditor';
 import BarChartEditor from './BarChartEditor';

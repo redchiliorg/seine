@@ -37,7 +37,7 @@ const Typography = styled.p`
       css`
         height: ${height};
       `}
-    
+
     ${typeof width === 'number' &&
       css`
         width: ${width + 2}px;

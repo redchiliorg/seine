@@ -8,8 +8,10 @@ import {
   useTextMetrics,
 } from '@seine/styles';
 import type { BlockElement } from '@seine/core';
+import styled from 'styled-components/macro';
 
-import ChartSvg, { Props as ChartSvgProps } from './ChartSvg';
+import ChartSvg from './ChartSvg';
+import type { Props as ChartSvgProps } from './ChartSvg';
 
 export type Props = {
   elements: BlockElement[],
@@ -21,6 +23,16 @@ export type Props = {
   units: string,
   width: number,
 } & $Shape<ChartSvgProps>;
+
+const CondensedText = styled.span`
+  && {
+    display: inline-block;
+    font-size: ${({ factor }) => factor}em;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+  }
+`;
 
 /**
  * @description Group of column chart.
@@ -38,9 +50,9 @@ export default function ColumnChartGroup({
   width,
   ...chartSvgProps
 }: Props) {
-  const [, yScale, svgRef] = useSvgScale();
+  const [xScale, yScale, svgRef] = useSvgScale();
   const [canvas, setCanvas] = React.useState(null);
-  let [, textHeight] = useTextMetrics(
+  let [textWidth, textHeight] = useTextMetrics(
     `${elements.reduce(
       (found, { value }) =>
         `${value}`.length > found.length ? `${value}` : found,
@@ -49,16 +61,18 @@ export default function ColumnChartGroup({
     canvas
   );
   textHeight *= yScale;
+  textWidth *= xScale;
+
   const columnWidth = width / (elements.length + 1);
   const columnHeight = height - 2 * textHeight;
 
   return (
     <ChartSvg
       {...chartSvgProps}
-      preserveAspectRatio={'none'}
       height={'100%'}
-      width={width}
+      preserveAspectRatio={'none'}
       strokeWidth={yScale / 2}
+      width={width}
     >
       {elements.map(({ value }, index) => {
         const rectHeight =
@@ -66,7 +80,6 @@ export default function ColumnChartGroup({
           ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
             (maxValue - minValue));
         const fill = palette[index % palette.length];
-
         return (
           <React.Fragment key={index}>
             <rect
@@ -82,7 +95,13 @@ export default function ColumnChartGroup({
               x={(index + 1) * columnWidth}
               y={columnHeight - rectHeight + textHeight}
             >
-              {value}
+              {textWidth > columnWidth ? (
+                <CondensedText factor={columnWidth / textWidth}>
+                  {value}
+                </CondensedText>
+              ) : (
+                value
+              )}
               {units}
             </SvgTypography>
           </React.Fragment>
