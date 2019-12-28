@@ -13,13 +13,11 @@ import { useAutoCallback, useAutoEffect } from 'hooks.macro';
 export default function useTextMetrics(
   text: string,
   canvas: HTMLCanvasElement,
-  initialWidth = 0,
-  initialHeight = 0
+  initialWidth = 1,
+  initialHeight = 1
 ) {
-  const [metrics, setMetrics] = React.useState({
-    height: initialHeight,
-    width: initialWidth,
-  });
+  const [width, setMetricsWidth] = React.useState(initialWidth);
+  const [height, setMetricsHeight] = React.useState(initialHeight);
   const updateMetrics = useAutoCallback(() => {
     if (canvas) {
       const { fontWeight, fontSize, fontFamily, lineHeight } = getComputedStyle(
@@ -28,12 +26,8 @@ export default function useTextMetrics(
       const context = canvas.getContext('2d');
       context.font = `${fontWeight} ${fontSize} ${fontFamily}`;
       const textMetrics = context.measureText(text);
-      setMetrics({
-        width: initialWidth
-          ? Math.min(textMetrics.width, initialWidth)
-          : textMetrics.width,
-        height: initialHeight || parseFloat(lineHeight),
-      });
+      setMetricsWidth(parseFloat(textMetrics.width));
+      setMetricsHeight(parseFloat(lineHeight));
     }
   });
 
@@ -46,5 +40,5 @@ export default function useTextMetrics(
     };
   });
 
-  return metrics;
+  return [width, height];
 }

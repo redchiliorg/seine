@@ -66,12 +66,12 @@ export default function LineChart({
     dy
   );
 
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
+  const [xScale, yScale, svgRef] = useSvgScale();
 
   const canvasRef = React.useRef(null);
   const { current: canvas } = canvasRef;
 
-  const groupMetrics = useTextMetrics(
+  let [groupHeight, groupWidth] = useTextMetrics(
     `${groups.reduce(
       (found, { title }) =>
         `${title}`.length > found.length ? `${title}` : found,
@@ -79,10 +79,11 @@ export default function LineChart({
     )}`,
     canvas
   );
-  const groupWidth = groupMetrics.width * xScale;
-  const height = VIEWPORT_HEIGHT / 2 - groupMetrics.height * yScale;
+  groupWidth *= xScale;
 
-  const titleMetrics = useTextMetrics(
+  const height = VIEWPORT_HEIGHT / 2 - groupHeight * yScale;
+
+  const [titleWidth, titleHeight] = useTextMetrics(
     `${titles.reduce(
       (found, { title }) =>
         `${title}`.length > found.length ? `${title}` : found,
@@ -90,9 +91,9 @@ export default function LineChart({
     )}`,
     canvas
   );
-  const legendWidth = 10 + titleMetrics.width * xScale;
+  const legendWidth = 10 + titleWidth * xScale;
 
-  const valueMetrics = useTextMetrics(
+  let [valueWidth, valueHeight] = useTextMetrics(
     `${elements.reduce(
       (found, { value }) =>
         `${value}`.length > found.length ? `${value}` : found,
@@ -100,10 +101,10 @@ export default function LineChart({
     )} `,
     canvas
   );
-  const x = 3 * valueMetrics.width * xScale;
+  valueWidth *= xScale;
+  valueHeight *= yScale;
+  const x = 3 * valueWidth;
   const y = VIEWPORT_HEIGHT / 2;
-
-  const valueHeight = valueMetrics.height * yScale;
 
   const graphWidth = VIEWPORT_WIDTH - legendWidth - 15 - x;
 
@@ -112,11 +113,7 @@ export default function LineChart({
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-      <ChartSvg
-        strokeWidth={2 * yScale}
-        verticalAlignment={verticalAlignment}
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
-      >
+      <ChartSvg strokeWidth={2 * yScale} verticalAlignment={verticalAlignment}>
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
             d="m0 0 3-3-11 3 11 3-3-3z"
@@ -236,7 +233,7 @@ export default function LineChart({
                   }
                   x={
                     x +
-                    (groupIndex === 0 && (valueMetrics.width * xScale) / 4) +
+                    (groupIndex === 0 && valueWidth / 4) +
                     (groupIndex * graphWidth) / (groups.length - 1)
                   }
                   y={
@@ -263,7 +260,7 @@ export default function LineChart({
             title={title}
             width={legendWidth}
             x={x + graphWidth + 8}
-            y={y + titleMetrics.height * yScale + 3 * yScale + 11 * titleIndex}
+            y={y + titleHeight * yScale + 3 * yScale + 11 * titleIndex}
           />,
         ])}
         <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
