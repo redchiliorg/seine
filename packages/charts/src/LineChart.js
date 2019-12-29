@@ -113,7 +113,11 @@ export default function LineChart({
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-      <ChartSvg strokeWidth={2 * yScale} verticalAlignment={verticalAlignment}>
+      <ChartSvg
+        strokeWidth={2 * yScale}
+        verticalAlignment={verticalAlignment}
+        viewBox={'landscape'}
+      >
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
             d="m0 0 3-3-11 3 11 3-3-3z"

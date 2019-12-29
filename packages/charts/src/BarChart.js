@@ -92,7 +92,7 @@ export default function BarChart({
       <ChartSvg
         strokeWidth={2 * yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
+        viewBox={'landscape'}
       >
         {elements.map(({ title, value }, index) => {
           const width = (barWidth * value) / maxValue;
