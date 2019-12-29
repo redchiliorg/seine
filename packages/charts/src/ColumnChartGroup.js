@@ -28,7 +28,6 @@ const CondensedText = styled.span`
   && {
     display: inline-block;
     font-size: ${({ factor }) => factor}em;
-    font-weight: 600;
     text-align: center;
     width: 100%;
   }
