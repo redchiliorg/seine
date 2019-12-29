@@ -96,14 +96,14 @@ export default function LineChart({
   let [valueWidth, valueHeight] = useTextMetrics(
     `${elements.reduce(
       (found, { value }) =>
-        `${value}`.length > found.length ? `${value}` : found,
+        `${value}`.length > found.length ? `${value}${value}` : found,
       ''
     )} `,
     canvas
   );
   valueWidth *= xScale;
   valueHeight *= yScale;
-  const x = 3 * valueWidth;
+  const x = valueWidth;
   const y = VIEWPORT_HEIGHT / 2;
 
   const graphWidth = VIEWPORT_WIDTH - legendWidth - 15 - x;

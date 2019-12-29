@@ -50,12 +50,12 @@ export default function ChartAxis({
       <SvgTypography
         key={'value'}
         {...(direction === 'right' && { dominantBaseline: 'hanging' })}
-        {...(direction === 'up' && { dominantBaseline: 'middle' })}
+        {...(direction === 'up' && { dominantBaseline: 'end' })}
         {...(direction === 'up' && { textAnchor: 'end' })}
-        x={x + (direction === 'right' && offset * index)}
+        x={x / 2}
         y={y - (direction === 'up' && offset * index)}
       >
-        {`${parseInt(min + (index * (max - min)) / count)}   `}
+        {`${parseInt(min + (index * (max - min)) / count)}`}
         {units}
       </SvgTypography>
     ),
