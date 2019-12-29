@@ -116,7 +116,7 @@ export const TwoGroupsOfTwoColumns = ({
             { title: 'Maelstorm', value: 90, group: 'Group 2' },
             { title: 'Spring', value: 100.22, group: 'Group 2' },
           ]),
-          title: 'Column chart: 3 groups, 3 elements',
+          title: 'Column chart: 2 groups, 2 elements',
         },
         format: { kind: 'column' },
         parent_id: null,
@@ -127,6 +127,101 @@ export const TwoGroupsOfTwoColumns = ({
 );
 export const EditorOfTwoGroupsOfTwoColumns = () => (
   <TwoGroupsOfTwoColumns as={Editor} {...actions('onChange')} />
+);
+
+export const ThreeGroupsOfThreeColumns = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
+  <Component
+    {...props}
+    parent={{
+      id: null,
+      type: 'page',
+      body: null,
+      format: null,
+      parent_id: null,
+    }}
+  >
+    {[
+      {
+        id: '78f5d055-8a9f-48cc-bead-f6c9e8451ced',
+        type: 'chart',
+        body: {
+          elements: createTitleIdentityBlockElements([
+            { title: 'Maelstorm', value: 50.1, group: 'Group 1' },
+            { title: 'Spring', value: 60.33, group: 'Group 1' },
+            { title: 'Others', value: 35, group: 'Group 1' },
+
+            { title: 'Maelstorm', value: 90, group: 'Group 2' },
+            { title: 'Spring', value: 100.22, group: 'Group 2' },
+            { title: 'Others', value: 75, group: 'Group 2' },
+
+            { title: 'Maelstorm', value: 90, group: 'Group 3' },
+            { title: 'Spring', value: 100.22, group: 'Group 3' },
+            { title: 'Others', value: 75, group: 'Group 3' },
+          ]),
+          title: 'Column chart: 3 groups, 3 elements',
+        },
+        format: { kind: 'column' },
+        parent_id: null,
+      },
+      ...children,
+    ]}
+  </Component>
+);
+export const EditorOfThreeGroupsOfThreeColumns = () => (
+  <ThreeGroupsOfThreeColumns as={Editor} {...actions('onChange')} />
+);
+
+export const ThreeGroupsOfFourColumns = ({
+  as: Component = Content,
+  children = [],
+  ...props
+}) => (
+  <Component
+    {...props}
+    parent={{
+      id: null,
+      type: 'page',
+      body: null,
+      format: null,
+      parent_id: null,
+    }}
+  >
+    {[
+      {
+        id: '78f5d055-8a9f-48cc-bead-f6c9e8451ced',
+        type: 'chart',
+        body: {
+          elements: createTitleIdentityBlockElements([
+            { title: 'Maelstorm', value: 50.1, group: 'Group 1' },
+            { title: 'Spring', value: 60.33, group: 'Group 1' },
+            { title: 'Generic', value: 75, group: 'Group 1' },
+            { title: 'Others', value: 35, group: 'Group 1' },
+
+            { title: 'Maelstorm', value: 90, group: 'Group 2' },
+            { title: 'Spring', value: 100.22, group: 'Group 2' },
+            { title: 'Generic', value: 15, group: 'Group 2' },
+            { title: 'Others', value: 75, group: 'Group 2' },
+
+            { title: 'Maelstorm', value: 90, group: 'Group 3' },
+            { title: 'Spring', value: 100.22, group: 'Group 3' },
+            { title: 'Generic', value: 35, group: 'Group 3' },
+            { title: 'Others', value: 75, group: 'Group 3' },
+          ]),
+          title: 'Column chart: 4 groups, 4 elements',
+        },
+        format: { kind: 'column' },
+        parent_id: null,
+      },
+      ...children,
+    ]}
+  </Component>
+);
+export const EditorOfThreeGroupsOfFourColumns = () => (
+  <ThreeGroupsOfFourColumns as={Editor} {...actions('onChange')} />
 );
 
 export const SixGroupsOfSixColumns = ({

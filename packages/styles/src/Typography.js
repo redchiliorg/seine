@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+// @flow
+import styled, { css } from 'styled-components/macro';
 
 const Typography = styled.p`
   ${({
