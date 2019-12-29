@@ -52,7 +52,7 @@ export default function ChartAxis({
         {...(direction === 'right' && { dominantBaseline: 'hanging' })}
         {...(direction === 'up' && { dominantBaseline: 'end' })}
         {...(direction === 'up' && { textAnchor: 'end' })}
-        x={x / 2}
+        x={direction === 'right' ? offset * index : x / 2}
         y={y - (direction === 'up' && offset * index)}
       >
         {`${parseInt(min + (index * (max - min)) / count)}`}
