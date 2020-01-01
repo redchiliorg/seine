@@ -1,5 +1,5 @@
 describe('typography', function() {
-  it('content width is equal to canvas of svf typography', () => {
+  it('content width is equal to canvas of svg typography', () => {
     cy.visit('/iframe.html?id=cypress--svg-typography-text');
 
     cy.get('#root div > p, #root canvas').should((elements) => {
