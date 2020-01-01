@@ -10,11 +10,10 @@ import { useAutoCallback, useAutoEffect } from 'hooks.macro';
  */
 export default function useSvgScale(initialXScale = 1, initialYScale = 1) {
   // use svg and html boxes of an element to determine it's scale factor.
-  const svgRef = React.useRef(null);
+  const [svgElement, setSvgElement] = React.useState(null);
   const [xScale, setXScale] = React.useState(initialXScale);
   const [yScale, setYScale] = React.useState(initialYScale);
   const updateScale = useAutoCallback(() => {
-    const { current: svgElement } = svgRef;
     const svgBox = svgElement && svgElement.getBBox();
     const htmlBox = svgElement && svgElement.getBoundingClientRect();
     if (svgBox && htmlBox) {
@@ -36,7 +35,7 @@ export default function useSvgScale(initialXScale = 1, initialYScale = 1) {
     yScale,
     useAutoCallback((svg) => {
       if (svg) {
-        svgRef.current = svg;
+        setSvgElement(svg);
         updateScale();
       }
     }),

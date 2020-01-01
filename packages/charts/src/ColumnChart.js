@@ -2,8 +2,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import {
-  Canvas,
-  ForeignObject,
+  SvgTypographyCanvas,
+  SvgTypographyForeign,
   useSvgScale,
   useTextMetrics,
 } from '@seine/styles';
@@ -134,9 +134,9 @@ export default function ColumnChart({
               x={textWidth}
               y={VIEWPORT_WIDTH - textHeight}
             />
-            <ForeignObject height={'100%'} ref={svgRef} width={'100%'}>
-              <Canvas ref={setCanvas} />
-            </ForeignObject>
+            <SvgTypographyForeign height={'100%'} ref={svgRef} width={'100%'}>
+              <SvgTypographyCanvas ref={setCanvas} />
+            </SvgTypographyForeign>
           </ChartAxisSvg>
         )}
         {groups.map(([group, elements], index) => (

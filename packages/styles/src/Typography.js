@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components/macro';
 const Typography = styled.p`
   ${({
     color,
+    inline = false,
     overflow = 'hidden',
     fontWeight,
     variant = 'body1',
@@ -46,6 +47,10 @@ const Typography = styled.p`
     ${typeof width === 'string' &&
       css`
         width: ${width};
+      `}
+    ${inline &&
+      css`
+        display: inline;
       `}
   `}
 `;

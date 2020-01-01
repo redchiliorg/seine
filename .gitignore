@@ -27,6 +27,8 @@ atlassian-ide-plugin.xml
 # Editor-based Rest Client
 .idea/httpRequests
 
+# cypress
+cypress/videos
 
 # misc
 .DS_Store
