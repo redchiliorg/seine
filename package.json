@@ -25,7 +25,8 @@
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
-    "dev:start": "start-storybook -p 9009 -s public"
+    "dev:start": "start-storybook -p 3000 -s public",
+    "cypress:open": "cross-env NODE_ENV=development cypress open -c baseUrl=http://localhost:3000"
   },
   "dependencies": {
     "@material-ui/core": "^4.2.1",
@@ -56,6 +57,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react-app": "^5.0.1",
+    "eslint-plugin-cypress": "^2.8.1",
     "eslint-plugin-flowtype": "^4.2.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsdoc": "^15.12.0",
