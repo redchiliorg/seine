@@ -61,7 +61,7 @@ const config = {
         react: 'React',
         'react-dom': 'ReactDOM',
         'draft-js': 'Draft',
-        'styled-components': 'styled',
+        'styled-components/macro': 'styled',
         crypto: 'crypto',
         ...Object.keys(workspaceModuleIds).reduce(
           (acc, name) => ({

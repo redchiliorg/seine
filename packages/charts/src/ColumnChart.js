@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import styled, { css } from 'styled-components/macro';
 import {
   Canvas,
   ForeignObject,
@@ -22,16 +23,47 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
-import ChartLegendItem from './ChartLegendItem';
 import ColumnChartGroup from './ColumnChartGroup';
 import ChartTitle from './ChartTitle';
-import ChartSvg from './ChartSvg';
 import ChartAxis from './ChartAxis';
-import ColumnChartValue from './ColumnChartValue';
+import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
 };
+
+const GroupsBox = styled.div`
+  display: flex;
+  ${({ height }) =>
+    typeof height === 'number'
+      ? css`
+          height: ${height}px;
+        `
+      : css`
+          height: ${height};
+        `}
+  ${({ width }) =>
+    typeof width === 'number'
+      ? css`
+          width: ${width}px;
+        `
+      : css`
+          width: ${width};
+        `}
+`;
+
+const ChartAxisSvg = styled(ChartSvg)`
+  ${({ minWidth }) =>
+    typeof minWidth === 'number'
+      ? css`
+          flex-basis: ${minWidth}px;
+          min-width: ${minWidth}px;
+        `
+      : css`
+          flex-basis: ${minWidth};
+          min-width: ${minWidth};
+        `}
+`;
 
 /**
  * @description Column chart content block renderer.
@@ -59,20 +91,15 @@ export default function ColumnChart({
   type,
   ...viewProps
 }: Props) {
-  const xPadding = 23;
-  const [maxValue, minValue, titles, groups] = useGroupedElements(
+  const [maxValue, minValue, , groups] = useGroupedElements(
     elements,
     initialMinValue,
     initialMaxValue,
     dy
   );
-
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
-
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
-
-  const valueMetrics = useTextMetrics(
+  const [xScale, yScale, svgRef] = useSvgScale();
+  const [canvas, setCanvas] = React.useState(null);
+  let [textWidth, textHeight] = useTextMetrics(
     `${elements.reduce(
       (found, { value }) =>
         `${value}`.length > found.length ? `${value}` : found,
@@ -80,89 +107,53 @@ export default function ColumnChart({
     )} `,
     canvas
   );
-  const valueHeight = valueMetrics.height * yScale;
-  const valueWidth = valueMetrics.width * xScale;
-
-  const titleMetrics = useTextMetrics(
-    `${elements.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}**`,
-    canvas
-  );
-  const titleWidth = titleMetrics.width * xScale;
-
-  const graphHeight = VIEWPORT_HEIGHT - valueHeight;
-  const legendHeight = 10 * groups.length;
-
-  const barGroupWidth =
-    (VIEWPORT_WIDTH - xPadding * groups.length) / groups.length;
-
-  const x = valueWidth;
+  textWidth *= xScale;
+  textHeight *= yScale;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-      <ChartSvg
-        strokeWidth={2 * yScale}
-        verticalAlignment={verticalAlignment}
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT +
-          2 * valueHeight +
-          legendHeight}`}
-      >
-        {yAxis ? (
-          <ChartAxis
-            axisValueAs={ColumnChartValue}
-            direction={'up'}
-            finite
-            length={graphHeight - 6 * valueHeight}
-            max={maxValue}
-            min={minValue}
-            noLine
-            step={dy}
-            units={units}
-            x={x}
-            y={graphHeight}
-          />
-        ) : null}
+      <GroupsBox height={'100%'} width={'100%'}>
+        {!!yAxis && (
+          <ChartAxisSvg
+            meetOrSlice={'slice'}
+            textAlignment={'right'}
+            viewBox={'portrait'}
+            height={VIEWPORT_WIDTH}
+            minWidth={textWidth / xScale}
+          >
+            <ChartAxis
+              direction={'up'}
+              finite
+              length={VIEWPORT_WIDTH - 2 * textHeight}
+              max={maxValue}
+              min={minValue}
+              noLine
+              step={dy}
+              units={units}
+              x={textWidth}
+              y={VIEWPORT_WIDTH - textHeight}
+            />
+            <ForeignObject height={'100%'} ref={svgRef} width={'100%'}>
+              <Canvas ref={setCanvas} />
+            </ForeignObject>
+          </ChartAxisSvg>
+        )}
         {groups.map(([group, elements], index) => (
           <ColumnChartGroup
-            key={index}
-            barGroupWidth={barGroupWidth}
             elements={elements}
             group={group}
-            height={graphHeight - 6 * valueHeight}
+            height={VIEWPORT_WIDTH}
+            key={index}
             minValue={minValue}
             maxValue={maxValue}
+            viewBox={'portrait'}
             palette={palette}
-            size={10}
             units={units}
-            width={10}
-            x={x + index * (barGroupWidth + xPadding / 2) + barGroupWidth / 2}
-            y={graphHeight}
+            width={VIEWPORT_HEIGHT}
           />
         ))}
-
-        {titles.map(({ id, title }, index) => (
-          <ChartLegendItem
-            key={id}
-            fill={palette[index % palette.length]}
-            size={10}
-            title={title}
-            width={11 + titleWidth}
-            x={x + (14 + titleWidth) * (index % groups.length)}
-            y={
-              graphHeight +
-              2 * valueHeight +
-              11 * parseInt(index / groups.length)
-            }
-          />
-        ))}
-        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
-          <Canvas ref={canvasRef} />
-        </ForeignObject>
-      </ChartSvg>
+      </GroupsBox>
     </View>
   );
 }

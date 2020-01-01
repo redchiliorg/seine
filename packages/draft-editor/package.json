@@ -1,6 +1,6 @@
 {
   "name": "@seine/draft-editor",
-  "version": "0.3.114",
+  "version": "0.3.118",
   "description": "Seine draft.js editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",

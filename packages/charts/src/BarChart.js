@@ -50,12 +50,12 @@ export default function BarChart({
   type,
   ...viewProps
 }: Props) {
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
+  const [xScale, yScale, svgRef] = useSvgScale();
 
   const canvasRef = React.useRef(null);
   const { current: canvas } = canvasRef;
 
-  const titleMetrics = useTextMetrics(
+  let [titleWidth] = useTextMetrics(
     `${elements.reduce(
       (found, { title }) =>
         `${title}`.length > found.length ? `${title}` : found,
@@ -63,9 +63,9 @@ export default function BarChart({
     )}**`,
     canvas
   );
-  const titleWidth = titleMetrics.width * xScale;
+  titleWidth *= xScale;
 
-  const valueMetrics = useTextMetrics(
+  let [valueWidth, valueHeight] = useTextMetrics(
     `**${elements.reduce(
       (found, { value }) =>
         `${value}`.length > found.length ? `${value} ` : found,
@@ -73,8 +73,8 @@ export default function BarChart({
     )}`,
     canvas
   );
-  const valueWidth = valueMetrics.width * xScale;
-  const valueHeight = valueMetrics.height * yScale;
+  valueWidth *= xScale;
+  valueHeight *= yScale;
 
   const barHeight = Math.min(
     (VIEWPORT_HEIGHT - valueHeight) / elements.length,
@@ -83,8 +83,8 @@ export default function BarChart({
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
 
   const maxValue = Math.max(...elements.map(({ value }) => +value));
-  const maxValueMetrics = useTextMetrics(`*${parseInt(maxValue)}*`, canvas);
-  const maxValueWidth = maxValueMetrics.width * xScale;
+  let [maxValueWidth] = useTextMetrics(`*${parseInt(maxValue)}*`, canvas);
+  maxValueWidth *= xScale;
 
   return (
     <View {...viewProps}>
@@ -92,7 +92,7 @@ export default function BarChart({
       <ChartSvg
         strokeWidth={2 * yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
+        viewBox={'landscape'}
       >
         {elements.map(({ title, value }, index) => {
           const width = (barWidth * value) / maxValue;

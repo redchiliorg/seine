@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+// @flow
+import styled, { css } from 'styled-components/macro';
 
 const Typography = styled.p`
   ${({
@@ -37,7 +38,7 @@ const Typography = styled.p`
       css`
         height: ${height};
       `}
-    
+
     ${typeof width === 'number' &&
       css`
         width: ${width + 2}px;

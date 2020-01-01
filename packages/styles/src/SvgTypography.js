@@ -52,7 +52,9 @@ type BoxProps = {
 };
 
 const StyledTypography = styled(Typography).attrs(
-  ({ fill }: SvgTypographyProps & BoxProps) => ({ color: fill })
+  ({ fill }: SvgTypographyProps & BoxProps) => ({
+    color: fill,
+  })
 )`
   ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
@@ -96,11 +98,11 @@ export default function SvgTypography({
   textAnchor = 'start',
   ...typography
 }: Props) {
-  const [scale, svgRef] = useSvgScale();
+  const [xScale, yScale, svgRef] = useSvgScale();
 
   const canvasRef = React.useRef(null);
   const { current: canvas } = canvasRef;
-  const metrics = useTextMetrics(
+  const [textWidth, textHeight] = useTextMetrics(
     React.Children.toArray(children)
       .map(
         (child) =>
@@ -109,6 +111,11 @@ export default function SvgTypography({
               ? child
               : child && child.props && 'value' in child.props
               ? child.props.value
+              : child &&
+                child.props.children &&
+                (typeof child.props.children === 'string' ||
+                  typeof child.props.children == 'number')
+              ? child.props.children
               : ''
           }`
       )
@@ -128,22 +135,28 @@ export default function SvgTypography({
         x -
         (textAnchor === 'start'
           ? 0
-          : (metrics.width * scale.xScale) / (textAnchor === 'end' ? 1 : 2))
+          : (textWidth * xScale) / (textAnchor === 'end' ? 1 : 2))
       }
       y={
         y -
         (dominantBaseline === 'hanging'
           ? 0
-          : (metrics.height * scale.yScale) /
-            (dominantBaseline === 'baseline' ? 1 : 2))
+          : (textHeight * yScale) / (dominantBaseline === 'baseline' ? 1 : 2))
       }
     >
-      <Canvas ref={canvasRef} variant={variant} {...metrics} />
+      <Canvas
+        ref={canvasRef}
+        variant={variant}
+        width={textWidth}
+        height={textHeight}
+      />
       <StyledTypography
         variant={variant}
         {...typography}
-        {...metrics}
-        {...scale}
+        width={textWidth}
+        height={textHeight}
+        yScale={yScale}
+        xScale={xScale}
       >
         {children}
       </StyledTypography>
