@@ -1,9 +1,9 @@
 // @flow
 import * as React from 'react';
 import {
-  Canvas,
-  ForeignObject,
   SvgTypography,
+  SvgTypographyCanvas,
+  SvgTypographyForeign,
   useSvgScale,
   useTextMetrics,
 } from '@seine/styles';
@@ -118,9 +118,9 @@ export default function ColumnChartGroup({
       >
         {group}
       </SvgTypography>
-      <ForeignObject ref={svgRef} width={'100%'} height={'100%'}>
-        <Canvas ref={setCanvas} />
-      </ForeignObject>
+      <SvgTypographyForeign ref={svgRef} width={'100%'} height={'100%'}>
+        <SvgTypographyCanvas ref={setCanvas} />
+      </SvgTypographyForeign>
     </ChartSvg>
   );
 }

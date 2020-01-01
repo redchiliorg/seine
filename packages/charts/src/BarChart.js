@@ -1,9 +1,9 @@
 // @flow
 import * as React from 'react';
 import {
-  Canvas,
-  ForeignObject,
   SvgTypography,
+  SvgTypographyCanvas,
+  SvgTypographyForeign,
   useSvgScale,
   useTextMetrics,
 } from '@seine/styles';
@@ -148,9 +148,9 @@ export default function BarChart({
             y={VIEWPORT_HEIGHT - valueHeight}
           />
         ) : null}
-        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
-          <Canvas ref={canvasRef} />
-        </ForeignObject>
+        <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
+          <SvgTypographyCanvas ref={canvasRef} />
+        </SvgTypographyForeign>
       </ChartSvg>
     </View>
   );

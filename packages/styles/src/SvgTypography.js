@@ -3,40 +3,11 @@ import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
 
+import SvgTypographyCanvas from './SvgTypographyCanvas';
+import SvgTypographyForeign from './SvgTypographyForeign';
 import Typography from './Typography';
 import useSvgScale from './useSvgScale';
 import useTextMetrics from './useTextMetrics';
-
-export const Canvas = styled.canvas.attrs(
-  ({
-    variant = 'body1',
-    theme: {
-      typography: {
-        [variant]: { fontSize, lineHeight },
-      },
-    },
-    height = '100%',
-    width = '100%',
-  }) => ({
-    fontSize,
-    height,
-    lineHeight,
-    width,
-  })
-)`
-  position: absolute;
-  z-index: -1;
-
-  ${({ fontSize, lineHeight }) => css`
-    font-size: ${fontSize};
-    line-height: ${lineHeight};
-  `}
-
-  ${({ height = '100%', width = '100%' }) => css`
-    height: ${height};
-    width: ${width};
-  `}
-`;
 
 type SvgTypographyProps = {
   fill?: string,
@@ -71,16 +42,6 @@ export type Props = {
   x?: number,
   y?: number,
 } & SvgTypographyProps;
-
-export const ForeignObject = styled.foreignObject`
-  && {
-    pointer-events: none;
-  }
-  p,
-  input {
-    pointer-events: all;
-  }
-`;
 
 /**
  * @description Svg foreign text styled according to root html document.
@@ -127,7 +88,7 @@ export default function SvgTypography({
   );
 
   return (
-    <ForeignObject
+    <SvgTypographyForeign
       ref={svgRef}
       height={'100%'}
       width={'100%'}
@@ -144,7 +105,7 @@ export default function SvgTypography({
           : (textHeight * yScale) / (dominantBaseline === 'baseline' ? 1 : 2))
       }
     >
-      <Canvas
+      <SvgTypographyCanvas
         ref={canvasRef}
         variant={variant}
         width={textWidth}
@@ -160,6 +121,6 @@ export default function SvgTypography({
       >
         {children}
       </StyledTypography>
-    </ForeignObject>
+    </SvgTypographyForeign>
   );
 }
