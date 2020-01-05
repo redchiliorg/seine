@@ -48,6 +48,7 @@ export default function ChartAxis({
 
   return (
     <ChartSvg
+      x={x}
       {...(direction === 'up'
         ? {
             meetOrSlice: 'slice',
@@ -65,8 +66,8 @@ export default function ChartAxis({
         !noLine && (
           <line
             key={'line'}
-            x1={x + (direction === 'right' && offset * index)}
-            x2={x + (direction === 'right' && offset * (index + 1))}
+            x1={+(direction === 'right' && offset * index)}
+            x2={+(direction === 'right' && offset * (index + 1))}
             y1={y - (direction === 'up' ? offset * index : height)}
             y2={y - (direction === 'up' ? offset * (index + 1) : height)}
             stroke={'black'}
@@ -79,7 +80,7 @@ export default function ChartAxis({
             {...(direction === 'right' && { dominantBaseline: 'hanging' })}
             {...(direction === 'up' && { dominantBaseline: 'end' })}
             {...(direction === 'up' && { textAnchor: 'end' })}
-            x={x + (direction === 'right' ? offset * index : width)}
+            x={direction === 'right' ? offset * index : width}
             y={y - (direction === 'up' ? offset * index : height)}
           >
             {`${parseInt(min + (index * (max - min)) / count)}`}

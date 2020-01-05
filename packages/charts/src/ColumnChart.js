@@ -113,13 +113,13 @@ export default function ColumnChart({
           noLine
           step={dy}
           units={units}
-          y={columnHeight - textHeight}
+          y={columnHeight + textHeight}
         />
         {groups.map(([group, elements], groupIndex) => (
           <ChartSvg
             key={groupIndex}
             preserveAspectRatio={'none'}
-            strokeWidth={textHeight / 14}
+            strokeWidth={textHeight / 40}
             viewBox={'portrait'}
           >
             {elements.map(({ value }, index) => {

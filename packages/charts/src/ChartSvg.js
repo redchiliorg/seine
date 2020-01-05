@@ -58,4 +58,10 @@ export default (styled.svg.attrs(
       : css`
           height: 100%;
         `}
+
+  ${({ maxWidth = null }) =>
+    maxWidth !== null &&
+    css`
+      max-width: ${maxWidth}px;
+    `}
 `: (props: Props) => React.Node);
