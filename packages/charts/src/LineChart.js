@@ -68,8 +68,8 @@ export default function LineChart({
 
   const [xScale, yScale, svgRef] = useSvgScale();
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
+  const canvasElementRef = React.useRef(null);
+  const { current: canvasElement } = canvasElementRef;
 
   let [groupHeight, groupWidth] = useTextMetrics(
     `${groups.reduce(
@@ -77,7 +77,7 @@ export default function LineChart({
         `${title}`.length > found.length ? `${title}` : found,
       ''
     )}`,
-    canvas
+    canvasElement
   );
   groupWidth *= xScale;
 
@@ -89,7 +89,7 @@ export default function LineChart({
         `${title}`.length > found.length ? `${title}` : found,
       ''
     )}`,
-    canvas
+    canvasElement
   );
   const legendWidth = 10 + titleWidth * xScale;
 
@@ -99,7 +99,7 @@ export default function LineChart({
         `${value}`.length > found.length ? `${value}${value}` : found,
       ''
     )} `,
-    canvas
+    canvasElement
   );
   valueWidth *= xScale;
   valueHeight *= yScale;
@@ -268,7 +268,7 @@ export default function LineChart({
           />,
         ])}
         <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
-          <SvgTypographyCanvas ref={canvasRef} />
+          <SvgTypographyCanvas ref={canvasElementRef} />
         </SvgTypographyForeign>
       </ChartSvg>
     </View>

@@ -1,12 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
-import {
-  SvgTypographyCanvas,
-  SvgTypographyForeign,
-  useSvgScale,
-  useTextMetrics,
-} from '@seine/styles';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDy,
@@ -23,7 +18,6 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
-import ColumnChartGroup from './ColumnChartGroup';
 import ChartTitle from './ChartTitle';
 import ChartAxis from './ChartAxis';
 import ChartSvg from './ChartSvg';
@@ -34,6 +28,7 @@ type Props = $Rest<ChartProps, {| kind: string |}> & {
 
 const GroupsBox = styled.div`
   display: flex;
+  position: relative;
   ${({ height }) =>
     typeof height === 'number'
       ? css`
@@ -52,17 +47,13 @@ const GroupsBox = styled.div`
         `}
 `;
 
-const ChartAxisSvg = styled(ChartSvg)`
-  ${({ minWidth }) =>
-    typeof minWidth === 'number'
-      ? css`
-          flex-basis: ${minWidth}px;
-          min-width: ${minWidth}px;
-        `
-      : css`
-          flex-basis: ${minWidth};
-          min-width: ${minWidth};
-        `}
+const CondensedText = styled.span`
+  && {
+    display: inline-block;
+    font-size: ${({ factor }) => factor}em;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 /**
@@ -97,61 +88,87 @@ export default function ColumnChart({
     initialMaxValue,
     dy
   );
-  const [xScale, yScale, svgRef] = useSvgScale();
-  const [canvas, setCanvas] = React.useState(null);
-  let [textWidth, textHeight] = useTextMetrics(
-    `${elements.reduce(
-      (found, { value }) =>
-        `${value}`.length > found.length ? `${value}` : found,
-      ''
-    )} `,
-    canvas
-  );
-  textWidth *= xScale;
-  textHeight *= yScale;
+
+  const [
+    { getScaledWidth, getScaledHeight },
+    childMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const textHeight = getScaledHeight();
+  const textWidth = getScaledWidth();
+
+  const columnWidth = VIEWPORT_HEIGHT / (1 + elements.length / groups.length);
+  const columnHeight = VIEWPORT_WIDTH - 2 * textHeight;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
+
       <GroupsBox height={'100%'} width={'100%'}>
-        {!!yAxis && (
-          <ChartAxisSvg
-            meetOrSlice={'slice'}
-            textAlignment={'right'}
+        <ChartAxis
+          direction={'up'}
+          finite
+          length={columnHeight}
+          max={maxValue}
+          min={minValue}
+          noLine
+          step={dy}
+          units={units}
+          y={columnHeight - textHeight}
+        />
+        {groups.map(([group, elements], groupIndex) => (
+          <ChartSvg
+            key={groupIndex}
+            preserveAspectRatio={'none'}
+            strokeWidth={textHeight / 14}
             viewBox={'portrait'}
-            height={VIEWPORT_WIDTH}
-            minWidth={textWidth / xScale}
           >
-            <ChartAxis
-              direction={'up'}
-              finite
-              length={VIEWPORT_WIDTH - 2 * textHeight}
-              max={maxValue}
-              min={minValue}
-              noLine
-              step={dy}
-              units={units}
-              x={textWidth}
-              y={VIEWPORT_WIDTH - textHeight}
+            {elements.map(({ value }, index) => {
+              const rectHeight =
+                columnHeight *
+                ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
+                  (maxValue - minValue));
+              const fill = palette[index % palette.length];
+              return (
+                <React.Fragment key={index}>
+                  <rect
+                    fill={fill}
+                    height={rectHeight}
+                    width={columnWidth}
+                    x={(index + 0.5) * columnWidth}
+                    y={columnHeight - rectHeight + textHeight}
+                  />
+                  <SvgTypography
+                    fill={fill}
+                    textAnchor={'middle'}
+                    x={(index + 1) * columnWidth}
+                    y={columnHeight - rectHeight + textHeight}
+                    ref={childMethodsRef}
+                  >
+                    {textWidth > columnWidth ? (
+                      <CondensedText factor={columnWidth / textWidth}>
+                        {value}
+                      </CondensedText>
+                    ) : (
+                      value
+                    )}
+                    {units}
+                  </SvgTypography>
+                </React.Fragment>
+              );
+            })}
+            <path
+              d={`m${0} ${columnHeight + textHeight}h${VIEWPORT_WIDTH}`}
+              stroke={'black'}
             />
-            <SvgTypographyForeign height={'100%'} ref={svgRef} width={'100%'}>
-              <SvgTypographyCanvas ref={setCanvas} />
-            </SvgTypographyForeign>
-          </ChartAxisSvg>
-        )}
-        {groups.map(([group, elements], index) => (
-          <ColumnChartGroup
-            elements={elements}
-            group={group}
-            height={VIEWPORT_WIDTH}
-            key={index}
-            minValue={minValue}
-            maxValue={maxValue}
-            viewBox={'portrait'}
-            palette={palette}
-            units={units}
-            width={VIEWPORT_HEIGHT}
-          />
+            <SvgTypography
+              textAnchor={'middle'}
+              dominantBaseline={'hanging'}
+              x={VIEWPORT_HEIGHT / 2}
+              y={columnHeight + textHeight}
+            >
+              {group}
+            </SvgTypography>
+          </ChartSvg>
         ))}
       </GroupsBox>
     </View>
