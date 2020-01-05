@@ -6,7 +6,7 @@ import type { SvgTypographyMethods } from './SvgTypography';
 import { defaultTypographyMethods } from './SvgTypography';
 
 /**
- * @description Use methods of a typography with greatest width value.
+ * @description Use typography methods of a child with greatest width.
  * @param {number} count of children
  * @returns {[SvgTypographyMethods, React.Ref<SvgTypographyMethods>]}
  */
