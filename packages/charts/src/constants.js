@@ -19,7 +19,6 @@ export const defaultChartPalette = [
   '#707070',
 ];
 export const defaultChartMinValue = 0;
-export const defaultChartSize = 100;
 export const defaultChartUnits = '';
 export const defaultChartXAxis = true;
 export const defaultChartYAxis = true;
@@ -77,6 +76,7 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
+export const defaultChartSize = 100;
 export const defaultChartVerticalAlignment = 'start';
 export const defaultChartFormat = {
   palette: defaultChartPalette,

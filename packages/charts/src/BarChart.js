@@ -1,12 +1,6 @@
 // @flow
 import * as React from 'react';
-import {
-  SvgTypography,
-  SvgTypographyCanvas,
-  SvgTypographyForeign,
-  useSvgScale,
-  useTextMetrics,
-} from '@seine/styles';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDx,
@@ -23,7 +17,10 @@ import {
 import type { ChartProps } from './types';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
-import ChartAxis from './ChartAxis';
+import ChartSvgAxis from './ChartSvgAxis';
+
+const HEIGHT = VIEWPORT_WIDTH;
+const WIDTH = VIEWPORT_HEIGHT;
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -50,57 +47,40 @@ export default function BarChart({
   type,
   ...viewProps
 }: Props) {
-  const [xScale, yScale, svgRef] = useSvgScale();
+  const [
+    { getScaledWidth: getTitleWidth },
+    titleTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const titleWidth = getTitleWidth();
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
+  const [
+    { getScaledWidth: getValueWidth, getScaledHeight: getValueHeight },
+    valueTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const valueWidth = getValueWidth();
+  const valueHeight = getValueHeight();
 
-  let [titleWidth] = useTextMetrics(
-    `${elements.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}**`,
-    canvas
+  const barHeight = HEIGHT / Math.max(elements.length, 20);
+  const barWidth = WIDTH - (titleWidth + valueWidth);
+
+  const maxValue = elements.reduce(
+    (max, { value }) => Math.max(+value, max),
+    -Infinity
   );
-  titleWidth *= xScale;
-
-  let [valueWidth, valueHeight] = useTextMetrics(
-    `**${elements.reduce(
-      (found, { value }) =>
-        `${value}`.length > found.length ? `${value} ` : found,
-      ''
-    )}`,
-    canvas
-  );
-  valueWidth *= xScale;
-  valueHeight *= yScale;
-
-  const barHeight = Math.min(
-    (VIEWPORT_HEIGHT - valueHeight) / elements.length,
-    VIEWPORT_HEIGHT / 16
-  );
-  const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
-
-  const maxValue = Math.max(...elements.map(({ value }) => +value));
-  let [maxValueWidth] = useTextMetrics(`*${parseInt(maxValue)}*`, canvas);
-  maxValueWidth *= xScale;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={2 * yScale}
+        strokeWidth={valueHeight / 40}
         verticalAlignment={verticalAlignment}
-        viewBox={'landscape'}
+        viewBox={'portrait'}
       >
         {elements.map(({ title, value }, index) => {
           const width = (barWidth * value) / maxValue;
           const color = palette[index % palette.length];
           const y =
-            VIEWPORT_HEIGHT -
-            barHeight * (elements.length - index) -
-            valueHeight;
+            HEIGHT - barHeight * (elements.length - index) - valueHeight;
 
           return [
             <SvgTypography
@@ -110,8 +90,9 @@ export default function BarChart({
               key={'title'}
               x={0}
               y={y + barHeight / 2}
+              ref={titleTypographyMethodsRef}
             >
-              {title}
+              {title}{' '}
             </SvgTypography>,
 
             <rect
@@ -132,25 +113,24 @@ export default function BarChart({
               variant={'h6'}
               x={titleWidth + width + valueWidth}
               y={y + barHeight / 2}
+              ref={valueTypographyMethodsRef}
             >
+              {' '}
               {value}
               {units}
             </SvgTypography>,
           ];
         })}
-        {xAxis ? (
-          <ChartAxis
-            length={barWidth}
+        {!!xAxis && (
+          <ChartSvgAxis
+            length={barWidth + valueWidth}
             max={maxValue}
-            step={maxValueWidth ? Math.max(dx, maxValueWidth) : dx}
+            step={dx}
             units={units}
             x={titleWidth}
-            y={VIEWPORT_HEIGHT - valueHeight}
+            y={HEIGHT}
           />
-        ) : null}
-        <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
-          <SvgTypographyCanvas ref={canvasRef} />
-        </SvgTypographyForeign>
+        )}
       </ChartSvg>
     </View>
   );

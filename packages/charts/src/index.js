@@ -11,9 +11,7 @@ export type { Props as ChartTitleProps } from './ChartTitle';
 export { default as BarChart } from './BarChart';
 
 export { default as ColumnChart } from './ColumnChart';
-export { default as ColumnChartGroup } from './ColumnChartGroup';
 export type { Props as ColumnChartLegendProps } from './ChartLegendItem';
-export type { Props as ColumnChartGroupProps } from './ColumnChartGroup';
 
 export { default as LineChart } from './LineChart';
 

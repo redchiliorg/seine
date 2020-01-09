@@ -1,5 +1,5 @@
 // @flow
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 
 import { VIEWPORT_HEIGHT, VIEWPORT_WIDTH } from './constants';
 
@@ -17,9 +17,9 @@ export default (styled.svg.attrs(
     verticalAlignment: align = 'end',
     preserveAspectRatio = `x${
       textAlignment === 'right'
-        ? 'Min'
-        : textAlignment === 'left'
         ? 'Max'
+        : textAlignment === 'left'
+        ? 'Min'
         : 'Mid'
     }Y${
       align === 'center' ? 'Mid' : align === 'start' ? 'Min' : 'Max'
@@ -39,6 +39,29 @@ export default (styled.svg.attrs(
     }),
   })
 )`
-  height: 100%;
-  width: 100%;
+  ${({ minWidth = null }) =>
+    minWidth !== null
+      ? css`
+          min-width: ${minWidth}px;
+          width: auto;
+        `
+      : css`
+          width: 100%;
+        `}
+
+  ${({ minHeight = null }) =>
+    minHeight !== null
+      ? css`
+          min-height: ${minHeight}px;
+          height: auto;
+        `
+      : css`
+          height: 100%;
+        `}
+
+  ${({ maxWidth = null }) =>
+    maxWidth !== null &&
+    css`
+      max-width: ${maxWidth}px;
+    `}
 `: (props: Props) => React.Node);

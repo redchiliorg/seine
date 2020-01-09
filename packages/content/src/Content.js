@@ -6,6 +6,7 @@ import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 import type { Theme } from '@material-ui/core';
 import { ThemeProvider } from '@seine/styles';
+import { useAutoCallback, useAutoEffect } from 'hooks.macro';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -37,6 +38,17 @@ function Content({
   parent,
   as: Container = blockRenderMap[parent.type],
 }: Props): React.Node {
+  const [, setClientWidth] = React.useState(0);
+  const handleResize = useAutoCallback(({ target }) => {
+    setClientWidth(target.document.body.clientWidth);
+  });
+  useAutoEffect(() => {
+    handleResize({ target: window });
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
   return (
     <ThemeProvider>
       <Container>

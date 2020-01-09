@@ -3,30 +3,30 @@ import * as React from 'react';
 import { useAutoCallback, useAutoEffect } from 'hooks.macro';
 
 /**
- * @description Use text metrics measured by a canvas context.
+ * @description Use text metrics measured by a canvasElement context.
  * @param {string} text
- * @param {HTMLCanvasElement} canvas
+ * @param {HTMLCanvasElement} canvasElement
  * @param {number} initialWidth
  * @param {number} initialHeight
  * @returns {[{width: number, height: number}, React.Ref<HTMLCanvasElement>]}
  */
 export default function useTextMetrics(
   text: string,
-  canvas: HTMLCanvasElement,
+  canvasElement: HTMLCanvasElement,
   initialWidth = 1,
   initialHeight = 1
 ) {
   const [width, setMetricsWidth] = React.useState(initialWidth);
   const [height, setMetricsHeight] = React.useState(initialHeight);
   const updateMetrics = useAutoCallback(() => {
-    if (canvas) {
+    if (canvasElement) {
       const { fontWeight, fontSize, fontFamily, lineHeight } = getComputedStyle(
-        canvas
+        canvasElement
       );
-      const context = canvas.getContext('2d');
+      const context = canvasElement.getContext('2d');
       context.font = `${fontWeight} ${fontSize} ${fontFamily}`;
       const textMetrics = context.measureText(text);
-      setMetricsWidth(parseFloat(textMetrics.width));
+      setMetricsWidth(textMetrics.width);
       setMetricsHeight(parseFloat(lineHeight));
     }
   });

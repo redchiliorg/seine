@@ -2,12 +2,12 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
+import { useAutoMemo } from 'hooks.macro';
 
 import SvgTypographyCanvas from './SvgTypographyCanvas';
 import SvgTypographyForeign from './SvgTypographyForeign';
 import Typography from './Typography';
-import useSvgScale from './useSvgScale';
-import useTextMetrics from './useTextMetrics';
+import defaultTheme from './defaultTheme';
 
 type SvgTypographyProps = {
   fill?: string,
@@ -36,6 +36,17 @@ const StyledTypography = styled(Typography).attrs(
   `}
 `;
 
+export const defaultTypographyMethods = {
+  getWidth: () => 1,
+  getHeight: () => 1,
+  getXScale: (xScale = 1) => xScale,
+  getYScale: (yScale = 1) => yScale,
+  getScaledWidth: () => 1,
+  getScaledHeight: () => 1,
+};
+
+export type SvgTypographyMethods = typeof defaultTypographyMethods;
+
 export type Props = {
   children?: string,
   variant?: ThemeStyle,
@@ -48,22 +59,27 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function SvgTypography({
-  children,
-  dominantBaseline = 'baseline',
-  variant = 'body1',
-  height = 0,
-  width = 0,
-  x = 0,
-  y = 0,
-  textAnchor = 'start',
-  ...typography
-}: Props) {
-  const [xScale, yScale, svgRef] = useSvgScale();
+export default React.forwardRef(function SvgTypography(
+  {
+    children,
+    dominantBaseline = 'baseline',
+    variant = 'body1',
+    height = 1,
+    width = 1,
+    x = 0,
+    y = 0,
+    textAnchor = 'start',
+    ...typography
+  }: Props,
+  ref
+) {
+  const svgElementRef = React.useRef<HTMLElement>(null);
+  const { current: svgElement } = svgElementRef;
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
-  const [textWidth, textHeight] = useTextMetrics(
+  const canvasElementRef = React.useRef(null);
+  const { current: canvasElement } = canvasElementRef;
+
+  const text = useAutoMemo(
     React.Children.toArray(children)
       .map(
         (child) =>
@@ -81,46 +97,74 @@ export default function SvgTypography({
           }`
       )
       .filter((child) => child)
-      .join(' '),
-    canvas,
-    width,
-    height
+      .join(' ')
   );
+
+  const { fontWeight = 400, fontSize, fontFamily, lineHeight } = useAutoMemo(
+    canvasElement
+      ? getComputedStyle(canvasElement)
+      : defaultTheme.typography[variant]
+  );
+  const contextFont = useAutoMemo(`${fontWeight} ${fontSize} '${fontFamily}'`);
+
+  const methods: SvgTypographyMethods = useAutoMemo(
+    svgElement && canvasElement
+      ? {
+          getWidth: () => {
+            const context = canvasElement.getContext('2d');
+            context.font = contextFont;
+            return context.measureText(text).width;
+          },
+          getHeight: () => parseFloat(lineHeight),
+          getXScale: (value = 1) =>
+            (value * svgElement.getBBox().width) /
+            svgElement.getBoundingClientRect().width,
+          getYScale: (value = 1) =>
+            (value * svgElement.getBBox().height) /
+            svgElement.getBoundingClientRect().height,
+          getScaledWidth: () => methods.getXScale(methods.getWidth()),
+          getScaledHeight: () => methods.getYScale(methods.getHeight()),
+        }
+      : defaultTypographyMethods
+  );
+
+  React.useImperativeHandle(ref, () => methods, [methods]);
 
   return (
     <SvgTypographyForeign
-      ref={svgRef}
+      ref={svgElementRef}
       height={'100%'}
       width={'100%'}
       x={
         x -
         (textAnchor === 'start'
           ? 0
-          : (textWidth * xScale) / (textAnchor === 'end' ? 1 : 2))
+          : methods.getScaledWidth() / (textAnchor === 'end' ? 1 : 2))
       }
       y={
         y -
         (dominantBaseline === 'hanging'
           ? 0
-          : (textHeight * yScale) / (dominantBaseline === 'baseline' ? 1 : 2))
+          : methods.getScaledHeight() /
+            (dominantBaseline === 'baseline' ? 1 : 2))
       }
     >
       <SvgTypographyCanvas
-        ref={canvasRef}
+        ref={canvasElementRef}
         variant={variant}
-        width={textWidth}
-        height={textHeight}
+        height={methods.getWidth()}
+        width={methods.getWidth()}
       />
       <StyledTypography
         variant={variant}
         {...typography}
-        width={textWidth}
-        height={textHeight}
-        yScale={yScale}
-        xScale={xScale}
+        height={methods.getHeight()}
+        width={methods.getWidth()}
+        yScale={methods.getYScale()}
+        xScale={methods.getXScale()}
       >
         {children}
       </StyledTypography>
     </SvgTypographyForeign>
   );
-}
+});
