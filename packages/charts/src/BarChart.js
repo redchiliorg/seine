@@ -17,7 +17,7 @@ import {
 import type { ChartProps } from './types';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
-import ChartAxis from './ChartAxis';
+import ChartSvgAxis from './ChartSvgAxis';
 
 const HEIGHT = VIEWPORT_WIDTH;
 const WIDTH = VIEWPORT_HEIGHT;
@@ -122,7 +122,7 @@ export default function BarChart({
           ];
         })}
         {!!xAxis && (
-          <ChartAxis
+          <ChartSvgAxis
             length={barWidth + valueWidth}
             max={maxValue}
             step={dx}

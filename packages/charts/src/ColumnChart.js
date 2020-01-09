@@ -19,14 +19,14 @@ import {
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartTitle from './ChartTitle';
-import ChartAxis from './ChartAxis';
+import ChartSvgAxis from './ChartSvgAxis';
 import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
 };
 
-const GroupsBox = styled.div`
+const FlexBox = styled.div`
   display: flex;
   position: relative;
   ${({ height }) =>
@@ -34,7 +34,8 @@ const GroupsBox = styled.div`
       ? css`
           height: ${height}px;
         `
-      : css`
+      : height &&
+        css`
           height: ${height};
         `}
   ${({ width }) =>
@@ -42,7 +43,8 @@ const GroupsBox = styled.div`
       ? css`
           width: ${width}px;
         `
-      : css`
+      : width &&
+        css`
           width: ${width};
         `}
 `;
@@ -56,6 +58,21 @@ const CondensedText = styled.span`
   }
 `;
 
+const LegendItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+`;
+
+const LegendBox = styled.div`
+  && {
+    background-color: ${({ color }) => color};
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+`;
 /**
  * @description Column chart content block renderer.
  * @param {ChartProps}: props
@@ -82,7 +99,7 @@ export default function ColumnChart({
   type,
   ...viewProps
 }: Props) {
-  const [maxValue, minValue, , groups] = useGroupedElements(
+  const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,
     initialMinValue,
     initialMaxValue,
@@ -103,8 +120,8 @@ export default function ColumnChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
 
-      <GroupsBox height={'100%'} width={'100%'}>
-        <ChartAxis
+      <FlexBox height={'100%'} width={'100%'}>
+        <ChartSvgAxis
           direction={'up'}
           finite
           length={columnHeight}
@@ -170,7 +187,15 @@ export default function ColumnChart({
             </SvgTypography>
           </ChartSvg>
         ))}
-      </GroupsBox>
+      </FlexBox>
+      <FlexBox width={'100%'}>
+        {titles.map(({ title }, index) => (
+          <LegendItem key={index}>
+            <LegendBox color={palette[index % palette.length]} key={index} />
+            {title}
+          </LegendItem>
+        ))}
+      </FlexBox>
     </View>
   );
 }

@@ -76,7 +76,7 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
-export const defaultPieChartVerticalAlignment = 'center';
+export const defaultChartSize = 100;
 export const defaultChartVerticalAlignment = 'start';
 export const defaultChartFormat = {
   palette: defaultChartPalette,
