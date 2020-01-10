@@ -131,6 +131,7 @@ export default function PieChart({
               key={'value'}
               textAnchor={'middle'}
               variant={'h4'}
+              fontWeight={400}
               x={textX}
               y={textY}
             >
@@ -145,6 +146,7 @@ export default function PieChart({
               key={'title'}
               textAnchor={'middle'}
               variant={'h5'}
+              fontWeight={400}
               x={textX}
               y={textY}
             >

@@ -4,16 +4,23 @@ const Typography = styled.p`
   ${({
     color,
     overflow = 'hidden',
-    fontWeight,
     variant = 'body1',
     width,
     height,
     theme: {
       typography: {
-        [variant]: { fontSize, lineHeight },
+        [variant]: {
+          fontFamily,
+          fontSize,
+          fontWeight: defaultFontWeight,
+          lineHeight,
+        },
       },
     },
+    fontWeight = defaultFontWeight,
   }) => css`
+    font-weight: ${fontWeight};
+    font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
     margin: 0;
@@ -37,7 +44,7 @@ const Typography = styled.p`
       css`
         height: ${height};
       `}
-    
+
     ${typeof width === 'number' &&
       css`
         width: ${width + 2}px;

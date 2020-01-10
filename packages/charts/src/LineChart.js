@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
 import {
-  Canvas,
-  ForeignObject,
+  SvgTypographyCanvas,
+  SvgTypographyForeign,
   SvgTypography,
   useSvgScale,
   useTextMetrics,
@@ -113,7 +113,7 @@ export default function LineChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={2 * yScale}
+        strokeWidth={yScale}
         verticalAlignment={verticalAlignment}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
@@ -266,9 +266,9 @@ export default function LineChart({
             y={y + titleMetrics.height * yScale + 3 * yScale + 11 * titleIndex}
           />,
         ])}
-        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
-          <Canvas ref={canvasRef} />
-        </ForeignObject>
+        <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
+          <SvgTypographyCanvas ref={canvasRef} />
+        </SvgTypographyForeign>
       </ChartSvg>
     </View>
   );

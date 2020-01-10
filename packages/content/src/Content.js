@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { useAutoEffect, useAutoCallback } from 'hooks.macro';
 import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
@@ -37,6 +38,18 @@ function Content({
   parent,
   as: Container = blockRenderMap[parent.type],
 }: Props): React.Node {
+  const [, setClientWidth] = React.useState(0);
+  const handleResize = useAutoCallback(({ target }) => {
+    setClientWidth(target.document.body.clientWidth);
+  });
+  useAutoEffect(() => {
+    handleResize({ target: window });
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
   return (
     <ThemeProvider>
       <Container>

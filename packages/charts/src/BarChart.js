@@ -1,12 +1,6 @@
 // @flow
 import * as React from 'react';
-import {
-  Canvas,
-  ForeignObject,
-  SvgTypography,
-  useSvgScale,
-  useTextMetrics,
-} from '@seine/styles';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDx,
@@ -50,47 +44,32 @@ export default function BarChart({
   type,
   ...viewProps
 }: Props) {
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
+  const [
+    { getScaledWidth: getTitleWidth },
+    titleTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const titleWidth = getTitleWidth();
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
+  const [
+    { getScaledWidth: getValueWidth, getScaledHeight: getValueHeight },
+    valueTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const valueWidth = getValueWidth();
+  const valueHeight = getValueHeight();
 
-  const titleMetrics = useTextMetrics(
-    `${elements.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}**`,
-    canvas
-  );
-  const titleWidth = titleMetrics.width * xScale;
-
-  const valueMetrics = useTextMetrics(
-    `**${elements.reduce(
-      (found, { value }) =>
-        `${value}`.length > found.length ? `${value} ` : found,
-      ''
-    )}`,
-    canvas
-  );
-  const valueWidth = valueMetrics.width * xScale;
-  const valueHeight = valueMetrics.height * yScale;
-
-  const barHeight = Math.min(
-    (VIEWPORT_HEIGHT - valueHeight) / elements.length,
-    VIEWPORT_HEIGHT / 16
-  );
+  const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 10);
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
 
-  const maxValue = Math.max(...elements.map(({ value }) => +value));
-  const maxValueMetrics = useTextMetrics(`*${parseInt(maxValue)}*`, canvas);
-  const maxValueWidth = maxValueMetrics.width * xScale;
+  const maxValue = elements.reduce(
+    (max, { value }) => Math.max(+value, max),
+    -Infinity
+  );
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={2 * yScale}
+        strokeWidth={valueHeight / 32}
         verticalAlignment={verticalAlignment}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
@@ -106,12 +85,14 @@ export default function BarChart({
             <SvgTypography
               dominantBaseline={'middle'}
               fill={color}
+              ref={titleTypographyMethodsRef}
               index={index}
               key={'title'}
               x={0}
               y={y + barHeight / 2}
             >
               {title}
+              {'  '}
             </SvgTypography>,
 
             <rect
@@ -125,14 +106,15 @@ export default function BarChart({
 
             <SvgTypography
               dominantBaseline={'middle'}
+              ref={valueTypographyMethodsRef}
               textAnchor={'end'}
               fill={color}
               index={index}
               key={'value'}
-              variant={'h6'}
               x={titleWidth + width + valueWidth}
               y={y + barHeight / 2}
             >
+              {'  '}
               {value}
               {units}
             </SvgTypography>,
@@ -142,15 +124,12 @@ export default function BarChart({
           <ChartAxis
             length={barWidth}
             max={maxValue}
-            step={maxValueWidth ? Math.max(dx, maxValueWidth) : dx}
+            step={dx}
             units={units}
             x={titleWidth}
             y={VIEWPORT_HEIGHT - valueHeight}
           />
         ) : null}
-        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
-          <Canvas ref={canvasRef} />
-        </ForeignObject>
       </ChartSvg>
     </View>
   );

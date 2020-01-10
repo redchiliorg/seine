@@ -1,11 +1,7 @@
 // @flow
 import * as React from 'react';
-import {
-  Canvas,
-  ForeignObject,
-  useSvgScale,
-  useTextMetrics,
-} from '@seine/styles';
+import styled, { css } from 'styled-components/macro';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDy,
@@ -22,17 +18,61 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
-import ChartLegendItem from './ChartLegendItem';
-import ColumnChartGroup from './ColumnChartGroup';
 import ChartTitle from './ChartTitle';
+import ChartSvgAxis from './ChartSvgAxis';
 import ChartSvg from './ChartSvg';
-import ChartAxis from './ChartAxis';
-import ColumnChartValue from './ColumnChartValue';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
 };
 
+const FlexBox = styled.div`
+  display: flex;
+  position: ${({ position = 'relative' }) => position};
+  ${({ height }) =>
+    typeof height === 'number'
+      ? css`
+          height: ${height}px;
+        `
+      : height &&
+        css`
+          height: ${height};
+        `}
+  ${({ width }) =>
+    typeof width === 'number'
+      ? css`
+          width: ${width}px;
+        `
+      : width &&
+        css`
+          width: ${width};
+        `}
+`;
+
+const CondensedText = styled.span`
+  && {
+    display: inline-block;
+    font-size: ${({ factor }) => factor}em;
+    text-align: center;
+    width: 100%;
+  }
+`;
+
+const LegendItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+`;
+
+const LegendBox = styled.div`
+  && {
+    background-color: ${({ color }) => color};
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+`;
 /**
  * @description Column chart content block renderer.
  * @param {ChartProps}: props
@@ -59,7 +99,6 @@ export default function ColumnChart({
   type,
   ...viewProps
 }: Props) {
-  const xPadding = 23;
   const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,
     initialMinValue,
@@ -67,102 +106,96 @@ export default function ColumnChart({
     dy
   );
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
+  const [
+    { getScaledWidth, getScaledHeight },
+    childMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const textHeight = getScaledHeight();
+  const textWidth = getScaledWidth();
 
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
-
-  const valueMetrics = useTextMetrics(
-    `${elements.reduce(
-      (found, { value }) =>
-        `${value}`.length > found.length ? `${value}` : found,
-      ''
-    )} `,
-    canvas
-  );
-  const valueHeight = valueMetrics.height * yScale;
-  const valueWidth = valueMetrics.width * xScale;
-
-  const titleMetrics = useTextMetrics(
-    `${elements.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}**`,
-    canvas
-  );
-  const titleWidth = titleMetrics.width * xScale;
-
-  const graphHeight = VIEWPORT_HEIGHT - valueHeight;
-  const legendHeight = 10 * groups.length;
-
-  const barGroupWidth =
-    (VIEWPORT_WIDTH - xPadding * groups.length) / groups.length;
-
-  const x = valueWidth;
+  const columnWidth = VIEWPORT_WIDTH / (1 + elements.length / groups.length);
+  const columnHeight = VIEWPORT_HEIGHT - 2 * textHeight;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-      <ChartSvg
-        strokeWidth={2 * yScale}
-        verticalAlignment={verticalAlignment}
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT +
-          2 * valueHeight +
-          legendHeight}`}
-      >
-        {yAxis ? (
-          <ChartAxis
-            axisValueAs={ColumnChartValue}
-            direction={'up'}
-            finite
-            length={graphHeight - 6 * valueHeight}
-            max={maxValue}
-            min={minValue}
-            noLine
-            step={dy}
-            units={units}
-            x={x}
-            y={graphHeight}
-          />
-        ) : null}
-        {groups.map(([group, elements], index) => (
-          <ColumnChartGroup
-            key={index}
-            barGroupWidth={barGroupWidth}
-            elements={elements}
-            group={group}
-            height={graphHeight - 6 * valueHeight}
-            minValue={minValue}
-            maxValue={maxValue}
-            palette={palette}
-            size={10}
-            units={units}
-            width={10}
-            x={x + index * (barGroupWidth + xPadding / 2) + barGroupWidth / 2}
-            y={graphHeight}
-          />
-        ))}
 
-        {titles.map(({ id, title }, index) => (
-          <ChartLegendItem
-            key={id}
-            fill={palette[index % palette.length]}
-            size={10}
-            title={title}
-            width={11 + titleWidth}
-            x={x + (14 + titleWidth) * (index % groups.length)}
-            y={
-              graphHeight +
-              2 * valueHeight +
-              11 * parseInt(index / groups.length)
-            }
-          />
+      <FlexBox height={'auto'} width={'100%'}>
+        <ChartSvgAxis
+          direction={'up'}
+          finite
+          length={columnHeight}
+          max={maxValue}
+          min={minValue}
+          noLine
+          step={dy}
+          units={units}
+          x={0}
+          y={columnHeight + textHeight}
+        />
+        {groups.map(([group, elements], groupIndex) => (
+          <ChartSvg
+            key={groupIndex}
+            strokeWidth={textHeight / 40}
+            viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
+          >
+            {elements.map(({ value }, index) => {
+              const rectHeight =
+                columnHeight *
+                ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
+                  (maxValue - minValue));
+              const fill = palette[index % palette.length];
+              return (
+                <React.Fragment key={index}>
+                  <rect
+                    fill={fill}
+                    height={rectHeight}
+                    width={columnWidth}
+                    x={(index + 0.5) * columnWidth}
+                    y={columnHeight - rectHeight + textHeight}
+                  />
+                  <SvgTypography
+                    fill={fill}
+                    textAnchor={'middle'}
+                    x={(index + 1) * columnWidth}
+                    y={columnHeight - rectHeight + textHeight}
+                    ref={childMethodsRef}
+                  >
+                    {textWidth > columnWidth ? (
+                      <CondensedText factor={columnWidth / textWidth}>
+                        {value}
+                      </CondensedText>
+                    ) : (
+                      value
+                    )}
+                    {units}
+                  </SvgTypography>
+                </React.Fragment>
+              );
+            })}
+            <path
+              d={`m${0} ${columnHeight + textHeight}h${VIEWPORT_WIDTH}`}
+              stroke={'black'}
+            />
+            <SvgTypography
+              textAnchor={'middle'}
+              dominantBaseline={'hanging'}
+              x={VIEWPORT_WIDTH / 2}
+              y={columnHeight + textHeight}
+            >
+              {group}
+            </SvgTypography>
+          </ChartSvg>
         ))}
-        <ForeignObject ref={svgRef} height={'100%'} width={'100%'}>
-          <Canvas ref={canvasRef} />
-        </ForeignObject>
-      </ChartSvg>
+      </FlexBox>
+      <FlexBox width={'100%'}>
+        {titles.map(({ title }, index) => (
+          <LegendItem key={index}>
+            <LegendBox color={palette[index % palette.length]} key={index} />
+            {title}
+          </LegendItem>
+        ))}
+      </FlexBox>
     </View>
   );
 }
