@@ -1,24 +1,10 @@
 // @flow
 import * as React from 'react';
-import type { ColumnChartGroupProps } from '@seine/charts';
-import {
-  ChartLegendItem,
-  ChartSvg,
-  ChartTitle,
-  ColumnChartGroup,
-} from '@seine/charts';
-import {
-  DESELECT_BLOCK_ELEMENT,
-  SELECT_BLOCK_ELEMENT,
-  UPDATE_BLOCK_ELEMENT,
-  UPDATE_BLOCK_ELEMENT_BY_GROUP,
-} from '@seine/core';
-import { ClickAwayListener } from '@material-ui/core';
+import { ChartLegendItem, ChartSvg, ChartTitle } from '@seine/charts';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
 import ChartTitleInput from './ChartTitleInput';
-import ChartInput from './ChartInput';
 
 /**
  * @description Editor of column chart
@@ -29,7 +15,6 @@ export default function ColumnChartEditor({
   children,
   dispatch,
   dispatchElements,
-  editor,
 }: Props) {
   return React.Children.map(children, (parent: ?React.Node) => {
     switch (parent.type) {
@@ -61,6 +46,7 @@ export default function ColumnChartEditor({
                     );
                   }
 
+                  /*
                   case ColumnChartGroup:
                     const {
                       elements,
@@ -163,6 +149,7 @@ export default function ColumnChartEditor({
                         );
                       }),
                     ];
+                   */
 
                   default:
                     return child;

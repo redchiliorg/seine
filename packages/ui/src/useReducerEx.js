@@ -1,12 +1,5 @@
 // @flow
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useReducer,
-  useRef,
-  useState,
-} from 'react';
+import { useCallback, useEffect, useMemo, useReducer, useRef } from 'react';
 import type { Action, State } from '@seine/core';
 
 const defaultDevToolsConfig = {};
@@ -19,7 +12,7 @@ const defaultDevToolsConfig = {};
  * @param {object} devToolsConfig
  * @returns {[object, Function]}
  */
-export function useReducerEx<S: State, A: Action>(
+export default function useReducerEx<S: State, A: Action>(
   reduce: (S, A) => S,
   initialArg: S,
   init: (...any[]) => S,
@@ -56,20 +49,4 @@ export function useReducerEx<S: State, A: Action>(
       dispatch(action);
     }, []),
   ];
-}
-
-/**
- * @description Use xScale and yScale of svg element set by a function
- * @returns {[Function, number, number]}
- */
-export function useSvgScaleRef() {
-  const [svgElement, setSvgElement] = useState(null);
-  const [xScale, yScale] = useMemo(() => {
-    if (svgElement) {
-      const { a, d } = svgElement.getScreenCTM().inverse();
-      return [a, d];
-    }
-    return [1, 1];
-  }, [svgElement]);
-  return [[xScale, yScale], setSvgElement];
 }

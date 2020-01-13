@@ -25,7 +25,6 @@ export default function ChartAxis({
   length,
   noLine = false,
   finite = false,
-  axisValueAs: AxisValue = SvgTypography,
   max,
   min = 0,
   step,
@@ -48,17 +47,17 @@ export default function ChartAxis({
       />
     ),
     index > 0 && (
-      <AxisValue
+      <SvgTypography
         key={'value'}
         {...(direction === 'right' && { dominantBaseline: 'hanging' })}
-        {...(direction === 'up' && { dominantBaseline: 'middle' })}
+        {...(direction === 'up' && { dominantBaseline: 'end' })}
         {...(direction === 'up' && { textAnchor: 'end' })}
-        x={x + (direction === 'right' && offset * index)}
+        x={direction === 'right' ? offset * index : x / 2}
         y={y - (direction === 'up' && offset * index)}
       >
-        {`${parseInt(min + (index * (max - min)) / count)}   `}
+        {`${parseInt(min + (index * (max - min)) / count)}`}
         {units}
-      </AxisValue>
+      </SvgTypography>
     ),
   ]);
 }

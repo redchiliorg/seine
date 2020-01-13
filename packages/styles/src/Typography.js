@@ -1,8 +1,10 @@
-import styled, { css } from 'styled-components';
+// @flow
+import styled, { css } from 'styled-components/macro';
 
 const Typography = styled.p`
   ${({
     color,
+    inline = false,
     overflow = 'hidden',
     variant = 'body1',
     width,
@@ -53,6 +55,10 @@ const Typography = styled.p`
     ${typeof width === 'string' &&
       css`
         width: ${width};
+      `}
+    ${inline &&
+      css`
+        display: inline;
       `}
   `}
 `;

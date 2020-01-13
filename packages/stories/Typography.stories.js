@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { defaultTheme, SvgTypography, Typography } from '@seine/styles';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/macro';
 
 export default { title: 'Single.SvgText' };
 
