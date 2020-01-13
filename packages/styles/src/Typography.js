@@ -11,12 +11,13 @@ const Typography = styled.p`
       typography: {
         [variant]: {
           fontFamily,
-          fontSize,
+          fontSize: defaultFontSize,
           fontWeight: defaultFontWeight,
           lineHeight,
         },
       },
     },
+    fontSize = defaultFontSize,
     fontWeight = defaultFontWeight,
   }) => css`
     font-weight: ${fontWeight};

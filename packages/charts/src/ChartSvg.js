@@ -18,24 +18,24 @@ export default styled.svg.attrs(
     } ${meetOrSlice}`,
   })
 )`
-  ${({ minWidth = null }) =>
+  ${({ minWidth = null, width = '100%' }) =>
     minWidth !== null
       ? css`
           min-width: ${minWidth}px;
           width: auto;
         `
       : css`
-          width: 100%;
+          width: ${width};
         `}
 
-  ${({ minHeight = null }) =>
+  ${({ minHeight = null, height = '100%' }) =>
     minHeight !== null
       ? css`
           min-height: ${minHeight}px;
           height: auto;
         `
       : css`
-          height: 100%;
+          height: ${height};
         `}
 
   ${({ maxWidth }) =>

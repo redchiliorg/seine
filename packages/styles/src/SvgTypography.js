@@ -29,10 +29,10 @@ const StyledTypography = styled(Typography).attrs(
 )`
   ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
-    transform-origin: 1px top;
+    transform-origin: left top;
 
     overflow: hidden;
-    white-space: pre;
+    white-space: pre-wrap;
   `}
 `;
 
@@ -166,7 +166,6 @@ export default React.forwardRef(function SvgTypography(
       <StyledTypography
         variant={variant}
         {...typography}
-        height={methods.getHeight()}
         width={methods.getWidth()}
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}
