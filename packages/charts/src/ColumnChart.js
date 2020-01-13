@@ -19,7 +19,6 @@ import {
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartTitle from './ChartTitle';
-import ChartSvgAxis from './ChartSvgAxis';
 import ChartSvg from './ChartSvg';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
@@ -62,14 +61,14 @@ const LegendItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 15px;
+  padding: 0 15px;
 `;
 
 const LegendBox = styled.div`
   && {
     background-color: ${({ color }) => color};
-    width: 30px;
-    height: 30px;
+    width: ${({ size }) => size}px;
+    height: ${({ size }) => size}px;
     margin-right: 10px;
   }
 `;
@@ -107,37 +106,30 @@ export default function ColumnChart({
   );
 
   const [
-    { getScaledWidth, getScaledHeight },
+    { getScaledWidth, getScaledHeight, getHeight },
     childMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const textHeight = getScaledHeight();
-  const textWidth = getScaledWidth();
+  const scaledTextHeight = getScaledHeight();
+  const scaledTextWidth = getScaledWidth();
+  const textHeight = getHeight();
 
-  const columnWidth = VIEWPORT_HEIGHT / (1 + elements.length / groups.length);
-  const columnHeight = VIEWPORT_WIDTH - 2 * textHeight;
+  const WIDTH = VIEWPORT_WIDTH / groups.length;
+  const HEIGHT = VIEWPORT_HEIGHT;
+
+  const columnWidth = WIDTH / (1 + elements.length / groups.length);
+  const columnHeight = HEIGHT - 2 * scaledTextHeight;
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
 
-      <FlexBox height={'100%'} width={'100%'}>
-        <ChartSvgAxis
-          direction={'up'}
-          finite
-          length={columnHeight}
-          max={maxValue}
-          min={minValue}
-          noLine
-          step={dy}
-          units={units}
-          y={columnHeight + textHeight}
-        />
+      <FlexBox height={`calc(100% - ${textHeight}px)`} width={'100%'}>
         {groups.map(([group, elements], groupIndex) => (
           <ChartSvg
             key={groupIndex}
-            preserveAspectRatio={'none'}
-            strokeWidth={textHeight / 40}
-            viewBox={'portrait'}
+            verticalAlignment={'start'}
+            strokeWidth={scaledTextHeight / 40}
+            viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           >
             {elements.map(({ value }, index) => {
               const rectHeight =
@@ -152,17 +144,17 @@ export default function ColumnChart({
                     height={rectHeight}
                     width={columnWidth}
                     x={(index + 0.5) * columnWidth}
-                    y={columnHeight - rectHeight + textHeight}
+                    y={columnHeight - rectHeight + scaledTextHeight}
                   />
                   <SvgTypography
                     fill={fill}
                     textAnchor={'middle'}
                     x={(index + 1) * columnWidth}
-                    y={columnHeight - rectHeight + textHeight}
+                    y={columnHeight - rectHeight + scaledTextHeight}
                     ref={childMethodsRef}
                   >
-                    {textWidth > columnWidth ? (
-                      <CondensedText factor={columnWidth / textWidth}>
+                    {scaledTextWidth > columnWidth ? (
+                      <CondensedText factor={columnWidth / scaledTextWidth}>
                         {value}
                       </CondensedText>
                     ) : (
@@ -174,24 +166,29 @@ export default function ColumnChart({
               );
             })}
             <path
-              d={`m${0} ${columnHeight + textHeight}h${VIEWPORT_WIDTH}`}
+              d={`m${0} ${columnHeight + scaledTextHeight}h${WIDTH}`}
               stroke={'black'}
             />
             <SvgTypography
               textAnchor={'middle'}
               dominantBaseline={'hanging'}
-              x={VIEWPORT_HEIGHT / 2}
-              y={columnHeight + textHeight}
+              x={WIDTH / 2}
+              y={columnHeight + scaledTextHeight}
+              width={columnWidth * elements.length}
             >
               {group}
             </SvgTypography>
           </ChartSvg>
         ))}
       </FlexBox>
-      <FlexBox width={'100%'}>
+      <FlexBox width={'auto'} height={textHeight}>
         {titles.map(({ title }, index) => (
           <LegendItem key={index}>
-            <LegendBox color={palette[index % palette.length]} key={index} />
+            <LegendBox
+              color={palette[index % palette.length]}
+              key={index}
+              size={textHeight}
+            />
             {title}
           </LegendItem>
         ))}

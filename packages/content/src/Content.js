@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
+import { useAutoEffect, useAutoCallback } from 'hooks.macro';
 import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 import type { Theme } from '@material-ui/core';
 import { ThemeProvider } from '@seine/styles';
-import { useAutoCallback, useAutoEffect } from 'hooks.macro';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -49,6 +49,7 @@ function Content({
       window.removeEventListener('resize', handleResize);
     };
   });
+
   return (
     <ThemeProvider>
       <Container>

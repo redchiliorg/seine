@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
-import { useAutoMemo } from 'hooks.macro';
+import { useAutoCallback, useAutoMemo } from 'hooks.macro';
 
 import SvgTypographyCanvas from './SvgTypographyCanvas';
 import SvgTypographyForeign from './SvgTypographyForeign';
@@ -29,10 +29,10 @@ const StyledTypography = styled(Typography).attrs(
 )`
   ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     transform: scale(${xScale}, ${yScale});
-    transform-origin: 1px top;
+    transform-origin: left top;
 
     overflow: hidden;
-    white-space: pre;
+    white-space: pre-wrap;
   `}
 `;
 
@@ -107,23 +107,31 @@ export default React.forwardRef(function SvgTypography(
   );
   const contextFont = useAutoMemo(`${fontWeight} ${fontSize} '${fontFamily}'`);
 
+  const getWidth = useAutoCallback(() => {
+    const context = canvasElement.getContext('2d');
+    context.font = contextFont;
+    return context.measureText(text).width;
+  });
+  const getHeight = useAutoCallback(() => parseFloat(lineHeight));
+  const getXScale = useAutoCallback(
+    (value = 1) =>
+      (value * svgElement.getBBox().width) /
+      svgElement.getBoundingClientRect().width
+  );
+  const getYScale = useAutoCallback(
+    (value = 1) =>
+      (value * svgElement.getBBox().height) /
+      svgElement.getBoundingClientRect().height
+  );
   const methods: SvgTypographyMethods = useAutoMemo(
     svgElement && canvasElement
       ? {
-          getWidth: () => {
-            const context = canvasElement.getContext('2d');
-            context.font = contextFont;
-            return context.measureText(text).width;
-          },
-          getHeight: () => parseFloat(lineHeight),
-          getXScale: (value = 1) =>
-            (value * svgElement.getBBox().width) /
-            svgElement.getBoundingClientRect().width,
-          getYScale: (value = 1) =>
-            (value * svgElement.getBBox().height) /
-            svgElement.getBoundingClientRect().height,
-          getScaledWidth: () => methods.getXScale(methods.getWidth()),
-          getScaledHeight: () => methods.getYScale(methods.getHeight()),
+          getWidth,
+          getHeight,
+          getXScale,
+          getYScale,
+          getScaledWidth: () => getXScale(getWidth()),
+          getScaledHeight: () => getYScale(getHeight()),
         }
       : defaultTypographyMethods
   );
@@ -152,13 +160,12 @@ export default React.forwardRef(function SvgTypography(
       <SvgTypographyCanvas
         ref={canvasElementRef}
         variant={variant}
-        height={methods.getWidth()}
+        height={methods.getHeight()}
         width={methods.getWidth()}
       />
       <StyledTypography
         variant={variant}
         {...typography}
-        height={methods.getHeight()}
         width={methods.getWidth()}
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}

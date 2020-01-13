@@ -6,16 +6,24 @@ const Typography = styled.p`
     color,
     inline = false,
     overflow = 'hidden',
-    fontWeight,
     variant = 'body1',
     width,
     height,
     theme: {
       typography: {
-        [variant]: { fontSize, lineHeight },
+        [variant]: {
+          fontFamily,
+          fontSize: defaultFontSize,
+          fontWeight: defaultFontWeight,
+          lineHeight,
+        },
       },
     },
+    fontSize = defaultFontSize,
+    fontWeight = defaultFontWeight,
   }) => css`
+    font-weight: ${fontWeight};
+    font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
     margin: 0;

@@ -1,9 +1,9 @@
 // @flow
 import * as React from 'react';
 import {
-  SvgTypography,
   SvgTypographyCanvas,
   SvgTypographyForeign,
+  SvgTypography,
   useSvgScale,
   useTextMetrics,
 } from '@seine/styles';
@@ -66,45 +66,44 @@ export default function LineChart({
     dy
   );
 
-  const [xScale, yScale, svgRef] = useSvgScale();
+  const [{ xScale, yScale }, svgRef] = useSvgScale();
 
-  const canvasElementRef = React.useRef(null);
-  const { current: canvasElement } = canvasElementRef;
+  const canvasRef = React.useRef(null);
+  const { current: canvas } = canvasRef;
 
-  let [groupHeight, groupWidth] = useTextMetrics(
+  const groupMetrics = useTextMetrics(
     `${groups.reduce(
       (found, { title }) =>
         `${title}`.length > found.length ? `${title}` : found,
       ''
     )}`,
-    canvasElement
+    canvas
   );
-  groupWidth *= xScale;
+  const groupWidth = groupMetrics.width * xScale;
+  const height = VIEWPORT_HEIGHT / 2 - groupMetrics.height * yScale;
 
-  const height = VIEWPORT_HEIGHT / 2 - groupHeight * yScale;
-
-  const [titleWidth, titleHeight] = useTextMetrics(
+  const titleMetrics = useTextMetrics(
     `${titles.reduce(
       (found, { title }) =>
         `${title}`.length > found.length ? `${title}` : found,
       ''
     )}`,
-    canvasElement
+    canvas
   );
-  const legendWidth = 10 + titleWidth * xScale;
+  const legendWidth = 10 + titleMetrics.width * xScale;
 
-  let [valueWidth, valueHeight] = useTextMetrics(
+  const valueMetrics = useTextMetrics(
     `${elements.reduce(
       (found, { value }) =>
-        `${value}`.length > found.length ? `${value}${value}` : found,
+        `${value}`.length > found.length ? `${value}` : found,
       ''
     )} `,
-    canvasElement
+    canvas
   );
-  valueWidth *= xScale;
-  valueHeight *= yScale;
-  const x = valueWidth;
+  const x = 3 * valueMetrics.width * xScale;
   const y = VIEWPORT_HEIGHT / 2;
+
+  const valueHeight = valueMetrics.height * yScale;
 
   const graphWidth = VIEWPORT_WIDTH - legendWidth - 15 - x;
 
@@ -114,9 +113,9 @@ export default function LineChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={2 * yScale}
+        strokeWidth={yScale}
         verticalAlignment={verticalAlignment}
-        viewBox={'landscape'}
+        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
@@ -237,7 +236,7 @@ export default function LineChart({
                   }
                   x={
                     x +
-                    (groupIndex === 0 && valueWidth / 4) +
+                    (groupIndex === 0 && (valueMetrics.width * xScale) / 4) +
                     (groupIndex * graphWidth) / (groups.length - 1)
                   }
                   y={
@@ -264,11 +263,11 @@ export default function LineChart({
             title={title}
             width={legendWidth}
             x={x + graphWidth + 8}
-            y={y + titleHeight * yScale + 3 * yScale + 11 * titleIndex}
+            y={y + titleMetrics.height * yScale + 3 * yScale + 11 * titleIndex}
           />,
         ])}
         <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
-          <SvgTypographyCanvas ref={canvasElementRef} />
+          <SvgTypographyCanvas ref={canvasRef} />
         </SvgTypographyForeign>
       </ChartSvg>
     </View>

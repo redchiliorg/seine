@@ -17,10 +17,7 @@ import {
 import type { ChartProps } from './types';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
-import ChartSvgAxis from './ChartSvgAxis';
-
-const HEIGHT = VIEWPORT_WIDTH;
-const WIDTH = VIEWPORT_HEIGHT;
+import ChartAxis from './ChartAxis';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -60,8 +57,8 @@ export default function BarChart({
   const valueWidth = getValueWidth();
   const valueHeight = getValueHeight();
 
-  const barHeight = HEIGHT / Math.max(elements.length, 20);
-  const barWidth = WIDTH - (titleWidth + valueWidth);
+  const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 10);
+  const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
 
   const maxValue = elements.reduce(
     (max, { value }) => Math.max(+value, max),
@@ -72,27 +69,30 @@ export default function BarChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={valueHeight / 40}
+        strokeWidth={valueHeight / 32}
         verticalAlignment={verticalAlignment}
-        viewBox={'portrait'}
+        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         {elements.map(({ title, value }, index) => {
           const width = (barWidth * value) / maxValue;
           const color = palette[index % palette.length];
           const y =
-            HEIGHT - barHeight * (elements.length - index) - valueHeight;
+            VIEWPORT_HEIGHT -
+            barHeight * (elements.length - index) -
+            valueHeight;
 
           return [
             <SvgTypography
               dominantBaseline={'middle'}
               fill={color}
+              ref={titleTypographyMethodsRef}
               index={index}
               key={'title'}
               x={0}
               y={y + barHeight / 2}
-              ref={titleTypographyMethodsRef}
             >
-              {title}{' '}
+              {title}
+              {'  '}
             </SvgTypography>,
 
             <rect
@@ -106,31 +106,30 @@ export default function BarChart({
 
             <SvgTypography
               dominantBaseline={'middle'}
+              ref={valueTypographyMethodsRef}
               textAnchor={'end'}
               fill={color}
               index={index}
               key={'value'}
-              variant={'h6'}
               x={titleWidth + width + valueWidth}
               y={y + barHeight / 2}
-              ref={valueTypographyMethodsRef}
             >
-              {' '}
+              {'  '}
               {value}
               {units}
             </SvgTypography>,
           ];
         })}
-        {!!xAxis && (
-          <ChartSvgAxis
-            length={barWidth + valueWidth}
+        {xAxis ? (
+          <ChartAxis
+            length={barWidth}
             max={maxValue}
             step={dx}
             units={units}
             x={titleWidth}
-            y={HEIGHT}
+            y={VIEWPORT_HEIGHT - valueHeight}
           />
-        )}
+        ) : null}
       </ChartSvg>
     </View>
   );
