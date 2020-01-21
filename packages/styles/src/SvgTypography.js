@@ -95,33 +95,27 @@ export default React.forwardRef(function SvgTypography(
   );
   const methods: SvgTypographyMethods = useAutoMemo(() => {
     if (svgElement && canvasElement) {
+      const getHeight = () => parseFloat(lineHeight);
+      const getWidth = () => {
+        const context = canvasElement.getContext('2d');
+        context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
+        return context.measureText(text).width;
+      };
+      const getXScale = (value = 1) =>
+        (value * svgElement.getBBox().height) /
+        svgElement.getBoundingClientRect().height;
+      const getYScale = (value = 1) =>
+        (value * svgElement.getBBox().width) /
+        svgElement.getBoundingClientRect().width;
+      const getScaledWidth = () => getXScale(getWidth());
+      const getScaledHeight = () => getYScale(getHeight());
       return {
-        getHeight() {
-          return parseFloat(lineHeight);
-        },
-        getWidth() {
-          const context = canvasElement.getContext('2d');
-          context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-          return context.measureText(text).width;
-        },
-        getXScale(value = 1) {
-          return (
-            (value * svgElement.getBBox().height) /
-            svgElement.getBoundingClientRect().height
-          );
-        },
-        getYScale(value = 1) {
-          return (
-            (value * svgElement.getBBox().width) /
-            svgElement.getBoundingClientRect().width
-          );
-        },
-        getScaledWidth() {
-          return this.getXScale(this.getWidth());
-        },
-        getScaledHeight() {
-          return this.getYScale(this.getHeight());
-        },
+        getHeight,
+        getWidth,
+        getXScale,
+        getYScale,
+        getScaledWidth,
+        getScaledHeight,
       };
     }
     return defaultTypographyMethods;
