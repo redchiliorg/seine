@@ -38,13 +38,10 @@ export default function ChartSvgAxis({
   const offset = length / count;
   const total = count + !!finite;
 
-  const [
-    { getScaledWidth, getScaledHeight },
-    childMethodsRef,
-  ] = useTypographyChildrenMethods(total - 1);
+  const [methods, childMethodsRef] = useTypographyChildrenMethods(total - 1);
 
-  const width = getScaledWidth();
-  const height = getScaledHeight();
+  const width = methods.getScaledWidth();
+  const height = methods.getScaledHeight();
 
   return (
     <ChartSvg

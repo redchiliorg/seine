@@ -41,7 +41,7 @@ const Typography = styled.p`
 
     ${typeof height === 'number' &&
       css`
-        height: ${height + 2}px;
+        height: ${height}px;
       `}
     ${typeof height === 'string' &&
       css`
@@ -50,7 +50,7 @@ const Typography = styled.p`
 
     ${typeof width === 'number' &&
       css`
-        width: ${width + 2}px;
+        width: ${width}px;
       `}
     ${typeof width === 'string' &&
       css`

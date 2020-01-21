@@ -3,11 +3,10 @@ import styled, { css } from 'styled-components';
 
 export default styled.svg.attrs(
   ({
-    verticalAlignment: align,
-    meetOrSlice = 'meet',
+    verticalAlignment: align = 'center',
     textAlignment = 'center',
-  }) => ({
-    preserveAspectRatio: `x${
+    meetOrSlice = 'meet',
+    preserveAspectRatio = `x${
       textAlignment === 'center'
         ? 'Mid'
         : textAlignment === 'left'
@@ -16,9 +15,11 @@ export default styled.svg.attrs(
     }Y${
       align === 'center' ? 'Mid' : align === 'start' ? 'Min' : 'Max'
     } ${meetOrSlice}`,
-  })
+    height = '100%',
+    width = '100%',
+  }) => ({ preserveAspectRatio, width, height })
 )`
-  ${({ minWidth = null, width = '100%' }) =>
+  ${({ minWidth = null, width }) =>
     minWidth !== null
       ? css`
           min-width: ${minWidth}px;
@@ -28,7 +29,7 @@ export default styled.svg.attrs(
           width: ${width};
         `}
 
-  ${({ minHeight = null, height = '100%' }) =>
+  ${({ minHeight = null, height }) =>
     minHeight !== null
       ? css`
           min-height: ${minHeight}px;

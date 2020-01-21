@@ -45,17 +45,17 @@ export default function BarChart({
   ...viewProps
 }: Props) {
   const [
-    { getScaledWidth: getTitleWidth },
+    titleMethods,
     titleTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const titleWidth = getTitleWidth();
+  const titleWidth = titleMethods.getScaledWidth();
 
   const [
-    { getScaledWidth: getValueWidth, getScaledHeight: getValueHeight },
+    valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const valueWidth = getValueWidth();
-  const valueHeight = getValueHeight();
+  const valueWidth = valueMethods.getWidth();
+  const valueHeight = valueMethods.getHeight();
 
   const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 10);
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
