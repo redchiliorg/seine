@@ -7,7 +7,7 @@ import {
   UPDATE_BLOCK_ELEMENT,
 } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
-import { SvgTypography } from '@seine/styles';
+import { SvgInput, SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
@@ -45,7 +45,7 @@ export default function BarChartEditor({
                 if (child.type === SvgTypography) {
                   if (child.key === 'title') {
                     return (
-                      <ChartInput
+                      <SvgInput
                         {...child.props}
                         key={child.key}
                         onChange={({ currentTarget }) =>

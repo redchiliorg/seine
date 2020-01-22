@@ -10,13 +10,13 @@ import Typography from './Typography';
 import defaultTheme from './defaultTheme';
 import useTypographyChildren from './useTypographyChildren';
 
-type SvgTypographyProps = {
+export type SvgTypographyProps = {
   fill?: string,
   textAnchor?: 'start' | 'middle' | 'end',
   dominantBaseline?: 'middle' | 'baseline' | 'hanging',
 };
 
-type BoxProps = {
+export type BoxProps = {
   xScale: number,
   yScale: number,
   height: number,
@@ -33,7 +33,7 @@ const StyledTypography = styled(Typography).attrs(
     transform-origin: left top;
 
     overflow: visible;
-    white-space: pre-line;
+    white-space: pre-wrap;
 
     text-align: ${({ textAnchor }) =>
       textAnchor === 'start'
@@ -69,6 +69,7 @@ export type Props = {
  */
 export default React.forwardRef(function SvgTypography(
   {
+    as: Container = StyledTypography,
     children,
     dominantBaseline = 'baseline',
     variant = 'body1',
@@ -148,7 +149,7 @@ export default React.forwardRef(function SvgTypography(
         height={methods.getHeight()}
         width={methods.getWidth()}
       />
-      <StyledTypography
+      <Container
         variant={variant}
         {...typography}
         textAnchor={textAnchor}
@@ -157,7 +158,7 @@ export default React.forwardRef(function SvgTypography(
         xScale={methods.getXScale()}
       >
         {children}
-      </StyledTypography>
+      </Container>
     </SvgTypographyForeign>
   );
 });

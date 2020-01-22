@@ -4,8 +4,9 @@ import styled, { css } from 'styled-components';
 export default styled.svg.attrs(
   ({
     verticalAlignment: align = 'center',
-    textAlignment = 'center',
+    textAlignment = 'left',
     meetOrSlice = 'meet',
+    overflow = 'hidden',
     preserveAspectRatio = `x${
       textAlignment === 'center'
         ? 'Mid'
@@ -17,7 +18,7 @@ export default styled.svg.attrs(
     } ${meetOrSlice}`,
     height = '100%',
     width = '100%',
-  }) => ({ preserveAspectRatio, width, height })
+  }) => ({ preserveAspectRatio, width, height, overflow })
 )`
   ${({ minWidth = null, width }) =>
     minWidth !== null
@@ -44,4 +45,9 @@ export default styled.svg.attrs(
     css`
       max-width: ${maxWidth}px;
     `};
+
+  ${({ overflow }) =>
+    css`
+      overflow: ${overflow};
+    `}
 `;

@@ -52,13 +52,6 @@ export default function PieChart({
 
   const bounds = useAutoMemo({});
 
-  React.useLayoutEffect(() => {
-    setViewBox(
-      `${bounds.minX} ${bounds.minY} ${bounds.maxX -
-        bounds.minX} ${bounds.maxY - bounds.minY}`
-    );
-  }, [bounds]);
-
   bounds.minX = bounds.minY = 0;
   bounds.maxX = bounds.maxY = size;
 
@@ -87,6 +80,10 @@ export default function PieChart({
       if (maxY > bounds.maxY) {
         bounds.maxY = maxY;
       }
+      setViewBox(
+        `${bounds.minX} ${bounds.minY} ${bounds.maxX -
+          bounds.minX} ${bounds.maxY - bounds.minY}`
+      );
     }
   };
 
@@ -94,9 +91,8 @@ export default function PieChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        overflow={'visible'}
         maxWidth={800}
-        preserveAspectRatio={'xMinYMin meet'}
+        preserveAspectRatio={'xMidYMid meet'}
         verticalAlignment={verticalAlignment}
         viewBox={viewBox}
       >
