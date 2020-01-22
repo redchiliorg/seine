@@ -2,8 +2,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 
-import SvgTypography from './SvgTypography';
 import type { BoxProps, SvgTypographyProps } from './SvgTypography';
+import SvgTypography from './SvgTypography';
 import Input from './Input';
 
 type Props = {
@@ -36,10 +36,13 @@ const StyledInput = styled(Input).attrs(
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function SvgInput({ children = '', ...typographyProps }: Props) {
+export default React.forwardRef(function SvgInput(
+  { children = '', ...typographyProps }: Props,
+  ref
+) {
   return (
-    <SvgTypography {...typographyProps} as={StyledInput}>
+    <SvgTypography {...typographyProps} ref={ref} as={StyledInput}>
       {children}
     </SvgTypography>
   );
-}
+});

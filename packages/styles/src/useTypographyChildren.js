@@ -5,9 +5,13 @@ import { useAutoMemo } from 'hooks.macro';
 /**
  * @description Use typography children as text string.
  * @param {React.ChildrenArray} children
+ * @param {string} separator
  * @returns {string}
  */
-export default function useTypographyChildren(children: React.ChildrenArray) {
+export default function useTypographyChildren(
+  children: React.ChildrenArray,
+  separator = ' '
+) {
   return useAutoMemo<string>(
     React.Children.toArray(children)
       .map(
@@ -26,6 +30,6 @@ export default function useTypographyChildren(children: React.ChildrenArray) {
           }`
       )
       .filter((child) => child)
-      .join(' ')
+      .join(separator)
   );
 }

@@ -11,7 +11,6 @@ import { SvgInput, SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
-import ChartInput from './ChartInput';
 
 /**
  * @description Editor of bar chart
@@ -47,6 +46,7 @@ export default function BarChartEditor({
                     return (
                       <SvgInput
                         {...child.props}
+                        ref={child.ref}
                         key={child.key}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
@@ -61,8 +61,9 @@ export default function BarChartEditor({
 
                   if (child.key === 'value') {
                     return (
-                      <ChartInput
+                      <SvgInput
                         {...child.props}
+                        ref={child.ref}
                         key={child.key}
                         onChange={({ currentTarget }) =>
                           dispatchElements({
