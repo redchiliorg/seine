@@ -15,12 +15,13 @@ const StyledInput = styled(Input).attrs(
     color: fill,
   })
 )`
-  ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
+  ${({ color, xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     && {
       background: none;
       border: 0;
       margin: 0;
       padding: 0;
+      color: ${color};
     }
     ::-webkit-outer-spin-button,
     ::-webkit-inner-spin-button {

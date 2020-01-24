@@ -3,8 +3,8 @@ import * as React from 'react';
 import { Box, Dialog, IconButton as MuiIconButton } from '@material-ui/core';
 import {
   Close as CloseIcon,
-  Edit as EditIcon,
   Delete as DeleteIcon,
+  Edit as EditIcon,
   FormatLineSpacing as FormatLineSpacingIcon,
 } from '@material-ui/icons';
 import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
@@ -41,13 +41,10 @@ import {
 } from '@seine/charts';
 import styled from 'styled-components/macro';
 
-import PieChartEditor from './PieChartEditor';
-import BarChartEditor from './BarChartEditor';
-import ColumnChartEditor from './ColumnChartEditor';
-import LineChartEditor from './LineChartEditor';
 import type { ChartEditorProps } from './types';
 import ChartToolbar from './ChartToolbar';
 import ChartTextAlignmentButton from './ChartTextAlignmentButton';
+import ChartEditorChildren from './ChartEditorChildren';
 
 type Props = (ChartProps & BlockEditor) & {
   chartEditorRenderMap?: {
@@ -56,12 +53,14 @@ type Props = (ChartProps & BlockEditor) & {
 };
 
 const defaultChartEditorRenderMap = {
-  [chartTypes.PIE]: (props) => <PieChart {...props} as={PieChartEditor} />,
-  [chartTypes.BAR]: (props) => <BarChart {...props} as={BarChartEditor} />,
+  [chartTypes.PIE]: (props) => <PieChart {...props} as={ChartEditorChildren} />,
+  [chartTypes.BAR]: (props) => <BarChart {...props} as={ChartEditorChildren} />,
   [chartTypes.COLUMN]: (props) => (
-    <ColumnChart {...props} as={ColumnChartEditor} />
+    <ColumnChart {...props} as={ChartEditorChildren} />
   ),
-  [chartTypes.LINE]: (props) => <LineChart {...props} as={LineChartEditor} />,
+  [chartTypes.LINE]: (props) => (
+    <LineChart {...props} as={ChartEditorChildren} />
+  ),
 };
 
 const defaultEditor = {

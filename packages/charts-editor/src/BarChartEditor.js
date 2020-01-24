@@ -1,10 +1,12 @@
 // @flow
 import * as React from 'react';
-import { ChartSvg, ChartTitle } from '@seine/charts';
 
-import type { ChartEditorProps as Props } from './types';
-import ChartTitleInput from './ChartTitleInput';
-import ChartEditorChild from './ChartEditorChild';
+import type { ChartEditorProps } from './types';
+import ChartEditorChildren from './ChartEditorChildren';
+
+type Props = ChartEditorProps & {
+  children: React.ChildrenArray<any>,
+};
 
 /**
  * @description Editor of bar chart
@@ -13,37 +15,9 @@ import ChartEditorChild from './ChartEditorChild';
  */
 export default function BarChartEditor({
   children,
-  dispatch,
-  dispatchElements,
+  ...chartEditorProps
 }: Props) {
-  return React.Children.map(children, (parent: ?React.Node) => {
-    switch (parent.type) {
-      case ChartTitle:
-        return (
-          <ChartTitle {...parent.props} key={parent.key}>
-            <ChartTitleInput
-              dispatch={dispatch}
-              textAlignment={parent.props.textAlignment}
-              value={parent.props.children}
-            />
-          </ChartTitle>
-        );
-
-      case ChartSvg:
-        return (
-          <ChartSvg {...parent.props} key={parent.key}>
-            {React.Children.map(parent.props.children, (child: ?React.Node) => (
-              <ChartEditorChild
-                child={child}
-                dispatchElements={dispatchElements}
-              />
-            ))}
-          </ChartSvg>
-        );
-
-      default: {
-        return parent;
-      }
-    }
-  });
+  return React.Children.map(children, (child: ?React.Node) => (
+    <ChartEditorChildren child={child} {...chartEditorProps} />
+  ));
 }
