@@ -2,8 +2,7 @@
 import * as React from 'react';
 import type { ColumnChartLegendProps } from '@seine/charts';
 import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
-
-import ChartInput from './ChartInput';
+import { SvgInput } from '@seine/styles';
 
 /**
  * @description Input to edit a title of chart legend item
@@ -22,7 +21,7 @@ export default function ChartLegendItemInput({
   return (
     <g width={width}>
       <rect fill={fill} height={size} width={size} x={x} y={y} />
-      <ChartInput
+      <SvgInput
         dominantBaseline={'middle'}
         onChange={({ currentTarget }) =>
           dispatch({
