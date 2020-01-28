@@ -3,7 +3,7 @@ import * as React from 'react';
 import type { TableBody, TableFormat } from '@seine/core';
 import styled, { css } from 'styled-components/macro';
 
-type Props = TableBody & TableFormat;
+export type Props = TableBody & TableFormat;
 
 const StyledTable = styled.table`
   ${({
