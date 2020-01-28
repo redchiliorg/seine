@@ -1,7 +1,7 @@
 {
-  "name": "@seine/content",
+  "name": "@seine/tables",
   "version": "0.3.125",
-  "description": "Seine content renderer.",
+  "description": "Seine tables renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -11,14 +11,12 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/charts": "^0.3.0",
     "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0",
-    "@seine/styles": "^0.3.0",
-    "@seine/tables": "^0.3.0"
+    "clsx": "^1.0.4"
   },
   "peerDependencies": {
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
   }
 }

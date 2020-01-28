@@ -5,6 +5,8 @@ import type { ChartBody, ChartElement, ChartFormat } from './charts';
 import * as Charts from './charts';
 import type { RichTextBody, RichTextFormat } from './richText';
 import * as RichText from './richText';
+import type { TableBody, TableFormat } from './tables';
+import * as Table from './tables';
 import type { GridBody, GridFormat } from './grid';
 import * as Grid from './grid';
 import type { ImageBody, ImageFormat } from './image';
@@ -17,6 +19,7 @@ export * from './richText';
 export * from './grid';
 export * from './image';
 export * from './page';
+export * from './tables';
 export * from './theme';
 
 const { chartTypes, ...Chart }: { ...*, CHART: * } = Charts;
@@ -27,6 +30,7 @@ export const blockTypes = {
   ...Grid,
   ...Image,
   ...Page,
+  ...Table,
 };
 
 export type BlockElement = ChartElement;
@@ -39,7 +43,8 @@ export type BlockBody =
   | RichTextBody
   | GridBody
   | ImageBody
-  | PageBody;
+  | PageBody
+  | TableBody;
 
 export type BlockFormat =
   | null
@@ -47,7 +52,8 @@ export type BlockFormat =
   | RichTextFormat
   | GridFormat
   | ImageFormat
-  | PageFormat;
+  | PageFormat
+  | TableFormat;
 
 export type BlockId = string | null;
 
