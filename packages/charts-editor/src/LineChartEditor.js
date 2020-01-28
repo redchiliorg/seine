@@ -8,12 +8,11 @@ import {
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
 } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
-import { SvgTypography } from '@seine/styles';
+import { SvgInput, SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartLegendItemInput from './ChartLegendItemInput';
 import ChartTitleInput from './ChartTitleInput';
-import ChartInput from './ChartInput';
 
 /**
  * @description Editor of line chart
@@ -106,8 +105,9 @@ export default function LineChartEditor({
               if (React.isValidElement(child) && child.type === SvgTypography) {
                 if (child.key.startsWith('group,')) {
                   return (
-                    <ChartInput
+                    <SvgInput
                       {...child.props}
+                      ref={child.ref}
                       key={child.key}
                       onChange={({ currentTarget }) =>
                         dispatchElements({
@@ -122,7 +122,7 @@ export default function LineChartEditor({
 
                 if (child.key.startsWith('value,')) {
                   return (
-                    <ChartInput
+                    <SvgInput
                       {...child.props}
                       key={child.key}
                       onChange={({ currentTarget }) =>

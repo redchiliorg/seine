@@ -7,6 +7,7 @@ import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
 import type { Theme } from '@material-ui/core';
 import { ThemeProvider } from '@seine/styles';
+import { Table } from '@seine/tables';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -25,6 +26,7 @@ export const defaultBlockRenderMap = {
   [blockTypes.GRID]: Grid,
   [blockTypes.IMAGE]: Image,
   [blockTypes.PAGE]: Page,
+  table: Table,
 };
 
 /**

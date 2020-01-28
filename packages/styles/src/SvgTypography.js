@@ -2,20 +2,21 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
-import { useAutoCallback, useAutoMemo } from 'hooks.macro';
+import { useAutoMemo } from 'hooks.macro';
 
 import SvgTypographyCanvas from './SvgTypographyCanvas';
 import SvgTypographyForeign from './SvgTypographyForeign';
 import Typography from './Typography';
 import defaultTheme from './defaultTheme';
+import useTypographyChildren from './useTypographyChildren';
 
-type SvgTypographyProps = {
+export type SvgTypographyProps = {
   fill?: string,
   textAnchor?: 'start' | 'middle' | 'end',
   dominantBaseline?: 'middle' | 'baseline' | 'hanging',
 };
 
-type BoxProps = {
+export type BoxProps = {
   xScale: number,
   yScale: number,
   height: number,
@@ -31,8 +32,15 @@ const StyledTypography = styled(Typography).attrs(
     transform: scale(${xScale}, ${yScale});
     transform-origin: left top;
 
-    overflow: hidden;
+    overflow: visible;
     white-space: pre-wrap;
+
+    text-align: ${({ textAnchor }) =>
+      textAnchor === 'start'
+        ? 'left'
+        : textAnchor === 'middle'
+        ? 'center'
+        : 'right'};
   `}
 `;
 
@@ -61,6 +69,7 @@ export type Props = {
  */
 export default React.forwardRef(function SvgTypography(
   {
+    as: Container = StyledTypography,
     children,
     dominantBaseline = 'baseline',
     variant = 'body1',
@@ -79,62 +88,39 @@ export default React.forwardRef(function SvgTypography(
   const canvasElementRef = React.useRef(null);
   const { current: canvasElement } = canvasElementRef;
 
-  const text = useAutoMemo(
-    React.Children.toArray(children)
-      .map(
-        (child) =>
-          `${
-            typeof child === 'string' || typeof child === 'number'
-              ? child
-              : child && child.props && 'value' in child.props
-              ? child.props.value
-              : child &&
-                child.props.children &&
-                (typeof child.props.children === 'string' ||
-                  typeof child.props.children == 'number')
-              ? child.props.children
-              : ''
-          }`
-      )
-      .filter((child) => child)
-      .join(' ')
-  );
-
+  const text = useTypographyChildren(children);
   const { fontWeight = 400, fontSize, fontFamily, lineHeight } = useAutoMemo(
     canvasElement
       ? getComputedStyle(canvasElement)
       : defaultTheme.typography[variant]
   );
-  const contextFont = useAutoMemo(`${fontWeight} ${fontSize} '${fontFamily}'`);
-
-  const getWidth = useAutoCallback(() => {
-    const context = canvasElement.getContext('2d');
-    context.font = contextFont;
-    return context.measureText(text).width;
+  const methods: SvgTypographyMethods = useAutoMemo(() => {
+    if (svgElement && canvasElement) {
+      const getHeight = () => parseFloat(lineHeight);
+      const getWidth = () => {
+        const context = canvasElement.getContext('2d');
+        context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
+        return context.measureText(text).width;
+      };
+      const getXScale = (value = 1) =>
+        (value * svgElement.getBBox().height) /
+        svgElement.getBoundingClientRect().height;
+      const getYScale = (value = 1) =>
+        (value * svgElement.getBBox().width) /
+        svgElement.getBoundingClientRect().width;
+      const getScaledWidth = () => getXScale(getWidth());
+      const getScaledHeight = () => getYScale(getHeight());
+      return {
+        getHeight,
+        getWidth,
+        getXScale,
+        getYScale,
+        getScaledWidth,
+        getScaledHeight,
+      };
+    }
+    return defaultTypographyMethods;
   });
-  const getHeight = useAutoCallback(() => parseFloat(lineHeight));
-  const getXScale = useAutoCallback(
-    (value = 1) =>
-      (value * svgElement.getBBox().width) /
-      svgElement.getBoundingClientRect().width
-  );
-  const getYScale = useAutoCallback(
-    (value = 1) =>
-      (value * svgElement.getBBox().height) /
-      svgElement.getBoundingClientRect().height
-  );
-  const methods: SvgTypographyMethods = useAutoMemo(
-    svgElement && canvasElement
-      ? {
-          getWidth,
-          getHeight,
-          getXScale,
-          getYScale,
-          getScaledWidth: () => getXScale(getWidth()),
-          getScaledHeight: () => getYScale(getHeight()),
-        }
-      : defaultTypographyMethods
-  );
 
   React.useImperativeHandle(ref, () => methods, [methods]);
 
@@ -163,15 +149,16 @@ export default React.forwardRef(function SvgTypography(
         height={methods.getHeight()}
         width={methods.getWidth()}
       />
-      <StyledTypography
+      <Container
         variant={variant}
         {...typography}
+        textAnchor={textAnchor}
         width={methods.getWidth()}
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}
       >
         {children}
-      </StyledTypography>
+      </Container>
     </SvgTypographyForeign>
   );
 });

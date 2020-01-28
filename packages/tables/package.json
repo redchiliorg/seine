@@ -1,7 +1,7 @@
 {
-  "name": "@seine/styles",
+  "name": "@seine/tables",
   "version": "0.3.130",
-  "description": "Seine styles library.",
+  "description": "Seine tables renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -10,9 +10,10 @@
   "repository": "redchiliorg/seine",
   "author": "Mikhail Boyarov",
   "license": "MIT",
+  "dependencies": {
+    "@seine/core": "^0.3.0"
+  },
   "peerDependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/utils": "^4.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

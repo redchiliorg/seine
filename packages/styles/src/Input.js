@@ -1,7 +1,12 @@
 // @flow
 import styled, { css } from 'styled-components/macro';
+import * as React from 'react';
 
-const Typography = styled.p`
+import useTypographyChildren from './useTypographyChildren';
+
+const Input = styled(({ children, ...props }) => (
+  <input {...props} value={useTypographyChildren(children, '').trim()} />
+))`
   ${({
     color,
     inline = false,
@@ -63,4 +68,4 @@ const Typography = styled.p`
   `}
 `;
 
-export default Typography;
+export default Input;

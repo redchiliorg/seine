@@ -16,21 +16,22 @@ export type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLegendItem({
-  fill,
-  size,
-  title,
-  width,
-  x,
-  y,
-}: Props) {
+export default React.forwardRef(function ChartLegendItem(
+  { fill, size, title, width, x, y }: Props,
+  ref
+) {
   return (
     <g width={width}>
       <rect fill={fill} height={size} width={size} x={x} y={y} />
-      <SvgTypography dominantBaseline={'middle'} x={x + size} y={y + size / 2}>
+      <SvgTypography
+        dominantBaseline={'middle'}
+        x={x + size}
+        y={y + size / 2}
+        ref={ref}
+      >
         {'  '}
         {title}
       </SvgTypography>
     </g>
   );
-}
+});

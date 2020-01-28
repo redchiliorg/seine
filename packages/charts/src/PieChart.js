@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import { SvgTypography } from '@seine/styles';
+import { useAutoMemo } from 'hooks.macro';
 
 import {
   defaultChartPalette,
@@ -37,26 +38,19 @@ export default function PieChart({
   type,
   ...viewProps
 }): Props {
-  const sum = React.useMemo(
-    () => elements.reduce((acc, { value }) => acc + value, 0),
-    [elements]
-  );
+  const sum = useAutoMemo(elements.reduce((acc, { value }) => acc + value, 0));
 
-  const [radius, outerRadius, innerRadius, center, quarter] = React.useMemo(
-    () => [size / 2, size / 2 + size / 9, size / 6, size / 2, sum / 4],
-    [size, sum]
-  );
+  const [radius, outerRadius, innerRadius, center, quarter] = useAutoMemo([
+    size / 2,
+    size / 2 + size / 9,
+    size / 6,
+    size / 2,
+    sum / 4,
+  ]);
 
   const [viewBox, setViewBox] = React.useState(`0 0 ${size} ${size}`);
 
-  const bounds = React.useMemo(() => ({}), []);
-
-  React.useLayoutEffect(() => {
-    setViewBox(
-      `${bounds.minX} ${bounds.minY} ${bounds.maxX -
-        bounds.minX} ${bounds.maxY - bounds.minY}`
-    );
-  }, [bounds, elements]);
+  const bounds = useAutoMemo({});
 
   bounds.minX = bounds.minY = 0;
   bounds.maxX = bounds.maxY = size;
@@ -65,13 +59,40 @@ export default function PieChart({
   let endX = Math.cos(end);
   let endY = Math.sin(end);
 
+  const createChildrenMethodsHandler = (textX, textY) => (methods) => {
+    if (methods !== null) {
+      const textBoxWidth = methods.getScaledWidth();
+      const textBoxHeight = methods.getScaledHeight();
+      const minX = textX - textBoxWidth / 2;
+      const maxX = textX + textBoxWidth / 2;
+      const minY = textY;
+      const maxY = textY + textBoxHeight;
+
+      if (minX < bounds.minX) {
+        bounds.minX = minX;
+      }
+      if (maxX > bounds.maxX) {
+        bounds.maxX = maxX;
+      }
+      if (minY < bounds.minY) {
+        bounds.minY = minY;
+      }
+      if (maxY > bounds.maxY) {
+        bounds.maxY = maxY;
+      }
+      setViewBox(
+        `${bounds.minX} ${bounds.minY} ${bounds.maxX -
+          bounds.minX} ${bounds.maxY - bounds.minY}`
+      );
+    }
+  };
+
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        overflow={'visible'}
         maxWidth={800}
-        preserveAspectRatio={'xMinYMin meet'}
+        preserveAspectRatio={'xMidYMid meet'}
         verticalAlignment={verticalAlignment}
         viewBox={viewBox}
       >
@@ -95,23 +116,8 @@ export default function PieChart({
             (value >= quarter ? innerRadius : outerRadius) *
               Math.sin(start + length / 2);
 
-          const titleWidth = 2 * (2 + title.length);
-          const valueWidth = 2 * (2 + String(value).length);
-          const textBoxWidth = Math.max(titleWidth, valueWidth);
-          const textBoxHeight = 1.5 * 2 * 1.75;
+          const onChildrenMethods = createChildrenMethodsHandler(textX, textY);
 
-          if (textX - textBoxWidth / 2 < bounds.minX) {
-            bounds.minX = textX - textBoxWidth / 2;
-          }
-          if (textX > bounds.maxX + textBoxWidth / 2) {
-            bounds.maxX = textX + textBoxWidth / 2;
-          }
-          if (textY - 2 * 2 < bounds.minY) {
-            bounds.minY = textY - 2 * 2;
-          }
-          if (textY + textBoxHeight > bounds.maxY) {
-            bounds.maxY = textY + textBoxHeight;
-          }
           return [
             <path
               d={[
@@ -134,6 +140,7 @@ export default function PieChart({
               fontWeight={400}
               x={textX}
               y={textY}
+              ref={onChildrenMethods}
             >
               {value}
               {units}
@@ -149,6 +156,7 @@ export default function PieChart({
               fontWeight={400}
               x={textX}
               y={textY}
+              ref={onChildrenMethods}
             >
               {title}
             </SvgTypography>,

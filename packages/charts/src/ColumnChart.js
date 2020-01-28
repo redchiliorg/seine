@@ -105,13 +105,12 @@ export default function ColumnChart({
     dy
   );
 
-  const [
-    { getScaledWidth, getScaledHeight, getHeight },
-    childMethodsRef,
-  ] = useTypographyChildrenMethods(elements.length);
-  const scaledTextHeight = getScaledHeight();
-  const scaledTextWidth = getScaledWidth();
-  const textHeight = getHeight();
+  const [methods, childMethodsRef] = useTypographyChildrenMethods(
+    elements.length
+  );
+  const scaledTextHeight = methods.getScaledHeight();
+  const scaledTextWidth = methods.getScaledWidth();
+  const textHeight = methods.getHeight();
 
   const WIDTH = VIEWPORT_WIDTH / groups.length;
   const HEIGHT = VIEWPORT_HEIGHT;

@@ -2,31 +2,33 @@
 import type { BlocksAction, BlocksCreateAction } from '../reducers';
 
 import type { ChartBody, ChartElement, ChartFormat } from './charts';
-import * as Charts from './charts';
+import { CHART } from './charts';
 import type { RichTextBody, RichTextFormat } from './richText';
-import * as RichText from './richText';
+import { RICH_TEXT } from './richText';
 import type { GridBody, GridFormat } from './grid';
-import * as Grid from './grid';
+import { GRID } from './grid';
 import type { ImageBody, ImageFormat } from './image';
-import * as Image from './image';
+import { IMAGE } from './image';
 import type { PageBody, PageFormat } from './page';
-import * as Page from './page';
+import { PAGE } from './page';
+import type { TableBody, TableFormat } from './tables';
+import { TABLE } from './tables';
 
 export * from './charts';
 export * from './richText';
 export * from './grid';
 export * from './image';
 export * from './page';
+export * from './tables';
 export * from './theme';
 
-const { chartTypes, ...Chart }: { ...*, CHART: * } = Charts;
-
 export const blockTypes = {
-  ...Chart,
-  ...RichText,
-  ...Grid,
-  ...Image,
-  ...Page,
+  CHART,
+  RICH_TEXT,
+  GRID,
+  IMAGE,
+  PAGE,
+  TABLE,
 };
 
 export type BlockElement = ChartElement;
@@ -39,7 +41,8 @@ export type BlockBody =
   | RichTextBody
   | GridBody
   | ImageBody
-  | PageBody;
+  | PageBody
+  | TableBody;
 
 export type BlockFormat =
   | null
@@ -47,7 +50,8 @@ export type BlockFormat =
   | RichTextFormat
   | GridFormat
   | ImageFormat
-  | PageFormat;
+  | PageFormat
+  | TableFormat;
 
 export type BlockId = string | null;
 

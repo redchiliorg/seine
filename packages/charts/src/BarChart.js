@@ -45,17 +45,17 @@ export default function BarChart({
   ...viewProps
 }: Props) {
   const [
-    { getScaledWidth: getTitleWidth },
+    titleMethods,
     titleTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const titleWidth = getTitleWidth();
+  const titleWidth = titleMethods.getScaledWidth();
 
   const [
-    { getScaledWidth: getValueWidth, getScaledHeight: getValueHeight },
+    valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const valueWidth = getValueWidth();
-  const valueHeight = getValueHeight();
+  const valueWidth = valueMethods.getWidth();
+  const valueHeight = valueMethods.getHeight();
 
   const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 10);
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
@@ -69,7 +69,7 @@ export default function BarChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={valueHeight / 32}
+        strokeWidth={valueMethods.getYScale() / 2}
         verticalAlignment={verticalAlignment}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
@@ -107,11 +107,10 @@ export default function BarChart({
             <SvgTypography
               dominantBaseline={'middle'}
               ref={valueTypographyMethodsRef}
-              textAnchor={'end'}
               fill={color}
               index={index}
               key={'value'}
-              x={titleWidth + width + valueWidth}
+              x={titleWidth + width}
               y={y + barHeight / 2}
             >
               {'  '}
@@ -122,12 +121,12 @@ export default function BarChart({
         })}
         {xAxis ? (
           <ChartAxis
-            length={barWidth}
+            length={VIEWPORT_WIDTH}
             max={maxValue}
             step={dx}
             units={units}
             x={titleWidth}
-            y={VIEWPORT_HEIGHT - valueHeight}
+            y={barWidth}
           />
         ) : null}
       </ChartSvg>

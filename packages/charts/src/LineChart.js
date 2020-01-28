@@ -1,12 +1,6 @@
 // @flow
 import * as React from 'react';
-import {
-  SvgTypographyCanvas,
-  SvgTypographyForeign,
-  SvgTypography,
-  useSvgScale,
-  useTextMetrics,
-} from '@seine/styles';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDy,
@@ -66,76 +60,36 @@ export default function LineChart({
     dy
   );
 
-  const [{ xScale, yScale }, svgRef] = useSvgScale();
+  const [
+    titleMethods,
+    titleTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(titles.length);
+  const legendWidth = 10 + titleMethods.getScaledWidth();
 
-  const canvasRef = React.useRef(null);
-  const { current: canvas } = canvasRef;
+  const [
+    valueMethods,
+    valueTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
+  const height = VIEWPORT_HEIGHT / 2 - valueMethods.getScaledHeight();
 
-  const groupMetrics = useTextMetrics(
-    `${groups.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}`,
-    canvas
-  );
-  const groupWidth = groupMetrics.width * xScale;
-  const height = VIEWPORT_HEIGHT / 2 - groupMetrics.height * yScale;
-
-  const titleMetrics = useTextMetrics(
-    `${titles.reduce(
-      (found, { title }) =>
-        `${title}`.length > found.length ? `${title}` : found,
-      ''
-    )}`,
-    canvas
-  );
-  const legendWidth = 10 + titleMetrics.width * xScale;
-
-  const valueMetrics = useTextMetrics(
-    `${elements.reduce(
-      (found, { value }) =>
-        `${value}`.length > found.length ? `${value}` : found,
-      ''
-    )} `,
-    canvas
-  );
-  const x = 3 * valueMetrics.width * xScale;
+  const x = 1.4 * valueMethods.getScaledWidth();
   const y = VIEWPORT_HEIGHT / 2;
 
-  const valueHeight = valueMetrics.height * yScale;
+  const valueHeight = valueMethods.getScaledWidth();
 
-  const graphWidth = VIEWPORT_WIDTH - legendWidth - 15 - x;
-
-  const maxGroupsCount = parseInt(graphWidth / groupWidth);
+  const graphWidth = VIEWPORT_WIDTH - legendWidth - 10 - x;
+  const yScale = valueMethods.getYScale();
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
-        strokeWidth={yScale}
+        strokeWidth={valueHeight / 40}
         verticalAlignment={verticalAlignment}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
-        <marker id="arrowUp" overflow="visible" orient="auto">
-          <path
-            d="m0 0 3-3-11 3 11 3-3-3z"
-            fill="#000000"
-            fillRule="evenodd"
-            stroke="#000000"
-          />
-        </marker>
         {xAxis
-          ? (maxGroupsCount < groups.length
-              ? [
-                  ...groups.slice(0, parseInt(maxGroupsCount / 2)),
-                  ...(maxGroupsCount % 2
-                    ? []
-                    : [groups[parseInt(maxGroupsCount / 2)]]),
-                  ...groups.slice(-parseInt(maxGroupsCount / 2)),
-                ]
-              : groups
-            ).map(([group], index, { length }) => (
+          ? groups.map(([group], index, { length }) => (
               <SvgTypography
                 key={['group', index]}
                 dominantBaseline={'hanging'}
@@ -163,22 +117,13 @@ export default function LineChart({
           : null}
         {yAxis ? (
           <ChartAxis
+            arrow
             direction={'up'}
             length={height}
             max={maxValue}
             min={minValue}
             step={Math.max(dy, valueHeight)}
-            x={x}
             y={y + height}
-          />
-        ) : null}
-        {yAxis ? (
-          <path
-            d={`m${x} ${y}v${height * yScale}`}
-            fill="none"
-            key="y-axis"
-            markerStart="url(#arrowUp)"
-            stroke="#000000"
           />
         ) : null}
         {titles.map(({ id, title }, titleIndex) => [
@@ -236,7 +181,7 @@ export default function LineChart({
                   }
                   x={
                     x +
-                    (groupIndex === 0 && (valueMetrics.width * xScale) / 4) +
+                    (groupIndex === 0 && valueMethods.getScaledWidth() / 4) +
                     (groupIndex * graphWidth) / (groups.length - 1)
                   }
                   y={
@@ -249,6 +194,7 @@ export default function LineChart({
                       (maxValue - minValue) -
                     1
                   }
+                  ref={valueTypographyMethodsRef}
                 >
                   {value}
                   {units}
@@ -259,16 +205,19 @@ export default function LineChart({
           <ChartLegendItem
             fill={palette[titleIndex % palette.length]}
             key={id}
+            ref={titleTypographyMethodsRef}
             size={10}
             title={title}
             width={legendWidth}
             x={x + graphWidth + 8}
-            y={y + titleMetrics.height * yScale + 3 * yScale + 11 * titleIndex}
+            y={
+              y +
+              titleMethods.getScaledHeight() * yScale +
+              3 * yScale +
+              11 * titleIndex
+            }
           />,
         ])}
-        <SvgTypographyForeign ref={svgRef} height={'100%'} width={'100%'}>
-          <SvgTypographyCanvas ref={canvasRef} />
-        </SvgTypographyForeign>
       </ChartSvg>
     </View>
   );

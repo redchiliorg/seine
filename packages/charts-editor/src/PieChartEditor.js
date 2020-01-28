@@ -1,18 +1,17 @@
 // @flow
 import * as React from 'react';
-import { ChartSvg, ChartTitle } from '@seine/charts';
 import type { ChartTitleProps } from '@seine/charts';
+import { ChartSvg, ChartTitle } from '@seine/charts';
 import {
   DESELECT_BLOCK_ELEMENT,
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
 } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
-import { SvgTypography } from '@seine/styles';
+import { SvgInput, SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartTitleInput from './ChartTitleInput';
-import ChartInput from './ChartInput';
 
 /**
  * @description Editor of pie chart
@@ -68,7 +67,7 @@ export default function PieChartEditor({
 
                   case SvgTypography: {
                     return (
-                      <ChartInput
+                      <SvgInput
                         key={child.key}
                         {...child.props}
                         onChange={({ currentTarget }) =>
