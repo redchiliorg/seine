@@ -3,7 +3,7 @@ import * as React from 'react';
 import type { TableBody, TableFormat } from '@seine/core';
 import styled, { css } from 'styled-components/macro';
 
-type Props = TableBody & TableFormat;
+export type Props = TableBody & TableFormat;
 
 const StyledTable = styled.table`
   ${({
@@ -12,6 +12,8 @@ const StyledTable = styled.table`
     },
   }) => css`
     ${body1}
+
+    width: 100%;
 
     th,
     td {

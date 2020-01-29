@@ -1,7 +1,7 @@
 {
-  "name": "@seine/editor",
-  "version": "0.3.130",
-  "description": "Seine structured content renderer.",
+  "name": "@seine/tables-editor",
+  "version": "0.3.131",
+  "description": "Seine tables editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "files": [
@@ -11,14 +11,11 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/charts-editor": "^0.3.0",
-    "@seine/content": "^0.3.0",
     "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0",
-    "@seine/draft-editor": "^0.3.0",
     "@seine/styles": "^0.3.0",
-    "@seine/tables-editor": "^0.3.0",
-    "@seine/ui": "^0.3.0"
+    "@seine/tables": "^0.3.0",
+    "@seine/ui": "^0.3.0",
+    "react-color": "^2.17.3"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.2.1",
