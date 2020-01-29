@@ -1,9 +1,11 @@
 // @flow
+import * as React from 'react';
+
 export type TableElement = {
-  text: string,
-  align: 'left' | 'center' | 'right',
-  bold: boolean,
-  italic: boolean,
+  text: React.Node,
+  align?: 'left' | 'center' | 'right',
+  bold?: boolean,
+  italic?: boolean,
 };
 
 export type TableBody = {

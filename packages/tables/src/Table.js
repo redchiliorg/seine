@@ -13,6 +13,8 @@ const StyledTable = styled.table`
   }) => css`
     ${body1}
 
+    width: 100%;
+
     th,
     td {
       border-left: 1px solid #fff;

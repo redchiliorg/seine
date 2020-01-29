@@ -1,6 +1,8 @@
 // @flow
 import * as React from 'react';
+import { actions } from '@storybook/addon-actions';
 import { Content } from '@seine/content';
+import { Editor } from '@seine/editor';
 
 export default { title: 'Single.Table' };
 
@@ -8,7 +10,7 @@ export const Table3x3 = ({
   as: Component = Content,
   children = [],
   ...props
-}) => (
+}: any) => (
   <Component
     {...props}
     parent={{
@@ -55,11 +57,15 @@ export const Table3x3 = ({
   </Component>
 );
 
+export const EditorOfTable1x2 = () => (
+  <Table3x3 as={Editor} {...actions('onChange')} />
+);
+
 export const Table1x2 = ({
   as: Component = Content,
   children = [],
   ...props
-}) => (
+}: any) => (
   <Component
     {...props}
     parent={{

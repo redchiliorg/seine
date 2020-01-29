@@ -23,6 +23,7 @@ import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, useReducerEx } from '@seine/ui';
 import { ThemeProvider } from '@seine/styles';
+import { TableEditor } from '@seine/tables-editor';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -34,6 +35,7 @@ import ImageToolbar from './ImageToolbar';
 import PageToolbar from './PageToolbar';
 import ImageAddButton from './ImageAddButton';
 import defaultTheme from './defaultTheme';
+import TableAddButton from './TableAddButton';
 
 const defaultEditorChildren = [];
 
@@ -53,6 +55,7 @@ export const defaultEditorBlockRendererMap = {
     ...props
   }: BlockEditor & Block) => <Page {...props} />,
   [blockTypes.IMAGE]: ImageEditor,
+  [blockTypes.TABLE]: TableEditor,
 };
 
 export const defaultAddButtonRenderMap = {
@@ -68,6 +71,7 @@ export const defaultAddButtonRenderMap = {
   [blockTypes.GRID]: () => null,
   [blockTypes.IMAGE]: ImageAddButton,
   [blockTypes.PAGE]: () => null,
+  [blockTypes.TABLE]: TableAddButton,
 };
 
 export const defaultToolbarRenderMap = {
