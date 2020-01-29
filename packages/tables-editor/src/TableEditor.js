@@ -1,10 +1,11 @@
 // @flow
 import * as React from 'react';
 import type { BlockEditor } from '@seine/core';
-import { UPDATE_BLOCK_BODY } from '@seine/core';
+import { UPDATE_BLOCK_BODY, SELECT_BLOCK } from '@seine/core';
 import type { TableProps } from '@seine/tables';
 import { Table } from '@seine/tables';
 import styled from 'styled-components/macro';
+import { useAutoCallback } from 'hooks.macro';
 
 type Props = TableProps & BlockEditor;
 
@@ -33,6 +34,10 @@ export default function TableEditor({
   rows,
   selection,
 }: Props) {
+  const selectBlock = useAutoCallback(() =>
+    dispatch({ id, type: SELECT_BLOCK })
+  );
+
   return (
     <Table
       header={header.map(({ text, ...column }, index) => ({
@@ -61,6 +66,7 @@ export default function TableEditor({
           ...column,
           text: (
             <StyledInput
+              onFocus={selectBlock}
               onChange={({ currentTarget }) =>
                 dispatch({
                   id,
