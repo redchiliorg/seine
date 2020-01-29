@@ -1,6 +1,6 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.129",
+  "version": "0.3.130",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -16,8 +16,8 @@
     "@seine/core": "^0.3.0",
     "@seine/draft": "^0.3.0",
     "@seine/draft-editor": "^0.3.0",
-    "@seine/tables-editor": "^0.3.0",
     "@seine/styles": "^0.3.0",
+    "@seine/tables-editor": "^0.3.0",
     "@seine/ui": "^0.3.0"
   },
   "peerDependencies": {

@@ -14957,9 +14957,15 @@ exports[`Storyshots Single.SvgText SVG Text Width Property 1`] = `
 </div>
 `;
 
+exports[`Storyshots Single.Table Editor Of Table 1 X 2 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
+
 exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 bTCFdw"
+  className="Table__StyledTable-yfw5vz-0 fTZOQS"
 >
   <thead>
     <tr>
@@ -14986,7 +14992,7 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 3 X 3 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 bTCFdw"
+  className="Table__StyledTable-yfw5vz-0 fTZOQS"
 >
   <thead>
     <tr>

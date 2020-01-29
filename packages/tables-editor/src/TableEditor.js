@@ -1,10 +1,10 @@
 // @flow
 import * as React from 'react';
 import type { BlockEditor } from '@seine/core';
+import { UPDATE_BLOCK_BODY } from '@seine/core';
 import type { TableProps } from '@seine/tables';
 import { Table } from '@seine/tables';
 import styled from 'styled-components/macro';
-import { SELECT_BLOCK, UPDATE_BLOCK_BODY } from '@seine/core';
 
 type Props = TableProps & BlockEditor;
 
