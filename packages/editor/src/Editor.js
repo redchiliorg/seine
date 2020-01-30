@@ -189,13 +189,17 @@ export default function Editor({
           />
         </BlockToolbar>
         <ClickAwayListener
-          onClickAway={() =>
-            contentChildren.length > 0 &&
-            (mode !== 'fullscreen' &&
+          onClickAway={() => {
+            if (
+              !(document.activeElement instanceof HTMLButtonElement) &&
+              contentChildren.length > 0 &&
+              mode !== 'fullscreen'
+            ) {
               dispatch({
                 type: DESELECT_ALL_BLOCKS,
-              }))
-          }
+              });
+            }
+          }}
         >
           <ContentPaper>
             <Content

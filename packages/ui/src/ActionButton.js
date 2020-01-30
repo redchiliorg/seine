@@ -14,7 +14,7 @@ import {
   UPDATE_BLOCK_FORMAT,
 } from '@seine/core';
 
-type Props = Action & React.ElementProps<HTMLButtonElement>;
+export type Props = Action & React.ElementProps<HTMLButtonElement>;
 
 /**
  * @description Declarative action button.

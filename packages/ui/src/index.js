@@ -12,6 +12,7 @@ export { default as Paper } from './Paper';
 export { default as Toolbar } from './Toolbar';
 
 export { default as ActionButton } from './ActionButton';
+export type { Props as ActionButtonProps } from './ActionButton';
 export { default as CompositeActionButton } from './CompositeActionButton';
 
 export { default as BlockContainer } from './BlockContainer';

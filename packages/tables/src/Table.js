@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import type { TableBody, TableFormat } from '@seine/core';
+import type { TableBody, TableCell, TableFormat } from '@seine/core';
 import styled, { css } from 'styled-components/macro';
 
 export type Props = TableBody & TableFormat;
@@ -11,10 +11,8 @@ const StyledTable = styled.table`
       typography: { body1 },
     },
   }) => css`
-    ${body1}
-
+    ${body1};
     width: 100%;
-
     th,
     td {
       border-left: 1px solid #fff;
@@ -42,6 +40,13 @@ const StyledTable = styled.table`
   `}
 `;
 
+const StyledTableCell = styled.td`
+  ${({ align = 'left', bold = false, italic = false }: TableCell) => css`
+    text-align: ${align};
+    font-weight: ${bold ? 'bold' : 'normal'};
+    font-style: ${italic ? 'italic' : 'normal'};
+  `}
+`;
 /**
  * @description Table block render component.
  * @param {Props} props
@@ -60,8 +65,10 @@ export default function Table({ header, rows }: Props) {
       <tbody>
         {rows.map((columns, rowIndex) => (
           <tr key={rowIndex}>
-            {columns.map(({ text }, columnIndex) => (
-              <td key={columnIndex}>{text}</td>
+            {columns.map(({ text, ...cell }, columnIndex) => (
+              <StyledTableCell key={columnIndex} {...cell}>
+                {text}
+              </StyledTableCell>
             ))}
           </tr>
         ))}
