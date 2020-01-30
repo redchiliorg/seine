@@ -1,11 +1,17 @@
 // @flow
 import * as React from 'react';
 import type { BlockEditor } from '@seine/core';
-import { SELECT_BLOCK, UPDATE_BLOCK_BODY } from '@seine/core';
+import {
+  SELECT_BLOCK,
+  UPDATE_BLOCK_BODY,
+  UPDATE_BLOCK_EDITOR,
+} from '@seine/core';
 import type { TableProps } from '@seine/tables';
 import { Table } from '@seine/tables';
 import styled from 'styled-components/macro';
 import { useAutoCallback } from 'hooks.macro';
+
+import { defaultEditor } from './constants';
 
 type Props = TableProps & BlockEditor;
 
@@ -29,9 +35,10 @@ const StyledInput = styled.input`
  * @returns {React.Node}
  */
 export default function TableEditor({ id, dispatch, header, rows }: Props) {
-  const selectBlock = useAutoCallback(() =>
-    dispatch({ id, type: SELECT_BLOCK })
-  );
+  const selectHeader = useAutoCallback(() => {
+    dispatch({ id, type: SELECT_BLOCK });
+    dispatch({ id, type: UPDATE_BLOCK_EDITOR, editor: defaultEditor });
+  });
 
   return (
     <Table
@@ -39,7 +46,7 @@ export default function TableEditor({ id, dispatch, header, rows }: Props) {
         ...column,
         text: (
           <StyledInput
-            onFocus={selectBlock}
+            onFocus={selectHeader}
             onChange={({ currentTarget }) =>
               dispatch({
                 id,
@@ -58,11 +65,18 @@ export default function TableEditor({ id, dispatch, header, rows }: Props) {
         ),
       }))}
       rows={rows.map((row, rowIndex) =>
-        row.map(({ text, ...column }, index) => ({
+        row.map(({ text, ...column }, columnIndex) => ({
           ...column,
           text: (
             <StyledInput
-              onFocus={selectBlock}
+              onFocus={() => {
+                dispatch({ id, type: SELECT_BLOCK });
+                dispatch({
+                  id,
+                  type: UPDATE_BLOCK_EDITOR,
+                  editor: { columnIndex, rowIndex },
+                });
+              }}
               onChange={({ currentTarget }) =>
                 dispatch({
                   id,
@@ -71,9 +85,9 @@ export default function TableEditor({ id, dispatch, header, rows }: Props) {
                     rows: [
                       ...rows.slice(0, rowIndex),
                       [
-                        ...row.slice(0, index),
+                        ...row.slice(0, columnIndex),
                         { ...column, text: currentTarget.value },
-                        ...row.slice(index + 1),
+                        ...row.slice(columnIndex + 1),
                       ],
                       ...rows.slice(rowIndex + 1),
                     ],

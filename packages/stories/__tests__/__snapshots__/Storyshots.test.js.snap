@@ -14965,7 +14965,7 @@ exports[`Storyshots Single.Table Editor Of Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 fTZOQS"
+  className="Table__StyledTable-yfw5vz-0 lofJIY"
 >
   <thead>
     <tr>
@@ -14979,10 +14979,14 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
   </thead>
   <tbody>
     <tr>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         column 1
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         column 2
       </td>
     </tr>
@@ -14992,7 +14996,7 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 3 X 3 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 fTZOQS"
+  className="Table__StyledTable-yfw5vz-0 lofJIY"
 >
   <thead>
     <tr>
@@ -15009,35 +15013,53 @@ exports[`Storyshots Single.Table Table 3 X 3 1`] = `
   </thead>
   <tbody>
     <tr>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 1, column 1
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 1, column 2
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 1, column 3
       </td>
     </tr>
     <tr>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 2, column 1
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 2, column 2
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 2, column 3
       </td>
     </tr>
     <tr>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 3, column 1
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 3, column 2
       </td>
-      <td>
+      <td
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         row 3, column 3
       </td>
     </tr>

@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 
-export type TableElement = {
+export type TableCell = {
   text: React.Node,
   align?: 'left' | 'center' | 'right',
   bold?: boolean,
@@ -10,8 +10,8 @@ export type TableElement = {
 
 export type TableBody = {
   title?: string,
-  header: TableElement[],
-  rows: TableElement[][],
+  header: TableCell[],
+  rows: TableCell[][],
 };
 
 export type TableFormat = {};
