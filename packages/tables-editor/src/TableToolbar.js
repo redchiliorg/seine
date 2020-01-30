@@ -39,6 +39,37 @@ export default function TableToolbar({ children, body, dispatch, id }: Props) {
       >
         Add column
       </ActionButton>
+      <ActionButton
+        body={{
+          header: header.slice(0, -1),
+          rows: rows.map((row) => row.slice(0, -1)),
+        }}
+        id={id}
+        type={UPDATE_BLOCK_BODY}
+        dispatch={dispatch}
+      >
+        Remove column
+      </ActionButton>
+      <ActionButton
+        body={{
+          rows: [...rows, rows.map(() => defaultCell)],
+        }}
+        id={id}
+        type={UPDATE_BLOCK_BODY}
+        dispatch={dispatch}
+      >
+        Add row
+      </ActionButton>
+      <ActionButton
+        body={{
+          rows: rows.slice(0, -1),
+        }}
+        id={id}
+        type={UPDATE_BLOCK_BODY}
+        dispatch={dispatch}
+      >
+        Remove row
+      </ActionButton>
     </Toolbar>
   );
 }
