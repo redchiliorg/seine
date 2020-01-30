@@ -12,7 +12,7 @@ import styled from 'styled-components/macro';
 import { useAutoCallback } from 'hooks.macro';
 import { BlockActions } from '@seine/ui';
 
-import { defaultEditor } from './constants';
+import { defaultTableEditor } from './constants';
 
 type Props = TableProps & BlockEditor;
 
@@ -50,7 +50,7 @@ export default function TableEditor({
 }: Props) {
   const selectHeader = useAutoCallback(() => {
     dispatch({ id, type: SELECT_BLOCK });
-    dispatch({ id, type: UPDATE_BLOCK_EDITOR, editor: defaultEditor });
+    dispatch({ id, type: UPDATE_BLOCK_EDITOR, editor: defaultTableEditor });
   });
 
   return (
