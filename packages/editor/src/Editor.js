@@ -23,7 +23,7 @@ import { ChartEditor, ChartToolbar } from '@seine/charts-editor';
 import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, useReducerEx } from '@seine/ui';
 import { ThemeProvider } from '@seine/styles';
-import { TableEditor } from '@seine/tables-editor';
+import { TableEditor, TableToolbar } from '@seine/tables-editor';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -80,6 +80,7 @@ export const defaultToolbarRenderMap = {
   [blockTypes.GRID]: PageToolbar,
   [blockTypes.IMAGE]: ImageToolbar,
   [blockTypes.PAGE]: PageToolbar,
+  [blockTypes.TABLE]: TableToolbar,
 };
 
 const DefaultContainer = styled.div`
