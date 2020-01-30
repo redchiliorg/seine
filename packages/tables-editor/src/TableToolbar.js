@@ -11,13 +11,10 @@ import {
   FormatAlignRight,
 } from '@material-ui/icons';
 import { IconButton } from '@material-ui/core';
+import { defaultTableBody, defaultTableCell } from '@seine/tables';
 
-import {
-  defaultTableCell,
-  defaultTableEditor,
-  defaultTableBody,
-} from './constants';
 import TableCellButton from './TableCellButton';
+import { defaultTableEditor } from './constants';
 
 type Props = {
   ...ToolbarProps,
