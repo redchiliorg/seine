@@ -12,7 +12,11 @@ import {
 } from '@material-ui/icons';
 import { IconButton } from '@material-ui/core';
 
-import { defaultCell, defaultEditor, defaultTableBody } from './constants';
+import {
+  defaultTableCell,
+  defaultTableEditor,
+  defaultTableBody,
+} from './constants';
 import TableCellButton from './TableCellButton';
 
 type Props = {
@@ -35,7 +39,7 @@ export default function TableToolbar({
   editor,
 }: Props) {
   const { header, rows } = body || defaultTableBody;
-  const { rowIndex, columnIndex } = editor || defaultEditor;
+  const { rowIndex, columnIndex } = editor || defaultTableEditor;
   return (
     <Toolbar>
       {children}
@@ -45,18 +49,18 @@ export default function TableToolbar({
             ? {
                 header: [
                   ...header.slice(0, columnIndex + 1),
-                  defaultCell,
+                  defaultTableCell,
                   ...header.slice(columnIndex + 1),
                 ],
                 rows: rows.map((row) => [
                   ...row.slice(0, columnIndex + 1),
-                  defaultCell,
+                  defaultTableCell,
                   ...row.slice(columnIndex + 1),
                 ]),
               }
             : {
-                header: [...header, defaultCell],
-                rows: rows.map((row) => [...row, defaultCell]),
+                header: [...header, defaultTableCell],
+                rows: rows.map((row) => [...row, defaultTableCell]),
               }
         }
         id={id}
@@ -91,10 +95,10 @@ export default function TableToolbar({
             columnIndex > -1
               ? [
                   ...rows.slice(0, rowIndex + 1),
-                  rows[0].map(() => defaultCell),
+                  rows[0].map(() => defaultTableCell),
                   ...rows.slice(rowIndex + 1),
                 ]
-              : [...rows, rows.map(() => defaultCell)],
+              : [...rows, rows.map(() => defaultTableCell)],
         }}
         id={id}
         type={UPDATE_BLOCK_BODY}

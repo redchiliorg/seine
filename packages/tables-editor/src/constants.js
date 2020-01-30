@@ -3,8 +3,8 @@ export const defaultTableBody = {
   header: [],
   rows: [],
 };
-export const defaultCell = { text: '' };
-export const defaultEditor = {
+export const defaultTableCell = { text: '' };
+export const defaultTableEditor = {
   rowIndex: -1,
   columnIndex: -1,
 };
