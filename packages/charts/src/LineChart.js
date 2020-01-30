@@ -70,10 +70,10 @@ export default function LineChart({
     valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const height = VIEWPORT_HEIGHT - valueMethods.getScaledHeight();
+  const height = (7 * VIEWPORT_HEIGHT) / 8 - valueMethods.getScaledHeight();
 
   const x = 1.4 * valueMethods.getScaledWidth();
-  const y = 0;
+  const y = VIEWPORT_HEIGHT / 8 + valueMethods.getScaledHeight();
 
   const valueHeight = valueMethods.getScaledWidth();
 
