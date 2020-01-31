@@ -96,6 +96,7 @@ export default function LineChart({
                 textAnchor={'middle'}
                 x={x + (index * graphWidth) / (length - 1)}
                 y={y + height}
+                width={graphWidth / length}
               >
                 {group}
               </SvgTypography>
@@ -165,7 +166,7 @@ export default function LineChart({
             stroke={palette[titleIndex % palette.length]}
           />,
 
-          ...groups.map(([, elements], groupIndex) =>
+          ...groups.map(([, elements], groupIndex, { length }) =>
             elements
               .filter((element) => element.id === id)
               .map(({ index, value }) => (
@@ -179,11 +180,7 @@ export default function LineChart({
                       ? 'middle'
                       : 'start'
                   }
-                  x={
-                    x +
-                    (groupIndex === 0 && valueMethods.getScaledWidth() / 4) +
-                    (groupIndex * graphWidth) / (groups.length - 1)
-                  }
+                  x={x + (groupIndex * graphWidth) / (length - 1)}
                   y={
                     y +
                     height -
@@ -194,8 +191,10 @@ export default function LineChart({
                       (maxValue - minValue) -
                     1
                   }
+                  width={graphWidth / (length + 1)}
                   ref={valueTypographyMethodsRef}
                 >
+                  {groupIndex === 0 && ' '}
                   {value}
                   {units}
                 </SvgTypography>

@@ -27,6 +27,7 @@ export default React.forwardRef(function ChartLegendItem(
         dominantBaseline={'middle'}
         x={x + size}
         y={y + size / 2}
+        height={size}
         ref={ref}
       >
         {'  '}

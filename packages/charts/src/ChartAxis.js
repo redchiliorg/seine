@@ -63,12 +63,15 @@ export default function ChartAxis({
         index > 0 && (
           <SvgTypography
             key={'value'}
-            {...(direction === 'right' && { dominantBaseline: 'hanging' })}
-            {...(direction === 'up' && { dominantBaseline: 'end' })}
-            {...(direction === 'up' && { textAnchor: 'end' })}
             ref={textMethodsRef}
             x={x + (direction === 'right' ? offset * index : textWidth)}
             y={y - (direction === 'up' && offset * index)}
+            {...(direction === 'right' && { dominantBaseline: 'hanging' })}
+            {...(direction === 'up' && {
+              dominantBaseline: 'end',
+              height: length / total,
+              textAnchor: 'end',
+            })}
           >
             {`${parseInt(min + (index * (max - min)) / count)} `}
             {units}
