@@ -544,7 +544,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={128.046875}
         >
           <canvas
@@ -558,6 +558,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             textAnchor="start"
             width={1}
           >
+             
             175
           </p>
         </foreignObject>
@@ -728,7 +729,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={178.303125}
         >
           <canvas
@@ -742,6 +743,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             textAnchor="start"
             width={1}
           >
+             
             65
           </p>
         </foreignObject>
@@ -1487,20 +1489,20 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         width="auto"
       >
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
             color="#71a2ff"
             size={1}
           />
           Easymode
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
             color="#c0d4e2"
             size={1}
           />
@@ -2399,30 +2401,30 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         width="auto"
       >
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
             color="#cbcbcb"
             size={1}
           />
@@ -3206,30 +3208,30 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         width="auto"
       >
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
             color="#cbcbcb"
             size={1}
           />
@@ -3726,7 +3728,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={128.046875}
         >
           <canvas
@@ -3740,6 +3742,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             textAnchor="start"
             width={1}
           >
+             
             175
           </p>
         </foreignObject>
@@ -3910,7 +3913,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={178.303125}
         >
           <canvas
@@ -3924,6 +3927,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             textAnchor="start"
             width={1}
           >
+             
             65
           </p>
         </foreignObject>
@@ -4569,7 +4573,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={128.046875}
         >
           <canvas
@@ -4583,6 +4587,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             textAnchor="start"
             width={1}
           >
+             
             175
           </p>
         </foreignObject>
@@ -4753,7 +4758,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={1.65}
+          x={1.4}
           y={178.303125}
         >
           <canvas
@@ -4767,6 +4772,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             textAnchor="start"
             width={1}
           >
+             
             65
           </p>
         </foreignObject>
@@ -6793,30 +6799,30 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         width="auto"
       >
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+          className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
         >
           <div
-            className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+            className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
             color="#cbcbcb"
             size={1}
           />
@@ -8257,30 +8263,30 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
@@ -8844,7 +8850,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
-        x={1.65}
+        x={1.4}
         y={128.046875}
       >
         <canvas
@@ -8858,6 +8864,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           textAnchor="start"
           width={1}
         >
+           
           175
         </p>
       </foreignObject>
@@ -9028,7 +9035,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
-        x={1.65}
+        x={1.4}
         y={178.303125}
       >
         <canvas
@@ -9042,6 +9049,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           textAnchor="start"
           width={1}
         >
+           
           65
         </p>
       </foreignObject>
@@ -10828,60 +10836,60 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 fBmzrf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 kljBHu"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 dckxNA"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 icOCJW"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 KRzsf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 iUhDgB"
           color="#6895eb"
           size={1}
         />
@@ -11684,30 +11692,30 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
@@ -12219,40 +12227,40 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
         Generic
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 fBmzrf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 kljBHu"
           color="#e57878"
           size={1}
         />
@@ -12671,30 +12679,30 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
@@ -13171,60 +13179,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 fBmzrf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 kljBHu"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 dckxNA"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 icOCJW"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 KRzsf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 iUhDgB"
           color="#6895eb"
           size={1}
         />
@@ -13701,60 +13709,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 fBmzrf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 kljBHu"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 dckxNA"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 icOCJW"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 KRzsf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 iUhDgB"
           color="#6895eb"
           size={1}
         />
@@ -14231,60 +14239,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 ePXOPs"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dlCxab"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 fBmzrf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 kljBHu"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 dckxNA"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 icOCJW"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 KRzsf"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 iUhDgB"
           color="#6895eb"
           size={1}
         />
@@ -14513,20 +14521,20 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       width="auto"
     >
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 hIcGOH"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 jrISQF"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="ColumnChart__LegendItem-sc-5w0vi2-2 PClEI"
+        className="ColumnChart__LegendItem-sc-5w0vi2-1 kjlUbL"
       >
         <div
-          className="ColumnChart__LegendBox-sc-5w0vi2-3 bteLIm"
+          className="ColumnChart__LegendBox-sc-5w0vi2-2 dtIFzX"
           color="#c0d4e2"
           size={1}
         />
