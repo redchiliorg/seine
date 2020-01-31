@@ -48,15 +48,6 @@ const FlexBox = styled.div`
         `}
 `;
 
-const CondensedText = styled.span`
-  && {
-    display: inline-block;
-    font-size: ${({ factor }) => factor}em;
-    text-align: center;
-    width: 100%;
-  }
-`;
-
 const LegendItem = styled.div`
   display: flex;
   justify-content: center;
@@ -109,7 +100,6 @@ export default function ColumnChart({
     elements.length
   );
   const scaledTextHeight = methods.getScaledHeight();
-  const scaledTextWidth = methods.getScaledWidth();
   const textHeight = methods.getHeight();
 
   const WIDTH = VIEWPORT_WIDTH / groups.length;
@@ -151,14 +141,9 @@ export default function ColumnChart({
                     x={(index + 1) * columnWidth}
                     y={columnHeight - rectHeight + scaledTextHeight}
                     ref={childMethodsRef}
+                    width={columnWidth}
                   >
-                    {scaledTextWidth > columnWidth ? (
-                      <CondensedText factor={columnWidth / scaledTextWidth}>
-                        {value}
-                      </CondensedText>
-                    ) : (
-                      value
-                    )}
+                    {value}
                     {units}
                   </SvgTypography>
                 </React.Fragment>

@@ -36,12 +36,20 @@ const StyledTypography = styled(Typography).attrs(
     white-space: pre-wrap;
 
     text-align: ${({ textAnchor }) =>
-      textAnchor === 'start'
-        ? 'left'
+      textAnchor === 'end'
+        ? 'right'
         : textAnchor === 'middle'
         ? 'center'
-        : 'right'};
+        : 'left'};
   `}
+`;
+
+const CondensedText = styled.span`
+  && {
+    font-size: ${({ factor }) => factor}em;
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export const defaultTypographyMethods = {
@@ -73,8 +81,8 @@ export default React.forwardRef(function SvgTypography(
     children,
     dominantBaseline = 'baseline',
     variant = 'body1',
-    height = 1,
-    width = 1,
+    height = 'auto',
+    width = 'auto',
     x = 0,
     y = 0,
     textAnchor = 'start',
@@ -124,6 +132,9 @@ export default React.forwardRef(function SvgTypography(
 
   React.useImperativeHandle(ref, () => methods, [methods]);
 
+  const scaledTextWidth = methods.getScaledWidth();
+  const scaledTextHeight = methods.getScaledHeight();
+
   return (
     <SvgTypographyForeign
       ref={svgElementRef}
@@ -133,14 +144,13 @@ export default React.forwardRef(function SvgTypography(
         x -
         (textAnchor === 'start'
           ? 0
-          : methods.getScaledWidth() / (textAnchor === 'end' ? 1 : 2))
+          : scaledTextWidth / (textAnchor === 'end' ? 1 : 2))
       }
       y={
         y -
         (dominantBaseline === 'hanging'
           ? 0
-          : methods.getScaledHeight() /
-            (dominantBaseline === 'baseline' ? 1 : 2))
+          : scaledTextHeight / (dominantBaseline === 'baseline' ? 1 : 2))
       }
     >
       <SvgTypographyCanvas
@@ -157,7 +167,17 @@ export default React.forwardRef(function SvgTypography(
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}
       >
-        {children}
+        {typeof width === 'number' && scaledTextWidth > width ? (
+          <CondensedText factor={width / scaledTextWidth}>
+            {children}
+          </CondensedText>
+        ) : typeof height === 'number' && scaledTextHeight > height ? (
+          <CondensedText factor={height / scaledTextHeight}>
+            {children}
+          </CondensedText>
+        ) : (
+          children
+        )}
       </Container>
     </SvgTypographyForeign>
   );
