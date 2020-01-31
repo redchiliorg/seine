@@ -77,7 +77,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={0.8999999999999999}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -98,7 +98,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -119,7 +119,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -140,7 +140,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -161,7 +161,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -182,7 +182,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={275.5}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -199,65 +199,65 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           </p>
         </foreignObject>
         <path
-          d="m1.4  209 274.6 0"
+          d="m1.4  210 274.6 0"
           stroke="black"
         />
         <path
-          d="m1.4  198.6 274.6 0"
+          d="m1.4  191.725 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  188.2 274.6 0"
+          d="m1.4  173.45 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  177.8 274.6 0"
+          d="m1.4  155.175 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  167.4 274.6 0"
+          d="m1.4  136.9 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  157 274.6 0"
+          d="m1.4  118.625 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  146.6 274.6 0"
+          d="m1.4  100.35 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  136.2 274.6 0"
+          d="m1.4  82.075 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  125.8 274.6 0"
+          d="m1.4  63.80000000000001 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  115.4 274.6 0"
+          d="m1.4  45.525000000000006 274.6 0"
           stroke="#f0f0f0"
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={209}
-          y2={198.6}
+          y1={210}
+          y2={191.725}
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={198.6}
-          y2={188.2}
+          y1={191.725}
+          y2={173.45}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={198.1}
+          y={191.225}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -277,15 +277,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={188.2}
-          y2={177.8}
+          y1={173.45}
+          y2={155.175}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={187.7}
+          y={172.95}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -305,15 +305,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={177.8}
-          y2={167.4}
+          y1={155.175}
+          y2={136.9}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={177.3}
+          y={154.675}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -333,15 +333,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={167.4}
-          y2={157}
+          y1={136.9}
+          y2={118.625}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={166.9}
+          y={136.4}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -361,15 +361,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={157}
-          y2={146.6}
+          y1={118.625}
+          y2={100.35000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={156.5}
+          y={118.125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -389,15 +389,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={146.6}
-          y2={136.2}
+          y1={100.35000000000001}
+          y2={82.07500000000002}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={146.1}
+          y={99.85000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -417,15 +417,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={136.2}
-          y2={125.8}
+          y1={82.07500000000002}
+          y2={63.80000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={135.7}
+          y={81.57500000000002}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -445,15 +445,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={125.8}
-          y2={115.39999999999999}
+          y1={63.80000000000001}
+          y2={45.525000000000006}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={125.3}
+          y={63.30000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -473,15 +473,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={115.39999999999999}
-          y2={105}
+          y1={45.525000000000006}
+          y2={27.25}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={114.89999999999999}
+          y={45.025000000000006}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -503,14 +503,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           overflow="visible"
         >
           <path
-            d="m0 0 8-8-33 8 33 8-8-8z"
+            d="m0 0 8-8-32 8 32 8-8-8z"
             fill="#000000"
             fillRule="evenodd"
             stroke="#000000"
           />
         </marker>
         <path
-          d="m1.25 105v1"
+          d="m1.25 43.25v1"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -533,7 +533,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           />
         </marker>
         <path
-          d="M 1.4 163.5 56.32 155.96 111.24000000000001 148.94 166.16000000000003 147.38 221.08 136.2 276 120.86"
+          d="M 1.4 130.046875 56.32 116.7975 111.24000000000001 104.461875 166.16000000000003 101.720625 221.08 82.075 276 55.11937499999999"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -545,7 +545,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={1.65}
-          y={161.5}
+          y={128.046875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -566,7 +566,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={153.96}
+          y={114.7975}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -587,7 +587,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={146.94}
+          y={102.461875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -608,7 +608,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={145.38}
+          y={99.720625}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -629,7 +629,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={134.2}
+          y={80.075}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -650,7 +650,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={275}
-          y={118.86}
+          y={53.11937499999999}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -674,14 +674,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             height={10}
             width={10}
             x={284}
-            y={109}
+            y={31.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={113.5}
+            y={35.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -717,7 +717,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           />
         </marker>
         <path
-          d="M 1.4 192.1 56.32 191.32 111.24000000000001 190.02 166.16000000000003 189.5 221.08 188.46 276 185.6"
+          d="M 1.4 180.303125 56.32 178.9325 111.24000000000001 176.648125 166.16000000000003 175.734375 221.08 173.906875 276 168.88125"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -729,7 +729,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={1.65}
-          y={190.1}
+          y={178.303125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -750,7 +750,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={189.32}
+          y={176.9325}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -771,7 +771,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={188.02}
+          y={174.648125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -792,7 +792,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={187.5}
+          y={173.734375}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -813,7 +813,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={186.46}
+          y={171.906875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -834,7 +834,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           height="100%"
           width="100%"
           x={275}
-          y={183.6}
+          y={166.88125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -858,14 +858,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             height={10}
             width={10}
             x={284}
-            y={120}
+            y={42.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={124.5}
+            y={46.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3259,7 +3259,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={0.8999999999999999}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3280,7 +3280,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3301,7 +3301,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3322,7 +3322,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3343,7 +3343,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3364,7 +3364,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={275.5}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3381,65 +3381,65 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           </p>
         </foreignObject>
         <path
-          d="m1.4  209 274.6 0"
+          d="m1.4  210 274.6 0"
           stroke="black"
         />
         <path
-          d="m1.4  198.6 274.6 0"
+          d="m1.4  191.725 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  188.2 274.6 0"
+          d="m1.4  173.45 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  177.8 274.6 0"
+          d="m1.4  155.175 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  167.4 274.6 0"
+          d="m1.4  136.9 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  157 274.6 0"
+          d="m1.4  118.625 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  146.6 274.6 0"
+          d="m1.4  100.35 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  136.2 274.6 0"
+          d="m1.4  82.075 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  125.8 274.6 0"
+          d="m1.4  63.80000000000001 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  115.4 274.6 0"
+          d="m1.4  45.525000000000006 274.6 0"
           stroke="#f0f0f0"
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={209}
-          y2={198.6}
+          y1={210}
+          y2={191.725}
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={198.6}
-          y2={188.2}
+          y1={191.725}
+          y2={173.45}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={198.1}
+          y={191.225}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3459,15 +3459,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={188.2}
-          y2={177.8}
+          y1={173.45}
+          y2={155.175}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={187.7}
+          y={172.95}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3487,15 +3487,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={177.8}
-          y2={167.4}
+          y1={155.175}
+          y2={136.9}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={177.3}
+          y={154.675}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3515,15 +3515,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={167.4}
-          y2={157}
+          y1={136.9}
+          y2={118.625}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={166.9}
+          y={136.4}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3543,15 +3543,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={157}
-          y2={146.6}
+          y1={118.625}
+          y2={100.35000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={156.5}
+          y={118.125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3571,15 +3571,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={146.6}
-          y2={136.2}
+          y1={100.35000000000001}
+          y2={82.07500000000002}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={146.1}
+          y={99.85000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3599,15 +3599,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={136.2}
-          y2={125.8}
+          y1={82.07500000000002}
+          y2={63.80000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={135.7}
+          y={81.57500000000002}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3627,15 +3627,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={125.8}
-          y2={115.39999999999999}
+          y1={63.80000000000001}
+          y2={45.525000000000006}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={125.3}
+          y={63.30000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3655,15 +3655,15 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={115.39999999999999}
-          y2={105}
+          y1={45.525000000000006}
+          y2={27.25}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={114.89999999999999}
+          y={45.025000000000006}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3685,14 +3685,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           overflow="visible"
         >
           <path
-            d="m0 0 8-8-33 8 33 8-8-8z"
+            d="m0 0 8-8-32 8 32 8-8-8z"
             fill="#000000"
             fillRule="evenodd"
             stroke="#000000"
           />
         </marker>
         <path
-          d="m1.25 105v1"
+          d="m1.25 43.25v1"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -3715,7 +3715,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           />
         </marker>
         <path
-          d="M 1.4 163.5 56.32 155.96 111.24000000000001 148.94 166.16000000000003 147.38 221.08 136.2 276 120.86"
+          d="M 1.4 130.046875 56.32 116.7975 111.24000000000001 104.461875 166.16000000000003 101.720625 221.08 82.075 276 55.11937499999999"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -3727,7 +3727,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={1.65}
-          y={161.5}
+          y={128.046875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3748,7 +3748,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={153.96}
+          y={114.7975}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3769,7 +3769,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={146.94}
+          y={102.461875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3790,7 +3790,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={145.38}
+          y={99.720625}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3811,7 +3811,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={134.2}
+          y={80.075}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3832,7 +3832,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={275}
-          y={118.86}
+          y={53.11937499999999}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3856,14 +3856,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             height={10}
             width={10}
             x={284}
-            y={109}
+            y={31.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={113.5}
+            y={35.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3899,7 +3899,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           />
         </marker>
         <path
-          d="M 1.4 192.1 56.32 191.32 111.24000000000001 190.02 166.16000000000003 189.5 221.08 188.46 276 185.6"
+          d="M 1.4 180.303125 56.32 178.9325 111.24000000000001 176.648125 166.16000000000003 175.734375 221.08 173.906875 276 168.88125"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -3911,7 +3911,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={1.65}
-          y={190.1}
+          y={178.303125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3932,7 +3932,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={55.82}
-          y={189.32}
+          y={176.9325}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3953,7 +3953,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={188.02}
+          y={174.648125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3974,7 +3974,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={187.5}
+          y={173.734375}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -3995,7 +3995,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={220.58}
-          y={186.46}
+          y={171.906875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4016,7 +4016,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           height="100%"
           width="100%"
           x={275}
-          y={183.6}
+          y={166.88125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4040,14 +4040,14 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
             height={10}
             width={10}
             x={284}
-            y={120}
+            y={42.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={124.5}
+            y={46.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4102,7 +4102,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={0.8999999999999999}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4123,7 +4123,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={55.82}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4144,7 +4144,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4165,7 +4165,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4186,7 +4186,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={220.58}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4207,7 +4207,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={275.5}
-          y={209}
+          y={210}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4224,65 +4224,65 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           </p>
         </foreignObject>
         <path
-          d="m1.4  209 274.6 0"
+          d="m1.4  210 274.6 0"
           stroke="black"
         />
         <path
-          d="m1.4  198.6 274.6 0"
+          d="m1.4  191.725 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  188.2 274.6 0"
+          d="m1.4  173.45 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  177.8 274.6 0"
+          d="m1.4  155.175 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  167.4 274.6 0"
+          d="m1.4  136.9 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  157 274.6 0"
+          d="m1.4  118.625 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  146.6 274.6 0"
+          d="m1.4  100.35 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  136.2 274.6 0"
+          d="m1.4  82.075 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  125.8 274.6 0"
+          d="m1.4  63.80000000000001 274.6 0"
           stroke="#f0f0f0"
         />
         <path
-          d="m1.4  115.4 274.6 0"
+          d="m1.4  45.525000000000006 274.6 0"
           stroke="#f0f0f0"
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={209}
-          y2={198.6}
+          y1={210}
+          y2={191.725}
         />
         <line
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={198.6}
-          y2={188.2}
+          y1={191.725}
+          y2={173.45}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={198.1}
+          y={191.225}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4302,15 +4302,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={188.2}
-          y2={177.8}
+          y1={173.45}
+          y2={155.175}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={187.7}
+          y={172.95}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4330,15 +4330,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={177.8}
-          y2={167.4}
+          y1={155.175}
+          y2={136.9}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={177.3}
+          y={154.675}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4358,15 +4358,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={167.4}
-          y2={157}
+          y1={136.9}
+          y2={118.625}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={166.9}
+          y={136.4}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4386,15 +4386,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={157}
-          y2={146.6}
+          y1={118.625}
+          y2={100.35000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={156.5}
+          y={118.125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4414,15 +4414,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={146.6}
-          y2={136.2}
+          y1={100.35000000000001}
+          y2={82.07500000000002}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={146.1}
+          y={99.85000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4442,15 +4442,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={136.2}
-          y2={125.8}
+          y1={82.07500000000002}
+          y2={63.80000000000001}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={135.7}
+          y={81.57500000000002}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4470,15 +4470,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={125.8}
-          y2={115.39999999999999}
+          y1={63.80000000000001}
+          y2={45.525000000000006}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={125.3}
+          y={63.30000000000001}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4498,15 +4498,15 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           stroke="black"
           x1={1.25}
           x2={1.25}
-          y1={115.39999999999999}
-          y2={105}
+          y1={45.525000000000006}
+          y2={27.25}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={0}
-          y={114.89999999999999}
+          y={45.025000000000006}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4528,14 +4528,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           overflow="visible"
         >
           <path
-            d="m0 0 8-8-33 8 33 8-8-8z"
+            d="m0 0 8-8-32 8 32 8-8-8z"
             fill="#000000"
             fillRule="evenodd"
             stroke="#000000"
           />
         </marker>
         <path
-          d="m1.25 105v1"
+          d="m1.25 43.25v1"
           fill="none"
           markerStart="url(#arrowUp)"
           stroke="#000000"
@@ -4558,7 +4558,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           />
         </marker>
         <path
-          d="M 1.4 163.5 56.32 155.96 111.24000000000001 148.94 166.16000000000003 147.38 221.08 136.2 276 120.86"
+          d="M 1.4 130.046875 56.32 116.7975 111.24000000000001 104.461875 166.16000000000003 101.720625 221.08 82.075 276 55.11937499999999"
           fill="none"
           markerEnd="url(#point,0)"
           markerMid="url(#point,0)"
@@ -4570,7 +4570,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={1.65}
-          y={161.5}
+          y={128.046875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4591,7 +4591,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={55.82}
-          y={153.96}
+          y={114.7975}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4612,7 +4612,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={146.94}
+          y={102.461875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4633,7 +4633,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={145.38}
+          y={99.720625}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4654,7 +4654,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={220.58}
-          y={134.2}
+          y={80.075}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4675,7 +4675,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={275}
-          y={118.86}
+          y={53.11937499999999}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4699,14 +4699,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             height={10}
             width={10}
             x={284}
-            y={109}
+            y={31.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={113.5}
+            y={35.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4742,7 +4742,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           />
         </marker>
         <path
-          d="M 1.4 192.1 56.32 191.32 111.24000000000001 190.02 166.16000000000003 189.5 221.08 188.46 276 185.6"
+          d="M 1.4 180.303125 56.32 178.9325 111.24000000000001 176.648125 166.16000000000003 175.734375 221.08 173.906875 276 168.88125"
           fill="none"
           markerEnd="url(#point,1)"
           markerMid="url(#point,1)"
@@ -4754,7 +4754,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={1.65}
-          y={190.1}
+          y={178.303125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4775,7 +4775,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={55.82}
-          y={189.32}
+          y={176.9325}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4796,7 +4796,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={110.74000000000001}
-          y={188.02}
+          y={174.648125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4817,7 +4817,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={165.66000000000003}
-          y={187.5}
+          y={173.734375}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4838,7 +4838,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={220.58}
-          y={186.46}
+          y={171.906875}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4859,7 +4859,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           height="100%"
           width="100%"
           x={275}
-          y={183.6}
+          y={166.88125}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -4883,14 +4883,14 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             height={10}
             width={10}
             x={284}
-            y={120}
+            y={42.25}
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
             x={294}
-            y={124.5}
+            y={46.75}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8377,7 +8377,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={0.8999999999999999}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8398,7 +8398,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={55.82}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8419,7 +8419,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={110.74000000000001}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8440,7 +8440,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={165.66000000000003}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8461,7 +8461,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={220.58}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8482,7 +8482,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={275.5}
-        y={209}
+        y={210}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8499,65 +8499,65 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         </p>
       </foreignObject>
       <path
-        d="m1.4  209 274.6 0"
+        d="m1.4  210 274.6 0"
         stroke="black"
       />
       <path
-        d="m1.4  198.6 274.6 0"
+        d="m1.4  191.725 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  188.2 274.6 0"
+        d="m1.4  173.45 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  177.8 274.6 0"
+        d="m1.4  155.175 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  167.4 274.6 0"
+        d="m1.4  136.9 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  157 274.6 0"
+        d="m1.4  118.625 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  146.6 274.6 0"
+        d="m1.4  100.35 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  136.2 274.6 0"
+        d="m1.4  82.075 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  125.8 274.6 0"
+        d="m1.4  63.80000000000001 274.6 0"
         stroke="#f0f0f0"
       />
       <path
-        d="m1.4  115.4 274.6 0"
+        d="m1.4  45.525000000000006 274.6 0"
         stroke="#f0f0f0"
       />
       <line
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={209}
-        y2={198.6}
+        y1={210}
+        y2={191.725}
       />
       <line
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={198.6}
-        y2={188.2}
+        y1={191.725}
+        y2={173.45}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={198.1}
+        y={191.225}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8577,15 +8577,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={188.2}
-        y2={177.8}
+        y1={173.45}
+        y2={155.175}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={187.7}
+        y={172.95}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8605,15 +8605,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={177.8}
-        y2={167.4}
+        y1={155.175}
+        y2={136.9}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={177.3}
+        y={154.675}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8633,15 +8633,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={167.4}
-        y2={157}
+        y1={136.9}
+        y2={118.625}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={166.9}
+        y={136.4}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8661,15 +8661,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={157}
-        y2={146.6}
+        y1={118.625}
+        y2={100.35000000000001}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={156.5}
+        y={118.125}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8689,15 +8689,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={146.6}
-        y2={136.2}
+        y1={100.35000000000001}
+        y2={82.07500000000002}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={146.1}
+        y={99.85000000000001}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8717,15 +8717,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={136.2}
-        y2={125.8}
+        y1={82.07500000000002}
+        y2={63.80000000000001}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={135.7}
+        y={81.57500000000002}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8745,15 +8745,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={125.8}
-        y2={115.39999999999999}
+        y1={63.80000000000001}
+        y2={45.525000000000006}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={125.3}
+        y={63.30000000000001}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8773,15 +8773,15 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         stroke="black"
         x1={1.25}
         x2={1.25}
-        y1={115.39999999999999}
-        y2={105}
+        y1={45.525000000000006}
+        y2={27.25}
       />
       <foreignObject
         className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
         height="100%"
         width="100%"
         x={0}
-        y={114.89999999999999}
+        y={45.025000000000006}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8803,14 +8803,14 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         overflow="visible"
       >
         <path
-          d="m0 0 8-8-33 8 33 8-8-8z"
+          d="m0 0 8-8-32 8 32 8-8-8z"
           fill="#000000"
           fillRule="evenodd"
           stroke="#000000"
         />
       </marker>
       <path
-        d="m1.25 105v1"
+        d="m1.25 43.25v1"
         fill="none"
         markerStart="url(#arrowUp)"
         stroke="#000000"
@@ -8833,7 +8833,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         />
       </marker>
       <path
-        d="M 1.4 163.5 56.32 155.96 111.24000000000001 148.94 166.16000000000003 147.38 221.08 136.2 276 120.86"
+        d="M 1.4 130.046875 56.32 116.7975 111.24000000000001 104.461875 166.16000000000003 101.720625 221.08 82.075 276 55.11937499999999"
         fill="none"
         markerEnd="url(#point,0)"
         markerMid="url(#point,0)"
@@ -8845,7 +8845,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={1.65}
-        y={161.5}
+        y={128.046875}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8866,7 +8866,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={55.82}
-        y={153.96}
+        y={114.7975}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8887,7 +8887,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={110.74000000000001}
-        y={146.94}
+        y={102.461875}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8908,7 +8908,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={165.66000000000003}
-        y={145.38}
+        y={99.720625}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8929,7 +8929,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={220.58}
-        y={134.2}
+        y={80.075}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8950,7 +8950,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={275}
-        y={118.86}
+        y={53.11937499999999}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -8974,14 +8974,14 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           height={10}
           width={10}
           x={284}
-          y={109}
+          y={31.25}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={294}
-          y={113.5}
+          y={35.75}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9017,7 +9017,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         />
       </marker>
       <path
-        d="M 1.4 192.1 56.32 191.32 111.24000000000001 190.02 166.16000000000003 189.5 221.08 188.46 276 185.6"
+        d="M 1.4 180.303125 56.32 178.9325 111.24000000000001 176.648125 166.16000000000003 175.734375 221.08 173.906875 276 168.88125"
         fill="none"
         markerEnd="url(#point,1)"
         markerMid="url(#point,1)"
@@ -9029,7 +9029,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={1.65}
-        y={190.1}
+        y={178.303125}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9050,7 +9050,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={55.82}
-        y={189.32}
+        y={176.9325}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9071,7 +9071,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={110.74000000000001}
-        y={188.02}
+        y={174.648125}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9092,7 +9092,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={165.66000000000003}
-        y={187.5}
+        y={173.734375}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9113,7 +9113,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={220.58}
-        y={186.46}
+        y={171.906875}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9134,7 +9134,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         height="100%"
         width="100%"
         x={275}
-        y={183.6}
+        y={166.88125}
       >
         <canvas
           className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
@@ -9158,14 +9158,14 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
           height={10}
           width={10}
           x={284}
-          y={120}
+          y={42.25}
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
           x={294}
-          y={124.5}
+          y={46.75}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 kAzBtL"

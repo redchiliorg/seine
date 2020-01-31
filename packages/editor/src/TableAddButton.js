@@ -3,12 +3,11 @@ import * as React from 'react';
 import type { Block, BlocksAction, BlocksCreateAction } from '@seine/core';
 import { blockTypes, createBlock } from '@seine/core';
 import { ActionButton } from '@seine/ui';
+import { defaultTableCell } from '@seine/tables';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   dispatch: (BlocksAction) => any,
 };
-
-const defaultCell = { text: '' };
 
 /**
  * @description Action button to create table block.
@@ -24,7 +23,10 @@ export default function TableAddButton({
     <ActionButton
       block={createBlock(blockTypes.TABLE, {
         header: [{ text: 'Column 1' }, { text: 'Column 2' }],
-        rows: [[defaultCell, defaultCell], [defaultCell, defaultCell]],
+        rows: [
+          [defaultTableCell, defaultTableCell],
+          [defaultTableCell, defaultTableCell],
+        ],
       })}
       title={title}
       {...buttonProps}

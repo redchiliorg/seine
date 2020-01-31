@@ -38,9 +38,10 @@ export default function ChartAxis({
   const count = Math.floor((max - min) / step);
   const offset = length / count;
   const total = count + !!finite;
-  const [{ getScaledWidth }, textMethodsRef] = useTypographyChildrenMethods(
-    total - 1
-  );
+  const [
+    { getScaledWidth, getYScale },
+    textMethodsRef,
+  ] = useTypographyChildrenMethods(total - 1);
   const textWidth = getScaledWidth();
 
   return (
@@ -77,7 +78,7 @@ export default function ChartAxis({
       {!!arrow && (
         <marker id="arrowUp" overflow="visible" orient="auto">
           <path
-            d="m0 0 8-8-33 8 33 8-8-8z"
+            d="m0 0 8-8-32 8 32 8-8-8z"
             fill="#000000"
             fillRule="evenodd"
             stroke="#000000"
@@ -86,7 +87,7 @@ export default function ChartAxis({
       )}
       {!!arrow && (
         <path
-          d={`m${1.25 * textWidth} ${y - length}v${1}`}
+          d={`m${1.25 * textWidth} ${y - length + getYScale(16)}v${1}`}
           fill="none"
           key="y-axis"
           markerStart="url(#arrowUp)"
