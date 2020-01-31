@@ -15,6 +15,7 @@
     "@material-ui/utils": "^4.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^4.3.2"
   }
 }

@@ -90,7 +90,7 @@ export default React.forwardRef(function SvgTypography(
   }: Props,
   ref
 ) {
-  const svgElementRef = React.useRef<HTMLElement>(null);
+  const svgElementRef = React.useRef(null);
   const { current: svgElement } = svgElementRef;
 
   const canvasElementRef = React.useRef(null);
