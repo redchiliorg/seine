@@ -1,7 +1,10 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components/macro';
-import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
+import {
+  FlexBox,
+  SvgTypography,
+  useTypographyChildrenMethods,
+} from '@seine/styles';
 
 import {
   defaultChartDy,
@@ -20,49 +23,13 @@ import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
+import LegendItem from './LegendItem';
+import LegendBox from './LegendBox';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
 };
 
-const FlexBox = styled.div`
-  display: flex;
-  position: relative;
-  ${({ height }) =>
-    typeof height === 'number'
-      ? css`
-          height: ${height}px;
-        `
-      : height &&
-        css`
-          height: ${height};
-        `}
-  ${({ width }) =>
-    typeof width === 'number'
-      ? css`
-          width: ${width}px;
-        `
-      : width &&
-        css`
-          width: ${width};
-        `}
-`;
-
-const LegendItem = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-`;
-
-const LegendBox = styled.div`
-  && {
-    background-color: ${({ color }) => color};
-    width: ${({ size }) => size}px;
-    height: ${({ size }) => size}px;
-    margin-right: 10px;
-  }
-`;
 /**
  * @description Column chart content block renderer.
  * @param {ChartProps}: props
@@ -112,7 +79,7 @@ export default function ColumnChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
 
-      <FlexBox height={`calc(100% - ${textHeight}px)`} width={'100%'}>
+      <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
         {groups.map(([group, elements], groupIndex) => (
           <ChartSvg
             key={groupIndex}
@@ -165,7 +132,8 @@ export default function ColumnChart({
           </ChartSvg>
         ))}
       </FlexBox>
-      <FlexBox width={'auto'} height={textHeight}>
+
+      <FlexBox width={'auto'} height={2 * textHeight}>
         {titles.map(({ title }, index) => (
           <LegendItem key={index}>
             <LegendBox
