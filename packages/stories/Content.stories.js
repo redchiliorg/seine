@@ -408,3 +408,100 @@ export const ContentOfAllCharts = (props) => (
     ]}
   </InitialContent>
 );
+
+export const ContentOfChartSampleOne = (props) => (
+  <InitialContent {...props}>
+    {[
+      {
+        id: '044d4dca-4924-4a9d-9e6b-55b9be006b70',
+        type: 'page',
+        parent_id: null,
+        body: {},
+        format: {},
+        schema: null,
+      },
+      {
+        id: '6fbf9072-e107-476d-8300-642b13bf39d2',
+        type: 'grid',
+        parent_id: '044d4dca-4924-4a9d-9e6b-55b9be006b70',
+        body: {},
+        format: {},
+        schema: null,
+      },
+      {
+        id: 'cd271f11-75a5-4bff-ab2b-266f7eb4418d',
+        type: 'chart',
+        parent_id: '6fbf9072-e107-476d-8300-642b13bf39d2',
+        body: {
+          title: 'Car dealership sales in 2012 (number of cars sold)',
+          elements: [
+            { title: 'Luxury cars', value: 2349 },
+            { title: 'SUVs', value: 6423 },
+            {
+              id: 'ee83f39d-03bc-4878-9c78-0edef43e936b',
+              title: 'Hatchbacks',
+              value: 8234,
+            },
+          ],
+        },
+        format: {
+          kind: 'pie',
+          units: ' ',
+          palette: [
+            'rgba(97,139,219,1)',
+            'rgba(172,190,203,1)',
+            'rgba(138,219,150,1)',
+            '#e57878',
+            '#8adb96',
+            '#6895eb',
+            '#b8c8d8',
+            '#ebebeb',
+            '#ff7171',
+            '#fdc91d',
+            '#618bdb',
+            '#acbecb',
+            '#707070',
+          ],
+        },
+        schema: null,
+      },
+      {
+        id: '7d134ef0-86d7-4de6-a689-792986b2dafc',
+        type: 'chart',
+        parent_id: '6fbf9072-e107-476d-8300-642b13bf39d2',
+        body: {
+          title: 'Car dealership sales in 2013 (number of cars sold)',
+          elements: [
+            { title: 'Luxury cars', value: 2584 },
+            { title: 'SUVs', value: 7065 },
+            {
+              id: 'd2b4cd22-be07-4bb4-bc62-8b48279dee25',
+              title: 'Hatchbacks',
+              value: 9222,
+            },
+          ],
+        },
+        format: {
+          kind: 'pie',
+          units: ' ',
+          palette: [
+            'rgba(97,139,219,1)',
+            'rgba(172,190,203,1)',
+            'rgba(138,219,150,1)',
+            '#e57878',
+            '#8adb96',
+            '#6895eb',
+            '#b8c8d8',
+            '#ebebeb',
+            '#ff7171',
+            '#fdc91d',
+            '#618bdb',
+            '#acbecb',
+            '#707070',
+          ],
+        },
+        schema: null,
+      },
+    ]}
+  </InitialContent>
+);

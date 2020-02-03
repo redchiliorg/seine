@@ -3,6 +3,7 @@ import { Editor } from '@seine/editor';
 
 import {
   ContentOfAllCharts,
+  ContentOfChartSampleOne,
   ContentOfColumnAndBarSiblingCharts,
   ContentOfColumnAndLineCharts,
   ContentOfLineAndBarSiblingCharts,
@@ -31,3 +32,7 @@ export const EditorOfColumnAndLineCharts = () => (
 );
 
 export const EditorOfAllCharts = () => <ContentOfAllCharts as={Editor} />;
+
+export const EditorOfChartSampleOne = () => (
+  <ContentOfChartSampleOne as={Editor} />
+);
