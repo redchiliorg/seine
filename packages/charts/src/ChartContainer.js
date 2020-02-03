@@ -1,7 +1,9 @@
 // @flow
+import * as React from 'react';
 import styled from 'styled-components/macro';
+import { ResizeContainer } from '@seine/styles';
 
-export default styled.div`
+const StyledChartContainer = styled.div`
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -10,3 +12,20 @@ export default styled.div`
   position: relative;
   width: 100%;
 `;
+
+type Props = {
+  children: React.ChildrenArray,
+};
+
+/**
+ * @description  Chart container with forced update on resize behaviour.
+ * @param {Props} props
+ * @returns {React.Node}
+ */
+export default function ChartContainer({ children, ...containerProps }: Props) {
+  return (
+    <ResizeContainer as={StyledChartContainer} {...containerProps}>
+      {children}
+    </ResizeContainer>
+  );
+}

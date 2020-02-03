@@ -15,8 +15,6 @@ export { default as SvgInput } from './SvgInput';
 export {
   default as useTypographyChildrenMethods,
 } from './useTypographyChildrenMethods';
-
-export { default as useTextMetrics } from './useTextMetrics';
-export { default as useSvgScale } from './useSvgScale';
+export { default as ResizeContainer } from './ResizeContainer';
 
 export * from './constants';
