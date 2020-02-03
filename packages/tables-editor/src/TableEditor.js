@@ -30,7 +30,7 @@ const StyledTextarea = styled.textarea`
     padding: 0;
     font: inherit;
     text-align: inherit;
-    height: ${({ value }) =>
+    height: ${({ value = '' }) =>
       [...value].reduce((found, char) => found + (char === '\n'), 1) * 1.5 +
       'em'};
     width: 100%;
