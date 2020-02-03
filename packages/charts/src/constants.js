@@ -86,6 +86,8 @@ export const defaultChartFormat = {
   xAxis: defaultChartXAxis,
   yAxis: defaultChartYAxis,
 };
+export const defaultChartLegend = true;
+export const defaultPieChartLegend = false;
 
 export const defaultPieChartUnits = '%';
 

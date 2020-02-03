@@ -8,6 +8,7 @@ import {
 
 import {
   defaultChartDy,
+  defaultChartLegend,
   defaultChartMinValue,
   defaultChartPalette,
   defaultChartPaletteKey,
@@ -41,6 +42,7 @@ export default function ColumnChart({
   minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
+  legend = defaultChartLegend,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
@@ -134,16 +136,17 @@ export default function ColumnChart({
       </FlexBox>
 
       <FlexBox width={'auto'} height={2 * textHeight}>
-        {titles.map(({ title }, index) => (
-          <LegendItem key={index}>
-            <LegendBox
-              color={palette[index % palette.length]}
-              key={index}
-              size={textHeight}
-            />
-            {title}
-          </LegendItem>
-        ))}
+        {legend &&
+          titles.map(({ title }, index) => (
+            <LegendItem key={index}>
+              <LegendBox
+                color={palette[index % palette.length]}
+                key={index}
+                size={textHeight}
+              />
+              {title}
+            </LegendItem>
+          ))}
       </FlexBox>
     </View>
   );

@@ -4,6 +4,7 @@ import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 
 import {
   defaultChartDx,
+  defaultChartLegend,
   defaultChartPalette,
   defaultChartPaletteKey,
   defaultChartTextAlignment,
@@ -30,6 +31,7 @@ export default function BarChart({
   elements,
 
   dx = defaultChartDx,
+  legend = defaultChartLegend,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,

@@ -16,6 +16,7 @@ import {
   defaultChartVerticalAlignment,
   defaultChartXAxis,
   defaultChartYAxis,
+  defaultChartLegend,
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
@@ -42,6 +43,7 @@ export default function LineChart({
   minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
+  legend = defaultChartLegend,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
@@ -209,16 +211,17 @@ export default function LineChart({
       </FlexBox>
 
       <FlexBox width={'auto'} height={2 * textHeight}>
-        {titles.map(({ title }, index) => (
-          <LegendItem key={index}>
-            <LegendBox
-              color={palette[index % palette.length]}
-              key={index}
-              size={textHeight}
-            />
-            {title}
-          </LegendItem>
-        ))}
+        {legend &&
+          titles.map(({ title }, index) => (
+            <LegendItem key={index}>
+              <LegendBox
+                color={palette[index % palette.length]}
+                key={index}
+                size={textHeight}
+              />
+              {title}
+            </LegendItem>
+          ))}
       </FlexBox>
     </View>
   );
