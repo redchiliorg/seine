@@ -17,7 +17,9 @@ const StyledTable = styled.table`
     td {
       border-left: 1px solid #fff;
       border-right: 1px solid #fff;
+      line-height: 1.5;
       padding: 2rem;
+      white-space: pre;
     }
 
     & > thead {

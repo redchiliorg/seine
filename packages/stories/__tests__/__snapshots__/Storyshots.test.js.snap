@@ -2212,6 +2212,373 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
 </div>
 `;
 
+exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
+<div
+  className="Grid-sc-1m9mzof-0 bsEnsh"
+  id="6fbf9072-e107-476d-8300-642b13bf39d2"
+  type="grid"
+>
+  <div
+    className="Grid-sc-1m9mzof-0 bsEnsh"
+  >
+    <div
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    >
+      <h3
+        className="ChartTitle-sc-8rh5zq-0 PVfkM"
+      >
+        Car dealership sales in 2012 (number of cars sold)
+      </h3>
+      <svg
+        className="sc-bwzfXH izbPkP"
+        height="100%"
+        overflow="hidden"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="-7.875515245908389 0 107.87551524590839 100"
+        width="100%"
+      >
+        <path
+          d="M 0.169993410419913 45.88048021215998 A 50 50 0 0 0 14.64466094067263 85.35533905932738 L 50 50 L 0.169993410419913 45.88048021215998"
+          fill="rgba(97,139,219,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={-7.875515245908389}
+          y={70.03849213943582}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jsQsxO"
+            color="black"
+            fill="black"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            2349
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={-7.875515245908389}
+          y={71.03849213943582}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hjjzje"
+            color="black"
+            fill="black"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            Luxury cars
+          </p>
+        </foreignObject>
+        <path
+          d="M 88.68894861672177 18.327215863889357 A 50 50 0 0 0 0.169993410419913 45.88048021215998 L 50 50 L 88.68894861672177 18.327215863889357"
+          fill="rgba(172,190,203,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={44.54659054286771}
+          y={33.08643620907717}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 bDtvuq"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            6423
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={44.54659054286771}
+          y={34.08643620907717}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jTXbWD"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            SUVs
+          </p>
+        </foreignObject>
+        <path
+          d="M 14.644660940672608 85.35533905932735 A 50 50 0 0 0 88.68894861672177 18.327215863889357 L 50 50 L 14.644660940672608 85.35533905932735"
+          fill="rgba(138,219,150,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={60.68516161382268}
+          y={61.35596768571549}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 bDtvuq"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            8234
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={60.68516161382268}
+          y={62.35596768571549}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jTXbWD"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            Hatchbacks
+          </p>
+        </foreignObject>
+      </svg>
+    </div>
+    <div
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    >
+      <h3
+        className="ChartTitle-sc-8rh5zq-0 PVfkM"
+      >
+        Car dealership sales in 2013 (number of cars sold)
+      </h3>
+      <svg
+        className="sc-bwzfXH izbPkP"
+        height="100%"
+        overflow="hidden"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="-7.795925400928979 0 107.79592540092898 100"
+        width="100%"
+      >
+        <path
+          d="M 0.1403957688032449 46.25568886062781 A 50 50 0 0 0 14.64466094067263 85.35533905932738 L 50 50 L 0.1403957688032449 46.25568886062781"
+          fill="rgba(97,139,219,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={-7.795925400928979}
+          y={70.25428977137909}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jsQsxO"
+            color="black"
+            fill="black"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            2584
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={-7.795925400928979}
+          y={71.25428977137909}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hjjzje"
+            color="black"
+            fill="black"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            Luxury cars
+          </p>
+        </foreignObject>
+        <path
+          d="M 87.77719434014234 17.24509826320468 A 50 50 0 0 0 0.1403957688032449 46.25568886062781 L 50 50 L 87.77719434014234 17.24509826320468"
+          fill="rgba(172,190,203,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={44.26231869688837}
+          y={33.177722276966165}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 bDtvuq"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            7065
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={44.26231869688837}
+          y={34.177722276966165}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jTXbWD"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            SUVs
+          </p>
+        </foreignObject>
+        <path
+          d="M 14.644660940672665 85.35533905932742 A 50 50 0 0 0 87.77719434014234 17.24509826320468 L 50 50 L 14.644660940672665 85.35533905932742"
+          fill="rgba(138,219,150,1)"
+        />
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={60.858880867589214}
+          y={61.19645863411562}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 SYOUo"
+            fontSize="1.6rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 bDtvuq"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            9222
+             
+          </p>
+        </foreignObject>
+        <foreignObject
+          className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
+          height="100%"
+          width="100%"
+          x={60.858880867589214}
+          y={62.19645863411562}
+        >
+          <canvas
+            className="SvgTypographyCanvas-s73pe6-0 etOWrt"
+            fontSize="1.4rem"
+            height={1}
+            width={1}
+          />
+          <p
+            className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jTXbWD"
+            color="white"
+            fill="white"
+            fontWeight={400}
+            textAnchor="middle"
+            width={1}
+          >
+            Hatchbacks
+          </p>
+        </foreignObject>
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`] = `
 <div
   className="Grid-sc-1m9mzof-0 bsEnsh"
@@ -7352,6 +7719,12 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
 exports[`Storyshots Multiple.Content Initial Content 1`] = `null`;
 
 exports[`Storyshots Multiple.Editor Editor Of All Charts 1`] = `
+<div
+  className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
+/>
+`;
+
+exports[`Storyshots Multiple.Editor Editor Of Chart Sample One 1`] = `
 <div
   className="Editor__DefaultContainer-sc-1n8yadt-0 dZUGne"
 />
@@ -14837,7 +15210,7 @@ exports[`Storyshots Single.Table Editor Of Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 lofJIY"
+  className="Table__StyledTable-yfw5vz-0 gnnMbJ"
 >
   <thead>
     <tr>
@@ -14868,7 +15241,7 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 3 X 3 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 lofJIY"
+  className="Table__StyledTable-yfw5vz-0 gnnMbJ"
 >
   <thead>
     <tr>
