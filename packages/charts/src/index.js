@@ -4,14 +4,12 @@ export * from './helpers';
 
 export { default as Chart, defaultChartRenderMap } from './Chart';
 export { default as ChartContainer } from './ChartContainer';
-export { default as ChartLegendItem } from './ChartLegendItem';
 export { default as ChartTitle } from './ChartTitle';
 export type { Props as ChartTitleProps } from './ChartTitle';
 
 export { default as BarChart } from './BarChart';
 
 export { default as ColumnChart } from './ColumnChart';
-export type { Props as ColumnChartLegendProps } from './ChartLegendItem';
 
 export { default as LineChart } from './LineChart';
 

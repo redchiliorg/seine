@@ -13,6 +13,7 @@ import ChartElementRemoveButton from './ChartElementRemoveButton';
 import ChartPaletteSelect from './ChartPaletteSelect';
 import ChartUnitsInput from './ChartUnitsInput';
 import ChartElementAddButton from './ChartElementAddButton';
+import ChartSwitchFormatInput from './ChartSwitchFormatInput';
 
 type Props = ToolbarProps & {
   body: ChartBody,
@@ -96,6 +97,14 @@ export default function PieChartToolbar({
         editor={editor}
         format={format}
         id={id}
+      />
+
+      <ChartSwitchFormatInput
+        dispatch={dispatch}
+        format={format}
+        label={'show legend'}
+        id={id}
+        name={'legend'}
       />
     </Toolbar>
   );

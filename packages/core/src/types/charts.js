@@ -22,6 +22,7 @@ export type ChartFormat = RichTextFormat & {
   units: string,
   xAxis: boolean,
   yAxis: boolean,
+  legend: boolean,
 };
 
 export type ChartElement = {

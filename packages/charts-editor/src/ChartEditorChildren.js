@@ -25,7 +25,6 @@ const defaultChartEditorChildRenderMap = {
   [SvgTypography]: ({ child, dispatchElements }) => (
     <SvgInput
       {...child.props}
-      ref={child.ref}
       key={child.key}
       type={child.key === 'value' ? 'number' : 'text'}
       onChange={({ currentTarget }) =>
@@ -54,7 +53,6 @@ function ChartEditorChild({
     const {
       type: Child,
       props: { children = null, ...childProps },
-      ref,
       key,
     } = child;
 
@@ -71,7 +69,6 @@ function ChartEditorChild({
     return (
       <Child
         {...childProps}
-        ref={ref}
         key={key}
         {...(children && {
           children: React.Children.map(children, (child) => (

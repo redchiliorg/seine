@@ -45,6 +45,7 @@ import type { ChartEditorProps } from './types';
 import ChartToolbar from './ChartToolbar';
 import ChartTextAlignmentButton from './ChartTextAlignmentButton';
 import ChartEditorChildren from './ChartEditorChildren';
+import PieChartEditor from './PieChartEditor';
 
 type Props = (ChartProps & BlockEditor) & {
   chartEditorRenderMap?: {
@@ -53,7 +54,7 @@ type Props = (ChartProps & BlockEditor) & {
 };
 
 const defaultChartEditorRenderMap = {
-  [chartTypes.PIE]: (props) => <PieChart {...props} as={ChartEditorChildren} />,
+  [chartTypes.PIE]: (props) => <PieChart {...props} as={PieChartEditor} />,
   [chartTypes.BAR]: (props) => <BarChart {...props} as={ChartEditorChildren} />,
   [chartTypes.COLUMN]: (props) => (
     <ColumnChart {...props} as={ChartEditorChildren} />

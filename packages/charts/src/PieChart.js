@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgTypography } from '@seine/styles';
+import { FlexBox, SvgTypography } from '@seine/styles';
 import { useAutoMemo } from 'hooks.macro';
 
 import {
@@ -10,11 +10,14 @@ import {
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartVerticalAlignment,
+  defaultPieChartLegend,
   defaultPieChartUnits,
 } from './constants';
 import type { ChartProps } from './types';
 import ChartSvg from './ChartSvg';
 import ChartTitle from './ChartTitle';
+import LegendItem from './LegendItem';
+import LegendBox from './LegendBox';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -25,6 +28,7 @@ type Props = $Rest<ChartProps, {| kind: string |}>;
  */
 export default function PieChart({
   elements,
+  legend = defaultPieChartLegend,
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
@@ -87,82 +91,113 @@ export default function PieChart({
     }
   };
 
+  const textHeight = 30;
+
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-      <ChartSvg
-        maxWidth={800}
-        preserveAspectRatio={'xMidYMid meet'}
-        verticalAlignment={verticalAlignment}
-        viewBox={viewBox}
-      >
-        {elements.map(({ title, value }, index) => {
-          const start = end;
-          const startX = endX;
-          const startY = endY;
-          const length = (2 * value * Math.PI) / sum;
+      <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
+        <ChartSvg
+          maxWidth={800}
+          preserveAspectRatio={'xMidYMid meet'}
+          verticalAlignment={verticalAlignment}
+          viewBox={viewBox}
+        >
+          {elements.map(({ title, value }, index) => {
+            const start = end;
+            const startX = endX;
+            const startY = endY;
+            const length = (2 * value * Math.PI) / sum;
 
-          end = start + length;
-          endX = Math.cos(end);
-          endY = Math.sin(end);
+            end = start + length;
+            endX = Math.cos(end);
+            endY = Math.sin(end);
 
-          const textColor = value >= quarter ? 'white' : 'black';
-          const textX =
-            center +
-            (value >= quarter ? innerRadius : outerRadius) *
-              Math.cos(start + length / 2);
-          const textY =
-            center +
-            (value >= quarter ? innerRadius : outerRadius) *
-              Math.sin(start + length / 2);
+            const textColor = value >= quarter || legend ? 'white' : 'black';
+            const textX =
+              center +
+              (legend
+                ? radius / 2
+                : value >= quarter
+                ? innerRadius
+                : outerRadius) *
+                Math.cos(start + length / 2);
+            const textY =
+              center +
+              (legend
+                ? radius / 2
+                : value >= quarter
+                ? innerRadius
+                : outerRadius) *
+                Math.sin(start + length / 2);
 
-          const onChildrenMethods = createChildrenMethodsHandler(textX, textY);
+            const onChildrenMethods = createChildrenMethodsHandler(
+              textX,
+              textY
+            );
 
-          return [
-            <path
-              d={[
-                `M ${center + radius * endX} ${center + radius * endY}`,
-                `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
-                  radius * startX} ${center + radius * startY}`,
-                `L ${center} ${center}`,
-                `L ${center + radius * endX} ${center + radius * endY}`,
-              ].join(' ')}
-              fill={palette[index % palette.length]}
-              key={['slice', index]}
-            />,
+            return [
+              <path
+                d={[
+                  `M ${center + radius * endX} ${center + radius * endY}`,
+                  `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
+                    radius * startX} ${center + radius * startY}`,
+                  `L ${center} ${center}`,
+                  `L ${center + radius * endX} ${center + radius * endY}`,
+                ].join(' ')}
+                fill={palette[index % palette.length]}
+                key={['slice', index]}
+              />,
 
-            <SvgTypography
-              fill={textColor}
-              index={index}
-              key={'value'}
-              textAnchor={'middle'}
-              variant={'h4'}
-              fontWeight={400}
-              x={textX}
-              y={textY}
-              ref={onChildrenMethods}
-            >
-              {value}
-              {units}
-            </SvgTypography>,
+              <SvgTypography
+                fill={textColor}
+                index={index}
+                key={'value'}
+                dominantBaseline={legend ? 'middle' : 'baseline'}
+                textAnchor={'middle'}
+                variant={'h4'}
+                fontWeight={400}
+                x={textX}
+                y={textY}
+                ref={onChildrenMethods}
+              >
+                {value}
+                {units}
+              </SvgTypography>,
 
-            <SvgTypography
-              dominantBaseline={'hanging'}
-              fill={textColor}
-              index={index}
-              key={'title'}
-              textAnchor={'middle'}
-              variant={'h5'}
-              fontWeight={400}
-              x={textX}
-              y={textY}
-              ref={onChildrenMethods}
-            >
+              !legend && (
+                <SvgTypography
+                  dominantBaseline={'hanging'}
+                  fill={textColor}
+                  index={index}
+                  key={'title'}
+                  textAnchor={'middle'}
+                  variant={'h5'}
+                  fontWeight={400}
+                  x={textX}
+                  y={textY}
+                  ref={onChildrenMethods}
+                >
+                  {title}
+                </SvgTypography>
+              ),
+            ];
+          })}
+        </ChartSvg>
+      </FlexBox>
+      <FlexBox width={'auto'} height={2 * textHeight}>
+        {legend &&
+          elements.map(({ title }, index) => (
+            <LegendItem key={index}>
+              <LegendBox
+                color={palette[index % palette.length]}
+                key={index}
+                size={textHeight}
+              />
               {title}
-            </SvgTypography>,
-          ];
-        })}
-      </ChartSvg>
+            </LegendItem>
+          ))}
+      </FlexBox>
     </View>
   );
 }
