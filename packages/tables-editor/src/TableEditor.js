@@ -21,7 +21,7 @@ const Container = styled.div`
   height: 100%;
 `;
 
-const StyledInput = styled.input`
+const StyledTextarea = styled.textarea`
   && {
     background: none;
     border: 0;
@@ -30,8 +30,11 @@ const StyledInput = styled.input`
     padding: 0;
     font: inherit;
     text-align: inherit;
-    height: 100%;
+    height: ${({ value }) =>
+      [...value].reduce((found, char) => found + (char === '\n'), 1) * 1.5 +
+      'em'};
     width: 100%;
+    resize: none;
   }
 `;
 
@@ -60,30 +63,32 @@ export default function TableEditor({
           header={header.map(({ text, ...column }, index) => ({
             ...column,
             text: (
-              <StyledInput
-                onFocus={selectHeader}
-                onChange={({ currentTarget }) =>
-                  dispatch({
-                    id,
-                    type: UPDATE_BLOCK_BODY,
-                    body: {
-                      header: [
-                        ...header.slice(0, index),
-                        { ...column, text: currentTarget.value },
-                        ...header.slice(index + 1),
-                      ],
-                    },
-                  })
-                }
-                value={text}
-              />
+              <div>
+                <StyledTextarea
+                  onFocus={selectHeader}
+                  onChange={({ currentTarget }) =>
+                    dispatch({
+                      id,
+                      type: UPDATE_BLOCK_BODY,
+                      body: {
+                        header: [
+                          ...header.slice(0, index),
+                          { ...column, text: currentTarget.value },
+                          ...header.slice(index + 1),
+                        ],
+                      },
+                    })
+                  }
+                  value={text}
+                />
+              </div>
             ),
           }))}
           rows={rows.map((row, rowIndex) =>
             row.map(({ text, ...column }, columnIndex) => ({
               ...column,
               text: (
-                <StyledInput
+                <StyledTextarea
                   onFocus={() => {
                     dispatch({ id, type: SELECT_BLOCK });
                     dispatch({
