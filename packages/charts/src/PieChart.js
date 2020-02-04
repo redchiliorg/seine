@@ -1,17 +1,21 @@
 // @flow
 import * as React from 'react';
-import { FlexBox, SvgTypography } from '@seine/styles';
+import {
+  FlexBox,
+  SvgTypography,
+  useTypographyChildrenMethods,
+} from '@seine/styles';
 import { useAutoMemo } from 'hooks.macro';
 
 import {
   defaultChartPalette,
   defaultChartPaletteKey,
-  defaultChartSize,
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartVerticalAlignment,
   defaultPieChartLegend,
   defaultPieChartUnits,
+  VIEWPORT_HEIGHT,
 } from './constants';
 import type { ChartProps } from './types';
 import ChartSvg from './ChartSvg';
@@ -20,6 +24,11 @@ import LegendItem from './LegendItem';
 import LegendBox from './LegendBox';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
+
+const RADIUS = VIEWPORT_HEIGHT / 2;
+const OUTER_RADIUS = VIEWPORT_HEIGHT / 2 + VIEWPORT_HEIGHT / 9;
+const INNER_RADIUS = VIEWPORT_HEIGHT / 6;
+const CENTER = VIEWPORT_HEIGHT / 2;
 
 /**
  * @description Pie chart content block renderer.
@@ -32,7 +41,6 @@ export default function PieChart({
   palette = defaultChartPalette,
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
-  size = defaultChartSize,
   title = defaultChartTitle,
   verticalAlignment = defaultChartVerticalAlignment,
   units = defaultPieChartUnits,
@@ -43,65 +51,25 @@ export default function PieChart({
   ...viewProps
 }): Props {
   const sum = useAutoMemo(elements.reduce((acc, { value }) => acc + value, 0));
-
-  const [radius, outerRadius, innerRadius, center, quarter] = useAutoMemo([
-    size / 2,
-    size / 2 + size / 9,
-    size / 6,
-    size / 2,
-    sum / 4,
-  ]);
-
-  const [viewBox, setViewBox] = React.useState(`0 0 ${size} ${size}`);
-
-  const bounds = useAutoMemo({});
-
-  bounds.minX = bounds.minY = 0;
-  bounds.maxX = bounds.maxY = size;
+  const quarter = useAutoMemo(sum / 4);
+  const [
+    titleMethods,
+    titleTypographyMethodsRef,
+  ] = useTypographyChildrenMethods(elements.length);
 
   let end = (3 * Math.PI) / 4;
   let endX = Math.cos(end);
   let endY = Math.sin(end);
 
-  const createChildrenMethodsHandler = (textX, textY) => (methods) => {
-    if (methods !== null) {
-      const textBoxWidth = methods.getScaledWidth();
-      const textBoxHeight = methods.getScaledHeight();
-      const minX = textX - textBoxWidth / 2;
-      const maxX = textX + textBoxWidth / 2;
-      const minY = textY;
-      const maxY = textY + textBoxHeight;
-
-      if (minX < bounds.minX) {
-        bounds.minX = minX;
-      }
-      if (maxX > bounds.maxX) {
-        bounds.maxX = maxX;
-      }
-      if (minY < bounds.minY) {
-        bounds.minY = minY;
-      }
-      if (maxY > bounds.maxY) {
-        bounds.maxY = maxY;
-      }
-      setViewBox(
-        `${bounds.minX} ${bounds.minY} ${bounds.maxX -
-          bounds.minX} ${bounds.maxY - bounds.minY}`
-      );
-    }
-  };
-
-  const textHeight = 30;
+  const textHeight = titleMethods.getScaledHeight();
 
   return (
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
         <ChartSvg
-          maxWidth={800}
-          preserveAspectRatio={'xMidYMid meet'}
           verticalAlignment={verticalAlignment}
-          viewBox={viewBox}
+          viewBox={`0 0 ${VIEWPORT_HEIGHT} ${VIEWPORT_HEIGHT}`}
         >
           {elements.map(({ title, value }, index) => {
             const start = end;
@@ -115,73 +83,68 @@ export default function PieChart({
 
             const textColor = value >= quarter || legend ? 'white' : 'black';
             const textX =
-              center +
+              CENTER +
               (legend
-                ? radius / 2
+                ? RADIUS / 2
                 : value >= quarter
-                ? innerRadius
-                : outerRadius) *
+                ? INNER_RADIUS
+                : OUTER_RADIUS) *
                 Math.cos(start + length / 2);
             const textY =
-              center +
+              CENTER +
               (legend
-                ? radius / 2
+                ? RADIUS / 2
                 : value >= quarter
-                ? innerRadius
-                : outerRadius) *
+                ? INNER_RADIUS
+                : OUTER_RADIUS) *
                 Math.sin(start + length / 2);
 
-            const onChildrenMethods = createChildrenMethodsHandler(
-              textX,
-              textY
-            );
-
-            return [
-              <path
-                d={[
-                  `M ${center + radius * endX} ${center + radius * endY}`,
-                  `A ${radius} ${radius} 0 ${+(length > Math.PI)} 0 ${center +
-                    radius * startX} ${center + radius * startY}`,
-                  `L ${center} ${center}`,
-                  `L ${center + radius * endX} ${center + radius * endY}`,
-                ].join(' ')}
-                fill={palette[index % palette.length]}
-                key={['slice', index]}
-              />,
-
-              <SvgTypography
-                fill={textColor}
-                index={index}
-                key={'value'}
-                dominantBaseline={legend ? 'middle' : 'baseline'}
-                textAnchor={'middle'}
-                variant={'h4'}
-                fontWeight={400}
-                x={textX}
-                y={textY}
-                ref={onChildrenMethods}
-              >
-                {value}
-                {units}
-              </SvgTypography>,
-
-              !legend && (
+            return (
+              <React.Fragment key={index}>
+                <path
+                  d={[
+                    `M ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
+                    `A ${RADIUS} ${RADIUS} 0 ${+(length > Math.PI)} 0 ${CENTER +
+                      RADIUS * startX} ${CENTER + RADIUS * startY}`,
+                    `L ${CENTER} ${CENTER}`,
+                    `L ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
+                  ].join(' ')}
+                  fill={palette[index % palette.length]}
+                  key={['slice', index]}
+                />
                 <SvgTypography
-                  dominantBaseline={'hanging'}
                   fill={textColor}
                   index={index}
-                  key={'title'}
+                  key={'value'}
+                  dominantBaseline={legend ? 'middle' : 'baseline'}
                   textAnchor={'middle'}
-                  variant={'h5'}
+                  variant={'h4'}
                   fontWeight={400}
                   x={textX}
                   y={textY}
-                  ref={onChildrenMethods}
                 >
-                  {title}
+                  {value}
+                  {units}
                 </SvgTypography>
-              ),
-            ];
+
+                {!legend && (
+                  <SvgTypography
+                    dominantBaseline={'hanging'}
+                    fill={textColor}
+                    index={index}
+                    key={'title'}
+                    textAnchor={'middle'}
+                    variant={'h5'}
+                    fontWeight={400}
+                    x={textX}
+                    y={textY}
+                    ref={titleTypographyMethodsRef}
+                  >
+                    {title}
+                  </SvgTypography>
+                )}
+              </React.Fragment>
+            );
           })}
         </ChartSvg>
       </FlexBox>

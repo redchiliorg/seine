@@ -22,19 +22,28 @@ const defaultChartEditorChildRenderMap = {
       />
     </ChartTitle>
   ),
-  [SvgTypography]: ({ child, dispatchElements }) => (
+  [SvgTypography]: ({
+    child: {
+      key,
+      props: { index, children, ...childProps },
+    },
+    dispatchElements,
+  }) => (
     <SvgInput
-      {...child.props}
-      key={child.key}
-      type={child.key === 'value' ? 'number' : 'text'}
+      {...childProps}
+      type={key === 'value' ? 'number' : 'text'}
       onChange={({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT,
-          body: { [child.key]: currentTarget.value },
-          index: child.props.index,
+          body: {
+            [key]: key === 'value' ? +currentTarget.value : currentTarget.value,
+          },
+          index: index,
         })
       }
-    />
+    >
+      {key === 'value' ? parseInt(children) : children}
+    </SvgInput>
   ),
 };
 
@@ -58,18 +67,20 @@ function ChartEditorChild({
 
     if (Child in chartEditorChildRenderMap) {
       const ChildInput = chartEditorChildRenderMap[Child];
-      return (
+      return [
+        child,
         <ChildInput
+          key={[key, 'input']}
           child={child}
           dispatch={dispatch}
           dispatchElements={dispatchElements}
-        />
-      );
+        />,
+      ];
     }
     return (
       <Child
         {...childProps}
-        key={key}
+        key={[key, 'child']}
         {...(children && {
           children: React.Children.map(children, (child) => (
             <ChartEditorChild
