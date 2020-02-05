@@ -13,7 +13,6 @@ import {
   defaultChartPaletteKey,
   defaultChartTextAlignment,
   defaultChartTitle,
-  defaultChartVerticalAlignment,
   defaultChartXAxis,
   defaultChartYAxis,
   defaultChartLegend,
@@ -48,7 +47,6 @@ export default function LineChart({
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
-  verticalAlignment = defaultChartVerticalAlignment,
   yAxis = defaultChartYAxis,
   xAxis = defaultChartXAxis,
 
@@ -89,21 +87,22 @@ export default function LineChart({
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
         <ChartSvg
           strokeWidth={valueHeight / 40}
-          verticalAlignment={verticalAlignment}
           viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
         >
           {xAxis
             ? groups.map(([group], index, { length }) => (
-                <SvgTypography
-                  key={['group', index]}
-                  dominantBaseline={'hanging'}
-                  textAnchor={'middle'}
-                  x={x + (index * graphWidth) / (length - 1)}
-                  y={y + height}
-                  width={graphWidth / length}
-                >
-                  {group}
-                </SvgTypography>
+                <React.Fragment key={index}>
+                  <SvgTypography
+                    dominantBaseline={'hanging'}
+                    key={'group'}
+                    textAnchor={'middle'}
+                    x={x + (index * graphWidth) / (length - 1)}
+                    y={y + height}
+                    width={graphWidth / length}
+                  >
+                    {group}
+                  </SvgTypography>
+                </React.Fragment>
               ))
             : null}
           {xAxis || yAxis
@@ -177,8 +176,7 @@ export default function LineChart({
                 .filter((element) => element.id === id)
                 .map(({ index, value }) => (
                   <SvgTypography
-                    index={index}
-                    key={['value', titleIndex, groupIndex]}
+                    key={`value.${index}`}
                     textAnchor={
                       groupIndex === groups.length - 1
                         ? 'end'

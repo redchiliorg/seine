@@ -76,13 +76,10 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
-export const defaultChartSize = 100;
-export const defaultChartVerticalAlignment = 'start';
 export const defaultChartFormat = {
   palette: defaultChartPalette,
   paletteKey: defaultChartPaletteKey,
   textAlignment: defaultChartTextAlignment,
-  verticalAlignment: defaultChartVerticalAlignment,
   xAxis: defaultChartXAxis,
   yAxis: defaultChartYAxis,
 };

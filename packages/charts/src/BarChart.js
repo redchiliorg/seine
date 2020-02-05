@@ -10,7 +10,6 @@ import {
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
-  defaultChartVerticalAlignment,
   defaultChartXAxis,
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
@@ -37,7 +36,6 @@ export default function BarChart({
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
-  verticalAlignment = defaultChartVerticalAlignment,
   xAxis = defaultChartXAxis,
 
   as: View = React.Fragment,
@@ -72,7 +70,7 @@ export default function BarChart({
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         strokeWidth={valueMethods.getYScale() / 2}
-        verticalAlignment={verticalAlignment}
+        verticalAlignment={'start'}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         {elements.map(({ title, value }, index) => {
@@ -88,8 +86,7 @@ export default function BarChart({
               dominantBaseline={'middle'}
               fill={color}
               ref={titleTypographyMethodsRef}
-              index={index}
-              key={'title'}
+              key={`title.${index}`}
               x={0}
               y={y + barHeight / 2}
             >
@@ -100,8 +97,8 @@ export default function BarChart({
             <rect
               fill={color}
               height={barHeight}
-              key={['bar', index]}
               width={width}
+              key={`selection.${index}`}
               x={titleWidth}
               y={y}
             />,
@@ -110,8 +107,7 @@ export default function BarChart({
               dominantBaseline={'middle'}
               ref={valueTypographyMethodsRef}
               fill={color}
-              index={index}
-              key={'value'}
+              key={`value.${index}`}
               x={titleWidth + width}
               y={y + barHeight / 2}
             >
