@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { Box, Dialog, IconButton as MuiIconButton } from '@material-ui/core';
+import { Dialog, IconButton as MuiIconButton } from '@material-ui/core';
 import {
   Close as CloseIcon,
   Delete as DeleteIcon,
@@ -177,7 +177,7 @@ export default function ChartEditor({
           <Toolbar.Separator />
         </ChartToolbar>
 
-        <ChartContainer as={Box} marginTop={8}>
+        <ChartContainer marginTop={96}>
           <ExactChartEditor
             dispatch={dispatch}
             dispatchElements={dispatchElements}

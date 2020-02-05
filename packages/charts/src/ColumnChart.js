@@ -23,8 +23,7 @@ import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartTitle from './ChartTitle';
 import ChartSvg from './ChartSvg';
-import LegendItem from './LegendItem';
-import LegendBox from './LegendBox';
+import ChartLegend from './ChartLegend';
 
 type Props = $Rest<ChartProps, {| kind: string |}> & {
   as?: React.ElementType,
@@ -134,17 +133,9 @@ export default function ColumnChart({
       </FlexBox>
 
       <FlexBox width={'auto'} height={2 * textHeight}>
-        {legend &&
-          titles.map(({ title }, index) => (
-            <LegendItem key={index}>
-              <LegendBox
-                color={palette[index % palette.length]}
-                key={index}
-                size={textHeight}
-              />
-              {title}
-            </LegendItem>
-          ))}
+        {legend && (
+          <ChartLegend palette={palette} size={textHeight} elements={titles} />
+        )}
       </FlexBox>
     </View>
   );

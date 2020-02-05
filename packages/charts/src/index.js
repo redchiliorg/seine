@@ -17,4 +17,6 @@ export { default as PieChart } from './PieChart';
 
 export { default as ChartSvg } from './ChartSvg';
 
+export { default as ChartLegend } from './ChartLegend';
+
 export * from './types';
