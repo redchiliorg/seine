@@ -95,28 +95,28 @@ export default function ColumnChart({
                 ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
                   (maxValue - minValue));
               const fill = palette[index % palette.length];
-              return (
-                <React.Fragment key={index}>
-                  <rect
-                    fill={fill}
-                    height={rectHeight}
-                    width={columnWidth}
-                    x={(index + 0.5) * columnWidth}
-                    y={columnHeight - rectHeight + scaledTextHeight}
-                  />
-                  <SvgTypography
-                    fill={fill}
-                    textAnchor={'middle'}
-                    x={(index + 1) * columnWidth}
-                    y={columnHeight - rectHeight + scaledTextHeight}
-                    ref={childMethodsRef}
-                    width={columnWidth}
-                  >
-                    {value}
-                    {units}
-                  </SvgTypography>
-                </React.Fragment>
-              );
+              return [
+                <rect
+                  fill={fill}
+                  height={rectHeight}
+                  width={columnWidth}
+                  x={(index + 0.5) * columnWidth}
+                  y={columnHeight - rectHeight + scaledTextHeight}
+                  key={`selection.${index}`}
+                />,
+                <SvgTypography
+                  fill={fill}
+                  ref={childMethodsRef}
+                  textAnchor={'middle'}
+                  width={columnWidth}
+                  x={(index + 1) * columnWidth}
+                  y={columnHeight - rectHeight + scaledTextHeight}
+                  key={`value.${elements.length * groupIndex + index}`}
+                >
+                  {value}
+                  {units}
+                </SvgTypography>,
+              ];
             })}
             <path
               d={`m${0} ${columnHeight + scaledTextHeight}h${WIDTH}`}
@@ -125,6 +125,7 @@ export default function ColumnChart({
             <SvgTypography
               textAnchor={'middle'}
               dominantBaseline={'hanging'}
+              key={'group'}
               x={WIDTH / 2}
               y={columnHeight + scaledTextHeight}
               width={columnWidth * elements.length}

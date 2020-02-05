@@ -88,8 +88,7 @@ export default function BarChart({
               dominantBaseline={'middle'}
               fill={color}
               ref={titleTypographyMethodsRef}
-              index={index}
-              key={'title'}
+              key={`title.${index}`}
               x={0}
               y={y + barHeight / 2}
             >
@@ -100,8 +99,8 @@ export default function BarChart({
             <rect
               fill={color}
               height={barHeight}
-              key={['bar', index]}
               width={width}
+              key={`selection.${index}`}
               x={titleWidth}
               y={y}
             />,
@@ -110,8 +109,7 @@ export default function BarChart({
               dominantBaseline={'middle'}
               ref={valueTypographyMethodsRef}
               fill={color}
-              index={index}
-              key={'value'}
+              key={`value.${index}`}
               x={titleWidth + width}
               y={y + barHeight / 2}
             >

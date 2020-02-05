@@ -94,16 +94,18 @@ export default function LineChart({
         >
           {xAxis
             ? groups.map(([group], index, { length }) => (
-                <SvgTypography
-                  key={['group', index]}
-                  dominantBaseline={'hanging'}
-                  textAnchor={'middle'}
-                  x={x + (index * graphWidth) / (length - 1)}
-                  y={y + height}
-                  width={graphWidth / length}
-                >
-                  {group}
-                </SvgTypography>
+                <React.Fragment key={index}>
+                  <SvgTypography
+                    dominantBaseline={'hanging'}
+                    key={'group'}
+                    textAnchor={'middle'}
+                    x={x + (index * graphWidth) / (length - 1)}
+                    y={y + height}
+                    width={graphWidth / length}
+                  >
+                    {group}
+                  </SvgTypography>
+                </React.Fragment>
               ))
             : null}
           {xAxis || yAxis
@@ -177,8 +179,7 @@ export default function LineChart({
                 .filter((element) => element.id === id)
                 .map(({ index, value }) => (
                   <SvgTypography
-                    index={index}
-                    key={['value', titleIndex, groupIndex]}
+                    key={`value.${index}`}
                     textAnchor={
                       groupIndex === groups.length - 1
                         ? 'end'

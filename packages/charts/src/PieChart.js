@@ -99,52 +99,49 @@ export default function PieChart({
                 : OUTER_RADIUS) *
                 Math.sin(start + length / 2);
 
-            return (
-              <React.Fragment key={index}>
-                <path
-                  d={[
-                    `M ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
-                    `A ${RADIUS} ${RADIUS} 0 ${+(length > Math.PI)} 0 ${CENTER +
-                      RADIUS * startX} ${CENTER + RADIUS * startY}`,
-                    `L ${CENTER} ${CENTER}`,
-                    `L ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
-                  ].join(' ')}
-                  fill={palette[index % palette.length]}
-                  key={['slice', index]}
-                />
+            return [
+              <path
+                d={[
+                  `M ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
+                  `A ${RADIUS} ${RADIUS} 0 ${+(length > Math.PI)} 0 ${CENTER +
+                    RADIUS * startX} ${CENTER + RADIUS * startY}`,
+                  `L ${CENTER} ${CENTER}`,
+                  `L ${CENTER + RADIUS * endX} ${CENTER + RADIUS * endY}`,
+                ].join(' ')}
+                fill={palette[index % palette.length]}
+                key={`slice.${index}`}
+              />,
+
+              <SvgTypography
+                fill={textColor}
+                key={`value.${index}`}
+                dominantBaseline={legend ? 'middle' : 'baseline'}
+                textAnchor={'middle'}
+                variant={'h4'}
+                fontWeight={400}
+                x={textX}
+                y={textY}
+              >
+                {value}
+                {units}
+              </SvgTypography>,
+
+              !legend && (
                 <SvgTypography
+                  dominantBaseline={'hanging'}
                   fill={textColor}
-                  index={index}
-                  key={'value'}
-                  dominantBaseline={legend ? 'middle' : 'baseline'}
+                  key={`title.${index}`}
                   textAnchor={'middle'}
-                  variant={'h4'}
+                  variant={'h5'}
                   fontWeight={400}
                   x={textX}
                   y={textY}
+                  ref={titleTypographyMethodsRef}
                 >
-                  {value}
-                  {units}
+                  {title}
                 </SvgTypography>
-
-                {!legend && (
-                  <SvgTypography
-                    dominantBaseline={'hanging'}
-                    fill={textColor}
-                    index={index}
-                    key={'title'}
-                    textAnchor={'middle'}
-                    variant={'h5'}
-                    fontWeight={400}
-                    x={textX}
-                    y={textY}
-                    ref={titleTypographyMethodsRef}
-                  >
-                    {title}
-                  </SvgTypography>
-                )}
-              </React.Fragment>
-            );
+              ),
+            ];
           })}
         </ChartSvg>
       </FlexBox>

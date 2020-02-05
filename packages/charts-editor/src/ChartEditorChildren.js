@@ -2,9 +2,15 @@
 import * as React from 'react';
 import { SvgInput, SvgTypography, useTypographyChildren } from '@seine/styles';
 import type { ElementsAction } from '@seine/core';
-import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import {
+  DESELECT_BLOCK_ELEMENT,
+  SELECT_BLOCK_ELEMENT,
+  UPDATE_BLOCK_ELEMENT,
+  UPDATE_BLOCK_ELEMENT_BY_GROUP,
+} from '@seine/core';
 import { ChartTitle } from '@seine/charts';
 import styled from 'styled-components/macro';
+import { ClickAwayListener } from '@material-ui/core';
 
 import ChartTitleInput from './ChartTitleInput';
 
@@ -17,7 +23,7 @@ const HiddenSvgGroup = styled.g`
   opacity: 0;
 `;
 
-const defaultChartEditorChildRenderMap = new WeakMap([
+const defaultChartEditorChildRenderMap = new Map([
   [
     ChartTitle,
     ({ child, dispatch }) => (
@@ -31,12 +37,59 @@ const defaultChartEditorChildRenderMap = new WeakMap([
     ),
   ],
   [
+    'rect',
+    ({ child, editor, dispatchElements }) => {
+      const [source, index] = child.key.split('.');
+      if (source === 'selection' && index) {
+        return (
+          <ClickAwayListener
+            key={child.key}
+            onClickAway={(event) =>
+              !(event.target instanceof HTMLButtonElement) &&
+              dispatchElements({
+                type: DESELECT_BLOCK_ELEMENT,
+                index: +index,
+              })
+            }
+          >
+            <rect
+              {...child.props}
+              {...(editor.selection === +index
+                ? {
+                    strokeDasharray: 0.25,
+                    strokeWidth: 0.05,
+                    stroke: 'black',
+                  }
+                : {
+                    onClick: (event) => {
+                      event.stopPropagation();
+                      event.preventDefault();
+                      dispatchElements({
+                        index: +index,
+                        type: SELECT_BLOCK_ELEMENT,
+                      });
+                    },
+                  })}
+            />
+          </ClickAwayListener>
+        );
+      }
+      return child;
+    },
+  ],
+  [
     SvgTypography,
     ({ child, dispatchElements }) => {
       const {
         key,
-        props: { index, children },
+        props: { children },
       } = child;
+      const [source, index] = key.split('.');
+
+      if (!index && source !== 'group') {
+        return child;
+      }
+
       const text = useTypographyChildren(children);
 
       return [
@@ -44,19 +97,28 @@ const defaultChartEditorChildRenderMap = new WeakMap([
         <SvgInput
           {...child.props}
           key={[key, 'input']}
-          type={key === 'value' ? 'number' : 'text'}
+          type={source === 'value' ? 'number' : 'text'}
           onChange={({ currentTarget }) =>
-            dispatchElements({
-              type: UPDATE_BLOCK_ELEMENT,
-              body: {
-                [key]:
-                  key === 'value' ? +currentTarget.value : currentTarget.value,
-              },
-              index: index,
-            })
+            dispatchElements(
+              source === 'group'
+                ? {
+                    type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
+                    group: source,
+                  }
+                : {
+                    type: UPDATE_BLOCK_ELEMENT,
+                    body: {
+                      [source]:
+                        source === 'value'
+                          ? +currentTarget.value
+                          : currentTarget.value,
+                    },
+                    index: +index,
+                  }
+            )
           }
         >
-          {key === 'value' ? parseFloat(text) : text}
+          {source === 'value' ? parseFloat(text) : text}
         </SvgInput>,
       ];
     },
@@ -73,6 +135,7 @@ function ChartEditorChild({
   child,
   dispatch,
   dispatchElements,
+  editor,
 }: Props) {
   if (React.isValidElement(child)) {
     const {
@@ -88,6 +151,7 @@ function ChartEditorChild({
           child={child}
           dispatch={dispatch}
           dispatchElements={dispatchElements}
+          editor={editor}
         />
       );
     }
@@ -100,6 +164,7 @@ function ChartEditorChild({
               child={child}
               dispatch={dispatch}
               dispatchElements={dispatchElements}
+              editor={editor}
               key={[key, 'editor']}
             />
           )),
