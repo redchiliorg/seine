@@ -13,7 +13,6 @@ import {
   defaultChartPaletteKey,
   defaultChartTextAlignment,
   defaultChartTitle,
-  defaultChartVerticalAlignment,
   defaultChartXAxis,
   defaultChartYAxis,
   defaultChartLegend,
@@ -48,7 +47,6 @@ export default function LineChart({
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
-  verticalAlignment = defaultChartVerticalAlignment,
   yAxis = defaultChartYAxis,
   xAxis = defaultChartXAxis,
 
@@ -89,7 +87,6 @@ export default function LineChart({
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
         <ChartSvg
           strokeWidth={valueHeight / 40}
-          verticalAlignment={verticalAlignment}
           viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
         >
           {xAxis

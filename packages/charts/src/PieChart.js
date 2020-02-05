@@ -12,7 +12,6 @@ import {
   defaultChartPaletteKey,
   defaultChartTextAlignment,
   defaultChartTitle,
-  defaultChartVerticalAlignment,
   defaultPieChartLegend,
   defaultPieChartUnits,
   VIEWPORT_HEIGHT,
@@ -42,7 +41,6 @@ export default function PieChart({
   paletteKey = defaultChartPaletteKey,
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
-  verticalAlignment = defaultChartVerticalAlignment,
   units = defaultPieChartUnits,
   as: View = React.Fragment,
   id,
@@ -67,10 +65,7 @@ export default function PieChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
-        <ChartSvg
-          verticalAlignment={verticalAlignment}
-          viewBox={`0 0 ${VIEWPORT_HEIGHT} ${VIEWPORT_HEIGHT}`}
-        >
+        <ChartSvg viewBox={`0 0 ${VIEWPORT_HEIGHT} ${VIEWPORT_HEIGHT}`}>
           {elements.map(({ title, value }, index) => {
             const start = end;
             const startX = endX;

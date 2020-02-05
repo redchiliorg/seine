@@ -15,7 +15,6 @@ import {
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
-  defaultChartVerticalAlignment,
   defaultChartYAxis,
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
@@ -48,7 +47,6 @@ export default function ColumnChart({
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
-  verticalAlignment = defaultChartVerticalAlignment,
   yAxis = defaultChartYAxis,
 
   as: View = React.Fragment,
@@ -85,7 +83,6 @@ export default function ColumnChart({
         {groups.map(([group, elements], groupIndex) => (
           <ChartSvg
             key={groupIndex}
-            verticalAlignment={'start'}
             strokeWidth={scaledTextHeight / 40}
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           >

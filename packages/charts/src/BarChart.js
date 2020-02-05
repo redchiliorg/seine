@@ -10,7 +10,6 @@ import {
   defaultChartTextAlignment,
   defaultChartTitle,
   defaultChartUnits,
-  defaultChartVerticalAlignment,
   defaultChartXAxis,
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
@@ -37,7 +36,6 @@ export default function BarChart({
   textAlignment = defaultChartTextAlignment,
   title = defaultChartTitle,
   units = defaultChartUnits,
-  verticalAlignment = defaultChartVerticalAlignment,
   xAxis = defaultChartXAxis,
 
   as: View = React.Fragment,
@@ -72,7 +70,7 @@ export default function BarChart({
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         strokeWidth={valueMethods.getYScale() / 2}
-        verticalAlignment={verticalAlignment}
+        verticalAlignment={'start'}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >
         {elements.map(({ title, value }, index) => {

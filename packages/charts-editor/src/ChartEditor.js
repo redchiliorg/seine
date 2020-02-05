@@ -5,7 +5,6 @@ import {
   Close as CloseIcon,
   Delete as DeleteIcon,
   Edit as EditIcon,
-  FormatLineSpacing as FormatLineSpacingIcon,
 } from '@material-ui/icons';
 import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
 import {
@@ -18,7 +17,6 @@ import {
   SELECT_BLOCK,
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
-  UPDATE_BLOCK_FORMAT,
 } from '@seine/core';
 import {
   ActionButton,
@@ -35,7 +33,6 @@ import {
   ColumnChart,
   defaultChartRenderMap,
   defaultChartTextAlignment,
-  defaultChartVerticalAlignment,
   LineChart,
   PieChart,
 } from '@seine/charts';
@@ -87,7 +84,6 @@ export default function ChartEditor({
   editor = defaultEditor,
   mode,
   selection,
-  verticalAlignment = defaultChartVerticalAlignment,
   textAlignment = defaultChartTextAlignment,
   ...chartProps
 }: Props) {
@@ -192,11 +188,7 @@ export default function ChartEditor({
           />
         </ChartContainer>
       </Dialog>
-      <ExactChart
-        textAlignment={textAlignment}
-        verticalAlignment={verticalAlignment}
-        {...chartProps}
-      />
+      <ExactChart textAlignment={textAlignment} {...chartProps} />
       {mode !== 'fullscreen' && (
         <BlockActions
           addButtonRenderMap={addButtonRenderMap}
@@ -224,26 +216,6 @@ export default function ChartEditor({
                 color={'primary'}
               >
                 <EditIcon />
-              </ActionButton>
-              &nbsp;
-              <ActionButton
-                as={Fab}
-                color={'default'}
-                dispatch={dispatch}
-                id={chartProps.id}
-                size={'small'}
-                format={{
-                  verticalAlignment:
-                    verticalAlignment === 'start'
-                      ? 'center'
-                      : verticalAlignment === 'center'
-                      ? 'end'
-                      : 'start',
-                }}
-                title={'Align vertically'}
-                type={UPDATE_BLOCK_FORMAT}
-              >
-                <FormatLineSpacingIcon />
               </ActionButton>
               &nbsp;
               <ActionButton
