@@ -189,7 +189,6 @@ export default function ChartEditor({
             selection={selection}
             textAlignment={textAlignment}
             {...chartProps}
-            verticalAlignment={'start'}
           />
         </ChartContainer>
       </Dialog>

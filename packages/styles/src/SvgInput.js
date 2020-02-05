@@ -17,8 +17,6 @@ const StyledInput = styled(Input).attrs(
 )`
   ${({ color, xScale, yScale }: SvgTypographyProps & BoxProps) => css`
     && {
-      font: inherit;
-      line-height: inherit;
       background: none;
       border: 0;
       margin: 0;

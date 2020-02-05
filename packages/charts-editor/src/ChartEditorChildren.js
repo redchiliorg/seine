@@ -1,9 +1,10 @@
 // @flow
 import * as React from 'react';
-import { SvgInput, SvgTypography } from '@seine/styles';
+import { SvgInput, SvgTypography, useTypographyChildren } from '@seine/styles';
 import type { ElementsAction } from '@seine/core';
 import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { ChartTitle } from '@seine/charts';
+import styled from 'styled-components/macro';
 
 import ChartTitleInput from './ChartTitleInput';
 
@@ -12,40 +13,55 @@ type Props = {
   dispatchElements: (ElementsAction) => any,
 };
 
-const defaultChartEditorChildRenderMap = {
-  [ChartTitle]: ({ child, dispatch }) => (
-    <ChartTitle {...child.props} key={child.key}>
-      <ChartTitleInput
-        dispatch={dispatch}
-        textAlignment={child.props.textAlignment}
-        value={child.props.children}
-      />
-    </ChartTitle>
-  ),
-  [SvgTypography]: ({
-    child: {
-      key,
-      props: { index, children, ...childProps },
+const HiddenSvgGroup = styled.g`
+  opacity: 0;
+`;
+
+const defaultChartEditorChildRenderMap = new WeakMap([
+  [
+    ChartTitle,
+    ({ child, dispatch }) => (
+      <ChartTitle {...child.props} key={child.key}>
+        <ChartTitleInput
+          dispatch={dispatch}
+          textAlignment={child.props.textAlignment}
+          value={child.props.children}
+        />
+      </ChartTitle>
+    ),
+  ],
+  [
+    SvgTypography,
+    ({ child, dispatchElements }) => {
+      const {
+        key,
+        props: { index, children },
+      } = child;
+      const text = useTypographyChildren(children);
+
+      return [
+        <HiddenSvgGroup key={[key, 'group']}>{child}</HiddenSvgGroup>,
+        <SvgInput
+          {...child.props}
+          key={[key, 'input']}
+          type={key === 'value' ? 'number' : 'text'}
+          onChange={({ currentTarget }) =>
+            dispatchElements({
+              type: UPDATE_BLOCK_ELEMENT,
+              body: {
+                [key]:
+                  key === 'value' ? +currentTarget.value : currentTarget.value,
+              },
+              index: index,
+            })
+          }
+        >
+          {key === 'value' ? parseFloat(text) : text}
+        </SvgInput>,
+      ];
     },
-    dispatchElements,
-  }) => (
-    <SvgInput
-      {...childProps}
-      type={key === 'value' ? 'number' : 'text'}
-      onChange={({ currentTarget }) =>
-        dispatchElements({
-          type: UPDATE_BLOCK_ELEMENT,
-          body: {
-            [key]: key === 'value' ? +currentTarget.value : currentTarget.value,
-          },
-          index: index,
-        })
-      }
-    >
-      {key === 'value' ? parseInt(children) : children}
-    </SvgInput>
-  ),
-};
+  ],
+]);
 
 /**
  * @description Inject editor inputs for chart component children.
@@ -65,28 +81,26 @@ function ChartEditorChild({
       key,
     } = child;
 
-    if (Child in chartEditorChildRenderMap) {
-      const ChildInput = chartEditorChildRenderMap[Child];
-      return [
-        child,
+    const ChildInput = chartEditorChildRenderMap.get(Child);
+    if (ChildInput) {
+      return (
         <ChildInput
-          key={[key, 'input']}
           child={child}
           dispatch={dispatch}
           dispatchElements={dispatchElements}
-        />,
-      ];
+        />
+      );
     }
     return (
       <Child
         {...childProps}
-        key={[key, 'child']}
         {...(children && {
           children: React.Children.map(children, (child) => (
             <ChartEditorChild
               child={child}
               dispatch={dispatch}
               dispatchElements={dispatchElements}
+              key={[key, 'editor']}
             />
           )),
         })}
@@ -107,6 +121,10 @@ export default function ChartEditorChildren({
   ...chartEditorProps
 }: Props) {
   return React.Children.map(children, (child: ?React.Node) => (
-    <ChartEditorChild child={child} {...chartEditorProps} />
+    <ChartEditorChild
+      child={child}
+      key={[child.key, 'child']}
+      {...chartEditorProps}
+    />
   ));
 }
