@@ -9,6 +9,7 @@ const StyledChartContainer = styled.div`
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-around;
+  padding-top: ${({ marginTop }) => marginTop}px;
   position: relative;
   width: 100%;
 `;

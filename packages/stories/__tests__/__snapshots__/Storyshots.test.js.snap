@@ -56,7 +56,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -832,20 +832,20 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Easymode
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
@@ -854,7 +854,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -1455,20 +1455,20 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Easymode
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
@@ -1477,7 +1477,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -1926,7 +1926,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </svg>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2233,7 +2233,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2421,7 +2421,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
       />
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2622,7 +2622,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2767,30 +2767,30 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jABwVV"
+            className="sc-htpNat eluwCx"
             color="#cbcbcb"
             size={1}
           />
@@ -2799,7 +2799,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -3429,7 +3429,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -3574,30 +3574,30 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jABwVV"
+            className="sc-htpNat eluwCx"
             color="#cbcbcb"
             size={1}
           />
@@ -3606,7 +3606,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -4382,20 +4382,20 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Easymode
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
@@ -4417,7 +4417,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5193,20 +5193,20 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Easymode
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
@@ -5215,7 +5215,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5677,7 +5677,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5971,7 +5971,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       />
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -6321,7 +6321,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -7108,30 +7108,30 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         width="auto"
       >
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb cvbhzI"
+            className="sc-htpNat kBSSIl"
             color="#71a2ff"
             size={1}
           />
           Maelstorm
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jPMdyl"
+            className="sc-htpNat fUTHaO"
             color="#c0d4e2"
             size={1}
           />
           Spring
         </div>
         <div
-          className="sc-htpNat eVjbth"
+          className="sc-bxivhb hYNaup"
         >
           <div
-            className="sc-bxivhb jABwVV"
+            className="sc-htpNat eluwCx"
             color="#cbcbcb"
             size={1}
           />
@@ -7140,7 +7140,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -7809,7 +7809,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -8433,7 +8433,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -8578,30 +8578,30 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
@@ -8677,7 +8677,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -9453,20 +9453,20 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Easymode
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
@@ -9482,7 +9482,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -9783,7 +9783,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -11128,60 +11128,60 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb hJTuOk"
+          className="sc-htpNat eOfIIx"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb dbJKEW"
+          className="sc-htpNat eWvgjs"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb MiBZ"
+          className="sc-htpNat hpjwsk"
           color="#6895eb"
           size={1}
         />
@@ -11197,7 +11197,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -11984,30 +11984,30 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
@@ -12023,7 +12023,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -12519,40 +12519,40 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
         Generic
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb hJTuOk"
+          className="sc-htpNat eOfIIx"
           color="#e57878"
           size={1}
         />
@@ -12568,7 +12568,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -12971,30 +12971,30 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
@@ -13010,7 +13010,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -13471,60 +13471,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb hJTuOk"
+          className="sc-htpNat eOfIIx"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb dbJKEW"
+          className="sc-htpNat eWvgjs"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb MiBZ"
+          className="sc-htpNat hpjwsk"
           color="#6895eb"
           size={1}
         />
@@ -13540,7 +13540,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14001,60 +14001,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb hJTuOk"
+          className="sc-htpNat eOfIIx"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb dbJKEW"
+          className="sc-htpNat eWvgjs"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb MiBZ"
+          className="sc-htpNat hpjwsk"
           color="#6895eb"
           size={1}
         />
@@ -14070,7 +14070,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14531,60 +14531,60 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />
         Spring
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jABwVV"
+          className="sc-htpNat eluwCx"
           color="#cbcbcb"
           size={1}
         />
         Electro
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb hJTuOk"
+          className="sc-htpNat eOfIIx"
           color="#e57878"
           size={1}
         />
         HBO
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb dbJKEW"
+          className="sc-htpNat eWvgjs"
           color="#8adb96"
           size={1}
         />
         Netflix
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb MiBZ"
+          className="sc-htpNat hpjwsk"
           color="#6895eb"
           size={1}
         />
@@ -14600,7 +14600,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14813,20 +14813,20 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       width="auto"
     >
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb cvbhzI"
+          className="sc-htpNat kBSSIl"
           color="#71a2ff"
           size={1}
         />
         Maelstorm
       </div>
       <div
-        className="sc-htpNat eVjbth"
+        className="sc-bxivhb hYNaup"
       >
         <div
-          className="sc-bxivhb jPMdyl"
+          className="sc-htpNat fUTHaO"
           color="#c0d4e2"
           size={1}
         />

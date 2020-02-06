@@ -19,8 +19,7 @@ import {
 import type { ChartProps } from './types';
 import ChartSvg from './ChartSvg';
 import ChartTitle from './ChartTitle';
-import LegendItem from './LegendItem';
-import LegendBox from './LegendBox';
+import ChartLegend from './ChartLegend';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
@@ -141,17 +140,13 @@ export default function PieChart({
         </ChartSvg>
       </FlexBox>
       <FlexBox width={'auto'} height={2 * textHeight}>
-        {legend &&
-          elements.map(({ title }, index) => (
-            <LegendItem key={index}>
-              <LegendBox
-                color={palette[index % palette.length]}
-                key={index}
-                size={textHeight}
-              />
-              {title}
-            </LegendItem>
-          ))}
+        {legend && (
+          <ChartLegend
+            palette={palette}
+            size={textHeight}
+            elements={elements}
+          />
+        )}
       </FlexBox>
     </View>
   );
