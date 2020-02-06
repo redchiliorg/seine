@@ -70,6 +70,7 @@ export default function BarChart({
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <ChartSvg
         strokeWidth={valueMethods.getYScale() / 2}
+        textAlignment={'center'}
         verticalAlignment={'start'}
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
       >

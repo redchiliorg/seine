@@ -86,6 +86,7 @@ export default function LineChart({
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
         <ChartSvg
           strokeWidth={valueHeight / 40}
+          textAlignment={'center'}
           viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
         >
           {xAxis

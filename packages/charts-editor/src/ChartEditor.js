@@ -177,7 +177,7 @@ export default function ChartEditor({
           <Toolbar.Separator />
         </ChartToolbar>
 
-        <ChartContainer marginTop={96}>
+        <ChartContainer style={{ paddingTop: 96 }}>
           <ExactChartEditor
             dispatch={dispatch}
             dispatchElements={dispatchElements}
