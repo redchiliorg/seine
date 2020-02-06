@@ -50,16 +50,16 @@ export default function PieChart({
 }): Props {
   const sum = useAutoMemo(elements.reduce((acc, { value }) => acc + value, 0));
   const quarter = useAutoMemo(sum / 4);
-  const [
-    titleMethods,
-    titleTypographyMethodsRef,
-  ] = useTypographyChildrenMethods(elements.length);
+  const [textMethods, textTypographyMethodsRef] = useTypographyChildrenMethods(
+    elements.length
+  );
 
   let end = (3 * Math.PI) / 4;
   let endX = Math.cos(end);
   let endY = Math.sin(end);
 
-  const textHeight = titleMethods.getScaledHeight();
+  const textHeight = textMethods.getHeight();
+  const scaledTextHeight = textMethods.getScaledHeight();
 
   return (
     <View {...viewProps}>
@@ -117,6 +117,7 @@ export default function PieChart({
                 textAnchor={'middle'}
                 variant={'h4'}
                 fontWeight={400}
+                ref={textTypographyMethodsRef}
                 x={textX}
                 y={textY}
                 {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
@@ -135,7 +136,6 @@ export default function PieChart({
                   fontWeight={400}
                   x={textX}
                   y={textY}
-                  ref={titleTypographyMethodsRef}
                   {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
                 >
                   {title}
@@ -149,7 +149,7 @@ export default function PieChart({
         {legend && (
           <ChartLegend
             palette={palette}
-            size={textHeight}
+            size={scaledTextHeight}
             elements={elements}
           />
         )}

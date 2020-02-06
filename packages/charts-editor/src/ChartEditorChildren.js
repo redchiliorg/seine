@@ -41,7 +41,7 @@ const defaultChartEditorChildRenderMap = new Map([
   [
     ChartTitle,
     ({ child, dispatch }) => (
-      <ChartTitle {...child.props} key={child.key}>
+      <ChartTitle {...child.props}>
         <ChartTitleInput
           dispatch={dispatch}
           textAlignment={child.props.textAlignment}
@@ -54,13 +54,11 @@ const defaultChartEditorChildRenderMap = new Map([
     ChartLegend,
     ({
       child: {
-        key,
         props: { elements, ...childProps },
       },
       dispatchElements,
     }) => (
       <ChartLegend
-        key={key}
         {...childProps}
         elements={elements.map(({ id, title }, index) => ({
           title: (
@@ -87,7 +85,6 @@ const defaultChartEditorChildRenderMap = new Map([
       if (source === 'selection' && index) {
         return (
           <ClickAwayListener
-            key={child.key}
             onClickAway={(event) =>
               !(event.target instanceof HTMLButtonElement) &&
               dispatchElements({
