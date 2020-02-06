@@ -491,7 +491,7 @@ export const PieChart = ({
         type: 'chart',
         body: {
           elements: createBlockElements([
-            { title: 'repairs', value: 12 },
+            { title: 'repairs of something very long', value: 12 },
             { title: 'consulting', value: 10 },
             { title: 'training', value: 8 },
             { title: 'product sales', value: 64 },

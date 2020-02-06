@@ -1942,20 +1942,20 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 210 210"
           width="100%"
         >
           <path
-            d="M 0.05181116159818089 108.29812970320347 A 105 105 0 0 0 30.75378797541252 179.2462120245875 L 105 105 L 0.05181116159818089 108.29812970320347"
+            d="M 35.03454077439879 107.19875313546898 A 70 70 0 0 0 55.50252531694168 154.49747468305833 L 105 105 L 35.03454077439879 107.19875313546898"
             fill="#71a2ff"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-13.278510296110923}
-            y={154.96731263146353}
+            x={18.842901602828434}
+            y={141.0671364592462}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -1979,8 +1979,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-13.278510296110923}
-            y={155.96731263146353}
+            x={18.842901602828434}
+            y={142.0671364592462}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2000,15 +2000,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 18.156539701171013 45.98124532552629 A 105 105 0 0 0 0.05181116159818089 108.29812970320347 L 105 105 L 18.156539701171013 45.98124532552629"
+            d="M 47.10435980078067 65.65416355035086 A 70 70 0 0 0 35.03454077439879 107.19875313546898 L 105 105 L 47.10435980078067 65.65416355035086"
             fill="#c0d4e2"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-18.73768966187437}
-            y={68.19614139163224}
+            x={14.872589336818649}
+            y={77.96083010300526}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2032,8 +2032,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-18.73768966187437}
-            y={69.19614139163224}
+            x={14.872589336818649}
+            y={78.96083010300526}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2053,15 +2053,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 57.33099752734758 11.444314960221377 A 105 105 0 0 0 18.156539701171013 45.98124532552629 L 105 105 L 57.33099752734758 11.444314960221377"
+            d="M 73.22066501823171 42.629543306814256 A 70 70 0 0 0 47.10435980078067 65.65416355035086 L 105 105 L 73.22066501823171 42.629543306814256"
             fill="#cbcbcb"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={19.631643950131334}
-            y={7.735746064091032}
+            x={42.777559236459155}
+            y={33.989633501157115}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2085,8 +2085,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={19.631643950131334}
-            y={8.735746064091032}
+            x={42.777559236459155}
+            y={34.989633501157115}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2106,15 +2106,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 63.29947148334795 201.36423569681799 A 105 105 0 1 0 57.33099752734758 11.444314960221377 L 105 105 L 63.29947148334795 201.36423569681799"
+            d="M 77.1996476555653 169.24282379787866 A 70 70 0 1 0 73.22066501823171 42.629543306814256 L 105 105 L 77.1996476555653 169.24282379787866"
             fill="#e57878"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={139.4827296128006}
-            y={102.9006234322655}
+            x={127.82181974186707}
+            y={103.26708228817701}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2138,8 +2138,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={139.4827296128006}
-            y={103.9006234322655}
+            x={127.82181974186707}
+            y={104.26708228817701}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2159,15 +2159,15 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 30.753787975412465 179.24621202458746 A 105 105 0 0 0 63.29947148334795 201.36423569681799 L 105 105 L 30.753787975412465 179.24621202458746"
+            d="M 55.50252531694164 154.4974746830583 A 70 70 0 0 0 77.1996476555653 169.24282379787866 L 105 105 L 55.50252531694164 154.4974746830583"
             fill="#8adb96"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={32.3659665089764}
-            y={210.14200703190198}
+            x={52.03888473380103}
+            y={181.19418693229235}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2191,8 +2191,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={32.3659665089764}
-            y={211.14200703190198}
+            x={52.03888473380103}
+            y={182.19418693229235}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2249,20 +2249,20 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 210 210"
           width="100%"
         >
           <path
-            d="M 0.35698616188182086 96.34900844553596 A 105 105 0 0 0 30.75378797541252 179.2462120245875 L 105 105 L 0.35698616188182086 96.34900844553596"
+            d="M 35.237990774587885 99.23267229702397 A 70 70 0 0 0 55.50252531694168 154.49747468305833 L 105 105 L 35.237990774587885 99.23267229702397"
             fill="rgba(97,139,219,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-15.98858201640762}
-            y={148.1808334928152}
+            x={16.871940351703557}
+            y={136.13151526750195}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2286,8 +2286,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-15.98858201640762}
-            y={149.1808334928152}
+            x={16.871940351703557}
+            y={137.13151526750195}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2307,15 +2307,15 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 186.24679209511572 38.48715331416764 A 105 105 0 0 0 0.35698616188182086 96.34900844553596 L 105 105 L 186.24679209511572 38.48715331416764"
+            d="M 159.1645280634105 60.6581022094451 A 70 70 0 0 0 35.237990774587885 99.23267229702397 L 105 105 L 159.1645280634105 60.6581022094451"
             fill="rgba(172,190,203,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={94.0978401400222}
-            y={70.58151603906205}
+            x={97.5652267600148}
+            y={81.72101069270803}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2339,8 +2339,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={94.0978401400222}
-            y={71.58151603906205}
+            x={97.5652267600148}
+            y={82.72101069270803}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2360,15 +2360,15 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 30.753787975412465 179.24621202458746 A 105 105 0 0 0 186.24679209511572 38.48715331416764 L 105 105 L 30.753787975412465 179.24621202458746"
+            d="M 55.50252531694164 154.4974746830583 A 70 70 0 0 0 159.1645280634105 60.6581022094451 L 105 105 L 55.50252531694164 154.4974746830583"
             fill="rgba(138,219,150,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={127.98883938902762}
-            y={129.94753214000252}
+            x={120.15922625935175}
+            y={121.29835476000169}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2392,8 +2392,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={127.98883938902762}
-            y={130.94753214000252}
+            x={120.15922625935175}
+            y={122.29835476000169}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2437,20 +2437,20 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 210 210"
           width="100%"
         >
           <path
-            d="M 0.29483111448682564 97.1369466073184 A 105 105 0 0 0 30.75378797541252 179.2462120245875 L 105 105 L 0.29483111448682564 97.1369466073184"
+            d="M 35.196554076324546 99.75796440487892 A 70 70 0 0 0 55.50252531694168 154.49747468305833 L 105 105 L 35.196554076324546 99.75796440487892"
             fill="rgba(97,139,219,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-15.821443341950854}
-            y={148.6340085198961}
+            x={16.993495751308473}
+            y={136.46109710537897}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2474,8 +2474,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-15.821443341950854}
-            y={149.6340085198961}
+            x={16.993495751308473}
+            y={137.46109710537897}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2495,15 +2495,15 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 184.33210811429893 36.214706352729834 A 105 105 0 0 0 0.29483111448682564 97.1369466073184 L 105 105 L 184.33210811429893 36.214706352729834"
+            d="M 157.88807207619928 59.14313756848656 A 70 70 0 0 0 35.196554076324546 99.75796440487892 L 105 105 L 157.88807207619928 59.14313756848656"
             fill="rgba(172,190,203,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={93.50086926346559}
-            y={70.77321678162895}
+            x={97.16724617564373}
+            y={81.84881118775263}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2527,8 +2527,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={93.50086926346559}
-            y={71.77321678162895}
+            x={97.16724617564373}
+            y={82.84881118775263}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -2548,15 +2548,15 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             </p>
           </foreignObject>
           <path
-            d="M 30.753787975412592 179.24621202458758 A 105 105 0 0 0 184.33210811429893 36.214706352729834 L 105 105 L 30.753787975412592 179.24621202458758"
+            d="M 55.502525316941735 154.49747468305839 A 70 70 0 0 0 157.88807207619928 59.14313756848656 L 105 105 L 55.502525316941735 154.49747468305839"
             fill="rgba(138,219,150,1)"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={128.35364982193735}
-            y={129.61256313164282}
+            x={120.40243321462489}
+            y={121.07504208776187}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -2580,8 +2580,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={128.35364982193735}
-            y={130.61256313164282}
+            x={120.40243321462489}
+            y={122.07504208776187}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -5693,20 +5693,20 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 210 210"
           width="100%"
         >
           <path
-            d="M 0.05181116159818089 108.29812970320347 A 105 105 0 0 0 30.75378797541252 179.2462120245875 L 105 105 L 0.05181116159818089 108.29812970320347"
+            d="M 35.03454077439879 107.19875313546898 A 70 70 0 0 0 55.50252531694168 154.49747468305833 L 105 105 L 35.03454077439879 107.19875313546898"
             fill="#71a2ff"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-13.278510296110923}
-            y={154.96731263146353}
+            x={18.842901602828434}
+            y={141.0671364592462}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -5730,8 +5730,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-13.278510296110923}
-            y={155.96731263146353}
+            x={18.842901602828434}
+            y={142.0671364592462}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -5751,15 +5751,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             </p>
           </foreignObject>
           <path
-            d="M 18.156539701171013 45.98124532552629 A 105 105 0 0 0 0.05181116159818089 108.29812970320347 L 105 105 L 18.156539701171013 45.98124532552629"
+            d="M 47.10435980078067 65.65416355035086 A 70 70 0 0 0 35.03454077439879 107.19875313546898 L 105 105 L 47.10435980078067 65.65416355035086"
             fill="#c0d4e2"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-18.73768966187437}
-            y={68.19614139163224}
+            x={14.872589336818649}
+            y={77.96083010300526}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -5783,8 +5783,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={-18.73768966187437}
-            y={69.19614139163224}
+            x={14.872589336818649}
+            y={78.96083010300526}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -5800,19 +5800,19 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               textAnchor="middle"
               width={1}
             >
-              consulting
+              consulting of something long
             </p>
           </foreignObject>
           <path
-            d="M 57.33099752734758 11.444314960221377 A 105 105 0 0 0 18.156539701171013 45.98124532552629 L 105 105 L 57.33099752734758 11.444314960221377"
+            d="M 73.22066501823171 42.629543306814256 A 70 70 0 0 0 47.10435980078067 65.65416355035086 L 105 105 L 73.22066501823171 42.629543306814256"
             fill="#cbcbcb"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={19.631643950131334}
-            y={7.735746064091032}
+            x={42.777559236459155}
+            y={33.989633501157115}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -5836,8 +5836,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={19.631643950131334}
-            y={8.735746064091032}
+            x={42.777559236459155}
+            y={34.989633501157115}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -5857,15 +5857,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             </p>
           </foreignObject>
           <path
-            d="M 63.29947148334795 201.36423569681799 A 105 105 0 1 0 57.33099752734758 11.444314960221377 L 105 105 L 63.29947148334795 201.36423569681799"
+            d="M 77.1996476555653 169.24282379787866 A 70 70 0 1 0 73.22066501823171 42.629543306814256 L 105 105 L 77.1996476555653 169.24282379787866"
             fill="#e57878"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={139.4827296128006}
-            y={102.9006234322655}
+            x={127.82181974186707}
+            y={103.26708228817701}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -5889,8 +5889,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={139.4827296128006}
-            y={103.9006234322655}
+            x={127.82181974186707}
+            y={104.26708228817701}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -5910,15 +5910,15 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             </p>
           </foreignObject>
           <path
-            d="M 30.753787975412465 179.24621202458746 A 105 105 0 0 0 63.29947148334795 201.36423569681799 L 105 105 L 30.753787975412465 179.24621202458746"
+            d="M 55.50252531694164 154.4974746830583 A 70 70 0 0 0 77.1996476555653 169.24282379787866 L 105 105 L 55.50252531694164 154.4974746830583"
             fill="#8adb96"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={32.3659665089764}
-            y={210.14200703190198}
+            x={52.03888473380103}
+            y={181.19418693229235}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -5942,8 +5942,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={32.3659665089764}
-            y={211.14200703190198}
+            x={52.03888473380103}
+            y={182.19418693229235}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -9498,20 +9498,20 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 210 210"
         width="100%"
       >
         <path
-          d="M 0.05181116159818089 108.29812970320347 A 105 105 0 0 0 30.75378797541252 179.2462120245875 L 105 105 L 0.05181116159818089 108.29812970320347"
+          d="M 35.03454077439879 107.19875313546898 A 70 70 0 0 0 55.50252531694168 154.49747468305833 L 105 105 L 35.03454077439879 107.19875313546898"
           fill="#71a2ff"
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={-13.278510296110923}
-          y={154.96731263146353}
+          x={18.842901602828434}
+          y={141.0671364592462}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -9535,8 +9535,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={-13.278510296110923}
-          y={155.96731263146353}
+          x={18.842901602828434}
+          y={142.0671364592462}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -9552,19 +9552,19 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             textAnchor="middle"
             width={1}
           >
-            repairs
+            repairs of something very long
           </p>
         </foreignObject>
         <path
-          d="M 18.156539701171013 45.98124532552629 A 105 105 0 0 0 0.05181116159818089 108.29812970320347 L 105 105 L 18.156539701171013 45.98124532552629"
+          d="M 47.10435980078067 65.65416355035086 A 70 70 0 0 0 35.03454077439879 107.19875313546898 L 105 105 L 47.10435980078067 65.65416355035086"
           fill="#c0d4e2"
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={-18.73768966187437}
-          y={68.19614139163224}
+          x={14.872589336818649}
+          y={77.96083010300526}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -9588,8 +9588,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={-18.73768966187437}
-          y={69.19614139163224}
+          x={14.872589336818649}
+          y={78.96083010300526}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -9609,15 +9609,15 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           </p>
         </foreignObject>
         <path
-          d="M 57.33099752734758 11.444314960221377 A 105 105 0 0 0 18.156539701171013 45.98124532552629 L 105 105 L 57.33099752734758 11.444314960221377"
+          d="M 73.22066501823171 42.629543306814256 A 70 70 0 0 0 47.10435980078067 65.65416355035086 L 105 105 L 73.22066501823171 42.629543306814256"
           fill="#cbcbcb"
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={19.631643950131334}
-          y={7.735746064091032}
+          x={42.777559236459155}
+          y={33.989633501157115}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -9641,8 +9641,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={19.631643950131334}
-          y={8.735746064091032}
+          x={42.777559236459155}
+          y={34.989633501157115}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -9662,15 +9662,15 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           </p>
         </foreignObject>
         <path
-          d="M 63.29947148334795 201.36423569681799 A 105 105 0 1 0 57.33099752734758 11.444314960221377 L 105 105 L 63.29947148334795 201.36423569681799"
+          d="M 77.1996476555653 169.24282379787866 A 70 70 0 1 0 73.22066501823171 42.629543306814256 L 105 105 L 77.1996476555653 169.24282379787866"
           fill="#e57878"
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={139.4827296128006}
-          y={102.9006234322655}
+          x={127.82181974186707}
+          y={103.26708228817701}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -9694,8 +9694,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={139.4827296128006}
-          y={103.9006234322655}
+          x={127.82181974186707}
+          y={104.26708228817701}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -9715,15 +9715,15 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           </p>
         </foreignObject>
         <path
-          d="M 30.753787975412465 179.24621202458746 A 105 105 0 0 0 63.29947148334795 201.36423569681799 L 105 105 L 30.753787975412465 179.24621202458746"
+          d="M 55.50252531694164 154.4974746830583 A 70 70 0 0 0 77.1996476555653 169.24282379787866 L 105 105 L 55.50252531694164 154.4974746830583"
           fill="#8adb96"
         />
         <foreignObject
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={32.3659665089764}
-          y={210.14200703190198}
+          x={52.03888473380103}
+          y={181.19418693229235}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -9747,8 +9747,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={32.3659665089764}
-          y={211.14200703190198}
+          x={52.03888473380103}
+          y={182.19418693229235}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
