@@ -56,7 +56,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -72,7 +72,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 297 210"
           width="100%"
@@ -854,7 +854,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -870,7 +870,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -967,7 +967,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -1064,7 +1064,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -1161,7 +1161,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -1258,7 +1258,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -1355,7 +1355,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -1477,7 +1477,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -1488,7 +1488,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={0.5}
         viewBox="0 0 297 210"
         width="100%"
@@ -1926,7 +1926,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </svg>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2233,7 +2233,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2421,7 +2421,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
       />
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2622,7 +2622,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2638,7 +2638,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 297 210"
           width="100%"
@@ -2799,7 +2799,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -2810,7 +2810,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={0.5}
         viewBox="0 0 297 210"
         width="100%"
@@ -3429,7 +3429,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -3445,7 +3445,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 297 210"
           width="100%"
@@ -3606,7 +3606,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -3622,7 +3622,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 297 210"
           width="100%"
@@ -4417,7 +4417,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -4433,7 +4433,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 297 210"
           width="100%"
@@ -5215,7 +5215,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5226,7 +5226,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={0.5}
         viewBox="0 0 297 210"
         width="100%"
@@ -5677,7 +5677,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5971,7 +5971,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
       />
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -5982,7 +5982,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={0.5}
         viewBox="0 0 297 210"
         width="100%"
@@ -6321,7 +6321,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -6337,7 +6337,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -6465,7 +6465,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -6593,7 +6593,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -6721,7 +6721,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -6849,7 +6849,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -6977,7 +6977,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           className="sc-bwzfXH hkUCIO"
           height="100%"
           overflow="hidden"
-          preserveAspectRatio="xMinYMid meet"
+          preserveAspectRatio="xMidYMid meet"
           strokeWidth={0.025}
           viewBox="0 0 49.5 210"
           width="100%"
@@ -7140,7 +7140,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
       </div>
     </div>
     <div
-      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+      className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
     >
       <h3
         className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -7151,7 +7151,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMidYMin meet"
         strokeWidth={0.5}
         viewBox="0 0 297 210"
         width="100%"
@@ -7809,7 +7809,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -7820,7 +7820,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       className="sc-bwzfXH hkUCIO"
       height="100%"
       overflow="hidden"
-      preserveAspectRatio="xMinYMin meet"
+      preserveAspectRatio="xMidYMin meet"
       strokeWidth={0.5}
       viewBox="0 0 297 210"
       width="100%"
@@ -8433,7 +8433,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -8449,7 +8449,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 297 210"
         width="100%"
@@ -8677,7 +8677,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -8693,7 +8693,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 297 210"
         width="100%"
@@ -9482,7 +9482,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -9783,7 +9783,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -9799,7 +9799,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -10020,7 +10020,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -10241,7 +10241,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -10462,7 +10462,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -10683,7 +10683,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -10904,7 +10904,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11197,7 +11197,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -11213,7 +11213,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11341,7 +11341,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11469,7 +11469,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11597,7 +11597,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11725,7 +11725,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -11853,7 +11853,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 49.5 210"
         width="100%"
@@ -12023,7 +12023,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -12039,7 +12039,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -12198,7 +12198,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -12357,7 +12357,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -12568,7 +12568,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -12584,7 +12584,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -12712,7 +12712,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -12840,7 +12840,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 99 210"
         width="100%"
@@ -13010,7 +13010,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -13026,7 +13026,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -13247,7 +13247,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -13540,7 +13540,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -13556,7 +13556,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -13777,7 +13777,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -14070,7 +14070,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14086,7 +14086,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -14307,7 +14307,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -14600,7 +14600,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
   className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 jpJBUN"
+    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14616,7 +14616,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"
@@ -14713,7 +14713,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
         className="sc-bwzfXH hkUCIO"
         height="100%"
         overflow="hidden"
-        preserveAspectRatio="xMinYMid meet"
+        preserveAspectRatio="xMidYMid meet"
         strokeWidth={0.025}
         viewBox="0 0 148.5 210"
         width="100%"

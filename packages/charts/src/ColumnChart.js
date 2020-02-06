@@ -83,6 +83,7 @@ export default function ColumnChart({
           <ChartSvg
             key={groupIndex}
             strokeWidth={scaledTextHeight / 40}
+            textAlignment={'center'}
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           >
             {elements.map(({ value }, index) => {
