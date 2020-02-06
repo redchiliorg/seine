@@ -23,9 +23,10 @@ import ChartLegend from './ChartLegend';
 
 type Props = $Rest<ChartProps, {| kind: string |}>;
 
-const RADIUS = VIEWPORT_HEIGHT / 2;
-const OUTER_RADIUS = VIEWPORT_HEIGHT / 2 + VIEWPORT_HEIGHT / 9;
-const INNER_RADIUS = VIEWPORT_HEIGHT / 6;
+const RADIUS = VIEWPORT_HEIGHT / 3;
+const OUTER_TEXT_WIDTH = VIEWPORT_HEIGHT / 9;
+const OUTER_RADIUS = (4 * RADIUS) / 3;
+const INNER_RADIUS = RADIUS / 3;
 const CENTER = VIEWPORT_HEIGHT / 2;
 
 /**
@@ -64,7 +65,10 @@ export default function PieChart({
     <View {...viewProps}>
       <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
       <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
-        <ChartSvg viewBox={`0 0 ${VIEWPORT_HEIGHT} ${VIEWPORT_HEIGHT}`}>
+        <ChartSvg
+          viewBox={`0 0 ${VIEWPORT_HEIGHT} ${VIEWPORT_HEIGHT}`}
+          textAlignment={'center'}
+        >
           {elements.map(({ title, value }, index) => {
             const start = end;
             const startX = endX;
@@ -115,6 +119,7 @@ export default function PieChart({
                 fontWeight={400}
                 x={textX}
                 y={textY}
+                {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
               >
                 {value}
                 {units}
@@ -131,6 +136,7 @@ export default function PieChart({
                   x={textX}
                   y={textY}
                   ref={titleTypographyMethodsRef}
+                  {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
                 >
                   {title}
                 </SvgTypography>

@@ -44,7 +44,7 @@ export const ContentOfPieAndBarSiblingCharts = (props) => (
         body: {
           elements: createBlockElements([
             { title: 'repairs', value: 12 },
-            { title: 'consulting', value: 10 },
+            { title: 'consulting of something long', value: 10 },
             { title: 'training', value: 8 },
             { title: 'product sales', value: 64 },
             { title: 'others', value: 6 },
