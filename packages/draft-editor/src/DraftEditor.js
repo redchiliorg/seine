@@ -25,8 +25,8 @@ const Container = styled.div`
     height: 100%;
     align-items: ${({ verticalAlignment = 'start' }) => verticalAlignment};
   }
-  ${({ isSelected }: Props) =>
-    isSelected
+  ${({ selected }: Props) =>
+    selected
       ? css`
           border: 1px dashed blue;
         `

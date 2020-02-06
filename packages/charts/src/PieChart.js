@@ -59,7 +59,8 @@ export default function PieChart({
   let endX = Math.cos(end);
   let endY = Math.sin(end);
 
-  const textHeight = titleMethods.getScaledHeight();
+  const textHeight = titleMethods.getHeight();
+  const scaledTextHeight = titleMethods.getScaledHeight();
 
   return (
     <View {...viewProps}>
@@ -117,6 +118,7 @@ export default function PieChart({
                 textAnchor={'middle'}
                 variant={'h4'}
                 fontWeight={400}
+                ref={titleTypographyMethodsRef}
                 x={textX}
                 y={textY}
                 {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
@@ -135,7 +137,6 @@ export default function PieChart({
                   fontWeight={400}
                   x={textX}
                   y={textY}
-                  ref={titleTypographyMethodsRef}
                   {...(value < quarter && { width: OUTER_TEXT_WIDTH })}
                 >
                   {title}
@@ -149,7 +150,7 @@ export default function PieChart({
         {legend && (
           <ChartLegend
             palette={palette}
-            size={textHeight}
+            size={scaledTextHeight}
             elements={elements}
           />
         )}

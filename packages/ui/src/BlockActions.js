@@ -23,8 +23,8 @@ const Container = styled(Box)`
     & > * > * {
       opacity: 0;
     }
-    ${({ isSelected = false }: Props) =>
-      isSelected
+    ${({ selected = false }: Props) =>
+      selected
         ? css`
             border: 1px dashed blue;
             pointer-events: none;
@@ -102,7 +102,7 @@ export default function BlockActions({
     <Container
       {...containerProps}
       ref={containerRef}
-      isSelected={!notSelectable && selection.includes(id)}
+      selected={!notSelectable && selection.includes(id)}
       onClick={React.useCallback(
         (event: SyntheticMouseEvent<>) => {
           if (
