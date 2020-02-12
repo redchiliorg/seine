@@ -19,4 +19,6 @@ export { default as ChartSvg } from './ChartSvg';
 
 export { default as ChartLegend } from './ChartLegend';
 
+export { default as ChartLayout } from './ChartLayout';
+
 export * from './types';
