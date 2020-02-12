@@ -23,6 +23,7 @@ const ChartLayoutContent = styled.div`
 const ChartLayoutDescription = styled.div`
   height: 12.5%;
   display: flex;
+  align-items: center;
 `;
 
 type Props = {
@@ -36,12 +37,15 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLayout({ title, children, description }: Props) {
+export default React.forwardRef(function ChartLayout(
+  { title, children, description }: Props,
+  ref
+) {
   return (
-    <ChartLayoutContainer>
+    <ChartLayoutContainer ref={ref}>
       <ChartLayoutTitle>{title}</ChartLayoutTitle>
       <ChartLayoutContent>{children}</ChartLayoutContent>
       <ChartLayoutDescription>{description}</ChartLayoutDescription>
     </ChartLayoutContainer>
   );
-}
+});
