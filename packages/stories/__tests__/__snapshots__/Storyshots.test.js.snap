@@ -12524,8 +12524,17 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
 
 exports[`Storyshots Single.Chart Pie Chart 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
+  <div
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  >
+    <h3
+      className="ChartTitle-sc-8rh5zq-0 PVfkM"
+    >
+      Chart title
+    </h3>
+  </div>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -12882,10 +12891,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
 
 exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -14552,10 +14561,10 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -15664,10 +15673,10 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -16485,10 +16494,10 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
 
 exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -17213,10 +17222,10 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -17999,10 +18008,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Value 100 And Dy 5 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -19075,10 +19084,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Max Value 100 And Dy 18 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
@@ -19803,10 +19812,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
 
 exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
 <div
-  className="Grid-sc-1m9mzof-0 dZdgqZ Page__ChartContainer-sc-5msxqn-0 dFltLJ"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
   <div
-    className="ChartContainer__StyledChartContainer-sc-1lnti1a-0 dLCYgK"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 PVfkM"
