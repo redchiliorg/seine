@@ -1,9 +1,10 @@
 // @flow
 import * as React from 'react';
 import styled from 'styled-components';
+import type { ChartElement } from '@seine/core';
 
 type Props = {
-  children: React.ChildrenArray<any>,
+  elements: ChartElement[],
   palette: string[],
 };
 
@@ -24,13 +25,11 @@ const LegendLabel = styled.p`
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLegend({ children, palette }: Props) {
-  const childrenCount = React.Children.count(children);
-
-  return React.Children.map(children, (title, index) => (
+export default function ChartLegend({ elements, palette }: Props) {
+  return elements.map(({ title }, index) => (
     <React.Fragment key={index}>
       <LegendBox color={palette[index % palette.length]} />
-      <LegendLabel maxWidth={`calc(${100 / childrenCount}% - 3em)`}>
+      <LegendLabel maxWidth={`calc(${100 / elements.length}% - 3em)`}>
         {title}
       </LegendLabel>
     </React.Fragment>

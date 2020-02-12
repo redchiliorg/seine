@@ -74,8 +74,8 @@ export default function Chart({
 
   const legendItems = useAutoMemo(
     ExactChart === ColumnChart
-      ? groupElements(elements).map(([title]) => title)
-      : elements.map(({ title }) => title)
+      ? groupElements(elements).map(([title]) => ({ title }))
+      : elements
   );
 
   return (
@@ -88,7 +88,7 @@ export default function Chart({
       })}
       title={<ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>}
       description={
-        legend ? <ChartLegend palette={palette}>{legendItems}</ChartLegend> : ''
+        legend ? <ChartLegend palette={palette} elements={legendItems} /> : ''
       }
     >
       <svg
