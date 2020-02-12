@@ -19,8 +19,8 @@ import ChartAxis from './ChartAxis';
 type Props = {
   elements: ChartElement[],
   maxValue: number,
-  minValue?: number,
 
+  minValue?: number,
   dy?: number,
   palette?: string[],
   units?: string,

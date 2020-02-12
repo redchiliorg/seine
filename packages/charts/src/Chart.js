@@ -10,14 +10,12 @@ import ColumnChart from './ColumnChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import ChartLayout from './ChartLayout';
-import ChartTitle from './ChartTitle';
 import type { ChartProps } from './types';
 import {
   defaultChartLegend,
   defaultChartPalette,
   defaultChartTextAlignment,
   defaultChartTitle,
-  defaultChartXAxis,
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
@@ -48,17 +46,16 @@ export const defaultChartRenderMap = {
 export default function Chart({
   kind = chartTypes.BAR,
   chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
-
-  legend = defaultChartLegend,
-  palette = defaultChartPalette,
-  title = defaultChartTitle,
-  textAlignment = defaultChartTextAlignment,
-  xAxis = defaultChartXAxis,
-
-  elements,
-
   ...chartProps
 }: Props) {
+  const {
+    legend = defaultChartLegend,
+    palette = defaultChartPalette,
+    title = defaultChartTitle,
+    textAlignment = defaultChartTextAlignment,
+    elements,
+  } = chartProps;
+
   const [resized, setResized] = React.useState(false);
   const resizeObservable = useAutoMemo(
     new ResizeObserver(() => {
@@ -86,10 +83,11 @@ export default function Chart({
           resizeObservable.observe(resizeTarget);
         }
       })}
-      title={<ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>}
+      title={title}
       description={
         legend ? <ChartLegend palette={palette} elements={legendItems} /> : ''
       }
+      textAlignment={textAlignment}
     >
       <svg
         preserveAspectRatio="xMidYMax meet"
@@ -98,7 +96,7 @@ export default function Chart({
         viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
         overflow={'visible'}
       >
-        <ExactChart {...chartProps} elements={elements} palette={palette} />
+        <ExactChart {...chartProps} />
       </svg>
     </ChartLayout>
   );

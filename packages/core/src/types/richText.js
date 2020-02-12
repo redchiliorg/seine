@@ -3,9 +3,12 @@ import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState';
 
 export type RichTextBody = RawDraftContentState;
 
+export type TextAlignment = 'left' | 'center' | 'right';
+export type VerticalAlignment = 'start' | 'center' | 'end';
+
 export type RichTextFormat = {
-  textAlignment: 'left' | 'center' | 'right',
-  verticalAlignment: 'start' | 'center' | 'end',
+  textAlignment: TextAlignment,
+  verticalAlignment: VerticalAlignment,
 };
 
 export const RICH_TEXT = 'draft';
