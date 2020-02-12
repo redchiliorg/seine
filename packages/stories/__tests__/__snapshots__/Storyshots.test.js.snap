@@ -58,15 +58,11 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Sales ($ millions)
-        </h3>
-      </div>
+        Sales ($ millions)
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -872,7 +868,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -987,15 +983,11 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -2516,7 +2508,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -2577,15 +2569,11 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -3033,7 +3021,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -3094,15 +3082,11 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -3381,7 +3365,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -3446,15 +3430,11 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Car dealership sales in 2012 (number of cars sold)
-        </h3>
-      </div>
+        Car dealership sales in 2012 (number of cars sold)
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -3627,7 +3607,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat jnoVr"
@@ -3661,15 +3641,11 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Car dealership sales in 2013 (number of cars sold)
-        </h3>
-      </div>
+        Car dealership sales in 2013 (number of cars sold)
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -3842,7 +3818,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat jnoVr"
@@ -3889,15 +3865,11 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -4224,7 +4196,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -4238,15 +4210,11 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -4862,7 +4830,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -4963,15 +4931,11 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -5298,7 +5262,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -5312,15 +5276,11 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Sales ($ millions)
-        </h3>
-      </div>
+        Sales ($ millions)
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -6126,7 +6086,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -6254,15 +6214,11 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Sales ($ millions)
-        </h3>
-      </div>
+        Sales ($ millions)
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -7068,7 +7024,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -7183,15 +7139,11 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -7639,7 +7591,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -7713,15 +7665,11 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -8000,7 +7948,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -8052,15 +8000,11 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -8396,7 +8340,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -8452,15 +8396,11 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Column chart: 4 groups of 3 elements
-        </h3>
-      </div>
+        Column chart: 4 groups of 3 elements
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -9500,7 +9440,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -9561,15 +9501,11 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
     <div
       className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
     >
-      <div
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+      <h3
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
       >
-        <h3
-          className="ChartTitle-sc-8rh5zq-0 PVfkM"
-        >
-          Chart title
-        </h3>
-      </div>
+        Chart title
+      </h3>
       <div
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
@@ -10185,7 +10121,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
       >
         <div
           className="sc-htpNat bpFbqC"
@@ -10322,15 +10258,11 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Bar chart
-    </h3>
-  </div>
+    Bar chart
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -10946,7 +10878,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -11037,15 +10969,11 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Chart title
-    </h3>
-  </div>
+    Chart title
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -11372,7 +11300,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -11389,15 +11317,15 @@ exports[`Storyshots Single.Chart Dummy Chart Layout 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kzdisR"
   >
     <h3
       className="ChartTitle-sc-8rh5zq-0 kUhcgr"
     >
       Chart layout
     </h3>
-  </div>
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -11406,7 +11334,7 @@ exports[`Storyshots Single.Chart Dummy Chart Layout 1`] = `
     </p>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 hYoIRZ"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -11494,15 +11422,11 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Sales ($ millions)
-    </h3>
-  </div>
+    Sales ($ millions)
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -12308,7 +12232,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -12426,15 +12350,11 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Chart title
-    </h3>
-  </div>
+    Chart title
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -12713,7 +12633,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -12768,15 +12688,11 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 3 groups of 5 elements
-    </h3>
-  </div>
+    Column chart: 3 groups of 5 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -14374,7 +14290,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -14438,15 +14354,11 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 4 groups of 3 elements
-    </h3>
-  </div>
+    Column chart: 4 groups of 3 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -15486,7 +15398,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -15550,15 +15462,11 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 4 groups, 4 elements
-    </h3>
-  </div>
+    Column chart: 4 groups, 4 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -16334,7 +16242,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -16371,15 +16279,11 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 3 groups, 3 elements
-    </h3>
-  </div>
+    Column chart: 3 groups, 3 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -17062,7 +16966,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -17099,15 +17003,11 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 3 groups of 5 elements
-    </h3>
-  </div>
+    Column chart: 3 groups of 5 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -17857,7 +17757,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -17885,15 +17785,11 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 3 groups of 5 elements
-    </h3>
-  </div>
+    Column chart: 3 groups of 5 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -18933,7 +18829,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -18961,15 +18857,11 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 3 groups of 5 elements
-    </h3>
-  </div>
+    Column chart: 3 groups of 5 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -19661,7 +19553,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
@@ -19689,15 +19581,11 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
 <div
   className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
 >
-  <div
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 heVnST"
+  <h3
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
   >
-    <h3
-      className="ChartTitle-sc-8rh5zq-0 PVfkM"
-    >
-      Column chart: 2 groups, 2 elements
-    </h3>
-  </div>
+    Column chart: 2 groups, 2 elements
+  </h3>
   <div
     className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
   >
@@ -20199,7 +20087,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 kxLjEl"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 jDRHHP"
   >
     <div
       className="sc-htpNat bpFbqC"
