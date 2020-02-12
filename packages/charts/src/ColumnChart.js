@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
-import type { ChartElement } from '@seine/core/src/types';
+import type { ChartElement } from '@seine/core';
 
 import {
   defaultChartDy,
