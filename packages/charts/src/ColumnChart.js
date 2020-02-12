@@ -1,19 +1,12 @@
 // @flow
 import * as React from 'react';
-import {
-  FlexBox,
-  SvgTypography,
-  useTypographyChildrenMethods,
-} from '@seine/styles';
+import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
+import type { ChartElement } from '@seine/core/src/types';
 
 import {
   defaultChartDy,
-  defaultChartLegend,
   defaultChartMinValue,
   defaultChartPalette,
-  defaultChartPaletteKey,
-  defaultChartTextAlignment,
-  defaultChartTitle,
   defaultChartUnits,
   defaultChartYAxis,
   VIEWPORT_HEIGHT,
@@ -21,13 +14,20 @@ import {
 } from './constants';
 import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
-import ChartTitle from './ChartTitle';
-import ChartSvg from './ChartSvg';
-import ChartLegend from './ChartLegend';
+import ChartAxis from './ChartAxis';
 
-type Props = $Rest<ChartProps, {| kind: string |}> & {
-  as?: React.ElementType,
+type Props = {
+  elements: ChartElement[],
+  maxValue: number,
+  minValue?: number,
+
+  dy?: number,
+  palette?: string[],
+  units?: string,
+  yAxis?: boolean,
 };
+
+const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
 
 /**
  * @description Column chart content block renderer.
@@ -40,22 +40,11 @@ export default function ColumnChart({
   minValue: initialMinValue = defaultChartMinValue,
 
   dy = defaultChartDy,
-  legend = defaultChartLegend,
   palette = defaultChartPalette,
-  paletteKey = defaultChartPaletteKey,
-  textAlignment = defaultChartTextAlignment,
-  title = defaultChartTitle,
   units = defaultChartUnits,
   yAxis = defaultChartYAxis,
-
-  as: View = React.Fragment,
-  id,
-  parent_id,
-  size,
-  type,
-  ...viewProps
 }: Props) {
-  const [maxValue, minValue, titles, groups] = useGroupedElements(
+  const [maxValue, minValue, titledElements, groups] = useGroupedElements(
     elements,
     initialMinValue,
     initialMaxValue,
@@ -63,30 +52,35 @@ export default function ColumnChart({
   );
 
   const [methods, childMethodsRef] = useTypographyChildrenMethods(
-    elements.length
+    titledElements.length
   );
   const scaledTextHeight = methods.getScaledHeight();
-  const textHeight = methods.getHeight();
 
-  const WIDTH = VIEWPORT_WIDTH / groups.length;
-  const HEIGHT = VIEWPORT_HEIGHT;
-
-  const columnWidth = WIDTH / (1 + elements.length / groups.length);
-  const columnHeight = HEIGHT - 2 * scaledTextHeight;
+  const groupWidth = (VIEWPORT_WIDTH - 2 * GUTTER_WIDTH) / groups.length;
+  const columnHeight = VIEWPORT_HEIGHT;
 
   return (
-    <View {...viewProps}>
-      <ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>
-
-      <FlexBox height={`calc(100% - ${2 * textHeight}px)`} width={'auto'}>
-        {groups.map(([group, elements], groupIndex) => (
-          <ChartSvg
-            key={groupIndex}
-            strokeWidth={scaledTextHeight / 40}
-            textAlignment={'center'}
-            viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          >
-            {elements.map(({ value }, index) => {
+    <>
+      {groups.map(([group, groupElements], groupIndex) => {
+        const columnWidth = groupWidth / (groupElements.length + 1);
+        return (
+          <React.Fragment key={groupIndex}>
+            {groupIndex === 0 && !!yAxis && (
+              <g strokeWidth={scaledTextHeight / 40}>
+                <ChartAxis
+                  arrow
+                  finite
+                  direction={'up'}
+                  length={VIEWPORT_HEIGHT}
+                  max={maxValue}
+                  step={dy}
+                  units={units}
+                  y={VIEWPORT_HEIGHT}
+                  maxWidth={GUTTER_WIDTH}
+                />
+              </g>
+            )}
+            {groupElements.map(({ value }, index) => {
               const rectHeight =
                 columnHeight *
                 ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
@@ -97,8 +91,12 @@ export default function ColumnChart({
                   fill={fill}
                   height={rectHeight}
                   width={columnWidth}
-                  x={(index + 0.5) * columnWidth}
-                  y={columnHeight - rectHeight + scaledTextHeight}
+                  x={
+                    GUTTER_WIDTH +
+                    groupWidth * groupIndex +
+                    (index + 0.5) * columnWidth
+                  }
+                  y={columnHeight - rectHeight}
                   key={`selection.${index}`}
                 />,
                 <SvgTypography
@@ -106,9 +104,13 @@ export default function ColumnChart({
                   ref={childMethodsRef}
                   textAnchor={'middle'}
                   width={columnWidth}
-                  x={(index + 1) * columnWidth}
-                  y={columnHeight - rectHeight + scaledTextHeight}
-                  key={`value.${elements.length * groupIndex + index}`}
+                  x={
+                    GUTTER_WIDTH +
+                    groupWidth * groupIndex +
+                    (index + 1) * columnWidth
+                  }
+                  y={columnHeight - rectHeight}
+                  key={`value.${groupElements.length * groupIndex + index}`}
                 >
                   {value}
                   {units}
@@ -116,28 +118,27 @@ export default function ColumnChart({
               ];
             })}
             <path
-              d={`m${0} ${columnHeight + scaledTextHeight}h${WIDTH}`}
+              strokeWidth={scaledTextHeight / 40}
+              d={`m${GUTTER_WIDTH +
+                groupIndex * groupWidth +
+                columnWidth / 4} ${VIEWPORT_HEIGHT}h${columnWidth *
+                groupElements.length +
+                columnWidth / 2}`}
               stroke={'black'}
             />
             <SvgTypography
               textAnchor={'middle'}
               dominantBaseline={'hanging'}
               key={'group'}
-              x={WIDTH / 2}
-              y={columnHeight + scaledTextHeight}
-              width={columnWidth * elements.length}
+              x={GUTTER_WIDTH + groupIndex * groupWidth + groupWidth / 2}
+              y={VIEWPORT_HEIGHT}
+              width={columnWidth * groupElements.length}
             >
               {group}
             </SvgTypography>
-          </ChartSvg>
-        ))}
-      </FlexBox>
-
-      <FlexBox width={'auto'} height={2 * textHeight}>
-        {legend && (
-          <ChartLegend palette={palette} size={textHeight} elements={titles} />
-        )}
-      </FlexBox>
-    </View>
+          </React.Fragment>
+        );
+      })}
+    </>
   );
 }
