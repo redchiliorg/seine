@@ -12,7 +12,6 @@ const ChartLayoutContainer = styled.div`
 
 const ChartLayoutTitle = styled.div`
   height: 12.5%;
-  width: 100%;
   display: flex;
   align-items: center;
 `;
