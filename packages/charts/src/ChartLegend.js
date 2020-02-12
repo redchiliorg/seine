@@ -6,23 +6,17 @@ import type { ChartElement } from '@seine/core';
 type Props = {
   elements: ChartElement[],
   palette: string[],
-  size: number,
 };
 
 const LegendBox = styled.div`
-  && {
-    background-color: ${({ color }) => color};
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
+  background-color: ${({ color }) => color};
+  width: 2em;
+  height: 2em;
 `;
 
-const LegendItem = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
+const LegendLabel = styled.p`
+  margin: 1em;
+  ${({ maxWidth }) => ({ maxWidth })}
 `;
 
 /**
@@ -32,9 +26,11 @@ const LegendItem = styled.div`
  */
 export default function ChartLegend({ elements, palette }: Props) {
   return elements.map(({ title }, index) => (
-    <LegendItem key={index}>
+    <React.Fragment key={index}>
       <LegendBox color={palette[index % palette.length]} />
-      {title}
-    </LegendItem>
+      <LegendLabel maxWidth={`calc(${100 / elements.length}% - 3em)`}>
+        {title}
+      </LegendLabel>
+    </React.Fragment>
   ));
 }
