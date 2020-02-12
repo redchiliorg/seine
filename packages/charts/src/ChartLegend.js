@@ -12,8 +12,8 @@ type Props = {
 const LegendBox = styled.div`
   && {
     background-color: ${({ color }) => color};
-    width: ${({ size }) => size}px;
-    height: ${({ size }) => size}px;
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
   }
 `;
@@ -30,14 +30,10 @@ const LegendItem = styled.div`
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLegend({ elements, palette, size }: Props) {
+export default function ChartLegend({ elements, palette }: Props) {
   return elements.map(({ title }, index) => (
     <LegendItem key={index}>
-      <LegendBox
-        color={palette[index % palette.length]}
-        key={index}
-        size={size}
-      />
+      <LegendBox color={palette[index % palette.length]} />
       {title}
     </LegendItem>
   ));

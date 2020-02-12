@@ -6,8 +6,32 @@ import {
 } from '@seine/core';
 import { Content } from '@seine/content';
 import { Editor } from '@seine/editor';
+import {
+  ChartLayout,
+  ChartLegend,
+  ChartTitle,
+  defaultChartPalette,
+} from '@seine/charts';
+import { defaultTheme, ThemeProvider } from '@seine/styles';
 
 export default { title: 'Single.Chart' };
+
+export const DummyChartLayout = () => (
+  <ThemeProvider theme={defaultTheme}>
+    <ChartLayout
+      title={<ChartTitle>Chart layout</ChartTitle>}
+      description={
+        <ChartLegend
+          elements={[{ title: 'Element #1' }, { title: 'Element #2' }]}
+          palette={defaultChartPalette}
+          size={15}
+        />
+      }
+    >
+      <p>Content of the chart</p>
+    </ChartLayout>
+  </ThemeProvider>
+);
 
 export const BarChart = ({
   as: Component = Content,
