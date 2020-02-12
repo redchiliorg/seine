@@ -15,6 +15,7 @@ type Props = {
   units?: string,
   x?: number,
   y: number,
+  maxWidth?: number,
 };
 
 /**
@@ -28,6 +29,7 @@ export default function ChartAxis({
   length,
   noLine = false,
   finite = false,
+  maxWidth = null,
   max,
   min = 0,
   step,
@@ -47,14 +49,11 @@ export default function ChartAxis({
   return (
     <>
       {Array.from({ length: total }).map((_, index) => [
-        !noLine && (
+        !noLine && index !== count && (
           <line
             key={'line'}
-            x1={x + (direction === 'right' ? offset * index : 1.25 * textWidth)}
-            x2={
-              x +
-              (direction === 'right' ? offset * (index + 1) : 1.25 * textWidth)
-            }
+            x1={x + (direction === 'right' ? offset * index : textWidth)}
+            x2={x + (direction === 'right' ? offset * (index + 1) : textWidth)}
             y1={y - (direction === 'up' && offset * index)}
             y2={y - (direction === 'up' && offset * (index + 1))}
             stroke={'black'}
@@ -69,8 +68,10 @@ export default function ChartAxis({
             {...(direction === 'right' && { dominantBaseline: 'hanging' })}
             {...(direction === 'up' && {
               dominantBaseline: 'end',
-              height: length / total,
               textAnchor: 'end',
+              ...(maxWidth === null
+                ? { height: length / total }
+                : { width: maxWidth }),
             })}
           >
             {`${parseInt(min + (index * (max - min)) / count)} `}
@@ -90,7 +91,7 @@ export default function ChartAxis({
       )}
       {!!arrow && (
         <path
-          d={`m${1.25 * textWidth} ${y - length + getYScale(16)}v${1}`}
+          d={`m${textWidth} ${y - length + getYScale(16)}v${1}`}
           fill="none"
           key="y-axis"
           markerStart="url(#arrowUp)"

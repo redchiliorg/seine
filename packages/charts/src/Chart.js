@@ -22,6 +22,7 @@ import {
   VIEWPORT_WIDTH,
 } from './constants';
 import ChartLegend from './ChartLegend';
+import { groupElements } from './helpers';
 
 type Config = {
   chartRenderMap: {
@@ -71,6 +72,12 @@ export default function Chart({
     }
   });
 
+  const legendItems = useAutoMemo(
+    ExactChart === ColumnChart
+      ? groupElements(elements).map(([title]) => ({ title }))
+      : elements
+  );
+
   return (
     <ChartLayout
       ref={useAutoCallback((resizeTarget) => {
@@ -81,7 +88,7 @@ export default function Chart({
       })}
       title={<ChartTitle textAlignment={textAlignment}>{title}</ChartTitle>}
       description={
-        legend ? <ChartLegend palette={palette} elements={elements} /> : ''
+        legend ? <ChartLegend palette={palette} elements={legendItems} /> : ''
       }
     >
       <svg

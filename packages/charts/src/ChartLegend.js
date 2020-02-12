@@ -16,7 +16,8 @@ const LegendBox = styled.div`
 
 const LegendLabel = styled.p`
   margin: 1em;
-  ${({ maxWidth }) => ({ maxWidth })}
+  ${({ maxWidth }) => ({ maxWidth })};
+  white-space: pre-wrap;
 `;
 
 /**
