@@ -135,6 +135,15 @@ export default React.forwardRef(function SvgTypography(
   const scaledTextWidth = methods.getScaledWidth();
   const scaledTextHeight = methods.getScaledHeight();
 
+  const condensedFactor = Math.min(
+    typeof width === 'number' && width < scaledTextWidth
+      ? width / scaledTextWidth
+      : Infinity,
+    typeof height === 'number' && height < scaledTextHeight
+      ? height / scaledTextHeight
+      : Infinity
+  );
+
   return (
     <SvgTypographyForeign
       ref={svgElementRef}
@@ -167,14 +176,8 @@ export default React.forwardRef(function SvgTypography(
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}
       >
-        {typeof width === 'number' && scaledTextWidth > width ? (
-          <CondensedText factor={width / scaledTextWidth}>
-            {children}
-          </CondensedText>
-        ) : typeof height === 'number' && scaledTextHeight > height ? (
-          <CondensedText factor={height / scaledTextHeight}>
-            {children}
-          </CondensedText>
+        {condensedFactor !== Infinity ? (
+          <CondensedText factor={condensedFactor}>{children}</CondensedText>
         ) : (
           children
         )}

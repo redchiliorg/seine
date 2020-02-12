@@ -11,7 +11,6 @@ import {
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
-import type { ChartProps } from './types';
 import ChartAxis from './ChartAxis';
 
 type Props = {
@@ -25,7 +24,7 @@ type Props = {
 
 /**
  * @description Bar chart content block renderer.
- * @param {ChartProps}: props
+ * @param {Props}: props
  * @returns {React.Node}
  */
 export default function BarChart({

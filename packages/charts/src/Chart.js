@@ -70,7 +70,7 @@ export default function Chart({
   });
 
   const legendItems = useAutoMemo(
-    ExactChart === ColumnChart
+    ExactChart === ColumnChart || ExactChart === LineChart
       ? groupElements(elements).map(([title]) => ({ title }))
       : elements
   );

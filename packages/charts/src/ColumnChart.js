@@ -12,7 +12,6 @@ import {
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
-import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartAxis from './ChartAxis';
 
@@ -20,8 +19,8 @@ type Props = {
   elements: ChartElement[],
   maxValue: number,
 
-  minValue?: number,
   dy?: number,
+  minValue?: number,
   palette?: string[],
   units?: string,
   yAxis?: boolean,
@@ -31,7 +30,7 @@ const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
 
 /**
  * @description Column chart content block renderer.
- * @param {ChartProps}: props
+ * @param {Props}: props
  * @returns {React.Node}
  */
 export default function ColumnChart({
