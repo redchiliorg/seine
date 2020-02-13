@@ -67,6 +67,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -933,6 +934,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -2537,6 +2539,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -3074,6 +3077,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -3442,6 +3446,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -3665,6 +3670,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -3901,6 +3907,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -4249,6 +4256,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -5006,6 +5014,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -5354,6 +5363,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -6233,6 +6243,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -7099,6 +7110,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -7649,6 +7661,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -8004,6 +8017,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -8416,6 +8430,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -9539,6 +9554,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
       >
         <svg
+          className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
           height="90%"
           overflow="visible"
           preserveAspectRatio="xMidYMax meet"
@@ -10335,6 +10351,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -11086,6 +11103,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -11554,6 +11572,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -12427,6 +12446,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -12789,6 +12809,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -14477,6 +14498,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -15607,6 +15629,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -16437,6 +16460,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -17174,6 +17198,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -17966,6 +17991,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -19048,6 +19074,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
@@ -19782,6 +19809,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
       className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
     >
       <svg
+        className="Chart__Svg-sc-1exjd5l-0 hDIWRa"
         height="90%"
         overflow="visible"
         preserveAspectRatio="xMidYMax meet"
