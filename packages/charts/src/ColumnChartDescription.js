@@ -5,7 +5,7 @@ import { useAutoMemo } from 'hooks.macro';
 
 import type { Props as ChartLegendProps } from './ChartLegend';
 import ChartLegend from './ChartLegend';
-import { groupElements } from './helpers';
+import { titleIdentityElements } from './helpers';
 import { defaultChartLegend } from './constants';
 
 type Props = $Rest<ChartLegendProps, {| kind: ChartType |}> & {
@@ -25,9 +25,7 @@ export default function ColumnChartDescription({
   return (
     <ChartLegend
       {...legendProps}
-      elements={useAutoMemo(
-        legend ? groupElements(elements).map(([title]) => ({ title })) : []
-      )}
+      elements={useAutoMemo(legend ? titleIdentityElements(elements) : [])}
     />
   );
 }
