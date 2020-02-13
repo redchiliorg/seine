@@ -21,34 +21,36 @@ import BarChartDescription from './BarChartDescription';
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function Chart({ kind = chartTypes.BAR, ...chartProps }: Props) {
-  const {
-    title = defaultChartTitle,
-    textAlignment = defaultChartTextAlignment,
-  } = chartProps;
+export default function Chart({
+  kind = chartTypes.BAR,
+  title = defaultChartTitle,
+  textAlignment = defaultChartTextAlignment,
+  ...chartProps
+}: Props) {
+  chartProps.textAlignment = textAlignment;
 
   return (
     <ChartLayout
-      ref={useResizeTargetRef()}
-      title={title}
       description={
-        kind === chartTypes.COLUMN ? (
+        kind === chartTypes.BAR ? (
+          <BarChartDescription {...chartProps} />
+        ) : kind === chartTypes.COLUMN ? (
           <ColumnChartDescription {...chartProps} />
         ) : kind === chartTypes.LINE ? (
           <LineChartDescription {...chartProps} />
         ) : kind === chartTypes.PIE ? (
           <PieChartDescription {...chartProps} />
-        ) : kind === chartTypes.BAR ? (
-          <BarChartDescription {...chartProps} />
         ) : null
       }
+      ref={useResizeTargetRef()}
       textAlignment={textAlignment}
+      title={title}
     >
       <ChartSvg>
-        {kind === chartTypes.COLUMN ? (
-          <ColumnChartContent {...chartProps} />
-        ) : kind === chartTypes.BAR ? (
+        {kind === chartTypes.BAR ? (
           <BarChartContent {...chartProps} />
+        ) : kind === chartTypes.COLUMN ? (
+          <ColumnChartContent {...chartProps} />
         ) : kind === chartTypes.LINE ? (
           <LineChartContent {...chartProps} />
         ) : kind === chartTypes.PIE ? (
