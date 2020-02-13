@@ -17,6 +17,5 @@ export {
 } from './useTypographyChildrenMethods';
 export { default as useTypographyChildren } from './useTypographyChildren';
 export { default as ResizeContainer } from './ResizeContainer';
-export { default as FlexBox } from './FlexBox';
 
 export * from './constants';

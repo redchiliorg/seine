@@ -188,6 +188,7 @@ export default function ChartEditor({
           />
         </ChartContainer>
       </Dialog>
+
       <ExactChart textAlignment={textAlignment} {...chartProps} />
       {mode !== 'fullscreen' && (
         <BlockActions

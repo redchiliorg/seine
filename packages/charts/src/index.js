@@ -21,4 +21,6 @@ export { default as ChartLegend } from './ChartLegend';
 
 export { default as ChartLayout } from './ChartLayout';
 
+export { default as ChartResizeProvider } from './ChartResizeProvider';
+
 export * from './types';

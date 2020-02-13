@@ -2,8 +2,7 @@
 import * as React from 'react';
 import type { ChartType } from '@seine/core';
 import { chartTypes } from '@seine/core';
-import { useAutoCallback, useAutoEffect, useAutoMemo } from 'hooks.macro';
-import ResizeObserver from 'resize-observer-polyfill';
+import { useAutoEffect, useAutoMemo } from 'hooks.macro';
 import styled from 'styled-components/macro';
 
 import BarChart from './BarChart';
@@ -22,6 +21,7 @@ import {
 } from './constants';
 import ChartLegend from './ChartLegend';
 import { groupElements } from './helpers';
+import ChartResizeContext from './ChartResizeContext';
 
 type Config = {
   chartRenderMap: {
@@ -63,36 +63,38 @@ export default function Chart({
     elements,
   } = chartProps;
 
-  const [resized, setResized] = React.useState(false);
-  const resizeObservable = useAutoMemo(
-    new ResizeObserver(() => {
-      setResized(true);
-    })
-  );
+  const { observer: resizeObserver } = React.useContext(ChartResizeContext);
+
+  const resizeTargetRef = React.useRef<HTMLElement>(null);
+  const { current: resizeTarget } = resizeTargetRef;
 
   useAutoEffect(() => {
-    if (resized) {
-      setResized(false);
+    const { current: currentResizeTarget } = resizeTargetRef;
+    if (resizeTarget !== currentResizeTarget) {
+      if (resizeTarget) {
+        resizeObserver.unobserve(resizeTarget);
+      }
+      if (currentResizeTarget) {
+        resizeObserver.observe(currentResizeTarget);
+      }
     }
   });
 
-  const legendItems = useAutoMemo(
-    ExactChart === ColumnChart || ExactChart === LineChart
-      ? groupElements(elements).map(([title]) => ({ title }))
-      : elements
-  );
-
   return (
     <ChartLayout
-      ref={useAutoCallback((resizeTarget) => {
-        if (resizeTarget) {
-          resizeObservable.disconnect();
-          resizeObservable.observe(resizeTarget);
-        }
-      })}
+      ref={resizeTargetRef}
       title={title}
       description={
-        legend ? <ChartLegend palette={palette} elements={legendItems} /> : ''
+        <ChartLegend
+          palette={palette}
+          elements={useAutoMemo(
+            legend
+              ? ExactChart === ColumnChart || ExactChart === LineChart
+                ? groupElements(elements).map(([title]) => ({ title }))
+                : elements
+              : []
+          )}
+        />
       }
       textAlignment={textAlignment}
     >
