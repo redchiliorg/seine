@@ -1,53 +1,19 @@
 // @flow
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export default styled.svg.attrs(
+import { VIEWPORT_HEIGHT, VIEWPORT_WIDTH } from './constants';
+
+const ChartSvg = styled.svg.attrs(
   ({
-    verticalAlignment: align = 'center',
-    textAlignment = 'left',
-    meetOrSlice = 'meet',
-    overflow = 'hidden',
-    preserveAspectRatio = `x${
-      textAlignment === 'center'
-        ? 'Mid'
-        : textAlignment === 'left'
-        ? 'Min'
-        : 'Max'
-    }Y${
-      align === 'center' ? 'Mid' : align === 'start' ? 'Min' : 'Max'
-    } ${meetOrSlice}`,
-    height = '100%',
+    overflow = 'visible',
     width = '100%',
-  }) => ({ preserveAspectRatio, width, height, overflow })
+    height = '90%',
+    viewBox = `0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`,
+  }) => ({ overflow, width, height, viewBox })
 )`
-  ${({ minWidth = null, width }) =>
-    minWidth !== null
-      ? css`
-          min-width: ${minWidth}px;
-          width: auto;
-        `
-      : css`
-          width: ${width};
-        `}
-
-  ${({ minHeight = null, height }) =>
-    minHeight !== null
-      ? css`
-          min-height: ${minHeight}px;
-          height: auto;
-        `
-      : css`
-          height: ${height};
-        `}
-
-  ${({ maxWidth }) =>
-    maxWidth &&
-    css`
-      max-width: ${maxWidth}px;
-    `};
-
-  ${({ overflow }) =>
-    css`
-      overflow: ${overflow};
-    `}
+  && {
+    ${({ overflow, width, height }) => ({ overflow, width, height })};
+  }
 `;
+
+export default ChartSvg;

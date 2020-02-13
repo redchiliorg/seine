@@ -1,72 +1,30 @@
 // @flow
 import * as React from 'react';
-import { Dialog, IconButton as MuiIconButton } from '@material-ui/core';
-import {
-  Close as CloseIcon,
-  Delete as DeleteIcon,
-  Edit as EditIcon,
-} from '@material-ui/icons';
-import type { BlockEditor, ChartType, ElementsAction } from '@seine/core';
-import {
-  blockTypes,
-  chartTypes,
-  DELETE_BLOCK,
-  DESELECT_ALL_BLOCKS,
-  initialElementsState,
-  reduceElements,
-  SELECT_BLOCK,
-  UPDATE_BLOCK_BODY,
-  UPDATE_BLOCK_EDITOR,
-} from '@seine/core';
-import {
-  ActionButton,
-  BlockActions,
-  BlockActionsGroup,
-  BlockActionsItem,
-  Fab,
-  Toolbar,
-} from '@seine/ui';
-import type { ChartProps } from '@seine/charts';
+import { chartTypes, initialElementsState } from '@seine/core';
+import { BlockActions } from '@seine/ui';
 import {
   BarChart,
-  ChartContainer,
+  BarChartDescription,
+  Chart,
+  ChartLayout,
+  ChartSvg,
   ColumnChart,
-  defaultChartRenderMap,
+  ColumnChartDescription,
   defaultChartTextAlignment,
+  defaultChartTitle,
   LineChart,
+  LineChartDescription,
   PieChart,
+  PieChartDescription,
 } from '@seine/charts';
-import styled from 'styled-components/macro';
+import { useResizeTargetRef } from '@seine/styles';
 
-import type { ChartEditorProps } from './types';
-import ChartToolbar from './ChartToolbar';
-import ChartTextAlignmentButton from './ChartTextAlignmentButton';
-import ChartEditorChildren from './ChartEditorChildren';
-
-type Props = (ChartProps & BlockEditor) & {
-  chartEditorRenderMap?: {
-    [kind: ChartType]: React.ComponentType<ChartEditorProps>,
-  },
-};
-
-const defaultChartEditorRenderMap = {
-  [chartTypes.PIE]: (props) => <PieChart {...props} as={ChartEditorChildren} />,
-  [chartTypes.BAR]: (props) => <BarChart {...props} as={ChartEditorChildren} />,
-  [chartTypes.COLUMN]: (props) => (
-    <ColumnChart {...props} as={ChartEditorChildren} />
-  ),
-  [chartTypes.LINE]: (props) => (
-    <LineChart {...props} as={ChartEditorChildren} />
-  ),
-};
+import type { ChartEditorProps as Props } from './types';
+import ChartTitleInput from './ChartTitleInput';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
 };
-
-const IconButton = styled(MuiIconButton)`
-  opacity: ${({ selected = true }) => (selected ? 1.0 : 0.5)};
-`;
 
 /**
  * @description Chart editor component.
@@ -76,164 +34,92 @@ const IconButton = styled(MuiIconButton)`
 export default function ChartEditor({
   kind = chartTypes.BAR,
   addButtonRenderMap,
-  chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
-  chartEditorRenderMap: {
-    [kind]: ExactChartEditor,
-  } = defaultChartEditorRenderMap,
-  dispatch,
+  selection,
   editor = defaultEditor,
   mode,
-  selection,
-  textAlignment = defaultChartTextAlignment,
+  dispatch,
   ...chartProps
 }: Props) {
-  const dispatchElements = React.useCallback(
-    (action: ElementsAction) => {
-      const { elements, selection } = reduceElements(
-        {
-          elements: chartProps.elements,
-          selection: editor.selection,
-        },
-        action
-      );
+  const {
+    title = defaultChartTitle,
+    textAlignment = defaultChartTextAlignment,
+  } = chartProps;
 
-      if (elements !== chartProps.elements) {
-        dispatch({
-          type: UPDATE_BLOCK_BODY,
-          body: { elements },
-        });
-      }
+  /*
+  const dispatchElements = useAutoCallback((action: ElementsAction) => {
+    const { elements, selection } = reduceElements(
+      {
+        elements: chartProps.elements,
+        selection: editor.selection,
+      },
+      action
+    );
 
-      if (selection !== editor.selection) {
-        dispatch({
-          type: UPDATE_BLOCK_EDITOR,
-          editor: { selection },
-        });
-      }
-    },
-    [chartProps.elements, dispatch, editor.selection]
-  );
+    if (elements !== chartProps.elements) {
+      dispatch({
+        type: UPDATE_BLOCK_BODY,
+        body: { elements },
+      });
+    }
 
-  const { elements, title, ...format } = chartProps;
+    if (selection !== editor.selection) {
+      dispatch({
+        type: UPDATE_BLOCK_EDITOR,
+        editor: { selection },
+      });
+    }
+  });
+   */
+
+  const resizeTargetRef = useResizeTargetRef();
 
   return (
-    <ChartContainer>
-      <Dialog
-        fullScreen
-        open={
-          selection.length === 1 &&
-          selection[0] === chartProps.id &&
-          mode === 'fullscreen'
-        }
-        scroll={'body'}
-      >
-        <ChartToolbar
-          id={chartProps.id}
-          body={{ elements, title }}
-          format={{ ...format, kind }}
-          dispatch={dispatch}
-          editor={editor}
-          mode={mode}
-          parent_id={chartProps.parent_id}
-          selection={selection}
-          type={blockTypes.CHART}
-          position={'fixed'}
+    <>
+      {selection.length === 1 && selection[0] === chartProps.id ? (
+        <ChartLayout
+          ref={resizeTargetRef}
+          title={
+            <ChartTitleInput
+              dispatch={dispatch}
+              textAlignment={textAlignment}
+              value={title}
+            />
+          }
+          description={
+            kind === chartTypes.COLUMN ? (
+              <ColumnChartDescription {...chartProps} />
+            ) : kind === chartTypes.LINE ? (
+              <LineChartDescription {...chartProps} />
+            ) : kind === chartTypes.PIE ? (
+              <PieChartDescription {...chartProps} />
+            ) : kind === chartTypes.BAR ? (
+              <BarChartDescription {...chartProps} />
+            ) : null
+          }
+          textAlignment={textAlignment}
         >
-          <ActionButton
-            ariaLabel={'close'}
-            as={IconButton}
-            color={'inherit'}
-            dispatch={dispatch}
-            edge={'start'}
-            type={DESELECT_ALL_BLOCKS}
-          >
-            <CloseIcon />
-          </ActionButton>
-
-          <Toolbar.Separator />
-
-          <ChartTextAlignmentButton
-            as={IconButton}
-            dispatch={dispatch}
-            selected={textAlignment === 'left'}
-            value={'left'}
-            title={'Align title to left'}
-          />
-          <ChartTextAlignmentButton
-            as={IconButton}
-            dispatch={dispatch}
-            selected={textAlignment === 'center'}
-            value={'center'}
-            title={'Align title to center'}
-          />
-          <ChartTextAlignmentButton
-            as={IconButton}
-            selected={textAlignment === 'right'}
-            dispatch={dispatch}
-            value={'right'}
-            title={'Align title to right'}
-          />
-
-          <Toolbar.Separator />
-        </ChartToolbar>
-
-        <ChartContainer style={{ paddingTop: 96 }}>
-          <ExactChartEditor
-            dispatch={dispatch}
-            dispatchElements={dispatchElements}
-            editor={editor}
-            selection={selection}
-            textAlignment={textAlignment}
-            {...chartProps}
-          />
-        </ChartContainer>
-      </Dialog>
-
-      <ExactChart textAlignment={textAlignment} {...chartProps} />
-      {mode !== 'fullscreen' && (
-        <BlockActions
-          addButtonRenderMap={addButtonRenderMap}
-          direction={'column'}
-          dispatch={dispatch}
-          editor={editor}
-          id={chartProps.id}
-          notSelectable
-          selection={selection}
-        >
-          <BlockActionsGroup
-            alignItems={'center'}
-            container
-            justify={'space-around'}
-          >
-            <BlockActionsItem item>
-              <ActionButton
-                as={Fab}
-                dispatch={dispatch}
-                id={chartProps.id}
-                mode={'fullscreen'}
-                size={'small'}
-                title={'Edit content'}
-                type={SELECT_BLOCK}
-                color={'primary'}
-              >
-                <EditIcon />
-              </ActionButton>
-              &nbsp;
-              <ActionButton
-                as={Fab}
-                color={'secondary'}
-                dispatch={dispatch}
-                id={chartProps.id}
-                size={'small'}
-                type={DELETE_BLOCK}
-                title={'Delete block'}
-              >
-                <DeleteIcon />
-              </ActionButton>
-            </BlockActionsItem>
-          </BlockActionsGroup>
-        </BlockActions>
+          <ChartSvg>
+            {kind === chartTypes.BAR ? (
+              <BarChart {...chartProps} />
+            ) : kind === chartTypes.COLUMN ? (
+              <ColumnChart {...chartProps} />
+            ) : kind === chartTypes.PIE ? (
+              <PieChart {...chartProps} />
+            ) : kind === chartTypes.LINE ? (
+              <LineChart {...chartProps} />
+            ) : null}
+          </ChartSvg>
+        </ChartLayout>
+      ) : (
+        <Chart {...chartProps} />
       )}
-    </ChartContainer>
+      <BlockActions
+        addButtonRenderMap={addButtonRenderMap}
+        dispatch={dispatch}
+        editor={editor}
+        id={chartProps.id}
+        selection={selection}
+      />
+    </>
   );
 }

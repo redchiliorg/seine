@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useAutoLayoutEffect, useAutoMemo } from 'hooks.macro';
 import ResizeObserver from 'resize-observer-polyfill';
 
-import ChartResizeContext from './ChartResizeContext';
+import ResizeObserverContext from './ResizeObserverContext';
 
 type Props = {
   children?: any,
@@ -14,7 +14,7 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartResizeProvider({ children = null }: Props) {
+export default function ResizeObserverProvider({ children = null }: Props) {
   const [count, setCount] = React.useState(0);
 
   const observer = useAutoMemo(
@@ -28,8 +28,8 @@ export default function ChartResizeProvider({ children = null }: Props) {
   });
 
   return (
-    <ChartResizeContext.Provider value={{ observer, count }}>
+    <ResizeObserverContext.Provider value={useAutoMemo({ observer, count })}>
       {children}
-    </ChartResizeContext.Provider>
+    </ResizeObserverContext.Provider>
   );
 }

@@ -52,7 +52,6 @@ export const BarChart = ({
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927',
         type: 'chart',
-        title: 'Bar chart',
         body: {
           elements: createBlockElements([
             { title: 'WFLA', value: 20.8 },

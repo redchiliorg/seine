@@ -4,6 +4,7 @@ import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
 import type { ChartElement } from '@seine/core';
 
 import {
+  defaultBarChartLegend,
   defaultChartDx,
   defaultChartPalette,
   defaultChartUnits,
@@ -31,6 +32,7 @@ export default function BarChart({
   elements,
 
   dx = defaultChartDx,
+  legend = defaultBarChartLegend,
   palette = defaultChartPalette,
   units = defaultChartUnits,
   xAxis = defaultChartXAxis,
@@ -46,7 +48,7 @@ export default function BarChart({
     valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const valueWidth = valueMethods.getScaledWidth();
+  const valueWidth = legend ? 0 : valueMethods.getScaledWidth();
 
   const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 4);
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
@@ -72,7 +74,7 @@ export default function BarChart({
             x={0}
             y={y + barHeight / 2}
           >
-            {title}
+            {legend ? '' : title}
             {'  '}
           </SvgTypography>,
 

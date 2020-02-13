@@ -16,6 +16,8 @@ export {
   default as useTypographyChildrenMethods,
 } from './useTypographyChildrenMethods';
 export { default as useTypographyChildren } from './useTypographyChildren';
-export { default as ResizeContainer } from './ResizeContainer';
+export { default as ResizeObserverContext } from './ResizeObserverContext';
+export { default as ResizeObserverProvider } from './ResizeObserverProvider';
+export { default as useResizeTargetRef } from './useResizeTargetRef';
 
 export * from './constants';

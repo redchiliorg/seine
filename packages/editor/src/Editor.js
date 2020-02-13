@@ -24,6 +24,7 @@ import { DraftEditor, DraftToolbar } from '@seine/draft-editor';
 import { BlockDeleteButton, useReducerEx } from '@seine/ui';
 import { ThemeProvider } from '@seine/styles';
 import { TableEditor, TableToolbar } from '@seine/tables-editor';
+import { useAutoCallback, useAutoEffect, useAutoMemo } from 'hooks.macro';
 
 import PieChartAddButton from './PieChartAddButton';
 import BarChartAddButton from './BarChartAddButton';
@@ -127,16 +128,16 @@ export default function Editor({
   toolbarRenderMap = defaultToolbarRenderMap,
   ...contentProps
 }: Props) {
-  const init = React.useCallback(
-    () => ({ ...initialBlocksState, blocks: children }),
-    [children]
-  );
+  const init = useAutoCallback(() => ({
+    ...initialBlocksState,
+    blocks: children,
+  }));
   const [{ blocks, mode, selection }, dispatch] = useReducerEx<
     BlocksState,
     BlocksAction
   >(reduceBlocks, initialBlocksState, init);
 
-  React.useEffect(() => {
+  useAutoEffect(() => {
     onChange(
       // no extra data should be passed, like `editor` key value
       blocks.map(({ id, body, format, parent_id, type }) => ({
@@ -147,28 +148,24 @@ export default function Editor({
         type,
       }))
     );
-  }, [blocks, onChange]);
+  });
 
-  const { type, ...block } = React.useMemo(
-    () =>
-      selection.length === 1
-        ? blocks.find(({ id }) => selection.includes(id))
-        : parent,
-    [blocks, parent, selection]
+  const { type, ...block } = useAutoMemo(
+    selection.length === 1
+      ? blocks.find(({ id }) => selection.includes(id))
+      : parent
   );
 
   const BlockToolbar = toolbarRenderMap[type];
 
-  const contentChildren = React.useMemo(
-    () =>
-      blocks.map((block) => ({
-        ...block,
-        addButtonRenderMap,
-        dispatch,
-        mode,
-        selection,
-      })),
-    [addButtonRenderMap, blocks, dispatch, mode, selection]
+  const contentChildren = useAutoMemo(
+    blocks.map((block) => ({
+      ...block,
+      addButtonRenderMap,
+      dispatch,
+      mode,
+      selection,
+    }))
   );
 
   return (
@@ -191,7 +188,10 @@ export default function Editor({
         <ClickAwayListener
           onClickAway={() => {
             if (
-              !(document.activeElement instanceof HTMLButtonElement) &&
+              !(
+                document.activeElement instanceof HTMLButtonElement ||
+                document.activeElement instanceof HTMLInputElement
+              ) &&
               contentChildren.length > 0 &&
               mode !== 'fullscreen'
             ) {

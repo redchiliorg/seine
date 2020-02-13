@@ -7,80 +7,28 @@ import {
   SELECT_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT,
   UPDATE_BLOCK_ELEMENT_BY_GROUP,
-  UPDATE_BLOCK_ELEMENT_BY_ID,
 } from '@seine/core';
-import { ChartLegend, ChartTitle } from '@seine/charts';
 import styled from 'styled-components/macro';
 import { ClickAwayListener } from '@material-ui/core';
 
-import ChartTitleInput from './ChartTitleInput';
-
-type Props = {
-  child: React.ElementType,
-  dispatchElements: (ElementsAction) => any,
-};
+import type { ChartEditorProps } from './types';
 
 const HiddenSvgGroup = styled.g`
   opacity: 0;
 `;
 
-const StyledInput = styled.input`
-  && {
-    background: none;
-    border: 0;
-    color: inherit;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    text-align: inherit;
-    width: 100%;
-  }
-`;
+type Props = ChartEditorProps & {
+  dispatchElements: (ElementsAction) => any,
+};
+
+type ChildProps = Props & {
+  child: React.Node,
+};
 
 const defaultChartEditorChildRenderMap = new Map([
   [
-    ChartTitle,
-    ({ child, dispatch }) => (
-      <ChartTitle {...child.props}>
-        <ChartTitleInput
-          dispatch={dispatch}
-          textAlignment={child.props.textAlignment}
-          value={child.props.children}
-        />
-      </ChartTitle>
-    ),
-  ],
-  [
-    ChartLegend,
-    ({
-      child: {
-        props: { elements, ...childProps },
-      },
-      dispatchElements,
-    }) => (
-      <ChartLegend
-        {...childProps}
-        elements={elements.map(({ id, title }, index) => ({
-          title: (
-            <StyledInput
-              key={index}
-              value={title}
-              onChange={({ currentTarget }) =>
-                dispatchElements({
-                  type: UPDATE_BLOCK_ELEMENT_BY_ID,
-                  body: { title: currentTarget.value },
-                  id,
-                })
-              }
-            />
-          ),
-        }))}
-      />
-    ),
-  ],
-  [
     'rect',
-    ({ child, editor, dispatchElements }) => {
+    ({ child, editor, dispatchElements }: ChildProps) => {
       const [source, index] = child.key.split('.');
       if (source === 'selection' && index) {
         return (
@@ -120,7 +68,7 @@ const defaultChartEditorChildRenderMap = new Map([
   ],
   [
     SvgTypography,
-    ({ child, dispatchElements }) => {
+    ({ child, dispatchElements }: ChildProps) => {
       const {
         key,
         props: { children },

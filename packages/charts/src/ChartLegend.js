@@ -3,9 +3,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 import type { ChartElement } from '@seine/core';
 
-type Props = {
+import { defaultChartPalette } from './constants';
+
+export type Props = {
   elements: ChartElement[],
-  palette: string[],
+  palette?: string[],
 };
 
 const LegendBox = styled.div`
@@ -31,7 +33,10 @@ const LegendItem = styled.div`
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLegend({ elements, palette }: Props) {
+export default function ChartLegend({
+  elements,
+  palette = defaultChartPalette,
+}: Props) {
   return elements.map(({ title }, index) => (
     <LegendItem key={index}>
       <LegendBox color={palette[index % palette.length]} />

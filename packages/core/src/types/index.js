@@ -75,8 +75,7 @@ export type BlockEditor = {
     [BlockType]: React$Component<AddButtonProps>,
   },
   dispatch: (BlocksAction) => any,
-  editor: { [string]: any },
-  mode: 'default' | 'fullscreen',
+  editor?: { [string]: any },
   selection: BlockId[],
 };
 
