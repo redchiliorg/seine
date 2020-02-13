@@ -108,13 +108,13 @@ export default React.forwardRef(function SvgTypography(
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
         context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width;
+        return context.measureText(text).width + 16;
       };
       const getXScale = (value = 1) =>
-        (window.devicePixelRatio * (value * svgElement.getBBox().height)) /
+        (window.devicePixelRatio * value * svgElement.getBBox().height) /
         svgElement.getBoundingClientRect().height;
       const getYScale = (value = 1) =>
-        (window.devicePixelRatio * (value * svgElement.getBBox().width)) /
+        (window.devicePixelRatio * value * svgElement.getBBox().width) /
         svgElement.getBoundingClientRect().width;
       const getScaledWidth = () => getXScale(getWidth());
       const getScaledHeight = () => getYScale(getHeight());
@@ -134,6 +134,15 @@ export default React.forwardRef(function SvgTypography(
 
   const scaledTextWidth = methods.getScaledWidth();
   const scaledTextHeight = methods.getScaledHeight();
+
+  const condensedFactor = Math.min(
+    typeof width === 'number' && width < scaledTextWidth
+      ? width / scaledTextWidth
+      : Infinity,
+    typeof height === 'number' && height < scaledTextHeight
+      ? height / scaledTextHeight
+      : Infinity
+  );
 
   return (
     <SvgTypographyForeign
@@ -167,14 +176,8 @@ export default React.forwardRef(function SvgTypography(
         yScale={methods.getYScale()}
         xScale={methods.getXScale()}
       >
-        {typeof width === 'number' && scaledTextWidth > width ? (
-          <CondensedText factor={width / scaledTextWidth}>
-            {children}
-          </CondensedText>
-        ) : typeof height === 'number' && scaledTextHeight > height ? (
-          <CondensedText factor={height / scaledTextHeight}>
-            {children}
-          </CondensedText>
+        {condensedFactor !== Infinity ? (
+          <CondensedText factor={condensedFactor}>{children}</CondensedText>
         ) : (
           children
         )}

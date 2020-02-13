@@ -29,6 +29,7 @@ const ChartLayoutDescription = styled.div`
   height: 12.5%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 type Props = {

@@ -11,7 +11,6 @@ import {
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
-import type { ChartProps } from './types';
 
 type Props = {
   elements: ChartElement[],
@@ -29,7 +28,7 @@ const START = (3 * Math.PI) / 4;
 
 /**
  * @description Pie chart content block renderer.
- * @param {ChartProps}: props
+ * @param {Props}: props
  * @returns {React.Node}
  */
 export default function PieChart({

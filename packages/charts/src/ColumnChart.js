@@ -12,7 +12,6 @@ import {
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
-import type { ChartProps } from './types';
 import { useGroupedElements } from './helpers';
 import ChartAxis from './ChartAxis';
 
@@ -20,8 +19,8 @@ type Props = {
   elements: ChartElement[],
   maxValue: number,
 
-  minValue?: number,
   dy?: number,
+  minValue?: number,
   palette?: string[],
   units?: string,
   yAxis?: boolean,
@@ -31,7 +30,7 @@ const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
 
 /**
  * @description Column chart content block renderer.
- * @param {ChartProps}: props
+ * @param {Props}: props
  * @returns {React.Node}
  */
 export default function ColumnChart({
@@ -60,25 +59,23 @@ export default function ColumnChart({
   const columnHeight = VIEWPORT_HEIGHT;
 
   return (
-    <>
+    <g strokeWidth={scaledTextHeight / 40}>
       {groups.map(([group, groupElements], groupIndex) => {
         const columnWidth = groupWidth / (groupElements.length + 1);
         return (
           <React.Fragment key={groupIndex}>
             {groupIndex === 0 && !!yAxis && (
-              <g strokeWidth={scaledTextHeight / 40}>
-                <ChartAxis
-                  arrow
-                  finite
-                  direction={'up'}
-                  length={VIEWPORT_HEIGHT}
-                  max={maxValue}
-                  step={dy}
-                  units={units}
-                  y={VIEWPORT_HEIGHT}
-                  maxWidth={GUTTER_WIDTH}
-                />
-              </g>
+              <ChartAxis
+                arrow
+                finite
+                direction={'up'}
+                length={VIEWPORT_HEIGHT}
+                max={maxValue}
+                step={dy}
+                units={units}
+                y={VIEWPORT_HEIGHT}
+                maxWidth={GUTTER_WIDTH}
+              />
             )}
             {groupElements.map(({ value }, index) => {
               const rectHeight =
@@ -118,7 +115,6 @@ export default function ColumnChart({
               ];
             })}
             <path
-              strokeWidth={scaledTextHeight / 40}
               d={`m${GUTTER_WIDTH +
                 groupIndex * groupWidth +
                 columnWidth / 4} ${VIEWPORT_HEIGHT}h${columnWidth *
@@ -139,6 +135,6 @@ export default function ColumnChart({
           </React.Fragment>
         );
       })}
-    </>
+    </g>
   );
 }

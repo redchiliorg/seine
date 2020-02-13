@@ -10,14 +10,20 @@ type Props = {
 
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
+  display: inline-block;
   width: 2em;
   height: 2em;
 `;
 
 const LegendLabel = styled.p`
-  margin: 1em;
-  ${({ maxWidth }) => ({ maxWidth })};
+  display: inline-block;
+  margin: 0.5em;
   white-space: pre-wrap;
+`;
+
+const LegendItem = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 /**
@@ -27,11 +33,9 @@ const LegendLabel = styled.p`
  */
 export default function ChartLegend({ elements, palette }: Props) {
   return elements.map(({ title }, index) => (
-    <React.Fragment key={index}>
+    <LegendItem key={index}>
       <LegendBox color={palette[index % palette.length]} />
-      <LegendLabel maxWidth={`calc(${100 / elements.length}% - 3em)`}>
-        {title}
-      </LegendLabel>
-    </React.Fragment>
+      <LegendLabel>{title}</LegendLabel>
+    </LegendItem>
   ));
 }

@@ -44,7 +44,7 @@ export default function ChartAxis({
     { getScaledWidth, getYScale },
     textMethodsRef,
   ] = useTypographyChildrenMethods(total - 1);
-  const textWidth = getScaledWidth();
+  const textWidth = Math.max(maxWidth, getScaledWidth());
 
   return (
     <>
@@ -69,9 +69,8 @@ export default function ChartAxis({
             {...(direction === 'up' && {
               dominantBaseline: 'end',
               textAnchor: 'end',
-              ...(maxWidth === null
-                ? { height: length / total }
-                : { width: maxWidth }),
+              height: length / total,
+              ...(maxWidth !== null && { width: maxWidth }),
             })}
           >
             {`${parseInt(min + (index * (max - min)) / count)} `}

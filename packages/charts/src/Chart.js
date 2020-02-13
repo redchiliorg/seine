@@ -4,6 +4,7 @@ import type { ChartType } from '@seine/core';
 import { chartTypes } from '@seine/core';
 import { useAutoCallback, useAutoEffect, useAutoMemo } from 'hooks.macro';
 import ResizeObserver from 'resize-observer-polyfill';
+import styled from 'styled-components/macro';
 
 import BarChart from './BarChart';
 import ColumnChart from './ColumnChart';
@@ -38,6 +39,12 @@ export const defaultChartRenderMap = {
   [chartTypes.PIE]: PieChart,
 };
 
+const Svg = styled.svg`
+  && {
+    overflow: visible;
+  }
+`;
+
 /**
  * @description Switch to chart render component by its kind.
  * @param {Props} props
@@ -70,7 +77,7 @@ export default function Chart({
   });
 
   const legendItems = useAutoMemo(
-    ExactChart === ColumnChart
+    ExactChart === ColumnChart || ExactChart === LineChart
       ? groupElements(elements).map(([title]) => ({ title }))
       : elements
   );
@@ -89,7 +96,7 @@ export default function Chart({
       }
       textAlignment={textAlignment}
     >
-      <svg
+      <Svg
         preserveAspectRatio="xMidYMax meet"
         width="100%"
         height="90%"
@@ -97,7 +104,7 @@ export default function Chart({
         overflow={'visible'}
       >
         <ExactChart {...chartProps} />
-      </svg>
+      </Svg>
     </ChartLayout>
   );
 }
