@@ -6,13 +6,13 @@ export { default as Chart } from './Chart';
 export { default as ChartTitle } from './ChartTitle';
 export type { Props as ChartTitleProps } from './ChartTitle';
 
-export { default as BarChart } from './BarChart';
+export { default as BarChartContent } from './BarChartContent';
 
-export { default as ColumnChart } from './ColumnChart';
+export { default as ColumnChartContent } from './ColumnChartContent';
 
-export { default as LineChart } from './LineChart';
+export { default as LineChartContent } from './LineChartContent';
 
-export { default as PieChart } from './PieChart';
+export { default as PieChartContent } from './PieChartContent';
 
 export { default as ChartSvg } from './ChartSvg';
 

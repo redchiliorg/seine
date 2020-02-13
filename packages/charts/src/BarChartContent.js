@@ -28,7 +28,7 @@ type Props = {
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function BarChart({
+export default function BarChartContent({
   elements,
 
   dx = defaultChartDx,

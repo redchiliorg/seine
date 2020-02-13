@@ -4,10 +4,10 @@ import { chartTypes } from '@seine/core';
 import { useResizeTargetRef } from '@seine/styles';
 
 import ChartLayout from './ChartLayout';
-import BarChart from './BarChart';
-import ColumnChart from './ColumnChart';
-import LineChart from './LineChart';
-import PieChart from './PieChart';
+import BarChartContent from './BarChartContent';
+import ColumnChartContent from './ColumnChartContent';
+import LineChartContent from './LineChartContent';
+import PieChartContent from './PieChartContent';
 import type { ChartProps as Props } from './types';
 import ChartSvg from './ChartSvg';
 import { defaultChartTextAlignment, defaultChartTitle } from './constants';
@@ -46,13 +46,13 @@ export default function Chart({ kind = chartTypes.BAR, ...chartProps }: Props) {
     >
       <ChartSvg>
         {kind === chartTypes.COLUMN ? (
-          <ColumnChart {...chartProps} />
+          <ColumnChartContent {...chartProps} />
         ) : kind === chartTypes.BAR ? (
-          <BarChart {...chartProps} />
+          <BarChartContent {...chartProps} />
         ) : kind === chartTypes.LINE ? (
-          <LineChart {...chartProps} />
+          <LineChartContent {...chartProps} />
         ) : kind === chartTypes.PIE ? (
-          <PieChart {...chartProps} />
+          <PieChartContent {...chartProps} />
         ) : null}
       </ChartSvg>
     </ChartLayout>

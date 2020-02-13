@@ -31,7 +31,7 @@ const START = (3 * Math.PI) / 4;
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function PieChart({
+export default function PieChartContent({
   elements,
   legend = defaultPieChartLegend,
   palette = defaultChartPalette,

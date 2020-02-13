@@ -35,7 +35,7 @@ const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function LineChart({
+export default function LineChartContent({
   elements,
   maxValue: initialMaxValue,
   minValue: initialMinValue = defaultChartMinValue,

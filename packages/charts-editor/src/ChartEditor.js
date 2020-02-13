@@ -3,18 +3,18 @@ import * as React from 'react';
 import { chartTypes, initialElementsState } from '@seine/core';
 import { BlockActions } from '@seine/ui';
 import {
-  BarChart,
+  BarChartContent,
   BarChartDescription,
   Chart,
   ChartLayout,
   ChartSvg,
-  ColumnChart,
+  ColumnChartContent,
   ColumnChartDescription,
   defaultChartTextAlignment,
   defaultChartTitle,
-  LineChart,
+  LineChartContent,
   LineChartDescription,
-  PieChart,
+  PieChartContent,
   PieChartDescription,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
@@ -100,18 +100,18 @@ export default function ChartEditor({
         >
           <ChartSvg>
             {kind === chartTypes.BAR ? (
-              <BarChart {...chartProps} />
+              <BarChartContent {...chartProps} />
             ) : kind === chartTypes.COLUMN ? (
-              <ColumnChart {...chartProps} />
+              <ColumnChartContent {...chartProps} />
             ) : kind === chartTypes.PIE ? (
-              <PieChart {...chartProps} />
+              <PieChartContent {...chartProps} />
             ) : kind === chartTypes.LINE ? (
-              <LineChart {...chartProps} />
+              <LineChartContent {...chartProps} />
             ) : null}
           </ChartSvg>
         </ChartLayout>
       ) : (
-        <Chart {...chartProps} />
+        <Chart {...chartProps} kind={kind} />
       )}
       <BlockActions
         addButtonRenderMap={addButtonRenderMap}

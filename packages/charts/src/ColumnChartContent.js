@@ -33,7 +33,7 @@ const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function ColumnChart({
+export default function ColumnChartContent({
   elements,
   maxValue: initialMaxValue,
   minValue: initialMinValue = defaultChartMinValue,
