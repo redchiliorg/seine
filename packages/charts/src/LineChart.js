@@ -57,17 +57,17 @@ export default function LineChart({
     valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const height = VIEWPORT_HEIGHT;
+  const height = VIEWPORT_HEIGHT - GUTTER_WIDTH;
 
   const x = GUTTER_WIDTH;
-  const y = 0;
+  const y = GUTTER_WIDTH;
 
   const valueHeight = valueMethods.getScaledHeight();
 
-  const graphWidth = VIEWPORT_WIDTH - GUTTER_WIDTH;
+  const graphWidth = VIEWPORT_WIDTH - 2 * GUTTER_WIDTH;
 
   return (
-    <React.Fragment>
+    <g strokeWidth={valueHeight / 40}>
       {!!xAxis &&
         groups.map(([group], index, { length }) => (
           <React.Fragment key={index}>
@@ -95,24 +95,21 @@ export default function LineChart({
                     (index * height) / length} ${graphWidth} 0`}
                   key={['grid', index]}
                   stroke={index > 0 ? '#f0f0f0' : 'black'}
-                  strokeWidth={valueHeight / 40}
                 />
               )
           )
         : null}
       {!!yAxis && (
-        <g strokeWidth={valueHeight / 40}>
-          <ChartAxis
-            arrow
-            direction={'up'}
-            length={height}
-            max={maxValue}
-            min={minValue}
-            maxWidth={GUTTER_WIDTH}
-            step={Math.max(dy, valueHeight)}
-            y={y + height}
-          />
-        </g>
+        <ChartAxis
+          arrow
+          direction={'up'}
+          length={height}
+          max={maxValue}
+          min={minValue}
+          maxWidth={GUTTER_WIDTH}
+          step={Math.max(dy, valueHeight)}
+          y={y + height}
+        />
       )}
       {titles.map(({ id, title }, titleIndex) => [
         <marker
@@ -187,6 +184,6 @@ export default function LineChart({
             ))
         ),
       ])}
-    </React.Fragment>
+    </g>
   );
 }

@@ -108,13 +108,13 @@ export default React.forwardRef(function SvgTypography(
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
         context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width;
+        return context.measureText(text).width + 16;
       };
       const getXScale = (value = 1) =>
-        (window.devicePixelRatio * (value * svgElement.getBBox().height)) /
+        (window.devicePixelRatio * value * svgElement.getBBox().height) /
         svgElement.getBoundingClientRect().height;
       const getYScale = (value = 1) =>
-        (window.devicePixelRatio * (value * svgElement.getBBox().width)) /
+        (window.devicePixelRatio * value * svgElement.getBBox().width) /
         svgElement.getBoundingClientRect().width;
       const getScaledWidth = () => getXScale(getWidth());
       const getScaledHeight = () => getYScale(getHeight());

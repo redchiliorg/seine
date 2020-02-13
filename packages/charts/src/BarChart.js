@@ -57,7 +57,7 @@ export default function BarChart({
   );
 
   return (
-    <>
+    <g strokeWidth={titleHeight / 40}>
       {elements.map(({ title, value }, index) => {
         const width = (barWidth * value) / maxValue;
         const color = palette[index % palette.length];
@@ -100,17 +100,15 @@ export default function BarChart({
         ];
       })}
       {!!xAxis && (
-        <g strokeWidth={titleHeight / 40}>
-          <ChartAxis
-            length={VIEWPORT_WIDTH - titleWidth}
-            max={maxValue}
-            step={dx}
-            units={units}
-            x={titleWidth}
-            y={VIEWPORT_HEIGHT}
-          />
-        </g>
+        <ChartAxis
+          length={VIEWPORT_WIDTH - titleWidth}
+          max={maxValue}
+          step={dx}
+          units={units}
+          x={titleWidth}
+          y={VIEWPORT_HEIGHT}
+        />
       )}
-    </>
+    </g>
   );
 }
