@@ -2577,7 +2577,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "755fdab3-5b34-4f0b-b26d-2e2ad813a85b",
+                  "id": "62e1a33a-c97a-499b-9a34-3d58f741586c",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -2678,7 +2678,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "35d43737-0c89-4e31-bc44-ef11a193ec97",
+                  "id": "4e7b5263-099f-43c5-aad3-da67a2bcefa3",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -2779,7 +2779,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "7e1ec3fb-d778-4dd4-ba0f-dabb14af5465",
+                  "id": "56648ac9-682d-4304-ad48-66af2dfcf717",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -2880,7 +2880,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9d539103-d999-4ac9-954f-51c54d758bb1",
+                  "id": "e293cd8f-8f45-4e4a-b739-f901d10f6a69",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -2981,7 +2981,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "be74735a-b020-4fe9-9430-3e58aeeff8b5",
+                  "id": "fd1aec78-969a-48d4-a543-831614ced62f",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -3082,7 +3082,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f03c3ad3-f6d6-4093-8f91-0934f73338b6",
+                  "id": "9a2c675c-4216-49f3-87d2-72752f74e974",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -4407,7 +4407,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "cf3ed943-062e-4ca7-9f43-22bce8176436",
+                  "id": "cd31aff7-e97e-4654-89de-7ee90c2b3218",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -4508,7 +4508,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "94ea2739-6346-48b0-8703-9aebdd6668c8",
+                  "id": "2643e996-6488-423a-8571-6bca98645acc",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -4609,7 +4609,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "4f36dced-dee6-48e6-a39d-ffb1aa73593e",
+                  "id": "5c80b4f6-c8c3-4d49-8078-2d2c714e61ba",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -4710,7 +4710,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "ca3dbe14-94ef-4d3a-a144-32269c0306cf",
+                  "id": "e5f6808d-33bb-4885-94e8-83ee2fb059e5",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -4811,7 +4811,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "58faedae-3ba4-49f1-b859-7f9eaa1b9e08",
+                  "id": "2ee61738-aefe-40ee-b33f-432c57c9543c",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -4912,7 +4912,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "0aa1b9d7-7e6b-4585-a71d-0c33e1ebc2b5",
+                  "id": "686d670c-f810-4284-991e-6bdc49bdfc9b",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -5013,7 +5013,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "10601f00-fe2a-4c91-8c08-ff9a570c299d",
+                  "id": "abecc605-2c13-458c-9957-c468a0fdc11a",
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
@@ -5114,7 +5114,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "b7f9ebfa-5ea8-449d-a362-3d172494e5d8",
+                  "id": "6c86ebef-9e30-4afc-b08a-bdb6c44c215c",
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
@@ -5215,7 +5215,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "1edbfa8f-e11d-4f03-9b5c-7f2738767015",
+                  "id": "3bba4ee3-7062-481e-9ae4-c4034ec1b7a2",
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
@@ -7539,7 +7539,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "158264fe-5fa4-494b-b1b5-be277a631cc0",
+                  "id": "6cc0c259-37e6-479f-be5a-09c6d4593cfc",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -7640,7 +7640,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "7180f5ca-0ae3-4d2c-b478-e0973ba8c0ec",
+                  "id": "93b5d822-0e6f-41c7-b05c-8f75a4f135f0",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -7741,7 +7741,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "713fc895-047f-4b3f-9635-0ea09a86202f",
+                  "id": "d88f4078-3313-4feb-ac15-5e7c3b78d29f",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -7842,7 +7842,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "a45fa586-bc74-4843-b6fc-e5bdc2befd2e",
+                  "id": "bae2ddf8-599b-443f-8b0e-4b9c09981a2c",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -7943,7 +7943,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "c5d382cc-d023-49f2-b19e-3dc57c2b4bd6",
+                  "id": "6caf45fa-7b74-4700-8403-9c97a50e254a",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -8044,7 +8044,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "52c5badc-c592-42b1-ab68-406538595220",
+                  "id": "a8f7fe39-7987-4dc4-857d-ee56203e66ac",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -8584,7 +8584,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "5b411cbd-50cd-463d-812f-3d3670c677e8",
+                  "id": "f4763f23-0510-48f2-8c46-14aec42e2431",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -8685,7 +8685,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9c3f4d27-b12b-436b-b4ff-f731df311001",
+                  "id": "8c948a3d-c83a-411c-8867-32d69ae47057",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -8786,7 +8786,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f6ea82f4-ceee-4010-8ca2-4b6f5f9d5eeb",
+                  "id": "90708904-7383-427b-a58d-51bf3529310e",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -8887,7 +8887,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "64bbe471-26bb-4a8c-aa76-2fdc47bb0f9c",
+                  "id": "8a814860-6d58-4905-876a-ef396312d613",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -10268,7 +10268,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "428502f6-77a8-4d9b-8359-302eca50a538",
+                  "id": "cb832525-383d-44b1-ab83-21a23ae32e06",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -10369,7 +10369,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "eebc71e1-7302-464e-9791-e5caefba50e0",
+                  "id": "c4af1426-e2c2-44bf-b552-da53c4fb9db8",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -10470,7 +10470,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f26a9907-409d-4759-8184-17d1ba7c111d",
+                  "id": "bef04a5b-da25-4f35-9978-00a76a865a08",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -10571,7 +10571,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "d652644c-ec03-47cf-8cc8-39986556ec14",
+                  "id": "7dbb808b-ee0e-4a77-9dbb-3d584929cace",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -10672,7 +10672,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "51062de2-b269-431f-987d-6a290449fd3f",
+                  "id": "b6fc8e0c-851a-4db5-926a-0b58d5dff4fc",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -10773,7 +10773,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "73917aa0-e31f-4ef0-b450-b4b432ebb94e",
+                  "id": "0a471db4-24bc-4516-a1bd-7e59ec80ec2d",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -10874,7 +10874,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "d0606085-8ee9-4fc6-bb47-6ea9ae8b1320",
+                  "id": "120099d2-c280-42bb-9ec3-1cdb25112666",
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
@@ -10975,7 +10975,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "4b7dba43-c618-46c7-96ce-bb9e2c606dfd",
+                  "id": "5f8d1afc-70c5-4bef-b6fc-48f39b2d8325",
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
@@ -11076,7 +11076,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "60e44ef9-0f2c-4d17-b921-9431f85965fd",
+                  "id": "3f18a0c9-6b04-4e54-8e8c-42145e3c7222",
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
@@ -11354,7 +11354,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "1ebcf18f-90f5-445b-b99c-2b8ea1db4934",
+                "id": "7daac199-21b9-4816-9ca7-ff77cc5fb673",
                 "index": 0,
                 "title": "WFLA",
                 "value": 20.8,
@@ -11455,7 +11455,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "25f2fa10-0cf3-488b-8746-ce1a14867a64",
+                "id": "6bd8e821-4493-43da-adad-f9fa256e4ef3",
                 "index": 1,
                 "title": "Region A",
                 "value": 35.7,
@@ -11556,7 +11556,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "96c6c113-1c03-4828-80e3-4f8d780c36cd",
+                "id": "eaf1a36e-8e9e-41ab-b7d9-44c95f5a5af9",
                 "index": 2,
                 "title": "Region B",
                 "value": 15.8,
@@ -11657,7 +11657,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "90601080-f7c0-42b7-913d-5e18eaff93c9",
+                "id": "653647e2-310e-44f2-8618-1701c62f79fe",
                 "index": 3,
                 "title": "Region C",
                 "value": 40.9,
@@ -11758,7 +11758,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "002947d4-a0b2-4765-8a3e-29be5770a8bb",
+                "id": "730172a6-6245-4c8e-a9b1-9cf87cbfd296",
                 "index": 4,
                 "title": "Region D",
                 "value": 23.6,
@@ -11859,7 +11859,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "749c1e17-a579-4fa6-a6ff-e27c5256dc46",
+                "id": "cf782493-9e53-4732-a647-e56fb07e3532",
                 "index": 5,
                 "title": "Region E",
                 "value": 17.6,
@@ -11960,7 +11960,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "65542c7e-ded1-44ed-b8a7-87cde772283d",
+                "id": "9fa1dae1-ff7c-4f6a-9853-91a2a3dcb970",
                 "index": 6,
                 "title": "Region F",
                 "value": 38.1,
@@ -12061,7 +12061,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "1bbd886c-354e-4320-9cf1-c1e99c6c53a1",
+                "id": "133ed8e4-2940-46d4-94b5-4ce2268091bd",
                 "index": 7,
                 "title": "Region G",
                 "value": 43.8,
@@ -12162,7 +12162,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "53f17dcb-54e6-4f6e-a1df-948fc06928b9",
+                "id": "704d668c-1c1a-47c0-bad5-b74b17ddbe94",
                 "index": 8,
                 "title": "Region H",
                 "value": 16.4,
