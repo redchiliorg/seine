@@ -9,33 +9,28 @@ type Props = {
 };
 
 /**
- * @description Bar chart element value input for editor.
+ * @description Bar chart element title input for editor.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function BarChartElementValueInput(
-  {
-    dispatch,
-    dispatchElements,
-    editor,
-    meta: { index, value },
-    ...inputProps
-  }: Props,
-  ref
-) {
+export default function PieChartElementTitleInput({
+  dispatch,
+  dispatchElements,
+  editor,
+  meta: { index, title },
+  ...inputProps
+}: Props) {
   return (
     <SvgInput
       {...inputProps}
-      ref={ref}
-      type={'number'}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT,
           index,
-          body: { value: +currentTarget.value },
+          body: { title: currentTarget.value },
         })
       )}
-      value={parseFloat(value)}
+      value={title}
     />
   );
-});
+}

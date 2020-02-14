@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { SvgInput } from '@seine/styles';
-import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import { UPDATE_BLOCK_ELEMENT_BY_GROUP } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
 
 type Props = {
@@ -13,29 +13,23 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function BarChartElementValueInput(
-  {
-    dispatch,
-    dispatchElements,
-    editor,
-    meta: { index, value },
-    ...inputProps
-  }: Props,
-  ref
-) {
+export default function ColumnChartGroupTitleInput({
+  dispatch,
+  dispatchElements,
+  editor,
+  meta: group,
+  ...inputProps
+}: Props) {
   return (
     <SvgInput
       {...inputProps}
-      ref={ref}
-      type={'number'}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
-          type: UPDATE_BLOCK_ELEMENT,
-          index,
-          body: { value: +currentTarget.value },
+          type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
+          group,
+          body: { group: currentTarget.value },
         })
       )}
-      value={parseFloat(value)}
     />
   );
-});
+}

@@ -26,6 +26,8 @@ const StyledInput = styled(Input).attrs(
     white-space: pre-wrap;
     ${({ color }) => color && { color }};
     ${({ transform }) => transform && { transform }};
+    ${({ width }) => width && { width }};
+    ${({ height }) => height && { height }};
   }
   ::-webkit-outer-spin-button,
   ::-webkit-inner-spin-button {

@@ -11,7 +11,6 @@ import {
 import { BlockActions } from '@seine/ui';
 import {
   BarChartContent,
-  BarChartDescription,
   Chart,
   ChartLayout,
   ChartSvg,
@@ -21,11 +20,11 @@ import {
   LineChartContent,
   LineChartDescription,
   PieChartContent,
-  PieChartDescription,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
 import stringify from 'virtual-dom-stringify';
+import styled from 'styled-components';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
@@ -34,10 +33,23 @@ import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
 import BarChartElementRect from './BarChartElementRect';
 import { chartEditorFillPattern } from './constants';
+import PieChartElementPath from './PieChartElementPath';
+import PieChartElementTitleInput from './PieChartElementTitleInput';
+import PieChartElementValueInput from './PieChartElementValueInput';
+import ColumnChartElementRect from './ColumnChartElementRect';
+import ColumnChartElementValueInput from './ColumnChartElementValueInput';
+import ColumnChartGroupTitleInput from './ColumnChartGroupTitleInput';
+import PieChartDescriptionEditor from './PieChartDescriptionEditor';
+import BarChartDescriptionEditor from './BarChartDescriptionEditor';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
 };
+
+const Container = styled.div`
+  position: relative;
+  height: 100%;
+`;
 
 /**
  * @description Chart editor component.
@@ -45,6 +57,7 @@ const defaultEditor = {
  * @returns {React.Node}
  */
 export default function ChartEditor({
+  children,
   kind = chartTypes.BAR,
   addButtonRenderMap,
   selection,
@@ -90,8 +103,8 @@ export default function ChartEditor({
   );
 
   return (
-    !!selection && (
-      <>
+    !!(selection && chartProps.elements) && (
+      <Container>
         {selection.length === 1 && selection[0] === chartProps.id ? (
           <ChartLayout
             ref={resizeTargetRef}
@@ -104,16 +117,22 @@ export default function ChartEditor({
             }
             description={
               kind === chartTypes.BAR ? (
-                <BarChartDescription
+                <BarChartDescriptionEditor
                   {...chartProps}
                   dispatchElements={dispatchElements}
                 />
               ) : kind === chartTypes.LINE ? (
                 <LineChartDescription {...chartProps} />
               ) : kind === chartTypes.PIE ? (
-                <PieChartDescription {...chartProps} />
+                <PieChartDescriptionEditor
+                  {...chartProps}
+                  dispatchElements={dispatchElements}
+                />
               ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartDescriptionEditor {...chartProps} />
+                <ColumnChartDescriptionEditor
+                  {...chartProps}
+                  dispatchElements={dispatchElements}
+                />
               ) : null
             }
             textAlignment={textAlignment}
@@ -124,7 +143,6 @@ export default function ChartEditor({
                   __html: stringify(chartEditorFillPattern),
                 }}
               />
-              ;
               {kind === chartTypes.BAR ? (
                 <BarChartContent
                   {...chartProps}
@@ -136,16 +154,37 @@ export default function ChartEditor({
                   elementRectAs={BarChartElementRect}
                 />
               ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartContent {...chartProps} />
+                <ColumnChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  groupTitleAs={ColumnChartGroupTitleInput}
+                  elementRectAs={ColumnChartElementRect}
+                  elementValueAs={ColumnChartElementValueInput}
+                />
               ) : kind === chartTypes.PIE ? (
-                <PieChartContent {...chartProps} />
+                <PieChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  elementTitleAs={PieChartElementTitleInput}
+                  elementValueAs={PieChartElementValueInput}
+                  elementPathAs={PieChartElementPath}
+                />
               ) : kind === chartTypes.LINE ? (
                 <LineChartContent {...chartProps} />
               ) : null}
             </ChartSvg>
           </ChartLayout>
         ) : (
-          <Chart {...chartProps} kind={kind} />
+          <Chart
+            {...chartProps}
+            title={title}
+            textAlignment={textAlignment}
+            kind={kind}
+          />
         )}
         <BlockActions
           addButtonRenderMap={addButtonRenderMap}
@@ -154,7 +193,7 @@ export default function ChartEditor({
           id={chartProps.id}
           selection={selection}
         />
-      </>
+      </Container>
     )
   );
 }

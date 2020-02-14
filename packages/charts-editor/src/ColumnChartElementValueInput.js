@@ -13,7 +13,7 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function BarChartElementValueInput(
+export default React.forwardRef(function ColumnChartElementValueInput(
   {
     dispatch,
     dispatchElements,
@@ -35,7 +35,8 @@ export default React.forwardRef(function BarChartElementValueInput(
           body: { value: +currentTarget.value },
         })
       )}
-      value={parseFloat(value)}
-    />
+    >
+      {value}
+    </SvgInput>
   );
 });

@@ -5,7 +5,7 @@ import * as React from 'react';
 import useTypographyChildren from './useTypographyChildren';
 
 const Input = styled(({ children, ...props }) => (
-  <input {...props} value={useTypographyChildren(children, '').trim()} />
+  <input {...props} value={useTypographyChildren(children, '')} />
 ))`
   ${({
     color,
