@@ -1,7 +1,8 @@
 // @flow
 import * as React from 'react';
 import { SvgInput } from '@seine/styles';
-import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
+import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
+import { useAutoCallback } from 'hooks.macro';
 
 type Props = {
   children?: any,
@@ -17,7 +18,7 @@ export default React.forwardRef(function BarChartElementTitleInput(
     dispatch,
     dispatchElements,
     editor,
-    meta: { id, title },
+    meta: { index, title },
     ...inputProps
   }: Props,
   ref
@@ -26,13 +27,13 @@ export default React.forwardRef(function BarChartElementTitleInput(
     <SvgInput
       {...inputProps}
       ref={ref}
-      onChange={({ currentTarget }) =>
+      onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
-          type: UPDATE_BLOCK_ELEMENT_BY_ID,
-          id,
+          type: UPDATE_BLOCK_ELEMENT,
+          index,
           body: { title: currentTarget.value },
         })
-      }
+      )}
       value={title}
     />
   );
