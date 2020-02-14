@@ -17,6 +17,7 @@ export { default as PieChartContent } from './PieChartContent';
 export { default as ChartSvg } from './ChartSvg';
 
 export { default as ChartLegend } from './ChartLegend';
+export type { Props as ChartLegendProps } from './ChartLegend';
 
 export { default as ChartLayout } from './ChartLayout';
 

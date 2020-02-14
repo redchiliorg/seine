@@ -5,11 +5,6 @@ import type { ChartElement } from '@seine/core';
 
 import { defaultChartPalette } from './constants';
 
-export type Props = {
-  elements: ChartElement[],
-  palette?: string[],
-};
-
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
   display: inline-block;
@@ -27,6 +22,11 @@ const LegendItem = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export type Props = {
+  elements: ChartElement[],
+  palette?: string[],
+};
 
 /**
  * @description Chart legend.

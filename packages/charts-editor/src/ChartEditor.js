@@ -1,6 +1,12 @@
 // @flow
 import * as React from 'react';
-import { chartTypes, initialElementsState } from '@seine/core';
+import {
+  chartTypes,
+  initialElementsState,
+  reduceElements,
+  UPDATE_BLOCK_BODY,
+  UPDATE_BLOCK_EDITOR,
+} from '@seine/core';
 import { BlockActions } from '@seine/ui';
 import {
   BarChartContent,
@@ -9,7 +15,6 @@ import {
   ChartLayout,
   ChartSvg,
   ColumnChartContent,
-  ColumnChartDescription,
   defaultChartTextAlignment,
   defaultChartTitle,
   LineChartContent,
@@ -18,9 +23,13 @@ import {
   PieChartDescription,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
+import { useAutoCallback } from 'hooks.macro';
+import type { ElementsAction } from '@seine/core';
 
 import type { ChartEditorProps as Props } from './types';
-import ChartTitleInput from './ChartTitleInput';
+import ChartInlineInput from './ChartInlineInput';
+import ColumnChartDescriptionEditor from './ColumnChartDescriptionEditor';
+import BarChartContentEditor from './BarChartContentEditor';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
@@ -35,17 +44,14 @@ export default function ChartEditor({
   kind = chartTypes.BAR,
   addButtonRenderMap,
   selection,
-  editor = defaultEditor,
-  mode,
   dispatch,
+  editor = defaultEditor,
+  textAlignment = defaultChartTextAlignment,
+  title = defaultChartTitle,
   ...chartProps
 }: Props) {
-  const {
-    title = defaultChartTitle,
-    textAlignment = defaultChartTextAlignment,
-  } = chartProps;
+  chartProps.textAlignment = textAlignment;
 
-  /*
   const dispatchElements = useAutoCallback((action: ElementsAction) => {
     const { elements, selection } = reduceElements(
       {
@@ -69,9 +75,15 @@ export default function ChartEditor({
       });
     }
   });
-   */
 
   const resizeTargetRef = useResizeTargetRef();
+
+  const handleTitleChange = useAutoCallback(({ currentTarget }) =>
+    dispatch({
+      type: UPDATE_BLOCK_BODY,
+      body: { title: currentTarget.value },
+    })
+  );
 
   return (
     <>
@@ -79,15 +91,18 @@ export default function ChartEditor({
         <ChartLayout
           ref={resizeTargetRef}
           title={
-            <ChartTitleInput
-              dispatch={dispatch}
+            <ChartInlineInput
+              onChange={handleTitleChange}
               textAlignment={textAlignment}
               value={title}
             />
           }
           description={
             kind === chartTypes.COLUMN ? (
-              <ColumnChartDescription {...chartProps} />
+              <ColumnChartDescriptionEditor
+                {...chartProps}
+                dispatchElements={dispatchElements}
+              />
             ) : kind === chartTypes.LINE ? (
               <LineChartDescription {...chartProps} />
             ) : kind === chartTypes.PIE ? (
@@ -100,7 +115,11 @@ export default function ChartEditor({
         >
           <ChartSvg>
             {kind === chartTypes.BAR ? (
-              <BarChartContent {...chartProps} />
+              <BarChartContent
+                as={BarChartContentEditor}
+                {...chartProps}
+                dispatchElements={dispatchElements}
+              />
             ) : kind === chartTypes.COLUMN ? (
               <ColumnChartContent {...chartProps} />
             ) : kind === chartTypes.PIE ? (

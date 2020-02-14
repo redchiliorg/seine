@@ -31,11 +31,24 @@ type Props = {
 export default function BarChartContent({
   elements,
 
+  as: Group = 'g',
+
   dx = defaultChartDx,
   legend = defaultBarChartLegend,
   palette = defaultChartPalette,
   units = defaultChartUnits,
   xAxis = defaultChartXAxis,
+
+  dy,
+  minValue,
+  maxValue = elements.reduce(
+    (max, { value }) => Math.max(+value, max),
+    -Infinity
+  ),
+  paletteKey,
+  yAxis,
+
+  ...groupProps
 }: Props) {
   const [
     titleMethods,
@@ -53,13 +66,8 @@ export default function BarChartContent({
   const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 4);
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
 
-  const maxValue = elements.reduce(
-    (max, { value }) => Math.max(+value, max),
-    -Infinity
-  );
-
   return (
-    <g strokeWidth={titleHeight / 40}>
+    <Group {...groupProps} strokeWidth={titleHeight / 40}>
       {elements.map(({ title, value }, index) => {
         const width = (barWidth * value) / maxValue;
         const color = palette[index % palette.length];
@@ -75,7 +83,6 @@ export default function BarChartContent({
             y={y + barHeight / 2}
           >
             {legend ? '' : title}
-            {'  '}
           </SvgTypography>,
 
           <rect
@@ -111,6 +118,6 @@ export default function BarChartContent({
           y={VIEWPORT_HEIGHT}
         />
       )}
-    </g>
+    </Group>
   );
 }

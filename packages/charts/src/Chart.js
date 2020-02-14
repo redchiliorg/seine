@@ -17,7 +17,7 @@ import PieChartDescription from './PieChartDescription';
 import BarChartDescription from './BarChartDescription';
 
 /**
- * @description Switch to chart render component by its kind.
+ * @description Switch to chart render components by its kind.
  * @param {Props} props
  * @returns {React.Node}
  */
@@ -31,6 +31,8 @@ export default function Chart({
 
   return (
     <ChartLayout
+      ref={useResizeTargetRef()}
+      title={title}
       description={
         kind === chartTypes.BAR ? (
           <BarChartDescription {...chartProps} />
@@ -42,9 +44,7 @@ export default function Chart({
           <PieChartDescription {...chartProps} />
         ) : null
       }
-      ref={useResizeTargetRef()}
       textAlignment={textAlignment}
-      title={title}
     >
       <ChartSvg>
         {kind === chartTypes.BAR ? (

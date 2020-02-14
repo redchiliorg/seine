@@ -124,7 +124,7 @@ export default function ColumnChartContent({
       );
     }),
     !!yAxis && (
-      <g strokeWidth={scaledTextHeight / 40}>
+      <g key={'axis'} strokeWidth={scaledTextHeight / 40}>
         <ChartAxis
           arrow
           finite

@@ -11,7 +11,7 @@ import { ClickAwayListener } from '@material-ui/core';
 import { SvgInput, SvgTypography } from '@seine/styles';
 
 import type { ChartEditorProps as Props } from './types';
-import ChartTitleInput from './ChartTitleInput';
+import ChartTitleInput from './ChartInlineInput';
 
 /**
  * @description Editor of pie chart
