@@ -1,110 +1,62 @@
 // @flow
 import * as React from 'react';
-import type { ChartType } from '@seine/core';
 import { chartTypes } from '@seine/core';
-import { useAutoCallback, useAutoEffect, useAutoMemo } from 'hooks.macro';
-import ResizeObserver from 'resize-observer-polyfill';
-import styled from 'styled-components/macro';
+import { useResizeTargetRef } from '@seine/styles';
 
-import BarChart from './BarChart';
-import ColumnChart from './ColumnChart';
-import LineChart from './LineChart';
-import PieChart from './PieChart';
 import ChartLayout from './ChartLayout';
-import type { ChartProps } from './types';
-import {
-  defaultChartLegend,
-  defaultChartPalette,
-  defaultChartTextAlignment,
-  defaultChartTitle,
-  VIEWPORT_HEIGHT,
-  VIEWPORT_WIDTH,
-} from './constants';
-import ChartLegend from './ChartLegend';
-import { groupElements } from './helpers';
-
-type Config = {
-  chartRenderMap: {
-    [ChartType]: React.ComponentType<ChartProps>,
-  },
-  as: React.ElementType,
-};
-
-type Props = ChartProps & $Shape<Config>;
-
-export const defaultChartRenderMap = {
-  [chartTypes.BAR]: BarChart,
-  [chartTypes.COLUMN]: ColumnChart,
-  [chartTypes.LINE]: LineChart,
-  [chartTypes.PIE]: PieChart,
-};
-
-const Svg = styled.svg`
-  && {
-    overflow: visible;
-  }
-`;
+import BarChartContent from './BarChartContent';
+import ColumnChartContent from './ColumnChartContent';
+import LineChartContent from './LineChartContent';
+import PieChartContent from './PieChartContent';
+import type { ChartProps as Props } from './types';
+import ChartSvg from './ChartSvg';
+import { defaultChartTextAlignment, defaultChartTitle } from './constants';
+import ColumnChartDescription from './ColumnChartDescription';
+import LineChartDescription from './LineChartDescription';
+import PieChartDescription from './PieChartDescription';
+import BarChartDescription from './BarChartDescription';
 
 /**
- * @description Switch to chart render component by its kind.
+ * @description Switch to chart render components by its kind.
  * @param {Props} props
  * @returns {React.Node}
  */
 export default function Chart({
   kind = chartTypes.BAR,
-  chartRenderMap: { [kind]: ExactChart } = defaultChartRenderMap,
+  title = defaultChartTitle,
+  textAlignment = defaultChartTextAlignment,
   ...chartProps
 }: Props) {
-  const {
-    legend = defaultChartLegend,
-    palette = defaultChartPalette,
-    title = defaultChartTitle,
-    textAlignment = defaultChartTextAlignment,
-    elements,
-  } = chartProps;
-
-  const [resized, setResized] = React.useState(false);
-  const resizeObservable = useAutoMemo(
-    new ResizeObserver(() => {
-      setResized(true);
-    })
-  );
-
-  useAutoEffect(() => {
-    if (resized) {
-      setResized(false);
-    }
-  });
-
-  const legendItems = useAutoMemo(
-    ExactChart === ColumnChart || ExactChart === LineChart
-      ? groupElements(elements).map(([title]) => ({ title }))
-      : elements
-  );
+  chartProps.textAlignment = textAlignment;
 
   return (
     <ChartLayout
-      ref={useAutoCallback((resizeTarget) => {
-        if (resizeTarget) {
-          resizeObservable.disconnect();
-          resizeObservable.observe(resizeTarget);
-        }
-      })}
+      ref={useResizeTargetRef()}
       title={title}
       description={
-        legend ? <ChartLegend palette={palette} elements={legendItems} /> : ''
+        kind === chartTypes.BAR ? (
+          <BarChartDescription {...chartProps} />
+        ) : kind === chartTypes.COLUMN ? (
+          <ColumnChartDescription {...chartProps} />
+        ) : kind === chartTypes.LINE ? (
+          <LineChartDescription {...chartProps} />
+        ) : kind === chartTypes.PIE ? (
+          <PieChartDescription {...chartProps} />
+        ) : null
       }
       textAlignment={textAlignment}
     >
-      <Svg
-        preserveAspectRatio="xMidYMax meet"
-        width="100%"
-        height="90%"
-        viewBox={`0 0 ${VIEWPORT_WIDTH} ${VIEWPORT_HEIGHT}`}
-        overflow={'visible'}
-      >
-        <ExactChart {...chartProps} />
-      </Svg>
+      <ChartSvg>
+        {kind === chartTypes.BAR ? (
+          <BarChartContent {...chartProps} />
+        ) : kind === chartTypes.COLUMN ? (
+          <ColumnChartContent {...chartProps} />
+        ) : kind === chartTypes.LINE ? (
+          <LineChartContent {...chartProps} />
+        ) : kind === chartTypes.PIE ? (
+          <PieChartContent {...chartProps} />
+        ) : null}
+      </ChartSvg>
     </ChartLayout>
   );
 }

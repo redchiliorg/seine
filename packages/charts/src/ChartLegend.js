@@ -3,10 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import type { ChartElement } from '@seine/core';
 
-type Props = {
-  elements: ChartElement[],
-  palette: string[],
-};
+import { defaultChartPalette } from './constants';
 
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
@@ -26,12 +23,20 @@ const LegendItem = styled.div`
   align-items: center;
 `;
 
+export type Props = {
+  elements: ChartElement[],
+  palette?: string[],
+};
+
 /**
  * @description Chart legend.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartLegend({ elements, palette }: Props) {
+export default function ChartLegend({
+  elements,
+  palette = defaultChartPalette,
+}: Props) {
   return elements.map(({ title }, index) => (
     <LegendItem key={index}>
       <LegendBox color={palette[index % palette.length]} />

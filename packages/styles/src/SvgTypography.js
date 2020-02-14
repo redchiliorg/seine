@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
 import { useAutoMemo } from 'hooks.macro';
 
@@ -14,6 +14,7 @@ export type SvgTypographyProps = {
   fill?: string,
   textAnchor?: 'start' | 'middle' | 'end',
   dominantBaseline?: 'middle' | 'baseline' | 'hanging',
+  meta?: { [string]: any },
 };
 
 export type BoxProps = {
@@ -24,24 +25,21 @@ export type BoxProps = {
 };
 
 const StyledTypography = styled(Typography).attrs(
-  ({ fill }: SvgTypographyProps & BoxProps) => ({
+  ({ fill, xScale, yScale }: SvgTypographyProps & BoxProps) => ({
     color: fill,
+    transform: `scale(${xScale}, ${yScale})`,
   })
 )`
-  ${({ xScale, yScale }: SvgTypographyProps & BoxProps) => css`
-    transform: scale(${xScale}, ${yScale});
-    transform-origin: left top;
-
-    overflow: visible;
-    white-space: pre-wrap;
-
-    text-align: ${({ textAnchor }) =>
-      textAnchor === 'end'
-        ? 'right'
-        : textAnchor === 'middle'
-        ? 'center'
-        : 'left'};
-  `}
+  ${({ transform }) => ({ transform })};
+  transform-origin: left top;
+  overflow: visible;
+  white-space: pre-wrap;
+  text-align: ${({ textAnchor }) =>
+    textAnchor === 'end'
+      ? 'right'
+      : textAnchor === 'middle'
+      ? 'center'
+      : 'left'};
 `;
 
 const CondensedText = styled.span`
@@ -86,6 +84,7 @@ export default React.forwardRef(function SvgTypography(
     x = 0,
     y = 0,
     textAnchor = 'start',
+    meta,
     ...typography
   }: Props,
   ref
@@ -108,7 +107,7 @@ export default React.forwardRef(function SvgTypography(
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
         context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width + 16;
+        return context.measureText(text).width + parseInt(fontSize);
       };
       const getXScale = (value = 1) =>
         (window.devicePixelRatio * value * svgElement.getBBox().height) /

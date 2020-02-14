@@ -4,10 +4,9 @@ import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
+import { ResizeObserverProvider, ThemeProvider } from '@seine/styles';
 import type { Theme } from '@material-ui/core';
-import { ThemeProvider } from '@seine/styles';
 import { Table } from '@seine/tables';
-import { useAutoMemo } from 'hooks.macro';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -42,9 +41,9 @@ function Content({
 }: Props): React.Node {
   return (
     <ThemeProvider>
-      <Container>
-        {useAutoMemo(
-          children
+      <ResizeObserverProvider>
+        <Container>
+          {children
             .filter((block: Block) => block['parent_id'] === parent.id)
             .map(({ body, format, ...block }: Block) => {
               const ContentBlock = blockRenderMap[block.type];
@@ -60,9 +59,9 @@ function Content({
                   </Content>
                 </ContentBlock>
               );
-            })
-        )}
-      </Container>
+            })}
+        </Container>
+      </ResizeObserverProvider>
     </ThemeProvider>
   );
 }

@@ -85,6 +85,7 @@ export const defaultChartFormat = {
 };
 export const defaultChartLegend = true;
 export const defaultPieChartLegend = false;
+export const defaultBarChartLegend = false;
 
 export const defaultPieChartUnits = '%';
 

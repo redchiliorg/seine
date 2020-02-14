@@ -1,8 +1,8 @@
 // @flow
-import type { BlocksAction, ElementsAction } from '@seine/core';
+import type { BlockEditor } from '@seine/core';
 import type { ChartProps } from '@seine/charts';
 
-export type ChartEditorProps = {
-  dispatch: (BlocksAction) => any,
-  dispatchElements: (ElementsAction) => any,
-} & ChartProps;
+export type ChartEditorProps = ChartProps &
+  BlockEditor & {
+    editor: { selection: number },
+  };

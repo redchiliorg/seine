@@ -103,6 +103,14 @@ export default function BarChartToolbar({
         id={id}
         name={'xAxis'}
       />
+
+      <ChartSwitchFormatInput
+        dispatch={dispatch}
+        format={format}
+        label={'show legend'}
+        id={id}
+        name={'legend'}
+      />
     </Toolbar>
   );
 }

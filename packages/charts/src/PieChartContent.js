@@ -31,7 +31,7 @@ const START = (3 * Math.PI) / 4;
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function PieChart({
+export default function PieChartContent({
   elements,
   legend = defaultPieChartLegend,
   palette = defaultChartPalette,
@@ -89,58 +89,62 @@ export default function PieChart({
       .slice(1)
   );
 
-  return [
-    slices.map(({ startX, startY, length, endX, endY }, index) => (
-      <path
-        d={[
-          `M ${GUTTER_WIDTH + CENTER + RADIUS * endX} ${CENTER +
-            RADIUS * endY}`,
-          `A ${RADIUS} ${RADIUS} 0 ${+(length > Math.PI)} 0 ${GUTTER_WIDTH +
-            CENTER +
-            RADIUS * startX} ${CENTER + RADIUS * startY}`,
-          `L ${GUTTER_WIDTH + CENTER} ${CENTER}`,
-          `L ${GUTTER_WIDTH + CENTER + RADIUS * endX} ${CENTER +
-            RADIUS * endY}`,
-        ].join(' ')}
-        fill={palette[index % palette.length]}
-        key={`slice.${index}`}
-      />
-    )),
-    slices.map(({ title, value, textX, textY }, index) => {
-      const textColor = value >= quarter || legend ? 'white' : 'black';
+  return (
+    <g>
+      {[
+        ...slices.map(({ startX, startY, length, endX, endY }, index) => (
+          <path
+            d={[
+              `M ${GUTTER_WIDTH + CENTER + RADIUS * endX} ${CENTER +
+                RADIUS * endY}`,
+              `A ${RADIUS} ${RADIUS} 0 ${+(length > Math.PI)} 0 ${GUTTER_WIDTH +
+                CENTER +
+                RADIUS * startX} ${CENTER + RADIUS * startY}`,
+              `L ${GUTTER_WIDTH + CENTER} ${CENTER}`,
+              `L ${GUTTER_WIDTH + CENTER + RADIUS * endX} ${CENTER +
+                RADIUS * endY}`,
+            ].join(' ')}
+            fill={palette[index % palette.length]}
+            key={`slice.${index}`}
+          />
+        )),
+        ...slices.map(({ title, value, textX, textY }, index) => {
+          const textColor = value >= quarter || legend ? 'white' : 'black';
 
-      return [
-        <SvgTypography
-          fill={textColor}
-          key={`value.${index}`}
-          dominantBaseline={legend ? 'middle' : 'baseline'}
-          textAnchor={'middle'}
-          variant={'h4'}
-          fontWeight={400}
-          x={GUTTER_WIDTH + textX}
-          y={textY}
-          {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
-        >
-          {value}
-          {units}
-        </SvgTypography>,
+          return [
+            <SvgTypography
+              fill={textColor}
+              key={`value.${index}`}
+              dominantBaseline={legend ? 'middle' : 'baseline'}
+              textAnchor={'middle'}
+              variant={'h4'}
+              fontWeight={400}
+              x={GUTTER_WIDTH + textX}
+              y={textY}
+              {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
+            >
+              {value}
+              {units}
+            </SvgTypography>,
 
-        !legend && (
-          <SvgTypography
-            dominantBaseline={'hanging'}
-            fill={textColor}
-            key={`title.${index}`}
-            textAnchor={'middle'}
-            variant={'h5'}
-            fontWeight={400}
-            x={GUTTER_WIDTH + textX}
-            y={textY}
-            {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
-          >
-            {title}
-          </SvgTypography>
-        ),
-      ];
-    }),
-  ];
+            !legend && (
+              <SvgTypography
+                dominantBaseline={'hanging'}
+                fill={textColor}
+                key={`title.${index}`}
+                textAnchor={'middle'}
+                variant={'h5'}
+                fontWeight={400}
+                x={GUTTER_WIDTH + textX}
+                y={textY}
+                {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
+              >
+                {title}
+              </SvgTypography>
+            ),
+          ];
+        }),
+      ]}
+    </g>
+  );
 }

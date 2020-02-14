@@ -33,7 +33,7 @@ const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
  * @param {Props}: props
  * @returns {React.Node}
  */
-export default function ColumnChart({
+export default function ColumnChartContent({
   elements,
   maxValue: initialMaxValue,
   minValue: initialMinValue = defaultChartMinValue,
@@ -58,26 +58,13 @@ export default function ColumnChart({
   const groupWidth = (VIEWPORT_WIDTH - 2 * GUTTER_WIDTH) / groups.length;
   const columnHeight = VIEWPORT_HEIGHT;
 
-  return (
-    <g strokeWidth={scaledTextHeight / 40}>
-      {groups.map(([group, groupElements], groupIndex) => {
-        const columnWidth = groupWidth / (groupElements.length + 1);
-        return (
-          <React.Fragment key={groupIndex}>
-            {groupIndex === 0 && !!yAxis && (
-              <ChartAxis
-                arrow
-                finite
-                direction={'up'}
-                length={VIEWPORT_HEIGHT}
-                max={maxValue}
-                step={dy}
-                units={units}
-                y={VIEWPORT_HEIGHT}
-                maxWidth={GUTTER_WIDTH}
-              />
-            )}
-            {groupElements.map(({ value }, index) => {
+  return [
+    ...groups.map(([group, groupElements], groupIndex) => {
+      const columnWidth = groupWidth / (groupElements.length + 1);
+      return (
+        <g strokeWidth={scaledTextHeight / 40} key={groupIndex}>
+          {[
+            ...groupElements.map(({ value }, index) => {
               const rectHeight =
                 columnHeight *
                 ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
@@ -113,7 +100,7 @@ export default function ColumnChart({
                   {units}
                 </SvgTypography>,
               ];
-            })}
+            }),
             <path
               d={`m${GUTTER_WIDTH +
                 groupIndex * groupWidth +
@@ -121,7 +108,8 @@ export default function ColumnChart({
                 groupElements.length +
                 columnWidth / 2}`}
               stroke={'black'}
-            />
+              key={'line'}
+            />,
             <SvgTypography
               textAnchor={'middle'}
               dominantBaseline={'hanging'}
@@ -131,10 +119,26 @@ export default function ColumnChart({
               width={columnWidth * groupElements.length}
             >
               {group}
-            </SvgTypography>
-          </React.Fragment>
-        );
-      })}
-    </g>
-  );
+            </SvgTypography>,
+          ]}
+        </g>
+      );
+    }),
+    !!yAxis && (
+      <g key={'axis'} strokeWidth={scaledTextHeight / 40}>
+        <ChartAxis
+          arrow
+          finite
+          direction={'up'}
+          key={'axis'}
+          length={VIEWPORT_HEIGHT}
+          max={maxValue}
+          step={dy}
+          units={units}
+          y={VIEWPORT_HEIGHT}
+          maxWidth={GUTTER_WIDTH}
+        />
+      </g>
+    ),
+  ];
 }

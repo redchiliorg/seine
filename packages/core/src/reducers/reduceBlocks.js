@@ -10,12 +10,10 @@ opaque type BlockExtension = {
 };
 export type BlocksState = {
   blocks: $ReadOnlyArray<Block & BlockExtension>,
-  mode: 'default' | 'fullscreen',
   selection: $ReadOnlyArray<BlockId>,
 };
 export const initialBlocksState: BlocksState = {
   blocks: [],
-  mode: 'default',
   selection: [],
 };
 
@@ -75,7 +73,6 @@ export type SelectBlockAction = {
   type: typeof SELECT_BLOCK,
   id: BlockId,
   modifier?: 'add' | 'sub',
-  mode?: 'default' | 'fullscreen',
 };
 
 export const UPDATE_BLOCK_BODY = '@seine/core/updateBlockBody';
@@ -230,7 +227,7 @@ export function reduceBlocks(
           };
 
         default:
-          return { ...state, mode: action.mode, selection: [action.id] };
+          return { ...state, selection: [action.id] };
       }
     }
 
@@ -249,7 +246,6 @@ export function reduceBlocks(
       );
       return {
         ...state,
-        mode: initialBlocksState.mode,
         selection: initialBlocksState.selection,
         blocks: blocks
           .filter((block) => !redundant.includes(block))
@@ -270,7 +266,6 @@ export function reduceBlocks(
       }
       return {
         ...state,
-        mode: initialBlocksState.mode,
         selection: initialBlocksState.selection,
       };
     }

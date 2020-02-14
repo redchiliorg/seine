@@ -6,12 +6,7 @@ import {
 } from '@seine/core';
 import { Content } from '@seine/content';
 import { Editor } from '@seine/editor';
-import {
-  ChartLayout,
-  ChartLegend,
-  ChartTitle,
-  defaultChartPalette,
-} from '@seine/charts';
+import { ChartLayout, ChartLegend, defaultChartPalette } from '@seine/charts';
 import { defaultTheme, ThemeProvider } from '@seine/styles';
 
 export default { title: 'Single.Chart' };
@@ -19,7 +14,7 @@ export default { title: 'Single.Chart' };
 export const DummyChartLayout = () => (
   <ThemeProvider theme={defaultTheme}>
     <ChartLayout
-      title={<ChartTitle>Chart layout</ChartTitle>}
+      title={'Chart layout'}
       description={
         <ChartLegend
           elements={[{ title: 'Element #1' }, { title: 'Element #2' }]}
@@ -52,7 +47,6 @@ export const BarChart = ({
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927',
         type: 'chart',
-        title: 'Bar chart',
         body: {
           elements: createBlockElements([
             { title: 'WFLA', value: 20.8 },

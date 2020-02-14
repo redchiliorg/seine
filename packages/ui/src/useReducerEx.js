@@ -1,5 +1,6 @@
 // @flow
-import { useCallback, useEffect, useMemo, useReducer, useRef } from 'react';
+import { useReducer, useRef } from 'react';
+import { useAutoCallback, useAutoEffect, useAutoMemo } from 'hooks.macro';
 import type { Action, State } from '@seine/core';
 
 const defaultDevToolsConfig = {};
@@ -24,15 +25,13 @@ export default function useReducerEx<S: State, A: Action>(
   const [state, dispatch] = useReducer<S, A>(reduce, initialArg, init);
 
   const { current: action } = actionRef;
-  const devTools = useMemo(
-    () =>
-      process.env.NODE_ENV === 'development' &&
+  const devTools = useAutoMemo(
+    process.env.NODE_ENV === 'development' &&
       window['__REDUX_DEVTOOLS_EXTENSION__'] &&
-      window['__REDUX_DEVTOOLS_EXTENSION__'].connect(devToolsConfig),
-    [devToolsConfig]
+      window['__REDUX_DEVTOOLS_EXTENSION__'].connect(devToolsConfig)
   );
 
-  useEffect(() => {
+  useAutoEffect(() => {
     if (devTools) {
       if (action === null) {
         devTools.init(state);
@@ -40,13 +39,13 @@ export default function useReducerEx<S: State, A: Action>(
         devTools.send(action, state);
       }
     }
-  }, [action, devTools, state]);
+  });
 
   return [
     state,
-    useCallback((action: Action) => {
+    useAutoCallback((action: Action) => {
       actionRef.current = action;
       dispatch(action);
-    }, []),
+    }),
   ];
 }

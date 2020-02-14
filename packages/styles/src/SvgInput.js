@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled, { css } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 
 import type { BoxProps, SvgTypographyProps } from './SvgTypography';
 import SvgTypography from './SvgTypography';
@@ -11,50 +11,48 @@ type Props = {
 };
 
 const StyledInput = styled(Input).attrs(
-  ({ fill }: SvgTypographyProps & BoxProps) => ({
+  ({ fill, xScale, yScale }: SvgTypographyProps & BoxProps) => ({
     color: fill,
+    transform: `scale(${xScale}, ${yScale})`,
   })
 )`
-  ${({ color, xScale, yScale }: SvgTypographyProps & BoxProps) => css`
-    && {
-      background: none;
-      border: 0;
-      margin: 0;
-      padding: 0;
-      color: ${color};
-    }
-    ::-webkit-outer-spin-button,
-    ::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-    }
-    &[type='number'] {
-      -moz-appearance: textfield;
-    }
-    &:invalid {
-      box-shadow: none;
-    }
-    :-moz-submit-invalid {
-      box-shadow: none;
-    }
-    :-moz-ui-invalid {
-      box-shadow: none;
-    }
-    &:focus {
-      outline: none;
-    }
-    transform: scale(${xScale}, ${yScale});
+  && {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
     transform-origin: left top;
-
     overflow: visible;
     white-space: pre-wrap;
+    ${({ color }) => color && { color }};
+    ${({ transform }) => transform && { transform }};
+  }
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+  &:invalid {
+    box-shadow: none;
+  }
+  :-moz-submit-invalid {
+    box-shadow: none;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  &:focus {
+    outline: none;
+  }
 
-    text-align: ${({ textAnchor = 'start' }) =>
-      textAnchor === 'start'
-        ? 'left'
-        : textAnchor === 'middle'
-        ? 'center'
-        : 'right'};
-  `}
+  text-align: ${({ textAnchor = 'start' }) =>
+    textAnchor === 'start'
+      ? 'left'
+      : textAnchor === 'middle'
+      ? 'center'
+      : 'right'};
 `;
 
 /**
