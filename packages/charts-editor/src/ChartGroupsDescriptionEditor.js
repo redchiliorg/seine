@@ -23,7 +23,7 @@ type Props = $Rest<ChartLegendProps, {| kind: ChartType |}> & {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartDescriptionEditor({
+export default function ChartGroupsDescriptionEditor({
   elements,
   legend = defaultChartLegend,
   dispatchElements,
