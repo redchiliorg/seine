@@ -2543,11 +2543,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
           width="100%"
         >
           <g
-            id="01648d04-78ad-402b-b255-14a6066d7927"
-            parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
             strokeWidth={0.025}
-            textAlignment="left"
-            type="chart"
           >
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -2566,8 +2562,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 WFLA
@@ -2576,10 +2574,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#71a2ff"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "8d952aee-46a2-4485-a00c-9af61c7cf5e5",
+                  "index": 0,
+                  "title": "WFLA",
+                  "value": 20.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2597,8 +2635,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -2623,8 +2663,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region A
@@ -2633,10 +2675,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#c0d4e2"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "f3c92264-bff7-4d3f-89d3-ec1c3ee96a35",
+                  "index": 1,
+                  "title": "Region A",
+                  "value": 35.7,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={257.49388753056235}
               x={1}
               y={35}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2654,8 +2736,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -2680,8 +2764,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region B
@@ -2690,10 +2776,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#cbcbcb"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "8b0a6f48-cc1a-4c8a-8a48-07fbba87fa42",
+                  "index": 2,
+                  "title": "Region B",
+                  "value": 15.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={113.96088019559903}
               x={1}
               y={70}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2711,8 +2837,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -2737,8 +2865,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region C
@@ -2747,10 +2877,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#e57878"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "c8fdfe9c-0e8a-48a3-a891-434316fcb09a",
+                  "index": 3,
+                  "title": "Region C",
+                  "value": 40.9,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={295}
               x={1}
               y={105}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2768,8 +2938,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -2794,8 +2966,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region D
@@ -2804,10 +2978,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#8adb96"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "2f1d8a43-cd3c-490e-8eb9-d7bbeb7d9207",
+                  "index": 4,
+                  "title": "Region D",
+                  "value": 23.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={170.2200488997555}
               x={1}
               y={140}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2825,8 +3039,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -2851,8 +3067,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region E
@@ -2861,10 +3079,50 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <rect
               fill="#6895eb"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "b98909ee-7829-4c92-8941-5dbfac5b6909",
+                  "index": 5,
+                  "title": "Region E",
+                  "value": 17.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={126.9437652811736}
               x={1}
               y={175}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2882,8 +3140,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4113,11 +4373,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
           width="100%"
         >
           <g
-            id="01648d04-78ad-402b-b255-14a6066d7927"
-            parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
             strokeWidth={0.025}
-            textAlignment="left"
-            type="chart"
           >
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -4136,8 +4392,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 WFLA
@@ -4146,10 +4404,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#71a2ff"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "3319aa26-86c6-472b-bb25-8d0292ccd36d",
+                  "index": 0,
+                  "title": "WFLA",
+                  "value": 20.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={140.09132420091325}
               x={1}
               y={0}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4167,8 +4465,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4193,8 +4493,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region A
@@ -4203,10 +4505,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#c0d4e2"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "b6243cfe-2d09-42c3-8cf8-7a6332cedc54",
+                  "index": 1,
+                  "title": "Region A",
+                  "value": 35.7,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={240.44520547945206}
               x={1}
               y={23.333333333333343}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4224,8 +4566,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4250,8 +4594,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region B
@@ -4260,10 +4606,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#cbcbcb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "52c76741-9b4e-4e83-8e02-6f44be3c98ec",
+                  "index": 2,
+                  "title": "Region B",
+                  "value": 15.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={106.41552511415526}
               x={1}
               y={46.666666666666686}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4281,8 +4667,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4307,8 +4695,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region C
@@ -4317,10 +4707,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#e57878"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "36846819-ad23-4cd3-bd04-f73bc387f6e2",
+                  "index": 3,
+                  "title": "Region C",
+                  "value": 40.9,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={275.4680365296804}
               x={1}
               y={70}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4338,8 +4768,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4364,8 +4796,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region D
@@ -4374,10 +4808,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#8adb96"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "ff8729fd-572f-4bde-a514-7b2f525371e6",
+                  "index": 4,
+                  "title": "Region D",
+                  "value": 23.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={158.94977168949774}
               x={1}
               y={93.33333333333334}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4395,8 +4869,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4421,8 +4897,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region E
@@ -4431,10 +4909,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#6895eb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "d49550a2-e052-47c9-b6ff-2c0bb153e68c",
+                  "index": 5,
+                  "title": "Region E",
+                  "value": 17.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={118.53881278538813}
               x={1}
               y={116.66666666666667}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4452,8 +4970,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4478,8 +4998,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
                 color="#b8c8d8"
                 fill="#b8c8d8"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region F
@@ -4488,10 +5010,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#b8c8d8"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "4fe63312-f7c0-456d-aa04-cadd752a19ce",
+                  "index": 6,
+                  "title": "Region F",
+                  "value": 38.1,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={256.6095890410959}
               x={1}
               y={140}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4509,8 +5071,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
                 color="#b8c8d8"
                 fill="#b8c8d8"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4535,8 +5099,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
                 color="#ebebeb"
                 fill="#ebebeb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region G
@@ -4545,10 +5111,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#ebebeb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "c03a2193-a7ef-4324-acdd-4a1b9fd6e54e",
+                  "index": 7,
+                  "title": "Region G",
+                  "value": 43.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={295}
               x={1}
               y={163.33333333333334}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4566,8 +5172,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
                 color="#ebebeb"
                 fill="#ebebeb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -4592,8 +5200,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
                 color="#ff7171"
                 fill="#ff7171"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region H
@@ -4602,10 +5212,50 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
             <rect
               fill="#ff7171"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "4e74776b-7279-460a-b0c3-833986ff1cfe",
+                  "index": 8,
+                  "title": "Region H",
+                  "value": 16.4,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={110.45662100456622}
               x={1}
               y={186.66666666666666}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4623,8 +5273,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
                 color="#ff7171"
                 fill="#ff7171"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -6853,11 +7505,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
           width="100%"
         >
           <g
-            id="01648d04-78ad-402b-b255-14a6066d7927"
-            parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
             strokeWidth={0.025}
-            textAlignment="left"
-            type="chart"
           >
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -6876,8 +7524,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 WFLA
@@ -6886,10 +7536,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#71a2ff"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "f5b956eb-06ad-4e2b-a549-d85a1d2a19b5",
+                  "index": 0,
+                  "title": "WFLA",
+                  "value": 20.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -6907,8 +7597,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -6933,8 +7625,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region A
@@ -6943,10 +7637,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#c0d4e2"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "cf0e0dd8-10e5-4e70-9a9b-9a1e9120297d",
+                  "index": 1,
+                  "title": "Region A",
+                  "value": 35.7,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={257.49388753056235}
               x={1}
               y={35}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -6964,8 +7698,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -6990,8 +7726,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region B
@@ -7000,10 +7738,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#cbcbcb"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "63c26d52-bd7b-47b5-be68-0dc07f8ddb58",
+                  "index": 2,
+                  "title": "Region B",
+                  "value": 15.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={113.96088019559903}
               x={1}
               y={70}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7021,8 +7799,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7047,8 +7827,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region C
@@ -7057,10 +7839,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#e57878"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "04df52bc-e382-4b41-99e4-e8a5981f33d2",
+                  "index": 3,
+                  "title": "Region C",
+                  "value": 40.9,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={295}
               x={1}
               y={105}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7078,8 +7900,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7104,8 +7928,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region D
@@ -7114,10 +7940,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#8adb96"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "a3bf94a0-bfa1-49a3-b301-b221e1a0cc60",
+                  "index": 4,
+                  "title": "Region D",
+                  "value": 23.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={170.2200488997555}
               x={1}
               y={140}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7135,8 +8001,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7161,8 +8029,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region E
@@ -7171,10 +8041,50 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
             <rect
               fill="#6895eb"
               height={35}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "aba2c41f-05bc-4bbf-9649-cdf9b65e99e7",
+                  "index": 5,
+                  "title": "Region E",
+                  "value": 17.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={126.9437652811736}
               x={1}
               y={175}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7192,8 +8102,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7638,11 +8550,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
           width="100%"
         >
           <g
-            id="01648d04-78ad-402b-b255-14a6066d7927"
-            parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
             strokeWidth={0.025}
-            textAlignment="left"
-            type="chart"
           >
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -7661,8 +8569,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 WFLA
@@ -7671,10 +8581,50 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             <rect
               fill="#71a2ff"
               height={52.5}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "a63b4ae3-b9d3-41e6-9e48-a1c16d7a6f6c",
+                  "index": 0,
+                  "title": "WFLA",
+                  "value": 20.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7692,8 +8642,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7718,8 +8670,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region A
@@ -7728,10 +8682,50 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             <rect
               fill="#c0d4e2"
               height={52.5}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "20461b70-b6b3-4ad6-82b6-aed6923f3e6c",
+                  "index": 1,
+                  "title": "Region A",
+                  "value": 35.7,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={257.49388753056235}
               x={1}
               y={52.5}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7749,8 +8743,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7775,8 +8771,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region B
@@ -7785,10 +8783,50 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             <rect
               fill="#cbcbcb"
               height={52.5}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "6d115113-9b40-4f79-8087-a7ebb88be1d5",
+                  "index": 2,
+                  "title": "Region B",
+                  "value": 15.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={113.96088019559903}
               x={1}
               y={105}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7806,8 +8844,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -7832,8 +8872,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region C
@@ -7842,10 +8884,50 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             <rect
               fill="#e57878"
               height={52.5}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "a25579ae-e196-4817-81fc-0bc0556882d7",
+                  "index": 3,
+                  "title": "Region C",
+                  "value": 40.9,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={295}
               x={1}
               y={157.5}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7863,8 +8945,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9150,11 +10234,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
           width="100%"
         >
           <g
-            id="01648d04-78ad-402b-b255-14a6066d7927"
-            parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
             strokeWidth={0.025}
-            textAlignment="left"
-            type="chart"
           >
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -9173,8 +10253,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 WFLA
@@ -9183,10 +10265,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#71a2ff"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "7981a447-5510-40c0-9986-c3abefa037c6",
+                  "index": 0,
+                  "title": "WFLA",
+                  "value": 20.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={140.09132420091325}
               x={1}
               y={0}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9204,8 +10326,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
                 color="#71a2ff"
                 fill="#71a2ff"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9230,8 +10354,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region A
@@ -9240,10 +10366,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#c0d4e2"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "c2b66ea2-843d-4b07-b269-1444e0d3da50",
+                  "index": 1,
+                  "title": "Region A",
+                  "value": 35.7,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={240.44520547945206}
               x={1}
               y={23.333333333333343}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9261,8 +10427,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
                 color="#c0d4e2"
                 fill="#c0d4e2"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9287,8 +10455,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region B
@@ -9297,10 +10467,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#cbcbcb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "7558d788-bae9-4428-a080-0abb8bba0ba9",
+                  "index": 2,
+                  "title": "Region B",
+                  "value": 15.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={106.41552511415526}
               x={1}
               y={46.666666666666686}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9318,8 +10528,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
                 color="#cbcbcb"
                 fill="#cbcbcb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9344,8 +10556,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region C
@@ -9354,10 +10568,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#e57878"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "7be14cd7-0ab8-4325-b68d-a0f08fbf8237",
+                  "index": 3,
+                  "title": "Region C",
+                  "value": 40.9,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={275.4680365296804}
               x={1}
               y={70}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9375,8 +10629,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
                 color="#e57878"
                 fill="#e57878"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9401,8 +10657,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region D
@@ -9411,10 +10669,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#8adb96"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "14dbbf7d-e443-476b-9c1d-06989ef3614e",
+                  "index": 4,
+                  "title": "Region D",
+                  "value": 23.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={158.94977168949774}
               x={1}
               y={93.33333333333334}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9432,8 +10730,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
                 color="#8adb96"
                 fill="#8adb96"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9458,8 +10758,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region E
@@ -9468,10 +10770,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#6895eb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "0a710222-a5a5-4667-acd8-952c9f17c2f2",
+                  "index": 5,
+                  "title": "Region E",
+                  "value": 17.6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={118.53881278538813}
               x={1}
               y={116.66666666666667}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9489,8 +10831,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
                 color="#6895eb"
                 fill="#6895eb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9515,8 +10859,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
                 color="#b8c8d8"
                 fill="#b8c8d8"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region F
@@ -9525,10 +10871,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#b8c8d8"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "edca0802-7c33-4a70-809f-57a1973c3c54",
+                  "index": 6,
+                  "title": "Region F",
+                  "value": 38.1,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={256.6095890410959}
               x={1}
               y={140}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9546,8 +10932,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
                 color="#b8c8d8"
                 fill="#b8c8d8"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9572,8 +10960,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
                 color="#ebebeb"
                 fill="#ebebeb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region G
@@ -9582,10 +10972,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#ebebeb"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "48062bf4-fa1e-4a54-b5be-0821443430ff",
+                  "index": 7,
+                  "title": "Region G",
+                  "value": 43.8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={295}
               x={1}
               y={163.33333333333334}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9603,8 +11033,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
                 color="#ebebeb"
                 fill="#ebebeb"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9629,8 +11061,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
                 color="#ff7171"
                 fill="#ff7171"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Region H
@@ -9639,10 +11073,50 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
             <rect
               fill="#ff7171"
               height={23.333333333333332}
+              id="01648d04-78ad-402b-b255-14a6066d7927"
+              meta={
+                Object {
+                  "id": "5a2b97f9-9557-415f-9c24-146d858d5d39",
+                  "index": 8,
+                  "title": "Region H",
+                  "value": 16.4,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              textAlignment="left"
+              type="chart"
               width={110.45662100456622}
               x={1}
               y={186.66666666666666}
-            />
+            >
+              <div
+                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+              >
+                <h3
+                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+                >
+                  Chart title
+                </h3>
+                <div
+                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+                >
+                  <svg
+                    className="sc-bdVaJa iVoKve"
+                    height="90%"
+                    overflow="visible"
+                    viewBox="0 0 297 210"
+                    width="100%"
+                  >
+                    <g
+                      strokeWidth={0.025}
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+                />
+              </div>
+            </rect>
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -9660,8 +11134,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
                 color="#ff7171"
                 fill="#ff7171"
+                id="01648d04-78ad-402b-b255-14a6066d7927"
                 textAnchor="start"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                   
@@ -9844,11 +11320,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
         width="100%"
       >
         <g
-          id="01648d04-78ad-402b-b255-14a6066d7927"
-          parent_id={null}
           strokeWidth={0.025}
-          textAlignment="left"
-          type="chart"
         >
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -9867,8 +11339,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
               color="#71a2ff"
               fill="#71a2ff"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               WFLA
@@ -9877,10 +11351,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#71a2ff"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "e4cd0903-ab8d-4a95-a842-cc78cf778095",
+                "index": 0,
+                "title": "WFLA",
+                "value": 20.8,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={140.09132420091325}
             x={1}
             y={0}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -9898,8 +11412,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 jVNHmf"
               color="#71a2ff"
               fill="#71a2ff"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -9924,8 +11440,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
               color="#c0d4e2"
               fill="#c0d4e2"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region A
@@ -9934,10 +11452,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#c0d4e2"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "0c55f3cb-8e31-4b3e-8367-4e9bde8fec06",
+                "index": 1,
+                "title": "Region A",
+                "value": 35.7,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={240.44520547945206}
             x={1}
             y={23.333333333333343}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -9955,8 +11513,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 eYhazy"
               color="#c0d4e2"
               fill="#c0d4e2"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -9981,8 +11541,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
               color="#cbcbcb"
               fill="#cbcbcb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region B
@@ -9991,10 +11553,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#cbcbcb"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "c9f87965-dd03-47bd-baef-ace0f1fa1904",
+                "index": 2,
+                "title": "Region B",
+                "value": 15.8,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={106.41552511415526}
             x={1}
             y={46.666666666666686}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10012,8 +11614,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fECOgi"
               color="#cbcbcb"
               fill="#cbcbcb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10038,8 +11642,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
               color="#e57878"
               fill="#e57878"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region C
@@ -10048,10 +11654,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#e57878"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "5ca7e063-eddb-446d-984c-f4c7b8a36d5c",
+                "index": 3,
+                "title": "Region C",
+                "value": 40.9,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={275.4680365296804}
             x={1}
             y={70}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10069,8 +11715,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 ecFmwA"
               color="#e57878"
               fill="#e57878"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10095,8 +11743,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
               color="#8adb96"
               fill="#8adb96"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region D
@@ -10105,10 +11755,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#8adb96"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "c69d5eb8-ca3f-4ecf-9ecb-9e27e67fca5b",
+                "index": 4,
+                "title": "Region D",
+                "value": 23.6,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={158.94977168949774}
             x={1}
             y={93.33333333333334}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10126,8 +11816,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fmEmeb"
               color="#8adb96"
               fill="#8adb96"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10152,8 +11844,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
               color="#6895eb"
               fill="#6895eb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region E
@@ -10162,10 +11856,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#6895eb"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "9c11141d-b6ed-46cf-9e40-278719da5262",
+                "index": 5,
+                "title": "Region E",
+                "value": 17.6,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={118.53881278538813}
             x={1}
             y={116.66666666666667}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10183,8 +11917,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 lkjjAr"
               color="#6895eb"
               fill="#6895eb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10209,8 +11945,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
               color="#b8c8d8"
               fill="#b8c8d8"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region F
@@ -10219,10 +11957,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#b8c8d8"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "54f65f84-2458-4379-9552-fcdbc263f652",
+                "index": 6,
+                "title": "Region F",
+                "value": 38.1,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={256.6095890410959}
             x={1}
             y={140}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10240,8 +12018,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dTlLoq"
               color="#b8c8d8"
               fill="#b8c8d8"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10266,8 +12046,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
               color="#ebebeb"
               fill="#ebebeb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region G
@@ -10276,10 +12058,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#ebebeb"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "9076a917-fd0b-4746-924c-604905b70f89",
+                "index": 7,
+                "title": "Region G",
+                "value": 43.8,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={295}
             x={1}
             y={163.33333333333334}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10297,8 +12119,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 dsyIYC"
               color="#ebebeb"
               fill="#ebebeb"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
@@ -10323,8 +12147,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
               color="#ff7171"
               fill="#ff7171"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               Region H
@@ -10333,10 +12159,50 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
           <rect
             fill="#ff7171"
             height={23.333333333333332}
+            id="01648d04-78ad-402b-b255-14a6066d7927"
+            meta={
+              Object {
+                "id": "8b8f618b-d23a-4bc2-abab-4ce1e2d63665",
+                "index": 8,
+                "title": "Region H",
+                "value": 16.4,
+              }
+            }
+            parent_id={null}
+            textAlignment="left"
+            type="chart"
             width={110.45662100456622}
             x={1}
             y={186.66666666666666}
-          />
+          >
+            <div
+              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
+            >
+              <h3
+                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
+              >
+                Chart title
+              </h3>
+              <div
+                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
+              >
+                <svg
+                  className="sc-bdVaJa iVoKve"
+                  height="90%"
+                  overflow="visible"
+                  viewBox="0 0 297 210"
+                  width="100%"
+                >
+                  <g
+                    strokeWidth={0.025}
+                  />
+                </svg>
+              </div>
+              <div
+                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
+              />
+            </div>
+          </rect>
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -10354,8 +12220,10 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 cBkBDd"
               color="#ff7171"
               fill="#ff7171"
+              id="01648d04-78ad-402b-b255-14a6066d7927"
               textAnchor="start"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
                 
