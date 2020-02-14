@@ -25,11 +25,14 @@ import {
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
 import type { ElementsAction } from '@seine/core';
+import { defaultAddButtonRenderMap } from '@seine/editor';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
 import ColumnChartDescriptionEditor from './ColumnChartDescriptionEditor';
-import BarChartContentEditor from './BarChartContentEditor';
+import BarChartElementTitleInput from './BarChartElementTitleInput';
+import BarChartElementValueInput from './BarChartElementValueInput';
+import BarChartElementRect from './BarChartElementRect';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
@@ -42,8 +45,8 @@ const defaultEditor = {
  */
 export default function ChartEditor({
   kind = chartTypes.BAR,
-  addButtonRenderMap,
-  selection,
+  addButtonRenderMap = defaultAddButtonRenderMap,
+  selection = [],
   dispatch,
   editor = defaultEditor,
   textAlignment = defaultChartTextAlignment,
@@ -98,8 +101,8 @@ export default function ChartEditor({
             />
           }
           description={
-            kind === chartTypes.COLUMN ? (
-              <ColumnChartDescriptionEditor
+            kind === chartTypes.BAR ? (
+              <BarChartDescription
                 {...chartProps}
                 dispatchElements={dispatchElements}
               />
@@ -107,8 +110,8 @@ export default function ChartEditor({
               <LineChartDescription {...chartProps} />
             ) : kind === chartTypes.PIE ? (
               <PieChartDescription {...chartProps} />
-            ) : kind === chartTypes.BAR ? (
-              <BarChartDescription {...chartProps} />
+            ) : kind === chartTypes.COLUMN ? (
+              <ColumnChartDescriptionEditor {...chartProps} />
             ) : null
           }
           textAlignment={textAlignment}
@@ -116,9 +119,13 @@ export default function ChartEditor({
           <ChartSvg>
             {kind === chartTypes.BAR ? (
               <BarChartContent
-                as={BarChartContentEditor}
                 {...chartProps}
+                editor={editor}
+                dispatch={dispatch}
                 dispatchElements={dispatchElements}
+                elementTitleAs={BarChartElementTitleInput}
+                elementValueAs={BarChartElementValueInput}
+                elementRectAs={BarChartElementRect}
               />
             ) : kind === chartTypes.COLUMN ? (
               <ColumnChartContent {...chartProps} />

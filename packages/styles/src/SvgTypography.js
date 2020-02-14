@@ -14,6 +14,7 @@ export type SvgTypographyProps = {
   fill?: string,
   textAnchor?: 'start' | 'middle' | 'end',
   dominantBaseline?: 'middle' | 'baseline' | 'hanging',
+  meta?: { [string]: any },
 };
 
 export type BoxProps = {
@@ -83,7 +84,7 @@ export default React.forwardRef(function SvgTypography(
     x = 0,
     y = 0,
     textAnchor = 'start',
-    value,
+    meta,
     ...typography
   }: Props,
   ref
@@ -106,7 +107,7 @@ export default React.forwardRef(function SvgTypography(
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
         context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width + 16;
+        return context.measureText(text).width + parseInt(fontSize);
       };
       const getXScale = (value = 1) =>
         (window.devicePixelRatio * value * svgElement.getBBox().height) /

@@ -21,6 +21,10 @@ type Props = {
   palette?: string[],
   units?: string,
   xAxis?: boolean,
+
+  elementTitleAs: React.ComponentType,
+  elementValueAs: React.ComponentType,
+  elementRectAs: React.ComponentType,
 };
 
 /**
@@ -29,9 +33,7 @@ type Props = {
  * @returns {React.Node}
  */
 export default function BarChartContent({
-  elements,
-
-  as: Group = 'g',
+  elements = [],
 
   dx = defaultChartDx,
   legend = defaultBarChartLegend,
@@ -48,7 +50,11 @@ export default function BarChartContent({
   paletteKey,
   yAxis,
 
-  ...groupProps
+  elementTitleAs: ElementTitle = SvgTypography,
+  elementValueAs: ElementValue = SvgTypography,
+  elementRectAs: ElementRect = 'rect',
+
+  ...metaProps
 }: Props) {
   const [
     titleMethods,
@@ -67,45 +73,52 @@ export default function BarChartContent({
   const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
 
   return (
-    <Group {...groupProps} strokeWidth={titleHeight / 40}>
+    <g strokeWidth={titleHeight / 40}>
       {elements.map(({ title, value }, index) => {
         const width = (barWidth * value) / maxValue;
         const color = palette[index % palette.length];
         const y = VIEWPORT_HEIGHT - barHeight * (elements.length - index);
+        const meta = { ...elements[index], index };
 
         return [
-          <SvgTypography
+          <ElementTitle
+            {...metaProps}
             dominantBaseline={'middle'}
             fill={color}
             ref={titleTypographyMethodsRef}
             key={`title.${index}`}
+            meta={meta}
             x={0}
             y={y + barHeight / 2}
           >
             {legend ? '' : title}
-          </SvgTypography>,
+          </ElementTitle>,
 
-          <rect
+          <ElementRect
+            {...metaProps}
             fill={color}
             height={barHeight}
             width={width}
             key={`selection.${index}`}
+            meta={meta}
             x={titleWidth}
             y={y}
           />,
 
-          <SvgTypography
+          <ElementValue
+            {...metaProps}
             dominantBaseline={'middle'}
             ref={valueTypographyMethodsRef}
             fill={color}
             key={`value.${index}`}
+            meta={meta}
             x={titleWidth + width}
             y={y + barHeight / 2}
           >
             {'  '}
             {value}
             {units}
-          </SvgTypography>,
+          </ElementValue>,
         ];
       })}
       {!!xAxis && (
@@ -118,6 +131,6 @@ export default function BarChartContent({
           y={VIEWPORT_HEIGHT}
         />
       )}
-    </Group>
+    </g>
   );
 }

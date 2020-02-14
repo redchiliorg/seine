@@ -5,7 +5,6 @@ import styled from 'styled-components/macro';
 import type { BoxProps, SvgTypographyProps } from './SvgTypography';
 import SvgTypography from './SvgTypography';
 import Input from './Input';
-import useTypographyChildren from './useTypographyChildren';
 
 type Props = {
   children?: any,
@@ -25,6 +24,7 @@ const StyledInput = styled(Input).attrs(
 
     ${({ color }) => color && { color }};
     font-family: inherit;
+    font-style: normal;
     font-weight: inherit;
     font-size: inherit;
     letter-spacing: inherit;
@@ -72,16 +72,8 @@ export default React.forwardRef(function SvgInput(
   { children = '', ...typographyProps }: Props,
   ref
 ) {
-  const value = useTypographyChildren(children)
-    .split(' ')[0]
-    .trim();
   return (
-    <SvgTypography
-      {...typographyProps}
-      ref={ref}
-      as={StyledInput}
-      value={value}
-    >
+    <SvgTypography {...typographyProps} ref={ref} as={StyledInput}>
       {children}
     </SvgTypography>
   );

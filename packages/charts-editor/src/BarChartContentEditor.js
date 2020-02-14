@@ -5,7 +5,7 @@ import styled from 'styled-components/macro';
 
 type Props = {};
 
-const HiddenSvgGroup = styled.g`
+const Placeholder = styled.g`
   opacity: 0;
 `;
 
@@ -29,7 +29,7 @@ export default function BarChartContentEditor({
 
           if (index && (source === 'value' || source === 'title')) {
             return [
-              <HiddenSvgGroup>{child}</HiddenSvgGroup>,
+              <Placeholder>{child}</Placeholder>,
               <SvgInput
                 {...child.props}
                 type={source === 'value' ? 'number' : 'text'}
@@ -45,9 +45,7 @@ export default function BarChartContentEditor({
                     index: +index,
                   })
                 }
-              >
-                {child.props.children}
-              </SvgInput>,
+              />,
             ];
           }
         }
