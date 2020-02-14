@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import type { ElementsAction } from '@seine/core';
 import {
   chartTypes,
   initialElementsState,
@@ -24,8 +25,8 @@ import {
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
-import type { ElementsAction } from '@seine/core';
 import { defaultAddButtonRenderMap } from '@seine/editor';
+import stringify from 'virtual-dom-stringify';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
@@ -33,6 +34,7 @@ import ColumnChartDescriptionEditor from './ColumnChartDescriptionEditor';
 import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
 import BarChartElementRect from './BarChartElementRect';
+import { chartEditorFillPattern } from './constants';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
@@ -117,6 +119,12 @@ export default function ChartEditor({
           textAlignment={textAlignment}
         >
           <ChartSvg>
+            <defs
+              dangerouslySetInnerHTML={{
+                __html: stringify(chartEditorFillPattern),
+              }}
+            />
+            ;
             {kind === chartTypes.BAR ? (
               <BarChartContent
                 {...chartProps}

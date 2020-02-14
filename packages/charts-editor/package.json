@@ -15,7 +15,9 @@
     "@seine/core": "^0.3.0",
     "@seine/styles": "^0.3.0",
     "@seine/ui": "^0.3.0",
-    "react-color": "^2.17.3"
+    "react-color": "^2.17.3",
+    "svg-patterns": "^1.0.0",
+    "virtual-dom-stringify": "^3.0.1"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.2.1",

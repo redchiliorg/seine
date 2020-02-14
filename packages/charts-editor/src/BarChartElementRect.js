@@ -2,6 +2,9 @@
 import * as React from 'react';
 import { DESELECT_BLOCK_ELEMENT, SELECT_BLOCK_ELEMENT } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
+import { useAutoCallback } from 'hooks.macro';
+
+import { chartEditorFillPattern } from './constants';
 
 type Props = {
   children?: any,
@@ -29,24 +32,31 @@ export default function BarChartElementRect({
         })
       }
     >
-      <rect
-        {...rectProps}
-        {...(editor.selection === index
-          ? {
-              strokeDasharray: 0.25,
-              stroke: 'black',
+      <g>
+        <rect
+          {...rectProps}
+          onClick={useAutoCallback((event) => {
+            if (editor.selection !== index) {
+              event.stopPropagation();
+              event.preventDefault();
+              dispatchElements({
+                index,
+                type: SELECT_BLOCK_ELEMENT,
+              });
             }
-          : {
-              onClick: (event) => {
-                event.stopPropagation();
-                event.preventDefault();
-                dispatchElements({
-                  index,
-                  type: SELECT_BLOCK_ELEMENT,
-                });
-              },
-            })}
-      />
+          })}
+        />
+        {editor.selection === index && (
+          <rect
+            {...rectProps}
+            style={{
+              opacity: 0.15,
+              fill: chartEditorFillPattern.url(),
+              pointerEvents: 'none',
+            }}
+          />
+        )}
+      </g>
     </ClickAwayListener>
   );
 }
