@@ -34,6 +34,9 @@ import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
 import BarChartElementRect from './BarChartElementRect';
 import { chartEditorFillPattern } from './constants';
+import PieChartElementPath from './PieChartElementPath';
+import PieChartElementTitleInput from './PieChartElementTitleInput';
+import PieChartElementValueInput from './PieChartElementValueInput';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
@@ -45,6 +48,7 @@ const defaultEditor = {
  * @returns {React.Node}
  */
 export default function ChartEditor({
+  children,
   kind = chartTypes.BAR,
   addButtonRenderMap,
   selection,
@@ -90,7 +94,7 @@ export default function ChartEditor({
   );
 
   return (
-    !!selection && (
+    !!(selection && chartProps.elements) && (
       <>
         {selection.length === 1 && selection[0] === chartProps.id ? (
           <ChartLayout
@@ -138,7 +142,15 @@ export default function ChartEditor({
               ) : kind === chartTypes.COLUMN ? (
                 <ColumnChartContent {...chartProps} />
               ) : kind === chartTypes.PIE ? (
-                <PieChartContent {...chartProps} />
+                <PieChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  elementTitleAs={PieChartElementTitleInput}
+                  elementValueAs={PieChartElementValueInput}
+                  elementPathAs={PieChartElementPath}
+                />
               ) : kind === chartTypes.LINE ? (
                 <LineChartContent {...chartProps} />
               ) : null}

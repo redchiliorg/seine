@@ -36,6 +36,20 @@ export default function PieChartContent({
   legend = defaultPieChartLegend,
   palette = defaultChartPalette,
   units = defaultPieChartUnits,
+
+  dx,
+  dy,
+  minValue,
+  maxValue,
+  paletteKey,
+  xAxis,
+  yAxis,
+
+  elementTitleAs: ElementTitle = SvgTypography,
+  elementValueAs: ElementValue = SvgTypography,
+  elementPathAs: ElementPath = 'path',
+
+  ...metaProps
 }): Props {
   const sum = useAutoMemo(elements.reduce((acc, { value }) => acc + value, 0));
   const quarter = useAutoMemo(sum / 4);
@@ -43,13 +57,14 @@ export default function PieChartContent({
   const slices = useAutoMemo(
     elements
       .reduce(
-        ([head, ...acc], { title, value }) => {
+        ([head, ...acc], { title, value }, index) => {
           const start = head.end;
           const end = head.end + (2 * value * Math.PI) / sum;
 
           return [
             {
               length: end - start,
+              meta: { ...elements[index], index },
 
               start,
               startX: head.endX,
@@ -92,8 +107,10 @@ export default function PieChartContent({
   return (
     <g>
       {[
-        ...slices.map(({ startX, startY, length, endX, endY }, index) => (
-          <path
+        ...slices.map(({ startX, startY, length, endX, endY, meta }, index) => (
+          <ElementPath
+            {...metaProps}
+            meta={meta}
             d={[
               `M ${GUTTER_WIDTH + CENTER + RADIUS * endX} ${CENTER +
                 RADIUS * endY}`,
@@ -108,11 +125,13 @@ export default function PieChartContent({
             key={`slice.${index}`}
           />
         )),
-        ...slices.map(({ title, value, textX, textY }, index) => {
+        ...slices.map(({ title, value, textX, textY, meta }, index) => {
           const textColor = value >= quarter || legend ? 'white' : 'black';
 
           return [
-            <SvgTypography
+            <ElementValue
+              {...metaProps}
+              meta={meta}
               fill={textColor}
               key={`value.${index}`}
               dominantBaseline={legend ? 'middle' : 'baseline'}
@@ -125,10 +144,12 @@ export default function PieChartContent({
             >
               {value}
               {units}
-            </SvgTypography>,
+            </ElementValue>,
 
             !legend && (
-              <SvgTypography
+              <ElementTitle
+                {...metaProps}
+                meta={meta}
                 dominantBaseline={'hanging'}
                 fill={textColor}
                 key={`title.${index}`}
@@ -140,7 +161,7 @@ export default function PieChartContent({
                 {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
               >
                 {title}
-              </SvgTypography>
+              </ElementTitle>
             ),
           ];
         }),

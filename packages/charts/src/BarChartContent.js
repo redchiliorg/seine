@@ -33,7 +33,7 @@ type Props = {
  * @returns {React.Node}
  */
 export default function BarChartContent({
-  elements = [],
+  elements,
 
   dx = defaultChartDx,
   legend = defaultBarChartLegend,

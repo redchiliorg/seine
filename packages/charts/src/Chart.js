@@ -22,13 +22,12 @@ import BarChartDescription from './BarChartDescription';
  * @returns {React.Node}
  */
 export default function Chart({
+  children,
   kind = chartTypes.BAR,
   title = defaultChartTitle,
   textAlignment = defaultChartTextAlignment,
   ...chartProps
 }: Props) {
-  chartProps.textAlignment = textAlignment;
-
   return (
     <ChartLayout
       ref={useResizeTargetRef()}
