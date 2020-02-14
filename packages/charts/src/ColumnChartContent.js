@@ -108,6 +108,7 @@ export default function ColumnChartContent({
                 groupElements.length +
                 columnWidth / 2}`}
               stroke={'black'}
+              key={'line'}
             />,
             <SvgTypography
               textAnchor={'middle'}
@@ -129,6 +130,7 @@ export default function ColumnChartContent({
           arrow
           finite
           direction={'up'}
+          key={'axis'}
           length={VIEWPORT_HEIGHT}
           max={maxValue}
           step={dy}
