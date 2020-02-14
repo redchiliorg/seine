@@ -25,7 +25,6 @@ import {
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
-import { defaultAddButtonRenderMap } from '@seine/editor';
 import stringify from 'virtual-dom-stringify';
 
 import type { ChartEditorProps as Props } from './types';
@@ -47,7 +46,7 @@ const defaultEditor = {
  */
 export default function ChartEditor({
   kind = chartTypes.BAR,
-  addButtonRenderMap = defaultAddButtonRenderMap,
+  addButtonRenderMap,
   selection = [],
   dispatch,
   editor = defaultEditor,
