@@ -21,18 +21,10 @@ const StyledInput = styled(Input).attrs(
     border: none;
     margin: 0;
     padding: 0;
-
-    ${({ color }) => color && { color }};
-    font-family: inherit;
-    font-style: normal;
-    font-weight: inherit;
-    font-size: inherit;
-    letter-spacing: inherit;
-    word-spacing: inherit;
-
     transform-origin: left top;
     overflow: visible;
     white-space: pre-wrap;
+    ${({ color }) => color && { color }};
     ${({ transform }) => transform && { transform }};
   }
   ::-webkit-outer-spin-button,

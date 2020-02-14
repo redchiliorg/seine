@@ -47,7 +47,7 @@ const defaultEditor = {
 export default function ChartEditor({
   kind = chartTypes.BAR,
   addButtonRenderMap,
-  selection = [],
+  selection,
   dispatch,
   editor = defaultEditor,
   textAlignment = defaultChartTextAlignment,
@@ -90,69 +90,71 @@ export default function ChartEditor({
   );
 
   return (
-    <>
-      {selection.length === 1 && selection[0] === chartProps.id ? (
-        <ChartLayout
-          ref={resizeTargetRef}
-          title={
-            <ChartInlineInput
-              onChange={handleTitleChange}
-              textAlignment={textAlignment}
-              value={title}
-            />
-          }
-          description={
-            kind === chartTypes.BAR ? (
-              <BarChartDescription
-                {...chartProps}
-                dispatchElements={dispatchElements}
+    !!selection && (
+      <>
+        {selection.length === 1 && selection[0] === chartProps.id ? (
+          <ChartLayout
+            ref={resizeTargetRef}
+            title={
+              <ChartInlineInput
+                onChange={handleTitleChange}
+                textAlignment={textAlignment}
+                value={title}
               />
-            ) : kind === chartTypes.LINE ? (
-              <LineChartDescription {...chartProps} />
-            ) : kind === chartTypes.PIE ? (
-              <PieChartDescription {...chartProps} />
-            ) : kind === chartTypes.COLUMN ? (
-              <ColumnChartDescriptionEditor {...chartProps} />
-            ) : null
-          }
-          textAlignment={textAlignment}
-        >
-          <ChartSvg>
-            <defs
-              dangerouslySetInnerHTML={{
-                __html: stringify(chartEditorFillPattern),
-              }}
-            />
-            ;
-            {kind === chartTypes.BAR ? (
-              <BarChartContent
-                {...chartProps}
-                editor={editor}
-                dispatch={dispatch}
-                dispatchElements={dispatchElements}
-                elementTitleAs={BarChartElementTitleInput}
-                elementValueAs={BarChartElementValueInput}
-                elementRectAs={BarChartElementRect}
+            }
+            description={
+              kind === chartTypes.BAR ? (
+                <BarChartDescription
+                  {...chartProps}
+                  dispatchElements={dispatchElements}
+                />
+              ) : kind === chartTypes.LINE ? (
+                <LineChartDescription {...chartProps} />
+              ) : kind === chartTypes.PIE ? (
+                <PieChartDescription {...chartProps} />
+              ) : kind === chartTypes.COLUMN ? (
+                <ColumnChartDescriptionEditor {...chartProps} />
+              ) : null
+            }
+            textAlignment={textAlignment}
+          >
+            <ChartSvg>
+              <defs
+                dangerouslySetInnerHTML={{
+                  __html: stringify(chartEditorFillPattern),
+                }}
               />
-            ) : kind === chartTypes.COLUMN ? (
-              <ColumnChartContent {...chartProps} />
-            ) : kind === chartTypes.PIE ? (
-              <PieChartContent {...chartProps} />
-            ) : kind === chartTypes.LINE ? (
-              <LineChartContent {...chartProps} />
-            ) : null}
-          </ChartSvg>
-        </ChartLayout>
-      ) : (
-        <Chart {...chartProps} kind={kind} />
-      )}
-      <BlockActions
-        addButtonRenderMap={addButtonRenderMap}
-        dispatch={dispatch}
-        editor={editor}
-        id={chartProps.id}
-        selection={selection}
-      />
-    </>
+              ;
+              {kind === chartTypes.BAR ? (
+                <BarChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  elementTitleAs={BarChartElementTitleInput}
+                  elementValueAs={BarChartElementValueInput}
+                  elementRectAs={BarChartElementRect}
+                />
+              ) : kind === chartTypes.COLUMN ? (
+                <ColumnChartContent {...chartProps} />
+              ) : kind === chartTypes.PIE ? (
+                <PieChartContent {...chartProps} />
+              ) : kind === chartTypes.LINE ? (
+                <LineChartContent {...chartProps} />
+              ) : null}
+            </ChartSvg>
+          </ChartLayout>
+        ) : (
+          <Chart {...chartProps} kind={kind} />
+        )}
+        <BlockActions
+          addButtonRenderMap={addButtonRenderMap}
+          dispatch={dispatch}
+          editor={editor}
+          id={chartProps.id}
+          selection={selection}
+        />
+      </>
+    )
   );
 }
