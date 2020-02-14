@@ -128,7 +128,6 @@ export default function ChartEditor({
                   __html: stringify(chartEditorFillPattern),
                 }}
               />
-              ;
               {kind === chartTypes.BAR ? (
                 <BarChartContent
                   {...chartProps}

@@ -3,8 +3,6 @@ export * from './constants';
 export * from './helpers';
 
 export { default as Chart } from './Chart';
-export { default as ChartTitle } from './ChartTitle';
-export type { Props as ChartTitleProps } from './ChartTitle';
 
 export { default as BarChartContent } from './BarChartContent';
 
