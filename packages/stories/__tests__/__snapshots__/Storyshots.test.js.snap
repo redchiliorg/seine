@@ -2577,47 +2577,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "62e1a33a-c97a-499b-9a34-3d58f741586c",
+                  "id": "6e373e2e-e56f-4a5a-9b91-529b38022273",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2678,47 +2649,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "4e7b5263-099f-43c5-aad3-da67a2bcefa3",
+                  "id": "43cf3dc9-2922-47ae-a8cb-6be1e7eddb70",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={257.49388753056235}
               x={1}
               y={35}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2779,47 +2721,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "56648ac9-682d-4304-ad48-66af2dfcf717",
+                  "id": "eb1d9049-37cd-47bd-a3c6-aaf68303b87a",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={113.96088019559903}
               x={1}
               y={70}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2880,47 +2793,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "e293cd8f-8f45-4e4a-b739-f901d10f6a69",
+                  "id": "24fc03d2-2da7-4ec9-a3fb-d9a22da10e1c",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={295}
               x={1}
               y={105}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -2981,47 +2865,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "fd1aec78-969a-48d4-a543-831614ced62f",
+                  "id": "55356a6c-e125-483c-9d65-4c15e753cdb4",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={170.2200488997555}
               x={1}
               y={140}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -3082,47 +2937,18 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9a2c675c-4216-49f3-87d2-72752f74e974",
+                  "id": "a817049a-3606-4e3d-8b81-5b619974e580",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={126.9437652811736}
               x={1}
               y={175}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -3277,22 +3103,77 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
             <path
               d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
               fill="#71a2ff"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "206d7304-9b67-4d15-8d82-ea254d520509",
+                  "index": 0,
+                  "title": "repairs",
+                  "value": 12,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
               fill="#c0d4e2"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "4ffee200-dce6-453d-9a6e-f3ae604d7ae6",
+                  "index": 1,
+                  "title": "consulting",
+                  "value": 10,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
               fill="#cbcbcb"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "d516ac57-99c0-44e7-a3e6-7b07cdcd4567",
+                  "index": 2,
+                  "title": "training",
+                  "value": 8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
               fill="#e57878"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "b242fa82-1dfc-421f-9d1b-5180272e87bb",
+                  "index": 3,
+                  "title": "product sales",
+                  "value": 64,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
               fill="#8adb96"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "c0501ea4-c22d-4f19-8095-baef564d2a7c",
+                  "index": 4,
+                  "title": "others",
+                  "value": 6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -3312,8 +3193,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 12
@@ -3338,8 +3221,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 repairs
@@ -3363,8 +3248,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 10
@@ -3389,8 +3276,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 consulting
@@ -3414,8 +3303,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 8
@@ -3440,8 +3331,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 training
@@ -3465,8 +3358,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 64
@@ -3491,8 +3386,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 product sales
@@ -3516,8 +3413,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 6
@@ -3542,8 +3441,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 others
@@ -3591,14 +3492,48 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             <path
               d="M 43.85698616188182 96.34900844553596 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.85698616188182 96.34900844553596"
               fill="rgba(97,139,219,1)"
+              id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
+              meta={
+                Object {
+                  "index": 0,
+                  "title": "Luxury cars",
+                  "value": 2349,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <path
               d="M 229.74679209511572 38.48715331416764 A 105 105 0 0 0 43.85698616188182 96.34900844553596 L 148.5 105 L 229.74679209511572 38.48715331416764"
               fill="rgba(172,190,203,1)"
+              id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
+              meta={
+                Object {
+                  "index": 1,
+                  "title": "SUVs",
+                  "value": 6423,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <path
               d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 229.74679209511572 38.48715331416764 L 148.5 105 L 74.25378797541246 179.24621202458746"
               fill="rgba(138,219,150,1)"
+              id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
+              meta={
+                Object {
+                  "id": "ee83f39d-03bc-4878-9c78-0edef43e936b",
+                  "index": 2,
+                  "title": "Hatchbacks",
+                  "value": 8234,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -3618,8 +3553,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 2349
@@ -3644,8 +3581,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Luxury cars
@@ -3669,8 +3608,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 6423
@@ -3695,8 +3636,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 SUVs
@@ -3720,8 +3663,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 8234
@@ -3746,8 +3691,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Hatchbacks
@@ -3782,14 +3729,48 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             <path
               d="M 43.794831114486826 97.1369466073184 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.794831114486826 97.1369466073184"
               fill="rgba(97,139,219,1)"
+              id="7d134ef0-86d7-4de6-a689-792986b2dafc"
+              meta={
+                Object {
+                  "index": 0,
+                  "title": "Luxury cars",
+                  "value": 2584,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <path
               d="M 227.83210811429893 36.214706352729834 A 105 105 0 0 0 43.794831114486826 97.1369466073184 L 148.5 105 L 227.83210811429893 36.214706352729834"
               fill="rgba(172,190,203,1)"
+              id="7d134ef0-86d7-4de6-a689-792986b2dafc"
+              meta={
+                Object {
+                  "index": 1,
+                  "title": "SUVs",
+                  "value": 7065,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <path
               d="M 74.25378797541259 179.24621202458758 A 105 105 0 0 0 227.83210811429893 36.214706352729834 L 148.5 105 L 74.25378797541259 179.24621202458758"
               fill="rgba(138,219,150,1)"
+              id="7d134ef0-86d7-4de6-a689-792986b2dafc"
+              meta={
+                Object {
+                  "id": "d2b4cd22-be07-4bb4-bc62-8b48279dee25",
+                  "index": 2,
+                  "title": "Hatchbacks",
+                  "value": 9222,
+                }
+              }
+              parent_id="6fbf9072-e107-476d-8300-642b13bf39d2"
+              schema={null}
+              type="chart"
             />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -3809,8 +3790,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 2584
@@ -3835,8 +3818,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Luxury cars
@@ -3860,8 +3845,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 7065
@@ -3886,8 +3873,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 SUVs
@@ -3911,8 +3900,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 9222
@@ -3937,8 +3928,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 Hatchbacks
@@ -4407,47 +4400,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "cd31aff7-e97e-4654-89de-7ee90c2b3218",
+                  "id": "9478c0e1-a4ab-442e-acff-fd5898a98f55",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={140.09132420091325}
               x={1}
               y={0}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4508,47 +4472,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "2643e996-6488-423a-8571-6bca98645acc",
+                  "id": "f546d5b8-ba07-45a9-a51a-3399b3fa7248",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={240.44520547945206}
               x={1}
               y={23.333333333333343}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4609,47 +4544,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "5c80b4f6-c8c3-4d49-8078-2d2c714e61ba",
+                  "id": "3443e16e-90c1-4508-a4b4-a6697ec25d11",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={106.41552511415526}
               x={1}
               y={46.666666666666686}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4710,47 +4616,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "e5f6808d-33bb-4885-94e8-83ee2fb059e5",
+                  "id": "831a1ffa-f256-42b3-9023-f8c5328054a2",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={275.4680365296804}
               x={1}
               y={70}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4811,47 +4688,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "2ee61738-aefe-40ee-b33f-432c57c9543c",
+                  "id": "266d9426-ca51-401b-8956-2b21885ccd92",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={158.94977168949774}
               x={1}
               y={93.33333333333334}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -4912,47 +4760,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "686d670c-f810-4284-991e-6bdc49bdfc9b",
+                  "id": "4c273ec0-5fad-4394-91ed-7d301ae83d3a",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={118.53881278538813}
               x={1}
               y={116.66666666666667}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -5013,47 +4832,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "abecc605-2c13-458c-9957-c468a0fdc11a",
+                  "id": "6f80ea72-ea8f-43b9-a539-94cb9c8542e3",
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={256.6095890410959}
               x={1}
               y={140}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -5114,47 +4904,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "6c86ebef-9e30-4afc-b08a-bdb6c44c215c",
+                  "id": "65cd47fc-6d9a-4d22-83d1-f4194b742337",
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={295}
               x={1}
               y={163.33333333333334}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -5215,47 +4976,18 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "3bba4ee3-7062-481e-9ae4-c4034ec1b7a2",
+                  "id": "c94ab3e3-03ae-4fa3-9161-14a578cedc32",
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={110.45662100456622}
               x={1}
               y={186.66666666666666}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7539,47 +7271,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "6cc0c259-37e6-479f-be5a-09c6d4593cfc",
+                  "id": "41c1b8bf-5e82-47a4-96f3-4f8fc26fde6c",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7640,47 +7343,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "93b5d822-0e6f-41c7-b05c-8f75a4f135f0",
+                  "id": "955963f8-e94e-482d-9373-b7a24c18ffbf",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={257.49388753056235}
               x={1}
               y={35}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7741,47 +7415,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "d88f4078-3313-4feb-ac15-5e7c3b78d29f",
+                  "id": "9707cbd2-c265-4de6-bc32-82868faba112",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={113.96088019559903}
               x={1}
               y={70}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7842,47 +7487,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "bae2ddf8-599b-443f-8b0e-4b9c09981a2c",
+                  "id": "0292b76d-4d75-41ef-a1ae-ce3a2045c2e4",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={295}
               x={1}
               y={105}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -7943,47 +7559,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "6caf45fa-7b74-4700-8403-9c97a50e254a",
+                  "id": "ff8d9885-65d8-41df-8a35-e3619cf27327",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={170.2200488997555}
               x={1}
               y={140}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -8044,47 +7631,18 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "a8f7fe39-7987-4dc4-857d-ee56203e66ac",
+                  "id": "8d8b20da-f363-4213-bda5-faf87775ba69",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={126.9437652811736}
               x={1}
               y={175}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -8252,22 +7810,77 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
             <path
               d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
               fill="#71a2ff"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "f57a54f5-ef65-4f44-aef9-605bc74a8b66",
+                  "index": 0,
+                  "title": "repairs",
+                  "value": 12,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
               fill="#c0d4e2"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "2411d9ce-1d9f-4f07-a892-db0995e251e1",
+                  "index": 1,
+                  "title": "consulting of something long",
+                  "value": 10,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
               fill="#cbcbcb"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "0a45c755-6b37-46de-b050-6bd118919b4a",
+                  "index": 2,
+                  "title": "training",
+                  "value": 8,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
               fill="#e57878"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "0df6279b-9568-4993-a8f5-b9529778ce7c",
+                  "index": 3,
+                  "title": "product sales",
+                  "value": 64,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <path
               d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
               fill="#8adb96"
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+              meta={
+                Object {
+                  "id": "1e7805cc-7ff9-4f7c-8a10-227903318a51",
+                  "index": 4,
+                  "title": "others",
+                  "value": 6,
+                }
+              }
+              parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
+              type="chart"
             />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -8287,8 +7900,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 12
@@ -8313,8 +7928,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 repairs
@@ -8338,8 +7955,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 10
@@ -8364,8 +7983,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 consulting of something long
@@ -8389,8 +8010,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 8
@@ -8415,8 +8038,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 training
@@ -8440,8 +8065,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 64
@@ -8466,8 +8093,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="white"
                 fill="white"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 product sales
@@ -8491,8 +8120,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 6
@@ -8517,8 +8148,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 color="black"
                 fill="black"
                 fontWeight={400}
+                id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
                 textAnchor="middle"
                 transform="scale(1, 1)"
+                type="chart"
                 width={1}
               >
                 others
@@ -8584,47 +8217,18 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f4763f23-0510-48f2-8c46-14aec42e2431",
+                  "id": "7cf4c9a9-b85a-4523-a49d-43742969aa4c",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={150.0244498777506}
               x={1}
               y={0}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -8685,47 +8289,18 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "8c948a3d-c83a-411c-8867-32d69ae47057",
+                  "id": "fb581fdf-38a5-4274-8f83-d3b555177a44",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={257.49388753056235}
               x={1}
               y={52.5}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -8786,47 +8361,18 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "90708904-7383-427b-a58d-51bf3529310e",
+                  "id": "094dad9e-7be9-40dd-9a1f-83402dea9c2f",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={113.96088019559903}
               x={1}
               y={105}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -8887,47 +8433,18 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "8a814860-6d58-4905-876a-ef396312d613",
+                  "id": "8e20020c-9eef-416c-8ea3-3b5af47e9965",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={295}
               x={1}
               y={157.5}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10268,47 +9785,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "cb832525-383d-44b1-ab83-21a23ae32e06",
+                  "id": "46aa61ee-51db-45da-abf2-658766f567da",
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={140.09132420091325}
               x={1}
               y={0}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10369,47 +9857,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "c4af1426-e2c2-44bf-b552-da53c4fb9db8",
+                  "id": "35922617-919e-4615-830e-d0a46ceffa1a",
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={240.44520547945206}
               x={1}
               y={23.333333333333343}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10470,47 +9929,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "bef04a5b-da25-4f35-9978-00a76a865a08",
+                  "id": "3788299b-d2e6-476f-a1dd-399a0856b0c0",
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={106.41552511415526}
               x={1}
               y={46.666666666666686}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10571,47 +10001,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "7dbb808b-ee0e-4a77-9dbb-3d584929cace",
+                  "id": "dec6e320-26ba-4530-b512-12affad4b729",
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={275.4680365296804}
               x={1}
               y={70}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10672,47 +10073,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "b6fc8e0c-851a-4db5-926a-0b58d5dff4fc",
+                  "id": "a131169e-a487-4c47-9178-88eef7f088a3",
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={158.94977168949774}
               x={1}
               y={93.33333333333334}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10773,47 +10145,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "0a471db4-24bc-4516-a1bd-7e59ec80ec2d",
+                  "id": "96109652-6551-42d3-82b6-bce1429cc4b4",
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={118.53881278538813}
               x={1}
               y={116.66666666666667}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10874,47 +10217,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "120099d2-c280-42bb-9ec3-1cdb25112666",
+                  "id": "23acfb35-f971-429a-ba26-8b3da61eeda6",
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={256.6095890410959}
               x={1}
               y={140}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -10975,47 +10289,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "5f8d1afc-70c5-4bef-b6fc-48f39b2d8325",
+                  "id": "4224fe8a-3739-4aaa-a68c-166a06f5e532",
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={295}
               x={1}
               y={163.33333333333334}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -11076,47 +10361,18 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "3f18a0c9-6b04-4e54-8e8c-42145e3c7222",
+                  "id": "a8c67ef2-890f-4321-bdc9-ffbd577ae0f0",
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
                 }
               }
               parent_id="grid--bee1c449-5515-4b12-9779-cfa11f1f62d9"
-              textAlignment="left"
               type="chart"
               width={110.45662100456622}
               x={1}
               y={186.66666666666666}
-            >
-              <div
-                className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-              >
-                <h3
-                  className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-                >
-                  Chart title
-                </h3>
-                <div
-                  className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-                >
-                  <svg
-                    className="sc-bdVaJa iVoKve"
-                    height="90%"
-                    overflow="visible"
-                    viewBox="0 0 297 210"
-                    width="100%"
-                  >
-                    <g
-                      strokeWidth={0.025}
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-                />
-              </div>
-            </rect>
+            />
             <foreignObject
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
@@ -11354,47 +10610,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "7daac199-21b9-4816-9ca7-ff77cc5fb673",
+                "id": "5a53479e-e3b1-47a9-8966-df0180b85109",
                 "index": 0,
                 "title": "WFLA",
                 "value": 20.8,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={140.09132420091325}
             x={1}
             y={0}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11455,47 +10682,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "6bd8e821-4493-43da-adad-f9fa256e4ef3",
+                "id": "546d3a4b-7636-453a-af0c-5fdd0875014a",
                 "index": 1,
                 "title": "Region A",
                 "value": 35.7,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={240.44520547945206}
             x={1}
             y={23.333333333333343}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11556,47 +10754,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "eaf1a36e-8e9e-41ab-b7d9-44c95f5a5af9",
+                "id": "92acc8dc-a036-42bf-b605-5d2fb63e6d32",
                 "index": 2,
                 "title": "Region B",
                 "value": 15.8,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={106.41552511415526}
             x={1}
             y={46.666666666666686}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11657,47 +10826,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "653647e2-310e-44f2-8618-1701c62f79fe",
+                "id": "189d6cf6-828e-46e3-b017-cc3c7280e354",
                 "index": 3,
                 "title": "Region C",
                 "value": 40.9,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={275.4680365296804}
             x={1}
             y={70}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11758,47 +10898,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "730172a6-6245-4c8e-a9b1-9cf87cbfd296",
+                "id": "dc5cabb3-cef2-4690-bfad-bbed52c45f1a",
                 "index": 4,
                 "title": "Region D",
                 "value": 23.6,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={158.94977168949774}
             x={1}
             y={93.33333333333334}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11859,47 +10970,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "cf782493-9e53-4732-a647-e56fb07e3532",
+                "id": "4d6a4d8d-9b3b-42d8-9270-caab6fa3e9de",
                 "index": 5,
                 "title": "Region E",
                 "value": 17.6,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={118.53881278538813}
             x={1}
             y={116.66666666666667}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -11960,47 +11042,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "9fa1dae1-ff7c-4f6a-9853-91a2a3dcb970",
+                "id": "a8737267-c0d0-4ec5-8b8c-5abcd6f5e710",
                 "index": 6,
                 "title": "Region F",
                 "value": 38.1,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={256.6095890410959}
             x={1}
             y={140}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -12061,47 +11114,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "133ed8e4-2940-46d4-94b5-4ce2268091bd",
+                "id": "06035b39-4d85-4512-a40e-002071154ed3",
                 "index": 7,
                 "title": "Region G",
                 "value": 43.8,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={295}
             x={1}
             y={163.33333333333334}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -12162,47 +11186,18 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "704d668c-1c1a-47c0-bad5-b74b17ddbe94",
+                "id": "2b15b6a9-c997-4325-96de-8ddd113ced64",
                 "index": 8,
                 "title": "Region H",
                 "value": 16.4,
               }
             }
             parent_id={null}
-            textAlignment="left"
             type="chart"
             width={110.45662100456622}
             x={1}
             y={186.66666666666666}
-          >
-            <div
-              className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-0 gMYVfn"
-            >
-              <h3
-                className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-1 kykgcG"
-              >
-                Chart title
-              </h3>
-              <div
-                className="ChartLayout__ChartLayoutContent-sc-1wj2c7d-2 iQpCaM"
-              >
-                <svg
-                  className="sc-bdVaJa iVoKve"
-                  height="90%"
-                  overflow="visible"
-                  viewBox="0 0 297 210"
-                  width="100%"
-                >
-                  <g
-                    strokeWidth={0.025}
-                  />
-                </svg>
-              </div>
-              <div
-                className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-3 fZtLfr"
-              />
-            </div>
-          </rect>
+          />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
@@ -13718,22 +12713,77 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           <path
             d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
             fill="#71a2ff"
+            id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+            meta={
+              Object {
+                "id": "78f5485e-e2df-4193-a611-5d383c35fc3a",
+                "index": 0,
+                "title": "repairs of something very long",
+                "value": 12,
+              }
+            }
+            parent_id={null}
+            type="chart"
           />
           <path
             d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
             fill="#c0d4e2"
+            id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+            meta={
+              Object {
+                "id": "5f0e38d7-0922-4fed-83ab-caef1d31d671",
+                "index": 1,
+                "title": "consulting",
+                "value": 10,
+              }
+            }
+            parent_id={null}
+            type="chart"
           />
           <path
             d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
             fill="#cbcbcb"
+            id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+            meta={
+              Object {
+                "id": "b3f93cd2-7321-4913-966d-6641030cd090",
+                "index": 2,
+                "title": "training",
+                "value": 8,
+              }
+            }
+            parent_id={null}
+            type="chart"
           />
           <path
             d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
             fill="#e57878"
+            id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+            meta={
+              Object {
+                "id": "b4684eae-38f7-4059-9acf-d5d40d0754cc",
+                "index": 3,
+                "title": "product sales",
+                "value": 64,
+              }
+            }
+            parent_id={null}
+            type="chart"
           />
           <path
             d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
             fill="#8adb96"
+            id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
+            meta={
+              Object {
+                "id": "5a650fef-2c9a-4ff4-bfa1-1d5c33a5e378",
+                "index": 4,
+                "title": "others",
+                "value": 6,
+              }
+            }
+            parent_id={null}
+            type="chart"
           />
           <foreignObject
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
@@ -13753,8 +12803,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               12
@@ -13779,8 +12831,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               repairs of something very long
@@ -13804,8 +12858,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               10
@@ -13830,8 +12886,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               consulting
@@ -13855,8 +12913,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               8
@@ -13881,8 +12941,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               training
@@ -13906,8 +12968,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="white"
               fill="white"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               64
@@ -13932,8 +12996,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="white"
               fill="white"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               product sales
@@ -13957,8 +13023,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               6
@@ -13983,8 +13051,10 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
               color="black"
               fill="black"
               fontWeight={400}
+              id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               textAnchor="middle"
               transform="scale(1, 1)"
+              type="chart"
               width={1}
             >
               others
