@@ -1,0 +1,35 @@
+// @flow
+import * as React from 'react';
+import { SvgInput } from '@seine/styles';
+import { UPDATE_BLOCK_ELEMENT_BY_GROUP } from '@seine/core';
+import { useAutoCallback } from 'hooks.macro';
+
+type Props = {
+  children?: any,
+};
+
+/**
+ * @description Bar chart element value input for editor.
+ * @param {Props} props
+ * @returns {React.Node}
+ */
+export default function ColumnChartGroupTitleInput({
+  dispatch,
+  dispatchElements,
+  editor,
+  meta: group,
+  ...inputProps
+}: Props) {
+  return (
+    <SvgInput
+      {...inputProps}
+      onChange={useAutoCallback(({ currentTarget }) =>
+        dispatchElements({
+          type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
+          group,
+          body: { group: currentTarget.value },
+        })
+      )}
+    />
+  );
+}

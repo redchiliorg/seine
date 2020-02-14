@@ -11,7 +11,6 @@ import {
 import { BlockActions } from '@seine/ui';
 import {
   BarChartContent,
-  BarChartDescription,
   Chart,
   ChartLayout,
   ChartSvg,
@@ -21,11 +20,11 @@ import {
   LineChartContent,
   LineChartDescription,
   PieChartContent,
-  PieChartDescription,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
 import stringify from 'virtual-dom-stringify';
+import styled from 'styled-components';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
@@ -37,10 +36,20 @@ import { chartEditorFillPattern } from './constants';
 import PieChartElementPath from './PieChartElementPath';
 import PieChartElementTitleInput from './PieChartElementTitleInput';
 import PieChartElementValueInput from './PieChartElementValueInput';
+import ColumnChartElementRect from './ColumnChartElementRect';
+import ColumnChartElementValueInput from './ColumnChartElementValueInput';
+import ColumnChartGroupTitleInput from './ColumnChartGroupTitleInput';
+import PieChartDescriptionEditor from './PieChartDescriptionEditor';
+import BarChartDescriptionEditor from './BarChartDescriptionEditor';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
 };
+
+const Container = styled.div`
+  position: relative;
+  height: 100%;
+`;
 
 /**
  * @description Chart editor component.
@@ -95,7 +104,7 @@ export default function ChartEditor({
 
   return (
     !!(selection && chartProps.elements) && (
-      <>
+      <Container>
         {selection.length === 1 && selection[0] === chartProps.id ? (
           <ChartLayout
             ref={resizeTargetRef}
@@ -108,16 +117,22 @@ export default function ChartEditor({
             }
             description={
               kind === chartTypes.BAR ? (
-                <BarChartDescription
+                <BarChartDescriptionEditor
                   {...chartProps}
                   dispatchElements={dispatchElements}
                 />
               ) : kind === chartTypes.LINE ? (
                 <LineChartDescription {...chartProps} />
               ) : kind === chartTypes.PIE ? (
-                <PieChartDescription {...chartProps} />
+                <PieChartDescriptionEditor
+                  {...chartProps}
+                  dispatchElements={dispatchElements}
+                />
               ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartDescriptionEditor {...chartProps} />
+                <ColumnChartDescriptionEditor
+                  {...chartProps}
+                  dispatchElements={dispatchElements}
+                />
               ) : null
             }
             textAlignment={textAlignment}
@@ -139,7 +154,15 @@ export default function ChartEditor({
                   elementRectAs={BarChartElementRect}
                 />
               ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartContent {...chartProps} />
+                <ColumnChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  groupTitleAs={ColumnChartGroupTitleInput}
+                  elementRectAs={ColumnChartElementRect}
+                  elementValueAs={ColumnChartElementValueInput}
+                />
               ) : kind === chartTypes.PIE ? (
                 <PieChartContent
                   {...chartProps}
@@ -156,7 +179,12 @@ export default function ChartEditor({
             </ChartSvg>
           </ChartLayout>
         ) : (
-          <Chart {...chartProps} kind={kind} />
+          <Chart
+            {...chartProps}
+            title={title}
+            textAlignment={textAlignment}
+            kind={kind}
+          />
         )}
         <BlockActions
           addButtonRenderMap={addButtonRenderMap}
@@ -165,7 +193,7 @@ export default function ChartEditor({
           id={chartProps.id}
           selection={selection}
         />
-      </>
+      </Container>
     )
   );
 }

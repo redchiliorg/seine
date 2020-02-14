@@ -42,6 +42,16 @@ export default function ColumnChartContent({
   palette = defaultChartPalette,
   units = defaultChartUnits,
   yAxis = defaultChartYAxis,
+
+  dx,
+  legend,
+  xAxis,
+  paletteKey,
+
+  groupTitleAs: GroupTitle = SvgTypography,
+  elementValueAs: ElementValue = SvgTypography,
+  elementRectAs: ElementRect = 'rect',
+  ...metaProps
 }: Props) {
   const [maxValue, minValue, titledElements, groups] = useGroupedElements(
     elements,
@@ -70,8 +80,10 @@ export default function ColumnChartContent({
                 ((Math.max(minValue, Math.min(maxValue, value)) - minValue) /
                   (maxValue - minValue));
               const fill = palette[index % palette.length];
+
               return [
-                <rect
+                <ElementRect
+                  {...metaProps}
                   fill={fill}
                   height={rectHeight}
                   width={columnWidth}
@@ -82,8 +94,10 @@ export default function ColumnChartContent({
                   }
                   y={columnHeight - rectHeight}
                   key={`selection.${index}`}
+                  meta={{ ...groupElements[index], index }}
                 />,
-                <SvgTypography
+                <ElementValue
+                  {...metaProps}
                   fill={fill}
                   ref={childMethodsRef}
                   textAnchor={'middle'}
@@ -95,10 +109,11 @@ export default function ColumnChartContent({
                   }
                   y={columnHeight - rectHeight}
                   key={`value.${groupElements.length * groupIndex + index}`}
+                  meta={groupElements[index]}
                 >
                   {value}
                   {units}
-                </SvgTypography>,
+                </ElementValue>,
               ];
             }),
             <path
@@ -110,16 +125,18 @@ export default function ColumnChartContent({
               stroke={'black'}
               key={'line'}
             />,
-            <SvgTypography
+            <GroupTitle
+              {...metaProps}
               textAnchor={'middle'}
               dominantBaseline={'hanging'}
               key={'group'}
               x={GUTTER_WIDTH + groupIndex * groupWidth + groupWidth / 2}
               y={VIEWPORT_HEIGHT}
               width={columnWidth * groupElements.length}
+              meta={group}
             >
               {group}
-            </SvgTypography>,
+            </GroupTitle>,
           ]}
         </g>
       );
