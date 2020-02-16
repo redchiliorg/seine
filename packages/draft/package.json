@@ -12,10 +12,10 @@
   "license": "MIT",
   "dependencies": {
     "@seine/core": "^0.3.0",
-    "clsx": "^1.0.4"
+    "clsx": "^1.0.4",
+    "draft-js": "^0.11.0"
   },
   "peerDependencies": {
-    "draft-js": "^0.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

@@ -63,7 +63,7 @@ const config = {
         'draft-js': 'Draft',
         'styled-components/macro': 'styled',
         crypto: 'crypto',
-        ...Object.keys(workspaceModuleIds).reduce(
+        ...externalModuleIds.reduce(
           (acc, name) => ({
             ...acc,
             [name]: camelCase(name),

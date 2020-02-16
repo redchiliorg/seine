@@ -1,5 +1,5 @@
 // @flow
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import { VIEWPORT_HEIGHT, VIEWPORT_WIDTH } from './constants';
 
