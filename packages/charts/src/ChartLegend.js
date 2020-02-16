@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import type { ChartElement } from '@seine/core';
 
 import { defaultChartPalette } from './constants';
