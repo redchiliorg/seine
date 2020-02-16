@@ -2,20 +2,17 @@
 import * as React from 'react';
 import { DESELECT_BLOCK_ELEMENT, SELECT_BLOCK_ELEMENT } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
-import { useAutoCallback } from 'hooks.macro';
-
-import { chartEditorFillPattern } from './constants';
 
 type Props = {
   children?: any,
 };
 
 /**
- * @description Pie chart selectable slice.
+ * @description Line chart selectable path.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function PieChartElementPath({
+export default function LineChartElementPath({
   dispatch,
   dispatchElements,
   editor,
@@ -33,9 +30,9 @@ export default function PieChartElementPath({
       }
     >
       <g>
+        <path {...pathProps} />
         <path
-          {...pathProps}
-          onClick={useAutoCallback((event) => {
+          onClick={(event) => {
             if (editor.selection !== index) {
               event.stopPropagation();
               event.preventDefault();
@@ -44,18 +41,22 @@ export default function PieChartElementPath({
                 type: SELECT_BLOCK_ELEMENT,
               });
             }
-          })}
+          }}
+          {...pathProps}
+          {...(editor.selection === index
+            ? {
+                strokeDasharray: 0.5,
+                strokeWidth: 0.15,
+                stroke: 'black',
+              }
+            : {
+                strokeWidth: 4,
+                stroke: 'transparent',
+                markerEnd: 'none',
+                markerMid: 'none',
+                markerStart: 'none',
+              })}
         />
-        {editor.selection === index && (
-          <path
-            {...pathProps}
-            style={{
-              opacity: 0.15,
-              fill: chartEditorFillPattern.url(),
-              pointerEvents: 'none',
-            }}
-          />
-        )}
       </g>
     </ClickAwayListener>
   );

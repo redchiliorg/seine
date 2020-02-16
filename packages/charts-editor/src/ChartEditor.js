@@ -18,7 +18,6 @@ import {
   defaultChartTextAlignment,
   defaultChartTitle,
   LineChartContent,
-  LineChartDescription,
   PieChartContent,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
@@ -28,7 +27,7 @@ import styled from 'styled-components';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
-import ColumnChartDescriptionEditor from './ColumnChartDescriptionEditor';
+import ChartGroupsDescriptionEditor from './ChartGroupsDescriptionEditor';
 import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
 import BarChartElementRect from './BarChartElementRect';
@@ -37,10 +36,10 @@ import PieChartElementPath from './PieChartElementPath';
 import PieChartElementTitleInput from './PieChartElementTitleInput';
 import PieChartElementValueInput from './PieChartElementValueInput';
 import ColumnChartElementRect from './ColumnChartElementRect';
-import ColumnChartElementValueInput from './ColumnChartElementValueInput';
-import ColumnChartGroupTitleInput from './ColumnChartGroupTitleInput';
-import PieChartDescriptionEditor from './PieChartDescriptionEditor';
-import BarChartDescriptionEditor from './BarChartDescriptionEditor';
+import ChartGroupElementValueInput from './ChartGroupElementValueInput';
+import ChartGroupTitleInput from './ChartGroupTitleInput';
+import ChartDescriptionEditor from './ChartDescriptionEditor';
+import LineChartElementPath from './LineChartElementPath';
 
 const defaultEditor = {
   selection: initialElementsState.selection,
@@ -116,20 +115,13 @@ export default function ChartEditor({
               />
             }
             description={
-              kind === chartTypes.BAR ? (
-                <BarChartDescriptionEditor
+              kind === chartTypes.PIE || kind === chartTypes.BAR ? (
+                <ChartDescriptionEditor
                   {...chartProps}
                   dispatchElements={dispatchElements}
                 />
-              ) : kind === chartTypes.LINE ? (
-                <LineChartDescription {...chartProps} />
-              ) : kind === chartTypes.PIE ? (
-                <PieChartDescriptionEditor
-                  {...chartProps}
-                  dispatchElements={dispatchElements}
-                />
-              ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartDescriptionEditor
+              ) : kind === chartTypes.COLUMN || kind === chartTypes.LINE ? (
+                <ChartGroupsDescriptionEditor
                   {...chartProps}
                   dispatchElements={dispatchElements}
                 />
@@ -159,9 +151,9 @@ export default function ChartEditor({
                   editor={editor}
                   dispatch={dispatch}
                   dispatchElements={dispatchElements}
-                  groupTitleAs={ColumnChartGroupTitleInput}
+                  groupTitleAs={ChartGroupTitleInput}
                   elementRectAs={ColumnChartElementRect}
-                  elementValueAs={ColumnChartElementValueInput}
+                  elementValueAs={ChartGroupElementValueInput}
                 />
               ) : kind === chartTypes.PIE ? (
                 <PieChartContent
@@ -174,7 +166,15 @@ export default function ChartEditor({
                   elementPathAs={PieChartElementPath}
                 />
               ) : kind === chartTypes.LINE ? (
-                <LineChartContent {...chartProps} />
+                <LineChartContent
+                  {...chartProps}
+                  editor={editor}
+                  dispatch={dispatch}
+                  dispatchElements={dispatchElements}
+                  groupTitleAs={ChartGroupTitleInput}
+                  elementValueAs={ChartGroupElementValueInput}
+                  elementPathAs={LineChartElementPath}
+                />
               ) : null}
             </ChartSvg>
           </ChartLayout>

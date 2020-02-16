@@ -19,9 +19,4 @@ export type { Props as ChartLegendProps } from './ChartLegend';
 
 export { default as ChartLayout } from './ChartLayout';
 
-export { default as ColumnChartDescription } from './ColumnChartDescription';
-export { default as LineChartDescription } from './LineChartDescription';
-export { default as PieChartDescription } from './PieChartDescription';
-export { default as BarChartDescription } from './BarChartDescription';
-
 export * from './types';

@@ -13,7 +13,7 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default React.forwardRef(function ColumnChartElementValueInput(
+export default React.forwardRef(function ChartGroupElementValueInput(
   {
     dispatch,
     dispatchElements,

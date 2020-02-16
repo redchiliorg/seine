@@ -45,6 +45,16 @@ export default function LineChartContent({
   units = defaultChartUnits,
   xAxis = defaultChartXAxis,
   yAxis = defaultChartYAxis,
+
+  dx,
+  legend,
+  paletteKey,
+
+  groupTitleAs: GroupTitle = SvgTypography,
+  elementValueAs: ElementValue = SvgTypography,
+  elementPathAs: ElementPath = 'path',
+
+  ...metaProps
 }: Props) {
   const [maxValue, minValue, titles, groups] = useGroupedElements(
     elements,
@@ -71,16 +81,18 @@ export default function LineChartContent({
       {!!xAxis &&
         groups.map(([group], index, { length }) => (
           <React.Fragment key={index}>
-            <SvgTypography
+            <GroupTitle
+              {...metaProps}
               dominantBaseline={'hanging'}
               key={'group'}
               textAnchor={'middle'}
               x={x + (index * graphWidth) / (length - 1)}
               y={y + height}
               width={graphWidth / length}
+              meta={group}
             >
               {group}
-            </SvgTypography>
+            </GroupTitle>
           </React.Fragment>
         ))}
       {xAxis || yAxis
@@ -126,7 +138,8 @@ export default function LineChartContent({
           />
         </marker>,
 
-        <path
+        <ElementPath
+          {...metaProps}
           d={groups.reduce(
             (acc, [, elements], index) =>
               [
@@ -148,13 +161,15 @@ export default function LineChartContent({
           markerMid={`url(#${['point', titleIndex]})`}
           markerStart={`url(#${['point', titleIndex]})`}
           stroke={palette[titleIndex % palette.length]}
+          meta={{ ...titles[titleIndex], index: titleIndex }}
         />,
 
-        ...groups.map(([, elements], groupIndex, { length }) =>
-          elements
+        ...groups.map(([, groupElements], groupIndex, { length }) =>
+          groupElements
             .filter((element) => element.id === id)
             .map(({ index, value }) => (
-              <SvgTypography
+              <ElementValue
+                {...metaProps}
                 key={`value.${index}`}
                 textAnchor={
                   groupIndex === groups.length - 1
@@ -167,7 +182,7 @@ export default function LineChartContent({
                 y={
                   y +
                   height -
-                  ((elements
+                  ((groupElements
                     .filter((element) => element.id === id)
                     .map(({ value }) => value)[0] || 0) *
                     height) /
@@ -176,11 +191,12 @@ export default function LineChartContent({
                 }
                 width={graphWidth / (length + 1)}
                 ref={valueTypographyMethodsRef}
+                meta={{ ...elements[index], index }}
               >
                 {groupIndex === 0 && ' '}
                 {value}
                 {units}
-              </SvgTypography>
+              </ElementValue>
             ))
         ),
       ])}

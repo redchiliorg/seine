@@ -13,7 +13,7 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ColumnChartGroupTitleInput({
+export default function ChartGroupTitleInput({
   dispatch,
   dispatchElements,
   editor,
