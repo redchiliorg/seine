@@ -19,7 +19,7 @@ const StyledTable = styled.table`
       border-right: 1px solid #fff;
       line-height: 1.5;
       padding: 2rem;
-      white-space: pre;
+      white-space: pre-wrap;
     }
 
     & > thead {
