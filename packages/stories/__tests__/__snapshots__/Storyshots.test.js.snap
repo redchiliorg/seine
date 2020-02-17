@@ -23957,10 +23957,14 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 >
   <thead>
     <tr>
-      <th>
+      <th
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         narrow
       </th>
-      <th>
+      <th
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         wider column, wider column
       </th>
     </tr>
@@ -23988,13 +23992,19 @@ exports[`Storyshots Single.Table Table 3 X 3 1`] = `
 >
   <thead>
     <tr>
-      <th>
+      <th
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         first column
       </th>
-      <th>
+      <th
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         second column
       </th>
-      <th>
+      <th
+        className="Table__StyledTableCell-yfw5vz-1 fIAjku"
+      >
         third column
       </th>
     </tr>
