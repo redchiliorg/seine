@@ -33,7 +33,6 @@ const StyledTextarea = styled.textarea`
     height: ${({ value = '' }) =>
       [...value].reduce((found, char) => found + (char === '\n'), 1) * 1.5 +
       'em'};
-    width: 100%;
     resize: none;
   }
 `;

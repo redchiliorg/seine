@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '12.13'
+deploy:
+  provider: npm
+  email: mi666gan@gmail.com
+  api_key:
+    secure: jFNSZ+FVi/Nz1C8kdsrqXVKm7qG7Ic9PSv73po0pRY/YlM4Um9gNpEYnZ+31Gd9v9nN1QUkKRPu4YOP9xB5HyuIhJ1SATETcS7bA5OY9xOtZwXWlbkAsEUJrhhHfvG6YaNnGqxE+8gRPYfbEDlmiAnX40beh1HTLJyIXTEjuZXCW7YCBpFIVSO20cmVts86SkKgbnkNOcm4q37y+u0bm13bRKd5KjZE78Z+KFkzTGGX/JyeEx+AwCRszCbZif4DqJN6Gg4mJX5doYUscTS+R2WmHP8DykvsdDBSiZsZXFNqsifSDYJEfta+f/h2bXQzHswrWE7yz4WqrD/rOtpj1xuzMkR40uwbxb5c2A4W7mq86F/0h2FP15o+vDGz53OujyMPYtjFu5eOCPerT9GXUM8erlLd4ZPxRh3OwhIyND/aziIoTlPKQsMgjprmZFW49u3bNWNQkLiVlTgdIySAJAscAYLYZs1GtbP6Wf4VVNHFdm33aN5iMk5L03i0A9WQWZ8FMLIpi2Nza4/fzS2hEJ2yxEbJrcDgG7XHDVygLMcsGCUxq7oyJsLbtowTKTA0/KEet0CiC646dgVyAyjg2t1JSUe/Uo4lEMsenEojjcx4ValhPb0kUP4XRMLLS/jr45r4FzEgxowTn44+BR1WwM2y+xyzh62/IHptKrJ2ckTc=
+  on:
+    repo: mi6gan/seine
+    branch: master

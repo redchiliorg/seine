@@ -13,6 +13,18 @@ module.exports = {
     'jsdoc/require-returns-description': 0,
     'jsdoc/require-param-description': 0,
     'jsdoc/require-description': ['warn', { descriptionStyle: 'tag' }],
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'styled-components',
+            message: 'Please import from styled-components/macro.',
+          },
+        ],
+        patterns: ['!styled-components/macro'],
+      },
+    ],
   },
   settings: {
     'import/ignore': ['styled-components/*'],
