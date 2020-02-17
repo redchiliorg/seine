@@ -12,7 +12,6 @@
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "start": "serve",
     "build": "build-storybook -o dist",
     "release": "run-s release:*",
