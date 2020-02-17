@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "run-s release",
+    "deploy": "run-s release:publish",
     "start": "serve",
     "build": "build-storybook -o dist",
     "release": "run-s release:*",
