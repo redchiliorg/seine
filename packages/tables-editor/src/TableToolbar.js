@@ -37,6 +37,15 @@ export default function TableToolbar({
 }: Props) {
   const { header, rows } = body || defaultTableBody;
   const { rowIndex, columnIndex } = editor || defaultTableEditor;
+  const cell =
+    (rowIndex === 0 && header[columnIndex]) ||
+    (rowIndex > 0 && rows[rowIndex - 1][columnIndex]);
+  const isBold = cell && cell.bold;
+  const isItalic = cell && cell.italic;
+  const isLeft = cell && cell.align === 'left';
+  const isCenter = cell && cell.align === 'center';
+  const isRight = cell && cell.align === 'right';
+
   return (
     <Toolbar>
       {children}
@@ -126,11 +135,9 @@ export default function TableToolbar({
             id={id}
             rowIndex={rowIndex}
             columnIndex={columnIndex}
-            cell={{ bold: !rows[rowIndex][columnIndex].bold }}
+            cell={{ bold: !isBold }}
           >
-            <FormatBold
-              {...(!rows[rowIndex][columnIndex].bold && { color: 'disabled' })}
-            />
+            <FormatBold {...(!isBold && { color: 'disabled' })} />
           </TableCellButton>
 
           <TableCellButton
@@ -140,13 +147,9 @@ export default function TableToolbar({
             id={id}
             rowIndex={rowIndex}
             columnIndex={columnIndex}
-            cell={{ italic: !rows[rowIndex][columnIndex].italic }}
+            cell={{ italic: !isItalic }}
           >
-            <FormatItalic
-              {...(!rows[rowIndex][columnIndex].italic && {
-                color: 'disabled',
-              })}
-            />
+            <FormatItalic {...(!isItalic && { color: 'disabled' })} />
           </TableCellButton>
 
           <TableCellButton
@@ -158,11 +161,7 @@ export default function TableToolbar({
             columnIndex={columnIndex}
             cell={{ align: 'left' }}
           >
-            <FormatAlignLeft
-              {...(rows[rowIndex][columnIndex].align !== 'left' && {
-                color: 'disabled',
-              })}
-            />
+            <FormatAlignLeft {...(!isLeft && { color: 'disabled' })} />
           </TableCellButton>
 
           <TableCellButton
@@ -174,11 +173,7 @@ export default function TableToolbar({
             columnIndex={columnIndex}
             cell={{ align: 'center' }}
           >
-            <FormatAlignCenter
-              {...(rows[rowIndex][columnIndex].align !== 'center' && {
-                color: 'disabled',
-              })}
-            />
+            <FormatAlignCenter {...(!isCenter && { color: 'disabled' })} />
           </TableCellButton>
 
           <TableCellButton
@@ -190,11 +185,7 @@ export default function TableToolbar({
             columnIndex={columnIndex}
             cell={{ align: 'right' }}
           >
-            <FormatAlignRight
-              {...(rows[rowIndex][columnIndex].align !== 'right' && {
-                color: 'disabled',
-              })}
-            />
+            <FormatAlignRight {...(!isRight && { color: 'disabled' })} />
           </TableCellButton>
         </>
       )}
