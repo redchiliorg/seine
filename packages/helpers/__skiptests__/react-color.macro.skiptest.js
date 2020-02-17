@@ -9,9 +9,9 @@ pluginTester({
     `
       // @flow
       import { SketchPicker } from '../react-color.macro';
-      
+
       const DefaultPicker = SketchPicker;
-      
+
       export default () => <DefaultPicker />;
       export const Picker = () => {
         const Picker = SketchPicker;
