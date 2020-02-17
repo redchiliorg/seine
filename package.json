@@ -11,7 +11,6 @@
   "repository": "mi6gan/seine",
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "run-s release",
     "start": "serve",
     "build": "build-storybook -o dist",
