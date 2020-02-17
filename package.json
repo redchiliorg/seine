@@ -8,7 +8,7 @@
     "richtext"
   ],
   "private": true,
-  "repository": "redchiliorg/seine",
+  "repository": "mi6gan/seine",
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
