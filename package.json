@@ -11,8 +11,7 @@
   "repository": "mi6gan/seine",
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "run-s release",
     "start": "serve",
     "build": "build-storybook -o dist",
     "release": "run-s release:*",
