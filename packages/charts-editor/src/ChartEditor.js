@@ -23,7 +23,7 @@ import {
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
 import stringify from 'virtual-dom-stringify';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';

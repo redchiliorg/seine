@@ -573,7 +573,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               markerStart="url(#point,0)"
               meta={
                 Object {
-                  "id": "2352cb65-e288-49af-be02-2a03fc6f75ed",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                 }
@@ -759,7 +759,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               markerStart="url(#point,1)"
               meta={
                 Object {
-                  "id": "27a97000-6d1b-4759-9b6e-5467108d9fe4",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                 }
@@ -981,7 +981,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 1",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 175,
@@ -1027,7 +1027,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 1",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 65,
@@ -1105,7 +1105,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 2",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 204,
@@ -1151,7 +1151,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 2",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 68,
@@ -1229,7 +1229,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 3",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 231,
@@ -1275,7 +1275,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 3",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 73,
@@ -1353,7 +1353,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 4",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 237,
@@ -1399,7 +1399,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 4",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 75,
@@ -1477,7 +1477,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 5",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 280,
@@ -1523,7 +1523,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 5",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 79,
@@ -1601,7 +1601,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 6",
-                  "id": "45c253a4-df89-4d4d-aeba-b1bd2fb7e4d9",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                   "value": 339,
@@ -1647,7 +1647,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               meta={
                 Object {
                   "group": "Year 6",
-                  "id": "0a6a3059-b0f1-4cad-9e79-410d9720aea1",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                   "value": 90,
@@ -2813,7 +2813,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "b5b80740-9239-413c-beec-6f685a425fa0",
+                  "id": 0,
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -2885,7 +2885,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "036082ba-a281-420e-acaf-40e2571f0bdd",
+                  "id": 1,
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -2957,7 +2957,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "22e7bc6b-b625-43d1-ac3d-bbe10ed693be",
+                  "id": 2,
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -3029,7 +3029,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "b829adb4-c425-4cf3-a26f-147906cbdada",
+                  "id": 3,
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -3101,7 +3101,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "38f91a24-3ea3-409a-9ed7-84eccfcc3b3d",
+                  "id": 4,
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -3173,7 +3173,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "8c06cb5d-62cd-479a-8cc9-af2264ab738f",
+                  "id": 5,
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -3342,7 +3342,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "0b145eea-b018-4d90-9241-61fb131cf9eb",
+                  "id": 0,
                   "index": 0,
                   "title": "repairs",
                   "value": 12,
@@ -3357,7 +3357,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "fb257adc-6c37-42e8-8bed-311d1f522a6f",
+                  "id": 1,
                   "index": 1,
                   "title": "consulting",
                   "value": 10,
@@ -3372,7 +3372,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "83945f21-b339-4681-9fc7-d8662c94d94c",
+                  "id": 2,
                   "index": 2,
                   "title": "training",
                   "value": 8,
@@ -3387,7 +3387,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "6d5279b6-8d5b-418d-a0de-2d14f65b4299",
+                  "id": 3,
                   "index": 3,
                   "title": "product sales",
                   "value": 64,
@@ -3402,7 +3402,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "1dabf7da-2cea-4d2e-89ae-4f73b9e5061d",
+                  "id": 4,
                   "index": 4,
                   "title": "others",
                   "value": 6,
@@ -4220,7 +4220,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "28ee0e6f-722e-4090-8c05-98c7e0aac89f",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 50.1,
@@ -4265,7 +4265,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "62fe879d-ab48-4c41-a8e4-73d1faca5f27",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 60.33,
@@ -4310,7 +4310,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "91bd8903-9d59-4da8-9ad8-7bd8581a3e06",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 13,
@@ -4677,7 +4677,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f3314815-1e7e-41ba-8344-91c8892bc270",
+                  "id": 0,
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -4749,7 +4749,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "752996ae-64fe-4b8c-9332-f16a3a96d850",
+                  "id": 1,
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -4821,7 +4821,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "749c53c1-24ef-4990-9e67-194f7fecbab0",
+                  "id": 2,
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -4893,7 +4893,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "4fe5269c-48cd-4ffd-bc28-f994c6db1681",
+                  "id": 3,
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -4965,7 +4965,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "54d0bc49-eab9-4ae1-8153-01b8ec019eab",
+                  "id": 4,
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -5037,7 +5037,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "6d0af426-b212-472e-9662-78e9bce161b7",
+                  "id": 5,
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -5109,7 +5109,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "ab78896f-c3bd-4e91-8bf5-43d8d888d257",
+                  "id": 6,
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
@@ -5181,7 +5181,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "cd81ba90-ed05-4778-9427-5c7ce88a4bcc",
+                  "id": 7,
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
@@ -5253,7 +5253,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "ab7db8f1-e39e-4845-921f-e3f159d6ab94",
+                  "id": 8,
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
@@ -5437,7 +5437,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "bc7db499-c626-4cdc-a0fb-d7ceb30e668e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 50.1,
@@ -5482,7 +5482,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "184fe1b0-308e-4978-87c8-5aa7e9980a01",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 60.33,
@@ -5527,7 +5527,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
               id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
               meta={
                 Object {
-                  "id": "edc8cd60-dd63-4dda-b8c4-dd301bba785e",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 13,
@@ -6358,7 +6358,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
               markerStart="url(#point,0)"
               meta={
                 Object {
-                  "id": "65933d2f-3e13-4c46-acb8-8d5abe0c1fce",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                 }
@@ -6544,7 +6544,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
               markerStart="url(#point,1)"
               meta={
                 Object {
-                  "id": "f921c43e-7944-431c-adab-a894c09125d0",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                 }
@@ -7268,7 +7268,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               markerStart="url(#point,0)"
               meta={
                 Object {
-                  "id": "c8c44acc-56b1-41e5-b87f-fb276f0e72b4",
+                  "id": 0,
                   "index": 0,
                   "title": "Easymode",
                 }
@@ -7454,7 +7454,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               markerStart="url(#point,1)"
               meta={
                 Object {
-                  "id": "114d68cd-d58c-42a8-96bc-caf082b1afe5",
+                  "id": 1,
                   "index": 1,
                   "title": "Rest",
                 }
@@ -7701,7 +7701,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "43f176bf-b703-40e8-8266-43132f41dfbb",
+                  "id": 0,
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -7773,7 +7773,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "0f1f7742-9816-4c4d-874a-48a37936f7fb",
+                  "id": 1,
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -7845,7 +7845,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "0fa9c7f5-b18a-4669-9266-c6679a335c18",
+                  "id": 2,
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -7917,7 +7917,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "dc8868bd-a21d-4274-a1e5-02ed6d56c561",
+                  "id": 3,
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -7989,7 +7989,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "f44886cd-4d05-438b-ae34-d82b43034613",
+                  "id": 4,
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -8061,7 +8061,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "efd7bd6b-aea5-4be8-b123-0db49784a33d",
+                  "id": 5,
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -8243,7 +8243,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "94e1810d-52ab-4532-ad60-1bc6f917dd25",
+                  "id": 0,
                   "index": 0,
                   "title": "repairs",
                   "value": 12,
@@ -8258,7 +8258,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "9239dd1e-1e93-4135-8106-2892f19921da",
+                  "id": 1,
                   "index": 1,
                   "title": "consulting of something long",
                   "value": 10,
@@ -8273,7 +8273,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "c198939f-4a4b-4349-92d2-e42805147348",
+                  "id": 2,
                   "index": 2,
                   "title": "training",
                   "value": 8,
@@ -8288,7 +8288,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "3d300e16-c14f-4314-b5cd-71417439ff25",
+                  "id": 3,
                   "index": 3,
                   "title": "product sales",
                   "value": 64,
@@ -8303,7 +8303,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
               meta={
                 Object {
-                  "id": "1083798c-1293-40ed-b848-6d70bfd69268",
+                  "id": 4,
                   "index": 4,
                   "title": "others",
                   "value": 6,
@@ -8647,7 +8647,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9bf765bc-84fc-412e-8b38-76f923d35cf7",
+                  "id": 0,
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -8719,7 +8719,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "35f4d2a1-9849-44a7-b240-8c06a107baa8",
+                  "id": 1,
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -8791,7 +8791,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "03d949ef-1039-401b-9a87-c86dab7501aa",
+                  "id": 2,
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -8863,7 +8863,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9cd0f7b5-a87b-43c7-84a0-ff339641d593",
+                  "id": 3,
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -9048,7 +9048,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 1",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 50.1,
@@ -9094,7 +9094,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 1",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 60.33,
@@ -9140,7 +9140,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 1",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 13,
@@ -9218,7 +9218,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 2",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 90,
@@ -9264,7 +9264,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 2",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 100.22,
@@ -9310,7 +9310,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 2",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 14,
@@ -9388,7 +9388,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 3",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 66,
@@ -9434,7 +9434,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 3",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 29,
@@ -9480,7 +9480,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 3",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 19,
@@ -9558,7 +9558,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 4",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 30.1,
@@ -9604,7 +9604,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 4",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 8.33,
@@ -9650,7 +9650,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 4",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 100,
@@ -9728,7 +9728,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 5",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 40,
@@ -9774,7 +9774,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 5",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 90.22,
@@ -9820,7 +9820,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 5",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 81,
@@ -9898,7 +9898,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 6",
-                  "id": "6a4bc484-ccf5-4083-a025-58eb675e277e",
+                  "id": 0,
                   "index": 0,
                   "title": "Maelstorm",
                   "value": 100.13,
@@ -9944,7 +9944,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 6",
-                  "id": "e67a1555-086a-4467-89b9-806aa53c23f0",
+                  "id": 1,
                   "index": 1,
                   "title": "Spring",
                   "value": 73,
@@ -9990,7 +9990,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               meta={
                 Object {
                   "group": "Group 6",
-                  "id": "5697f53e-dd22-4f0f-833e-8475f1fb4bd3",
+                  "id": 2,
                   "index": 2,
                   "title": "Electro",
                   "value": 34,
@@ -10479,7 +10479,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "b04916ba-595d-40f7-bdc2-59ec0a5fc8ca",
+                  "id": 0,
                   "index": 0,
                   "title": "WFLA",
                   "value": 20.8,
@@ -10551,7 +10551,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "88f74a57-7ea7-4cbe-8e03-c7745c36a400",
+                  "id": 1,
                   "index": 1,
                   "title": "Region A",
                   "value": 35.7,
@@ -10623,7 +10623,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "3c8b05d5-676f-45c8-9cdc-667e67961f7c",
+                  "id": 2,
                   "index": 2,
                   "title": "Region B",
                   "value": 15.8,
@@ -10695,7 +10695,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "55b01441-1703-4e02-a41b-16d8cc2689f8",
+                  "id": 3,
                   "index": 3,
                   "title": "Region C",
                   "value": 40.9,
@@ -10767,7 +10767,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "ef15be28-ddba-4291-9bdd-0219e6a016e8",
+                  "id": 4,
                   "index": 4,
                   "title": "Region D",
                   "value": 23.6,
@@ -10839,7 +10839,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "66c59690-7f56-41e8-9499-de7c866a0d52",
+                  "id": 5,
                   "index": 5,
                   "title": "Region E",
                   "value": 17.6,
@@ -10911,7 +10911,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "9937ebde-aab6-4371-9307-23b2b4c7b383",
+                  "id": 6,
                   "index": 6,
                   "title": "Region F",
                   "value": 38.1,
@@ -10983,7 +10983,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "bfddad92-98db-4f3f-8246-73f32da4a9fa",
+                  "id": 7,
                   "index": 7,
                   "title": "Region G",
                   "value": 43.8,
@@ -11055,7 +11055,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
               id="01648d04-78ad-402b-b255-14a6066d7927"
               meta={
                 Object {
-                  "id": "5391dfdd-9015-4271-93fb-ae2a0a318cc0",
+                  "id": 8,
                   "index": 8,
                   "title": "Region H",
                   "value": 16.4,
@@ -11304,7 +11304,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "85a71f18-03af-4734-9480-c2d412785360",
+                "id": 0,
                 "index": 0,
                 "title": "WFLA",
                 "value": 20.8,
@@ -11376,7 +11376,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "9d979b75-1710-4af9-bd3e-63912ab97d11",
+                "id": 1,
                 "index": 1,
                 "title": "Region A",
                 "value": 35.7,
@@ -11448,7 +11448,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "03e358f7-8969-42ea-8656-b486d182610e",
+                "id": 2,
                 "index": 2,
                 "title": "Region B",
                 "value": 15.8,
@@ -11520,7 +11520,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "1c87fdeb-1cce-4b59-86cb-123f7bdb14a7",
+                "id": 3,
                 "index": 3,
                 "title": "Region C",
                 "value": 40.9,
@@ -11592,7 +11592,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "5b84ef2c-3660-4e95-b2be-a122cd92697f",
+                "id": 4,
                 "index": 4,
                 "title": "Region D",
                 "value": 23.6,
@@ -11664,7 +11664,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "c49d2f1a-2b0f-444f-ad0e-3d8e0644bc1f",
+                "id": 5,
                 "index": 5,
                 "title": "Region E",
                 "value": 17.6,
@@ -11736,7 +11736,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "cece3b0e-3dca-4b30-b425-10d8305d46ff",
+                "id": 6,
                 "index": 6,
                 "title": "Region F",
                 "value": 38.1,
@@ -11808,7 +11808,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "f8d21398-bf19-461e-bc00-9c9bc4d151b2",
+                "id": 7,
                 "index": 7,
                 "title": "Region G",
                 "value": 43.8,
@@ -11880,7 +11880,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             id="01648d04-78ad-402b-b255-14a6066d7927"
             meta={
               Object {
-                "id": "acdb2b10-1653-406a-8955-1319bdc7c0ad",
+                "id": 8,
                 "index": 8,
                 "title": "Region H",
                 "value": 16.4,
@@ -12058,7 +12058,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
             id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
             meta={
               Object {
-                "id": "30e3dc34-3254-49fd-86c3-df6a0f3306b7",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -12103,7 +12103,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
             id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
             meta={
               Object {
-                "id": "091cdfba-3bbc-4b87-89b7-21a792d26cc8",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -12148,7 +12148,7 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
             id="78f5d055-8a9f-48cc-bead-f6c9e8451ced"
             meta={
               Object {
-                "id": "78db24f3-561b-4543-b0d4-6b673159fa27",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -13095,7 +13095,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
             markerStart="url(#point,0)"
             meta={
               Object {
-                "id": "05fd914f-b5db-4870-935f-4c9d31661608",
+                "id": 0,
                 "index": 0,
                 "title": "Easymode",
               }
@@ -13281,7 +13281,7 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
             markerStart="url(#point,1)"
             meta={
               Object {
-                "id": "cfc69cca-416c-432c-b2f4-1420d949cbb5",
+                "id": 1,
                 "index": 1,
                 "title": "Rest",
               }
@@ -13507,7 +13507,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             meta={
               Object {
-                "id": "9dacb283-12d2-4082-96db-3c655250a5fe",
+                "id": 0,
                 "index": 0,
                 "title": "repairs of something very long",
                 "value": 12,
@@ -13522,7 +13522,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             meta={
               Object {
-                "id": "88089e92-e684-42cf-be03-67ac9b900ba5",
+                "id": 1,
                 "index": 1,
                 "title": "consulting",
                 "value": 10,
@@ -13537,7 +13537,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             meta={
               Object {
-                "id": "e3d330a5-5d8b-4501-a03e-533d1dc81c67",
+                "id": 2,
                 "index": 2,
                 "title": "training",
                 "value": 8,
@@ -13552,7 +13552,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             meta={
               Object {
-                "id": "966c1570-9dd3-4f51-8c11-395cb982e650",
+                "id": 3,
                 "index": 3,
                 "title": "product sales",
                 "value": 64,
@@ -13567,7 +13567,7 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             meta={
               Object {
-                "id": "cbf43284-d322-4296-bac2-bcda713ed262",
+                "id": 4,
                 "index": 4,
                 "title": "others",
                 "value": 6,
@@ -13893,7 +13893,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -13939,7 +13939,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -13985,7 +13985,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -14031,7 +14031,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 23,
@@ -14077,7 +14077,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 33,
@@ -14123,7 +14123,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 51,
@@ -14201,7 +14201,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -14247,7 +14247,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -14293,7 +14293,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -14339,7 +14339,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 10.22,
@@ -14385,7 +14385,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 14,
@@ -14431,7 +14431,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 27,
@@ -14509,7 +14509,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 66,
@@ -14555,7 +14555,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 29,
@@ -14601,7 +14601,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 19,
@@ -14647,7 +14647,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 50,
@@ -14693,7 +14693,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 95.45,
@@ -14739,7 +14739,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 100,
@@ -14817,7 +14817,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -14863,7 +14863,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -14909,7 +14909,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -14955,7 +14955,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 23,
@@ -15001,7 +15001,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 33,
@@ -15047,7 +15047,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 72.5,
@@ -15125,7 +15125,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -15171,7 +15171,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -15217,7 +15217,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -15263,7 +15263,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 10.22,
@@ -15309,7 +15309,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 14,
@@ -15355,7 +15355,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 31.25,
@@ -15433,7 +15433,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "d6e1852b-6944-4e02-bbf7-fbafb34238ea",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 66,
@@ -15479,7 +15479,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "4e7819c7-1cdd-4d60-87c6-a7110993eef5",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 29,
@@ -15525,7 +15525,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "0b688b91-2627-40c5-a42d-ef9b345eb2af",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 19,
@@ -15571,7 +15571,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "6f3249eb-d8c4-483e-b01b-20d1bdd4617c",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 50,
@@ -15617,7 +15617,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "d4fd94c3-0a08-4816-975b-13748e2f0c02",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 95.45,
@@ -15663,7 +15663,7 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "8d61b198-63f9-4b39-962e-db41dd675ac1",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 5,
@@ -16173,7 +16173,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -16219,7 +16219,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -16265,7 +16265,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -16343,7 +16343,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -16389,7 +16389,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -16435,7 +16435,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -16513,7 +16513,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 66,
@@ -16559,7 +16559,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 29,
@@ -16605,7 +16605,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 19,
@@ -16683,7 +16683,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 30.1,
@@ -16729,7 +16729,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 8.33,
@@ -16775,7 +16775,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 4",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 100,
@@ -16853,7 +16853,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 40,
@@ -16899,7 +16899,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 90.22,
@@ -16945,7 +16945,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 81,
@@ -17023,7 +17023,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "8bf62ea6-de57-475a-a8aa-374bef88e80f",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 100.13,
@@ -17069,7 +17069,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "14a401c5-ce8c-48ce-8708-3f1bdb9c8360",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 73,
@@ -17115,7 +17115,7 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 6",
-                "id": "f023029e-5625-4502-abae-60bf86bbd8ca",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 34,
@@ -17586,7 +17586,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "940993dd-cfd3-4f52-a1f7-89fee76b1bc5",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -17632,7 +17632,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "1cf8dc27-9871-4352-a0b0-02248f6706e9",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -17678,7 +17678,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "384381a6-3287-49d4-8fa7-0545f340286e",
+                "id": 2,
                 "index": 2,
                 "title": "Generic",
                 "value": 75,
@@ -17724,7 +17724,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "84d5a30a-b614-416d-9bc1-6becd92bead1",
+                "id": 3,
                 "index": 3,
                 "title": "Others",
                 "value": 35,
@@ -17802,7 +17802,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "940993dd-cfd3-4f52-a1f7-89fee76b1bc5",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -17848,7 +17848,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "1cf8dc27-9871-4352-a0b0-02248f6706e9",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -17894,7 +17894,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "384381a6-3287-49d4-8fa7-0545f340286e",
+                "id": 2,
                 "index": 2,
                 "title": "Generic",
                 "value": 15,
@@ -17940,7 +17940,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "84d5a30a-b614-416d-9bc1-6becd92bead1",
+                "id": 3,
                 "index": 3,
                 "title": "Others",
                 "value": 75,
@@ -18018,7 +18018,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "940993dd-cfd3-4f52-a1f7-89fee76b1bc5",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -18064,7 +18064,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "1cf8dc27-9871-4352-a0b0-02248f6706e9",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -18110,7 +18110,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "384381a6-3287-49d4-8fa7-0545f340286e",
+                "id": 2,
                 "index": 2,
                 "title": "Generic",
                 "value": 35,
@@ -18156,7 +18156,7 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "84d5a30a-b614-416d-9bc1-6becd92bead1",
+                "id": 3,
                 "index": 3,
                 "title": "Others",
                 "value": 75,
@@ -18640,7 +18640,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "92dba71a-4f7f-49d3-8fb8-ccb16fb75b47",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -18686,7 +18686,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "c47caa23-2c72-48ad-8fb0-23ffaa3578f6",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -18732,7 +18732,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "0de76f8e-d61b-4373-a868-90db83b6b932",
+                "id": 2,
                 "index": 2,
                 "title": "Others",
                 "value": 35,
@@ -18810,7 +18810,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "92dba71a-4f7f-49d3-8fb8-ccb16fb75b47",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -18856,7 +18856,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "c47caa23-2c72-48ad-8fb0-23ffaa3578f6",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -18902,7 +18902,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "0de76f8e-d61b-4373-a868-90db83b6b932",
+                "id": 2,
                 "index": 2,
                 "title": "Others",
                 "value": 75,
@@ -18980,7 +18980,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "92dba71a-4f7f-49d3-8fb8-ccb16fb75b47",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -19026,7 +19026,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "c47caa23-2c72-48ad-8fb0-23ffaa3578f6",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -19072,7 +19072,7 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
             meta={
               Object {
                 "group": "Group 3",
-                "id": "0de76f8e-d61b-4373-a868-90db83b6b932",
+                "id": 2,
                 "index": 2,
                 "title": "Others",
                 "value": 75,
@@ -19543,7 +19543,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "a4b863fb-9532-4d36-85de-ba0138ead59a",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -19589,7 +19589,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "5911149c-fb70-4f7e-84c2-6c8e2ac69352",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -19635,7 +19635,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "9e3c2b7e-1621-4309-8d79-a9f12850bc83",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -19681,7 +19681,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "0dd5fe81-9bdc-488e-bbc6-9091a04e3d64",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 23,
@@ -19727,7 +19727,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "4588a10c-167a-44fb-9c49-d3cb5d5df0c1",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 33,
@@ -19773,7 +19773,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "b8cb4947-1bdc-4d9c-a4d7-bfdc45b5b446",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 51,
@@ -19851,7 +19851,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "a4b863fb-9532-4d36-85de-ba0138ead59a",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -19897,7 +19897,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "5911149c-fb70-4f7e-84c2-6c8e2ac69352",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -19943,7 +19943,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "9e3c2b7e-1621-4309-8d79-a9f12850bc83",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -19989,7 +19989,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "0dd5fe81-9bdc-488e-bbc6-9091a04e3d64",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 10.22,
@@ -20035,7 +20035,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "4588a10c-167a-44fb-9c49-d3cb5d5df0c1",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 14,
@@ -20081,7 +20081,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
             meta={
               Object {
                 "group": "Group 5",
-                "id": "b8cb4947-1bdc-4d9c-a4d7-bfdc45b5b446",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 31.25,
@@ -20591,7 +20591,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "3f44eac0-4a53-4c89-8c92-ed37f28a5cbf",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -20637,7 +20637,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "1b9ab3bd-0cff-41ab-9c4b-fb4b77f83af6",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -20683,7 +20683,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "5aef0c0f-75cf-49fd-ba59-1b07061b0961",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -20729,7 +20729,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "fc38c25f-5767-4f40-abe8-d47e8c70b307",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 23,
@@ -20775,7 +20775,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "b0827ebb-af9d-4085-87dd-096692b4a107",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 33,
@@ -20821,7 +20821,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 1",
-                "id": "13f41b23-59e4-489f-affd-b92a8949356b",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 51,
@@ -20899,7 +20899,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "3f44eac0-4a53-4c89-8c92-ed37f28a5cbf",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -20945,7 +20945,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "1b9ab3bd-0cff-41ab-9c4b-fb4b77f83af6",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -20991,7 +20991,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "5aef0c0f-75cf-49fd-ba59-1b07061b0961",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -21037,7 +21037,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "fc38c25f-5767-4f40-abe8-d47e8c70b307",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 10.22,
@@ -21083,7 +21083,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "b0827ebb-af9d-4085-87dd-096692b4a107",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 14,
@@ -21129,7 +21129,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
             meta={
               Object {
                 "group": "Group 5",
-                "id": "13f41b23-59e4-489f-affd-b92a8949356b",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 31.25,
@@ -21939,7 +21939,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "57c7b4c0-30de-4373-b3fd-e0082274f550",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -21985,7 +21985,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "6fbad270-46eb-446e-bc57-b81b4ce16006",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -22031,7 +22031,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "b76043a4-fcaa-440e-9e0c-ab678a696e3b",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 13,
@@ -22077,7 +22077,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "70caca75-5de8-4517-9b05-dbce600d969d",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 23,
@@ -22123,7 +22123,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "e3569128-f373-4fd3-a0ce-d306362eb972",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 33,
@@ -22169,7 +22169,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 1",
-                "id": "57b2d993-dd3c-4d97-953b-b8b192536c7e",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 51,
@@ -22247,7 +22247,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "57c7b4c0-30de-4373-b3fd-e0082274f550",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -22293,7 +22293,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "6fbad270-46eb-446e-bc57-b81b4ce16006",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -22339,7 +22339,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "b76043a4-fcaa-440e-9e0c-ab678a696e3b",
+                "id": 2,
                 "index": 2,
                 "title": "Electro",
                 "value": 14,
@@ -22385,7 +22385,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "70caca75-5de8-4517-9b05-dbce600d969d",
+                "id": 3,
                 "index": 3,
                 "title": "HBO",
                 "value": 10.22,
@@ -22431,7 +22431,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "e3569128-f373-4fd3-a0ce-d306362eb972",
+                "id": 4,
                 "index": 4,
                 "title": "Netflix",
                 "value": 14,
@@ -22477,7 +22477,7 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
             meta={
               Object {
                 "group": "Group 5",
-                "id": "57b2d993-dd3c-4d97-953b-b8b192536c7e",
+                "id": 5,
                 "index": 5,
                 "title": "Amazon",
                 "value": 31.25,
@@ -22927,7 +22927,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "b44a7486-df8e-45fb-acd4-97f0ff126438",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 50.1,
@@ -22973,7 +22973,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 1",
-                "id": "b4cef342-8446-4b60-a3a2-d41f43f7d9dd",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 60.33,
@@ -23051,7 +23051,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "b44a7486-df8e-45fb-acd4-97f0ff126438",
+                "id": 0,
                 "index": 0,
                 "title": "Maelstorm",
                 "value": 90,
@@ -23097,7 +23097,7 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
             meta={
               Object {
                 "group": "Group 2",
-                "id": "b4cef342-8446-4b60-a3a2-d41f43f7d9dd",
+                "id": 1,
                 "index": 1,
                 "title": "Spring",
                 "value": 100.22,
@@ -23953,7 +23953,7 @@ exports[`Storyshots Single.Table Editor Of Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 gnnMbJ"
+  className="Table__StyledTable-yfw5vz-0 ijFfIL"
 >
   <thead>
     <tr>
@@ -23984,7 +23984,7 @@ exports[`Storyshots Single.Table Table 1 X 2 1`] = `
 
 exports[`Storyshots Single.Table Table 3 X 3 1`] = `
 <table
-  className="Table__StyledTable-yfw5vz-0 gnnMbJ"
+  className="Table__StyledTable-yfw5vz-0 ijFfIL"
 >
   <thead>
     <tr>
