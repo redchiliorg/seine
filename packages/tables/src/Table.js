@@ -59,8 +59,10 @@ export default function Table({ header, rows }: Props) {
     <StyledTable>
       <thead>
         <tr>
-          {header.map(({ text }, index) => (
-            <th key={index}>{text}</th>
+          {header.map(({ text, ...cell }, index) => (
+            <StyledTableCell as={'th'} key={index} {...cell}>
+              {text}
+            </StyledTableCell>
           ))}
         </tr>
       </thead>

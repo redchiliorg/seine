@@ -9,10 +9,7 @@ import {
 import type { TableProps } from '@seine/tables';
 import { Table } from '@seine/tables';
 import styled from 'styled-components/macro';
-import { useAutoCallback } from 'hooks.macro';
 import { BlockActions } from '@seine/ui';
-
-import { defaultTableEditor } from './constants';
 
 type Props = TableProps & BlockEditor;
 
@@ -50,11 +47,6 @@ export default function TableEditor({
   rows,
   selection,
 }: Props) {
-  const selectHeader = useAutoCallback(() => {
-    dispatch({ id, type: SELECT_BLOCK });
-    dispatch({ id, type: UPDATE_BLOCK_EDITOR, editor: defaultTableEditor });
-  });
-
   return (
     <Container>
       {selection.length === 1 && selection[0] === id ? (
@@ -64,7 +56,17 @@ export default function TableEditor({
             text: (
               <div>
                 <StyledTextarea
-                  onFocus={selectHeader}
+                  onFocus={() => {
+                    dispatch({ id, type: SELECT_BLOCK });
+                    dispatch({
+                      id,
+                      type: UPDATE_BLOCK_EDITOR,
+                      editor: {
+                        columnIndex: index,
+                        rowIndex: 0,
+                      },
+                    });
+                  }}
                   onChange={({ currentTarget }) =>
                     dispatch({
                       id,
@@ -93,7 +95,10 @@ export default function TableEditor({
                     dispatch({
                       id,
                       type: UPDATE_BLOCK_EDITOR,
-                      editor: { columnIndex, rowIndex },
+                      editor: {
+                        columnIndex,
+                        rowIndex: rowIndex + 1,
+                      },
                     });
                   }}
                   onChange={({ currentTarget }) =>

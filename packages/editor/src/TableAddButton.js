@@ -22,7 +22,10 @@ export default function TableAddButton({
   return (
     <ActionButton
       block={createBlock(blockTypes.TABLE, {
-        header: [{ text: 'Column 1' }, { text: 'Column 2' }],
+        header: [
+          { ...defaultTableCell, text: 'Column 1' },
+          { ...defaultTableCell, text: 'Column 2' },
+        ],
         rows: [
           [defaultTableCell, defaultTableCell],
           [defaultTableCell, defaultTableCell],
