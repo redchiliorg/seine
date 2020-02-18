@@ -31,20 +31,30 @@ export default function TableCellButton({
     <ActionButton
       type={UPDATE_BLOCK_BODY}
       {...buttonProps}
-      body={{
-        rows: [
-          ...rows.slice(0, rowIndex),
-          [
-            ...rows[rowIndex].slice(0, columnIndex),
-            {
-              ...rows[rowIndex][columnIndex],
-              ...cell,
-            },
-            ...rows[rowIndex].slice(columnIndex + 1),
-          ],
-          ...rows.slice(rowIndex + 1),
-        ],
-      }}
+      body={
+        rowIndex === 0
+          ? {
+              header: [
+                ...header.slice(0, columnIndex),
+                { ...header.slice(columnIndex + 1), ...cell },
+                ...header.slice(columnIndex + 1),
+              ],
+            }
+          : {
+              rows: [
+                ...rows.slice(0, rowIndex - 1),
+                [
+                  ...rows[rowIndex - 1].slice(0, columnIndex),
+                  {
+                    ...rows[rowIndex - 1][columnIndex],
+                    ...cell,
+                  },
+                  ...rows[rowIndex - 1].slice(columnIndex + 1),
+                ],
+                ...rows.slice(rowIndex),
+              ],
+            }
+      }
     >
       {children}
     </ActionButton>
