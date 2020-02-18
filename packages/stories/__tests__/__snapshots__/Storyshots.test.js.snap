@@ -57,10 +57,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Sales ($ millions)
       </h3>
@@ -923,30 +923,30 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Easymode
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Rest
           </p>
@@ -954,10 +954,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -2730,30 +2730,30 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Easymode
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Rest
           </p>
@@ -2761,10 +2761,10 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -3314,14 +3314,14 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -3690,7 +3690,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
   </div>
@@ -3704,10 +3704,10 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
   type="grid"
 >
   <div
-    className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+    className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
   >
     <h3
-      className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+      className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
     >
       Car dealership sales in 2012 (number of cars sold)
     </h3>
@@ -3937,14 +3937,14 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
       </svg>
     </div>
     <div
-      className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+      className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
     />
   </div>
   <div
-    className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+    className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
   >
     <h3
-      className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+      className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
     >
       Car dealership sales in 2013 (number of cars sold)
     </h3>
@@ -4174,7 +4174,7 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
       </svg>
     </div>
     <div
-      className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+      className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
     />
   </div>
 </div>
@@ -4190,10 +4190,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -4577,43 +4577,43 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Maelstorm
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Spring
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
             color="#cbcbcb"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Electro
           </p>
@@ -4621,10 +4621,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -5390,7 +5390,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
   </div>
@@ -5407,10 +5407,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -5794,43 +5794,43 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Maelstorm
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Spring
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
             color="#cbcbcb"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Electro
           </p>
@@ -5838,10 +5838,10 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Sales ($ millions)
       </h3>
@@ -6704,30 +6704,30 @@ exports[`Storyshots Multiple.Content Content Of Column And Line Charts 1`] = `
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Easymode
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Rest
           </p>
@@ -6748,10 +6748,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Sales ($ millions)
       </h3>
@@ -7614,30 +7614,30 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Easymode
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Rest
           </p>
@@ -7645,10 +7645,10 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -8198,7 +8198,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
   </div>
@@ -8215,10 +8215,10 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -8587,14 +8587,14 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -9000,7 +9000,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
   </div>
@@ -9017,10 +9017,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
     className="Grid-sc-1m9mzof-0 bsEnsh"
   >
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Column chart: 4 groups of 3 elements
       </h3>
@@ -10379,43 +10379,43 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       >
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
             color="#71a2ff"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Maelstorm
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
             color="#c0d4e2"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Spring
           </p>
         </div>
         <div
-          className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+          className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
         >
           <div
-            className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+            className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
             color="#cbcbcb"
           />
           <p
-            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+            className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
           >
             Electro
           </p>
@@ -10423,10 +10423,10 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
       </div>
     </div>
     <div
-      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+      className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
     >
       <h3
-        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+        className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
       >
         Chart title
       </h3>
@@ -11192,7 +11192,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
         </svg>
       </div>
       <div
-        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+        className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
       />
     </div>
   </div>
@@ -11245,10 +11245,10 @@ exports[`Storyshots Multiple.Editor Initial Editor 1`] = `
 
 exports[`Storyshots Single.Chart Bar Chart 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Chart title
   </h3>
@@ -12014,17 +12014,17 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   />
 </div>
 `;
 
 exports[`Storyshots Single.Chart Column Chart 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Chart title
   </h3>
@@ -12408,43 +12408,43 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
@@ -12455,10 +12455,10 @@ exports[`Storyshots Single.Chart Column Chart 1`] = `
 
 exports[`Storyshots Single.Chart Dummy Chart Layout 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 SEYHA"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 jRUUen"
   >
     Chart layout
   </h3>
@@ -12470,30 +12470,30 @@ exports[`Storyshots Single.Chart Dummy Chart Layout 1`] = `
     </p>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 esyZrR"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 fApBVi"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Element #1
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Element #2
       </p>
@@ -12564,10 +12564,10 @@ exports[`Storyshots Single.Chart Editor Of Two Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Single.Chart Line Chart 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Sales ($ millions)
   </h3>
@@ -13430,30 +13430,30 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Easymode
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Rest
       </p>
@@ -13464,10 +13464,10 @@ exports[`Storyshots Single.Chart Line Chart 1`] = `
 
 exports[`Storyshots Single.Chart Pie Chart 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Chart title
   </h3>
@@ -13836,17 +13836,17 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   />
 </div>
 `;
 
 exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 3 groups of 5 elements
   </h3>
@@ -16033,82 +16033,82 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 dtmZBG"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kUSaCE"
         color="#e57878"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         HBO
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 iYKFmU"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 eUewKO"
         color="#8adb96"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Netflix
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kujQdF"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCqFao"
         color="#6895eb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Amazon
       </p>
@@ -16119,10 +16119,10 @@ exports[`Storyshots Single.Chart Six Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 4 groups of 3 elements
   </h3>
@@ -17481,43 +17481,43 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
@@ -17528,10 +17528,10 @@ exports[`Storyshots Single.Chart Six Groups Of Two Columns 1`] = `
 
 exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 4 groups, 4 elements
   </h3>
@@ -18518,56 +18518,56 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eWxrRf"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eWxrRf"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eWxrRf"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Generic
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eWxrRf"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 dtmZBG"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kUSaCE"
         color="#e57878"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Others
       </p>
@@ -18578,10 +18578,10 @@ exports[`Storyshots Single.Chart Three Groups Of Four Columns 1`] = `
 
 exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 3 groups, 3 elements
   </h3>
@@ -19430,43 +19430,43 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 bSvZH"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Others
       </p>
@@ -19477,10 +19477,10 @@ exports[`Storyshots Single.Chart Three Groups Of Three Columns 1`] = `
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 3 groups of 5 elements
   </h3>
@@ -20435,82 +20435,82 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 dtmZBG"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kUSaCE"
         color="#e57878"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         HBO
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 iYKFmU"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 eUewKO"
         color="#8adb96"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Netflix
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kujQdF"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCqFao"
         color="#6895eb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Amazon
       </p>
@@ -20521,10 +20521,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns 1`] = `
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Value 100 And Dy 5 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 3 groups of 5 elements
   </h3>
@@ -21779,82 +21779,82 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 dtmZBG"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kUSaCE"
         color="#e57878"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         HBO
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 iYKFmU"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 eUewKO"
         color="#8adb96"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Netflix
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kujQdF"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCqFao"
         color="#6895eb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Amazon
       </p>
@@ -21865,10 +21865,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value 20 Max Valu
 
 exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Max Value 100 And Dy 18 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 3 groups of 5 elements
   </h3>
@@ -22763,82 +22763,82 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kRcHMs"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCzvud"
         color="#cbcbcb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Electro
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 dtmZBG"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kUSaCE"
         color="#e57878"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         HBO
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 iYKFmU"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 eUewKO"
         color="#8adb96"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Netflix
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 eSzQvI"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 kujQdF"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fCqFao"
         color="#6895eb"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Amazon
       </p>
@@ -22849,10 +22849,10 @@ exports[`Storyshots Single.Chart Two Groups Of Six Columns Min Value Minus 20 Ma
 
 exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
 <div
-  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 laaTRf"
+  className="ChartLayout__ChartLayoutContainer-sc-1wj2c7d-3 chqiAs"
 >
   <h3
-    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 dOwKcU"
+    className="ChartLayout__ChartLayoutTitle-sc-1wj2c7d-0 bLWbIw"
   >
     Column chart: 2 groups, 2 elements
   </h3>
@@ -23439,30 +23439,30 @@ exports[`Storyshots Single.Chart Two Groups Of Two Columns 1`] = `
     </svg>
   </div>
   <div
-    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 biXbFr"
+    className="ChartLayout__ChartLayoutDescription-sc-1wj2c7d-2 eJFOxY"
   >
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 fwtDeu"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 glBVIR"
         color="#71a2ff"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Maelstorm
       </p>
     </div>
     <div
-      className="ChartLegend__LegendItem-sc-1cgm7t6-2 gJmaiG"
+      className="ChartLegend__LegendItem-sc-1cgm7t6-2 hoAGYd"
     >
       <div
-        className="ChartLegend__LegendBox-sc-1cgm7t6-0 haCuWa"
+        className="ChartLegend__LegendBox-sc-1cgm7t6-0 enfToV"
         color="#c0d4e2"
       />
       <p
-        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 cMwnMg"
+        className="ChartLegend__LegendLabel-sc-1cgm7t6-1 czWoyb"
       >
         Spring
       </p>
