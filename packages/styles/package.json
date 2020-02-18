@@ -1,6 +1,6 @@
 {
   "name": "@seine/styles",
-  "version": "0.3.165",
+  "version": "0.3.166",
   "description": "Seine styles library.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
