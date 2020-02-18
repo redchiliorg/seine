@@ -132,7 +132,7 @@ export default function Editor({
     ...initialBlocksState,
     blocks: children,
   }));
-  const [{ blocks, mode, selection }, dispatch] = useReducerEx<
+  const [{ blocks, selection }, dispatch] = useReducerEx<
     BlocksState,
     BlocksAction
   >(reduceBlocks, initialBlocksState, init);
@@ -163,7 +163,6 @@ export default function Editor({
       ...block,
       addButtonRenderMap,
       dispatch,
-      mode,
       selection,
     }))
   );
@@ -177,13 +176,8 @@ export default function Editor({
           addButtonRenderMap={addButtonRenderMap}
           dispatch={dispatch}
           selection={selection}
-          mode={mode}
         >
-          <BlockDeleteButton
-            dispatch={dispatch}
-            selection={selection}
-            model={mode}
-          />
+          <BlockDeleteButton dispatch={dispatch} selection={selection} />
         </BlockToolbar>
         <ClickAwayListener
           onClickAway={() => {
@@ -192,8 +186,7 @@ export default function Editor({
                 document.activeElement instanceof HTMLButtonElement ||
                 document.activeElement instanceof HTMLInputElement
               ) &&
-              contentChildren.length > 0 &&
-              mode !== 'fullscreen'
+              contentChildren.length > 0
             ) {
               dispatch({
                 type: DESELECT_ALL_BLOCKS,
