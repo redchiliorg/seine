@@ -23,7 +23,6 @@ import {
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
 import stringify from 'virtual-dom-stringify';
-import styled from 'styled-components/macro';
 
 import type { ChartEditorProps as Props } from './types';
 import ChartInlineInput from './ChartInlineInput';
@@ -44,11 +43,6 @@ import LineChartElementPath from './LineChartElementPath';
 const defaultEditor = {
   selection: initialElementsState.selection,
 };
-
-const Container = styled.div`
-  position: relative;
-  height: 100%;
-`;
 
 /**
  * @description Chart editor component.
@@ -101,99 +95,99 @@ export default function ChartEditor({
     })
   );
 
-  return (
-    !!(selection && chartProps.elements) && (
-      <Container>
-        {selection.length === 1 && selection[0] === chartProps.id ? (
-          <ChartLayout
-            ref={resizeTargetRef}
-            title={
-              <ChartInlineInput
-                onChange={handleTitleChange}
-                textAlignment={textAlignment}
-                value={title}
-              />
-            }
-            description={
-              kind === chartTypes.PIE || kind === chartTypes.BAR ? (
-                <ChartDescriptionEditor
-                  {...chartProps}
-                  dispatchElements={dispatchElements}
-                />
-              ) : kind === chartTypes.COLUMN || kind === chartTypes.LINE ? (
-                <ChartGroupsDescriptionEditor
-                  {...chartProps}
-                  dispatchElements={dispatchElements}
-                />
-              ) : null
-            }
-            textAlignment={textAlignment}
-          >
-            <ChartSvg>
-              <defs
-                dangerouslySetInnerHTML={{
-                  __html: stringify(chartEditorFillPattern),
-                }}
-              />
-              {kind === chartTypes.BAR ? (
-                <BarChartContent
-                  {...chartProps}
-                  editor={editor}
-                  dispatch={dispatch}
-                  dispatchElements={dispatchElements}
-                  elementTitleAs={BarChartElementTitleInput}
-                  elementValueAs={BarChartElementValueInput}
-                  elementRectAs={BarChartElementRect}
-                />
-              ) : kind === chartTypes.COLUMN ? (
-                <ColumnChartContent
-                  {...chartProps}
-                  editor={editor}
-                  dispatch={dispatch}
-                  dispatchElements={dispatchElements}
-                  groupTitleAs={ChartGroupTitleInput}
-                  elementRectAs={ColumnChartElementRect}
-                  elementValueAs={ChartGroupElementValueInput}
-                />
-              ) : kind === chartTypes.PIE ? (
-                <PieChartContent
-                  {...chartProps}
-                  editor={editor}
-                  dispatch={dispatch}
-                  dispatchElements={dispatchElements}
-                  elementTitleAs={PieChartElementTitleInput}
-                  elementValueAs={PieChartElementValueInput}
-                  elementPathAs={PieChartElementPath}
-                />
-              ) : kind === chartTypes.LINE ? (
-                <LineChartContent
-                  {...chartProps}
-                  editor={editor}
-                  dispatch={dispatch}
-                  dispatchElements={dispatchElements}
-                  groupTitleAs={ChartGroupTitleInput}
-                  elementValueAs={ChartGroupElementValueInput}
-                  elementPathAs={LineChartElementPath}
-                />
-              ) : null}
-            </ChartSvg>
-          </ChartLayout>
-        ) : (
-          <Chart
-            {...chartProps}
-            title={title}
-            textAlignment={textAlignment}
-            kind={kind}
-          />
-        )}
-        <BlockActions
-          addButtonRenderMap={addButtonRenderMap}
-          dispatch={dispatch}
-          editor={editor}
-          id={chartProps.id}
-          selection={selection}
+  const blockActions = (
+    <BlockActions
+      addButtonRenderMap={addButtonRenderMap}
+      dispatch={dispatch}
+      editor={editor}
+      id={chartProps.id}
+      selection={selection}
+    />
+  );
+
+  return selection.length === 1 && selection[0] === chartProps.id ? (
+    <ChartLayout
+      ref={resizeTargetRef}
+      title={
+        <ChartInlineInput
+          onChange={handleTitleChange}
+          textAlignment={textAlignment}
+          value={title}
         />
-      </Container>
-    )
+      }
+      description={
+        kind === chartTypes.PIE || kind === chartTypes.BAR ? (
+          <ChartDescriptionEditor
+            {...chartProps}
+            dispatchElements={dispatchElements}
+          />
+        ) : kind === chartTypes.COLUMN || kind === chartTypes.LINE ? (
+          <ChartGroupsDescriptionEditor
+            {...chartProps}
+            dispatchElements={dispatchElements}
+          />
+        ) : null
+      }
+      textAlignment={textAlignment}
+    >
+      <ChartSvg>
+        <defs
+          dangerouslySetInnerHTML={{
+            __html: stringify(chartEditorFillPattern),
+          }}
+        />
+        {kind === chartTypes.BAR ? (
+          <BarChartContent
+            {...chartProps}
+            editor={editor}
+            dispatch={dispatch}
+            dispatchElements={dispatchElements}
+            elementRectAs={BarChartElementRect}
+            elementTitleAs={BarChartElementTitleInput}
+            elementValueAs={BarChartElementValueInput}
+          />
+        ) : kind === chartTypes.COLUMN ? (
+          <ColumnChartContent
+            {...chartProps}
+            editor={editor}
+            dispatch={dispatch}
+            dispatchElements={dispatchElements}
+            elementRectAs={ColumnChartElementRect}
+            elementValueAs={ChartGroupElementValueInput}
+            groupTitleAs={ChartGroupTitleInput}
+          />
+        ) : kind === chartTypes.LINE ? (
+          <LineChartContent
+            {...chartProps}
+            editor={editor}
+            dispatch={dispatch}
+            dispatchElements={dispatchElements}
+            elementPathAs={LineChartElementPath}
+            elementValueAs={ChartGroupElementValueInput}
+            groupTitleAs={ChartGroupTitleInput}
+          />
+        ) : kind === chartTypes.PIE ? (
+          <PieChartContent
+            {...chartProps}
+            editor={editor}
+            dispatch={dispatch}
+            dispatchElements={dispatchElements}
+            elementPathAs={PieChartElementPath}
+            elementTitleAs={PieChartElementTitleInput}
+            elementValueAs={PieChartElementValueInput}
+          />
+        ) : null}
+      </ChartSvg>
+      {blockActions}
+    </ChartLayout>
+  ) : (
+    <Chart
+      {...chartProps}
+      title={title}
+      textAlignment={textAlignment}
+      kind={kind}
+    >
+      {blockActions}
+    </Chart>
   );
 }

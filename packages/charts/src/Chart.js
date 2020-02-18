@@ -56,6 +56,7 @@ export default function Chart({
           <PieChartContent {...chartProps} />
         ) : null}
       </ChartSvg>
+      {children}
     </ChartLayout>
   );
 }

@@ -35,7 +35,8 @@ export default React.forwardRef(function BarChartElementValueInput(
           body: { value: +currentTarget.value },
         })
       )}
-      value={parseFloat(value)}
-    />
+    >
+      {value}
+    </SvgInput>
   );
 });
