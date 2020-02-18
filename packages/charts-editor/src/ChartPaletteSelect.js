@@ -36,6 +36,10 @@ export default function ChartPaletteSelect({
     <FormControl>
       <Select
         value={paletteKey}
+        onClick={(event) => {
+          event.stopPropagation();
+          event.preventDefault();
+        }}
         onChange={React.useCallback(
           (event) => {
             const paletteKey = event.target.value;
