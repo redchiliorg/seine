@@ -5,7 +5,6 @@ node_js: '12'
 cache: yarn
 
 before_deploy:
-- yarn config set version-commit-hooks false
 - yarn config set version-git-tag false
 - yarn config set version-sign-git-tag false
 - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
