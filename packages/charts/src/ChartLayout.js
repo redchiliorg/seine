@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import type { TextAlignment } from '@seine/core';
@@ -19,6 +20,7 @@ const ChartLayoutDescription = styled.div`
   align-items: center;
   min-height: 12.5%;
   height: auto;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
 `;
 
