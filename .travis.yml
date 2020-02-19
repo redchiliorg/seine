@@ -4,28 +4,28 @@ node_js: '12'
 
 cache: yarn
 
-before_deploy:
+before_install:
 - yarn config set version-commit-hooks false
 - yarn config set version-git-tag false
 - yarn config set version-sign-git-tag false
+- echo -e "machine github.com\n  login $CI_USER_LOGIN\n  password $CI_USER_PASSWORD" > ~/.netrc
 - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 - echo "@${NPM_LOGIN}:registry=https://registry.npmjs.org/" >> ~/.npmrc
 
 deploy:
   provider: script
+  deploy_key:
   skip_cleanup: true
   script: yarn release
   on:
     branch: master
 
 after_deploy:
-- eval "$(ssh-agent -s)"
-- chmod 600 .travis/deploy_key.pem
-- ssh-add .travis/deploy_key.pem
-- git remote add deploy git@github.com:mi6gan/seine.git
-- git push deploy HEAD:latest
+- git push origin HEAD:latest
 
 env:
   global:
   - secure: eY6oIHY5UJk9VXrd2KMUWWe11LUdFcm0JDJ0eO9kNam63z93ml3vSIDpT3OlmZFTkgIq/shF59/3ELRlfNX0KaVXyhgYrIowO1rUGGFnR39O2NPMJpK0bu8PQmNC1jxo4pfC2NW5uC4RT+T0VEkyFkS3FQH38rHsipUIxW4fRXpud1jyKYdB8joDnLsM2zOJcOtebcIuMgIHUSLwsreR0m74XxMLD0LgOaH88ED7kGL/Fl7Qh+GrMD7XRjat7GYk9gVk50+hLWSRF8WdKecysplWbwsa2xUBCSrz+xCdQQEABEVs9Ipi+cVaLOP3iEdqCFt//vTUDkOccX4UTeCJbzRj85tRQ8nKBoaksz1310y/QocntVEFwpuvwKJucaMj3DMaH/HYcKvvIicIrWf1YY0Y1Rny1lgWPYXzBFW1IxosXnGNOP1lG6idCXDME00kEp4R+UtQH4I9cE4IlhbSlO9cRAOd/58ZRY/ZK1fR20S1KnziCD6kkTfmmnBPbpBSjfqE3sjUowHOhzXYk558TOI7KJTAA6kXcSW/1aWzysl8VJ8FQiP2N1mr5YzypY2gUeIL4WeU53vE1fAtyJC2faYJiON3G5NIQTG6U9mJrUSeb9gNYkIh2l/94ouUJw8kFtOTSvVU8aNuiyFK1k5sj+RZKKC+YTojJfVPqXRdoCc=
   - secure: rENOsF0tzNDCcKyZgL42SrVuviH9phE9zU9Z3t7PfEBR0j1vddG407ktf4tKdNHWDUyXTC0mP42V0Igsbi7NhHCm7ZrSb96DDJgA7fyOX3/bb1iQJC2Il/+lRD38nbaquOujny4ZiX+/HhQ/UxmJgJfeyrPoZgSs1QmxoIAmo8QByNYsLn7OkaiVZypdq3U4dkkiyICxW8KryS89IZpkmhNRsPadxiW9HBIfrn7FpeRnXMxvrAlWQLXYa4ZfJxl7nTSd32hRohEvyLpBAOGUs8fDK53JxqaYf4kYE9eKJLZUEcpzXa67m2WFPFg8pF8mDBnnvGUbRWSZ1CQYtHyau+9Bt3ukg5We5TnFNrtOjg67ynPX8zEWIydcXs88xFuuQFijUlB8nantyYb9VnjatxO2W5YgDx9VJX9xp5+AXOAnPyl3JRh+CK0Jhi/L3/A+FeMDELzRgWHlP4JEvFwpP72abR9niy+ugOcwqxj2F93YyUGILUvoyJL+MozhL+NTi/PGvIl9qkuNIX/IeSFpV4v/Jay8KihiL8Rtd6AMdHTDrygSTG1tw2sWRxMI4SPYwY3yalFbfgyiSbqNhmtP5ckfjAAFxiDOPVpmMWEGZaQ2mZUWqRYGtFBJla6RmTK+bWcmeiFF+L+c414FGNw0sfFK+SRnvcc3RlCuoWKXDOg=
+  - secure: upixnfv0UXPOlLOi1EQmIRXTm+Hu2bxsdqmpeTjVCvD9+BFAh/eyh0KgQNj2idOAM49gCWONBTODDlLTR83U2PYkiMoxoFmlbrn7v+qDaqGkclOAsyIFn45P/jyW15Z9fL6eUYu/3auO6c5KGbCOWkN0051Z4R9ZsTejsIDDm+VneZdi1gXecJQFWkIjrbGePt4hnwLNWsfLbASXfgtmJQOv6vnUqtN/bvJIIAQpw6aUTe3Tibr5I2kKcb4mB1DuL5knfULrERNyqRCs8cmNJxX534jRQqT2Dp6S9BSnqflrjuJidVvN06GFiQwQMX53iJy92Nz5xfsxg55HtYDZ1Qu6Kux4+VQi/a/Ni5jqSdbx4fxH22NitQGIEXkQu/0dquUC1eAeuUV1m+h969AgLStSODlfZRGtp2JNd+H8hHKD1hkM2AzPfwCZ6bwmaHCjbQOQnfUnPXKLGoL4Qrah1cM03bCQNohfpP6aMjM6YvVp1OT2efb3bpzG4Hp8aDCRC9+0rD9GnkPaveQ8umx2pa9qj8vk66G9cVY9Dd+CRuZSuUv1+pNQjTS/nJcbkE3YeiZKMcPEF4KHNv/H1gLvcpOIK6nCQ1ncYr0wmGJ6mkZBOutUmp5cqlMVMh2d61bwg9BkcAYvN7ZqhZmL0eRhRCqXTdtOOxiFldyFfJdX7ZU=
+  - secure: vRWAt63BWhwYm69hKsso5qG2enwex6cwAURx8J7hwt3u1ZH0uDmoLQPjp+cKJhAXHKEiUhifmPaFoY++5uZ86VeyeK7umUUvHscAogJ+6Nu7c5XajZ1G+TAkP/TMVQNHZ6CV4RG2TjS+yP1LAmZD3qiQlL0scgVa/aekXVc/NVDhsGmf345xmMfm4y+wBBVaMA6YoLvuI6ZJh8IHTWR7ETTByjF8hh2U3raJIVVRQOGy6su6bd7DqpaJ/4S/lWW09ESacJCUQGvo/wfSNYKVIJDGRgX5lXYTlvIaIHQA0crj9OKtQ1r34Plu+Z27Pa+J+f6mvZfd9pEN3p4NzSoo2jL1Nb0bJDtpFz3W3L0xaKvD1tQjJU1aixoCKiguncHLAh2MyP1TbUaE+YD2vcYaGywUnfD5tvdZinPVOV6p+JsOpSp9sc2wrjOAL15rMTMptNVQZPTCxrLlhYynrY2LDr742I28MhD+i/yFqeDNmSU+e0aGiVF9p64PZ/icRZErnk6ebQPo3dldzT5z9hHiak2LzZjvRF0rCVbB7f+g8rW6HwzYhDofYvlvA318JISYtu80W18+oLbmFg3oYeMJ2CRMplGMfl4AscgcgFUmwr8F03PqX0HouIaXlX4dkLIb6gNYXZqannjbSEM0heQbnTWvGROgKmrnZV9iq0ufKhY=
