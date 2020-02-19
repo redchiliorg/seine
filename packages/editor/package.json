@@ -17,6 +17,7 @@
     "@seine/draft": "^0.3.0",
     "@seine/draft-editor": "^0.3.0",
     "@seine/styles": "^0.3.0",
+    "@seine/tables": "^0.3.0",
     "@seine/tables-editor": "^0.3.0",
     "@seine/ui": "^0.3.0"
   },

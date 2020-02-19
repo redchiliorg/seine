@@ -25,7 +25,7 @@ export const defaultBlockRenderMap = {
   [blockTypes.GRID]: Grid,
   [blockTypes.IMAGE]: Image,
   [blockTypes.PAGE]: Page,
-  table: Table,
+  [blockTypes.TABLE]: Table,
 };
 
 /**

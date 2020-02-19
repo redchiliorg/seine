@@ -60,7 +60,6 @@ const config = {
       globals: {
         react: 'React',
         'react-dom': 'ReactDOM',
-        'draft-js': 'Draft',
         'styled-components/macro': 'styled',
         crypto: 'crypto',
         ...externalModuleIds.reduce(
@@ -91,6 +90,7 @@ const config = {
     cleanup(),
   ],
   external: (id) =>
+    !/^@material-ui\/core\/.+?\/.+$/.test(id) &&
     externalModuleIds.some(
       (moduleId) => id === moduleId || id.startsWith(`${moduleId}/`)
     ),
