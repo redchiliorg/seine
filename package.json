@@ -22,7 +22,7 @@
     "test:jest": "jest",
     "dev": "run-s dev:*",
     "dev:start": "start-storybook -p 3000 -s public",
-    "postversion": "git commit -am \"Release ${npm_package_version}\" && git push origin HEAD:master"
+    "postversion": "git commit -am \"Release ${npm_package_version}\" && git push origin HEAD:next"
   },
   "dependencies": {
     "@material-ui/core": "4.5",
