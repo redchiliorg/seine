@@ -7,20 +7,19 @@ import { defaultChartPalette } from './constants';
 
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
-  display: inline-block;
-  width: 2em;
-  height: 2em;
+  padding: 0.75rem;
+  margin: 0.75rem;
 `;
 
-const LegendLabel = styled.p`
-  display: inline-block;
-  margin: 0.5em;
+const LegendLabel = styled.div`
   white-space: pre-wrap;
+  word-break: break-all;
 `;
 
 const LegendItem = styled.div`
   display: flex;
   align-items: center;
+  ${({ minWidth }) => minWidth && { minWidth }};
 `;
 
 export type Props = {
@@ -37,8 +36,9 @@ export default function ChartLegend({
   elements,
   palette = defaultChartPalette,
 }: Props) {
+  const minItemWidth = `${100 / elements.length}%`;
   return elements.map(({ title }, index) => (
-    <LegendItem key={index}>
+    <LegendItem key={index} minWidth={minItemWidth}>
       <LegendBox color={palette[index % palette.length]} />
       <LegendLabel>{title}</LegendLabel>
     </LegendItem>

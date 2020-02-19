@@ -25,7 +25,7 @@ export const defaultBlockRenderMap = {
   [blockTypes.GRID]: Grid,
   [blockTypes.IMAGE]: Image,
   [blockTypes.PAGE]: Page,
-  table: Table,
+  [blockTypes.TABLE]: Table,
 };
 
 /**
@@ -37,7 +37,9 @@ function Content({
   blockRenderMap = defaultBlockRenderMap,
   children,
   parent,
-  as: Container = blockRenderMap[parent.type],
+  as: Container = parent['parent_id']
+    ? React.Fragment
+    : blockRenderMap[parent.type],
 }: Props): React.Node {
   return (
     <ThemeProvider>
@@ -47,6 +49,9 @@ function Content({
             .filter((block: Block) => block['parent_id'] === parent.id)
             .map(({ body, format, ...block }: Block) => {
               const ContentBlock = blockRenderMap[block.type];
+              const blockChildren = children.filter(
+                (content) => content.id !== block.id
+              );
               return (
                 <ContentBlock
                   key={block.id}
@@ -54,9 +59,11 @@ function Content({
                   {...(body ? body : {})}
                   {...block}
                 >
-                  <Content parent={block} blockRenderMap={blockRenderMap}>
-                    {children.filter((content) => content.id !== block.id)}
-                  </Content>
+                  {blockChildren.length ? (
+                    <Content parent={block} blockRenderMap={blockRenderMap}>
+                      {blockChildren}
+                    </Content>
+                  ) : null}
                 </ContentBlock>
               );
             })}

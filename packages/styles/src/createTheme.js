@@ -1,5 +1,5 @@
 // @flow
-import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+import { default as createBreakpoints } from '@material-ui/core/styles/createBreakpoints';
 
 import createTypography from './createTypography';
 import {

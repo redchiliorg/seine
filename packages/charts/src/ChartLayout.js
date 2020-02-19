@@ -2,22 +2,10 @@ import * as React from 'react';
 import styled from 'styled-components/macro';
 import type { TextAlignment } from '@seine/core';
 
-const ChartLayoutContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  position: relative;
-  & > div {
-    width: 100%;
-  }
-`;
-
 const ChartLayoutTitle = styled.h3`
   ${({ theme: { typography } }) => typography.h3};
-  justify-content: ${({ textAlignment }) => textAlignment};
+  text-align: ${({ textAlignment }) => textAlignment};
   height: 12.5%;
-  display: flex;
-  align-items: center;
-  width: 100%;
 `;
 
 const ChartLayoutContent = styled.div`
@@ -26,10 +14,26 @@ const ChartLayoutContent = styled.div`
 
 const ChartLayoutDescription = styled.div`
   justify-content: ${({ textAlignment }) => textAlignment};
-  height: 12.5%;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  min-height: 12.5%;
+  height: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+`;
+
+const ChartLayoutContainer = styled.div`
+  width: 100%;
+  position: relative;
+  ${ChartLayoutTitle},
+  ${ChartLayoutContent},
+  ${ChartLayoutDescription} {
+    max-width: 65vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+  }
 `;
 
 type Props = {
@@ -48,13 +52,16 @@ export default React.forwardRef(function ChartLayout(
   { title, children, description, textAlignment }: Props,
   ref
 ) {
+  const [content, ...extensions] = React.Children.toArray(children);
+
   return (
     <ChartLayoutContainer ref={ref}>
       <ChartLayoutTitle textAlignment={textAlignment}>{title}</ChartLayoutTitle>
-      <ChartLayoutContent>{children}</ChartLayoutContent>
+      <ChartLayoutContent>{content}</ChartLayoutContent>
       <ChartLayoutDescription textAlignment={textAlignment}>
         {description}
       </ChartLayoutDescription>
+      {extensions}
     </ChartLayoutContainer>
   );
 });
