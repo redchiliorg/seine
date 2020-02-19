@@ -19,7 +19,7 @@ deploy:
     branch: master
 
 after_deploy:
-- git push
+- git push origin HEAD:latest
 
 env:
   global:
