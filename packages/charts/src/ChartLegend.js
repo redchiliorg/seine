@@ -7,13 +7,11 @@ import { defaultChartPalette } from './constants';
 
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
-  display: inline-block;
   padding: 0.75rem;
   margin: 0.75rem;
 `;
 
-const LegendLabel = styled.p`
-  display: inline-block;
+const LegendLabel = styled.div`
   white-space: pre-wrap;
   word-break: break-all;
 `;
