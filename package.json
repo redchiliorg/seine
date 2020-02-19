@@ -8,24 +8,20 @@
     "richtext"
   ],
   "private": true,
-  "repository": "mi6gan/seine",
+  "repository": "https://github.com/mi6gan/seine",
   "license": "MIT",
   "scripts": {
-    "deploy": "run-s release",
     "start": "serve",
-    "build": "build-storybook -o dist",
-    "release": "run-s release:*",
-    "release:build": "run-s release:build:*",
-    "release:build:cjs": "node scripts/build.js --format=cjs",
-    "release:build:esm": "node scripts/build.js -format=esm",
+    "build": "run-s build:*",
+    "build:cjs": "node scripts/build.js --format=cjs",
+    "build:esm": "node scripts/build.js -format=esm",
+    "release": "run-s build:* release:*",
     "release:publish": "node scripts/publish.js",
     "test": "run-s test:*",
-    "test:build": "run-s release:build",
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
     "dev": "run-s dev:*",
-    "dev:start": "start-storybook -p 3000 -s public",
-    "cypress:open": "cross-env NODE_ENV=development cypress open"
+    "dev:start": "start-storybook -p 3000 -s public"
   },
   "dependencies": {
     "@material-ui/core": "4.5",
@@ -33,7 +29,6 @@
     "@material-ui/styles": "4.5",
     "@material-ui/utils": "4.5",
     "draft-js": "^0.11.0",
-    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "serve": "^11.1.0",
@@ -53,12 +48,10 @@
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.1",
     "cross-env": "^6.0.3",
-    "cypress": "^3.8.1",
     "draft-js": "^0.11.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react-app": "^5.0.1",
-    "eslint-plugin-cypress": "^2.8.1",
     "eslint-plugin-flowtype": "^4.2.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsdoc": "^15.12.0",
@@ -95,6 +88,10 @@
     "packages/*",
     "packages/helpers/*"
   ],
+  "engines": {
+    "node": ">=12",
+    "yarn": ">=1.21"
+  },
   "babelMacros": {
     "styledComponents": {
       "pure": true
