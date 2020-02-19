@@ -5,7 +5,7 @@ import type { TextAlignment } from '@seine/core';
 const ChartLayoutTitle = styled.h3`
   ${({ theme: { typography } }) => typography.h3};
   text-align: ${({ textAlignment }) => textAlignment};
-  height: 12.5%;
+  height: 3.5rem;
 `;
 
 const ChartLayoutContent = styled.div`
@@ -19,12 +19,13 @@ const ChartLayoutDescription = styled.div`
   align-items: center;
   min-height: 12.5%;
   height: auto;
-  padding-top: 2.5rem;
   padding-bottom: 1rem;
 `;
 
 const ChartLayoutContainer = styled.div`
   width: 100%;
+  height: 100%;
+  box-sizing: content-box;
   position: relative;
   ${ChartLayoutTitle},
   ${ChartLayoutContent},
