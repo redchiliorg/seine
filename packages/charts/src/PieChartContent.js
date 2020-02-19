@@ -20,7 +20,7 @@ type Props = {
 };
 
 const RADIUS = VIEWPORT_HEIGHT / 2;
-const INNER_RADIUS = RADIUS / 3;
+const INNER_RADIUS = RADIUS / 2;
 const CENTER = RADIUS;
 const GUTTER_WIDTH = Math.max(0, VIEWPORT_WIDTH - VIEWPORT_HEIGHT) / 2;
 const OUTER_RADIUS = RADIUS + GUTTER_WIDTH / 2;
@@ -140,7 +140,7 @@ export default function PieChartContent({
               fontWeight={400}
               x={GUTTER_WIDTH + textX}
               y={textY}
-              {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
+              width={value < quarter && !legend ? GUTTER_WIDTH : RADIUS}
             >
               {value}
               {units}
@@ -158,7 +158,7 @@ export default function PieChartContent({
                 fontWeight={400}
                 x={GUTTER_WIDTH + textX}
                 y={textY}
-                {...(value < quarter && !legend && { width: GUTTER_WIDTH })}
+                width={value < quarter && !legend ? GUTTER_WIDTH : RADIUS}
               >
                 {title}
               </ElementTitle>
