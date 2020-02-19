@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import AddIcon from '@material-ui/icons/Add';
+import { Add as AddIcon } from '@material-ui/icons';
 import { Button, Popover, Box, ClickAwayListener } from '@material-ui/core';
 import type { AddButtonProps, BlockType } from '@seine/core';
 import { blockTypes } from '@seine/core';
