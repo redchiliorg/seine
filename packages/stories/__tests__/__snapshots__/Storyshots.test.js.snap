@@ -1,52 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Cypress Svg Typography Text 1`] = `
-<div>
-  <p
-    className="Typography-sc-1b4huth-0 ihmGab"
-  >
-    Text
-  </p>
-  <div
-    style={
-      Object {
-        "fontWeight": 600,
-        "width": "100%",
-      }
-    }
-  >
-    should be rendered exactly as
-  </div>
-  <svg
-    height="100%"
-    width="100%"
-  >
-    <foreignObject
-      className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
-      height="100%"
-      width="100%"
-      x={0}
-      y={0}
-    >
-      <canvas
-        className="SvgTypographyCanvas-s73pe6-0 kAzBtL"
-        fontSize="1rem"
-        height={1}
-        width={1}
-      />
-      <p
-        className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 fCswNR"
-        textAnchor="start"
-        transform="scale(1, 1)"
-        width={1}
-      >
-        Text
-      </p>
-    </foreignObject>
-  </svg>
-</div>
-`;
-
 exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
 <div
   className="Grid-sc-1m9mzof-0 bsEnsh"
