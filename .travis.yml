@@ -2,7 +2,7 @@ language: node_js
 node_js: '12'
 cache: yarn
 before_install:
-- yarn config set version-commit-hooks true
+- yarn config set version-commit-hooks false
 - yarn config set version-git-tag false
 - yarn config set version-sign-git-tag false
 - echo -e "machine github.com\n  login $CI_USER_LOGIN\n  password $CI_USER_PASSWORD" > ~/.netrc
@@ -16,6 +16,7 @@ deploy:
     branch: master
 after_deploy:
 - yarn version --patch
+- yarn postversion
 env:
   global:
   - secure: eY6oIHY5UJk9VXrd2KMUWWe11LUdFcm0JDJ0eO9kNam63z93ml3vSIDpT3OlmZFTkgIq/shF59/3ELRlfNX0KaVXyhgYrIowO1rUGGFnR39O2NPMJpK0bu8PQmNC1jxo4pfC2NW5uC4RT+T0VEkyFkS3FQH38rHsipUIxW4fRXpud1jyKYdB8joDnLsM2zOJcOtebcIuMgIHUSLwsreR0m74XxMLD0LgOaH88ED7kGL/Fl7Qh+GrMD7XRjat7GYk9gVk50+hLWSRF8WdKecysplWbwsa2xUBCSrz+xCdQQEABEVs9Ipi+cVaLOP3iEdqCFt//vTUDkOccX4UTeCJbzRj85tRQ8nKBoaksz1310y/QocntVEFwpuvwKJucaMj3DMaH/HYcKvvIicIrWf1YY0Y1Rny1lgWPYXzBFW1IxosXnGNOP1lG6idCXDME00kEp4R+UtQH4I9cE4IlhbSlO9cRAOd/58ZRY/ZK1fR20S1KnziCD6kkTfmmnBPbpBSjfqE3sjUowHOhzXYk558TOI7KJTAA6kXcSW/1aWzysl8VJ8FQiP2N1mr5YzypY2gUeIL4WeU53vE1fAtyJC2faYJiON3G5NIQTG6U9mJrUSeb9gNYkIh2l/94ouUJw8kFtOTSvVU8aNuiyFK1k5sj+RZKKC+YTojJfVPqXRdoCc=
