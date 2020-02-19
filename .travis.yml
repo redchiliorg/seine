@@ -2,13 +2,11 @@ language: node_js
 node_js: '12'
 cache: yarn
 before_install:
-- yarn config set version-commit-hooks false
+- yarn config set version-commit-hooks true
 - yarn config set version-git-tag false
 - yarn config set version-sign-git-tag false
-- echo -e "machine github.com\n  login $CI_USER_LOGIN\n  password $CI_USER_PASSWORD"
-  > ~/.netrc
-- echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-- echo "@${NPM_LOGIN}:registry=https://registry.npmjs.org/" >> ~/.npmrc
+- echo -e "machine github.com\n  login $CI_USER_LOGIN\n  password $CI_USER_PASSWORD" > ~/.netrc
+- echo -e "//registry.npmjs.org/:_authToken=$NPM_TOKEN\n @$NPM_LOGIN:registry=https://registry.npmjs.org/" > ~/.npmrc
 deploy:
   provider: script
   deploy_key:
