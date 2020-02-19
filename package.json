@@ -88,10 +88,6 @@
     "packages/*",
     "packages/helpers/*"
   ],
-  "engines": {
-    "node": ">=12",
-    "yarn": ">=1.21"
-  },
   "babelMacros": {
     "styledComponents": {
       "pure": true
