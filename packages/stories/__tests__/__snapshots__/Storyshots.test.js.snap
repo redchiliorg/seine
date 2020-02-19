@@ -3533,8 +3533,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
               width="100%"
-              x={182.9827296128006}
-              y={102.9006234322655}
+              x={200.47409441920092}
+              y={102.35093514839826}
             >
               <canvas
                 className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -3561,8 +3561,8 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
               width="100%"
-              x={182.9827296128006}
-              y={103.9006234322655}
+              x={200.47409441920092}
+              y={103.35093514839826}
             >
               <canvas
                 className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -3780,8 +3780,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={137.59784014002224}
-            y={70.58151603906205}
+            x={132.39676021003334}
+            y={53.87227405859307}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -3808,8 +3808,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={137.59784014002224}
-            y={71.58151603906205}
+            x={132.39676021003334}
+            y={54.87227405859307}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -3835,8 +3835,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={171.48883938902762}
-            y={129.94753214000252}
+            x={183.23325908354144}
+            y={142.92129821000378}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -3863,8 +3863,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={171.48883938902762}
-            y={130.94753214000252}
+            x={183.23325908354144}
+            y={143.92129821000378}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -4017,8 +4017,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={137.00086926346557}
-            y={70.77321678162895}
+            x={131.5013038951984}
+            y={54.159825172443426}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -4045,8 +4045,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={137.00086926346557}
-            y={71.77321678162895}
+            x={131.5013038951984}
+            y={55.159825172443426}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -4072,8 +4072,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={171.85364982193735}
-            y={129.61256313164282}
+            x={183.78047473290601}
+            y={142.4188446974642}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -4100,8 +4100,8 @@ exports[`Storyshots Multiple.Content Content Of Chart Sample One 1`] = `
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={171.85364982193735}
-            y={130.61256313164282}
+            x={183.78047473290601}
+            y={143.4188446974642}
           >
             <canvas
               className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -8430,8 +8430,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
               width="100%"
-              x={182.9827296128006}
-              y={102.9006234322655}
+              x={200.47409441920092}
+              y={102.35093514839826}
             >
               <canvas
                 className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -8458,8 +8458,8 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
               className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
               height="100%"
               width="100%"
-              x={182.9827296128006}
-              y={103.9006234322655}
+              x={200.47409441920092}
+              y={103.35093514839826}
             >
               <canvas
                 className="SvgTypographyCanvas-s73pe6-0 etOWrt"
@@ -13679,8 +13679,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={182.9827296128006}
-          y={102.9006234322655}
+          x={200.47409441920092}
+          y={102.35093514839826}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 SYOUo"
@@ -13707,8 +13707,8 @@ exports[`Storyshots Single.Chart Pie Chart 1`] = `
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={182.9827296128006}
-          y={103.9006234322655}
+          x={200.47409441920092}
+          y={103.35093514839826}
         >
           <canvas
             className="SvgTypographyCanvas-s73pe6-0 etOWrt"
