@@ -18,7 +18,8 @@ deploy:
   on:
     branch: master
 
-after_deploy:
+after_success:
+- git remote set-url origin git@github.com:mi6gan/seine.git
 - git push origin HEAD:latest
 
 env:
