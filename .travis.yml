@@ -19,8 +19,11 @@ deploy:
     branch: master
 
 after_deploy:
-- git remote set-url origin git@github.com:mi6gan/seine.git
-- git push -u origin HEAD:latest
+- eval "$(ssh-agent -s)"
+- chmod 600 .travis/deploy_key.pem
+- ssh-add .travis/deploy_key.pem
+- git remote add deploy git@github.com:mi6gan/seine.git
+- git push deploy HEAD:latest
 
 env:
   global:
