@@ -2,7 +2,7 @@
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
   "homepage": "https://redchiliorg.github.io/seine",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "react",
     "richtext"
@@ -12,17 +12,20 @@
   "license": "MIT",
   "scripts": {
     "start": "serve",
-    "postinstall": "yarn workspaces run",
-    "build": "run-s build:*",
-    "build:cjs": "node scripts/build.js --format=cjs",
-    "build:esm": "node scripts/build.js -format=esm",
-    "release": "node scripts/publish.js",
+    "postversion": "git commit -am \"Release ${npm_package_version}\"",
+    "release": "run-s release:*",
+    "release:publish": "node scripts/publish.js --tag next",
+    "release:version": "yarn version --patch",
+    "release:postversion": "yarn postversion",
     "test": "run-s build:* test:*",
     "test:eslint": "eslint -c .eslintrc.js --format unix packages/*/src",
     "test:jest": "jest",
+    "build": "run-s build:*",
+    "build:cjs": "node scripts/build.js --format=cjs",
+    "build:esm": "node scripts/build.js -format=esm",
     "dev": "run-s dev:*",
     "dev:start": "start-storybook -p 3000 -s public",
-    "postversion": "git commit -am \"Release ${npm_package_version}\" && git push origin HEAD:next"
+    "postinstall": "yarn workspaces run"
   },
   "dependencies": {
     "@material-ui/core": "4.5",

@@ -17,21 +17,11 @@ export type SvgTypographyProps = {
   meta?: { [string]: any },
 };
 
-export type BoxProps = {
-  xScale: number,
-  yScale: number,
-  height: number,
-  width: number,
-};
-
-const StyledTypography = styled(Typography).attrs(
-  ({ fill, xScale, yScale }: SvgTypographyProps & BoxProps) => ({
-    color: fill,
-    transform: `scale(${xScale}, ${yScale})`,
-  })
-)`
-  ${({ transform }) => ({ transform })};
+const StyledTypography = styled(Typography).attrs(({ fill }) => ({
+  color: fill,
+}))`
   transform-origin: left top;
+  ${({ transform }) => ({ transform })};
   overflow: visible;
   white-space: pre-wrap;
   text-align: ${({ textAnchor }) =>
@@ -89,8 +79,8 @@ export default React.forwardRef(function SvgTypography(
   }: Props,
   ref
 ) {
-  const svgElementRef = React.useRef(null);
-  const { current: svgElement } = svgElementRef;
+  const foreignObjectRef = React.useRef(null);
+  const { current: foreignElement } = foreignObjectRef;
 
   const canvasElementRef = React.useRef(null);
   const { current: canvasElement } = canvasElementRef;
@@ -102,7 +92,7 @@ export default React.forwardRef(function SvgTypography(
       : defaultTheme.typography[variant]
   );
   const methods: SvgTypographyMethods = useAutoMemo(() => {
-    if (svgElement && canvasElement) {
+    if (foreignElement && canvasElement) {
       const getHeight = () => parseFloat(lineHeight);
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
@@ -110,11 +100,11 @@ export default React.forwardRef(function SvgTypography(
         return context.measureText(text).width + parseInt(fontSize);
       };
       const getXScale = (value = 1) =>
-        (window.devicePixelRatio * value * svgElement.getBBox().width) /
-        svgElement.getBoundingClientRect().width;
+        (window.devicePixelRatio * value * foreignElement.getBBox().width) /
+        foreignElement.getBoundingClientRect().width;
       const getYScale = (value = 1) =>
-        (window.devicePixelRatio * value * svgElement.getBBox().height) /
-        svgElement.getBoundingClientRect().height;
+        (window.devicePixelRatio * value * foreignElement.getBBox().height) /
+        foreignElement.getBoundingClientRect().height;
       const getScaledWidth = () => getXScale(getWidth());
       const getScaledHeight = () => getYScale(getHeight());
       return {
@@ -135,17 +125,17 @@ export default React.forwardRef(function SvgTypography(
   const scaledTextHeight = methods.getScaledHeight();
 
   const condensedFactor = Math.min(
-    typeof width === 'number' && width < scaledTextWidth
-      ? width / scaledTextWidth
-      : Infinity,
     typeof height === 'number' && height < scaledTextHeight
       ? height / scaledTextHeight
+      : Infinity,
+    typeof width === 'number' && width < scaledTextWidth
+      ? width / scaledTextWidth
       : Infinity
   );
 
   return (
     <SvgTypographyForeign
-      ref={svgElementRef}
+      ref={foreignObjectRef}
       height={'100%'}
       width={'100%'}
       x={
@@ -172,8 +162,7 @@ export default React.forwardRef(function SvgTypography(
         {...typography}
         textAnchor={textAnchor}
         width={methods.getWidth()}
-        yScale={methods.getYScale()}
-        xScale={methods.getXScale()}
+        transform={getForeignObjectTransform(foreignElement, methods)}
       >
         {condensedFactor !== Infinity ? (
           <CondensedText factor={condensedFactor}>{children}</CondensedText>
@@ -184,3 +173,32 @@ export default React.forwardRef(function SvgTypography(
     </SvgTypographyForeign>
   );
 });
+
+/**
+ * @description Based on https://github.com/marp-team/marpit-svg-polyfill
+ * @param {HTMLElement} foreignObject
+ * @param {SvgTypographyMethods} methods
+ * @returns {number}
+ */
+function getForeignObjectTransform(
+  foreignObject: HTMLElement,
+  methods: SvgTypographyMethods
+) {
+  if (navigator.vendor === 'Apple Computer, Inc.' && foreignObject) {
+    const svg = foreignObject.ownerSVGElement;
+    const x = foreignObject.x.baseVal.value;
+    const y = foreignObject.y.baseVal.value;
+
+    const width = svg.viewBox.baseVal.width / svg.currentScale;
+    const height = svg.viewBox.baseVal.height / svg.currentScale;
+    const scale = Math.min(svg.clientHeight / height, svg.clientWidth / width);
+
+    return `translate3d(${(svg.clientWidth - scale * width) / 2 -
+      x}px, ${(svg.clientHeight - scale * height) / 2 -
+      y}px, 0) scale(${methods.getXScale(scale)}, ${methods.getYScale(
+      scale
+    )}) translate(${x * scale}px, ${y * scale}px)`;
+  }
+
+  return `scale(${methods.getXScale()}, ${methods.getYScale()})`;
+}

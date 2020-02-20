@@ -12,6 +12,7 @@ const ChartSvg = styled.svg.attrs(
   }) => ({ overflow, width, height, viewBox })
 )`
   && {
+    transform: translateZ(0);
     ${({ overflow, width, height }) => ({ overflow, width, height })};
   }
 `;
