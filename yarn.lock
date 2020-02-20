@@ -1541,6 +1541,19 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@seine/charts-editor@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/charts-editor/-/charts-editor-0.3.179.tgz#2b305ccf946d60a299f85c0d7157c09fb70f1de1"
+  integrity sha512-UBqjVelNF0/112ZdsMF4Zkew/I4riKuz2k3R88eXWVVCqnJBiSW5dFlOnrr9GZY7mgZR9E9DpI4EQq4CQ6n7tA==
+  dependencies:
+    "@seine/charts" "^0.3.0"
+    "@seine/core" "^0.3.0"
+    "@seine/styles" "^0.3.0"
+    "@seine/ui" "^0.3.0"
+    react-color "^2.17.3"
+    svg-patterns "^1.0.0"
+    virtual-dom-stringify "^3.0.1"
+
 "@seine/charts@next":
   version "0.3.179"
   resolved "https://registry.yarnpkg.com/@seine/charts/-/charts-0.3.179.tgz#ea858abb07bccf0ef6910a44094e08f1dad22869"
@@ -1550,12 +1563,34 @@
     "@seine/styles" "^0.3.0"
     ramda "^0.26.1"
 
+"@seine/content@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/content/-/content-0.3.179.tgz#a49ba2156125485086adc041cb02965c3a03620e"
+  integrity sha512-qRLS2e+MxFhWwpDkYleSN571Vx5jqjKB/PnlCDIjQKNbBCGJuQwlhq4WjSrDnerj7K76lRONjqC3BatsQwTy6Q==
+  dependencies:
+    "@seine/charts" "^0.3.0"
+    "@seine/core" "^0.3.0"
+    "@seine/draft" "^0.3.0"
+    "@seine/styles" "^0.3.0"
+    "@seine/tables" "^0.3.0"
+
 "@seine/core@next":
   version "0.3.179"
   resolved "https://registry.yarnpkg.com/@seine/core/-/core-0.3.179.tgz#398165a829431b586c8ce065cd5c3bac8bb88576"
   integrity sha512-LK6UXTxdLfKcQ/4kKDEPZd64c1q1ZwMGx75m766HS1HS8xMu17zM36eehoI4E0j7/vVl+vYAvCP72JF2sX4E9A==
   dependencies:
     uuid "^3.3.2"
+
+"@seine/draft-editor@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/draft-editor/-/draft-editor-0.3.179.tgz#4e62ed8d5895b9a4085ba8d27531574a1a1d0c3e"
+  integrity sha512-HSauLxPORqOaxuoPbW/IiVqXRQ8v/RgrdAK/HUzZytDtYF+ftOqTgAM95PxIcySTZ4ZXlAi+HUlwhKs9jTjX4Q==
+  dependencies:
+    "@seine/core" "^0.3.0"
+    "@seine/draft" "^0.3.0"
+    "@seine/ui" "^0.3.0"
+    clsx "^1.0.4"
+    draft-js-buttons "^2.0.2"
 
 "@seine/draft@next":
   version "0.3.179"
@@ -1574,10 +1609,28 @@
     "@material-ui/core" "4.5"
     resize-observer-polyfill "^1.5.1"
 
+"@seine/tables-editor@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/tables-editor/-/tables-editor-0.3.179.tgz#c20cc9ded81806a1e6917767b0556c85133ca71e"
+  integrity sha512-eGogLyKZXeFeSPMIedlxTjK01/sphybYPnOQfDpcPxk5nne75tKY0qLno4ZLdGPNSF5QMpSbZ0cuPkbmKHUABA==
+  dependencies:
+    "@seine/core" "^0.3.0"
+    "@seine/styles" "^0.3.0"
+    "@seine/tables" "^0.3.0"
+    "@seine/ui" "^0.3.0"
+    react-color "^2.17.3"
+
 "@seine/tables@next":
   version "0.3.179"
   resolved "https://registry.yarnpkg.com/@seine/tables/-/tables-0.3.179.tgz#bacd9026917cebbbc94d8af2b4bcb3d1ec5b195c"
   integrity sha512-33P8YHjAfgHyofmLcxGCnS0ayKfSXsfX34TqWUa5DE476riTqn9uRFUjfXx5mx3OAYZUp33odNFWQZtxIXBNtA==
+  dependencies:
+    "@seine/core" "^0.3.0"
+
+"@seine/ui@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/ui/-/ui-0.3.179.tgz#0f6f37349a14fcf4f5b3d3f37f5fdc8b7afa89cc"
+  integrity sha512-Ox83TfRxZHFYS+q1MI0pXC3E1+631vR4OSp6gT/z6oM3IljHP43DUCfSqvIWqDR0S9q4+acCshwCYODNI2V20w==
   dependencies:
     "@seine/core" "^0.3.0"
 
