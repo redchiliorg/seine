@@ -11,15 +11,15 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/charts-editor": "^0.3.0",
-    "@seine/content": "^0.3.0",
-    "@seine/core": "^0.3.0",
-    "@seine/draft": "^0.3.0",
-    "@seine/draft-editor": "^0.3.0",
-    "@seine/styles": "^0.3.0",
-    "@seine/tables": "^0.3.0",
-    "@seine/tables-editor": "^0.3.0",
-    "@seine/ui": "^0.3.0"
+    "@seine/charts-editor": "next",
+    "@seine/content": "next",
+    "@seine/core": "next",
+    "@seine/draft": "next",
+    "@seine/draft-editor": "next",
+    "@seine/styles": "next",
+    "@seine/tables": "next",
+    "@seine/tables-editor": "next",
+    "@seine/ui": "next"
   },
   "peerDependencies": {
     "@material-ui/core": "4.5",
