@@ -2,7 +2,7 @@
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
   "homepage": "https://redchiliorg.github.io/seine",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "react",
     "richtext"
@@ -14,7 +14,7 @@
     "start": "serve",
     "postversion": "git commit -am \"Release ${npm_package_version}\"",
     "release": "run-s release:*",
-    "release:publish": "node scripts/publish.js --tag next",
+    "release:publish": "node scripts/publish.js --tag=next",
     "release:version": "yarn version --patch",
     "release:postversion": "yarn postversion",
     "test": "run-s build:* test:*",
