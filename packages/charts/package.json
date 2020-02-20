@@ -11,8 +11,8 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "^0.3.0",
-    "@seine/styles": "^0.3.0",
+    "@seine/core": "next",
+    "@seine/styles": "next",
     "ramda": "^0.26.1"
   },
   "peerDependencies": {

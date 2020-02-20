@@ -1541,6 +1541,46 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@seine/charts@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/charts/-/charts-0.3.179.tgz#ea858abb07bccf0ef6910a44094e08f1dad22869"
+  integrity sha512-7BAM0IPmJWxoyOHdMBnw9HBa/+we6upi2cExD24PBDydm0lp73my6SgM+otNCUPMoV4hSjR+CxhixUir+Vxx6Q==
+  dependencies:
+    "@seine/core" "^0.3.0"
+    "@seine/styles" "^0.3.0"
+    ramda "^0.26.1"
+
+"@seine/core@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/core/-/core-0.3.179.tgz#398165a829431b586c8ce065cd5c3bac8bb88576"
+  integrity sha512-LK6UXTxdLfKcQ/4kKDEPZd64c1q1ZwMGx75m766HS1HS8xMu17zM36eehoI4E0j7/vVl+vYAvCP72JF2sX4E9A==
+  dependencies:
+    uuid "^3.3.2"
+
+"@seine/draft@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/draft/-/draft-0.3.179.tgz#8b4deee7068b33303e765485aae641787ccac800"
+  integrity sha512-0Lz62vsnAfYL1mOD4fSfgCUZC4eU9vLiNSqep8c4/EoByWBYPnMpjN4r5o18nwzbQNMye94mfIYju+TO3kztyg==
+  dependencies:
+    "@seine/core" "^0.3.0"
+    clsx "^1.0.4"
+    draft-js "^0.11.0"
+
+"@seine/styles@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/styles/-/styles-0.3.179.tgz#8b1e20a3658e34ee85700d483e82780b5d49cd39"
+  integrity sha512-sMXy7bQrPtI9oGNJ7TPnbvT37l2Ls789WUr//vipotIi43y55AMBgBDNgm8adJbzPK85GQV2wUEWrpTF5TKl4w==
+  dependencies:
+    "@material-ui/core" "4.5"
+    resize-observer-polyfill "^1.5.1"
+
+"@seine/tables@next":
+  version "0.3.179"
+  resolved "https://registry.yarnpkg.com/@seine/tables/-/tables-0.3.179.tgz#bacd9026917cebbbc94d8af2b4bcb3d1ec5b195c"
+  integrity sha512-33P8YHjAfgHyofmLcxGCnS0ayKfSXsfX34TqWUa5DE476riTqn9uRFUjfXx5mx3OAYZUp33odNFWQZtxIXBNtA==
+  dependencies:
+    "@seine/core" "^0.3.0"
+
 "@storybook/addon-actions@^5.3.0":
   version "5.3.13"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.3.13.tgz#faf57ca14a46ce0c69168c631fbfc3d79d294b38"

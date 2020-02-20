@@ -11,10 +11,10 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "^0.3.0",
-    "@seine/styles": "^0.3.0",
-    "@seine/tables": "^0.3.0",
-    "@seine/ui": "^0.3.0",
+    "@seine/core": "next",
+    "@seine/styles": "next",
+    "@seine/tables": "next",
+    "@seine/ui": "next",
     "react-color": "^2.17.3"
   },
   "peerDependencies": {
