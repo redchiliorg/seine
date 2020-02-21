@@ -46,7 +46,8 @@ export default function Toolbar({
   return (
     <AppBar position={position}>
       <MuiToolbar
-        onClick={React.useCallback((event) => event.stopPropagation(), [])}
+        onClick={React.useCallback((event) => {
+        }, [])}
         {...toolbarProps}
       />
     </AppBar>

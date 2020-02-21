@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { SketchPicker } from 'react-color.macro';
-import { Button } from '@material-ui/core';
+import { Button, ClickAwayListener } from '@material-ui/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import {
   chartPaletteKeyValues,
@@ -10,6 +10,7 @@ import {
   defaultChartFormat,
   defaultChartPaletteKey,
 } from '@seine/charts';
+import { useAutoCallback } from 'hooks.macro';
 
 const StyledColorButton = styled(Button).attrs(({ children = '' }) => ({
   children,
@@ -47,17 +48,25 @@ export default function ChartElementColorButton({
   const colorIndex = selection % palette.length;
   const color = palette[colorIndex];
   return (
-    <>
+    <div>
       <StyledColorButton
         bgcolor={color}
-        onClick={React.useCallback(() => setOpen(!open), [open])}
+        onClick={useAutoCallback(() => {
+          setOpen(!open);
+        })}
         size={'small'}
       />
-      <ColorPickerContainer open={open}>
+      <ColorPickerContainer
+        open={open}
+        onClick={(event) => {
+          event.stopPropagation();
+          event.preventDefault();
+        }}
+      >
         <SketchPicker
           color={color}
           presetColors={chartPaletteKeyValues[paletteKey]}
-          onChange={React.useCallback(
+          onChange={useAutoCallback(
             ({ rgb: { r, g, b, a = 1 } }) =>
               dispatch({
                 type: UPDATE_BLOCK_FORMAT,
@@ -73,6 +82,6 @@ export default function ChartElementColorButton({
           )}
         />
       </ColorPickerContainer>
-    </>
+    </div>
   );
 }

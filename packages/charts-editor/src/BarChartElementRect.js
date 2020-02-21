@@ -25,7 +25,17 @@ export default function BarChartElementRect({
   return (
     <ClickAwayListener
       onClickAway={(event) => {
-        if (event.target !== document.body) {
+        if (
+          event.target &&
+          !(
+            event.target === document.body ||
+            event.target instanceof HTMLButtonElement ||
+            event.target instanceof HTMLInputElement ||
+            (event.target instanceof HTMLDivElement &&
+              event.target.parentElement instanceof HTMLSpanElement) ||
+            event.target.style.position === 'absolute'
+          )
+        ) {
           dispatchElements({
             type: DESELECT_BLOCK_ELEMENT,
             index,
