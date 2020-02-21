@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgInput } from '@seine/styles';
+import { SvgInput } from '@seine/ui';
 import { UPDATE_BLOCK_ELEMENT_BY_GROUP } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
 
@@ -23,6 +23,7 @@ export default function ChartGroupTitleInput({
   return (
     <SvgInput
       {...inputProps}
+      value={group}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT_BY_GROUP,

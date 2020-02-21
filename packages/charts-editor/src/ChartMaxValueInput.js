@@ -1,5 +1,5 @@
 // @flow
-import { Input } from '@seine/ui';
+import { ToolbarInput } from '@seine/ui';
 import type {
   BlockId,
   BlocksAction,
@@ -23,7 +23,7 @@ type Props = {
  */
 export default function ChartMaxValueInput({ dispatch, format }: Props) {
   return (
-    <Input
+    <ToolbarInput
       onChange={React.useCallback(
         ({ currentTarget }) =>
           dispatch({

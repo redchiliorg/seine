@@ -44,10 +44,11 @@ export default function PieChartContent({
   paletteKey,
   xAxis,
   yAxis,
+  textAlignment,
 
+  elementPathAs: ElementPath = 'path',
   elementTitleAs: ElementTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,
-  elementPathAs: ElementPath = 'path',
 
   ...metaProps
 }): Props {

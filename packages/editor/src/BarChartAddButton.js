@@ -1,8 +1,9 @@
 // @flow
 import * as React from 'react';
 import type { Block, BlocksAction, BlocksCreateAction } from '@seine/core';
-import { blockTypes, chartTypes, createBlock } from '@seine/core';
+import { blockTypes, createBlock } from '@seine/core';
 import { ActionButton } from '@seine/ui';
+import { defaultBarChartFormat } from '@seine/charts';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
@@ -37,7 +38,7 @@ export default function BarChartAddButton({
             },
           ],
         },
-        { kind: chartTypes.BAR }
+        defaultBarChartFormat
       )}
       title={title}
     >

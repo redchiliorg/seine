@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgInput } from '@seine/styles';
+import { SvgInput } from '@seine/ui';
 import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
 
@@ -23,6 +23,7 @@ export default function PieChartElementTitleInput({
   return (
     <SvgInput
       {...inputProps}
+      value={title}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT,
@@ -30,7 +31,6 @@ export default function PieChartElementTitleInput({
           body: { title: currentTarget.value },
         })
       )}
-      value={title}
     />
   );
 }

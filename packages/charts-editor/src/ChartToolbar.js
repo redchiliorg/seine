@@ -9,6 +9,7 @@ import type {
 } from '@seine/core';
 import { chartTypes } from '@seine/core';
 import { Toolbar } from '@seine/ui';
+import { defaultBarChartFormat, defaultChartFormat } from '@seine/charts';
 
 import ColumnChartToolbar from './ColumnChartToolbar';
 import BarChartToolbar from './BarChartToolbar';
@@ -27,28 +28,47 @@ type Props = $Rest<
   format: ChartFormat,
 };
 
-const defaultFormat = {};
-
 /**
  * @description Action buttons to edit currently selected chart.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartToolbar({ children, ...toolbarProps }: Props) {
-  const { kind, ...format } = toolbarProps.format || defaultFormat;
+export default function ChartToolbar({
+  children,
+  format,
+  ...toolbarProps
+}: Props) {
+  format = format || {};
 
-  return (
-    !!format &&
-    (kind === chartTypes.BAR ? (
-      <BarChartToolbar {...toolbarProps}>{children}</BarChartToolbar>
-    ) : kind === chartTypes.COLUMN ? (
-      <ColumnChartToolbar {...toolbarProps}>{children}</ColumnChartToolbar>
-    ) : kind === chartTypes.LINE ? (
-      <LineChartToolbar {...toolbarProps}>{children}</LineChartToolbar>
-    ) : kind === chartTypes.PIE ? (
-      <PieChartToolbar {...toolbarProps}>{children}</PieChartToolbar>
-    ) : (
-      <Toolbar>{children}</Toolbar>
-    ))
+  return format.kind === chartTypes.BAR ? (
+    <BarChartToolbar
+      {...toolbarProps}
+      format={{ ...defaultBarChartFormat, ...format }}
+    >
+      {children}
+    </BarChartToolbar>
+  ) : format.kind === chartTypes.COLUMN ? (
+    <ColumnChartToolbar
+      {...toolbarProps}
+      format={{ ...defaultChartFormat, ...format }}
+    >
+      {children}
+    </ColumnChartToolbar>
+  ) : format.kind === chartTypes.LINE ? (
+    <LineChartToolbar
+      {...toolbarProps}
+      format={{ ...defaultChartFormat, ...format }}
+    >
+      {children}
+    </LineChartToolbar>
+  ) : format.kind === chartTypes.PIE ? (
+    <PieChartToolbar
+      {...toolbarProps}
+      format={{ ...defaultChartFormat, ...format }}
+    >
+      {children}
+    </PieChartToolbar>
+  ) : (
+    <Toolbar>{children}</Toolbar>
   );
 }

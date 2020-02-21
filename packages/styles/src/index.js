@@ -11,7 +11,6 @@ export type {
   SvgTypographyMethods,
 } from './SvgTypography';
 export { default as Typography } from './Typography';
-export { default as SvgInput } from './SvgInput';
 export {
   default as useTypographyChildrenMethods,
 } from './useTypographyChildrenMethods';
