@@ -1,5 +1,6 @@
 /* eslint-disable no-console, jsdoc/require-jsdoc, jsdoc/require-description, jsdoc/require-param, jsdoc/require-returns */
-import { deepmerge } from '@material-ui/utils';
+
+import { deepmerge } from './utils';
 
 function round(value) {
   return Math.round(value * 1e5) / 1e5;
