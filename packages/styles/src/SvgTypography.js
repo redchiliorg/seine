@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import type { ThemeStyle } from '@material-ui/core/styles/createTypography';
-import { useAutoEffect, useAutoMemo } from 'hooks.macro';
+import { useAutoMemo } from 'hooks.macro';
 
 import SvgTypographyCanvas from './SvgTypographyCanvas';
 import SvgTypographyForeign from './SvgTypographyForeign';
@@ -21,8 +21,8 @@ const StyledTypography = styled(Typography).attrs(({ fill }) => ({
   color: fill,
 }))`
   transform-origin: left top;
+  position: fixed;
   ${({ transform }) => ({ transform })};
-  overflow: visible;
   white-space: pre-wrap;
   text-align: ${({ textAnchor }) =>
     textAnchor === 'end'
@@ -162,7 +162,7 @@ export default React.forwardRef(function SvgTypography(
         {...typography}
         textAnchor={textAnchor}
         width={methods.getWidth()}
-        transform={useForeignObjectTransform(foreignElement, methods)}
+        transform={getForeignObjectTransform(foreignElement, methods)}
       >
         {condensedFactor !== Infinity ? (
           <CondensedText factor={condensedFactor}>{children}</CondensedText>
@@ -180,47 +180,27 @@ export default React.forwardRef(function SvgTypography(
  * @param {SvgTypographyMethods} methods
  * @returns {number}
  */
-function useForeignObjectTransform(
+function getForeignObjectTransform(
   foreignObject: HTMLElement,
   methods: SvgTypographyMethods
 ) {
-  const svg = foreignObject && foreignObject.ownerSVGElement;
-  const x = foreignObject && foreignObject.x.baseVal.value;
-  const y = foreignObject && foreignObject.y.baseVal.value;
+  if (navigator.vendor === 'Apple Computer, Inc.' && foreignObject) {
+    const svg = foreignObject.viewportElement;
+    const x = foreignObject.x.baseVal.value;
+    const y = foreignObject.y.baseVal.value;
 
-  const width = svg && svg.viewBox.baseVal.width / svg.currentScale;
-  const height = svg && svg.viewBox.baseVal.height / svg.currentScale;
+    const width = svg.viewBox.baseVal.width / svg.currentScale;
+    const height = svg.viewBox.baseVal.height / svg.currentScale;
+    const scaleY = svg.clientHeight / height;
+    const scaleX = svg.clientWidth / width;
+    const scale = Math.min(scaleX, scaleY);
 
-  const clientWidth = svg && svg.clientWidth;
-  const clientHeight = svg && svg.clientHeight;
+    return `translate3d(${(svg.clientWidth - scaleX * width) / 2 -
+      x}px, ${(svg.clientHeight - scaleY * height) / 2 -
+      y}px, 0) scale(${methods.getXScale(scale)}, ${methods.getYScale(
+      scale
+    )}) translate(${x}px, ${y}px)`;
+  }
 
-  const scale = svg && Math.min(clientHeight / height, clientWidth / width);
-
-  const [, setTransform] = React.useState(
-    `scale(${methods.getXScale()}, ${methods.getYScale()})`
-  );
-  const nextTransform = useAutoMemo(() => {
-    if (navigator.vendor === 'Apple Computer, Inc.' && scale) {
-      return `translate3d(${(clientWidth - scale * width) / 2 -
-        x}px, ${(clientHeight - scale * height) / 2 -
-        y}px, 0) scale(${methods.getXScale(scale)}, ${methods.getYScale(
-        scale
-      )}) translate(${x * scale}px, ${y * scale}px)`;
-    }
-    return `scale(${methods.getXScale()}, ${methods.getYScale()})`;
-  });
-
-  useAutoEffect(() => {
-    let animationFrame = window.requestAnimationFrame(() => {
-      animationFrame = null;
-      setTransform(nextTransform);
-    });
-    return () => {
-      if (animationFrame) {
-        window.cancelAnimationFrame(animationFrame);
-      }
-    };
-  });
-
-  return nextTransform;
+  return `scale(${methods.getXScale()}, ${methods.getYScale()})`;
 }
