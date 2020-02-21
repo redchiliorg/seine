@@ -90,7 +90,6 @@ const config = {
     cleanup(),
   ],
   external: (id) =>
-    !/^@material-ui\/core\/.+?\/.+$/.test(id) &&
     externalModuleIds.some(
       (moduleId) => id === moduleId || id.startsWith(`${moduleId}/`)
     ),

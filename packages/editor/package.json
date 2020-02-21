@@ -1,6 +1,6 @@
 {
   "name": "@seine/editor",
-  "version": "0.3.180",
+  "version": "0.3.181",
   "description": "Seine structured content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,6 +11,8 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/styles": "4.9",
+    "@seine/charts": "next",
     "@seine/charts-editor": "next",
     "@seine/content": "next",
     "@seine/core": "next",
@@ -22,9 +24,7 @@
     "@seine/ui": "next"
   },
   "peerDependencies": {
-    "@material-ui/core": "4.5",
-    "@material-ui/icons": "4.5",
-    "@material-ui/styles": "4.5",
+    "@material-ui/core": "4.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

@@ -24,13 +24,14 @@ export default function BarChartElementRect({
 }: Props) {
   return (
     <ClickAwayListener
-      onClickAway={(event) =>
-        !(event.target instanceof HTMLButtonElement) &&
-        dispatchElements({
-          type: DESELECT_BLOCK_ELEMENT,
-          index,
-        })
-      }
+      onClickAway={(event) => {
+        if (event.target !== document.body) {
+          dispatchElements({
+            type: DESELECT_BLOCK_ELEMENT,
+            index,
+          });
+        }
+      }}
     >
       <g>
         <rect
