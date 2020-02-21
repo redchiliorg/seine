@@ -89,16 +89,25 @@ export const defaultChartFormat = {
   legend: defaultChartLegend,
 };
 
-export const defaultPieChartFormat = {
-  ...defaultChartFormat,
-  kind: chartTypes.PIE,
-  legend: defaultPieChartLegend,
-};
-
 export const defaultBarChartFormat = {
   ...defaultChartFormat,
   kind: chartTypes.BAR,
   legend: defaultBarChartLegend,
+};
+export const defaultColumnChartFormat = {
+  ...defaultChartFormat,
+  kind: chartTypes.COLUMN,
+};
+
+export const defaultLineChartFormat = {
+  ...defaultChartFormat,
+  kind: chartTypes.LINE,
+};
+
+export const defaultPieChartFormat = {
+  ...defaultChartFormat,
+  kind: chartTypes.PIE,
+  legend: defaultPieChartLegend,
 };
 
 export const defaultPieChartUnits = '%';

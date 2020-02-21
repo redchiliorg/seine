@@ -7,7 +7,7 @@ import {
   createTitleIdentityBlockElements,
 } from '@seine/core';
 import { ActionButton } from '@seine/ui';
-import { defaultChartFormat } from '@seine/charts';
+import { defaultChartFormat, defaultColumnChartFormat } from '@seine/charts';
 
 type Props = $Rest<BlocksCreateAction, {| block: Block |}> & {
   children?: React.Node,
@@ -64,7 +64,7 @@ export default function ColumnChartAddButton({
             },
           ]),
         },
-        defaultChartFormat
+        defaultColumnChartFormat
       )}
       title={title}
     >
