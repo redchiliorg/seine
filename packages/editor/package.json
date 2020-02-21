@@ -11,7 +11,7 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/styles": "4.5",
+    "@material-ui/styles": "4.9",
     "@seine/charts": "next",
     "@seine/charts-editor": "next",
     "@seine/content": "next",
@@ -24,7 +24,7 @@
     "@seine/ui": "next"
   },
   "peerDependencies": {
-    "@material-ui/core": "4.5",
+    "@material-ui/core": "4.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

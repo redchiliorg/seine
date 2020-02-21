@@ -180,11 +180,13 @@ export default function Editor({
           <BlockDeleteButton dispatch={dispatch} selection={selection} />
         </BlockToolbar>
         <ClickAwayListener
-          onClickAway={() => {
+          onClickAway={(event) => {
             if (
               !(
-                document.activeElement instanceof HTMLButtonElement ||
-                document.activeElement instanceof HTMLInputElement
+                event.target === document.body ||
+                event.target instanceof HTMLButtonElement ||
+                event.target instanceof HTMLInputElement ||
+                event.target.getAttribute('role') === 'option'
               ) &&
               contentChildren.length > 0
             ) {
