@@ -21,8 +21,8 @@ const StyledTypography = styled(Typography).attrs(({ fill }) => ({
   color: fill,
 }))`
   transform-origin: left top;
+  position: fixed;
   ${({ transform }) => ({ transform })};
-  overflow: visible;
   white-space: pre-wrap;
   text-align: ${({ textAnchor }) =>
     textAnchor === 'end'
@@ -185,19 +185,21 @@ function getForeignObjectTransform(
   methods: SvgTypographyMethods
 ) {
   if (navigator.vendor === 'Apple Computer, Inc.' && foreignObject) {
-    const svg = foreignObject.ownerSVGElement;
+    const svg = foreignObject.viewportElement;
     const x = foreignObject.x.baseVal.value;
     const y = foreignObject.y.baseVal.value;
 
     const width = svg.viewBox.baseVal.width / svg.currentScale;
     const height = svg.viewBox.baseVal.height / svg.currentScale;
-    const scale = Math.min(svg.clientHeight / height, svg.clientWidth / width);
+    const scaleY = svg.clientHeight / height;
+    const scaleX = svg.clientWidth / width;
+    const scale = Math.min(scaleX, scaleY);
 
-    return `translate3d(${(svg.clientWidth - scale * width) / 2 -
-      x}px, ${(svg.clientHeight - scale * height) / 2 -
+    return `translate3d(${(svg.clientWidth - scaleX * width) / 2 -
+      x}px, ${(svg.clientHeight - scaleY * height) / 2 -
       y}px, 0) scale(${methods.getXScale(scale)}, ${methods.getYScale(
       scale
-    )}) translate(${x * scale}px, ${y * scale}px)`;
+    )}) translate(${x}px, ${y}px)`;
   }
 
   return `scale(${methods.getXScale()}, ${methods.getYScale()})`;
