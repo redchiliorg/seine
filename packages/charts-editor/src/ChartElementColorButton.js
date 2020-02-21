@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { SketchPicker } from 'react-color.macro';
-import { Button, ClickAwayListener } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { UPDATE_BLOCK_FORMAT } from '@seine/core';
 import {
   chartPaletteKeyValues,
