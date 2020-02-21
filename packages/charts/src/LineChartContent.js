@@ -49,10 +49,11 @@ export default function LineChartContent({
   dx,
   legend,
   paletteKey,
+  textAlignment,
 
+  elementPathAs: ElementPath = 'path',
   groupTitleAs: GroupTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,
-  elementPathAs: ElementPath = 'path',
 
   ...metaProps
 }: Props) {

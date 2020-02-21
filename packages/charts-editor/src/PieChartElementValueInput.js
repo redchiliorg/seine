@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgInput } from '@seine/styles';
+import { SvgInput } from '@seine/ui';
 import { UPDATE_BLOCK_ELEMENT } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
 
@@ -24,6 +24,7 @@ export default function BarChartElementValueInput({
     <SvgInput
       {...inputProps}
       type={'number'}
+      value={value}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT,
@@ -31,8 +32,6 @@ export default function BarChartElementValueInput({
           body: { value: +currentTarget.value },
         })
       )}
-    >
-      {value}
-    </SvgInput>
+    />
   );
 }

@@ -47,6 +47,7 @@ export default function ColumnChartContent({
   legend,
   xAxis,
   paletteKey,
+  textAlignment,
 
   groupTitleAs: GroupTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,

@@ -1,4 +1,4 @@
-import { initialElementsState } from '@seine/core';
+import { chartTypes, initialElementsState } from '@seine/core';
 
 export const defaultChartDy = 10;
 export const defaultChartDx = 10;
@@ -76,16 +76,30 @@ export const defaultChartBody = {
 };
 export const defaultChartEditor = { selection: initialElementsState.selection };
 export const defaultChartTextAlignment = 'left';
+export const defaultChartLegend = true;
+export const defaultPieChartLegend = false;
+export const defaultBarChartLegend = false;
+
 export const defaultChartFormat = {
   palette: defaultChartPalette,
   paletteKey: defaultChartPaletteKey,
   textAlignment: defaultChartTextAlignment,
   xAxis: defaultChartXAxis,
   yAxis: defaultChartYAxis,
+  legend: defaultChartLegend,
 };
-export const defaultChartLegend = true;
-export const defaultPieChartLegend = false;
-export const defaultBarChartLegend = false;
+
+export const defaultPieChartFormat = {
+  ...defaultChartFormat,
+  kind: chartTypes.PIE,
+  legend: defaultPieChartLegend,
+};
+
+export const defaultBarChartFormat = {
+  ...defaultChartFormat,
+  kind: chartTypes.BAR,
+  legend: defaultBarChartLegend,
+};
 
 export const defaultPieChartUnits = '%';
 

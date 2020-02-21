@@ -47,8 +47,10 @@ export default function BarChartContent({
     (max, { value }) => Math.max(+value, max),
     -Infinity
   ),
+
   paletteKey,
   yAxis,
+  textAlignment,
 
   elementTitleAs: ElementTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,

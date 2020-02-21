@@ -1,17 +1,25 @@
-// @flow
 import styled from 'styled-components/macro';
 
-const ChartInlineInput = styled.input`
+import Input from './Input';
+
+const InlineInput = styled(Input).attrs(() => ({
+  color: 'inherit',
+  fontSize: 'inherit',
+  fontWeight: 'inherit',
+  fontFamily: 'inherit',
+  lineHeight: 'inherit',
+  textAlign: 'inherit',
+  width: '100%',
+}))`
   && {
     background: none;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    line-height: inherit;
+    border: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
-    text-align: ${({ textAlignment = 'inherit' }) => textAlignment};
-    width: 100%;
+    transform-origin: left top;
+    overflow: visible;
+    white-space: pre-wrap;
   }
   ::-webkit-outer-spin-button,
   ::-webkit-inner-spin-button {
@@ -34,4 +42,4 @@ const ChartInlineInput = styled.input`
   }
 `;
 
-export default ChartInlineInput;
+export default InlineInput;

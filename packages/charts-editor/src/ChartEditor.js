@@ -8,13 +8,14 @@ import {
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
 } from '@seine/core';
-import { BlockActions } from '@seine/ui';
+import { BlockActions, InlineInput } from '@seine/ui';
 import {
   BarChartContent,
   Chart,
   ChartLayout,
   ChartSvg,
   ColumnChartContent,
+  defaultChartLegend,
   defaultChartTextAlignment,
   defaultChartTitle,
   LineChartContent,
@@ -25,7 +26,6 @@ import { useAutoCallback } from 'hooks.macro';
 import stringify from 'virtual-dom-stringify';
 
 import type { ChartEditorProps as Props } from './types';
-import ChartInlineInput from './ChartInlineInput';
 import ChartGroupsDescriptionEditor from './ChartGroupsDescriptionEditor';
 import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
@@ -109,7 +109,7 @@ export default function ChartEditor({
     <ChartLayout
       ref={resizeTargetRef}
       title={
-        <ChartInlineInput
+        <InlineInput
           onChange={handleTitleChange}
           textAlignment={textAlignment}
           value={title}
@@ -124,6 +124,7 @@ export default function ChartEditor({
         ) : kind === chartTypes.COLUMN || kind === chartTypes.LINE ? (
           <ChartGroupsDescriptionEditor
             {...chartProps}
+            legend={defaultChartLegend}
             dispatchElements={dispatchElements}
           />
         ) : null

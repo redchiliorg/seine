@@ -6,8 +6,7 @@ import type { ChartLegendProps } from '@seine/charts';
 import { ChartLegend, defaultPieChartLegend } from '@seine/charts';
 import type { ElementsAction } from '@seine/core';
 import { UPDATE_BLOCK_ELEMENT_BY_ID } from '@seine/core';
-
-import ChartInlineInput from './ChartInlineInput';
+import { InlineInput } from '@seine/ui';
 
 type Props = $Rest<ChartLegendProps, {| kind: ChartType |}> & {
   dispatchElements: (ElementsAction) => void,
@@ -32,7 +31,7 @@ export default function PieChartDescriptionEditor({
         legend
           ? elements.map(({ id, title }) => ({
               title: (
-                <ChartInlineInput
+                <InlineInput
                   key={id}
                   value={title}
                   onChange={({ currentTarget }) =>
