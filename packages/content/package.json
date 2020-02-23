@@ -1,6 +1,6 @@
 {
   "name": "@seine/content",
-  "version": "0.3.185",
+  "version": "0.3.186",
   "description": "Seine content renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,11 +11,11 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/charts": "next",
-    "@seine/core": "next",
-    "@seine/draft": "next",
-    "@seine/styles": "next",
-    "@seine/tables": "next"
+    "@seine/charts": "0.3",
+    "@seine/core": "0.3",
+    "@seine/draft": "0.3",
+    "@seine/styles": "0.3",
+    "@seine/tables": "0.3"
   },
   "peerDependencies": {
     "react": "^16.8.6",
