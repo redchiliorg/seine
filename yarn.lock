@@ -1408,25 +1408,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@material-ui/core@4.5":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.5.2.tgz#90a27655db527326876f4390a9d28d69de2ed639"
-  integrity sha512-yARw/hwavOXqljP+biDXHcmfbC63n8EkA8C10/tZt7KkBp7fs+7+z3BNR+ffotd8/uhirIC1jQWWKdLoUc34yA==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    "@material-ui/styles" "^4.5.2"
-    "@material-ui/system" "^4.5.2"
-    "@material-ui/types" "^4.1.1"
-    "@material-ui/utils" "^4.5.2"
-    "@types/react-transition-group" "^4.2.0"
-    clsx "^1.0.2"
-    convert-css-length "^2.0.1"
-    hoist-non-react-statics "^3.2.1"
-    normalize-scroll-left "^0.2.0"
-    popper.js "^1.14.1"
-    prop-types "^15.7.2"
-    react-transition-group "^4.3.0"
-
 "@material-ui/core@4.9":
   version "4.9.3"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.9.3.tgz#29ad51f4d36cbc3af7a9db27d92f93fa4fa42d50"
@@ -1453,7 +1434,7 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/styles@4.9", "@material-ui/styles@^4.5.2", "@material-ui/styles@^4.9.0":
+"@material-ui/styles@4.9", "@material-ui/styles@^4.9.0":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.9.0.tgz#10c31859f6868cfa9d3adf6b6c3e32c9d676bc76"
   integrity sha512-nJHum4RqYBPWsjL/9JET8Z02FZ9gSizlg/7LWVFpIthNzpK6OQ5OSRR4T4x9/p+wK3t1qNn3b1uI4XpnZaPxOA==
@@ -1475,7 +1456,7 @@
     jss-plugin-vendor-prefixer "^10.0.3"
     prop-types "^15.7.2"
 
-"@material-ui/system@^4.5.2", "@material-ui/system@^4.9.3":
+"@material-ui/system@^4.9.3":
   version "4.9.3"
   resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.9.3.tgz#ee48990d7941237fdaf21b7b399981d614bb0875"
   integrity sha512-DBGsTKYrLlFpHG8BUp0X6ZpvaOzef+GhSwn/8DwVTXUdHitphaPQoL9xucrI8X9MTBo//El+7nylko7lo7eJIw==
@@ -1484,19 +1465,12 @@
     "@material-ui/utils" "^4.7.1"
     prop-types "^15.7.2"
 
-"@material-ui/types@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-4.1.1.tgz#b65e002d926089970a3271213a3ad7a21b17f02b"
-  integrity sha512-AN+GZNXytX9yxGi0JOfxHrRTbhFybjUJ05rnsBVjcB+16e466Z0Xe5IxawuOayVZgTBNDxmPKo5j4V6OnMtaSQ==
-  dependencies:
-    "@types/react" "*"
-
 "@material-ui/types@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.0.0.tgz#26d6259dc6b39f4c2e1e9aceff7a11e031941741"
   integrity sha512-UeH2BuKkwDndtMSS0qgx1kCzSMw+ydtj0xx/XbFtxNSTlXydKwzs5gVW5ZKsFlAkwoOOQ9TIsyoCC8hq18tOwg==
 
-"@material-ui/utils@^4.5.2", "@material-ui/utils@^4.7.1":
+"@material-ui/utils@^4.7.1":
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.7.1.tgz#dc16c7f0d2cd02fbcdd5cfe601fd6863ae3cc652"
   integrity sha512-+ux0SlLdlehvzCk2zdQ3KiS3/ylWvuo/JwAGhvb8dFVvwR21K28z0PU9OQW2PGogrMEdvX3miEI5tGxTwwWiwQ==
@@ -1528,99 +1502,6 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
-
-"@seine/charts-editor@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/charts-editor/-/charts-editor-0.3.179.tgz#2b305ccf946d60a299f85c0d7157c09fb70f1de1"
-  integrity sha512-UBqjVelNF0/112ZdsMF4Zkew/I4riKuz2k3R88eXWVVCqnJBiSW5dFlOnrr9GZY7mgZR9E9DpI4EQq4CQ6n7tA==
-  dependencies:
-    "@seine/charts" "^0.3.0"
-    "@seine/core" "^0.3.0"
-    "@seine/styles" "^0.3.0"
-    "@seine/ui" "^0.3.0"
-    react-color "^2.17.3"
-    svg-patterns "^1.0.0"
-    virtual-dom-stringify "^3.0.1"
-
-"@seine/charts@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/charts/-/charts-0.3.179.tgz#ea858abb07bccf0ef6910a44094e08f1dad22869"
-  integrity sha512-7BAM0IPmJWxoyOHdMBnw9HBa/+we6upi2cExD24PBDydm0lp73my6SgM+otNCUPMoV4hSjR+CxhixUir+Vxx6Q==
-  dependencies:
-    "@seine/core" "^0.3.0"
-    "@seine/styles" "^0.3.0"
-    ramda "^0.26.1"
-
-"@seine/content@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/content/-/content-0.3.179.tgz#a49ba2156125485086adc041cb02965c3a03620e"
-  integrity sha512-qRLS2e+MxFhWwpDkYleSN571Vx5jqjKB/PnlCDIjQKNbBCGJuQwlhq4WjSrDnerj7K76lRONjqC3BatsQwTy6Q==
-  dependencies:
-    "@seine/charts" "^0.3.0"
-    "@seine/core" "^0.3.0"
-    "@seine/draft" "^0.3.0"
-    "@seine/styles" "^0.3.0"
-    "@seine/tables" "^0.3.0"
-
-"@seine/core@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/core/-/core-0.3.179.tgz#398165a829431b586c8ce065cd5c3bac8bb88576"
-  integrity sha512-LK6UXTxdLfKcQ/4kKDEPZd64c1q1ZwMGx75m766HS1HS8xMu17zM36eehoI4E0j7/vVl+vYAvCP72JF2sX4E9A==
-  dependencies:
-    uuid "^3.3.2"
-
-"@seine/draft-editor@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/draft-editor/-/draft-editor-0.3.179.tgz#4e62ed8d5895b9a4085ba8d27531574a1a1d0c3e"
-  integrity sha512-HSauLxPORqOaxuoPbW/IiVqXRQ8v/RgrdAK/HUzZytDtYF+ftOqTgAM95PxIcySTZ4ZXlAi+HUlwhKs9jTjX4Q==
-  dependencies:
-    "@seine/core" "^0.3.0"
-    "@seine/draft" "^0.3.0"
-    "@seine/ui" "^0.3.0"
-    clsx "^1.0.4"
-    draft-js-buttons "^2.0.2"
-
-"@seine/draft@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/draft/-/draft-0.3.179.tgz#8b4deee7068b33303e765485aae641787ccac800"
-  integrity sha512-0Lz62vsnAfYL1mOD4fSfgCUZC4eU9vLiNSqep8c4/EoByWBYPnMpjN4r5o18nwzbQNMye94mfIYju+TO3kztyg==
-  dependencies:
-    "@seine/core" "^0.3.0"
-    clsx "^1.0.4"
-    draft-js "^0.11.0"
-
-"@seine/styles@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/styles/-/styles-0.3.179.tgz#8b1e20a3658e34ee85700d483e82780b5d49cd39"
-  integrity sha512-sMXy7bQrPtI9oGNJ7TPnbvT37l2Ls789WUr//vipotIi43y55AMBgBDNgm8adJbzPK85GQV2wUEWrpTF5TKl4w==
-  dependencies:
-    "@material-ui/core" "4.5"
-    resize-observer-polyfill "^1.5.1"
-
-"@seine/tables-editor@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/tables-editor/-/tables-editor-0.3.179.tgz#c20cc9ded81806a1e6917767b0556c85133ca71e"
-  integrity sha512-eGogLyKZXeFeSPMIedlxTjK01/sphybYPnOQfDpcPxk5nne75tKY0qLno4ZLdGPNSF5QMpSbZ0cuPkbmKHUABA==
-  dependencies:
-    "@seine/core" "^0.3.0"
-    "@seine/styles" "^0.3.0"
-    "@seine/tables" "^0.3.0"
-    "@seine/ui" "^0.3.0"
-    react-color "^2.17.3"
-
-"@seine/tables@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/tables/-/tables-0.3.179.tgz#bacd9026917cebbbc94d8af2b4bcb3d1ec5b195c"
-  integrity sha512-33P8YHjAfgHyofmLcxGCnS0ayKfSXsfX34TqWUa5DE476riTqn9uRFUjfXx5mx3OAYZUp33odNFWQZtxIXBNtA==
-  dependencies:
-    "@seine/core" "^0.3.0"
-
-"@seine/ui@next":
-  version "0.3.179"
-  resolved "https://registry.yarnpkg.com/@seine/ui/-/ui-0.3.179.tgz#0f6f37349a14fcf4f5b3d3f37f5fdc8b7afa89cc"
-  integrity sha512-Ox83TfRxZHFYS+q1MI0pXC3E1+631vR4OSp6gT/z6oM3IljHP43DUCfSqvIWqDR0S9q4+acCshwCYODNI2V20w==
-  dependencies:
-    "@seine/core" "^0.3.0"
 
 "@storybook/addon-actions@^5.3.0":
   version "5.3.13"
@@ -8843,11 +8724,6 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
-
-normalize-scroll-left@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.2.0.tgz#9445d74275f303cc661e113329aefa492f58114c"
-  integrity sha512-t5oCENZJl8TGusJKoCJm7+asaSsPuNmK6+iEjrZ5TyBj2f02brCRsd4c83hwtu+e5d4LCSBZ0uoDlMjBo+A8yA==
 
 normalize-url@1.9.1:
   version "1.9.1"
