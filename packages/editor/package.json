@@ -12,16 +12,16 @@
   "license": "MIT",
   "dependencies": {
     "@material-ui/styles": "4.9",
-    "@seine/charts": "next",
-    "@seine/charts-editor": "next",
-    "@seine/content": "next",
-    "@seine/core": "next",
-    "@seine/draft": "next",
-    "@seine/draft-editor": "next",
-    "@seine/styles": "next",
-    "@seine/tables": "next",
-    "@seine/tables-editor": "next",
-    "@seine/ui": "next"
+    "@seine/charts": "0.3",
+    "@seine/charts-editor": "0.3",
+    "@seine/content": "0.3",
+    "@seine/core": "0.3",
+    "@seine/draft": "0.3",
+    "@seine/draft-editor": "0.3",
+    "@seine/styles": "0.3",
+    "@seine/tables": "0.3",
+    "@seine/tables-editor": "0.3",
+    "@seine/ui": "0.3"
   },
   "peerDependencies": {
     "@material-ui/core": "4.9",

@@ -11,7 +11,7 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "next"
+    "@seine/core": "0.3"
   },
   "peerDependencies": {
     "react": "^16.8.6",
