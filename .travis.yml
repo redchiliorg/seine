@@ -1,5 +1,6 @@
 language: node_js
 node_js: '12'
+cache: yarn
 before_deploy:
 - yarn config set version-commit-hooks false
 - yarn config set version-git-tag false
