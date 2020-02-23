@@ -162,7 +162,9 @@ export default React.forwardRef(function SvgTypography(
         {...typography}
         textAnchor={textAnchor}
         width={methods.getWidth()}
-        transform={getForeignObjectTransform(foreignElement, methods)}
+        {...(navigator.vendor !== 'Apple Computer, Inc.' && {
+          transform: `scale(${methods.getXScale()}, ${methods.getYScale()})`,
+        })}
       >
         {condensedFactor !== Infinity ? (
           <CondensedText factor={condensedFactor}>{children}</CondensedText>
@@ -173,34 +175,3 @@ export default React.forwardRef(function SvgTypography(
     </SvgTypographyForeign>
   );
 });
-
-/**
- * @description Based on https://github.com/marp-team/marpit-svg-polyfill
- * @param {HTMLElement} foreignObject
- * @param {SvgTypographyMethods} methods
- * @returns {number}
- */
-function getForeignObjectTransform(
-  foreignObject: HTMLElement,
-  methods: SvgTypographyMethods
-) {
-  if (navigator.vendor === 'Apple Computer, Inc.' && foreignObject) {
-    const svg = foreignObject.viewportElement;
-    const x = foreignObject.x.baseVal.value;
-    const y = foreignObject.y.baseVal.value;
-
-    const width = svg.viewBox.baseVal.width / svg.currentScale;
-    const height = svg.viewBox.baseVal.height / svg.currentScale;
-    const scaleY = svg.clientHeight / height;
-    const scaleX = svg.clientWidth / width;
-    const scale = Math.min(scaleX, scaleY);
-
-    return `translate3d(${(svg.clientWidth - scaleX * width) / 2 -
-      x}px, ${(svg.clientHeight - scaleY * height) / 2 -
-      y}px, 0) scale(${methods.getXScale(scale)}, ${methods.getYScale(
-      scale
-    )}) translate(${x}px, ${y}px)`;
-  }
-
-  return `scale(${methods.getXScale()}, ${methods.getYScale()})`;
-}
