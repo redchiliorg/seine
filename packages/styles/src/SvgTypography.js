@@ -22,7 +22,7 @@ const StyledTypography = styled(Typography).attrs(({ fill }) => ({
 }))`
   transform-origin: left top;
   position: fixed;
-  ${({ transform }) => ({ transform })};
+  ${({ transform }) => transform && { transform }};
   white-space: pre-wrap;
   text-align: ${({ textAnchor }) =>
     textAnchor === 'end'
