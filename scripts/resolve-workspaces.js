@@ -22,6 +22,8 @@ function resolveWorkspaces(workspaces) {
       return {
         context,
         entry: require.resolve(join(context, 'src', 'index.js')),
+        main: require.resolve(join(context, packageJson.main)),
+        module: require.resolve(join(context, packageJson.module)),
         packageJson,
       };
     } catch (err) {

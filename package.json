@@ -23,6 +23,7 @@
     "build": "run-s build:*",
     "build:cjs": "node scripts/build.js --format=cjs",
     "build:esm": "node scripts/build.js -format=esm",
+    "build:storybook": "yarn build-storybook --loglevel silent -o dist",
     "dev": "run-s dev:*",
     "dev:start": "start-storybook -p 3000 -s public",
     "postinstall": "yarn workspaces run"
