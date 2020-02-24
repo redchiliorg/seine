@@ -1,6 +1,6 @@
 {
   "name": "@seine/tables-editor",
-  "version": "0.3.187",
+  "version": "0.3.188",
   "description": "Seine tables editor.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
