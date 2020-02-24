@@ -2,7 +2,7 @@
   "name": "seine",
   "description": "Seine is a Javascript library of React components and utilities to view and edit structured content.",
   "homepage": "https://redchiliorg.github.io/seine",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "keywords": [
     "react",
     "richtext"
@@ -25,7 +25,7 @@
     "build:esm": "node scripts/build.js -format=esm",
     "build:storybook": "yarn build-storybook --quiet --loglevel silent -o dist",
     "dev": "run-s dev:*",
-    "dev:start": "start-storybook -p 3000 -s public",
+    "dev:start": "start-storybook -p 3000",
     "postinstall": "yarn workspaces run"
   },
   "dependencies": {
