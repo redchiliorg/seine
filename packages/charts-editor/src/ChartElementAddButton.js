@@ -12,6 +12,7 @@ import type {
   ChartFormat,
   BlocksAction,
 } from '@seine/core';
+import { useAutoMemo } from 'hooks.macro';
 
 type Props = {
   body: ChartBody,
@@ -34,27 +35,27 @@ export default function ChartElementAddButton({
   id,
   ...buttonProps
 }: Props) {
+  const values = useAutoMemo(body.elements.map(({ value }) => value));
+  const minValue = useAutoMemo(format.minValue || Math.min(...values));
+  const maxValue = useAutoMemo(format.maxValue || Math.max(...values));
   return (
     <ActionButton
       {...buttonProps}
       id={id}
       dispatch={dispatch}
       type={UPDATE_BLOCK_BODY}
-      body={React.useMemo(
-        () => ({
-          elements: [
-            ...body.elements,
-            ...createTitleIdentityBlockElements(
-              groupElements(body.elements).map(([group, { length }]) => ({
-                ...(group ? { group } : {}),
-                title: `Item #${length}`,
-                value: format.minValue || 0,
-              }))
-            ),
-          ],
-        }),
-        [body.elements, format.minValue]
-      )}
+      body={useAutoMemo({
+        elements: [
+          ...body.elements,
+          ...createTitleIdentityBlockElements(
+            groupElements(body.elements).map(([group, { length }]) => ({
+              ...(group ? { group } : {}),
+              title: `Item #${length}`,
+              value: minValue + Math.floor((maxValue - minValue) / 2),
+            }))
+          ),
+        ],
+      })}
       variant={'text'}
     >
       {children}

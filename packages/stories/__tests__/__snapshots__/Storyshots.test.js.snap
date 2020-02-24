@@ -2758,6 +2758,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 WFLA
+                  
               </p>
             </foreignObject>
             <rect
@@ -2830,6 +2831,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 Region A
+                  
               </p>
             </foreignObject>
             <rect
@@ -2902,6 +2904,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 Region B
+                  
               </p>
             </foreignObject>
             <rect
@@ -2974,6 +2977,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 Region C
+                  
               </p>
             </foreignObject>
             <rect
@@ -3046,6 +3050,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 Region D
+                  
               </p>
             </foreignObject>
             <rect
@@ -3118,6 +3123,7 @@ exports[`Storyshots Multiple.Content Content Of All Charts 1`] = `
                 width={1}
               >
                 Region E
+                  
               </p>
             </foreignObject>
             <rect
@@ -4618,6 +4624,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 WFLA
+                  
               </p>
             </foreignObject>
             <rect
@@ -4690,6 +4697,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region A
+                  
               </p>
             </foreignObject>
             <rect
@@ -4762,6 +4770,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region B
+                  
               </p>
             </foreignObject>
             <rect
@@ -4834,6 +4843,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region C
+                  
               </p>
             </foreignObject>
             <rect
@@ -4906,6 +4916,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region D
+                  
               </p>
             </foreignObject>
             <rect
@@ -4978,6 +4989,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region E
+                  
               </p>
             </foreignObject>
             <rect
@@ -5050,6 +5062,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region F
+                  
               </p>
             </foreignObject>
             <rect
@@ -5122,6 +5135,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region G
+                  
               </p>
             </foreignObject>
             <rect
@@ -5194,6 +5208,7 @@ exports[`Storyshots Multiple.Content Content Of Column And Bar Sibling Charts 1`
                 width={1}
               >
                 Region H
+                  
               </p>
             </foreignObject>
             <rect
@@ -7642,6 +7657,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 WFLA
+                  
               </p>
             </foreignObject>
             <rect
@@ -7714,6 +7730,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 Region A
+                  
               </p>
             </foreignObject>
             <rect
@@ -7786,6 +7803,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 Region B
+                  
               </p>
             </foreignObject>
             <rect
@@ -7858,6 +7876,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 Region C
+                  
               </p>
             </foreignObject>
             <rect
@@ -7930,6 +7949,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 Region D
+                  
               </p>
             </foreignObject>
             <rect
@@ -8002,6 +8022,7 @@ exports[`Storyshots Multiple.Content Content Of Line And Bar Sibling Charts 1`] 
                 width={1}
               >
                 Region E
+                  
               </p>
             </foreignObject>
             <rect
@@ -8588,6 +8609,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 width={1}
               >
                 WFLA
+                  
               </p>
             </foreignObject>
             <rect
@@ -8660,6 +8682,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 width={1}
               >
                 Region A
+                  
               </p>
             </foreignObject>
             <rect
@@ -8732,6 +8755,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 width={1}
               >
                 Region B
+                  
               </p>
             </foreignObject>
             <rect
@@ -8804,6 +8828,7 @@ exports[`Storyshots Multiple.Content Content Of Pie And Bar Sibling Charts 1`] =
                 width={1}
               >
                 Region C
+                  
               </p>
             </foreignObject>
             <rect
@@ -10420,6 +10445,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 WFLA
+                  
               </p>
             </foreignObject>
             <rect
@@ -10492,6 +10518,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region A
+                  
               </p>
             </foreignObject>
             <rect
@@ -10564,6 +10591,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region B
+                  
               </p>
             </foreignObject>
             <rect
@@ -10636,6 +10664,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region C
+                  
               </p>
             </foreignObject>
             <rect
@@ -10708,6 +10737,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region D
+                  
               </p>
             </foreignObject>
             <rect
@@ -10780,6 +10810,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region E
+                  
               </p>
             </foreignObject>
             <rect
@@ -10852,6 +10883,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region F
+                  
               </p>
             </foreignObject>
             <rect
@@ -10924,6 +10956,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region G
+                  
               </p>
             </foreignObject>
             <rect
@@ -10996,6 +11029,7 @@ exports[`Storyshots Multiple.Content Content Of Six Groups Of Two Columns And Ba
                 width={1}
               >
                 Region H
+                  
               </p>
             </foreignObject>
             <rect
@@ -11242,6 +11276,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             WFLA
+              
           </p>
         </foreignObject>
         <rect
@@ -11314,6 +11349,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region A
+              
           </p>
         </foreignObject>
         <rect
@@ -11386,6 +11422,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region B
+              
           </p>
         </foreignObject>
         <rect
@@ -11458,6 +11495,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region C
+              
           </p>
         </foreignObject>
         <rect
@@ -11530,6 +11568,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region D
+              
           </p>
         </foreignObject>
         <rect
@@ -11602,6 +11641,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region E
+              
           </p>
         </foreignObject>
         <rect
@@ -11674,6 +11714,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region F
+              
           </p>
         </foreignObject>
         <rect
@@ -11746,6 +11787,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region G
+              
           </p>
         </foreignObject>
         <rect
@@ -11818,6 +11860,7 @@ exports[`Storyshots Single.Chart Bar Chart 1`] = `
             width={1}
           >
             Region H
+              
           </p>
         </foreignObject>
         <rect
