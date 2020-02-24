@@ -58,10 +58,6 @@ export type Props = {
   y?: number,
 } & SvgTypographyProps;
 
-const isWebkit =
-  navigator.vendor === 'Apple Computer, Inc.' ||
-  /devtoolswebkit/i.test(navigator.userAgent);
-
 /**
  * @description Svg foreign text styled according to root html document.
  * @param {Props} props
@@ -83,6 +79,11 @@ export default React.forwardRef(function SvgTypography(
   }: Props,
   ref
 ) {
+  const isWebkit = useAutoMemo(
+    navigator.vendor === 'Apple Computer, Inc.' ||
+      /devtoolswebkit/i.test(navigator.userAgent)
+  );
+
   const foreignObjectRef = React.useRef(null);
   const { current: foreignElement } = foreignObjectRef;
 
