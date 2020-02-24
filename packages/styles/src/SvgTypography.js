@@ -59,7 +59,7 @@ export type Props = {
 } & SvgTypographyProps;
 
 const isWebkit =
-  navigator.vendor !== 'Apple Computer, Inc.' ||
+  navigator.vendor === 'Apple Computer, Inc.' ||
   /devtoolswebkit/i.test(navigator.userAgent);
 
 /**
@@ -101,22 +101,18 @@ export default React.forwardRef(function SvgTypography(
       const getWidth = () => {
         const context = canvasElement.getContext('2d');
         context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width + parseInt(fontSize);
+        return context.measureText(text).width;
       };
       const getXScale = (value = 1) =>
-        value *
-        (isWebkit
-          ? 1
-          : (window.devicePixelRatio * value * foreignElement.getBBox().width) /
-            foreignElement.getBoundingClientRect().width);
+        ((isWebkit || window.devicePixelRatio) *
+          value *
+          foreignElement.getBBox().width) /
+        foreignElement.getBoundingClientRect().width;
       const getYScale = (value = 1) =>
-        value *
-        (isWebkit
-          ? 1
-          : (window.devicePixelRatio *
-              value *
-              foreignElement.getBBox().height) /
-            foreignElement.getBoundingClientRect().height);
+        ((isWebkit || window.devicePixelRatio) *
+          value *
+          foreignElement.getBBox().height) /
+        foreignElement.getBoundingClientRect().height;
       const getScaledWidth = () => getXScale(getWidth());
       const getScaledHeight = () => getYScale(getHeight());
       return {
@@ -174,7 +170,9 @@ export default React.forwardRef(function SvgTypography(
         {...typography}
         textAnchor={textAnchor}
         width={methods.getWidth()}
-        transform={`scale(${methods.getXScale()}, ${methods.getYScale()})`}
+        transform={`scale(${isWebkit ? 1 : methods.getXScale()}, ${
+          isWebkit ? 1 : methods.getYScale()
+        })`}
       >
         {condensedFactor !== Infinity ? (
           <CondensedText factor={condensedFactor}>{children}</CondensedText>
