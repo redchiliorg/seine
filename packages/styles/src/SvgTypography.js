@@ -79,9 +79,9 @@ export default React.forwardRef(function SvgTypography(
   }: Props,
   ref
 ) {
-  const isWebkit = useAutoMemo(
-    navigator.vendor === 'Apple Computer, Inc.' ||
-      /devtoolswebkit/i.test(navigator.userAgent)
+  const isWebkit = useAutoMemo(navigator.vendor === 'Apple Computer, Inc.');
+  const isBlink = useAutoMemo(
+    !isWebkit && /applewebkit/i.test(navigator.userAgent)
   );
 
   const foreignObjectRef = React.useRef(null);
@@ -99,11 +99,6 @@ export default React.forwardRef(function SvgTypography(
   const methods: SvgTypographyMethods = useAutoMemo(() => {
     if (foreignElement && canvasElement) {
       const getHeight = () => parseFloat(lineHeight);
-      const getWidth = () => {
-        const context = canvasElement.getContext('2d');
-        context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
-        return context.measureText(text).width;
-      };
       const getXScale = (value = 1) =>
         ((isWebkit || window.devicePixelRatio) *
           value *
@@ -114,6 +109,13 @@ export default React.forwardRef(function SvgTypography(
           value *
           foreignElement.getBBox().height) /
         foreignElement.getBoundingClientRect().height;
+      const getWidth = () => {
+        const context = canvasElement.getContext('2d');
+        context.font = `${fontWeight} ${fontSize} '${fontFamily}'`;
+        return (
+          context.measureText(text).width * (isWebkit || isBlink ? 1.25 : 1)
+        );
+      };
       const getScaledWidth = () => getXScale(getWidth());
       const getScaledHeight = () => getYScale(getHeight());
       return {

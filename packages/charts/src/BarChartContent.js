@@ -96,6 +96,7 @@ export default function BarChartContent({
             height={barHeight}
           >
             {legend ? '' : title}
+            {'  '}
           </ElementTitle>,
 
           <ElementRect
