@@ -17,5 +17,6 @@ export { default as ResizeObserverContext } from './ResizeObserverContext';
 export { default as ResizeObserverProvider } from './ResizeObserverProvider';
 export { default as useResizeTargetRef } from './useResizeTargetRef';
 export * from './utils';
+export * from './bream';
 
 export * from './constants';
