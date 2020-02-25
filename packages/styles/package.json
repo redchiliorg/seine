@@ -1,6 +1,6 @@
 {
   "name": "@seine/styles",
-  "version": "0.3.190",
+  "version": "0.3.191",
   "description": "Seine styles library.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -13,6 +13,9 @@
   "dependencies": {
     "@material-ui/core": "4.9",
     "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-import-data-uri": "^1.0.1"
   },
   "peerDependencies": {
     "react": "^16.8.6",
