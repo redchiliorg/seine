@@ -1,12 +1,12 @@
 // @flow
-import * as React from 'react';
+import React from 'react';
 import { breamTheme, ThemeProvider } from '@seine/styles';
-import { useAutoLayoutEffect } from 'hooks.macro';
 
 import {
   ContentOfPieAndBarSiblingCharts,
   InitialContent,
 } from './Content.stories';
+import useBreamStoryEffect from './useBreamStoryEffect';
 
 import './bream.css';
 
@@ -19,13 +19,7 @@ export default {
 };
 
 export const ThemedInitialContent = ({ children, ...contentProps }: Props) => {
-  const [html] = document.children;
-  useAutoLayoutEffect(() => {
-    html.classList.add('bream');
-    return () => {
-      html.classList.remove('bream');
-    };
-  });
+  useBreamStoryEffect(...document.children);
 
   return (
     <ThemeProvider theme={breamTheme}>
