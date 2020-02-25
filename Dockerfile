@@ -7,7 +7,7 @@ WORKDIR /app
 # Build app for production
 RUN yarn config set cache-folder /app/.yarn
 RUN yarn install
-RUN yarn build
+RUN yarn build:storybook
 
 # Clean packages cache dirs
 RUN rm -rf /app/.yarn
