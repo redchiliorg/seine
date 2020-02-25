@@ -1,0 +1,10 @@
+**
+!scripts
+!serve.json
+!yarn.lock
+!babel.config.js
+!.storybook/*.js
+!.storybook/*.css
+!packages/stories/*.js
+!packages/stories/*.css
+!packages/styles/src/bream/**
