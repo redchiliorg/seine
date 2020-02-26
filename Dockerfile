@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 # Add sources to container path and set as working directory
 ADD . /app
