@@ -8,7 +8,7 @@ WORKDIR /app
 RUN yarn config set cache-folder /app/.yarn
 
 # Build app for production
-RUN yarn --prod
+RUN yarn --prod --frozen-lockfile
 
 # Clean packages cache dirs
 RUN rm -rf /app/.yarn
