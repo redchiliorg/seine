@@ -4,10 +4,11 @@ FROM node:12-alpine
 ADD . /app
 WORKDIR /app
 
-# Build app for production
+# Set packages cache dirs
 RUN yarn config set cache-folder /app/.yarn
-RUN yarn install
-RUN yarn build:storybook
+
+# Build app for production
+RUN yarn --prod
 
 # Clean packages cache dirs
 RUN rm -rf /app/.yarn
