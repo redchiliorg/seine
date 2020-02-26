@@ -32,7 +32,33 @@ const filterSpacerProperties: (Props) => SpacerProps = o(
   mapObjIndexed((value, name) => (isSpacerPropertyName(name) ? value : null))
 );
 
-const BootstrapBox = styled.div`
+const BootstrapBox = styled.div.attrs(
+  ({
+    marginX = null,
+    marginY = null,
+    marginTop = marginY,
+    marginBottom = marginY,
+    marginRight = marginX,
+    marginLeft = marginX,
+
+    paddingX = null,
+    paddingY = null,
+    paddingTop = paddingY,
+    paddingBottom = paddingY,
+    paddingRight = paddingX,
+    paddingLeft = paddingX,
+  }) => ({
+    marginTop,
+    marginBottom,
+    marginRight,
+    marginLeft,
+
+    paddingTop,
+    paddingBottom,
+    paddingRight,
+    paddingLeft,
+  })
+)`
   ${({ position }: Props) => position && { position }};
 
   ${({ width }: Props) => width && { width }};

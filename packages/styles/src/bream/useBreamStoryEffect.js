@@ -1,4 +1,7 @@
+// @flow
 import { useAutoLayoutEffect } from 'hooks.macro';
+
+import './styles/css/stories.css';
 
 /**
  * @description Set class attribute of document html element.
