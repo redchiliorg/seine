@@ -16,7 +16,7 @@
     "deploy": "run-s deploy:*",
     "deploy:build": "docker build -t mi6gan/seine:${npm_package_version} .",
     "deploy:version": "docker push mi6gan/seine:${npm_package_version}",
-    "deploy:latest": "docker tag mi6gan/seine:${npm_package_version} mi6gan:seine:latest",
+    "deploy:latest": "docker tag mi6gan/seine:${npm_package_version} mi6gan/seine:latest",
     "deploy:push": "docker push mi6gan/seine:latest",
     "release": "run-s release:*",
     "release:publish": "node scripts/publish.js",
