@@ -6,6 +6,7 @@ before_deploy:
 - yarn config set version-commit-hooks false
 - yarn config set version-git-tag false
 - yarn config set version-sign-git-tag false
+- yarn global add npm-run-all
 - echo -e "machine github.com\n  login $CI_USER_LOGIN\n  password $CI_USER_PASSWORD" > ~/.netrc
 - echo -e "//registry.npmjs.org/:_authToken=$NPM_TOKEN\n @$NPM_LOGIN:registry=https://registry.npmjs.org/" > ~/.npmrc
 - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
