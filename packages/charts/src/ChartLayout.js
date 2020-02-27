@@ -17,18 +17,18 @@ const ChartLayoutDescription = styled.div`
   justify-content: ${({ textAlignment }) => textAlignment};
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   min-height: 12.5%;
   height: auto;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
 `;
 
 const ChartLayoutContainer = styled.div`
   width: 100%;
-  height: 100%;
   box-sizing: content-box;
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   ${ChartLayoutTitle},
   ${ChartLayoutContent},
   ${ChartLayoutDescription} {

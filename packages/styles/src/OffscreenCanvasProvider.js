@@ -7,10 +7,14 @@ import OffscreenCanvasContext, {
   defaultOffscreenCanvas,
 } from './OffscreenCanvasContext';
 
-const StyledCanvas = styled(({ width = '100%', height = '100%', ...props }) => (
-  <Typography {...props} as={'canvas'} width={width} height={height} />
-))`
-  position: fixed;
+const StyledCanvas = styled(Typography).attrs(
+  ({ as = 'canvas', width = '100%', height = '100%' }) => ({
+    as,
+    width,
+    height,
+  })
+)`
+  position: absolute;
   z-index: -1;
   left: 0;
   top: 0;
