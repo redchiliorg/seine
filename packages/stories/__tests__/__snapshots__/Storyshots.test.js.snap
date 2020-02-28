@@ -4874,7 +4874,7 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     </marker>
                   </defs>
                   <path
-                    d="M 43.85698616188182 96.34900844553596 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.85698616188182 96.34900844553596"
+                    d="M 1.3552862277776256 96.39020364341435 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.3552862277776256 96.39020364341435"
                     fill="rgba(97,139,219,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -4891,7 +4891,7 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 229.74679209511572 38.48715331416764 A 105 105 0 0 0 43.85698616188182 96.34900844553596 L 148.5 105 L 229.74679209511572 38.48715331416764"
+                    d="M 186.35990260894852 38.80388115552876 A 104.5 104.5 0 0 0 1.3552862277776256 96.39020364341435 L 105.5 105 L 186.35990260894852 38.80388115552876"
                     fill="rgba(172,190,203,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -4908,7 +4908,7 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 229.74679209511572 38.48715331416764 L 148.5 105 L 74.25378797541246 179.24621202458746"
+                    d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 186.35990260894852 38.80388115552876 L 105.5 105 L 31.60734136600574 178.8926586339942"
                     fill="rgba(138,219,150,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -4929,8 +4929,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={147.63575}
+                    x={6.57491}
+                    y={140.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -4952,8 +4952,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={148.63575}
+                    x={6.57491}
+                    y={141.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -4974,8 +4974,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={53.87227}
+                    x={89.47106}
+                    y={54.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -4997,8 +4997,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={54.87227}
+                    x={89.47106}
+                    y={55.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -5019,8 +5019,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={142.9213}
+                    x={140.06548}
+                    y={142.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -5042,8 +5042,8 @@ exports[`Storyshots Bream Column Pie And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={143.9213}
+                    x={140.06548}
+                    y={143.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -9441,7 +9441,7 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     </marker>
                   </defs>
                   <path
-                    d="M 43.85698616188182 96.34900844553596 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.85698616188182 96.34900844553596"
+                    d="M 1.3552862277776256 96.39020364341435 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.3552862277776256 96.39020364341435"
                     fill="rgba(97,139,219,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -9458,7 +9458,7 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 229.74679209511572 38.48715331416764 A 105 105 0 0 0 43.85698616188182 96.34900844553596 L 148.5 105 L 229.74679209511572 38.48715331416764"
+                    d="M 186.35990260894852 38.80388115552876 A 104.5 104.5 0 0 0 1.3552862277776256 96.39020364341435 L 105.5 105 L 186.35990260894852 38.80388115552876"
                     fill="rgba(172,190,203,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -9475,7 +9475,7 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 229.74679209511572 38.48715331416764 L 148.5 105 L 74.25378797541246 179.24621202458746"
+                    d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 186.35990260894852 38.80388115552876 L 105.5 105 L 31.60734136600574 178.8926586339942"
                     fill="rgba(138,219,150,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -9496,8 +9496,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={147.63575}
+                    x={6.57491}
+                    y={140.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -9519,8 +9519,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={148.63575}
+                    x={6.57491}
+                    y={141.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -9541,8 +9541,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={53.87227}
+                    x={89.47106}
+                    y={54.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -9564,8 +9564,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={54.87227}
+                    x={89.47106}
+                    y={55.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -9586,8 +9586,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={142.9213}
+                    x={140.06548}
+                    y={142.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -9609,8 +9609,8 @@ exports[`Storyshots Bream Column Pie Bar And Line Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={143.9213}
+                    x={140.06548}
+                    y={143.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -10904,7 +10904,7 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     </marker>
                   </defs>
                   <path
-                    d="M 43.85698616188182 96.34900844553596 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.85698616188182 96.34900844553596"
+                    d="M 1.3552862277776256 96.39020364341435 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.3552862277776256 96.39020364341435"
                     fill="rgba(97,139,219,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -10921,7 +10921,7 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 229.74679209511572 38.48715331416764 A 105 105 0 0 0 43.85698616188182 96.34900844553596 L 148.5 105 L 229.74679209511572 38.48715331416764"
+                    d="M 186.35990260894852 38.80388115552876 A 104.5 104.5 0 0 0 1.3552862277776256 96.39020364341435 L 105.5 105 L 186.35990260894852 38.80388115552876"
                     fill="rgba(172,190,203,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -10938,7 +10938,7 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 229.74679209511572 38.48715331416764 L 148.5 105 L 74.25378797541246 179.24621202458746"
+                    d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 186.35990260894852 38.80388115552876 L 105.5 105 L 31.60734136600574 178.8926586339942"
                     fill="rgba(138,219,150,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -10959,8 +10959,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={147.63575}
+                    x={6.57491}
+                    y={140.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -10982,8 +10982,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={28.99797}
-                    y={148.63575}
+                    x={6.57491}
+                    y={141.09058}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11004,8 +11004,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={53.87227}
+                    x={89.47106}
+                    y={54.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -11027,8 +11027,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={132.39676}
-                    y={54.87227}
+                    x={89.47106}
+                    y={55.11098}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -11049,8 +11049,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={142.9213}
+                    x={140.06548}
+                    y={142.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -11072,8 +11072,8 @@ exports[`Storyshots Bream Pie Chart In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.23326}
-                    y={143.9213}
+                    x={140.06548}
+                    y={143.73596}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -11245,7 +11245,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     </marker>
                   </defs>
                   <path
-                    d="M 57.64388970174943 52.3676219283973 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 57.64388970174943 52.3676219283973"
+                    d="M 15.07653784602681 52.61825230016684 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 15.07653784602681 52.61825230016684"
                     fill="rgba(97,139,219,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -11262,7 +11262,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 178.22401637871897 4.29507037727673 A 105 105 0 0 0 57.64388970174943 52.3676219283973 L 148.5 105 L 178.22401637871897 4.29507037727673"
+                    d="M 135.08247344358222 4.774617661194469 A 104.5 104.5 0 0 0 15.07653784602681 52.61825230016684 L 105.5 105 L 135.08247344358222 4.774617661194469"
                     fill="rgba(172,190,203,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -11279,7 +11279,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 250.1742684175553 78.7827701357502 A 105 105 0 0 0 178.22401637871897 4.29507037727673 L 148.5 105 L 250.1742684175553 78.7827701357502"
+                    d="M 206.69010523461458 78.90761408748472 A 104.5 104.5 0 0 0 135.08247344358222 4.774617661194469 L 105.5 105 L 206.69010523461458 78.90761408748472"
                     fill="rgba(138,219,150,1)"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -11296,7 +11296,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 197.95305340814332 197.6250263622706 A 105 105 0 0 0 250.1742684175553 78.7827701357502 L 148.5 105 L 197.95305340814332 197.6250263622706"
+                    d="M 154.71756267762834 197.18395480816457 A 104.5 104.5 0 0 0 206.69010523461458 78.90761408748472 L 105.5 105 L 154.71756267762834 197.18395480816457"
                     fill="#e57878"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -11313,7 +11313,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 74.25378797541259 179.24621202458758 A 105 105 0 0 0 197.95305340814332 197.6250263622706 L 148.5 105 L 74.25378797541259 179.24621202458758"
+                    d="M 31.60734136600587 178.8926586339943 A 104.5 104.5 0 0 0 154.71756267762834 197.18395480816457 L 105.5 105 L 31.60734136600587 178.8926586339943"
                     fill="#8adb96"
                     id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
                     kind="pie"
@@ -11334,8 +11334,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={22.32235}
-                    y={120.45268}
+                    x={1.05359}
+                    y={117.60781}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11357,8 +11357,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={22.32235}
-                    y={121.45268}
+                    x={1.05359}
+                    y={118.60781}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11379,8 +11379,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={101.06052}
-                    y={-13.73805}
+                    x={66.17695}
+                    y={6.62034}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11402,8 +11402,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={101.06052}
-                    y={-12.73805}
+                    x={66.17695}
+                    y={7.62034}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11424,8 +11424,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={239.16512}
-                    y={15.94045}
+                    x={180.40152}
+                    y={31.16705}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11447,8 +11447,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={239.16512}
-                    y={16.94045}
+                    x={180.40152}
+                    y={32.16705}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11469,8 +11469,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={264.04114}
-                    y={154.99036}
+                    x={200.97617}
+                    y={146.17349}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11492,8 +11492,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={264.04114}
-                    y={155.99036}
+                    x={200.97617}
+                    y={147.17349}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11514,8 +11514,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={129.3724}
-                    y={229.37374}
+                    x={89.59334}
+                    y={207.69505}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11537,8 +11537,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={129.3724}
-                    y={230.37374}
+                    x={89.59334}
+                    y={208.69505}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11638,7 +11638,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     </marker>
                   </defs>
                   <path
-                    d="M 43.794831114486826 97.1369466073184 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.794831114486826 97.1369466073184"
+                    d="M 1.293427156798785 97.1743897187121 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.293427156798785 97.1743897187121"
                     fill="rgba(97,139,219,1)"
                     id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                     kind="pie"
@@ -11655,7 +11655,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 227.83210811429893 36.214706352729834 A 105 105 0 0 0 43.794831114486826 97.1369466073184 L 148.5 105 L 227.83210811429893 36.214706352729834"
+                    d="M 184.4543361708975 36.54225537009779 A 104.5 104.5 0 0 0 1.293427156798785 97.1743897187121 L 105.5 105 L 184.4543361708975 36.54225537009779"
                     fill="rgba(172,190,203,1)"
                     id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                     kind="pie"
@@ -11672,7 +11672,7 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     type="chart"
                   />
                   <path
-                    d="M 74.25378797541259 179.24621202458758 A 105 105 0 0 0 227.83210811429893 36.214706352729834 L 148.5 105 L 74.25378797541259 179.24621202458758"
+                    d="M 31.60734136600587 178.8926586339943 A 104.5 104.5 0 0 0 184.4543361708975 36.54225537009779 L 105.5 105 L 31.60734136600587 178.8926586339943"
                     fill="rgba(138,219,150,1)"
                     id="7d134ef0-86d7-4de6-a689-792986b2dafc"
                     kind="pie"
@@ -11693,8 +11693,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={29.16304}
-                    y={148.08333}
+                    x={6.71144}
+                    y={140.46077}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -11716,8 +11716,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={29.16304}
-                    y={149.08333}
+                    x={6.71144}
+                    y={141.46077}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -11738,8 +11738,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={131.5013}
-                    y={54.15983}
+                    x={88.57987}
+                    y={54.39716}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -11761,8 +11761,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={131.5013}
-                    y={55.15983}
+                    x={88.57987}
+                    y={55.39716}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -11783,8 +11783,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.78047}
-                    y={142.41884}
+                    x={140.61009}
+                    y={142.2359}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -11806,8 +11806,8 @@ exports[`Storyshots Bream Two Pie Charts In BCG Layout 1`] = `
                     className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
                     height="100%"
                     width="100%"
-                    x={183.78047}
-                    y={143.41884}
+                    x={140.61009}
+                    y={143.2359}
                   >
                     <p
                       className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -15181,7 +15181,7 @@ Array [
             </marker>
           </defs>
           <path
-            d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
+            d="M 1.0515644417810535 108.2824243236644 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.0515644417810535 108.2824243236644"
             fill="#71a2ff"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -15197,7 +15197,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
+            d="M 19.070079988308294 46.262287014452355 A 104.5 104.5 0 0 0 1.0515644417810535 108.2824243236644 L 105.5 105 L 19.070079988308294 46.262287014452355"
             fill="#c0d4e2"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -15213,7 +15213,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
+            d="M 58.05799277721735 11.889818222315569 A 104.5 104.5 0 0 0 19.070079988308294 46.262287014452355 L 105.5 105 L 58.05799277721735 11.889818222315569"
             fill="#cbcbcb"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -15229,7 +15229,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
+            d="M 63.998045428665336 200.905358383976 A 104.5 104.5 0 1 0 58.05799277721735 11.889818222315569 L 105.5 105 L 63.998045428665336 200.905358383976"
             fill="#e57878"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -15245,7 +15245,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
+            d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 63.998045428665336 200.905358383976 L 105.5 105 L 31.60734136600574 178.8926586339942"
             fill="#8adb96"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -15264,8 +15264,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={31.6746}
-            y={154.3385}
+            x={8.78872}
+            y={145.63434}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15286,8 +15286,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={31.6746}
-            y={155.3385}
+            x={8.78872}
+            y={146.63434}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15307,8 +15307,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={26.28278}
-            y={68.63788}
+            x={4.32921}
+            y={74.75243}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15329,8 +15329,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={26.28278}
-            y={69.63788}
+            x={4.32921}
+            y={75.75243}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15350,8 +15350,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={64.17872}
-            y={8.92342}
+            x={35.67247}
+            y={25.36336}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15372,8 +15372,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={64.17872}
-            y={9.92342}
+            x={35.67247}
+            y={26.36336}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15393,8 +15393,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={200.47409}
-            y={102.35094}
+            x={157.22422}
+            y={102.35879}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -15415,8 +15415,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={200.47409}
-            y={103.35094}
+            x={157.22422}
+            y={103.35879}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -15436,8 +15436,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={76.75593}
-            y={208.83246}
+            x={46.07493}
+            y={190.70561}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15458,8 +15458,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={76.75593}
-            y={209.83246}
+            x={46.07493}
+            y={191.70561}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15579,7 +15579,7 @@ Array [
             </marker>
           </defs>
           <path
-            d="M 43.85698616188182 96.34900844553596 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.85698616188182 96.34900844553596"
+            d="M 1.3552862277776256 96.39020364341435 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.3552862277776256 96.39020364341435"
             fill="rgba(97,139,219,1)"
             id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
             kind="pie"
@@ -15596,7 +15596,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 229.74679209511572 38.48715331416764 A 105 105 0 0 0 43.85698616188182 96.34900844553596 L 148.5 105 L 229.74679209511572 38.48715331416764"
+            d="M 186.35990260894852 38.80388115552876 A 104.5 104.5 0 0 0 1.3552862277776256 96.39020364341435 L 105.5 105 L 186.35990260894852 38.80388115552876"
             fill="rgba(172,190,203,1)"
             id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
             kind="pie"
@@ -15613,7 +15613,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 229.74679209511572 38.48715331416764 L 148.5 105 L 74.25378797541246 179.24621202458746"
+            d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 186.35990260894852 38.80388115552876 L 105.5 105 L 31.60734136600574 178.8926586339942"
             fill="rgba(138,219,150,1)"
             id="cd271f11-75a5-4bff-ab2b-266f7eb4418d"
             kind="pie"
@@ -15634,8 +15634,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={28.99797}
-            y={147.63575}
+            x={6.57491}
+            y={140.09058}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15657,8 +15657,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={28.99797}
-            y={148.63575}
+            x={6.57491}
+            y={141.09058}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15679,8 +15679,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={132.39676}
-            y={53.87227}
+            x={89.47106}
+            y={54.11098}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -15702,8 +15702,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={132.39676}
-            y={54.87227}
+            x={89.47106}
+            y={55.11098}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -15724,8 +15724,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={183.23326}
-            y={142.9213}
+            x={140.06548}
+            y={142.73596}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -15747,8 +15747,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={183.23326}
-            y={143.9213}
+            x={140.06548}
+            y={143.73596}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -15848,7 +15848,7 @@ Array [
             </marker>
           </defs>
           <path
-            d="M 43.794831114486826 97.1369466073184 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.794831114486826 97.1369466073184"
+            d="M 1.293427156798785 97.1743897187121 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.293427156798785 97.1743897187121"
             fill="rgba(97,139,219,1)"
             id="7d134ef0-86d7-4de6-a689-792986b2dafc"
             kind="pie"
@@ -15865,7 +15865,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 227.83210811429893 36.214706352729834 A 105 105 0 0 0 43.794831114486826 97.1369466073184 L 148.5 105 L 227.83210811429893 36.214706352729834"
+            d="M 184.4543361708975 36.54225537009779 A 104.5 104.5 0 0 0 1.293427156798785 97.1743897187121 L 105.5 105 L 184.4543361708975 36.54225537009779"
             fill="rgba(172,190,203,1)"
             id="7d134ef0-86d7-4de6-a689-792986b2dafc"
             kind="pie"
@@ -15882,7 +15882,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 74.25378797541259 179.24621202458758 A 105 105 0 0 0 227.83210811429893 36.214706352729834 L 148.5 105 L 74.25378797541259 179.24621202458758"
+            d="M 31.60734136600587 178.8926586339943 A 104.5 104.5 0 0 0 184.4543361708975 36.54225537009779 L 105.5 105 L 31.60734136600587 178.8926586339943"
             fill="rgba(138,219,150,1)"
             id="7d134ef0-86d7-4de6-a689-792986b2dafc"
             kind="pie"
@@ -15903,8 +15903,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={29.16304}
-            y={148.08333}
+            x={6.71144}
+            y={140.46077}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -15926,8 +15926,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={29.16304}
-            y={149.08333}
+            x={6.71144}
+            y={141.46077}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -15948,8 +15948,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={131.5013}
-            y={54.15983}
+            x={88.57987}
+            y={54.39716}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -15971,8 +15971,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={131.5013}
-            y={55.15983}
+            x={88.57987}
+            y={55.39716}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -15993,8 +15993,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={183.78047}
-            y={142.41884}
+            x={140.61009}
+            y={142.2359}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -16016,8 +16016,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={183.78047}
-            y={143.41884}
+            x={140.61009}
+            y={143.2359}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -19835,7 +19835,7 @@ Array [
             </marker>
           </defs>
           <path
-            d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
+            d="M 1.0515644417810535 108.2824243236644 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.0515644417810535 108.2824243236644"
             fill="#71a2ff"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -19851,7 +19851,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
+            d="M 19.070079988308294 46.262287014452355 A 104.5 104.5 0 0 0 1.0515644417810535 108.2824243236644 L 105.5 105 L 19.070079988308294 46.262287014452355"
             fill="#c0d4e2"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -19867,7 +19867,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
+            d="M 58.05799277721735 11.889818222315569 A 104.5 104.5 0 0 0 19.070079988308294 46.262287014452355 L 105.5 105 L 58.05799277721735 11.889818222315569"
             fill="#cbcbcb"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -19883,7 +19883,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
+            d="M 63.998045428665336 200.905358383976 A 104.5 104.5 0 1 0 58.05799277721735 11.889818222315569 L 105.5 105 L 63.998045428665336 200.905358383976"
             fill="#e57878"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -19899,7 +19899,7 @@ Array [
             type="chart"
           />
           <path
-            d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
+            d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 63.998045428665336 200.905358383976 L 105.5 105 L 31.60734136600574 178.8926586339942"
             fill="#8adb96"
             id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
             kind="pie"
@@ -19918,8 +19918,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={31.6746}
-            y={154.3385}
+            x={8.78872}
+            y={145.63434}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -19940,8 +19940,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={31.6746}
-            y={155.3385}
+            x={8.78872}
+            y={146.63434}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -19961,8 +19961,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={26.28278}
-            y={68.63788}
+            x={4.32921}
+            y={74.75243}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -19983,8 +19983,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={26.28278}
-            y={69.63788}
+            x={4.32921}
+            y={75.75243}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -20004,8 +20004,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={64.17872}
-            y={8.92342}
+            x={35.67247}
+            y={25.36336}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -20026,8 +20026,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={64.17872}
-            y={9.92342}
+            x={35.67247}
+            y={26.36336}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -20047,8 +20047,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={200.47409}
-            y={102.35094}
+            x={157.22422}
+            y={102.35879}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -20069,8 +20069,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={200.47409}
-            y={103.35094}
+            x={157.22422}
+            y={103.35879}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -20090,8 +20090,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={76.75593}
-            y={208.83246}
+            x={46.07493}
+            y={190.70561}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -20112,8 +20112,8 @@ Array [
             className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
             height="100%"
             width="100%"
-            x={76.75593}
-            y={209.83246}
+            x={46.07493}
+            y={191.70561}
           >
             <p
               className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -24748,7 +24748,7 @@ Array [
           </marker>
         </defs>
         <path
-          d="M 43.55181116159818 108.29812970320347 A 105 105 0 0 0 74.25378797541252 179.2462120245875 L 148.5 105 L 43.55181116159818 108.29812970320347"
+          d="M 1.0515644417810535 108.2824243236644 A 104.5 104.5 0 0 0 31.607341366005784 178.89265863399422 L 105.5 105 L 1.0515644417810535 108.2824243236644"
           fill="#71a2ff"
           id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
           kind="pie"
@@ -24764,7 +24764,7 @@ Array [
           type="chart"
         />
         <path
-          d="M 61.65653970117101 45.98124532552629 A 105 105 0 0 0 43.55181116159818 108.29812970320347 L 148.5 105 L 61.65653970117101 45.98124532552629"
+          d="M 19.070079988308294 46.262287014452355 A 104.5 104.5 0 0 0 1.0515644417810535 108.2824243236644 L 105.5 105 L 19.070079988308294 46.262287014452355"
           fill="#c0d4e2"
           id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
           kind="pie"
@@ -24780,7 +24780,7 @@ Array [
           type="chart"
         />
         <path
-          d="M 100.83099752734758 11.444314960221377 A 105 105 0 0 0 61.65653970117101 45.98124532552629 L 148.5 105 L 100.83099752734758 11.444314960221377"
+          d="M 58.05799277721735 11.889818222315569 A 104.5 104.5 0 0 0 19.070079988308294 46.262287014452355 L 105.5 105 L 58.05799277721735 11.889818222315569"
           fill="#cbcbcb"
           id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
           kind="pie"
@@ -24796,7 +24796,7 @@ Array [
           type="chart"
         />
         <path
-          d="M 106.79947148334796 201.36423569681799 A 105 105 0 1 0 100.83099752734758 11.444314960221377 L 148.5 105 L 106.79947148334796 201.36423569681799"
+          d="M 63.998045428665336 200.905358383976 A 104.5 104.5 0 1 0 58.05799277721735 11.889818222315569 L 105.5 105 L 63.998045428665336 200.905358383976"
           fill="#e57878"
           id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
           kind="pie"
@@ -24812,7 +24812,7 @@ Array [
           type="chart"
         />
         <path
-          d="M 74.25378797541246 179.24621202458746 A 105 105 0 0 0 106.79947148334796 201.36423569681799 L 148.5 105 L 74.25378797541246 179.24621202458746"
+          d="M 31.60734136600574 178.8926586339942 A 104.5 104.5 0 0 0 63.998045428665336 200.905358383976 L 105.5 105 L 31.60734136600574 178.8926586339942"
           fill="#8adb96"
           id="63d30846-a1dc-4c50-a32a-21ca99c38bce"
           kind="pie"
@@ -24831,8 +24831,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={31.6746}
-          y={154.3385}
+          x={8.78872}
+          y={145.63434}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -24853,8 +24853,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={31.6746}
-          y={155.3385}
+          x={8.78872}
+          y={146.63434}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -24874,8 +24874,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={26.28278}
-          y={68.63788}
+          x={4.32921}
+          y={74.75243}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -24896,8 +24896,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={26.28278}
-          y={69.63788}
+          x={4.32921}
+          y={75.75243}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -24917,8 +24917,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={64.17872}
-          y={8.92342}
+          x={35.67247}
+          y={25.36336}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -24939,8 +24939,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={64.17872}
-          y={9.92342}
+          x={35.67247}
+          y={26.36336}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
@@ -24960,8 +24960,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={200.47409}
-          y={102.35094}
+          x={157.22422}
+          y={102.35879}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 HTmBh"
@@ -24982,8 +24982,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={200.47409}
-          y={103.35094}
+          x={157.22422}
+          y={103.35879}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 hVklrv"
@@ -25003,8 +25003,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={76.75593}
-          y={208.83246}
+          x={46.07493}
+          y={190.70561}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 gwwCcT"
@@ -25025,8 +25025,8 @@ Array [
           className="SvgTypographyForeign-sc-10c5zbq-0 ipNXcE"
           height="100%"
           width="100%"
-          x={76.75593}
-          y={209.83246}
+          x={46.07493}
+          y={191.70561}
         >
           <p
             className="Typography-sc-1b4huth-0 SvgTypography__StyledTypography-jh05vp-0 kqpoXi"
