@@ -3718,6 +3718,11 @@ color@^3.0.0:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
+colorette@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.1.0.tgz#1f943e5a357fac10b4e0f5aaef3b14cdc1af6ec7"
+  integrity sha512-6S062WDQUXi6hOfkO/sBPVwE5ASXY4G2+b4atvhJfSsuUUhIaUKlkjLe9692Ipyt5/a+IPF5aVTu3V5gvXq5cg==
+
 colors@^1.1.2:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
@@ -11859,11 +11864,6 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
-
-turbocolor@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/turbocolor/-/turbocolor-2.6.1.tgz#1b47dcc0e0e5171f57d954351fb80a5088a8a921"
-  integrity sha512-0pTvPfKBIasx7C4bEorJY9I3SNbkyQrFeRxK8iMoarEHZLQLOhPungv9t/7SSfKLJdErhv4dC2GKmaNGURnk4A==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

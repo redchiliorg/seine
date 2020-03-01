@@ -1,7 +1,7 @@
 const { dirname, resolve, relative } = require('path');
 const { readdirSync, unlinkSync, rmdirSync, existsSync } = require('fs');
 
-const tc = require('turbocolor');
+const tc = require('colorette');
 
 const {
   workspace: defaultWorkspace,

@@ -3,7 +3,7 @@ const { readdirSync, existsSync } = require('fs');
 const { dirname, resolve, join, relative } = require('path');
 
 const rollup = require('rollup');
-const tc = require('turbocolor');
+const tc = require('colorette');
 const prettyMs = require('pretty-ms');
 
 const rollupConfig = require('./rollup-config');
@@ -12,8 +12,9 @@ const {
   ...defaultOptions
 } = require('./rollup-options');
 
-// eslint-disable-next-line no-console
-const stderr = (...args) => process.stderr.write(...args);
+const stderr = (message) => process.stderr.write(message);
+
+const cache = {};
 
 /**
  * @description Build (yarn) workspace.
@@ -25,9 +26,9 @@ async function buildWorkspace(
   workspace = defaultWorkspace,
   options = defaultOptions
 ) {
-  const cwd = workspace && resolve(workspace);
+  const cwd = resolve(workspace);
   const { format, input } = options;
-  const srcDir = input ? join(cwd, dirname(input)) : join(cwd, 'src');
+  const srcDir = join(cwd, dirname(input));
 
   for (const dirEntry of readdirSync(srcDir, { withFileTypes: true })) {
     if (dirEntry.isDirectory()) {
@@ -56,12 +57,14 @@ async function buildWorkspace(
   stderr(tc.cyan(`building ${inputInfo} → ${outputInfo}...`));
 
   try {
-    const bundle = await rollup.rollup(config);
+    const bundle = await rollup.rollup({ ...config, cache: cache[workspace] });
+    cache[workspace] = bundle.cache;
     await bundle.write(output);
     stderr(tc.green(` done in ${tc.bold(prettyMs(Date.now() - start))}.`));
     stderr('\n');
   } catch (err) {
-    stderr(tc.red(` failed after ${tc.bold(prettyMs(Date.now() - start))}.\n`));
+    stderr(tc.red(` failed after ${tc.bold(prettyMs(Date.now() - start))}.`));
+    stderr('\n');
     handleError(err);
   }
 }
