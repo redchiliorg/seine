@@ -14,7 +14,7 @@ const {
 
 const stderr = (message) => process.stderr.write(message);
 
-const cache = {};
+let cache;
 
 /**
  * @description Build (yarn) workspace.
@@ -57,8 +57,18 @@ async function buildWorkspace(
   stderr(tc.cyan(`building ${inputInfo} → ${outputInfo}...`));
 
   try {
-    const bundle = await rollup.rollup({ ...config, cache: cache[workspace] });
-    cache[workspace] = bundle.cache;
+    const bundle = await rollup.rollup({ ...config, cache });
+    cache = {
+      modules: [
+        ...(cache
+          ? cache.modules.filter((current) =>
+              bundle.cache.modules.every((next) => next.id !== current.id)
+            )
+          : []),
+        ...bundle.cache.modules,
+      ],
+      plugins: bundle.cache.plugins,
+    };
     await bundle.write(output);
     stderr(tc.green(` done in ${tc.bold(prettyMs(Date.now() - start))}.`));
     stderr('\n');
@@ -78,7 +88,7 @@ function handleError(err, recover = false) {
   const message =
     (err.plugin ? `(plugin ${err.plugin}) ${description}` : description) || err;
 
-  stderr(tc.bold.red(`[!] ${tc.bold(message.toString())}`));
+  stderr(tc.red(`[!] ${tc.bold(message.toString())}`));
   stderr('\n');
 
   if (err.url) {
