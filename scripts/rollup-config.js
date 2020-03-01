@@ -1,8 +1,8 @@
 const { basename, dirname, resolve, join } = require('path');
 
 const babel = require('rollup-plugin-babel');
-const commonjs = require('rollup-plugin-commonjs');
-const nodeResolve = require('rollup-plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const nodeResolve = require('@rollup/plugin-node-resolve');
 const postcss = require('rollup-plugin-postcss');
 const flowEntry = require('rollup-plugin-flow-entry');
 const cleanup = require('rollup-plugin-cleanup');

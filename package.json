@@ -45,6 +45,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "@storybook/addon-actions": "^5.3.0",
     "@storybook/addon-storyshots": "^5.3.0",
     "@storybook/addons": "^5.3.0",
@@ -91,7 +93,6 @@
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-flow-entry": "^0.3.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-visualizer": "^2.5.4"
   },
