@@ -1,6 +1,6 @@
 {
   "name": "@seine/styles",
-  "version": "0.3.211",
+  "version": "0.3.212",
   "description": "Seine styles library.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -17,8 +17,8 @@
     "babel-plugin-inline-import-data-uri": "^1.0.1"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
   }
 }
