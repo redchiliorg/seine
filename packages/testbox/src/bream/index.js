@@ -1,7 +1,10 @@
 export * from '@seine/core';
 export * from '@seine/content';
+
 export { default as BreamThemeProvider } from './BreamThemeProvider';
-export type { Spacer } from './BreamThemeProvider';
+export { default as breamTheme } from './breamTheme';
+export type { Spacer } from './breamTheme';
+
 export { default as Duration } from './Duration';
 export * from './Duration.helpers';
 
