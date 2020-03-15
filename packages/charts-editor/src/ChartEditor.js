@@ -17,7 +17,6 @@ import {
   ChartSvg,
   ChartSvgDefs,
   ColumnChartContent,
-  defaultChartLegend,
   LineChartContent,
   PieChartContent,
   useChartFormatDefaults,
@@ -138,7 +137,6 @@ export default function ChartEditor({
         ) : kind === chartTypes.COLUMN || kind === chartTypes.LINE ? (
           <ChartGroupsDescriptionEditor
             {...chartProps}
-            legend={defaultChartLegend}
             dispatchElements={dispatchElements}
           />
         ) : null

@@ -26,6 +26,10 @@ type Props = {
   units?: string,
   xAxis?: boolean,
   yAxis?: boolean,
+
+  elementPathAs?: React.ElementType,
+  groupTitleAs?: React.ElementType,
+  elementValueAs?: React.ElementType,
 };
 
 const GUTTER_WIDTH = VIEWPORT_WIDTH / 10;
