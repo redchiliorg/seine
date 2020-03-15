@@ -13,16 +13,14 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartGroupTitleInput({
-  dispatch,
-  dispatchElements,
-  editor,
-  meta: group,
-  ...inputProps
-}: Props) {
+export default React.forwardRef(function ChartGroupTitleInput(
+  { dispatch, dispatchElements, editor, meta: group, ...inputProps }: Props,
+  ref
+) {
   return (
     <SvgInput
       {...inputProps}
+      ref={ref}
       value={group}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
@@ -33,4 +31,4 @@ export default function ChartGroupTitleInput({
       )}
     />
   );
-}
+});
