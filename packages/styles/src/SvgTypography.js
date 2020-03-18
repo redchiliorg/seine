@@ -161,7 +161,7 @@ const SvgTypography = React.forwardRef(function SvgTypography(
   return (
     <SvgTypographyForeign
       ref={foreignObjectRef}
-      width={foreignElement ? Math.ceil(scaledWidth) : '100%'}
+      width={foreignElement ? scaledWidth : '100%'}
       height={foreignElement ? scaledHeight : '100%'}
       x={theme.typography.round(
         x -
