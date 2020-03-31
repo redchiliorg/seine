@@ -1,7 +1,8 @@
 // @flow
 import * as React from 'react';
 import { SvgTypography, useTypographyChildrenMethods } from '@seine/styles';
-import type { ChartElement } from '@seine/core';
+import type { BlockType, ChartElement } from '@seine/core';
+import invert from 'invert-color';
 
 import {
   defaultBarChartLegend,
@@ -12,7 +13,7 @@ import {
   VIEWPORT_HEIGHT,
   VIEWPORT_WIDTH,
 } from './constants';
-import ChartAxis from './ChartAxis';
+import ChartXAxis from './ChartXAxis';
 
 type Props = {
   elements: ChartElement[],
@@ -22,10 +23,16 @@ type Props = {
   units?: string,
   xAxis?: boolean,
 
+  parentType: BlockType,
+
   elementTitleAs: React.ComponentType,
   elementValueAs: React.ComponentType,
   elementRectAs: React.ComponentType,
+
+  parentType: BlockType,
 };
+
+const MIN_BAR_WIDTH = VIEWPORT_WIDTH / 2;
 
 /**
  * @description Bar chart content block renderer.
@@ -47,12 +54,16 @@ export default function BarChartContent({
     (max, { value }) => Math.max(+value, max),
     -Infinity
   ),
+
   paletteKey,
   yAxis,
+  textAlignment,
 
   elementTitleAs: ElementTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,
   elementRectAs: ElementRect = 'rect',
+
+  parentType,
 
   ...metaProps
 }: Props) {
@@ -60,40 +71,43 @@ export default function BarChartContent({
     titleMethods,
     titleTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const titleWidth = titleMethods.getScaledWidth();
+  const titleWidth = legend ? 0 : titleMethods.getScaledWidth();
   const titleHeight = titleMethods.getScaledHeight();
 
   const [
     valueMethods,
     valueTypographyMethodsRef,
   ] = useTypographyChildrenMethods(elements.length);
-  const valueWidth = legend ? 0 : valueMethods.getScaledWidth();
+  const valueWidth = valueMethods.getScaledWidth();
+  const valueHeight = valueMethods.getScaledHeight();
 
-  const barHeight = VIEWPORT_HEIGHT / Math.max(elements.length, 4);
-  const barWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
+  const barHeight = Math.max(
+    titleHeight,
+    VIEWPORT_HEIGHT / Math.max(elements.length, 8)
+  );
+  const height =
+    parentType === 'grid'
+      ? VIEWPORT_HEIGHT
+      : barHeight * elements.length + valueHeight;
+
+  const paddedBarWidth = VIEWPORT_WIDTH - (titleWidth + valueWidth);
+  const barWidth =
+    paddedBarWidth > MIN_BAR_WIDTH ? paddedBarWidth : VIEWPORT_WIDTH;
 
   return (
     <g strokeWidth={titleHeight / 40}>
       {elements.map(({ title, value }, index) => {
         const width = (barWidth * value) / maxValue;
         const color = palette[index % palette.length];
-        const y = VIEWPORT_HEIGHT - barHeight * (elements.length - index);
+        const rgb = color.startsWith('rgb') && color.match(/\d+/g);
+        const textColor =
+          barWidth === paddedBarWidth
+            ? color
+            : invert(rgb ? rgb.slice(0, 3) : color, { threshold: 0.5 });
+        const y = height - valueHeight - barHeight * (elements.length - index);
         const meta = { ...elements[index], index };
 
         return [
-          <ElementTitle
-            {...metaProps}
-            dominantBaseline={'middle'}
-            fill={color}
-            ref={titleTypographyMethodsRef}
-            key={`title.${index}`}
-            meta={meta}
-            x={0}
-            y={y + barHeight / 2}
-          >
-            {legend ? '' : title}
-          </ElementTitle>,
-
           <ElementRect
             {...metaProps}
             fill={color}
@@ -101,34 +115,48 @@ export default function BarChartContent({
             width={width}
             key={`selection.${index}`}
             meta={meta}
-            x={titleWidth}
+            x={barWidth === paddedBarWidth ? titleWidth : 0}
             y={y}
           />,
+          <ElementTitle
+            {...metaProps}
+            dominantBaseline={'middle'}
+            fill={textColor}
+            ref={titleTypographyMethodsRef}
+            key={`title.${index}`}
+            meta={meta}
+            x={0}
+            y={y + barHeight / 2}
+          >
+            {' '}
+            {legend ? '' : title}{' '}
+          </ElementTitle>,
 
           <ElementValue
             {...metaProps}
             dominantBaseline={'middle'}
             ref={valueTypographyMethodsRef}
-            fill={color}
+            {...(barWidth !== paddedBarWidth && { fill: textColor })}
             key={`value.${index}`}
             meta={meta}
-            x={titleWidth + width}
+            textAnchor={barWidth === paddedBarWidth ? 'start' : 'end'}
+            x={barWidth === paddedBarWidth ? titleWidth + width : width}
             y={y + barHeight / 2}
           >
-            {'  '}
+            {' '}
             {value}
-            {units}
+            {units}{' '}
           </ElementValue>,
         ];
       })}
       {!!xAxis && (
-        <ChartAxis
-          length={VIEWPORT_WIDTH - titleWidth}
+        <ChartXAxis
+          length={barWidth}
           max={maxValue}
           step={dx}
           units={units}
-          x={titleWidth}
-          y={VIEWPORT_HEIGHT}
+          x={barWidth === paddedBarWidth ? titleWidth : 0}
+          y={height - valueHeight}
         />
       )}
     </g>

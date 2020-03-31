@@ -1,11 +1,10 @@
 // @flow
 import * as React from 'react';
-import {
-  ThemeContext,
-  ThemeProvider as StyledThemeProvider,
-} from 'styled-components/macro';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components/macro';
+import { useAutoEffect } from 'hooks.macro';
 
 import defaultTheme from './defaultTheme';
+import useTheme from './useTheme';
 
 type Props = {
   children: React.Node,
@@ -21,9 +20,27 @@ export default function ThemeProvider({
   children,
   theme = defaultTheme,
 }: Props) {
-  return React.useContext(ThemeContext) ? (
-    children
-  ) : (
-    <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
-  );
+  const [ready, setReady] = React.useState(false);
+  useAutoEffect(() => {
+    let cancelled = false;
+    if ('fonts' in document) {
+      if (!ready) {
+        document.fonts.ready.then(() => {
+          if (!cancelled) {
+            setReady(true);
+          }
+        });
+      }
+    } else {
+      setReady(true);
+    }
+    return () => {
+      cancelled = true;
+    };
+  });
+  return useTheme()
+    ? children
+    : ready && (
+        <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
+      );
 }

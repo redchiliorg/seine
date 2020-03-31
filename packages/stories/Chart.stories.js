@@ -1,15 +1,12 @@
 import * as React from 'react';
 import { actions } from '@storybook/addon-actions';
-import {
-  createBlockElements,
-  createTitleIdentityBlockElements,
-} from '@seine/core';
+import { createTitleIdentityBlockElements } from '@seine/core';
 import { Content } from '@seine/content';
 import { Editor } from '@seine/editor';
 import { ChartLayout, ChartLegend, defaultChartPalette } from '@seine/charts';
 import { defaultTheme, ThemeProvider } from '@seine/styles';
 
-export default { title: 'Single.Chart' };
+export default { title: 'Default.Single.Chart' };
 
 export const DummyChartLayout = () => (
   <ThemeProvider theme={defaultTheme}>
@@ -30,6 +27,56 @@ export const DummyChartLayout = () => (
 
 export const BarChart = ({
   as: Component = Content,
+  body = {
+    elements: [
+      {
+        title: 'WFLA',
+        value: 20.8,
+        id: '3d7ace6b-2eef-4bf7-a534-f794323be5b2',
+      },
+      {
+        title: 'Region A',
+        value: 35.7,
+        id: '8df0406e-473d-4956-a8d4-1e9c42c45cbf',
+      },
+      {
+        title: 'Region B',
+        value: 15.8,
+        id: 'e80e6d00-1e34-43b1-8b11-67a44bca921a',
+      },
+      {
+        title: 'Region C',
+        value: 40.9,
+        id: '23ec0b37-6da2-434c-8484-818f753deb63',
+      },
+      {
+        title: 'Region D',
+        value: 23.6,
+        id: '524fd9d7-047c-441e-9d61-fee72abcbe35',
+      },
+      {
+        title: 'Region E',
+        value: 17.6,
+        id: '8235cdd7-2f4b-4f7b-8208-1500a8826816',
+      },
+      {
+        title: 'Region F',
+        value: 38.1,
+        id: '745f78c0-7a74-4984-aefe-e2e0c5b86c27',
+      },
+      {
+        title: 'Region G',
+        value: 43.8,
+        id: '8a4b2ae0-0f2d-45b1-9d22-9444f7e16cee',
+      },
+      {
+        title: 'Region H',
+        value: 16.4,
+        id: '85c7aeb7-ea55-44ad-bf96-13fe9c833583',
+      },
+    ],
+  },
+  format = {},
   children = [],
   ...props
 }) => (
@@ -47,26 +94,15 @@ export const BarChart = ({
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927',
         type: 'chart',
-        body: {
-          elements: createBlockElements([
-            { title: 'WFLA', value: 20.8 },
-            { title: 'Region A', value: 35.7 },
-            { title: 'Region B', value: 15.8 },
-            { title: 'Region C', value: 40.9 },
-            { title: 'Region D', value: 23.6 },
-            { title: 'Region E', value: 17.6 },
-            { title: 'Region F', value: 38.1 },
-            { title: 'Region G', value: 43.8 },
-            { title: 'Region H', value: 16.4 },
-          ]),
-        },
-        format: { kind: 'bar' },
+        body,
+        format: { ...format, kind: 'bar' },
         parent_id: null,
       },
       ...children,
     ]}
   </Component>
 );
+
 export const EditorOfBarChart = (props) => (
   <BarChart as={Editor} {...actions('onChange')} {...props} />
 );
@@ -74,6 +110,26 @@ export const EditorOfBarChart = (props) => (
 export const ColumnChart = ({
   as: Component = Content,
   children = [],
+  body = {
+    elements: [
+      {
+        id: '8235cdd7-2f4b-4f7b-8208-1500a8826816',
+        title: 'Maelstorm',
+        value: 50.1,
+      },
+      {
+        id: '524fd9d7-047c-441e-9d61-fee72abcbe35',
+        title: 'Spring',
+        value: 60.33,
+      },
+      {
+        id: '23ec0b37-6da2-434c-8484-818f753deb63',
+        title: 'Electro',
+        value: 13,
+      },
+    ],
+  },
+  format = {},
   ...props
 }) => (
   <Component
@@ -90,14 +146,8 @@ export const ColumnChart = ({
       {
         id: '78f5d055-8a9f-48cc-bead-f6c9e8451ced',
         type: 'chart',
-        body: {
-          elements: createBlockElements([
-            { title: 'Maelstorm', value: 50.1 },
-            { title: 'Spring', value: 60.33 },
-            { title: 'Electro', value: 13 },
-          ]),
-        },
-        format: { kind: 'column' },
+        body,
+        format: { ...format, kind: 'column' },
         parent_id: null,
       },
       ...children,
@@ -435,6 +485,32 @@ export const EditorOfTwoGroupsOfSixColumns = () => (
 export const LineChart = ({
   as: Component = Content,
   children = [],
+  body = {
+    elements: createTitleIdentityBlockElements([
+      { title: 'Easymode', value: 175, group: 'Year 1' },
+      { title: 'Rest', value: 65, group: 'Year 1' },
+
+      { title: 'Easymode', value: 204, group: 'Year 2' },
+      { title: 'Rest', value: 68, group: 'Year 2' },
+
+      { title: 'Easymode', value: 231, group: 'Year 3' },
+      { title: 'Rest', value: 73, group: 'Year 3' },
+
+      { title: 'Easymode', value: 237, group: 'Year 4' },
+      { title: 'Rest', value: 75, group: 'Year 4' },
+
+      { title: 'Easymode', value: 280, group: 'Year 5' },
+      { title: 'Rest', value: 79, group: 'Year 5' },
+
+      { title: 'Easymode', value: 339, group: 'Year 6' },
+      { title: 'Rest', value: 90, group: 'Year 6' },
+    ]),
+    title: 'Sales ($ millions)',
+  },
+  format = {
+    dy: 40,
+    maxValue: 400,
+  },
   ...props
 }) => (
   <Component
@@ -451,33 +527,8 @@ export const LineChart = ({
       {
         id: '01648d04-78ad-402b-b255-14a6066d7927',
         type: 'chart',
-        body: {
-          elements: createTitleIdentityBlockElements([
-            { title: 'Easymode', value: 175, group: 'Year 1' },
-            { title: 'Rest', value: 65, group: 'Year 1' },
-
-            { title: 'Easymode', value: 204, group: 'Year 2' },
-            { title: 'Rest', value: 68, group: 'Year 2' },
-
-            { title: 'Easymode', value: 231, group: 'Year 3' },
-            { title: 'Rest', value: 73, group: 'Year 3' },
-
-            { title: 'Easymode', value: 237, group: 'Year 4' },
-            { title: 'Rest', value: 75, group: 'Year 4' },
-
-            { title: 'Easymode', value: 280, group: 'Year 5' },
-            { title: 'Rest', value: 79, group: 'Year 5' },
-
-            { title: 'Easymode', value: 339, group: 'Year 6' },
-            { title: 'Rest', value: 90, group: 'Year 6' },
-          ]),
-          title: 'Sales ($ millions)',
-        },
-        format: {
-          dy: 40,
-          kind: 'line',
-          maxValue: 400,
-        },
+        body,
+        format: { ...format, kind: 'line' },
         parent_id: null,
       },
       ...children,
@@ -492,6 +543,37 @@ export const EditorOfLineChart = () => (
 export const PieChart = ({
   as: Component = Content,
   children = [],
+  body = {
+    elements: [
+      {
+        title:
+          'There is no space at the top. But big slices have enough space to contain text inside',
+        value: 64,
+        id: '0aa5ad65-9337-4bd6-99be-2e1fdff9e6de',
+      },
+      {
+        title: 'repairs of something very long',
+        value: 12,
+        id: '19f01bde-c75e-47fa-9571-a0a0bab03971',
+      },
+      {
+        title: 'consulting',
+        value: 10,
+        id: 'c72d4fcb-71c2-49f2-8a78-e7d26c18b474',
+      },
+      {
+        title: 'training',
+        value: 8,
+        id: '737ff7d8-22ae-4e06-993c-b3a57d8f4234',
+      },
+      {
+        title: 'others',
+        value: 6,
+        id: 'a7e1f2d4-6c76-4247-937b-aaeb32f97b3b',
+      },
+    ],
+  },
+  format = {},
   ...props
 }) => (
   <Component
@@ -508,16 +590,8 @@ export const PieChart = ({
       {
         id: '63d30846-a1dc-4c50-a32a-21ca99c38bce',
         type: 'chart',
-        body: {
-          elements: createBlockElements([
-            { title: 'repairs of something very long', value: 12 },
-            { title: 'consulting', value: 10 },
-            { title: 'training', value: 8 },
-            { title: 'product sales', value: 64 },
-            { title: 'others', value: 6 },
-          ]),
-        },
-        format: { kind: 'pie' },
+        body,
+        format: { ...format, kind: 'pie' },
         parent_id: null,
       },
       ...children,
@@ -526,5 +600,9 @@ export const PieChart = ({
 );
 
 export const EditorOfPieChart = () => (
-  <PieChart as={Editor} {...actions('onChange')} />
+  <PieChart
+    as={Editor}
+    format={{ autoFormat: true }}
+    {...actions('onChange')}
+  />
 );

@@ -1,22 +1,32 @@
 // @flow
 import styled, { css } from 'styled-components/macro';
 
-export default styled.input.attrs(
-  ({ className = 'mui-textfield', type = 'text', transparent }) => ({
-    className,
-    transparent,
-    type,
-  })
-)`
-  && {
-    height: 32px;
-    margin: 6px 8px;
-    padding: 0 8px;
-    ${({ type }) =>
-      type === 'number' &&
-      css`
-        padding-right: 0;
-        width: 5em;
-      `};
-  }
+const Input = styled.input`
+  ${({
+    variant = 'body1',
+    theme: {
+      typography: {
+        [variant]: {
+          fontFamily: defaultFontFamily,
+          fontSize: defaultFontSize,
+          fontWeight: defaultFontWeight,
+          lineHeight,
+        },
+      },
+    },
+    fontFamily = defaultFontFamily,
+    fontSize = defaultFontSize,
+    fontWeight = defaultFontWeight,
+  }) => css`
+    font-weight: ${fontWeight};
+    font-family: ${fontFamily};
+    font-size: ${fontSize};
+    line-height: ${lineHeight};
+    ${({ color }) => color && { color }};
+    ${({ width }) => width && { width }};
+    ${({ height }) => height && { height }};
+    ${({ textAlign }) => textAlign && { textAlign }};
+  `}
 `;
+
+export default Input;

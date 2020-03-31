@@ -4,8 +4,6 @@ import { DESELECT_BLOCK_ELEMENT, SELECT_BLOCK_ELEMENT } from '@seine/core';
 import { ClickAwayListener } from '@material-ui/core';
 import { useAutoCallback } from 'hooks.macro';
 
-import { chartEditorFillPattern } from './constants';
-
 type Props = {
   children?: any,
 };
@@ -24,13 +22,24 @@ export default function BarChartElementRect({
 }: Props) {
   return (
     <ClickAwayListener
-      onClickAway={(event) =>
-        !(event.target instanceof HTMLButtonElement) &&
-        dispatchElements({
-          type: DESELECT_BLOCK_ELEMENT,
-          index,
-        })
-      }
+      onClickAway={(event) => {
+        if (
+          event.target &&
+          !(
+            event.target === document.body ||
+            event.target instanceof HTMLButtonElement ||
+            event.target instanceof HTMLInputElement ||
+            (event.target instanceof HTMLDivElement &&
+              event.target.parentElement instanceof HTMLSpanElement) ||
+            event.target.style.position === 'absolute'
+          )
+        ) {
+          dispatchElements({
+            type: DESELECT_BLOCK_ELEMENT,
+            index,
+          });
+        }
+      }}
     >
       <g>
         <rect
@@ -51,7 +60,7 @@ export default function BarChartElementRect({
             {...rectProps}
             style={{
               opacity: 0.15,
-              fill: chartEditorFillPattern.url(),
+              fill: 'url(#selectionPattern)',
               pointerEvents: 'none',
             }}
           />

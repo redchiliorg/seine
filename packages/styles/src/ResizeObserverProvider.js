@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
-import { useAutoLayoutEffect, useAutoMemo } from 'hooks.macro';
+import { useAutoEffect, useAutoMemo } from 'hooks.macro';
 import ResizeObserver from 'resize-observer-polyfill';
 
 import ResizeObserverContext from './ResizeObserverContext';
 
 type Props = {
-  children?: any,
+  children: React.Node,
 };
 
 /**
@@ -14,21 +14,35 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ResizeObserverProvider({ children = null }: Props) {
-  const [count, setCount] = React.useState(0);
+export default function ResizeObserverProvider({ children }: Props) {
+  const [timestamp, setTimestamp] = React.useState(null);
+  const [isResizing, setIsResizing] = React.useState(true);
+  const timeoutIdRef = React.useRef(null);
 
   const observer = useAutoMemo(
     new ResizeObserver(() => {
-      setCount((n) => (n === Number.MAX_VALUE ? 1 : n + 1));
+      if (timeoutIdRef.current) {
+        clearTimeout(timeoutIdRef.current);
+      } else {
+        setIsResizing(true);
+      }
+      timeoutIdRef.current = setTimeout(() => {
+        timeoutIdRef.current = null;
+        setTimestamp(Date.now());
+      }, 150);
     })
   );
 
-  useAutoLayoutEffect(() => {
-    setCount(1);
+  useAutoEffect(() => {
+    if (timestamp) {
+      setIsResizing(false);
+    }
   });
 
   return (
-    <ResizeObserverContext.Provider value={useAutoMemo({ observer, count })}>
+    <ResizeObserverContext.Provider
+      value={useAutoMemo({ observer, isResizing, timestamp })}
+    >
       {children}
     </ResizeObserverContext.Provider>
   );

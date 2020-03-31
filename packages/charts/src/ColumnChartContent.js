@@ -13,7 +13,7 @@ import {
   VIEWPORT_WIDTH,
 } from './constants';
 import { useGroupedElements } from './helpers';
-import ChartAxis from './ChartAxis';
+import ChartYAxis from './ChartYAxis';
 
 type Props = {
   elements: ChartElement[],
@@ -47,6 +47,7 @@ export default function ColumnChartContent({
   legend,
   xAxis,
   paletteKey,
+  textAlignment,
 
   groupTitleAs: GroupTitle = SvgTypography,
   elementValueAs: ElementValue = SvgTypography,
@@ -66,7 +67,7 @@ export default function ColumnChartContent({
   const scaledTextHeight = methods.getScaledHeight();
 
   const groupWidth = (VIEWPORT_WIDTH - 2 * GUTTER_WIDTH) / groups.length;
-  const columnHeight = VIEWPORT_HEIGHT;
+  const columnHeight = VIEWPORT_HEIGHT - 2 * scaledTextHeight;
 
   return [
     ...groups.map(([group, groupElements], groupIndex) => {
@@ -92,13 +93,12 @@ export default function ColumnChartContent({
                     groupWidth * groupIndex +
                     (index + 0.5) * columnWidth
                   }
-                  y={columnHeight - rectHeight}
+                  y={columnHeight + scaledTextHeight - rectHeight}
                   key={`selection.${index}`}
                   meta={{ ...groupElements[index], index }}
                 />,
                 <ElementValue
                   {...metaProps}
-                  fill={fill}
                   ref={childMethodsRef}
                   textAnchor={'middle'}
                   width={columnWidth}
@@ -107,7 +107,7 @@ export default function ColumnChartContent({
                     groupWidth * groupIndex +
                     (index + 1) * columnWidth
                   }
-                  y={columnHeight - rectHeight}
+                  y={columnHeight + scaledTextHeight - rectHeight}
                   key={`value.${groupElements.length * groupIndex + index}`}
                   meta={groupElements[index]}
                 >
@@ -119,8 +119,8 @@ export default function ColumnChartContent({
             <path
               d={`m${GUTTER_WIDTH +
                 groupIndex * groupWidth +
-                columnWidth / 4} ${VIEWPORT_HEIGHT}h${columnWidth *
-                groupElements.length +
+                columnWidth / 4} ${columnHeight +
+                scaledTextHeight}h${columnWidth * groupElements.length +
                 columnWidth / 2}`}
               stroke={'black'}
               key={'line'}
@@ -131,9 +131,9 @@ export default function ColumnChartContent({
               dominantBaseline={'hanging'}
               key={'group'}
               x={GUTTER_WIDTH + groupIndex * groupWidth + groupWidth / 2}
-              y={VIEWPORT_HEIGHT}
-              width={columnWidth * groupElements.length}
+              y={VIEWPORT_HEIGHT - scaledTextHeight}
               meta={group}
+              width={groupWidth}
             >
               {group}
             </GroupTitle>,
@@ -143,16 +143,14 @@ export default function ColumnChartContent({
     }),
     !!yAxis && (
       <g key={'axis'} strokeWidth={scaledTextHeight / 40}>
-        <ChartAxis
-          arrow
+        <ChartYAxis
           finite
-          direction={'up'}
           key={'axis'}
-          length={VIEWPORT_HEIGHT}
+          length={columnHeight}
           max={maxValue}
           step={dy}
           units={units}
-          y={VIEWPORT_HEIGHT}
+          y={columnHeight + scaledTextHeight}
           maxWidth={GUTTER_WIDTH}
         />
       </g>

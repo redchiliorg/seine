@@ -41,14 +41,15 @@ type Props = {
  */
 export default function Toolbar({
   position = 'relative',
+
+  addButtonRenderMap,
+  blocks,
+
   ...toolbarProps
 }: Props) {
   return (
     <AppBar position={position}>
-      <MuiToolbar
-        onClick={React.useCallback((event) => event.stopPropagation(), [])}
-        {...toolbarProps}
-      />
+      <MuiToolbar {...toolbarProps} />
     </AppBar>
   );
 }

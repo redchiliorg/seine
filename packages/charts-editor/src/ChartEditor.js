@@ -3,34 +3,34 @@ import * as React from 'react';
 import type { ElementsAction } from '@seine/core';
 import {
   chartTypes,
+  DESELECT_BLOCK_ELEMENT,
   initialElementsState,
   reduceElements,
   UPDATE_BLOCK_BODY,
   UPDATE_BLOCK_EDITOR,
+  UPDATE_BLOCK_FORMAT,
 } from '@seine/core';
-import { BlockActions } from '@seine/ui';
+import { BlockActions, InlineInput } from '@seine/ui';
 import {
   BarChartContent,
   Chart,
   ChartLayout,
   ChartSvg,
+  ChartSvgDefs,
   ColumnChartContent,
-  defaultChartTextAlignment,
-  defaultChartTitle,
   LineChartContent,
   PieChartContent,
+  useChartFormatDefaults,
+  useChartSvgProps,
 } from '@seine/charts';
 import { useResizeTargetRef } from '@seine/styles';
 import { useAutoCallback } from 'hooks.macro';
-import stringify from 'virtual-dom-stringify';
 
 import type { ChartEditorProps as Props } from './types';
-import ChartInlineInput from './ChartInlineInput';
 import ChartGroupsDescriptionEditor from './ChartGroupsDescriptionEditor';
 import BarChartElementTitleInput from './BarChartElementTitleInput';
 import BarChartElementValueInput from './BarChartElementValueInput';
 import BarChartElementRect from './BarChartElementRect';
-import { chartEditorFillPattern } from './constants';
 import PieChartElementPath from './PieChartElementPath';
 import PieChartElementTitleInput from './PieChartElementTitleInput';
 import PieChartElementValueInput from './PieChartElementValueInput';
@@ -51,16 +51,15 @@ const defaultEditor = {
  */
 export default function ChartEditor({
   children,
-  kind = chartTypes.BAR,
   addButtonRenderMap,
   selection,
   dispatch,
   editor = defaultEditor,
-  textAlignment = defaultChartTextAlignment,
-  title = defaultChartTitle,
+  kind = chartTypes.BAR,
+
   ...chartProps
 }: Props) {
-  chartProps.textAlignment = textAlignment;
+  chartProps = useChartFormatDefaults(kind, chartProps);
 
   const dispatchElements = useAutoCallback((action: ElementsAction) => {
     const { elements, selection } = reduceElements(
@@ -95,6 +94,13 @@ export default function ChartEditor({
     })
   );
 
+  const handleAutoFormat = useAutoCallback((format) =>
+    dispatch({
+      type: UPDATE_BLOCK_FORMAT,
+      format,
+    })
+  );
+
   const blockActions = (
     <BlockActions
       addButtonRenderMap={addButtonRenderMap}
@@ -105,14 +111,29 @@ export default function ChartEditor({
     />
   );
 
+  const metaProps = { editor, dispatch, dispatchElements };
+
+  const deselectClickHandler = useAutoCallback(
+    (event) =>
+      editor.selection > -1 &&
+      (event.target === event.currentTarget ||
+        event.target instanceof HTMLHtmlElement) &&
+      dispatchElements({
+        type: DESELECT_BLOCK_ELEMENT,
+        index: editor.selection,
+      })
+  );
+
+  const svgProps = useChartSvgProps(kind);
+
   return selection.length === 1 && selection[0] === chartProps.id ? (
     <ChartLayout
       ref={resizeTargetRef}
       title={
-        <ChartInlineInput
+        <InlineInput
           onChange={handleTitleChange}
-          textAlignment={textAlignment}
-          value={title}
+          textAlignment={chartProps.textAlignment}
+          value={chartProps.title}
         />
       }
       description={
@@ -128,20 +149,15 @@ export default function ChartEditor({
           />
         ) : null
       }
-      textAlignment={textAlignment}
+      textAlignment={chartProps.textAlignment}
+      overflow={kind === chartTypes.PIE ? 'hidden' : 'visible'}
     >
-      <ChartSvg>
-        <defs
-          dangerouslySetInnerHTML={{
-            __html: stringify(chartEditorFillPattern),
-          }}
-        />
+      <ChartSvg onClick={deselectClickHandler} {...svgProps}>
+        <ChartSvgDefs />
         {kind === chartTypes.BAR ? (
           <BarChartContent
             {...chartProps}
-            editor={editor}
-            dispatch={dispatch}
-            dispatchElements={dispatchElements}
+            {...metaProps}
             elementRectAs={BarChartElementRect}
             elementTitleAs={BarChartElementTitleInput}
             elementValueAs={BarChartElementValueInput}
@@ -149,9 +165,7 @@ export default function ChartEditor({
         ) : kind === chartTypes.COLUMN ? (
           <ColumnChartContent
             {...chartProps}
-            editor={editor}
-            dispatch={dispatch}
-            dispatchElements={dispatchElements}
+            {...metaProps}
             elementRectAs={ColumnChartElementRect}
             elementValueAs={ChartGroupElementValueInput}
             groupTitleAs={ChartGroupTitleInput}
@@ -159,9 +173,7 @@ export default function ChartEditor({
         ) : kind === chartTypes.LINE ? (
           <LineChartContent
             {...chartProps}
-            editor={editor}
-            dispatch={dispatch}
-            dispatchElements={dispatchElements}
+            {...metaProps}
             elementPathAs={LineChartElementPath}
             elementValueAs={ChartGroupElementValueInput}
             groupTitleAs={ChartGroupTitleInput}
@@ -169,24 +181,18 @@ export default function ChartEditor({
         ) : kind === chartTypes.PIE ? (
           <PieChartContent
             {...chartProps}
-            editor={editor}
-            dispatch={dispatch}
-            dispatchElements={dispatchElements}
+            {...metaProps}
             elementPathAs={PieChartElementPath}
             elementTitleAs={PieChartElementTitleInput}
             elementValueAs={PieChartElementValueInput}
+            onAutoFormat={handleAutoFormat}
           />
         ) : null}
       </ChartSvg>
       {blockActions}
     </ChartLayout>
   ) : (
-    <Chart
-      {...chartProps}
-      title={title}
-      textAlignment={textAlignment}
-      kind={kind}
-    >
+    <Chart {...chartProps} kind={kind}>
       {blockActions}
     </Chart>
   );

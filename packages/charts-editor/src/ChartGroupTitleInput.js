@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { SvgInput } from '@seine/styles';
+import { SvgInput } from '@seine/ui';
 import { UPDATE_BLOCK_ELEMENT_BY_GROUP } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
 
@@ -13,16 +13,15 @@ type Props = {
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function ChartGroupTitleInput({
-  dispatch,
-  dispatchElements,
-  editor,
-  meta: group,
-  ...inputProps
-}: Props) {
+export default React.forwardRef(function ChartGroupTitleInput(
+  { dispatch, dispatchElements, editor, meta: group, ...inputProps }: Props,
+  ref
+) {
   return (
     <SvgInput
       {...inputProps}
+      ref={ref}
+      value={group}
       onChange={useAutoCallback(({ currentTarget }) =>
         dispatchElements({
           type: UPDATE_BLOCK_ELEMENT_BY_GROUP,
@@ -32,4 +31,4 @@ export default function ChartGroupTitleInput({
       )}
     />
   );
-}
+});

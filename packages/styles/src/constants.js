@@ -24,10 +24,11 @@ export const defaultPalette = {
   },
 };
 export const defaultTypography = {
-  fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily:
+    '"Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
   fontSize: 14,
-  fontWeightBold: 700,
-  fontWeightLight: 300,
+  fontWeightBold: 600,
+  fontWeightLight: 400,
   fontWeightMedium: 500,
   fontWeightRegular: 400,
   htmlFontSize: 16,

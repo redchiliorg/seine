@@ -30,18 +30,10 @@ export const groupElements: (
 
   converge(append, [
     /* take [null, elements] for ungrouped elements */
-    pipe(
-      reject(has('group')),
-      of,
-      prepend(null)
-    ),
+    pipe(reject(has('group')), of, prepend(null)),
 
     /* and [group, elements] for others */
-    pipe(
-      filter(has('group')),
-      groupBy(prop('group')),
-      toPairs
-    ),
+    pipe(filter(has('group')), groupBy(prop('group')), toPairs),
   ]),
 
   reject(([_, { length }]) => length === 0)

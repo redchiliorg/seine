@@ -4,9 +4,9 @@ import type { Block } from '@seine/core';
 import { blockTypes } from '@seine/core';
 import { Draft } from '@seine/draft';
 import { Chart } from '@seine/charts';
-import { ResizeObserverProvider, ThemeProvider } from '@seine/styles';
 import type { Theme } from '@material-ui/core';
 import { Table } from '@seine/tables';
+import { ResizeObserverProvider, ThemeProvider } from '@seine/styles';
 
 import Grid from './Grid';
 import Image from './Image';
@@ -37,38 +37,50 @@ function Content({
   blockRenderMap = defaultBlockRenderMap,
   children,
   parent,
-  as: Container = parent['parent_id']
-    ? React.Fragment
-    : blockRenderMap[parent.type],
+  as: Container = parent['parent_id'] ? React.Fragment : Provider,
 }: Props): React.Node {
   return (
+    <Container>
+      {children
+        .filter((block: Block) => block['parent_id'] === parent.id)
+        .map(({ body, format, ...block }: Block) => {
+          const ContentBlock = blockRenderMap[block.type];
+          const blockChildren = children.filter(
+            (content) => content.id !== block.id
+          );
+          return (
+            <ContentBlock
+              key={block.id}
+              parentType={parent.type}
+              {...(format ? format : {})}
+              {...(body ? body : {})}
+              {...block}
+            >
+              {blockChildren.length ? (
+                <Content parent={block} blockRenderMap={blockRenderMap}>
+                  {blockChildren}
+                </Content>
+              ) : null}
+            </ContentBlock>
+          );
+        })}
+    </Container>
+  );
+}
+
+type ProviderProps = {
+  children?: React.Node,
+};
+
+/**
+ * @description Content provider.
+ * @param {ProviderProps} props
+ * @returns {React.Node}
+ */
+function Provider({ children = null }: ProviderProps) {
+  return (
     <ThemeProvider>
-      <ResizeObserverProvider>
-        <Container>
-          {children
-            .filter((block: Block) => block['parent_id'] === parent.id)
-            .map(({ body, format, ...block }: Block) => {
-              const ContentBlock = blockRenderMap[block.type];
-              const blockChildren = children.filter(
-                (content) => content.id !== block.id
-              );
-              return (
-                <ContentBlock
-                  key={block.id}
-                  {...(format ? format : {})}
-                  {...(body ? body : {})}
-                  {...block}
-                >
-                  {blockChildren.length ? (
-                    <Content parent={block} blockRenderMap={blockRenderMap}>
-                      {blockChildren}
-                    </Content>
-                  ) : null}
-                </ContentBlock>
-              );
-            })}
-        </Container>
-      </ResizeObserverProvider>
+      <ResizeObserverProvider>{children}</ResizeObserverProvider>
     </ThemeProvider>
   );
 }

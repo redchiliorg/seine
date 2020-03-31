@@ -1,7 +1,8 @@
 // @flow
 import * as React from 'react';
 import { chartTypes } from '@seine/core';
-import { useResizeTargetRef } from '@seine/styles';
+import { useResizeObserver, useResizeTargetRef } from '@seine/styles';
+import { useAutoCallback } from 'hooks.macro';
 
 import ChartLayout from './ChartLayout';
 import BarChartContent from './BarChartContent';
@@ -10,28 +11,32 @@ import LineChartContent from './LineChartContent';
 import PieChartContent from './PieChartContent';
 import type { ChartProps as Props } from './types';
 import ChartSvg from './ChartSvg';
-import { defaultChartTextAlignment, defaultChartTitle } from './constants';
+import ChartSvgDefs from './ChartSvgDefs';
 import ColumnChartDescription from './ColumnChartDescription';
 import LineChartDescription from './LineChartDescription';
 import PieChartDescription from './PieChartDescription';
 import BarChartDescription from './BarChartDescription';
+import useChartFormatDefaults from './useChartFormatDefaults';
+import useChartSvgProps from './useChartSvgProps';
 
 /**
  * @description Switch to chart render components by its kind.
  * @param {Props} props
  * @returns {React.Node}
  */
-export default function Chart({
-  children,
-  kind = chartTypes.BAR,
-  title = defaultChartTitle,
-  textAlignment = defaultChartTextAlignment,
-  ...chartProps
-}: Props) {
+export default function Chart({ children, kind, ...initialChartProps }: Props) {
+  initialChartProps = useChartFormatDefaults(kind, initialChartProps);
+  const [chartProps, setChartProps] = React.useState(initialChartProps);
+  const handleAutoFormat = useAutoCallback((format) =>
+    setChartProps({ ...initialChartProps, ...format })
+  );
+
+  const { isResizing } = useResizeObserver();
+
   return (
     <ChartLayout
       ref={useResizeTargetRef()}
-      title={title}
+      title={chartProps.title}
       description={
         kind === chartTypes.BAR ? (
           <BarChartDescription {...chartProps} />
@@ -43,9 +48,12 @@ export default function Chart({
           <PieChartDescription {...chartProps} />
         ) : null
       }
-      textAlignment={textAlignment}
+      textAlignment={chartProps.textAlignment}
+      overflow={kind === chartTypes.PIE ? 'hidden' : 'visible'}
+      {...(isResizing && { visibility: 'hidden' })}
     >
-      <ChartSvg>
+      <ChartSvg {...useChartSvgProps(kind)}>
+        <ChartSvgDefs />
         {kind === chartTypes.BAR ? (
           <BarChartContent {...chartProps} />
         ) : kind === chartTypes.COLUMN ? (
@@ -53,7 +61,7 @@ export default function Chart({
         ) : kind === chartTypes.LINE ? (
           <LineChartContent {...chartProps} />
         ) : kind === chartTypes.PIE ? (
-          <PieChartContent {...chartProps} />
+          <PieChartContent {...chartProps} onAutoFormat={handleAutoFormat} />
         ) : null}
       </ChartSvg>
       {children}

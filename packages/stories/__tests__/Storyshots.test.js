@@ -7,5 +7,5 @@ core.Popover = jest.fn().mockReturnValue(null);
 jest.mock('uuid/v4', () => jest.fn().mockReturnValue(null));
 
 initStoryshots({
-  storyKindRegex: /^(?!App).+/,
+  storyKindRegex: /^(?!Admin).+/,
 });

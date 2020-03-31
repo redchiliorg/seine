@@ -1,8 +1,7 @@
-import defaultMuiTheme from '@material-ui/core/styles/defaultTheme';
-import { deepmerge } from '@material-ui/utils';
-import { createTheme } from '@seine/styles';
+import { createMuiTheme } from '@material-ui/core';
+import { createTheme, deepmerge } from '@seine/styles';
 
-const defaultTheme = deepmerge(defaultMuiTheme, createTheme(), {
+const defaultTheme = deepmerge(createMuiTheme(), createTheme(), {
   clone: false,
 });
 

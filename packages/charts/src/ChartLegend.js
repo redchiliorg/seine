@@ -8,12 +8,12 @@ import { defaultChartPalette } from './constants';
 const LegendBox = styled.div`
   background-color: ${({ color }) => color};
   padding: 0.75rem;
-  margin: 0.75rem;
 `;
 
 const LegendLabel = styled.div`
   white-space: pre-wrap;
   word-break: break-all;
+  padding: 0 0.75rem;
 `;
 
 const LegendItem = styled.div`

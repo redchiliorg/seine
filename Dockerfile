@@ -1,13 +1,14 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 # Add sources to container path and set as working directory
 ADD . /app
 WORKDIR /app
 
-# Build app for production
+# Set packages cache dirs
 RUN yarn config set cache-folder /app/.yarn
-RUN yarn install
-RUN yarn build
+
+# Build app for production
+RUN yarn --prod --frozen-lockfile
 
 # Clean packages cache dirs
 RUN rm -rf /app/.yarn

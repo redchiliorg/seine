@@ -1,10 +1,7 @@
 // @flow
 import * as React from 'react';
-import { DESELECT_BLOCK_ELEMENT, SELECT_BLOCK_ELEMENT } from '@seine/core';
-import { ClickAwayListener } from '@material-ui/core';
+import { SELECT_BLOCK_ELEMENT } from '@seine/core';
 import { useAutoCallback } from 'hooks.macro';
-
-import { chartEditorFillPattern } from './constants';
 
 type Props = {
   children?: any,
@@ -23,40 +20,28 @@ export default function ColumnChartElementRect({
   ...rectProps
 }: Props) {
   return (
-    <ClickAwayListener
-      onClickAway={(event) =>
-        !(event.target instanceof HTMLButtonElement) &&
-        dispatchElements({
-          type: DESELECT_BLOCK_ELEMENT,
-          index,
-        })
-      }
-    >
-      <g>
+    <g>
+      <rect
+        {...rectProps}
+        onClick={useAutoCallback(
+          () =>
+            editor.selection !== index &&
+            dispatchElements({
+              index,
+              type: SELECT_BLOCK_ELEMENT,
+            })
+        )}
+      />
+      {editor.selection === index && (
         <rect
           {...rectProps}
-          onClick={useAutoCallback((event) => {
-            if (editor.selection !== index) {
-              event.stopPropagation();
-              event.preventDefault();
-              dispatchElements({
-                index,
-                type: SELECT_BLOCK_ELEMENT,
-              });
-            }
-          })}
+          style={{
+            opacity: 0.15,
+            fill: 'url(#selectionPattern)',
+            pointerEvents: 'none',
+          }}
         />
-        {editor.selection === index && (
-          <rect
-            {...rectProps}
-            style={{
-              opacity: 0.15,
-              fill: chartEditorFillPattern.url(),
-              pointerEvents: 'none',
-            }}
-          />
-        )}
-      </g>
-    </ClickAwayListener>
+      )}
+    </g>
   );
 }

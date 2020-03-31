@@ -1,6 +1,6 @@
 {
   "name": "@seine/tables",
-  "version": "0.3.171",
+  "version": "0.3.249",
   "description": "Seine tables renderer.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -11,11 +11,12 @@
   "author": "Mikhail Boyarov",
   "license": "MIT",
   "dependencies": {
-    "@seine/core": "^0.3.0"
+    "@seine/core": "0.3",
+    "@seine/styles": "0.3"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
   }
 }

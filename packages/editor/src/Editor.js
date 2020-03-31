@@ -167,34 +167,28 @@ export default function Editor({
     }))
   );
 
+  const deselectClickHandler = useAutoCallback(
+    (event) =>
+      (event.target === event.currentTarget ||
+        event.target instanceof HTMLHtmlElement) &&
+      dispatch({ type: DESELECT_ALL_BLOCKS })
+  );
+
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container>
-        <BlockToolbar
-          {...block}
-          blocks={blocks}
-          addButtonRenderMap={addButtonRenderMap}
-          dispatch={dispatch}
-          selection={selection}
-        >
-          <BlockDeleteButton dispatch={dispatch} selection={selection} />
-        </BlockToolbar>
-        <ClickAwayListener
-          onClickAway={() => {
-            if (
-              !(
-                document.activeElement instanceof HTMLButtonElement ||
-                document.activeElement instanceof HTMLInputElement
-              ) &&
-              contentChildren.length > 0
-            ) {
-              dispatch({
-                type: DESELECT_ALL_BLOCKS,
-              });
-            }
-          }}
-        >
-          <ContentPaper>
+      <ClickAwayListener onClickAway={deselectClickHandler}>
+        <Container>
+          <BlockToolbar
+            {...block}
+            onClick={deselectClickHandler}
+            blocks={blocks}
+            addButtonRenderMap={addButtonRenderMap}
+            dispatch={dispatch}
+            selection={selection}
+          >
+            <BlockDeleteButton dispatch={dispatch} selection={selection} />
+          </BlockToolbar>
+          <ContentPaper onClick={deselectClickHandler}>
             <Content
               {...contentProps}
               parent={parent}
@@ -203,8 +197,8 @@ export default function Editor({
               {contentChildren}
             </Content>
           </ContentPaper>
-        </ClickAwayListener>
-      </Container>
+        </Container>
+      </ClickAwayListener>
     </ThemeProvider>
   );
 }
